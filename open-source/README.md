@@ -177,22 +177,37 @@ In Open Source, the entire world is the technical support desk. All the other us
 
 ### Vulnerabilities & responsible disclosures
 
-
-# Governance Models
-
-## Founder-leader
-
-The most common type of governance model -- per number of projects -- found in Open Source is the founder-leader model. This is a simple model and the most intuitive approach for many projects where those who originated the project are also the one deciding on its evolutions. They impulse the vision and administer the project. This works well for projects with a small number of contributors, where founders have enough bandwidth to deal with requests and decisions.
-
-## Do-ocracy
-
-## Self-appointed steering committee
-
-## Elected committee
-
-## Single-vendor
-
 # Building Open Source businesses
+
+## Governance Models
+
+Strong open-source projects are those that manage to build an efficient governance. Of course, since every project is different and comprises various people, finding an ideal governance model is a challenging task. Akin to companies, projects often start small and grow organically into a structure that fits them. Yet, we can broadly categorize commonly seen models as one of 5 categories: founder-leader, do-ocracy, self-appointed steering committee, elected committee and single-vendor. Let's quickly see what each entails.
+
+> [!NOTE]
+>
+> Perhaps describe a bit the mission/role of a governance model in open-source projects.
+
+### Founder-leader
+
+The founder-leader model is the most common type of governance model -- per number of projects -- found in Open Source. This is a simple model and the most intuitive approach for many projects where those who originated the project decide on its evolutions. Founders impulse the vision and administer the project. This works well for projects with few contributors, where founders have enough capacity to deal with all requests and decisions. This model shows its limits as soon as projects grow beyond what the founders can manage. Yet it's not uncommon to see successful and large projects, like the Python programming language, still rely on this approach as an ultimate authority. Projects are split into smaller areas where decisions are made relatively independently as they grow. The vision and final decisions on strategic decisions often remain under the founders' responsibility.
+
+### Do-ocracy
+
+In Open Source, accessibility to the raw material and contributions from the community are an integral part of a project's life. So naturally, many projects embrace do-ocracy as a governance model. In other words, decisions are made by those who do the work. In this approach, projects settle on a few metrics they recognize as good to measure contributions and naturally listen to those who have contributed the most. Earning a seat at the governance table means actively contributing to the source material. This approach is particularly well suited for projects demanding a high expertise in a specific domain. Those who prove capable of doing so are also trusted for their judgement and ability to assess problems correctly. Interestingly, this model is often perceived as _an absence of governance_ since there's no one designated authority but rather a context made of many interactions between people who recognize authority in the makers. Nevertheless, this remains a governance model of its own.
+
+### Self-appointed council
+
+Some projects prefer to keep a separation between those who make and those who decide. Hence, technical councils, steering committees or boards of directors constitute a third type of governance model. Broadly speaking, self-appointed councils refer to projects where members designate a group as the acting authority on the project. A self-appointed committee typically forms out of a general agreement when it is needed and decides its own succession rules. Generally, communities resort to self-appointed councils to resolve conflictual situations between their members. Councils act as a mediation body representing the interests of the project. The risk here is for a committee to turn into an ivory tower where governance seems out of reach from new contributors unless chosen by that greater authority. Hence, self-appointed councils work best when they have a specific mission to tackle for a fixed period.
+
+### Elected steering committee
+
+As a natural evolution, self-appointed councils often turn into elected steering committees. In this approach, projects decide on a voting procedure and rules for election ratification. Elected members typically come from the project community and want to represent another part of the community. They may also be members who want to get involved in the project's decisions and who are appreciated for their leadership. Projects that follow this type of governance tend to be quite mature, with a well-documented process.
+
+### Single-vendor
+
+Finally, projects exist where a single organization or vendor handles the governance. This is essentially the case for business entities who decide to open access to some of their projects. Open source projects under this type of governance are mainly maintained by a single vendor who wholly owns the roadmap and the contributions allowed within the project. This model works well for projects that adopt an open-source strategy for reasons other than community governance; for example, as a way to be more transparent or as a way to attract talent. Yet, they do not generally seek external contributions unless immediately aligned with their own strategy.
+
+
 
 ## Revenue models
 
