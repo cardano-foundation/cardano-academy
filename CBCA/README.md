@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository is the home the Cardano Blockchain Certified Associate content. 
+This folder contains the content for the Cardano Blockchain Certified Associate (CBCA) course. 
 
 ## Courses
 
