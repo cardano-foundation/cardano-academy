@@ -169,11 +169,12 @@ In this unit, we looked at the major differences between centralized, decentrali
 And with that, we will see you in the next unit! 
 
 ## References
-[Ref.1.2]  Apt, Krzysztof R., Ernst-Rüdiger Olderog, and K. R. Apt., “Verification of sequential and concurrent programs.” Chapter 11: Distributed Programs, London: Springer, 2009. 
-[Ref.1.3] Lamport, L.; Shostak, R.; Pease, M., "The Byzantine Generals Problem." ACM Transactions on Programming Languages and Systems. 4 (3): 382–401. July 1982.
-[Ref.1.4]  Baran, P., "On Distributed Communications Networks." IEEE Transactions on Communications Systems, vol. 12, no. 1, pp. 1-9, March 1964. 
-[Ref.1.5] Fischer, M.J., Lynch, N.A. and Paterson, M.S., “Impossibility of distributed consensus with one faulty process.” Journal of the ACM (JACM), 32(2), pp.374-382, 1985.
-[Ref.1.6] Vukolić, M. “The Quest for Scalable Blockchain Fabric: Proof-of-Work vs. BFT Replication.” International workshop on open problems in network security, pp. 112-125. Springer, Cham, 2015. 
+
+[Ref.1.2]  Apt, Krzysztof R., Ernst-Rüdiger Olderog, and K. R. Apt., “Verification of sequential and concurrent programs.” Chapter 11: Distributed Programs, London: Springer, 2009. <br>
+[Ref.1.3] Lamport, L.; Shostak, R.; Pease, M., "The Byzantine Generals Problem." ACM Transactions on Programming Languages and Systems. 4 (3): 382–401. July 1982. <br>
+[Ref.1.4]  Baran, P., "On Distributed Communications Networks." IEEE Transactions on Communications Systems, vol. 12, no. 1, pp. 1-9, March 1964. <br>
+[Ref.1.5] Fischer, M.J., Lynch, N.A. and Paterson, M.S., “Impossibility of distributed consensus with one faulty process.” Journal of the ACM (JACM), 32(2), pp.374-382, 1985.<br>
+[Ref.1.6] Vukolić, M. “The Quest for Scalable Blockchain Fabric: Proof-of-Work vs. BFT Replication.” International workshop on open problems in network security, pp. 112-125. Springer, Cham, 2015. <br>
 
 ## Questions
 
@@ -234,69 +235,45 @@ And with that, we will see you in the next unit!
 - **Distributed (CORRECT ANSWER)**
 - Components
 
+*Select two correct statements about different network types.*
+- **Decentralized networks provide better tolerance to failures (CORRECT ANSWER)**
+- In centralized networks, no single node controls the network
+- Distributed networks are the least resilient to faults
+- **A centralized network does not require consensus (CORRECT ANSWER)**
 
-Select two correct statements about different network types.
-Decentralized networks provide better tolerance to failures (CORRECT ANSWER)
-In centralized networks, no single node controls the network
-Distributed networks are the least resilient to faults
-A centralized network does not require consensus (CORRECT ANSWER)
+*A decentralized network does not require consensus, as all nodes on the network follow the directions of the central node.*
+- TRUE 
+- **FALSE (CORRECT ANSWER)**
 
+**Sub-Unit 6**
 
-A decentralized network does not require consensus, as all nodes on the network follow the directions of the central node.
-TRUE 
-FALSE (CORRECT ANSWER)
-Sub-Unit 6
-Select the correct statement about throughput, latency and scalability.
-Scalability refers to maintaining less throughput as the number of nodes in a network increases
-Latency is the delay in a node coming online
-Throughput is the rate a consensus algorithm delivers a decision (CORRECT ANSWER)
+**Select the correct statement about throughput, latency and scalability.**
+- Scalability refers to maintaining less throughput as the number of nodes in a network increases
+- Latency is the delay in a node coming online
+- **Throughput is the rate a consensus algorithm delivers a decision (CORRECT ANSWER)**
 
-Security is an important property when designing a consensus algorithm. It refers to a decision that will eventually be made.
-TRUE 
-FALSE (CORRECT ANSWER)
-Sub-Unit 7
-Select the two correct statements about Crash Fault Tolerant (CFT) and Byzantine Fault Tolerance (BFT).
-A CFT consensus algorithm can handle scenarios where a general is not always reliable (CORRECT ANSWER)
-The term for when a loyal general communicates is called a Byzantine failure
-A BFT consensus algorithm is designed to handle scenarios where any general may betray loyal generals by disrupting communications (CORRECT ANSWER)
-A BFT system cannot continue operating after a failure
+*Security is an important property when designing a consensus algorithm. It refers to a decision that will eventually be made.*
+- TRUE 
+- **FALSE (CORRECT ANSWER)**
 
+**Sub-Unit 7**
 
-Which two of the following options demonstrate why Byzantine Fault-Tolerant consensus algorithms are important?
-They allow the network to continue operating even if some of the nodes fail (CORRECT ANSWER)
-They allow the network to continue operating even if some of the nodes act maliciously (CORRECT ANSWER)
-It allows the network to continue scaling even if there are no nodes online
-It allows the creation of the network even if there are no nodes online
-Sub-Unit 8
-What is the significance of the Bitcoin network's launch in January 2009?
-It marked the first time a country had issued a digital currency
-It established the first global network for sharing music files
-It introduced the first online platform for stock trading
-It established the first public and permissionless blockchain (CORRECT ANSWER)
+*Select the two correct statements about Crash Fault Tolerant (CFT) and Byzantine Fault Tolerance (BFT).*
+- **A CFT consensus algorithm can handle scenarios where a general is not always reliable (CORRECT ANSWER)**
+- The term for when a loyal general communicates is called a Byzantine failure
+- **A BFT consensus algorithm is designed to handle scenarios where any general may betray loyal generals by disrupting communications (CORRECT ANSWER)**
+- A BFT system cannot continue operating after a failure
 
+*Which two of the following options demonstrate why Byzantine Fault-Tolerant consensus algorithms are important?*
+- **They allow the network to continue operating even if some of the nodes fail (CORRECT ANSWER)**
+- **They allow the network to continue operating even if some of the nodes act maliciously (CORRECT ANSWER)**
+- It allows the network to continue scaling even if there are no nodes online
+- It allows the creation of the network even if there are no nodes online
 
+**Sub-Unit 8**
 
-
-### Introduction to Decentralization
-
-## Table of Contents
-
-## Consensus Algorithms in Practice
-
-## The Original Byzantine General Problem Paper
-
-## The Byzantine Generals Problem (BGP)
-
-## The Byzantine Generals Problem (BGP)
-
-## Distributed Network
-
-## Network Definition
-
-## Network Types
-
-## Liveness and Safety
-
-## Throughput, Latency, and Scalability
-
-## Crash Fault Tolerant and Byzantine Fault Tolerance
+*What is the significance of the Bitcoin network's launch in January 2009?*
+- It marked the first time a country had issued a digital currency
+- It established the first global network for sharing music files
+- It introduced the first online platform for stock trading
+- **It established the first public and permissionless blockchain (CORRECT ANSWER)**
