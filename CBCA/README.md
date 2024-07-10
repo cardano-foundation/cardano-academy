@@ -4,13 +4,6 @@
 
 This folder contains the content for the Cardano Blockchain Certified Associate (CBCA) course. 
 
-## Courses
-
-| Title                        | Description                                                                     |
-| ---                          | ---                                                                             |
-| [CBCA](https://academy.cardanofoundation.org)| A blockchain course for associate with a deep focus on Proof-of-Stake & Cardano |
-
-
 ## How to contribute
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md)
