@@ -1,6 +1,6 @@
-Images are named <module#><unit#><image#>
+Naming scheme: <module#><unit#><image#>.png
 
-Format: ![Alt text](https://url.png "a title")
+
 
 
 
