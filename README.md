@@ -8,7 +8,7 @@ This repository is the home of the Cardano Academy source material. It is a mono
 
 | Title                        | Description                                                                     |
 | ---                          | ---                                                                             |
-| CBCA                         | A blockchain course for associate with a deep focus on Proof-of-Stake & Cardano |
+| [CBCA](https://github.com/cardano-foundation/cardano-academy/tree/main/CBCA)                         | A blockchain course for associate with a deep focus on Proof-of-Stake & Cardano |
 | [Open Source](./open-source) | An introductory course and guide on Open Source.                                |
 
 ## How to contribute
