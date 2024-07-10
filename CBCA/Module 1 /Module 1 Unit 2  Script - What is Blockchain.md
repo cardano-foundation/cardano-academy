@@ -116,7 +116,7 @@ That’s it for now, and I will see you next time.
 - Allow participants to reach a decision with the help of a central authority
 - Expel malicious or faulty participants
 
-**In a typical blockchain:**
+*In a typical blockchain:*
 - Decisions are made by an elected leading authority
 - Decisions are made at random.
 - There’s no decision to be made
