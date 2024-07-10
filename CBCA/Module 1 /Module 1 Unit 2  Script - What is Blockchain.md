@@ -32,6 +32,7 @@ What exactly is a blockchain? It allows users to send and receive digital assets
 
 Blockchain technology, also referred to as Distributed Ledger Technology, or DLT, provides a decentralized and accessible data structure for conducting many kinds of transactions, ranging from financial payments to information exchange, from commerce to Internet of Things. [Ref.2.2].
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.2.2.png)
 
 As shown on the diagram, blockchain technology consists of several components. It generally includes network nodes, a peer-to-peer network, a consensus algorithm, and a chain of blocks that form the decentralized ledger.  
 
@@ -47,6 +48,8 @@ Blocks contain verified transactions linked to each other in a chain in chronolo
 
 Each block has a header and a body.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.2.3.png)
+
 The block body contains transaction data. A transaction might be a financial payment sending a digital asset from one user to another, or a supply chain transaction of a product being shipped from one facility to another. Typically, a block contains multiple transactions.
 
 The block header contains its time stamp and a hash–proof of everything contained in the block body as well as the hash of the previous block.  
@@ -54,6 +57,7 @@ The block header contains its time stamp and a hash–proof of everything contai
 ## Hash Function
 Let’s start with that hash in the block header. What is it?
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.2.4.png)
 
 A hash function is used to obtain a compact representation of some piece of data – a block for example. It takes an input and returns a fixed-size output called a hash digest. It’s a one-way mathematical function. It can’t be reversed, meaning the original input can’t be derived from the hash. You can think of hashes as a way to ‘compress’ data.
 
@@ -62,6 +66,7 @@ Any changes to the original input will be reflected in a completely different ha
 ## How Are Blocks Chained Together
 Let's go back to our earlier diagram of the blockchain structure and see how those blocks are chained together. Any ideas? 
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.2.5.png)
 
 If your answer was ‘the hash of the previous block’, you’re correct. Every block in the blockchain contains the hash value of the previous block. This hash then becomes a part of the hash of the next block, which becomes a part of the next block, and so on. It is this hashing of hashes that chains the blocks together. 
 
@@ -82,10 +87,14 @@ In finance, for instance, blockchain allows for true peer-to-peer currency to fu
 
 One organizational structure that can exist on a blockchain is called a DAO, or Decentralized Autonomous Organization. DAOs have the potential to change how we think of organizations like companies. And these are just a few examples of the numerous potential uses for blockchain.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.2.6.png)
+
 ## Careers in Blockchain
 Blockchain technology has created, and will continue to create many jobs in the industry. Traditional roles in analysis, coding, economics and security can transfer to blockchain with upskilling. The titles may just change to smart contract developer, token economist, DeFi analyst, and so on. Technical and non-technical skills along with a burning curiosity can bring success in this rapidly evolving industry. 
 
 Blockchain is also driving research and development in many areas of science from cryptography to compliance. There has been significant progress in consensus algorithms, multi-party computation, and programming languages, for example. 
+
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.2.7.png)
 
 ## Review
 So here we are, at the end of this unit, covering the basics of blockchain.
@@ -101,82 +110,87 @@ That’s it for now, and I will see you next time.
 
 **Sub-Unit 1**
 
-Blockchains need consensus algorithms. In a blockchain, consensus algorithms: 
-Force all participants to agree
-Allow participants to reach a decision without a central authority (CORRECT ANSWER)
-Allow participants to reach a decision with the help of a central authority
-Expel malicious or faulty participants
+*Blockchains need consensus algorithms. In a blockchain, consensus algorithms:* 
+- Force all participants to agree
+- **Allow participants to reach a decision without a central authority (CORRECT ANSWER)**
+- Allow participants to reach a decision with the help of a central authority
+- Expel malicious or faulty participants
 
-In a typical blockchain:
-Decisions are made by an elected leading authority
-Decisions are made at random.
-There’s no decision to be made
-Decisions are reached through a consensus algorithm (CORRECT ANSWER)
-Sub-Unit 2
+**In a typical blockchain:**
+- Decisions are made by an elected leading authority
+- Decisions are made at random.
+- There’s no decision to be made
+- **Decisions are reached through a consensus algorithm (CORRECT ANSWER)**
 
-Which of the following is not a fundamental component of blockchain technology?
+**Sub-Unit 2**
+
+*Which of the following is not a fundamental component of blockchain technology?*
 Network nodes
-A peer-to-peer network
-A consensus algorithm
-A decentralized autonomous organization (CORRECT ANSWER)
-A chain of blocks that form the distributed ledger
+- A peer-to-peer network
+- A consensus algorithm
+- **A decentralized autonomous organization (CORRECT ANSWER)**
+- A chain of blocks that form the distributed ledger
 
-Which of the following better describes blockchain technology?
-Internet of things (IoT)
-Artificial intelligence (AI)
-Distributed ledger technology (DLT) (CORRECT ANSWER)
-Decentralized finance (DeFi)
+*Which of the following better describes blockchain technology?*
+- Internet of things (IoT)
+- Artificial intelligence (AI)
+- **Distributed ledger technology (DLT) (CORRECT ANSWER)**
+- Decentralized finance (DeFi)
 
-A blockchain allows users to send and receive digital assets securely and without needing a central authority or intermediary.
-TRUE (CORRECT ANSWER)
-FALSE
+*A blockchain allows users to send and receive digital assets securely and without needing a central authority or intermediary.*
+- **TRUE (CORRECT ANSWER)**
+- FALSE
 
-Examine the image below and select the correct labels. (Image Questions)
+*Examine the image below and select the correct labels. (Image Questions)*
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.2.8.png)
 
+- A: Encryption Algorithm; B: Communicator; C: Network Nodes
+- **A: Consensus Algorithm; B: Block Producer; C: Chain of Blocks (CORRECT ANSWER)**
+- A: Block Producer; B: Encryption Algorithm; C: Chain of Blocks
 
-A: Encryption Algorithm; B: Communicator; C: Network Nodes
-A: Consensus Algorithm; B: Block Producer; C: Chain of Blocks (CORRECT ANSWER)
-A: Block Producer; B: Encryption Algorithm; C: Chain of Blocks
-Sub-Unit 3
+**Sub-Unit 3**
 
-In blockchain, each block has a header and a body. Generally speaking, what’s part of the header?
-Time stamp and transaction data
-Hash of previous block and transaction data
-Hash of previous block and time stamp (CORRECT ANSWER)
-Hash of previous block, time stamp, transaction data
+*In blockchain, each block has a header and a body. Generally speaking, what’s part of the header?*
+- Time stamp and transaction data
+- Hash of previous block and transaction data
+- **Hash of previous block and time stamp (CORRECT ANSWER)**
+- Hash of previous block, time stamp, transaction data
 
-A block header contains complete transaction data.
-TRUE 
-FALSE (CORRECT ANSWER)
-Sub-Unit 4
+*A block header contains complete transaction data.*
+- TRUE 
+- **FALSE (CORRECT ANSWER)**
 
-A hash function produces a fingerprint of data, creating an output for a given input. Select the correct one.
-A hash function creates a fixed-size output (CORRECT ANSWER)
-The size of the output depends on the input
-Each system decides if the length of the output is fixed or not
-The size of the output is dynamic
+**Sub-Unit 4**
 
-What maintains the integrity of a blockchain?
-Each block has a unique, independent identifier
-Each block contains the next block's hash
-Each block includes the previous block's hash (CORRECT ANSWER)
-Each change in a block only impacts that block's hash
+*A hash function produces a fingerprint of data, creating an output for a given input. Select the correct one.*
+- **A hash function creates a fixed-size output (CORRECT ANSWER)**
+- The size of the output depends on the input
+- Each system decides if the length of the output is fixed or not
+- The size of the output is dynamic
 
-Select the image that shows the correct data structure of a block. (Image Question)
-Image 1:
+*What maintains the integrity of a blockchain?*
+- Each block has a unique, independent identifier
+- Each block contains the next block's hash
+- **Each block includes the previous block's hash (CORRECT ANSWER)**
+- Each change in a block only impacts that block's hash
+
+*Select the image that shows the correct data structure of a block. (Image Question)*
+- Image 1:
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.2.9.png)
 
 Header, Time Stamp, Hash of next block, Transaction data, Body, Proof of Body
-Image 2:
+- Image 2:
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.2.10.png)
 
 Header, Hash of Previous Block, Proof of Header, Time Stamp, Body, Transaction Data
-Image 3: 
+- Image 3: 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.2.11.png)
+**Header, hash of previous block, time stamp, proof of body, Body, Transaction data (CORRECT ANSWER)**
 
-Header, hash of previous block, time stamp, proof of body, Body, Transaction data (CORRECT ANSWER)
-
-What links blocks together?
-The hash of the previous block (CORRECT ANSWER)
-The date when the new block was created
-The time stamp of all blocks
-The transaction data ID
+*What links blocks together?*
+- **The hash of the previous block (CORRECT ANSWER)**
+- The date when the new block was created
+- The time stamp of all blocks
+- The transaction data ID
 
