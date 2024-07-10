@@ -8,7 +8,7 @@ This folder contains the content for the Cardano Blockchain Certified Associate 
 
 | Title                        | Description                                                                     |
 | ---                          | ---                                                                             |
-| [CBCA](https://academy.cardanofoundation.org target="_blank") | A blockchain course for associate with a deep focus on Proof-of-Stake & Cardano |
+| [CBCA](https://academy.cardanofoundation.org){:target="_blank"}| A blockchain course for associate with a deep focus on Proof-of-Stake & Cardano |
 
 
 ## How to contribute
