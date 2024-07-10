@@ -215,108 +215,108 @@ That’s it for now, and until next time!
 **Sub-Unit 1** 
 
 *Select two correct statements about Ethereum.*
-It established a central authority to oversee blockchain operations
-**The core idea was to create a global computer that could run applications in a distributed manner  (CORRECT ANSWER)**
-It allowed developers to work without any rules/regulations
-**It provided a platform for developers to build new types of tokens  (CORRECT ANSWER)**
+- It established a central authority to oversee blockchain operations
+- **The core idea was to create a global computer that could run applications in a distributed manner  (CORRECT ANSWER)**
+- It allowed developers to work without any rules/regulations
+- **It provided a platform for developers to build new types of tokens  (CORRECT ANSWER)**
 
 **Sub-Unit 2**
 
 *Select three correct statements about the six Ethereum principles.*
-**Immutability enables the program code to never be changed or deleted (CORRECT ANSWER)**
-**Permanence stores data offline, making it retrievable (CORRECT ANSWER)**
-Atomicity allows for the entire state of the system to change if a fault occurs
-Provenance prevents data from being deleted
-**Immortality gives resistance to censorship and external shutdown (CORRECT ANSWER)**
+- **Immutability enables the program code to never be changed or deleted (CORRECT ANSWER)**
+- **Permanence stores data offline, making it retrievable (CORRECT ANSWER)**
+- Atomicity allows for the entire state of the system to change if a fault occurs
+- Provenance prevents data from being deleted
+- **Immortality gives resistance to censorship and external shutdown (CORRECT ANSWER)**
 
 *Select the two correct statements about provenance, one of Ethereum’s six principles.*
-**It establishes a clear chain of custody for digital assets (CORRECT ANSWER)**
-It automatically destroys the originator of failed transactions
-**It provides the ability to trace back events leading to the system's states (CORRECT ANSWER)**
-It allows for some execution paths to be verified
+- **It establishes a clear chain of custody for digital assets (CORRECT ANSWER)**
+- It automatically destroys the originator of failed transactions
+- **It provides the ability to trace back events leading to the system's states (CORRECT ANSWER)**
+- It allows for some execution paths to be verified
 
 *Which blockchain introduced the concept of smart contracts?*
-Bitcoin
-**Ethereum (CORRECT ANSWER)**
-Cardano
-Algorand
+- Bitcoin
+- **Ethereum (CORRECT ANSWER)**
+- Cardano
+- Algorand
 
 **Sub-Unit 3**
 
 *A token can:*
-**represent ownership of an asset (CORRECT ANSWER)**
-**hold voting rights (CORRECT ANSWER)**
-**serve as a medium of exchange (CORRECT ANSWER)**
-**be used as a way to store value (CORRECT ANSWER)**
-act as a consensus algorithm
+- **represent ownership of an asset (CORRECT ANSWER)**
+- **hold voting rights (CORRECT ANSWER)**
+- **serve as a medium of exchange (CORRECT ANSWER)**
+- **be used as a way to store value (CORRECT ANSWER)**
+- act as a consensus algorithm
 
 **Sub-Unit 4**
 
 *DeFi are financial services that enable trading, lending, fundraising, and investing, without the need for traditional trusted intermediaries like banks.*
-**TRUE (CORRECT ANSWER)**
-FALSE
+- **TRUE (CORRECT ANSWER)**
+- FALSE
 
 *Instead of managing services through a central authority, what does decentralized finance (DeFi) do?*
-Rely on traditional financial institutions and intermediaries 
-**Use smart contracts to establish and execute financial agreements (CORRECT ANSWER)**
-Use physical contracts and paperwork for financial agreements
+- Rely on traditional financial institutions and intermediaries 
+- **Use smart contracts to establish and execute financial agreements (CORRECT ANSWER)**
+- Use physical contracts and paperwork for financial agreements
 
 *Take a look at the two images below and select the correct answer option that describes the process. (Image Question)*
 
 ![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.3.11.png)
-**A = Decentralized Finance, B = Centralized Finance (CORRECT ANSWER)**
-A = Decentralized Autonomous Organization, B = Decentralized Finance
-A = Centralized Finance, B = Decentralized Finance
+- **A = Decentralized Finance, B = Centralized Finance (CORRECT ANSWER)**
+- A = Decentralized Autonomous Organization, B = Decentralized Finance
+- A = Centralized Finance, B = Decentralized Finance
 
 *Select two correct statements about a Decentralized Autonomous Organization (DAO).*
-**It can be more efficient and require fewer management layers (CORRECT ANSWER)**
-**In a DAO, decision-making and rule-making are transparent (CORRECT ANSWER)**
-It is immune to all security risks
-DAOs prioritize short-term gains over long-term stability
+- **It can be more efficient and require fewer management layers (CORRECT ANSWER)**
+- **In a DAO, decision-making and rule-making are transparent (CORRECT ANSWER)**
+- It is immune to all security risks
+- DAOs prioritize short-term gains over long-term stability
 
 *The Blockchain Trilemma states it is impossible to build and operate a blockchain protocol that is simultaneously:*
-**Decentralized (CORRECT ANSWER)**
-**Scalable (CORRECT ANSWER)**
-Centralized
-**Secure (CORRECT ANSWER)**
-Programmable
+- **Decentralized (CORRECT ANSWER)**
+- **Scalable (CORRECT ANSWER)**
+- Centralized
+- **Secure (CORRECT ANSWER)**
+- Programmable
 
 *Cardano is a first-generation blockchain.*
-TRUE 
-**FALSE (CORRECT ANSWER)**
+- TRUE 
+- **FALSE (CORRECT ANSWER)**
 
 **Sub-Unit 6**
 
 *How does Cardano increase security of tokens without compromising scalability and decentralization?*
-Cardano introduces more intermediaries into the system as new tokens are created
-Cardano allows for new tokens to be created using smart contracts
-**Cardano’s protocol ensures that developer-defined tokens inherit the same security properties as its native token (CORRECT ANSWER)**
+- Cardano introduces more intermediaries into the system as new tokens are created
+- Cardano allows for new tokens to be created using smart contracts
+- **Cardano’s protocol ensures that developer-defined tokens inherit the same security properties as its native token (CORRECT ANSWER)**
 
 **Sub-Unit 7**
 
 *Private blockchains do not exist. Blockchains are always public.*
-True
-**False (CORRECT ANSWER)**
+- True
+- **False (CORRECT ANSWER)**
 
 *Select the correct statements about public and private ledgers and blockchains.*
-Public ledgers often contain sensitive data
-**Ledgers are used for keeping records in both public and private blockchains (CORRECT ANSWER)**
-**Private blockchains can only be accessed by authorized users (CORRECT ANSWER)**
-Private ledgers are open for anyone to view
+- Public ledgers often contain sensitive data
+- **Ledgers are used for keeping records in both public and private blockchains (CORRECT ANSWER)**
+- **Private blockchains can only be accessed by authorized users (CORRECT ANSWER)**
+- Private ledgers are open for anyone to view
 
 **Sub-Unit 8**
 
-*Blockchain is related to Web 3*
-**True (CORRECT ANSWER)**
-False
+- *Blockchain is related to Web 3*
+- **True (CORRECT ANSWER)**
+- False
 
 *Select two correct statements on the evolution of the Internet.*
-**Web 3.0 has data distributed and stored securely across many devices (CORRECT ANSWER)**
-Web 1.0 is an open and decentralized ecosystem
-**Web 2.0 is the current state of the Internet (CORRECT ANSWER)**
+- **Web 3.0 has data distributed and stored securely across many devices (CORRECT ANSWER)**
+- Web 1.0 is an open and decentralized ecosystem
+- **Web 2.0 is the current state of the Internet (CORRECT ANSWER)**
 
 *Take a look at the image below and select the correct option that describes the three web phases. (Image Question)*
 ![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.3.12.png)
-A: Dynamic, B: Decentralized, C: Static
-**A: Static, B: Dynamic, C: Decentralized (CORRECT ANSWER)**
-A: Static, B: Decentralized, C: Dynamic
+- A: Dynamic, B: Decentralized, C: Static
+- **A: Static, B: Dynamic, C: Decentralized (CORRECT ANSWER)**
+- A: Static, B: Decentralized, C: Dynamic
