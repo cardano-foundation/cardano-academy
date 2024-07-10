@@ -155,7 +155,7 @@ As shown in the diagram, a permissionless blockchain operates with anonymous par
 
 
 |       | Permissionless | Permissioned     |
-| :---        |    :----:   |          ---: |
+| :---        |    :----   |         :--- |
 | Description      | Permission is not required to join the network and participate in the consensus algorithm. | Permission is required to join the network and participate in the consensus algorithm.   |
 | Properties   | - Anonymous participants<br> - No central authority<br> - Trustless<br> | - No anonymous participants<br> - No single authority, but a group of authorities<br> - The authorities provides some level of trust<br>    |
 | Market type   | Consumer-to-Consumer   | Business-to-Consumer     |
