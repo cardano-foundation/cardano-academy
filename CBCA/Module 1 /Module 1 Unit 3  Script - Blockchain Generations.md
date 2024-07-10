@@ -157,10 +157,10 @@ As shown in the diagram, a permissionless blockchain operates with anonymous par
 |       | Permissionless | Permissioned     |
 | :---        |    :----:   |          ---: |
 | Description      | Permission is not required to join the network and participate in the consensus algorithm. | Permission is required to join the network and participate in the consensus algorithm.   |
-| Properties   | - Anonymous participants<br> - No central authority<br> - Trustless<br> | - No anonymous participantsbr> - No single authority, but a group of authoritiesbr> - The authorities provides some level of trustbr>    |
+| Properties   | - Anonymous participants<br> - No central authority<br> - Trustless<br> | - No anonymous participants<br> - No single authority, but a group of authorities<br> - The authorities provides some level of trust<br>    |
 | Market type   | Consumer-to-Consumer   | Business-to-Consumer     |
 | Advantages   | - Fully decentralized<br> - Accessible transactions<br>  | - Energy efficient<br> - High transaction speed<br>    |
-| Disadvantages   | - Slow transaction speed - Difficult to scale        | - Less decentralization -Less transparency - Risk of authorities changing the blockchain rules     |
+| Disadvantages   | - Slow transaction speed<br> - Difficult to scale        | - Less decentralization<br> -Less transparency<br> - Risk of authorities changing the blockchain rules     |
 
 Bitcoin and Cardano are not only public blockchains, but also permissionless. This means anyone can interact with the ledger. Transaction data can be viewed all the way back to the genesis block, or block zero. Any user of the system can take part in the consensus by setting up their own block producer. We’ll talk more about block producers in later units.
 
