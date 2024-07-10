@@ -12,7 +12,48 @@ By the end of this unit, the learner should be able to:
 ## Introduction
 
 
-### Introduction to Decentralization#
+### Introduction to Decentralization
+
+## Table of Contents
+
+## Consensus Algorithms in Practice
+
+## The Original Byzantine General Problem Paper
+
+## The Byzantine Generals Problem (BGP)
+
+## The Byzantine Generals Problem (BGP)
+
+## Distributed Network
+
+## Network Definition
+
+## Network Types
+
+## Liveness and Safety
+
+## Throughput, Latency, and Scalability
+
+## Crash Fault Tolerant and Byzantine Fault Tolerance
+
+## The Original Bitcoin Whitepaper
+
+## BFT vs. PoW Consensus Algorithm
+
+## Review
+
+## References
+
+## Questions
+
+
+
+
+
+
+
+
+
 
 
 
