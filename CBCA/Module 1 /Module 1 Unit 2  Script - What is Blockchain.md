@@ -66,7 +66,7 @@ Any changes to the original input will be reflected in a completely different ha
 ## How Are Blocks Chained Together
 Let's go back to our earlier diagram of the blockchain structure and see how those blocks are chained together. Any ideas? 
 
-![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.2.5.png)
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.2.4.png)
 
 If your answer was ‘the hash of the previous block’, you’re correct. Every block in the blockchain contains the hash value of the previous block. This hash then becomes a part of the hash of the next block, which becomes a part of the next block, and so on. It is this hashing of hashes that chains the blocks together. 
 
