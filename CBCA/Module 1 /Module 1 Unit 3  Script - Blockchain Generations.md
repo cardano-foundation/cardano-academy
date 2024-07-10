@@ -157,8 +157,7 @@ As shown in the diagram, a permissionless blockchain operates with anonymous par
 |       | Permissionless | Permissioned     |
 | :---        |    :----:   |          ---: |
 | Description      | Permission is not required to join the network and participate in the consensus algorithm. | Permission is required to join the network and participate in the consensus algorithm.   |
-| Properties   | - Anonymous participants<br> - No central authority<br> - Trustless<br>
-        | - No anonymous participants<br> - No single authority, but a group of authorities<br> - The authorities provides some level of trust<br>    |
+| Properties   | - Anonymous participants<br> - No central authority<br> - Trustless<br> | - No anonymous participantsbr> - No single authority, but a group of authoritiesbr> - The authorities provides some level of trustbr>    |
 | Market type   | Consumer-to-Consumer   | Business-to-Consumer     |
 | Advantages   | - Fully decentralized<br> - Accessible transactions<br>  | - Energy efficient<br> - High transaction speed<br>    |
 | Disadvantages   | - Slow transaction speed - Difficult to scale        | - Less decentralization -Less transparency - Risk of authorities changing the blockchain rules     |
@@ -303,3 +302,5 @@ That’s it for now, and until next time!
 - A: Dynamic, B: Decentralized, C: Static
 - **A: Static, B: Dynamic, C: Decentralized (CORRECT ANSWER)**
 - A: Static, B: Decentralized, C: Dynamic
+
+  | - No anonymous participants<br> - No single authority, but a group of authorities<br> - The authorities provides some level of trust<br>    |
