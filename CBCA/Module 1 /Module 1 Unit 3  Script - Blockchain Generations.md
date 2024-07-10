@@ -156,7 +156,10 @@ As shown in the diagram, a permissionless blockchain operates with anonymous par
 | ----------- | ----------- | ----------- |
 | Description | Permission is not required to join the network and participate in the consensus algorithm. |Permission is required to join the network and participate in the consensus algorithm.|
 
-
+| Syntax      | Permissionless | Permissioned     |
+| :---        |    :----:   |          ---: |
+| Description      | Permission is not required to join the network and participate in the consensus algorithm. | Permission is required to join the network and participate in the consensus algorithm.   |
+| Paragraph   | Text        | And more      |
 
 
 Properties
