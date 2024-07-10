@@ -48,7 +48,7 @@ Blocks contain verified transactions linked to each other in a chain in chronolo
 
 Each block has a header and a body.
 
-![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.2.3.png)
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.2.5.png)
 
 The block body contains transaction data. A transaction might be a financial payment sending a digital asset from one user to another, or a supply chain transaction of a product being shipped from one facility to another. Typically, a block contains multiple transactions.
 
