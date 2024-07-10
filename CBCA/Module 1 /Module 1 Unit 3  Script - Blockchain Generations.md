@@ -86,14 +86,15 @@ Compared to traditional organizations, DAOs have the potential to be more effici
 
 ![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.3.3.png)
 
-
 ## Third Blockchain Generation
 That sums up the second generation of blockchain technology and the great contributions made advancing blockchain. However, significant challenges remain: scalability, interoperability, and sustainability. Third-generation blockchains, like Cardano, work to address these issues. But how are they working to solve them? To answer this, let’s go back to the 1980s.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.3.4.png)
 ## The Blockchain Trilemma
 Eric Brewer, a computer scientist, proposed a theory that in a distributed data network, you can only achieve two out of three properties at the same time: consistency, availability, or partition tolerance. He called this the CAP theorem.
 
 Fast forward to today, Eric’s idea has evolved into the Blockchain Trilemma, a phrase coined by Ethereum Co-Founder Vitalik Buterin. It states that it is impossible to build and operate a blockchain protocol which is entirely decentralized, scalable, and secure. In other words, public blockchains must make trade-offs between security, decentralization, and scalability. It is a known challenge in the technology's adoption, but there is no scientific law that prohibits all three aspects from being achieved simultaneously. The goal of the third generation is to work to solve these issues so that the full promise of blockchain can be made available to all.
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.3.5.png)
 
 ## Scalability, Decentralization, and Security
 Let’s break down the blockchain trilemma:  
@@ -113,6 +114,7 @@ Cardano takes a different approach. Cardano’s native token is ada and, like in
 
 Having native tokens also reduces computing resources that are needed to transact assets on the network. It is still possible to have smart contracts enforce some rules, but it is by no means a requirement. Many different types of assets can even be exchanged at once in a single transaction. All of this together adds efficiency, and also helps to scale the network down the line.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.3.6.png)
 ## Consensus Protocol Improvement
 Now, in addition to security, scalability, and decentralization, third generation blockchains also require interoperability and sustainability. Interoperability is the ability to easily transfer value from one blockchain to another. 
 
@@ -120,10 +122,16 @@ Sustainability refers to the ability of a blockchain to maintain itself and oper
 
 Unlike proof of work, proof-of-stake mechanisms do not rely on computational effort to achieve consensus, and thus require less energy consumption. We will explore proof of work and proof of stake consensus algorithms in more detail in the coming units, along with other consensus mechanisms.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.3.7.png)
+
+
 ## Blockchain Layers
 Blockchain architecture is generally divided into layers. Layer 1 is the blockchain itself - the base network. Layer 2 refers to the structures built upon the base layer. Layer 2 solutions are designed to improve scalability and efficiency. However, blockchain scalability solutions are being developed for both layer 1 and layer 2.
 
 The key idea behind layer 2 solutions is that they do not need to rely on the underlying blockchain protocol when processing transactions. Lightning Network in Bitcoin, Arbitrum, Optimism or ZkSync projects in Ethereum, and Hydra in Cardano are all layer 2 solutions. We will dive into both layer 1 and layer 2 solutions in later units.
+
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.3.8.png)
+
 
 ## Blockchain Types
 As blockchain technology has evolved, so have the ledgers used in blockchains. Ledgers are systems for keeping records and have been used for centuries in important practices such as trading, accounting, legal, and governance.
@@ -139,6 +147,8 @@ So we can categorize blockchain types this way:
 - Public, permissioned
 - Private, permissionless
 - Private, permissioned
+
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.3.9.png)
 
 As shown in the diagram, a permissionless blockchain operates with anonymous participants, no central authority, and is trustless. Compare with a permissioned blockchain which is not anonymous, managed by a set of authorities, and provides trust to a limited extent through these authorities
 
@@ -183,6 +193,7 @@ The second phase, or Web 2.0, started in 2004 and is the current state of the in
  
 The next phase is Web 3.0, an open and decentralized ecosystem with data distributed and stored securely across many devices. Web 3.0 no longer relies on centralized servers or their organizations, blockchain technology is regarded as the foundation for Web 3.0. 
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.3.10.png)
 
 ## Review
 In this module, we covered the first generation of blockchain technology represented by Bitcoin, and how it showed that value can be transferred anywhere in the world quickly and securely through a decentralized network. Next, we explored the second-generation blockchains represented by Ethereum, and how they added new features such as smart contracts, the creation of decentralized applications, and new kinds of tokens. We looked at how organizations can be represented by on-chain entities called DAOs and the wide range of decentralized financial use cases, or DeFi.
@@ -192,123 +203,120 @@ We then examined the third generation of blockchains, which aims to address the 
 That’s it for now, and until next time!
 
 ## References
-[Ref.3.1] Buterin, V. “Ethereum Paper”, 2014, Available: https://ethereum.org/en/whitepaper/, Accessed: 2 Dec 2022.<
-[Ref.3.2] Wood, G., “DEVCON1: Ethereum for Dummies“, Available: https://www.youtube.com/watch?v=U_LK0t_qaPo, Accessed: 20 Dec 2022.
-[Ref.3.3] Szabo, N. "Formalizing and securing relationships on public networks." First Monday, 1997.
-[Ref.3.4] Brewer, E. "CAP twelve years later: How the "rules" have changed," in Computer, vol. 45, no. 2, pp. 23-29, Feb. 2012.
-[Ref.3.5] Eisenhardt, K.M., "Agency Theory: An Assessment and Review", The Academy of Management Review, 14 (1): 57–74, 1989.
-[Ref.3.6] Han, R., Yu, J., Lin, H., Chen, S., and Esteves-Veríssimo, P., "On the security and performance of blockchain sharding." Cryptology ePrint Archive, 2021.
+[Ref.3.1] Buterin, V. “Ethereum Paper”, 2014, Available: https://ethereum.org/en/whitepaper/, Accessed: 2 Dec 2022.<br>
+[Ref.3.2] Wood, G., “DEVCON1: Ethereum for Dummies“, Available: https://www.youtube.com/watch?v=U_LK0t_qaPo, Accessed: 20 Dec 2022.<br>
+[Ref.3.3] Szabo, N. "Formalizing and securing relationships on public networks." First Monday, 1997.<br>
+[Ref.3.4] Brewer, E. "CAP twelve years later: How the "rules" have changed," in Computer, vol. 45, no. 2, pp. 23-29, Feb. 2012.<br>
+[Ref.3.5] Eisenhardt, K.M., "Agency Theory: An Assessment and Review", The Academy of Management Review, 14 (1): 57–74, 1989.<br>
+[Ref.3.6] Han, R., Yu, J., Lin, H., Chen, S., and Esteves-Veríssimo, P., "On the security and performance of blockchain sharding." Cryptology ePrint Archive, 2021.<br>
 
 ## Questions
 
-Sub-Unit 1 
+**Sub-Unit 1** 
 
-Select two correct statements about Ethereum.
+*Select two correct statements about Ethereum.*
 It established a central authority to oversee blockchain operations
-The core idea was to create a global computer that could run applications in a distributed manner  (CORRECT ANSWER)
+**The core idea was to create a global computer that could run applications in a distributed manner  (CORRECT ANSWER)**
 It allowed developers to work without any rules/regulations
-It provided a platform for developers to build new types of tokens  (CORRECT ANSWER)
+**It provided a platform for developers to build new types of tokens  (CORRECT ANSWER)**
 
-Sub-Unit 2
+**Sub-Unit 2**
 
-Select three correct statements about the six Ethereum principles.
-Immutability enables the program code to never be changed or deleted (CORRECT ANSWER)
-Permanence stores data offline, making it retrievable (CORRECT ANSWER)
+*Select three correct statements about the six Ethereum principles.*
+**Immutability enables the program code to never be changed or deleted (CORRECT ANSWER)**
+**Permanence stores data offline, making it retrievable (CORRECT ANSWER)**
 Atomicity allows for the entire state of the system to change if a fault occurs
 Provenance prevents data from being deleted
-Immortality gives resistance to censorship and external shutdown (CORRECT ANSWER)
+**Immortality gives resistance to censorship and external shutdown (CORRECT ANSWER)**
 
-Select the two correct statements about provenance, one of Ethereum’s six principles.
-It establishes a clear chain of custody for digital assets (CORRECT ANSWER)
+*Select the two correct statements about provenance, one of Ethereum’s six principles.*
+**It establishes a clear chain of custody for digital assets (CORRECT ANSWER)**
 It automatically destroys the originator of failed transactions
-It provides the ability to trace back events leading to the system's states (CORRECT ANSWER)
+**It provides the ability to trace back events leading to the system's states (CORRECT ANSWER)**
 It allows for some execution paths to be verified
 
-Which blockchain introduced the concept of smart contracts?
+*Which blockchain introduced the concept of smart contracts?*
 Bitcoin
-Ethereum (CORRECT ANSWER)
+**Ethereum (CORRECT ANSWER)**
 Cardano
 Algorand
 
-Sub-Unit 3
+**Sub-Unit 3**
 
-A token can:
-represent ownership of an asset (CORRECT ANSWER)
-hold voting rights (CORRECT ANSWER)
-serve as a medium of exchange (CORRECT ANSWER)
-be used as a way to store value (CORRECT ANSWER)
+*A token can:*
+**represent ownership of an asset (CORRECT ANSWER)**
+**hold voting rights (CORRECT ANSWER)**
+**serve as a medium of exchange (CORRECT ANSWER)**
+**be used as a way to store value (CORRECT ANSWER)**
 act as a consensus algorithm
 
-Sub-Unit 4
+**Sub-Unit 4**
 
-DeFi are financial services that enable trading, lending, fundraising, and investing, without the need for traditional trusted intermediaries like banks.
-TRUE (CORRECT ANSWER)
+*DeFi are financial services that enable trading, lending, fundraising, and investing, without the need for traditional trusted intermediaries like banks.*
+**TRUE (CORRECT ANSWER)**
 FALSE
 
-Instead of managing services through a central authority, what does decentralized finance (DeFi) do?
+*Instead of managing services through a central authority, what does decentralized finance (DeFi) do?*
 Rely on traditional financial institutions and intermediaries 
-Use smart contracts to establish and execute financial agreements (CORRECT ANSWER)
+**Use smart contracts to establish and execute financial agreements (CORRECT ANSWER)**
 Use physical contracts and paperwork for financial agreements
 
-Take a look at the two images below and select the correct answer option that describes the process. (Image Question)
+*Take a look at the two images below and select the correct answer option that describes the process. (Image Question)*
 
-
-
-
-
-A = Decentralized Finance, B = Centralized Finance (CORRECT ANSWER)
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.3.11.png)
+**A = Decentralized Finance, B = Centralized Finance (CORRECT ANSWER)**
 A = Decentralized Autonomous Organization, B = Decentralized Finance
 A = Centralized Finance, B = Decentralized Finance
 
-Select two correct statements about a Decentralized Autonomous Organization (DAO).
-It can be more efficient and require fewer management layers (CORRECT ANSWER)
-In a DAO, decision-making and rule-making are transparent (CORRECT ANSWER)
+*Select two correct statements about a Decentralized Autonomous Organization (DAO).*
+**It can be more efficient and require fewer management layers (CORRECT ANSWER)**
+**In a DAO, decision-making and rule-making are transparent (CORRECT ANSWER)**
 It is immune to all security risks
 DAOs prioritize short-term gains over long-term stability
 
-The Blockchain Trilemma states it is impossible to build and operate a blockchain protocol that is simultaneously:
-Decentralized (CORRECT ANSWER)
-Scalable (CORRECT ANSWER)
+*The Blockchain Trilemma states it is impossible to build and operate a blockchain protocol that is simultaneously:*
+**Decentralized (CORRECT ANSWER)**
+**Scalable (CORRECT ANSWER)**
 Centralized
-Secure (CORRECT ANSWER)
+**Secure (CORRECT ANSWER)**
 Programmable
 
-Cardano is a first-generation blockchain.
+*Cardano is a first-generation blockchain.*
 TRUE 
-FALSE (CORRECT ANSWER)
+**FALSE (CORRECT ANSWER)**
 
-Sub-Unit 6
+**Sub-Unit 6**
 
-How does Cardano increase security of tokens without compromising scalability and decentralization?
+*How does Cardano increase security of tokens without compromising scalability and decentralization?*
 Cardano introduces more intermediaries into the system as new tokens are created
 Cardano allows for new tokens to be created using smart contracts
-Cardano’s protocol ensures that developer-defined tokens inherit the same security properties as its native token (CORRECT ANSWER)
+**Cardano’s protocol ensures that developer-defined tokens inherit the same security properties as its native token (CORRECT ANSWER)**
 
-Sub-Unit 7
+**Sub-Unit 7**
 
-Private blockchains do not exist. Blockchains are always public.
+*Private blockchains do not exist. Blockchains are always public.*
 True
-False (CORRECT ANSWER)
+**False (CORRECT ANSWER)**
 
-Select the correct statements about public and private ledgers and blockchains.
+*Select the correct statements about public and private ledgers and blockchains.*
 Public ledgers often contain sensitive data
-Ledgers are used for keeping records in both public and private blockchains (CORRECT ANSWER)
-Private blockchains can only be accessed by authorized users (CORRECT ANSWER)
+**Ledgers are used for keeping records in both public and private blockchains (CORRECT ANSWER)**
+**Private blockchains can only be accessed by authorized users (CORRECT ANSWER)**
 Private ledgers are open for anyone to view
 
-Sub-Unit 8
+**Sub-Unit 8**
 
-Blockchain is related to Web 3.
-True (CORRECT ANSWER)
+*Blockchain is related to Web 3*
+**True (CORRECT ANSWER)**
 False
 
-Select two correct statements on the evolution of the Internet.
-Web 3.0 has data distributed and stored securely across many devices (CORRECT ANSWER)
+*Select two correct statements on the evolution of the Internet.*
+**Web 3.0 has data distributed and stored securely across many devices (CORRECT ANSWER)**
 Web 1.0 is an open and decentralized ecosystem
-Web 2.0 is the current state of the Internet (CORRECT ANSWER)
+**Web 2.0 is the current state of the Internet (CORRECT ANSWER)**
 
-Take a look at the image below and select the correct option that describes the three web phases. (Image Question)
-
+*Take a look at the image below and select the correct option that describes the three web phases. (Image Question)*
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.3.12.png)
 A: Dynamic, B: Decentralized, C: Static
-A: Static, B: Dynamic, C: Decentralized (CORRECT ANSWER)
+**A: Static, B: Dynamic, C: Decentralized (CORRECT ANSWER)**
 A: Static, B: Decentralized, C: Dynamic
