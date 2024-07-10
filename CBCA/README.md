@@ -8,7 +8,8 @@ This folder contains the content for the Cardano Blockchain Certified Associate 
 
 | Title                        | Description                                                                     |
 | ---                          | ---                                                                             |
-| CBCA                         | A blockchain course for associate with a deep focus on Proof-of-Stake & Cardano |
+| [CBCA](https://acadmey.cardanofoundation.org)
+                       | A blockchain course for associate with a deep focus on Proof-of-Stake & Cardano |
 | [Open Source](./open-source) | An introductory course and guide on Open Source.                                |
 
 ## How to contribute
@@ -18,3 +19,11 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md)
 ## License
 
 [MPL-2.0](./LICENSE)
+
+
+
+
+
+
+
+
