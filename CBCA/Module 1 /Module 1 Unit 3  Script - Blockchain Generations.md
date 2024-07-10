@@ -152,20 +152,20 @@ So we can categorize blockchain types this way:
 
 As shown in the diagram, a permissionless blockchain operates with anonymous participants, no central authority, and is trustless. Compare with a permissioned blockchain which is not anonymous, managed by a set of authorities, and provides trust to a limited extent through these authorities
 
-**|       | Permissionless |Permissioned|**
-| ----------- | ----------- | ----------- |
-| Description | Permission is not required to join the network and participate in the consensus algorithm. |Permission is required to join the network and participate in the consensus algorithm.|
 
-| Syntax      | Permissionless | Permissioned     |
+
+|       | Permissionless | Permissioned     |
 | :---        |    :----:   |          ---: |
 | Description      | Permission is not required to join the network and participate in the consensus algorithm. | Permission is required to join the network and participate in the consensus algorithm.   |
-| Paragraph   | Text        | And more      |
+| Properties   | - Anonymous participants<br> - No central authority<br> - Trustless<br>
+        | And more      |
+| Market type   | Text        | And more      |
+| Advantages   | Text        | And more      |
+| Disadvantages   | Text        | And more      |
 
 
-Properties
-Anonymous participants
-No central authority
-Trustless
+
+
 No anonymous participants
 No single authority, but a group of authorities
 The authorities provides some level of trust
