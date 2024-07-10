@@ -69,6 +69,8 @@ several days. When traveling, customers may be charged higher fees or restricted
 
 DeFi aims to solve these problems by reducing the role of intermediaries and making financial services more accessible to anyone, anywhere. DeFi aims to replicate financial services in a more open and transparent way than traditional finance. Services are not managed by any central authority. Instead, parties use smart contracts to establish and execute financial agreements. By using different models than traditional organizations, it allows people to conduct financial transactions without needing trusted third parties, at a lower cost, and faster pace. DeFi challenges how we think about finance with new products and decentralized exchanges. For example, money could be borrowed from multiple parties in a peer-to-peer network, using smart contracts to agree on flexible terms and tokenizing real-world collateral. Using blockchain-based borrowing platforms can mean lower interest rates than traditional banks, as well as faster transaction times and a more transparent process.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.3.2.png)
+
 ## Decentralized Autonomous Organization (DAO)
 Blockchain technology has the potential to revolutionize how we interact with organizations. 
 
@@ -81,6 +83,9 @@ In traditional organizations, there is often a moral hazard where the self-inter
 The concept began with the DAO project on Ethereum, which aimed to be the first venture capital fund based on smart contracts without conventional management structure. However, the DAO was hacked in 2016, resulting in the loss of a third of the fund. This brought to light the security risks involved in DAOs and kicked off significant improvements in security, regulatory clarity, smart contract auditing, best practices, and education. While not immune to security risks and vulnerabilities, the benefits of DAOs still stand.
 
 Compared to traditional organizations, DAOs have the potential to be more efficient and require fewer management layers. This can save money and reduce the risk of human error and bias. Engagement can improve too with greater transparency and accountability. However, it is crucial for the code used in DAOs to be properly audited and secured. DAOs continue to be the governing bodies of many DeFi applications.
+
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.3.3.png)
+
 
 ## Third Blockchain Generation
 That sums up the second generation of blockchain technology and the great contributions made advancing blockchain. However, significant challenges remain: scalability, interoperability, and sustainability. Third-generation blockchains, like Cardano, work to address these issues. But how are they working to solve them? To answer this, let’s go back to the 1980s.
