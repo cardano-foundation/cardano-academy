@@ -57,7 +57,7 @@ The block header contains its time stamp and a hash–proof of everything contai
 ## Hash Function
 Let’s start with that hash in the block header. What is it?
 
-![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.2.4.png)
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.2.3.png)
 
 A hash function is used to obtain a compact representation of some piece of data – a block for example. It takes an input and returns a fixed-size output called a hash digest. It’s a one-way mathematical function. It can’t be reversed, meaning the original input can’t be derived from the hash. You can think of hashes as a way to ‘compress’ data.
 
