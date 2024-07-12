@@ -170,6 +170,7 @@ B. is the correct image/answer
 - This could be either a symmetric or an asymmetric key algorithm
 
 **Sub-Unit 3**
+
 *Encryption encodes a message into text that can’t be understood. In asymmetric encryption:*
 - Both the sender and the receiver share a private key
 - There is only one key to encrypt and decrypt the message
