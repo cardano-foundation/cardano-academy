@@ -70,7 +70,7 @@ Let’s walk through the example. If Bob wants to receive a message from Alice, 
 
 Meanwhile, Alice will use Bob’s public key to encrypt the cleartext and send the encrypted message or ciphertext to Bob. Bob will then decrypt the ciphertext using his own private key. If an adversary intercepts a copy of the encrypted message, it’s not a problem. The adversary cannot decrypt the ciphertext because they do not have Bob's private key. Also, if we assume the adversary has knowledge of Bob's public key, it is still impossible to generate Bob's private key. A private key can be used to generate the public key but not vice-versa, it is a one-way operation similar to a hash function.
 
-Asymmetric-Key Algorithms
+## Asymmetric-Key Algorithms
 
 There are many asymmetric encryption algorithms, some more commonly used than others. Like the Rivest Shamir Adleman (RSA) and the Elliptical Curve Cryptography (ECC).
 
@@ -80,7 +80,7 @@ A faster and smaller alternative to RSA is the Elliptical Curve Cryptography, or
 
 Note that adversaries will still attempt to break an encryption algorithm without knowledge of the key pair. They likely have some degree of access to one source of information or another. For this reason, encryption is only as good as the algorithm and the ability of the user to keep the private key safe.
 
-CPA-Secure Encryption Algorithm
+## CPA-Secure Encryption Algorithm
 Let’s look at some different attack models hackers might use to break encryption.
 
 The simplest attack model is Chosen Plaintext Attack (CPA). In this attack, the attacker can run encryption algorithms on a computer but can't see the secret key. The attacker picks two messages, m and m', and sends them to the computer. The computer then chooses a random number and encrypts the messages to make c1 and c2. The attacker's job is to guess which encrypted message is m and which is m'.
@@ -89,14 +89,14 @@ The property of being unable to distinguish pairs of ciphertexts based on the me
 
 ![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.4.6.png)
 
-CCA-Secure Encryption Algorithm
+## CCA-Secure Encryption Algorithm
 The Chosen Ciphertext Attack (CCA), is another type of attack. In this approach, the attacker has access to both an encryption and a decryption computer. The attacker picks a few messages, and the computer turns them into a secret code, ciphertext c. The attacker can ask the computer to decode the ciphertext and try to guess the secret key.
 
 This attack model is known as Indistinguishability under a Chosen Ciphertext Attack (IND-CCA). There are two versions of this attack: adaptive and non-adaptive. In non-adaptive, also known as the Lunchtime Attack or IND-CCA1, adversaries can only make decryption requests before seeing the ciphertext c that they are trying to break. In the adaptive variant IND-CCA2, they can continue to make decryption requests even after seeing the ciphertext c provided they do not request to decrypt c itself – otherwise the attack would be trivial. [ref 4.1.3]. In practice, this attack model illustrates the case where an attacker might have gotten access to a list of encrypted messages alongside their non-encrypted sources. Encryption algorithms that are resistant to IND-CCA1 and IND-CCA2 ensures that it is infeasible from an attacker with this added knowledge to break the encryption of another ciphertext. 
 
 ![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.4.7.png)
 
-Cryptographic Assumptions and Quantum Computing
+## Cryptographic Assumptions and Quantum Computing
 Encryption schemes are based on mathematical assumptions. For example, the RSA assumes that it is computationally difficult to calculate the prime factors used in the secret key generation process. A computer would need  to try every prime number to determine the possible factors – an exceedingly time-consuming task. However, quantum computers can factorize numbers far more efficiently using algorithms such as Shor’s algorithm. This means that many encryption algorithms, including RSA and ECC, will be easily broken when quantum computers become available in the market. 
 
 There are several quantum-safe asymmetric algorithms already being developed, such as the hash-based encryption method. This hash-based encryption method, however, uses a larger key size than ECC and so it is not widely used at present. The symmetric encryption family does have several quantum-safe algorithms too, such as AES-256 and Twofish-256, but more alternatives are still required. That’s what makes quantum cryptography important for the future of blockchain. For our purposes, with today’s common computers, private keys are highly unlikely to be generated using a public key. Most of the time, humans are still the weakest link. Private keys must be kept as secure as possible.
@@ -106,18 +106,18 @@ Relying on asymmetric encryption might seem like the best option. However, asymm
 To address all this, the process in a communication system is usually done in two phases. First, a symmetric encryption key will be exchanged using asymmetric cryptography. This key is commonly referred to as the session key. In the second phase, both sender and receivers switch to a symmetric algorithm to encrypt the entire communication.  
 
 The diagram below shows the process. It goes like this:
-Bob sends his asymmetric public key to Alice.
-Alice chooses a symmetric key and encrypts it using Bob’s asymmetric public key.
-Bob then receives the encrypted message and decrypts it with his own asymmetric private key. The decrypted message contains Alice's symmetric key, which is called the session key.
-Bob now switches to symmetric encryption and uses the shared symmetric key from Alice – or session key – to encrypt the message.
-Bob sends the symmetrically encrypted message ciphertext to Alice.
-Finally, Alice decrypts the received message ciphertext using the shared symmetric key and algorithm.
+1. Bob sends his asymmetric public key to Alice.
+2. Alice chooses a symmetric key and encrypts it using Bob’s asymmetric public key.
+3. Bob then receives the encrypted message and decrypts it with his own asymmetric private key. The decrypted message contains Alice's symmetric key, which is called the session key.
+4. Bob now switches to symmetric encryption and uses the shared symmetric key from Alice – or session key – to encrypt the message.
+5. Bob sends the symmetrically encrypted message ciphertext to Alice.
+6. Finally, Alice decrypts the received message ciphertext using the shared symmetric key and algorithm.
 
 As you see, in this mechanism Alice and Bob used an interactive method to exchange a secret key, and then used a symmetric encryption algorithm using the exchanged secret key for the rest of communication. This is actually how most of the encryption works on the Internet. When you access a website through ‘https’, your browser negotiates a session key with the server using asymmetric cryptography and then relies on symmetric encryption throughout.
 
 ![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.4.8.png)
 
-Review
+## Review
 And that’s it, we’ve reached the end of this lecture. Let’s review what we have covered:
 
 In this unit, we explored how data can be encrypted using different encryption algorithms. We looked at how encryption algorithms work in theory and from a practical perspective. Finally, we considered how symmetric and asymmetric encryption compliment each other.
@@ -128,14 +128,15 @@ One final note: We introduced several new concepts and terminology throughout th
 
 See you next time.
 
-References
+## References
 [Ref.4.1.1] Cornell University, “Symmetric-Key Cryptography”, Available:  http://www.cs.cornell.edu/courses/cs5430/2010sp/TL03.symmetric.html , Accessed: 17 Dec 2022.<br>
 [Ref.4.1.2] Rivest, R. L., Shamir, A., and Adleman, L. "A method for obtaining digital signatures and public-key cryptosystems." Communications of the ACM 21, no. 2, pp. 120-126, 1978.<br>
 [Ref 4.1.3] Katz, Jonathan and Lindell, Yehuda. Introduction to Modern Cryptography. 2nd Edition, Chapman & Hall, 2015.<br>
 
-Questions
-Sub-Unit 1
-Which of the following images accurately depicts the flow of an encryption scheme? (Image Question)
+## Questions
+
+**Sub-Unit 1**
+*Which of the following images accurately depicts the flow of an encryption scheme? (Image Question)*
 
 ![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.4.9.png)
 
@@ -143,73 +144,69 @@ Which of the following images accurately depicts the flow of an encryption schem
 
 ![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.4.11.png)
 
-What is the role of the encryption key in the encryption process?
-It serves as a delivery address to send the message to
-It determines how much of the ciphertext will be revealed
-It allows only the participants in the conversation to decrypt the message (CORRECT ANSWER)
+B. is the correct image/answer
 
-Sub-Unit 2
-Symmetric encryption uses two different keys to encrypt and decrypt the data respectively.
-TRUE
-FALSE (CORRECT ANSWER)
+*What is the role of the encryption key in the encryption process?*
+- It serves as a delivery address to send the message to
+- It determines how much of the ciphertext will be revealed
+- **It allows only the participants in the conversation to decrypt the message (CORRECT ANSWER)**
 
-Select the correct statement about symmetric encryption algorithms.
-They require no coordination between participants
-They are a fast and easy way to encrypt a cleartext message (CORRECT ANSWER)
-They are less likely to be decrypted by adversaries than other encryption algorithms
+**Sub-Unit 2**
 
-What type of encryption algorithm does the following image depict? (Image Question)
+*Symmetric encryption uses two different keys to encrypt and decrypt the data respectively.*
+- TRUE
+- **FALSE (CORRECT ANSWER)**
+
+*Select the correct statement about symmetric encryption algorithms.*
+- They require no coordination between participants
+- **They are a fast and easy way to encrypt a cleartext message (CORRECT ANSWER)**
+- They are less likely to be decrypted by adversaries than other encryption algorithms
+
+*What type of encryption algorithm does the following image depict? (Image Question)*
 ![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.4.12.png)
 
-A symmetric-key algorithm (CORRECT ANSWER)
-An asymmetric-key algorithm
-This could be either a symmetric or an asymmetric key algorithm
+- **A symmetric-key algorithm (CORRECT ANSWER)**
+- An asymmetric-key algorithm
+- This could be either a symmetric or an asymmetric key algorithm
 
-Sub-Unit 3
-Encryption encodes a message into text that can’t be understood. In asymmetric encryption:
-Both the sender and the receiver share a private key
-There is only one key to encrypt and decrypt the message
-Both private keys and public keys can be used to encrypt and decrypt messages (CORRECT ANSWER)
-Messages can only be encrypted with a private key
+**Sub-Unit 3**
+*Encryption encodes a message into text that can’t be understood. In asymmetric encryption:*
+- Both the sender and the receiver share a private key
+- There is only one key to encrypt and decrypt the message
+**- Both private keys and public keys can be used to encrypt and decrypt messages (CORRECT ANSWER)**
+- Messages can only be encrypted with a private key
 
+*A private key should be shared with the recipient of the message
+- TRUE
+- **FALSE (CORRECT ANSWER)**
 
-A private key should be shared with the recipient of the message.
-TRUE
-FALSE (CORRECT ANSWER)
+*In public key cryptography, both parties generate their own private key and associated public key from their private key.*
+- **TRUE (CORRECT ANSWER)**
+- FALSE
 
+*How does asymmetric encryption differ from symmetric encryption regarding key sharing?*
+- Asymmetric encryption requires the exchange of a shared key
+- Asymmetric encryption uses a private key for encryption and a public key for decryption
+- **Asymmetric encryption does not require sharing a private key, but the public key is meant to be shared (CORRECT ANSWER)**
 
-In public key cryptography, both parties generate their own private key and associated public key from their private key. 
-TRUE (CORRECT ANSWER)
-FALSE
+**Sub-Unit 5**
 
+*The Elliptic Curve Digital Signature Algorithm (ECDSA) is an example of symmetric key algorithms.*
+- True
+- **False (CORRECT ANSWER)**
 
-How does asymmetric encryption differ from symmetric encryption regarding key sharing?
-Asymmetric encryption requires the exchange of a shared key
-Asymmetric encryption uses a private key for encryption and a public key for decryption
-Asymmetric encryption does not require sharing a private key, but the public key is meant to be shared (CORRECT ANSWER)
+*Which asymmetric encryption algorithm should you use if you’re looking for faster performance and smaller key sizes compared to RSA?*
+- AES
+- **ECC (CORRECT ANSWER)**
+- DES
 
-Sub-Unit 5
-The Elliptic Curve Digital Signature Algorithm (ECDSA) is an example of symmetric key algorithms.
-True
-False (CORRECT ANSWER)
+*Which asymmetric encryption algorithm is commonly used for digitally signing cryptocurrency transactions, such as in Bitcoin?*
+- RSA
+- ECC
+- **ECDSA (CORRECT ANSWER)**
 
+**Sub-Unit 7**
 
-Which asymmetric encryption algorithm should you use if you’re looking for faster performance and smaller key sizes compared to RSA?
-AES
-ECC (CORRECT ANSWER)
-DES
-
-
-Which asymmetric encryption algorithm is commonly used for digitally signing cryptocurrency transactions, such as in Bitcoin?
-RSA
-ECC
-ECDSA (CORRECT ANSWER)
-Sub-Unit 7
-Quantum computers may render some encryption algorithms obsolete as they can factorize numbers very efficiently thus being able to break some algorithms. 
-TRUE (CORRECT ANSWER)
-FALSE
-
-
-
-
-
+*Quantum computers may render some encryption algorithms obsolete as they can factorize numbers very efficiently thus being able to break some algorithms**
+- **TRUE (CORRECT ANSWER)**
+- FALSE
