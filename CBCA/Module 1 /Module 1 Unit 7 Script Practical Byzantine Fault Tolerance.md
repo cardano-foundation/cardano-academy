@@ -117,19 +117,19 @@ In this unit we have covered consensus in distributed systems. We focused on Pra
 
 ## Glossary
 
-*Synchronous system*: A system is said to be synchronous if a defined time bound exists between the moment a request is sent and a response received.<br>
-*Asynchronous system*: A system is said to be asynchronous if a defined upper time bound does not exist between the moment a request is sent and a response received.<br>
-*Fault tolerance*: Fault tolerance is the ability of a system to keep functioning even in the presence of arbitrary faults.<br>
-*Network Time Protocol (NTP)*: The Network Time Protocol is a well-known Internet protocol used to synchronize clocks of various machines across the planet.<br>
+- *Synchronous system*: A system is said to be synchronous if a defined time bound exists between the moment a request is sent and a response received.<br>
+- *Asynchronous system*: A system is said to be asynchronous if a defined upper time bound does not exist between the moment a request is sent and a response received.<br>
+- *Fault tolerance*: Fault tolerance is the ability of a system to keep functioning even in the presence of arbitrary faults.<br>
+- *Network Time Protocol (NTP)*: The Network Time Protocol is a well-known Internet protocol used to synchronize clocks of various machines across the planet.<br>
 
 ## References
-[Practical Byzantine Fault Tolerance](https://pmg.csail.mit.edu/papers/osdi99.pdf)) <br>
-[Impossibility of Distributed Consensus with One Faulty Process](https://dl.acm.org/doi/pdf/10.1145/3149.214121) <br> 
-[Ouroboros BFT - A Simple Byzantine Fault Tolerant Consensus Protocol](https://eprint.iacr.org/2018/1049.pdf) 
-[Tendermint Documentation](https://docs.tendermint.com/v0.34/)
-[HyperLedger Sawtooth PBFT](https://sawtooth.hyperledger.org/docs/1.2/pbft/introduction-to-sawtooth-pbft.html)
-[An introduction to PBFT consensus](https://sawtooth.hyperledger.org/docs/1.2/pbft/introduction-to-sawtooth-pbft.html)
-[Internet Time Synchronization: the Network Time Protocol](https://www.rfc-editor.org/rfc/rfc1129.pdf)
+- [Practical Byzantine Fault Tolerance](https://pmg.csail.mit.edu/papers/osdi99.pdf)) 
+- [Impossibility of Distributed Consensus with One Faulty Process](https://dl.acm.org/doi/pdf/10.1145/3149.214121) 
+- [Ouroboros BFT - A Simple Byzantine Fault Tolerant Consensus Protocol](https://eprint.iacr.org/2018/1049.pdf) 
+- [Tendermint Documentation](https://docs.tendermint.com/v0.34/)
+- [HyperLedger Sawtooth PBFT](https://sawtooth.hyperledger.org/docs/1.2/pbft/introduction-to-sawtooth-pbft.html)
+- [An introduction to PBFT consensus](https://sawtooth.hyperledger.org/docs/1.2/pbft/introduction-to-sawtooth-pbft.html)
+- [Internet Time Synchronization: the Network Time Protocol](https://www.rfc-editor.org/rfc/rfc1129.pdf)
 
 ## Questions
 
