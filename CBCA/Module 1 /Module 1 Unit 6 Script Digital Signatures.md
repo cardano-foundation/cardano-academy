@@ -147,11 +147,11 @@ Digital signatures can authenticate the identity of the sender of a transaction,
 **Sub-Unit 2**
 
 *Study the image below and label a and b respectively. Select two CORRECT options: (Image Question)*
-![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.6.5.png)
-**a- Encryption algorithm (CORRECT ANSWER)**
-b- Encryption algorithm
-a- Decryption algorithm
-**b- Decryption algorithm (CORRECT ANSWER)**
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.6.5.png)<br>
+**a- Encryption algorithm (CORRECT ANSWER)**<br>
+b- Encryption algorithm<br>
+a- Decryption algorithm<br>
+**b- Decryption algorithm (CORRECT ANSWER)**<br>
 
 *Alice calculates the hash of the cleartext message and encrypts it using her private key. Bob receives the message, calculates its hash, and decrypts the encrypted hash using Alice’s public key. What does it mean if the generated and decrypted hash values in the digital signature process are the same?*
 - The signature is invalid
