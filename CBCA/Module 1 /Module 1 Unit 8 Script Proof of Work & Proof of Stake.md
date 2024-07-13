@@ -18,6 +18,8 @@ Proof-based consensus algorithms form the backbone of many blockchain networks, 
 
 Both proof of work and proof of stake add new blocks to a chain. In both cases, block producers contribute a resource to the network. In fact, block producers are given a chance to produce a block proportionally to the resource they contribute to the network. In proof of work, the resource is quantified in hashing power. In proof of stake, it is the underlying native currency of the network, also known as stake.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.8.1.png)
+
 In proof of work, the higher the hashing power, the higher the chances for a node to be elected as a block producer. Note that in both cases – and in most proof-based consensus algorithms - assumptions are similar to those seen for Practical Byzantine Fault Tolerant (PBFT) which we covered in the previous unit. In particular, it is assumed that non-malicious actors are in control of a majority or supermajority of the system. So the key difference between the two consensus algorithms is the type of resource needed.
 
 You may now wonder how we go from hashing power or stake to choosing a block producer. If that's the case, not to worry, we are about to dive in, starting with proof of work.
@@ -27,7 +29,11 @@ You may now wonder how we go from hashing power or stake to choosing a block pro
 
 Block producers are called miners in proof of work. Their role is to solve mathematical puzzles based on the rules of the respective protocol. In particular, miners must find a suitable hash digest value for their block to be added to the chain. By ’suitable’ we mean the hash value must meet a specific criteria: Typically, we talk about a number of leading zeros when represented as a hexadecimal value.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.8.2.png)
+
 As hashing functions are deterministic, miners must introduce a variable element to blocks, such as an arbitrary number. That number is called a nonce. Mining is, therefore, the process of repeatedly calculating hash digest values for many different nonce values until a suitable hash is found. Remember that hashing functions are one-way: finding a block from a given hash value is impossible. Indeed, miners cannot start from a suitable hash value and predict a block that would hash back to it. They have no other choice than to try again and again. This process of trying – and finding – is called work.
+
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.8.3.png)
 
 The number of leading zeros is chosen by the protocol. It is adjusted based on the available hashing power in the system such that, on average, a solution is found at regular intervals. This number of leading zero is also indirectly called the chain difficulty. When more hashing power is put into the system, the difficulty is increased to keep the block creation time relatively constant. This is important as work must have a crucial property: it must take time. We'll understand why shortly.
 
@@ -53,12 +59,16 @@ Proof of stake borrows from the core idea behind proof of work: block producers 
 
 This is the first fundamental difference between proof of work and proof of stake. The former relies on a physical resource that materializes as dedicated hardware: the mining rigs. The latter is entirely virtual and only exists -- at least initially -- within the system itself. In proof of stake, block producers will commit their own assets to the consensus protocol and are chosen proportionally to their commitment. It is called stake as it reflects how much "skin-in-the-game" each participant has in the system. And similarly to proof of work, security assumptions only hold provided that a majority or supermajority of the stake is owned by honest participants.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.8.4.png)
+
 **Follow the Satoshi**<br>
 So, we have the stake. But where is the proof? And how do we tie the two together? One core idea initially formulated by Bentov et al is an algorithm called "follow-the-satoshi". The idea is simple. 
 
 Imagine all the circulating supply of a network divided into its smallest possible unit. In the case of Bitcoin, the smallest unit is a Satoshi, where 100 million Satoshi equals 1 bitcoin. Billions and billions of coins of the smallest amount. Each of those coins would have an owner engraved on it. Now, put all these coins in a rather large bag and blindly pick one at random. The owner of the chosen coin becomes the designated block producer.
 
 And this is it! Pick a coin from all available coins and follow it back to its owner. This simple approach ensures that the chances of being picked are proportional to the stake owned - provided the coin is picked randomly. We'll come back to this in a second.
+
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.8.5.png)
 
 Interestingly enough, this concept initially introduced for proof-of-stake consensus was later borrowed by Bitcoiners who not only looked at owners of ‘Satoshis’ but also defined a way to order them and assign them unique numbers. These are now called ‘Bitcoin ordinals’ and have become the basis for many other features of Bitcoin, such as NFTs. One can also derive features with different rarity levels by ordering satoshis with a unique rank. For example, the first Satoshi created in a block or the first satoshi of a halving cycle. Okay, enough digressing; let's come back to following the satoshis.
 
@@ -71,7 +81,11 @@ In proof of work, block producers are chosen pseudo-randomly, due to the nature 
 
 This is the second fundamental difference between proof-of-work and proof-of-stake systems. While proof-of-work consensus can usually rely on work as a source of randomness, proof-of-stake systems must introduce a new mechanism. A notable attempt to solve this problem is the original Ouroboros protocol by Kiayias et al, designed for Cardano. Ouroboros proposes a system based on a secure multi-party computation between the different participants to the consensus protocol in order to produce secure randomness.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.8.6.png)
+
 In essence, each participant contributes to calculating the random value, taking into account the previous activity of the system. This makes it hard in practice for a single actor to influence the random outcome, especially when many participants are involved.
+
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.8.7.png)
 
 Later, advances in cryptography by Micali et al led to the elaboration of Verifiable Random Functions. These combine public-key cryptography and hashing into functions that can be used to generate pseudo-random values from an input, as well as proof that values are generated correctly without allowing verifiers to produce or alter values themselves. This has become a choice of randomness for various major proof-of-stake blockchains such as Cardano (through Ouroboros Praos), Polkadot, Algorand or Dfinity.
 
@@ -88,6 +102,8 @@ All-in-all, these are relevant concerns to remember when looking at proof-of-sta
 
 ## Proof of Stake vs Proof of Stake
 We've covered the fundamentals behind proof of work, proof of stake, and their key differences. However, the proof-of-stake landscape is even more scattered and deserves more attention. So let's compare proof of stake with proof of stake.
+
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.8.8.png)
 
 **Delegation**<br>
 The first differentiator relates to the ability of stakeholders to delegate their stake. This is common in the proof-of-stake landscape and for good reasons. Indeed, delegation can allow many small actors to unite and stand against more prominent actors. In a certain way, this is a mechanism to limit the plutocratic aspect of proof-of-stake systems. On a different note, it also copes with stakeholders' lack of desire (or capacity) to actively participate in the consensus protocol. Not everyone wants to run a node and keep an eye on a complex infrastructure stack. In fact only some people are equipped to do so.
@@ -162,6 +178,8 @@ Giang-Truong Nguyen and Kyungbaek Kim (2018). A Survey about Consensus Algorithm
 - In proof of stake, block producers are elected based on their ownership of mining rigs
 
 *View the images below and select the one showcasing a proof-of-stake algorithm. (Image Question)*
+
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.8.9.png)
 
 - Image A shows a proof-of-stake algorithm
 - **Image B shows a proof-of-stake algorithm (CORRECT ANSWER)**
