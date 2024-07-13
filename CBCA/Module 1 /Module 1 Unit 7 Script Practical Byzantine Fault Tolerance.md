@@ -21,7 +21,7 @@ A consensus algorithm is a mechanism whereby different actors can reach agreemen
 
 There are many ways of achieving consensus, for example,  through a central all-knowing authority which is tasked to resolve any possible conflict. The challenge comes when designing a consensus algorithm that must have certain desirable properties. For example, permissionless blockchains need the property that anyone should be able to take part in the consensus algorithm. Another property needed for consensus algorithms is fault tolerance in an adversarial environment.
 
-![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.7.1.png)
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.7.1.jpg)
 
 ## Fault Tolerance
 Fault tolerance is the ability of a system to keep functioning even in the presence of arbitrary faults. Faults can be genuine defects of certain parts of the systems, or they can be of adversarial nature.
