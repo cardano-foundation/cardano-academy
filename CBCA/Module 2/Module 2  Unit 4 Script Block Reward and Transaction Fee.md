@@ -13,6 +13,8 @@ Hello everyone, and welcome. My name is [lecturer name].
 ## Table of Contents
 In this unit, we will introduce the concept of incentives in blockchains and why they are necessary. We will explore block rewards and transaction fees and find out why blockchain networks use them. As always, we have a lot to cover, so let’s get started!
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.4.1.png)
+
 ## Why Blockchain Needs Incentives - Sybil Attacks
 Why are incentives necessary? Let’s start by looking at what can go wrong when you don’t have compelling incentives.
 
@@ -40,6 +42,8 @@ To fully understand the incentive mechanisms, we first need to introduce another
 
 In Bitcoin and many other proof-of-work blockchains, there is a special type of transaction called a coinbase transaction. This is the first transaction of each block and is placed there by the block producer who created the block. The coinbase transaction creates brand-new tokens payable to that block producer as a reward for block creation. It has no inputs, and its amount is pre-determined by rules fixed by the protocol. This is how new tokens are put in circulation during the block generation process in most proof-of-work protocols.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.4.2.png)
+
 Now, back to incentives.
 
 In Bitcoin, the miner producing the block searches for a suitable hash for any given block.  When that hash is found, the block is mined, including the coinbase, and is propagated to the network. The coinbase transaction is a token creation transaction, and the miner chooses an address belonging to itself as the recipient address of this transaction.
@@ -48,8 +52,12 @@ This reward acts as an incentive for the miners to process the transactions in t
 
 This race encourages miners in the network to invest in infrastructure to increase their chances of winning. This helps the network become more resilient because it increases the total computing power of the network. Hence, running a successful 51% double-spending attack will be more expensive for attackers. This computing power is costly. Costly in hardware but much more so in energy. We have touched upon it before. Cheap energy sources attract miners since they can improve their chances of mining a block at a lower cost, making it more profitable. Bitcoin mining now requires a large investment to purchase high computing power, and the chances of mining a block by a small miner are close to zero.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.4.3.png)
+
 **Fixed Block Reward in Bitcoin**<br>
 Block rewards, in the case of Bitcoin, are known in advance and are consistent. However, the reward amount halves every 210,000 blocks, approximately every four years, or when the block height increases by 210,000. Halving the block reward reduces a miner's profits and encourages energy efficiency amongst miners to remain profitable. [ref.5.2.1] 
+
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.4.4.png)
 
 As you can see from this table, bitcoin rewards have already been reduced from 50 BTC per block at block height zero to 6.25 BTC per block as of May 12th, 2020. At current mining rates, the block rewards are projected to reduce by 50% in 2024, then in 2028, and again in 2032.  
 
@@ -84,6 +92,9 @@ Congratulations, you’ve made it to the end! Let’s recap what we learned. In 
 - FALSE
 
 *What in the image below tells us that a Sybil attack may be occurring? (Image Question)*
+
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.4.5.png)
+
 - There is an uneven number of votes
 - **User 4 is casting multiple votes (CORRECT ANSWER)**
 - Users 1 - 3 are only casting one vote each
