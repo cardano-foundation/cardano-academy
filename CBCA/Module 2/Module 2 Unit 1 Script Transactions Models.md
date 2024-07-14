@@ -26,7 +26,7 @@ There are various kinds of tokens. Tokens tied to the underlying functional desi
 **Addresses**<br>
 Before we dive in, we need to rapidly introduce a concept that we’ll be referring to quite often: Addresses. There’s a lot to say about addresses and we’ve reserved an entire unit about them later, so we won’t go into detail yet. For now, it is sufficient to understand that an address is derived from a public key. They represent ownership and are commonly shared between users and applications. Addresses are said to “hold funds”, which means that they are associated with the underlying private key from which a signature is required in order to spend funds they carry.
 
-**Browsing Tokens**
+**Browsing Tokens**<br>
 You can browse the tokens associated with each address using blockchain explorers. Here are some examples: For Cardano, we have https://explorer.cardano.org/. For Bitcoin, there’s https://btcscan.org/, and for Ethereum, we can use https://ethscan.org/.
 
 ![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.1.1.png)
@@ -38,7 +38,7 @@ Transactions are atomic modifications to the blockchain ledger, meaning they eit
 
 ![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.1.2.png)
 
-**Transaction Life Cycle**
+**Transaction Life Cycle**<br>
 Blockchain technology is designed to guarantee the completion of transfers. The process of creating transactions, transmitting them across the network, getting verified, and then being included in a block is fundamental to the design.
 
 The first step in the transaction lifecycle is to create it . A transaction contains inputs, outputs, and an amount. Inputs identify where the blockchain tokens come from. Outputs identify where the tokens are going to. Amount specifies how many tokens should be transferred from inputs to outputs. 
@@ -53,7 +53,7 @@ Finally, step 5: The transaction is added to a block. Once validated and distrib
 
 ![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.1.3.png)
 
-**Transaction Fees**
+**Transaction Fees**<br>
 Most transactions include fees that must be paid by the sender of the transaction. These transaction fees compensate the block producers for processing the transaction. This includes validating the transaction, inserting the transaction into a new block, and sending the new block to other nodes on the network. Transaction fees are an incentive mechanism for block producers to maintain the network and include transactions in the next block. 
 
 They also serve as a penalty mechanism to reduce spam transactions, or any kind of system abuse, because they impose a minimal cost on every transaction.
@@ -78,20 +78,21 @@ Let’s look at this in the blockchain domain. Alice has twenty tokens in the fo
 
 A transaction is like a receipt that describes precisely this operation for anyone to inspect. In particular, it tells nodes to remove spent inputs from their ledger and to add the produced outputs instead.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.1.5.png)
 
-
-Spending Multiple Input UTxOs 
+**Spending Multiple Input UTxOs**<br> 
 When Alice does not have a single bill in her wallet to pay for something, she will obviously combine several smaller bills instead. The same goes for blockchain transactions. If Alice doesn't have a single UTxO with enough tokens to complete a transaction, she can use multiple UTxOs to gather the required token amount for the transaction.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.1.6.png)
 
-A Transaction with Transaction Fees
+**A Transaction with Transaction Fees**<br>
 Transaction fees enter the picture in the middle of all this. They are the difference between the sum of inputs and the sum of outputs. Any excess amount that remains after all outputs have been deducted from all inputs is considered a fee. 
  
 Alice wants to spend 8 tokens to buy coffee from Bob. To ensure this transaction is processed promptly, she includes a transaction fee of 0.5 tokens. This means the total value of the consumed transactions is 8.5 tokens. Her wallet must therefore source a UTxO set that adds up to 8.5 tokens or more and, if necessary, define the change amount. 
 
 Let’s assume Alice's wallet contains three UTxO entries with a total amount of 10 tokens. Therefore, Alice will need to use these three UTxO entries, creating one output to Bob’s café for 8 tokens and a second output amount of 1.5 tokens in change back to her own wallet. This leaves 0.5 tokens unallocated as an implicit fee for the transaction.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.1.7.png)
 
 Users must be careful not to accidentally pay a high fee by not spending their inputs fully. For instance, if using a 20 token UTxO to pay for a 1 token transaction, a 19 token change output back to the user’s wallet must be included. Otherwise, the 19 unused tokens will be considered as a transaction fee by the block producer processing the transaction. Although the user will receive priority processing and make the block producer happy, this is probably not what was intended. 
 
@@ -99,7 +100,7 @@ Note that on Cardano, fees are explicitly stated in the transaction, and the led
 Spent and New UTxOs in a Blockchain
 As we mentioned, the consumed UTxOs are called 'inputs', and the newly created UTxOs are called ‘outputs.’ Outputs of previous transactions, therefore, become inputs of future transactions. Over time, this forms a type of data structure called a Directed-Acyclic Graph (DAG), as shown in the diagram below.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.1.8.png)
 
 In the UTxO model, the user’s wallet software keeps track of all user’s UTxOs to show the user’s account balance. The balance is the sum of UTxOs controlled by one or more wallet addresses. From the diagram [Fig. 5.1.9.] we can see that each UTxO can be used as an input to a new transaction. Once a UTxO is used, it becomes "spent" and can not be used again. In a transaction, an address and value are specified to create a new output. That output can then be used in another transaction.
 
@@ -109,15 +110,16 @@ In an account-based blockchain, a user's token balance is stored in an account t
 
 A UTxO-based blockchain keeps track of all user’s UTxOs so that a user’s token balances can be determined by summing up the tokens in each UTxO.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.1.9.png)
 
-Transactions Change the State in the Blockchain
+**Transactions Change the State in the Blockchain**<br>
 Each node in a blockchain network continually keeps track of all UTxO entries. This is called the blockchain’s state and it is stored in each node's data directory. Transactions change the state of the system. So we can look at blockchains as replicated deterministic state machines. Let’s break that down.
 
 A state machine is a computer science concept whereby a machine can have multiple states but only one at any time. A state describes the current representation of the system. Transactions change that state. Changes from a state to another are called transitions. The state machine is said to be deterministic because anyone can reproduce the entire sequence of transitions and always end up with the same result. 
 
 As you can see in the diagram, transactions, which are the actions performed on the network, cause changes in the current state of the system. The state is updated when a new block, with the most recent transactions, is included in the chain. 
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.1.10.png)
 Transaction ID and Output Index in UTxOs
 So how are UTxOs referenced in the system? 
 As shown here, a UTxO entry is uniquely identified by two components:
@@ -126,13 +128,14 @@ And the position of the output within that transaction - the output index.
 
 Any valid UTxO entry in the system can be referenced using a transaction id and an output index.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.1.11.png)
 
 Differences Between UTxO-Based and Account-Based Models
 Let’s summarize the differences between UTxO-based and Account-based models.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.1.12.png)
 
-
-Extended UTxO (EUTxO)
+## Extended UTxO (EUTxO)
 computer program or a transaction protocol that enforces the execution of actions according to the terms of a contract or an agreement. 
 
 However, Ethereum’s account-based model means contracts modify the global chain’s state all at the same time, concurrently. Running smart contracts modifies the ledger but only carries modifications and does not have any reference to the previous state. The problem is that a smart contract may not even be applicable by the time it reaches a block producer. This is not deterministic, so it makes the account-based model unpredictable in practice. 
@@ -147,16 +150,18 @@ The material difference is that in Cardano, the contract's on-chain code checks 
 
 In other words, an on-chain smart contract script in Cardano is a validator that verifies a transaction and either authorizes a spend or rejects it. It does not produce any side effects such as cascade activations like in Ethereum. An EUTxO-based application therefore requires an off-chain infrastructure to monitor on-chain activity and trigger actions accordingly. That being said, we usually call smart contracts the ensemble: the on-chain validation script and its supporting off-chain infrastructure.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.1.13.png)
 
-Processing Transactions in Account-Based and EUxTO-Based Models
+**Processing Transactions in Account-Based and EUxTO-Based Models**<br>
 The EUTxO model offers unique advantages over the account-based model. The success or failure of transaction validation depends only on the transaction itself and its inputs. Transactions can be analyzed in isolation since they do not rely on any external factor that may vary, such as time or the global state. More specifically, transaction validations are split into two phases. The first phase is fast and performs structural checks on the transaction. Block producers also confirm the presence and validity of inputs. The second phase executes any scripts carried by the transaction, using the well-formed transaction as an execution context.
 
 As a consequence, the validity of a transaction can be checked off-chain, before the transaction is sent to the blockchain network. This also means that the fees required for a valid transaction can be predicted precisely prior to submitting it. This contrasts with Ethereum, where transactions can fail mid-execution. In a typical account-based blockchain, contracts need to retrieve state from the chain, whereas in EUTxO that state is fully encapsulated in the transaction.
 UTxO vs. EUTxO
 As shown in the diagram [Fig 5.1.16], the EUTxO model augments the traditional UTxO model with two new elements: datum and redeemer. Both are pieces of data provided at different moments. The datum is provided in the output when it is created, by the party who locks the funds. The redeemer, on the other hand, is supplied in the transaction that is spending the funds. Think of a guessing game where the datum is the secret word to find and the redeemer is the guess that one makes.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.1.14.png)
 
-Script, Datum, and Redeemer
+**Script, Datum, and Redeemer**<br>
 We’ve said earlier that addresses in outputs referred to public keys. With EUTxO, addresses can also refer to scripts. Each script defines arbitrary unlocking logic that must be met in order for the unspent output to be spent.
  
 This logic is called the validator script or, simply, the script. On execution, each script uses its datum, redeemer, and transaction elements to determine whether to unlock funds. Let’s look at this example to help us understand the relationship between a script, a datum, and a redeemer. The script can be thought of as a mathematical function returning a yes or no.
@@ -171,8 +176,9 @@ This is what makes the EUTxO model completely deterministic: the function and it
 
 This extended programming capability sets Cardano apart from Bitcoin, as it considers the whole transaction context and allows developers to provide additional parameters  when determining whether an unspent output can be spent.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.1.15.png)
 
-Transactions and EUTxOs
+## Transactions and EUTxOs
 How does a block producer run a script in a EUTxO model blockchain?
 
 As you know, nodes keep track of a ledger, the record of all transactions executed by the platform. That ledger includes the EUTxO set created from all blocks. A EUTxO dependent on a script will have the hash value of the script in its address field and a datum.
@@ -180,8 +186,9 @@ As you know, nodes keep track of a ledger, the record of all transactions execut
 The actual script and its redeemer are contained separately in the users’ transactions.
 Now, when a node receives a script-based transaction to process, it generates the hash of the script in the transaction and compares it with the hash of the script in the EUTxO. If they match, the block producer will run the function represented by the script, using the datum from the EUTxO and the redeemer from the transaction. To be considered a valid transaction, all scripts involved in it must return a non-error value when executed – that is, they should all validate that their spending conditions are met by the transaction.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.1.16.png)
 
-Review
+## Review
 Let’s recap what we have learned in this lecture:
 
 In this unit we looked at transaction models - specifically, the Extended UTxO record-keeping model in Cardano.
@@ -189,18 +196,17 @@ In this unit we looked at transaction models - specifically, the Extended UTxO r
 We started with a simple overview of tokens and why they matter in transactions and the blockchain ecosystem. We compared account-based and EUTxO transaction models then walked through the transaction life cycle. Finally, we looked at what EUTxO has to offer and how it makes developing applications safer and more scalable. 
  
 We hope you enjoyed it and I will see you in one of the next units.
-References
-[Ref.5.1.1] Chakravarty, M. M., Chapman, J., MacKenzie, K., Melkonian, O., Peyton Jones, M., & Wadler, P. (2020, February). The extended EUTxO model. In International Conference on Financial Cryptography and Data Security, pp. 525-539, Sabah, Malaysia, Feb, 2020.
-[Ref.5.1.2] Brief introduction to Cardano's EUTxO accounting model,  Available: https://forum.cardano.org/t/brief-introduction-to-cardanos-eutxo-accounting-model/100893 ,  Accessed: Sep. 15, 2022.
-[Ref.5.1.3] Chard, F., & Fletcher-Smith, C. (2022). Blockchain scalability for smart contract systems using EUTxO model. arXiv preprint arXiv:2202.00561.
-[Ref.5.1.4] Sanchez F. “Cardano’s Extended EUTxO accounting model – built to support multi-assets and smart contracts”, Available: https://iohk.io/en/blog/posts/2021/03/11/cardanos-extended-utxo-accounting-model/ , Accessed: Sep. 15, 2022.
+
+## References
+[Ref.5.1.1] Chakravarty, M. M., Chapman, J., MacKenzie, K., Melkonian, O., Peyton Jones, M., & Wadler, P. (2020, February). The extended EUTxO model. In International Conference on Financial Cryptography and Data Security, pp. 525-539, Sabah, Malaysia, Feb, 2020.<br>
+[Ref.5.1.2] Brief introduction to Cardano's EUTxO accounting model,  Available: https://forum.cardano.org/t/brief-introduction-to-cardanos-eutxo-accounting-model/100893 ,  Accessed: Sep. 15, 2022.<br>
+[Ref.5.1.3] Chard, F., & Fletcher-Smith, C. (2022). Blockchain scalability for smart contract systems using EUTxO model. arXiv preprint arXiv:2202.00561.<br>
+[Ref.5.1.4] Sanchez F. “Cardano’s Extended EUTxO accounting model – built to support multi-assets and smart contracts”, Available: https://iohk.io/en/blog/posts/2021/03/11/cardanos-extended-utxo-accounting-model/ , Accessed: Sep. 15, 2022.<br>
 [Ref.5.1.5] “EUTxO Handbook”, Available:
-https://ucarecdn.com/e14c6f03-152d-4361-abaf-f1fee5eb2e4e/EUTxOhandbook3.pdf , Accessed: Sep. 15, 2022.x
-[Ref.5.1.6] Cardano fee structure, Available: https://docs.cardano.org/explore-cardano/fee-structure , Accessed: Jan 11, 2023.
+https://ucarecdn.com/e14c6f03-152d-4361-abaf-f1fee5eb2e4e/EUTxOhandbook3.pdf , Accessed: Sep. 15, 2022.x<br>
+[Ref.5.1.6] Cardano fee structure, Available: https://docs.cardano.org/explore-cardano/fee-structure , Accessed: Jan 11, 2023.<br>
 
-
-
-Questions
+## Questions
 Sub-Unit 1
 
 Select two correct statements about tokens.
@@ -237,7 +243,7 @@ A transaction, once validated, is added to a block and distributed across the ne
 
 Analyze the image below and select the missing steps in the transaction life cycle.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.1.17.png)
 
 
 A: The transaction is signed; B: The transaction is verified (CORRECT ANSWER)
@@ -296,7 +302,7 @@ Private key
 
 Select the answer option that correctly labels the highlighted areas on the image below. (Image Question)
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.1.18.png)
 
 
 A = Transaction id, B = output index (CORRECT ANSWER)
@@ -341,12 +347,15 @@ It provides the information needed to unlock the funds when attempting to spend 
 It functions as the script itself, defining the arbitrary unlocking logic for the unspent output
 
 Select the image that refers to the correct order of a script, datum and redeemer. (Image Question)
-Same image - Datum, Script, Redeemer
 
-Same image - Redeemer, Datum, Script
+- Same image - Datum, Script, Redeemer
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.1.19.png)
 
-CORRECT - Script, Datum, Redeemer (CORRECT ANSWER)
+-Same image - Redeemer, Datum, Script
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.1.20.png)
 
+- **CORRECT - Script, Datum, Redeemer (CORRECT ANSWER)**
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.1.21.png)
 
 What needs to happen for a EUTxO transaction to be considered valid?
 At least half of the scripts involved need to return a non-error value when executed
