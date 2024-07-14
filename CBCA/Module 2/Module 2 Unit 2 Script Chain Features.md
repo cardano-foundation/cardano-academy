@@ -24,10 +24,14 @@ Step two: The block-producing node begins by sending a request to find other nod
 
 Step three: The block producer submits a request to its neighboring nodes for a copy of the blockchain data. Each node sends a copy, but each copy received may differ. To determine which copy of the blockchain is the correct one, the block producer generally uses the longest chain rule.  
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.2.1.png)
+
 Here’s how it works. The block producer compares the blocks in the chains and identifies the commonalities between them. As you can see in the diagram, the blocks in the chains differ and form a fork. The blockchain with a longer branch is taken as the valid blockchain. The block producer then disregards the shorter branches. This process, known as the longest chain rule, ensures that the block producer works with the blockchain's most commonly agreed-upon version. Both Cardano and Bitcoin use the longest chain rule.
 
 ## Genesis Block
 In order for a new block-producing node to join a network, it needs an initial configuration detailing the genesis block, which will in turn allow it to synchronize the blockchain. The genesis configuration should be provided from a trusted or well-known source. Once the new block producer has the genesis configuration, they can use the longest chain rule, as previously explained, to receive subsequent blocks from any other block producers. This rule is sufficient for the proof-of-work algorithm used in Bitcoin, as producing a long chain of blocks requires significant computing resources.
+
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.2.2.png)
 
 ## Longest Chain Rule in PoS
 However, as Cardano uses a proof-of-stake algorithm, it applies a different version of the longest chain algorithm. 
@@ -42,19 +46,27 @@ In the diagram, let’s make k=2. A node already has chain A and sees chain B. B
 
 We’ll discuss the common prefix k later in this unit.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.2.3.png)
+
 ## Block Producers’ Mempool
 After obtaining a valid copy of the blockchain, a block-producing node is able to receive and process transactions so that it can forge new blocks. These transactions are sent by users via their wallet applications and are broadcasted through relay nodes on the network, eventually reaching each and every block-producing node, including this newly connected one. 
 
 The transactions are collected into a ‘mempool’ of unconfirmed transactions for each block producer. A mempool is a collection of transactions that have not yet been added to a block and are waiting to be processed. Block-producing nodes verify transactions forwarded to them, and when valid, add them to their own local mempool and broadcast them to other peers on the network. It is important to note that each block-producing node maintains their own separate mempool, and there is no global shared mempool. Also, because mempools are usually capped in size, different nodes of the network may have, at times, different transactions in their mempools.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.2.4.png)
+
 ## Block Generation
 When a block-producing node receives new transactions, it will forward them to other nodes, replicating transactions across the network. This allows all the nodes on the network to have a copy of the latest transactions. Then, the block-producing node can start the block-generation process.
+
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.2.5.png)
 
 The process of creating new blocks may be triggered by different events depending on the type of consensus algorithm used. 
 
 In proof of work, the process can be started at any time, and the block producer competes with other block producers to generate the next block. The chances of a block producer winning the competition and being able to create the next block depends on the amount of processing power it has. Generally, the more processing power a block producer has, the higher its chances of winning the race and producing the next block.
 
 In proof of stake, the block producer completes an internal calculation once to determine whether it is a candidate to start the next block production process. 
+
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.2.6.png)
 
 We will discuss the block producer selection process in more detail in future units. For now, the main thing to remember is the overview of block generation. It goes like this: Whenever the block producer starts the process for creating a block, it first selects a set of transactions from its mempool and forges them into a block. Every block producer constructs their own block of transactions depending on the transactions they’ve seen and their own version of the chain. It is possible that multiple block producers may select the same transactions to be included in their block. The consensus algorithm ensures that they eventually reach an agreement on one common set of blocks that only includes the same transaction once.
 
