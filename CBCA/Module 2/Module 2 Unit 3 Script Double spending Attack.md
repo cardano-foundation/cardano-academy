@@ -144,6 +144,7 @@ And with that. Thank you, and see you next time.
 
 *Based on the image below, what two steps need to happen in order for Mallory to successfully double-spend the same tokens? (Image Question)*
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.3.11.png)
 
 - **Mallory needs to create another transaction that conflicts with the first one (CORRECT ANSWER)**
 - Mallory needs to wait for the first transaction to clear before creating the second one
