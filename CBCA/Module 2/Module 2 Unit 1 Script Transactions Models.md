@@ -358,17 +358,17 @@ True
 
 *Select the image that refers to the correct order of a script, datum and redeemer. (Image Question)*
 
-- Same image - Datum, Script, Redeemer
+- Same image - Datum, Script, Redeemer<br>
 ![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.1.19.png)
 
--Same image - Redeemer, Datum, Script
+-Same image - Redeemer, Datum, Script<br>
 ![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.1.20.png)
 
-- **CORRECT - Script, Datum, Redeemer (CORRECT ANSWER)**
+- **CORRECT - Script, Datum, Redeemer (CORRECT ANSWER)**<br>
 ![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.1.21.png)
 
 *What needs to happen for a EUTxO transaction to be considered valid?*
-At least half of the scripts involved need to return a non-error value when executed
-No scripts involved in the transaction should return when executed
-**All scripts involved must return a non-error value when executed (CORRECT ANSWER)**
+- At least half of the scripts involved need to return a non-error value when executed
+- No scripts involved in the transaction should return when executed
+- **All scripts involved must return a non-error value when executed (CORRECT ANSWER)**
 
