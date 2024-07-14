@@ -24,17 +24,27 @@ Let’s look at an example.
 **Example: Double-Spending Step 1**<br>
 Alice is selling Mallory, the attacker, a cup of coffee for ten tokens. Mallory intends to run a double-spend attack on Alice. This requires Mallory to convince Alice that she has paid for the coffee and that the transaction has been confirmed through the blockchain mechanism. Mallory submits a transaction to the network transferring the ten tokens to Alice, and waits for the transaction to appear in a block. Alice sees the transactions in a block of the blockchain.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.3.1.png)
+
 **Example: Double-Spending Step 2**<br>
 Once Alice has received ten tokens in her wallet from Mallory, she is convinced that the transaction has been settled correctly and provides the coffee to Mallory.
+
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.3.2.png)
 
 **Example: Double-Spending Step 3**<br>
 But now Mallory is going to double-spend. After receiving the coffee, Mallory creates another transaction that conflicts with the first one. She plans to buy some bread from Bob. She now transfers the same ten tokens she gave Alice, to Bob, in an attempt to spend the same tokens twice. She submits the second transaction to dishonest block producers to create a new block. However, the new block cannot be placed in the same branch containing the original transaction to Alice. This second transaction to Bob needs to be placed in a different branch, as shown in the diagram below.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.3.3.png)
+
 **Example: Double-Spending Step 4**<br>
 So how does Mallory get away with double-spending her tokens? Based on the longest chain rule, which we covered in unit 5.2, we know that if the length of the second branch becomes longer than the first branch, nodes will accept all blocks within the longest branch and drop the blocks in the first branch. The chances of these dishonest nodes getting their alternative chain accepted by all nodes increase with their hashing power. Indeed, the dishonest nodes will race against the rest of the network to create a longer chain by forging more blocks faster. 
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.3.4.png)
+
 **Example: Double-Spending Step 5**<br>
 If other nodes on the network accept Mallory's second transaction to Bob and include it in the blockchain, it means that Mallory has convinced them that the second transaction is valid, and the first one to Alice is not. The first transaction is then valid for a short period of time only. But during that period, Alice may have provided a service to Mallory without, in the end, receiving any payment.
+
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.3.5.png)
 
 ## Understanding Block Generation Power
 In the example, we saw how Mallory succeeded in double-spending. Mallory purchased coffee from Alice. Alice believed she was paid when she viewed the transaction and provided the coffee. In fact, it was Bob who eventually received the tokens. 
@@ -51,6 +61,8 @@ Block producers with a larger stake have a higher probability of being selected 
 
 Note that, whether it is stake size in proof of stake or hash rate in proof of work, we refer to both as the block producers' block generation power. 
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.3.6.png)
+
 ## Mitigating Double-Spending
 Now, let’s go back to our question about how Alice can avoid being a victim of a double-spending attack. The simple answer is that Alice needs to wait for a certain amount of time, or a certain number of blocks, after receiving a transaction before accepting it as valid. When she sees a transaction in, let's say, Block A, showing that Mallory has sent her tokens, she needs to wait for a given time or a number of blocks after Block A. Waiting assures Alice that a fork will not appear in the blockchain and that the tokens are hers.  Once this number of blocks or time has passed, Alice can give Mallory her coffee.
 
@@ -59,6 +71,8 @@ But how long should Alice wait? How many blocks after Block A should Alice wait 
 In relation to PoW, there is always a probability of a successful double-spending attack. Because of this, it is said that the finality of transactions on a blockchain network is probabilistic. Nakamoto demonstrated that to reduce the likelihood of a successful double-spending attack to a negligible level, the number of blocks that Alice should wait for before considering a transaction final will vary depending on the percentage of the block generation power that is controlled by an attacker. 
 
 As shown in the table below, when the attacker’s hash rate increases, the number of blocks that Alice should wait for confirmation will also increase.
+
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.3.7.png)
 
 ## Transaction Finality
 Nakamoto's analysis of double-spending attacks was straightforward but not entirely precise. Since then, other researchers have provided more detailed and precise analyses. These studies have shown that the number of blocks that should be waited for confirmation is greater than what was initially suggested by Satoshi.
@@ -81,14 +95,20 @@ There are two types of forks: hard forks and soft forks. When a blockchain platf
 
 Block producers still running a previous version may attempt to broadcast a now-invalid block and create temporary forks amongst those who also haven’t yet updated. Eventually – as soon as the majority of the network runs the newest version – those soft forks will end up being rejected. This follows the principle of the longest chain rule which will always be endorsed by the majority.  
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.3.8.png)
+
 **Hard Fork**<br>
 A hard fork is a radical change to a blockchain protocol. Nodes that do not upgrade will be unable to continue following the chain. When they encounter a block created by an upgraded block producer, they will not be able to process that block. 
 A hard fork requires all nodes or clients to upgrade to the latest protocol version. If they do not, the network will effectively be split between the upgraded block producers and the block producers using the previous protocol. In a hard fork, block producers must choose which blockchain to continue verifying. 
 
 On the 1st of August 2017, the Bitcoin blockchain was forked which led to the creation of Bitcoin Cash. This hard fork split Bitcoin into two parallel chains, each with a different network protocol. A number of users remained with the first chain, while others upgraded their software and became part of the fork. 
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.3.9.png)
+
 ## Cardano Blockchain Forks
 Cardano has also upgraded its blockchain network through hard forks. For example, the Vasil upgrade in September 2022 was a hard fork that added innovative features to Cardano, including improved performance. Yet in Cardano, the entire network has always endorsed each and every hard fork, leading to a single final chain.
+
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.3.10.png)
 
 ## Review
 And with that, we are at the end of another unit. Let’s quickly recap.
