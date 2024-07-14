@@ -64,9 +64,11 @@ The process of creating new blocks may be triggered by different events dependin
 
 In proof of work, the process can be started at any time, and the block producer competes with other block producers to generate the next block. The chances of a block producer winning the competition and being able to create the next block depends on the amount of processing power it has. Generally, the more processing power a block producer has, the higher its chances of winning the race and producing the next block.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.2.6.png)
+
 In proof of stake, the block producer completes an internal calculation once to determine whether it is a candidate to start the next block production process. 
 
-![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.2.6.png)
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.2.7.png)
 
 We will discuss the block producer selection process in more detail in future units. For now, the main thing to remember is the overview of block generation. It goes like this: Whenever the block producer starts the process for creating a block, it first selects a set of transactions from its mempool and forges them into a block. Every block producer constructs their own block of transactions depending on the transactions they’ve seen and their own version of the chain. It is possible that multiple block producers may select the same transactions to be included in their block. The consensus algorithm ensures that they eventually reach an agreement on one common set of blocks that only includes the same transaction once.
 
@@ -75,6 +77,8 @@ In the Bitcoin proof-of-work consensus algorithm, block producers, also known as
 
 The mathematical problem is hard to solve. How hard it is to find a valid block hash that meets the required number of leading zeros is called the Difficulty Level. The difficulty level adjusts so that, on average, a suitable hash is found at regular intervals, such as every 10 minutes. The more computing resources available in the entire network, the more the Bitcoin consensus algorithm increases the difficulty level. If the processing power of nodes increases, the proof-of-work consensus algorithm automatically adjusts the difficulty parameter. In our example, this guarantees that miners will not find a minimal number of bits for a block in less than 10 minutes on average. This adjustment is accomplished by increasing or decreasing the number of required leading zeros in a block hash value. In Bitcoin, the difficulty level is recalculated every 2016 blocks.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.2.8.png)
+
 ## Nonces
 How does a miner solve the mathematical problem for block generation in Bitcoin? Remember, the miner must produce a valid hash with the right number of leading zeros from the block. 
 
@@ -82,16 +86,26 @@ To produce the hash, they add a random number called a ‘nonce’, combining it
 
 Once a nonce has been identified that solves the problem, miners can propagate the block with its nonce to the rest of the network. Other miners can easily verify that the nonce is correct by simply hashing the block themselves. The work is difficult to do but easy to verify; this is why this process is called proof of work. 
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.2.9.png)
+
 ## Cardano’s Proof of Stake
 In proof of work, several block producers race to find suitable nonces in parallel, competing with other block producers to find it as fast as possible.
 
 In contrast, Cardano’s proof of stake has no active and resource-intensive competition between block producers. Instead, every block producer determines whether it is responsible for block creation at a specific future time slot using what’s called Verifiable Random Function, or VRF. VRF is a cryptographic mechanism and a key feature of Cardano’s proof of stake. In Cardano, each block producer uses a calculation applying VRF to determine whether it’s responsible to create the next block or not. If the block producer is responsible, then it will create a block, add it to its own local blockchain ledger, and broadcast the block to other nodes.  We will learn more about VRFs in later units as we deep dive into Cardano’s proof of stake. For now, suffice it to say that VRF provides a cryptographically secure form of randomness as a more efficient alternative to the mining process.  
+
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.2.10.png)
  
 Fundamentally, both proof of work and proof of stake are like a lottery. In the case of proof of work, the chances of winning the lottery are roughly proportional to the computing power that a block producer has. In proof of stake, it is roughly proportional to the amount of tokens that a block producer controls. Having more computing power in proof of work or more tokens in proof of stake is like having more lottery tickets, thus a better chance of winning.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.2.11.png)
+
 Note also that in proof of stake systems, producing a block is called "minting", and block producers are called validators. In proof of work, miners are the block producers, and the process of creating blocks is called ‘mining’.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.2.12.png)
+
 Once a block is propagated across a blockchain network, other nodes on the network verify its validity. The block is then added to their local blockchain, and distributed to all other nodes on the network. All the nodes receive the new block and can see the included transactions. If any of these confirmed transactions are stored in the node’s own mempool, they will remove them.
+
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.2.13.png)
 
 ## Transaction Confirmation, Chain Depth and Block Height
 After a block has been added to the chain, every subsequent block added on top of it counts as a ‘confirmation’ for that block. For example, if a transaction is included in block 990, and the blockchain is 1000 blocks long, it means the transactions in block 990 have ten confirmation blocks, 1000-990=10. This number is also called chain depth. 
@@ -99,6 +113,8 @@ After a block has been added to the chain, every subsequent block added on top o
 If a transaction has a chain depth of ten, the blockchain has reached consensus on it ten times. The deeper a transaction is in the blockchain, the more confirmations it has, making it harder for adversaries to change it. Having more confirmations is considered to be a stronger guarantee of the security and permanence of a transaction.
 
 After a new block is added to the blockchain, all block producers need to start over again, forming a new block of transactions. The latest block added to the blockchain is called the tip, and the number of blocks from a block to the genesis block or block zero is the block height.
+
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.2.14.png)
 
 ## Block Header and Block Body
 Blocks are generally divided into two parts: a block header and a block body. The block header contains metadata about the block, while the body contains a list of transactions. 
@@ -111,6 +127,8 @@ The diagram below shows some elements from the header of a Cardano block. In Car
 
 The block also includes a block body hash, which acts as an integrity mechanism. By including this block body hash in the header and including the hash of the previous header, blocks effectively form a chain.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.2.15.png)
+
 ## Block Size and Block Time
 Every blockchain has different constraints for maximum block size and average block time. Average block time refers to the average production time between two consecutive blocks. The maximum allowable block size is determined based on the Internet propagation delay, the block time, and other blockchain parameters. In Bitcoin, the maximum block size is one megabyte, and the average block time is ten minutes. Therefore, block producers or miners can choose any number of transactions as long as their size adds up to a maximum of one megabyte. Also, the proof of work parameters adjust to guarantee that miners are able to find a valid nonce for block generation purposes approximately every ten minutes.  
 
@@ -118,8 +136,12 @@ Currently, Ethereum block size is limited by gas – an execution unit for trans
 
 On Cardano, a new block is added every twenty seconds on average with a maximum block size of 88 kilobytes.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.2.16.png)
+
 ## Fundamental Properties
 Those various blockchain parameters can be tuned and adjusted to make sure that the blockchain protocol has three fundamental properties: Common Prefix, Chain Quality, and Chain Growth. A protocol with these three properties is guaranteed to also achieve safety and liveness – two essential goals of any distributed ledger technology. Therefore, scientists often focus on proving that a system possesses these three fundamental properties in order to prove that it achieves safety and liveness.  [Ref.5.2.4].
+
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.2.17.png)
 
 Let’s briefly go through those three fundamental properties.
 
@@ -128,6 +150,8 @@ We will start with Chain Quality. As we learned with the Byzantine Generals Prob
 
 **Common Prefix**<br>
 The next property is the common prefix. The common prefix property shows the part of the chain in an honest node’s local chain that can be trusted. Consider two honest nodes, Alice and Bob; each owns a copy of the chain. Alice's chain is longer than Bob’s. Now, if Alice cuts off k blocks from her local chain, the remaining chain is a subset of Bob’s chain. This is shown in the diagram below. The minimum possible value of k is called the common prefix.
+
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.2.18.png)
 
 **Chain Growth**<br>
 Earlier we said that liveness is an important quality in blockchain: transactions have to be made. The chain growth property is closely related to this. It measures how quickly the honest parties’ chain grows. This is defined by the number of blocks that are added to the chain in a given time period.
@@ -181,6 +205,8 @@ First, we reviewed the components of a blockchain and the basic structure of a b
 - The node must generate a new chain independently, which then gets adopted if it's longer than the current chain
 
 *Node X has Chain A and encounters Chain B, which is longer than Chain A. They both have a common prefix respecting k=3. What will Node X do according to the longest chain principle? (Image Question)*
+
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.2.19.png)
 
 *Node X will:*
 - Discard both Chain A and Chain B and start a new chain
