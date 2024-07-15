@@ -23,41 +23,35 @@ Broadly speaking, scalability refers to the capacity of a system to accommodate 
 
 In system engineering, we also speak about elasticity or auto-scaling to describe a system's ability to adapt by automatically increasing and decreasing its resources. When more capacity is needed, extra resources are added to respond to the demand. Those resources are freed later when no longer needed. An elastic system can grow and shrink to the demand to ensure that it only uses the right resources at all times.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.6.1.png)
 
 Scalability is generally divided along two axes: vertical scaling and horizontal scaling. Vertical scaling refers to improvements to the components of the system themselves. Usually, this means using better hardware or software solutions. It is called vertical in reference to how it applies to a system stack and usually benefits all components of the stack. It makes sense if you picture a system as a literal stack of layered boxes.
 
 On the other hand, horizontal scaling covers everything else. Usually, it refers to adding extra components to a system next to existing components that can perform similar tasks but in parallel.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.6.2.png)
 
 Let’s look at a simple analogy and assume you want to cultivate and provide apples to supermarkets. An example of vertical scaling here would be to hire or train the staff picking the apples to be faster at the task. Vertical scaling also includes anything regarding equipment you’d provide them so that each individual would work faster. 
 
-
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.6.3.png)
 
 Horizontal scaling here could mean adding more people to the field or simply adding more fields.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.6.4.png)
 
 **Layer 1**<br>
 Now we have a broad definition of scalability. But what does that mean in the context of layer one blockchain systems? As a quick reminder, layer one refers to a blockchain platform with its consensus mechanism. Bitcoin, Ethereum, Cardano and Algorand are examples of layer-one solutions. In each system, numerous resources are utilized to achieve various tasks. These resources are not only limited, but they pose different scalability challenges.
 
 Scalability in blockchain systems typically happens along one of 5 key dimensions: execution, storage, networking, consensus and cost.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.6.5.png)
 
-
-
-Execution
-Encompasses all system computations, from transaction validations to smart-contracts evaluations. 
-Storage
-Refers to the persistence of information the system needs to function, and the user-defined data. Storage is usually split into two sub-dimensions: the ledger state and the historical data.
-Networking
-Distributed systems such as blockchains rely on intensive network communication between nodes to achieve consensus and carry information. 
-Consensus
-This includes anything that has an impact on the decision-making capacity of the system. How long does it take for information to become true? How much work is needed to find an agreement? What threshold of an honest majority is required for the system to be secure? Etc.
-Cost
-This includes the initial and operational costs related to those operating the system (a.k.a the block producers) and the cost for end users participating on the network. 
-
+*Execution*: Encompasses all system computations, from transaction validations to smart-contracts evaluations. 
+*Storage*:Refers to the persistence of information the system needs to function, and the user-defined data.<br>
+Storage is usually split into two sub-dimensions: the ledger state and the historical data.<br>
+*Networking*: Distributed systems such as blockchains rely on intensive network communication between nodes to achieve consensus and carry information.<br>
+*Consensus*: This includes anything that has an impact on the decision-making capacity of the system. How long does it take for information to become true? How much work is needed to find an agreement? What threshold of an honest majority is required for the system to be secure? Etc.<br>
+*Cost*: This includes the initial and operational costs related to those operating the system (a.k.a the block producers) and the cost for end users participating on the network. <br>
 
 As you can imagine, solutions that improve all dimensions at once are rare. In fact, scalability is seldom free. If you improve one dimension, you probably have increased the resources needed in one or more other dimensions. Scalability is all about what trade-offs you are willing to accept. Which dimensions matter the most depend on the use cases.
 
@@ -75,6 +69,7 @@ As you can see,  a single metric hardly captures the various dimensions of a sys
 
 Having said that, TPS can be a useful key primary indicator when used correctly. All else being equal, a higher TPS does mean a better system. Yet, used out of context, it can be a misleading metric.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.6.6.png)
 
 ## Fundamentals
 **Order of Magnitudes**<br>
@@ -82,31 +77,38 @@ An order of magnitude is used to make approximate comparisons between two values
 
 In general, differences in the order of magnitudes are measured in multiples of ten and compared to a reference value of 0. Hence, if a quantity is ten times bigger than another, we say that there’s one order of magnitude between those two quantities. If it's a hundred times bigger, that’s two orders of magnitude. If it’s 300 times bigger, it still is only two orders of magnitude as the next threshold is crossed at 1000. For example, if we compare weight between living species, there’s one order of magnitude between humans and horses. And there’s also one between horses and elephants. If you’re dimensioning a bridge that can support an elephant, then as an approximation, you might say that it might also support 10 horses.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.6.7.png)
 
 Orders of magnitude are often used in physics and engineering to compare dimensions of physical phenomena or systems. When considering the limits of a system, we often look at orders of magnitude instead of precise values. Indeed, measuring something with high precision is usually tricky. Therefore, approximations are used everywhere, and looking at precise values can be deceptive. Problems typically arise when crossing one or more orders of magnitudes, so it’s useful to grasp the scale of a particular dimension.
 
 **Well-Known Dimensions**<br>
 Knowing the order of magnitude of a couple of things in life can prove to be helpful. In fact  everyone has references of various dimensions from their day-to-day experiences. For example, If I tell you that my car goes at a speed of 1300 km/h, you might think I am a little crazy. That is because you know that cars' maximum speed is around 200-300 km/h. It’s likely you may believe a speed of anything ranging from 100 to 500 km/h. It’s within the same order of magnitude. But 500 or more, and you might be reluctant to believe that, as we’re approaching the next order of magnitude. And the closer we get to 1000, the less you will accept that possibility.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.6.8.png)
 
 Having some points of reference can thus be a valuable tool to be more critical of the information you hear and read. Be skeptical of any claim that reduces or increases by several orders of magnitude a known reference. So let me walk you through some well-known orders of magnitude. Before we dive in, note that when dimensions have a known universal unit, the units themselves are often substituted to the orders of magnitude. For example, we may say that a value is in the range of “milliseconds” to talk about an order of magnitude -3 since the second is a universal unit – and thus correspond to the order 0.  
 
 Let’s see if you guess those right!
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.6.9.png)
+<br>
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.6.10.png)
+<br>
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.6.11.png)
+<br>
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.6.12.png)
+<br>
 
 **Order of Approximation**<br>
 Okay, enough order of magnitudes for now. Though I hope this was and will be useful to put information in perspective. Another tool at our disposal to think about scalability and performance is called orders of approximation. In particular, one family of orders is appreciated by computer scientists and mathematicians: “the big-O notation”. It is a mathematical notation which describes how rapidly a quantity grows in terms of another quantity. Fundamentally, we say growth is a big O of some other mathematical function if that function can approximate it. Big-O notations are often used to classify algorithms according to their time or space requirements in the function of a growing number of inputs.
 
 Let’s make it concrete and consider the space you need to store books on a shelf. You’ll agree that the space needed is proportional to the number of books. In mathematics, that space is said to grow linearly with the number of books. Or in big-O notation, it is an O(n). Because, for n books, you need roughly n times the space of one book.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.6.13.png)
 
 One more example. Imagine you are at a party and wish to count the number of handshakes if everyone shook hands with everyone else exactly once. If it’s a 2-person party, that’s one handshake. If there are three people, that’s three handshakes. With ten people, that’s 45 handshakes. For 100 people, 4950! As you can see, this doesn’t grow linearly. In fact, for n people, you need n*(n -1) / 2 handshakes. In big-O notation, that’s a O(n2) – because we only consider the most significant term for that notation. Counting handshakes is a prime example of a quadratic phenomenon.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.6.14.png)
 
 The Big-O notation is particularly interesting when thinking about software and algorithms because most algorithms will have performances that fall in one of four categories:
 
@@ -115,10 +117,18 @@ The Big-O notation is particularly interesting when thinking about software and 
 - O(n) which refers to any phenomenon that grows linearly with the number of inputs, like the space needed for books on the bookshelf.
 - O(n2)for phenomenons that have a quadratic growth and rapidly get out of hand, like the handshake example!
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.6.15.png)
+<br>
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.6.16.png)
+<br>
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.6.17.png)
+<br>
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.6.18.png)
+<br>
 
 Engineers usually try to avoid quadratic phenomena as they scale poorly. Increasing one order of magnitude in a dimension increases another by two orders of magnitude: 10 times more people and 100 times more handshakes! If you recall, a few units back, we saw an example of a quadratic consensus system: Practical Byzantine Fault Tolerance (pBFT)! In Practical Byzantine Fault Tolerance, the number of network messages needed for a single consensus decision grows quadratically with the number of nodes in the network. This is why pBFT can only truly work in a federated setup. If the number of nodes isn’t limited, the system eventually explodes as the network requirements become too demanding.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.6.19.png)
 
 So why are we talking about all this? Well, these are important notions to consider when discussing scalability. Rather than looking at numbers which may be gamed and manipulated in various ways, ask yourself: is that approach constant? Linear? Quadratic? What’s the effect of increasing one quantity over another? 
 
@@ -131,6 +141,7 @@ Before we get to layer-one scalability solutions, there is one more fundamental 
 
 “Just make it parallel!” is often said. If only it were that simple. Additionally, when people say parallelism, they often mean concurrency. Parallelism is the simultaneous execution of several tasks at the same time. Concurrency is the ability to split a task into smaller independent tasks that can be executed in any order without affecting the outcome.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.6.20.png)
 
 One implication of parallelism is that there are enough workers to carry those multiple tasks simultaneously. In software systems, workers are usually synonymous with cores of a central processing unit (CPU). There is no parallelism on a single-core CPU. At a point in time, a machine with a single core can only ever do one thing. How do computers, even old ones, display information on a screen, move the mouse and accept input on the keyboard then? That is because computers give you the illusion that everything happens in parallel through multi-threading. That is, your computer is simply multi-tasking a bit on every task in turn. Within a second, it only takes a few microseconds to move the mouse cursor and acknowledge your keyboard inputs, so the rest of the time can be used to show something on the screen. And when a task takes too long, it freezes. Computers are machines built for concurrency.
 
@@ -138,14 +149,18 @@ Let’s consider a famous example that Rob Pike gave for explaining concurrency 
 
 Concurrency entails independent, non-overlapping tasks, so a worker drives a cart with books, another worker takes the cart to the incinerator and then a final worker unloads the cart. Each task can be parallelised with more workers. Concurrency means the process still works when there is only one worker doing tasks, one after another.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.6.21.png)
 
 Furthermore, highly concurrent tasks may be executed in parallel. So concurrency is almost always a prerequisite to parallelism. It is much easier to execute independent tasks in parallel than to try executing tasks that depend on one another all at once. That is a recipe for chaos.  Parallelism is only truly effective when there are a lot of concurrent tasks to perform.
 
 Yet sometimes, tasks cannot be compressed and trying to do more in parallel does not improve the performance of a single task. Imagine you’re baking a cake, you’ve made the batter and the oven is ready and you put the cake in the oven and set the timer for 30 minutes. It is not possible to parallelise the process to make the cake bake faster. At best, you could bake multiple cakes in the same 30 minutes, but you couldn’t bake it in less time.
 
-
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.6.22.png)
+<br>
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.6.23.png)
+<br>
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.6.24.png)
+<br>
 
 Therefore, highly concurrent systems tend to scale better, in particular horizontally. If there are a lot of small independent tasks, then it is easy to spread the workload across many workers that can execute them in parallel. For example, transaction validation isn’t inherently concurrent because transactions might depend on one another. So the validation of two transactions cannot necessarily be done by two distinct workers, and certainly not in parallel. However, if you can ensure that transactions are truly independent, then this becomes possible. And here, we have one of the biggest strengths of the UTxO transaction model.
 
@@ -178,7 +193,7 @@ Blockchains are difficult systems to compress because they are essentially full 
 **Batching**<br>
 Batching is an easy technique that is commonly used for a variety of tasks. It means grouping many similar actions to do them all in one go. Batching can lead to a significant speed-up when actions present common steps that can be done once for an entire group.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.6.25.png)
 
 If you’ve been following this course from the start, you shouldn't have to think too hard to find a good example of batching: blocks! A block is nothing more than a batch of transactions! And there's an excellent reason for it. The production of a block follows the election of a leader. This takes time and would be completely unmanageable if it had to happen for every single transaction. Hence, by grouping multiple transactions, the system can process more than if it were done fully sequentially.
 
@@ -191,17 +206,19 @@ For example, imagine a car assembly line. A non-pipelined assembly line would bu
 
 By creating a pipeline, each workstation can work on a car but at different stages. Designing a pipeline can be complicated as you typically want each step to take roughly the same time. Yet, this can be efficient if you’ve got many cars to make! Cars… or blocks, it’s the same principle! 
 
-
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.6.26.png)
+<br>
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.6.27.png)
+<br>
 
 **Sharding**<br>
 Another popular technique in the blockchain and database space is sharding. A shard is a small unit that performs a small chunk of work from a larger component. If you put the work of the many smaller shards together, it is identical to that of a single large shard. Think of a shard as a way to split a large workload into many smaller workloads of the same nature with a way to combine the results back into one at the end.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.6.28.png)
 
 For example, imagine a presidential election. Usually, elections are split into counties and even cities so that each city hall gathers votes from many citizens. Cities' votes are combined and counted for the whole country. You can think of each city as a shard. They all perform the same task, counting and combining votes, but on different data. At the end, the results from each city, or each shard is combined into one.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.6.29.png)
 
 Sharding works well with use cases similar to the voting example, but can be quite challenging to set up. Not everything is suitable for sharding, and the complexity introduced with sharding can sometimes overshadow the benefits. Since sharding is fundamentally about replicating the same system at a smaller scale, it might also weaken the overall system. For example, think about consensus algorithms, which often require a minimum proportion of honest participants for the system to work. Gathering 50% of the consensus resources on a shard hundred times or even ten times smaller than an original system is much easier, thus making it more prone to attacks. 
 
@@ -210,12 +227,13 @@ Let's consider another technique, a little bit more advanced though I have no do
 
 This probably sounds a bit abstract, so let’s use an example to illustrate this.  Imagine you have a bookstore with a large storage warehouse area in the back for books. The storage area is so large that it takes significant time to find a book. When a customer requests a  book not available in your store, you must somehow locate it in your storage if you have it. However, you’d prefer not to spend ages in the back. The inventory system is a little unusual for a bookstore. On your counter is a tiny device which tells you instantly whether any given book is in the storage area but with 99% accuracy, which is great! But occasionally, the device can make you needlessly look for a book that isn’t actually there. This only happens 1% of the time. Thus on average, the time needed to process a customer request remains fairly small using the device. Occasionally the request takes longer but that is acceptable. 
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.6.30.png)
 
 This example is a relatively accurate depiction of how cache systems work in practice. In computer science, this notion is referred to as ‘amortised performance’. Instead of looking at a system's worst or best-case performances, you look at its average performance over many cases. Some algorithms, for example, are known to have sub-linear amortised performance. But, in rare cases, a particular execution may be linear and thus take a little longer.
 
 Algorithms with good amortized performances are great in many situations. Of course, there are scenarios when they can be problematic. Imagine, for example, the electronic system that manages the braking system of your car. It would simply not be acceptable that sometimes the brake system responds with a delay of several seconds instead of milliseconds. Yet, this can be an effective strategy in scenarios where the system can tolerate requests being a little longer some of the times!
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.6.31.png)
 
 **Eventual Consistency**<br>
 One last technique to look at would be eventual consistency. In many situations, it is perfectly acceptable that action only happens later, provided there’s some guarantee that they eventually will.
@@ -321,8 +339,7 @@ Next time, we’ll discuss achieving scalability through modularity and off-chai
 
 *Match the correct common orders of approximation.*
 
-
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/2.6.32.png)
 
 - A: Quadratic growth; B: Logarithmic growth; C: Linear growth; D: Constant growth
 - A: Constant growth; B: Quadratic growth; C: Constant growth; D: Logarithmic growth
