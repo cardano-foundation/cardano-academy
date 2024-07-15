@@ -434,5 +434,5 @@ Next time, we’ll discuss achieving scalability through modularity and off-chai
 *What is one risk associated with the 'eventual consistency' technique?*
 - Slowing down the system
 - Too many actions being executed at once
--**The risk of data loss before data is synced (CORRECT ANSWER)**
+- **The risk of data loss before data is synced (CORRECT ANSWER)**
 
