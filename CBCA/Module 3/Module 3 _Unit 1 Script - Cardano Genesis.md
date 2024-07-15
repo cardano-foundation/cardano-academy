@@ -204,33 +204,33 @@ With that, we have reached the end of the topic of this unit, and you should now
 - To introduce smart contracts on Cardano
 - To finalize and perfect the Cardano blockchain without any need for further updates
 
-What was a significant change introduced during the Shelley phase of Cardano's development?
+*What was a significant change introduced during the Shelley phase of Cardano's development?*
 - The introduction of the "hard fork combinator" to combine multiple blockchain protocols
-- The transition from a federated PoS consensus protocol, to a delegated PoS consensus (CORRECT ANSWER)
+- **The transition from a federated PoS consensus protocol, to a delegated PoS consensus (CORRECT ANSWER)**
 - The first release, Version 1.0, of the Cardano
 
-True or False: Cardano started as a federated network, where block production was handed over to the three genesis entities. 
-- True (CORRECT ANSWER)
+*True or False: Cardano started as a federated network, where block production was handed over to the three genesis entities.* 
+- **True (CORRECT ANSWER)**
 - False
 
-True or False: The Cardano network stopped for several days during March 2020 due to an issue and had to be restarted. This is now referred to as “the Byron reboot”. 
+*True or False: The Cardano network stopped for several days during March 2020 due to an issue and had to be restarted. This is now referred to as “the Byron reboot”.* 
 - True
-- False (CORRECT ANSWER)
+- **False (CORRECT ANSWER)**
 
-What is the main objective of the Basho phase in Cardano's development?
+*What is the main objective of the Basho phase in Cardano's development?*
 - To introduce the last components needed to make Cardano fully decentralized and community-owned
-- To focus on scalability and design layer 2 solutions and side chains for higher throughput (CORRECT ANSWER)
+- **To focus on scalability and design layer 2 solutions and side chains for higher throughput (CORRECT ANSWER)**
 - To fund future developments for the Cardano ecosystem through the community 
 
-What are the primary goals of Cardano's Voltaire phase?
+*What are the primary goals of Cardano's Voltaire phase?*
 - To focus on layer 2 solutions and side chains for scalability
-- To empower the community to decide on future developments (CORRECT ANSWER)
+- **To empower the community to decide on future developments (CORRECT ANSWER)**
 - To redesign the Ouroboros consensus mechanism
-- To make Cardano fully decentralized (CORRECT ANSWER)
+- **To make Cardano fully decentralized (CORRECT ANSWER)**
 
-What Cardano phase focuses on programmability? 
+*What Cardano phase focuses on programmability?* 
 - Plutus
-- Goguen (CORRECT ANSWER)
+- **Goguen (CORRECT ANSWER)**
 - Basho
 - Voltaire
 
