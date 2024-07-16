@@ -23,24 +23,24 @@ We have a lot to cover, as ever, so let’s get started.
 ### Summary
 In proof-of-stake blockchains, as with proof-of-work, nodes compete with one another to produce blocks. However, they do not compete with hashing power but by leveraging the number of blockchain tokens they control. In both proof of work and proof of stake, the chances of being selected as a block producer is like a lottery. In the former it is proportional to hashing power and, in the latter, to the number of tokens. The general idea is that In Cardano's proof of stake consensus algorithm, block producers are pseudo-randomly selected. The random function is based on the distribution of the tokens among all block producers. The more tokens a block producer holds compared to the other block producers, the higher their chances of being chosen as the block producer for a given block. 
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.4.1.png)
 
 Let’s illustrate this random function. As you can see on the upper left, there are five block producers who have eight, two, twelve, six, and four tokens, respectively. In percentage terms of the total tokens in the network, block producers one to five own 25%, 6.25%, 37.5%, 18.75%, and 12.5%. 
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.4.2.png)
 
 Now, what does this mean in terms of the likelihood of being selected as a block producer?
 
 On the lower left is the blockchain created by the block producers. As you can see, the first block is created by block producer one; the second block is created by block producer three,  and so on. In percentage terms, block producers one to five created 25%, 6.25%, 37.5%, 18.75%, and 12.5% of the total number of blocks in the blockchain. 
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.4.3.png)
 
 Now, if you look at the right side, you can see the percentage of blocks created by each block producer and the percentage of tokens they control in the network. They are roughly the same. This means that the probability of a potential block producer being chosen depends on the number of tokens that it owns compared to the tokens in the control of all other block producers. This should sound familiar by now. 
 
 ### Pledged, Delegated and Active Stake
 To increase their chance of being selected, block producers, also called Stake Pool Operators, or SPOs, work towards increasing their token ownership or 'stake'. The number of tokens a block producer personally owns and contributes to block production is referred to as their pledge. Other Cardano users who do not directly participate in block production can delegate their stake to a block producer using their wallets to increase the block producer’s chance of being elected. This is called delegated stake. Either way, when delegated to a registered stake pool, the stake is called active stake. SPOs are the entities that leverage the active stake for block production. The more tokens an SPO controls, the higher the chance of being selected to create and add a new block to the blockchain. 
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.4.4.png)
 
 There is a natural dynamic between stake pool operators and delegators: not everyone is interested in explicitly participating in the consensus. Operating a stake pool involves a fair amount of technical knowledge and maintenance work. Delegation thus offers the ability for any users to entrust their rights to election as block producer to another declared actor of the system: a stake pool.
 
@@ -67,7 +67,7 @@ Well, Cardano works in a very similar fashion. Ouroboros awards stake pools for 
 
 These rewards have two different sources: transaction fees and the reserve. Transaction fees are self-explanatory and correspond to the fees collected on all transactions in each block. The reserve is something we hinted at when we covered the Cardano genesis. It is a pot of unallocated Ada tokens that haven’t been issued yet. In every epoch, a certain percentage of the reserve is put into circulation through rewards.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.4.5.png)
 
 That percentage is called the monetary expansion and is typically denoted ρ. It is a configurable protocol parameter whose value is currently set at 0.3%. Thus every epoch, a maximum of 0.3% of the unallocated Ada is put in circulation, and since the reserve does not replete, this amount gradually gets smaller. At this rate, the reserve is halved roughly every five years. Note that the exact amount put in circulation depends also on the blocks produced during that epoch. If the system only produces half the blocks it was expected to produce, then only half of the planned monetary expansion is put into circulation thus making the creation of new tokens entirely proportional to the actual block production.
 
@@ -82,6 +82,7 @@ Hence besides branding, rewards parameters are means that stake pools use to com
 
 But, there’s more. 
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.4.6.png)
 
 ### Rewards Provenance
 In Cardano, transaction fees and block rewards aren't directly awarded to block producers. Instead, they are collected into a temporary reward pot. Every block made over a fixed period contributes to that pot. At the end of this period, a portion of the total rewards is sent to the Cardano treasury, a special reserve of tokens in the network used to fund its ecosystem's development.
@@ -103,7 +104,7 @@ True to the design principles of Cardano, a0 and k are also updatable protocol p
 ### Rewards Delay
 As a consequence of the stake only becoming active in the following epoch it is assigned, rewards are also delayed. All the more so since rewards also depend on the pool’s performances on the epoch. And to avoid overloading the node on each epoch boundary, the rewards calculation is actually spread across the entire following epoch. Let’s look at an example.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.4.7.png)
 
 Alice delegates during epoch 99. A snapshot is taken at the epoch boundary between epoch 99 and 100. That snapshot is used for the leader schedule of epoch 101. This means that Alice’s stake effectively starts contributing to the protocol in epoch 101. During epoch 102, the calculation of the rewards for epoch 101 can occur. Note that it doesn’t start immediately at the beginning of epoch 102 to leave time for the previous epoch to settle. By the end of epoch 102, rewards have been calculated and are distributed to all delegates in the transition to epoch 103. 
 
@@ -114,7 +115,7 @@ Before we say goodbye, let’s cover one last topic: the treasury.
 ### Treasury
 If you’ve been carefully following, we’ve briefly mentioned the treasury when looking at the reward formula. Fundamentally, the treasury is a protocol-level tax meant to create a self-sustaining ecosystem and to fund its development. The amount cut from the total rewards is a fixed percentage, yet another protocol parameter. I promise this is the last one we see in this unit. It’s called τ, and it is currently set at 20%.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.4.8.png)
 
 As you can see, the treasury uses a straightforward yet highly efficient mechanism. With every epoch, it receives additional funding, which can then, in turn, be used to finance network activities or projects that benefit the overall ecosystem. Deciding upon how to use these funds best is the main focus of the Voltaire phase and a vital pillar of on-chain governance.
 
