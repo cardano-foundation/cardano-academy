@@ -34,6 +34,7 @@ In essence, Proof-of-Work is an election mechanism where participants are electe
 
 A key milestone in this research effort has been the establishment of the Ouroboros consensus algorithm, and all its successors forming the Ouroboros family.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.3.1.png)
 
 ## Ouroboros: A Family of Consensus Protocols
 
@@ -55,13 +56,11 @@ Second, Chain Quality means there exists k such that, for any chain possessed by
 
 And finally, Chain Growth which means there exists t and k such that, for any chain possessed by an honest party, there are t ✕ k blocks over any sequence of k slots.
 
-
 - *Common Prefix*: between any two honest parties, there exists a common prefix of the chain (i.e. there exists a number k such that if we remove up to k blocks from both chains, they yield the same sub-chain).
 
 - *Chain Quality*: there exists k such that, for any chain possessed by an honest party, at least one block in the last k blocks were honestly produced.
 
 - *Chain Growth*: there exists t and k such that, for any chain possessed by an honest party, there are t ✕ k blocks over any sequence of k slots.
-
 
 Prior research shows that a blockchain system with these three properties can also achieve safety and liveness. Bitcoin, in particular, does have these three properties. Hence most of the proof behind Ouroboros boils down to showing that the protocol can maintain these three properties in a Byzantine-fault tolerant setup. 
 
@@ -72,11 +71,11 @@ Equipped with this new knowledge, you should now understand what it means to be 
 
 Firstly, as we've already said, they're all proof-of-stake protocols, meaning they consider the network currency as the primary resource for consensus. Also, as already mentioned, they provide liveness and safety in a Byzantine setting with assumptions similar to Bitcoin. Namely, they assume that honest nodes own the majority of the resources: that is the stake. And they follow the longest-chain rule that we mentioned in previous units.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.3.2.png)
 
 Secondly, all Ouroboros protocols are time-based and synchronous. Time is divided into discrete units of a fixed length called "slots''. Slots are grouped into bundles called "epochs'' and the protocol evolves mainly in phases from epoch to epoch. Incidentally, this is where the name 'Ouroboros' comes from! Previous epochs are fed into the subsequent epochs as a basis for calculations -- such as multi-party computations, like the Ouroboros is a serpent feeding onto itself. While Ouroboros is meant to run forever, it has a starting point and a bootstrapping phase from a so-called genesis configuration.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.3.3.png)
 
 Finally, all Ouroboros protocols work based on the idea of leaders, known as  block producers. These block producers are elected for specific slots proportional to their stake. Moreover, stake delegation is a core part of Ouroboros, as it allows non-technical users to take part in the consensus by delegating their rights to more technical users. In the case of Ouroboros classic, this is also necessary for scalability.
 
@@ -87,7 +86,7 @@ Ouroboros Classic was the first one to be published. It laid down the foundation
 
 However, Ouroboros Classic relied on a few limiting assumptions, such as the communication between peers being fully synchronous. That is, the time for each transaction to reach the rest of the network is finite. Moreover, it required some complex multi-party computation between the nodes to provide a good source of randomness. Indeed, one of the main challenges of proof-of-stake protocols is finding a good source of randomness and ensuring that leader election is done in an adequately unbiased fashion. This should remind you of a previous unit.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.3.4.png)
 
 In fact, this is part of what makes Proof-of-Work so elegant and easy to grasp. The randomness naturally comes from the cryptographic difficulty to find suitable hash candidates for blocks. Hashing functions are designed to be primarily resistant to 'guessing'. Thus, there's no other way than trying over and over again, which naturally leads to a fair election process proportional to hashing power. Yet, that is a lot of work in a context where environmental concerns are of utmost importance.
 
@@ -98,15 +97,16 @@ Praos is an iteration of Ouroboros Classic with even more robust security guaran
 
 To date, it is the version of Ouroboros used in Cardano. One of the significant improvements in Praos is the ability to work in a semi-synchronous setting. Said differently, the protocol is more capable of tolerating slight variations in the message delivery. Moreover, nodes are now allowed to be offline for a short period of time without jeopardizing the entire network! This is achieved through verifiable random functions, known as VRF and forward-secure key-evolving signature schemes, known as KES, two interesting cryptographic constructs.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.3.5.png)
 
 The VRF allows Praos to have a fully private leader schedule. This means that attackers can't know in advance what node will produce the next block. Only after a block has been created can other nodes verify that a node was indeed entitled to produce a block at that time. Consequently, there are also slots for which no leaders are elected, and some have more than one leader! This leads to small forks of the chain, which are rapidly resolved based on how quickly leaders can propagate their blocks. 
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.3.6.png)
 
 ### Genesis
 Genesis is an iteration of Praos. It is currently in the process of being implemented for Cardano. The main improvement Genesis brings to the table is the ability for new nodes to join the network and bootstrap from the genesis configuration only -- with solid guarantees that they are following the right chain. This feature is known as dynamic availability.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.3.7.png)
 
 In fact, in Praos and Classic, new nodes joining the network rely on getting initial data from honest nodes to adopt the chain of the honest majority from the start. If you bootstrap from a malicious node, then you risk propagating wrong information to the network for the sake of the adversary. From a different angle, one could say that Genesis aims for even more decentralization by reducing the need to rely on trusted infrastructure to connect to an existing blockchain network.
 
@@ -119,7 +119,7 @@ This problem is almost specific to proof-of-stake networks. It is computationall
 ### Crypsinous
 Crypsinous explores privacy-preserving mechanisms using zero-knowledge cryptography. Total privacy on blockchain systems brings another set of trade-offs in a protocol. One key challenge is how to ensure that no information is leaked through the consensus protocol itself. Think about this: how can one prove they are entitled to produce a block, without revealing anything about their identity or even something that could identify them.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.3.8.png)
 
 Most privacy-preserving protocols to date such as ZCash or Monero tend to focus on privacy at the level of the transaction processing, that is the ledger. Ouroboros Crypsinous attempts to take privacy one step further and proposes a preservation of privacy at the protocol level.
 
@@ -129,7 +129,7 @@ One base assumption of all Ouroboros protocols is that nodes share a (somewhat) 
 ### Leios
 You might have heard about ‘input endorsers’ and how this could be the next big layer 1 scalability solution for Cardano. This is also known as ‘Leios’ and the idea behind it is surprisingly simple. So let's try to make sense of it.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.3.9.png)
 
 Cardano is a distributed system, where nodes reach consensus by sharing blocks according to a schedule for which they're elected. The more stake they own, the higher the chances of being elected. Blocks are produced about every 20s, and are propagated to the rest of the network as fast as possible. If we zoom in a bit on a node and analyze what a node does, we see that most of the time, a node isn't doing much. It is actually idle for a large part of these 20s. This is partly due to how networking works. Sending data across the planet takes time, and while the data is being sent from one point to another, both ends aren't actually doing anything but waiting.  Transferring data to the network, and receiving data from it is actually quite fast. It’s carrying the data from one point to another that takes time.
 
@@ -149,7 +149,7 @@ Endorsement blocks are ways for the chain to reach an agreement, with a relative
 
 Finally, Input blocks are bundles of transactions. They are the actual data payload containing information. They are meant to be produced at a fast rate and validated concurrently. When spread over multiple machines, it means validation happens with some degree of parallelism.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.3.10.png)
 
 This approach works because of one key assumption and observation: most transactions are actually 'concurrent'. Or put simply, most transactions deal with different, non conflicting, parts of the ledger (known as UTxO entries). A UTxO model makes it relatively easy to assess the concurrent nature of two transactions; for there's no side effect. It suffices to look at transactions' respective inputs and outputs to know whether they are conflicting with one another. There are no hidden consequences.
 
