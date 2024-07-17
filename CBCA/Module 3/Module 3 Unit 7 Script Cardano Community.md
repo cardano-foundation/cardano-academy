@@ -17,10 +17,12 @@ In this unit, we’re going to review the Community’s contribution to Cardano�
 ## Why Does Community Matter?
 A vibrant community following provides the oxygen for your project to breathe and grow. When you bring people together around a project, it creates a sense of belonging and maintains progress. When the community really gets behind the project, it's more likely to stay interesting, get ongoing support, and keep going for the long haul. The community's contributions, updates, and growth make sure the project stays relevant and keeps moving forward, even after it starts. By taking a look at aspects such as Decentralization, the Distribution of Power, Network Resilience, and Community Marketing, we can get a good understanding of why forming a community around a project matters.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.7.1.png)
 
 ### Decentralization
 Decentralization simply means spreading power, decision-making, and control among multiple individuals or entities instead of having it concentrated in one central authority. It aims to distribute authority and autonomy, promoting a more inclusive and participatory approach to governance and decision-making. Decentralization can be applied in various contexts, such as technology, organizations, or governance systems, to enhance transparency, resilience, and promote a more balanced distribution of power.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.7.2.png)
 
 ### Distribution of Power
 When we talk about the distribution of power in decentralization, it means that authority, decision-making, and control are shared among many people or groups instead of being held by one central authority. In a centralized system, one or just a handful of entities has all the power. This can lead to problems like lack of transparency and slow adaptation to change. Decentralization aims to solve these issues by giving power to different participants in a system. Often this is referred to as ‘pushing power to the edges.
@@ -30,7 +32,7 @@ Decentralization is founded on the idea of redistributing control among all netw
 ### Network (Security) Block Production and Resilience
 In a decentralized network, such as a blockchain, the process of producing blocks is not controlled by a single entity or authority. Instead, it is distributed among multiple community nodes that participate in the network. This decentralization of block production offers several benefits:
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.7.3.png)
 
 Security: In a centralized system, a single point of control can be targeted by malicious actors, making it easier to compromise the entire system. This is often referred to as a ‘single point of failure’. However, in a decentralized network, the distributed nature of block production makes it significantly more difficult for any individual or group to manipulate the process or tamper with the integrity of the blockchain. This increases security and helps to maintain the trustworthiness of the network.
 
@@ -38,9 +40,10 @@ Resilience: By having block production decentralized across multiple nodes, the 
 
 In Cardano, decentralization is a paramount concern. This is why thousands of stake pool operators help secure the network by running nodes or why even more actors delegate their stake to responsible operators. The community is collectively responsible for the good functioning of the network. 
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.7.4.png)
+
 ### Community Is Marketing From Within
 A strong community amplifies your voice and expands your audience.
-
 
 Adoption: The community drives the adoption of a project by using it for transactions, advocating for its use, and creating businesses around it. The greater the adoption, the more valuable and useful the project becomes due to network effects.
 
@@ -50,14 +53,14 @@ Education: Community plays an important role in educating new and existing users
 
 Having a strong and engaged community can be a project's biggest supporters and promoters. It can be a real asset. When community members truly believe in the project's value, vision and mission, they'll spread the word and create awareness. Their positive testimonials, reviews, and contributions can give the project a big boost in visibility, reach, and credibility, inspiring others to join the ecosystem.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.7.5.png)
 
 ### Community Offers Collective-Intelligence
 It has been said before that Community is an important pillar of each project. In many cases, that is true. This is especially true in a Web3 environment. It is the Community that not only drives the message forward but also helps to contribute to the project's development by offering their collective intelligence for improvements to the system. 
 
 In the event certain solutions are absent directly on the base layer, some Community members may even develop solutions of their own for others to utilize. Within the Web3 environment, these solutions can be in the form of tools, sidechains, layer 2 solutions or DApps.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.7.6.png)
 
 ### Community and Governance
 Governance refers to the mechanism, processes and rules by which decisions are made. A genuinely decentralized governance model empowers every participant in the network. It grants them a voice and influence over the platform's future development, as well as the emerging applications and services it fosters. This underscores the importance of community involvement in the governance process.
@@ -68,7 +71,7 @@ The other axis is Project Catalyst, an initiative within the Cardano ecosystem a
 
 Besides, the governance of Cardano is still in its infancy. Efforts such as CIP-1694 aims at introducing more robust and accessible mechanisms into the base protocol specifically for governance.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.7.7.png)
 
 ### Cascading Disruption
 Cardano’s focus on a strong community aligns with its primary founding principle of 'cascading disruption'. This is the notion that most of the structures and institutions around us are inherently unstable and ripe for disruption. Emerging, decentralized technologies with community-driven roadmaps, ratified by inclusive on-chain voting, can cause a ripple effect that fundamentally reconfigures and enhances the entire system for everyone.
@@ -81,15 +84,15 @@ Characterizing Cardano’s bootstrapping earlier days, we can observe several ke
 Development and Research - This period was marked by extensive development and research efforts by IOHK (now IOG). The blockchain was being built from the ground up, with a strong emphasis on scientific principles and peer-reviewed research. The team worked diligently to establish a robust and secure blockchain platform.
 Foundational Milestones - During this period, significant milestones were achieved in laying the foundation for Cardano. The launch of the Cardano mainnet in September 2017 marked an important step in making the blockchain operational. Additionally, Cardano's native cryptocurrency, ada, was introduced, providing a means of exchange within the ecosystem.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.7.8.png)
 
 Roadmap with phased approach: Cardano adopted a phased development approach, consisting of distinct phases - Byron, Shelley, Goguen, Basho and Voltaire. This was covered in an earlier unit. Each phase introduced specific features and capabilities to enhance the functionality and usability of the blockchain. A notable milestone was the launch of the Shelley era in 2020, which gradually brought decentralized block production and delegation to the Cardano network.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.7.9.png)
 
 Community Growth and Engagement: The Cardano Community expanded significantly during this period. We saw the emergence of Cardano YouTubers, content writers, the Ambassador Program, Meetups, the Cardano Summits, Twitter Spaces, and many more community-centered activities and contributions. It's also through many of these engagements that Cardano has solidified its position, amongst others, as a blockchain project with a strong social media presence.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.7.10.png)
 
 Not Overhyped: During this period, Cardano stood out as a blockchain project that has avoided the pitfalls of overhyping its potential. Throughout its development phases, IOG steadfastly kept to fundamentals and meaningful community engagement. The consistent approach from the development teams had been centered on providing regular updates that primarily focus on education and development progress, rather than resorting to excessive marketing or overhype.
 
@@ -99,13 +102,15 @@ Focus on Global Financial Inclusion: Cardano's mission to provide financial serv
 
 It was also during this period that we saw the launch of the famous Charles Hoskinson Cardano Whiteboard Video. Inspired by the vision Charles Hoskinson painted in the video, many people decided to become active members of the Community. The whiteboard video is something that is still spoken of today, although some concepts have been implemented differently than originally presented. The strategy outlined is complemented by the original Why Cardano essay which dives deeper into the background, philosophy and inspiration behind Cardano.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.7.11.png)<br>
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.7.12.png)<br>
 
 ## Community Groups
 In this section, we take a look at several Community Groups that have notably helped to shape the course of our ecosystem and our user experience.
 
 For example, in the early stages of Cardano's development, the community faced a challenge due to the limited availability of programming languages, with only Haskell on the Plutus Platform as options. However, driven by their passion for progress, the builder community took action and created alternative programming languages like Aiken and Helios. This expanded Cardano's capabilities and created more opportunities for developers and infrastructure providers to start building their own solutions of applications on the base layer. 
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.7.13.png)
 
 ### Stake Pool Operators
 Another foundation block of the Cardano ecosystem is the Stake Pool Operators who act as infrastructure providers for the blockchain. Stake Pool Operators also provide tooling and support for fellow SPOs and newcomers. These are a group of validators who are responsible for processing transactions and creating new blocks on the Cardano blockchain.
@@ -119,27 +124,29 @@ Within the community, Stake Pool Operators frequently compete to attract delegat
 ### Blockchain for Good
 Cardano's reputation as a 'Blockchain for Good' is largely built on projects and staking pools that aim to make a positive impact. These projects include planting trees, helping with reforestation, providing social housing, offering banking services to those without access and offering internet services to those without. Additionally, there is a project supporting refugees through the United Nations High Commissioner for Refugees (UNHCR) staking initiative. These initiatives showcase how the Cardano community is dedicated to making a difference in various ways, and by doing so upholding the principle of being a ‘Blockchain for Good’.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.7.14.png)
 
 ### Cardano ‘Meetup.com’ Groups
 Cardano boasts a vast geographic spread of events organized through ‘meetup.com’. For example, the annual Cardano Summit is watched live around the globe at community events. These community-led events are typically hosted by a community member with support from the Cardano Foundation at a location suggested by the host. For the 2023 Cardano Summit, events took place at diverse locations such as Kinshasa, Kumasi, Banglaore, Hanoi, Seoul, Taipei, Oslo, Vancouver, Ho Chi Minh City and Buenos Aires.
 
-
-
-
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.7.15.png)<br>
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.7.16.png)<br>
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.7.17.png)<br>
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.7.18.png)<br>
 
 ### NFTs
 A significant portion of the Cardano Ecosystem consists of NFTs (Non-Fungible Tokens) or projects associated with NFTs. These NFT-related initiatives such as the NFT Guild have been able to effectively build a community of enthusiasts around their respective projects by providing supplementary services to NFT holders. Furthermore, some of these projects have taken proactive steps to create a sense of camaraderie among their community members. This is often achieved through regular gatherings on platforms like X (formerly Twitter) Spaces, where members of their respective communities come together to engage in discussions spanning a diverse range of topics.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.7.19.png)<br>
 
 Moreover, several of these projects have extended their commitment to community building by establishing dedicated communication channels on platforms like Telegram or Discord. These channels serve as mediums for community members to connect, share ideas or insights, and receive ongoing support. Collectively, these efforts exemplify how NFT-related projects within the Cardano Ecosystem have successfully harnessed the power of community engagement and interaction to amplify the impact and reach of their initiatives.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.7.20.png)<br>
 
 ### Cardano Ambassador Program
 The Cardano Ambassador Program, driven by the Cardano Foundation to date, is an initiative created to foster and support the global adoption and understanding of the Cardano blockchain and its associated projects.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.7.21.png)<br>
 
 Cardano Ambassadors are a globally situated network of Cardano aficionados. They drive forward growth, whilst providing various forms of education to their respective communities by hosting and attending events, providing content, managing and monitoring social media channels and more. Cardano Ambassadors work together with the Cardano Foundation, unified by their passion for Cardano and its overarching mission as they endeavor to uphold, represent, and drive the core ideals of the Cardano ecosystem. 
 
@@ -201,7 +208,6 @@ And with that, we are at the end of this unit. We have only really scratched the
 
 **Sub-Unit 3**
 
-
 *Which of the following are key aspects of Decentralization? Select all that apply*
 - Block production
 - Development
@@ -210,9 +216,7 @@ And with that, we are at the end of this unit. We have only really scratched the
 
 *Analyze the images below and select the correct representation of a decentralized network. (Image Question)*
 
-
-
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.7.22.png)<br>
 
 - A
 - **B  (CORRECT ANSWER)**
@@ -275,10 +279,13 @@ And with that, we are at the end of this unit. We have only really scratched the
 
 The correct order of features are:
 - 1 = E; 2 = C; 3 = A; 4 = B; 5 = D
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.7.23.png)<br>
 
 - **1 = D; 2 = A; 3 = E; 4 = B; 5 = C (CORRECT ANSWER)**
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.7.24.png)<br>
 
 - 1 = B; 2 = C; 3 = E; 4 = A; 5 = E
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.7.25.png)<br>
 
 
 *When did the Shelley era launch?*
