@@ -116,9 +116,9 @@ Check it out! See you next time.
 
 ## Glossary
 
-*Cardano Improvement Proposal (C.I.P.)*: Cardano Improvement Proposals are formalized technical documents of agreed-upon solutions to common problems of the ecosystem. 
-*Application Programming Interface (API)*: API refers to the interface of a backend service. It describes the methods and data objects available that a client application can compose with. 
-*API query layer*: API query layer is an online service that provides some data access to a particular domain, such as the Cardano chain.
+- *Cardano Improvement Proposal (C.I.P.)*: Cardano Improvement Proposals are formalized technical documents of agreed-upon solutions to common problems of the ecosystem. 
+- *Application Programming Interface (API)*: API refers to the interface of a backend service. It describes the methods and data objects available that a client application can compose with. 
+- *API query layer*: API query layer is an online service that provides some data access to a particular domain, such as the Cardano chain.
 
 ## Questions
 
