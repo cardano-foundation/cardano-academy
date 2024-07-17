@@ -7,6 +7,17 @@ By the end of this unit, the learner should be able to:
 - Request tAda (test ada) from the faucet
 - Buy ada from a centralized exchange (CEX) and send it to another ada wallet
 
+To find out how far behind `db-sync` is:
+```sql
+select now () - max (time) as behind_by from block ;
+       behind_by
+------------------------
+ 4 days 20:59:39.134497
+(1 row)
+```
+
+
+
 ## Introduction
 Hello everyone, and welcome back. I am your lecturer, [lecturer name], and many thanks for joining me today! 
 
