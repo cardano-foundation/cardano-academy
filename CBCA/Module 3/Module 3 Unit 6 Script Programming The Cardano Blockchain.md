@@ -22,7 +22,7 @@ Let's start our journey by talking about programming languages. What is a progra
 
 What sets a programming language apart is how the specification has to be unambiguous.  More importantly, it has to be interpreted by machines. And we can see how our natural language is unfit for that purpose. Even with the recent progress in large language models, human speech still makes for an impractical specification language. This is even more true when the recipient is a computer. At the end of the day, a computer is a set of transistors and electronic components that only understand binary instructions resulting from an electric signal. A programming language is thus something that sits between us humans and the machine as a means of communication.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.6.1.png)
 
 There exist multiple levels of programming languages. Some are more expressive than others and almost feel like a natural language, whereas some are very close to machine language. Programming languages are typically said to be ‘low-level’ or ‘high-level’. What low and high levels truly mean depends on the domain. Most programmers or software engineers usually consider the C language a low-level programming language. Yet it's a pretty high-level language for microcontroller manufacturers.
 
@@ -31,14 +31,14 @@ Similarly, Haskell is often seen as one of the highest-level programming languag
 ### About Compilers
 Besides, programming languages are only one side of the story. To be executed, they need to be turned into machine code. Tools that perform this task are called compilers. A compiler is thus a program that turns a programming language into another, lower-level programming language. This process usually happens in steps because the higher the language, the harder it is to translate it to machine-readable instructions directly. A common practice is, therefore, to use intermediate representations or lower-level languages as compilation targets. For example, a programming language like Haskell will compile down to C, which in turn will compile to Assembly language, which directly maps into binary instructions for electronic components. It would be quite a stretch to go from Haskell to machine instructions.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.6.2.png)
 
 Assembly languages are exciting because they are so low-level in the stack that they feel like talking to the machine directly. In fact, that is precisely what they are about. Consequently, there's not one assembly language but multiple as they depend on the final hardware components. Most commercial machines today fall into two categories: Intel x86 and ARM. We won't go into detail here, but keep in mind that machine code doesn't necessarily refer to one thing. There are, in fact, many more machine architectures than the two mainstream ones which can be found across the industry.
 
 ### About Virtual Machines
 We have one more component to discuss - virtual machines. Let's recap first. Programming languages are means of writing unambiguous instructions to a machine. They are turned into machine code by a compiler. Computers can comprehend machine code and perform tasks accordingly. Great! But it would be too easy if it stopped here. While all programs are eventually executed by a computer, there are scenarios where we need a different execution model. For example, what if you wrote a program for a specific machine architecture that runs on an aircraft flight system but you wanted to avoid running an actual aircraft to test your program? In this scenario, you'd prefer being able to run your aircraft program as if you were running it on the aircraft.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.6.3.png)
 
 Virtual machines were invented to solve that kind of problem. A virtual machine is an execution environment that mimics a specific hardware architecture. It provides the same capabilities and interfaces that the real architecture would have. Said differently, it's a program that behaves as if it were a computer, with hardware components, peripherals, etc.. One notable trait of virtual machines is how they can emulate an architecture that doesn't exist in the real world. For example, you could build the perfect computer as a virtual machine or a computer which ignores all instructions between 11:00 p.m. and 6:00 a.m. Or, more realistically, you could design a virtual machine for running smart contracts in a completely controlled environment.
 
@@ -55,7 +55,7 @@ A common misconception is that the Cardano ledger executes Haskell programs. It 
 
 A second common misconception is that people have a tendency to say  'Plutus' when they genuinely mean 'Haskell'. Officially, Plutus refers to the programming platform which encompasses different elements:
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.6.4.png)
 
 - (Untyped) Plutus Core: It is the 'machine code' for the Cardano ledger that we just talked about;
 - Plutus Tx, which is a plugin for the mainstream Haskell compiler which allows turning a subset of Haskell into UPLC;
@@ -75,6 +75,7 @@ This model gives programmers a fully deterministic and reproducible environment 
 ## Smart Contract Languages
 Okay, enough talking about the internals and low-level details. These are necessary pieces of information to visualize how the machinery works. Yet, it's not something people deal with daily -- unless they are compiler engineers. When writing programs, programmers tend to prefer high-level languages as they can easily capture business requirements and are easier to audit. As we hinted at earlier, Cardano has many flavors regarding smart contract programming languages. So, let's explore some of the most notable efforts and talk about their commonalities and key differences.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.6.5.png)
 
 ### Haskell
 Haskell is the most famous option on Cardano for being the first one available. It has been pushed from the start through efforts like the Plutus Pioneer Program, which teaches Haskell for most parts. It is a natural first choice when it comes to Cardano since the rest of Cardano is also implemented in Haskell -- yet it's not the only reason that makes it a good choice. Haskell is a functional programming language with strong static typing and high expressiveness. These are all qualities we look for in modern languages as they help reduce common mistakes and ease the translation of complex requirements into programs.
@@ -87,11 +88,9 @@ And because of this different execution model, the ecosystem of functions and li
 
 However, the space is limited on the blockchain, specifically in transactions carrying scripts. It is challenging or simply infeasible to include many such code dependencies. Thus, in practice, programming in Haskell for Cardano and programming standard Haskell are vastly different experiences. Only a fraction of the Haskell ecosystem can be leveraged, mainly by borrowing from the syntax and existing tooling. Note that these limitations aren't specific to Haskell. They stem from the different execution model imposed by the ledger and would be true of any mainstream language.
 
-
-
-
-
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.6.6.png)<br>
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.6.7.png)<br>
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.6.8.png)<br>
 
 ### Aiken
 This is a perfect segway into another popular solution on Cardano: Aiken. Like Haskell, Aiken is a functional programming language with strong static typing. So what's the difference? Unlike Haskell, Aiken is built specifically for the Cardano blockchain and focuses on the developer experience. It is inspired by modern programming languages and comes with state-of-the-art tooling.
@@ -117,19 +116,19 @@ As it turns out, they are also great at representing smart contracts.
 ### Native Scripts
 The first type of eDSL we find on Cardano is the so-called 'native script’, which was introduced during the Shelley era. Native scripts form a straightforward scripting language that allows the representation of multi-signature scenarios and simple time conditions. At present, the native script eDSL provides six primitives:
 
-Signature: specifies that a valid signature from a given public key is expected.
-All: implies that a list of native scripts must all be satisfied.
-Any: implies that at least one native script from a list must be satisfied.
-N-of-M: a generalization of 'All' and 'Any', which lets you specify how many native scripts from a given list must be satisfied.
-After: implies that the script is only valid if executed after a given slot.
-Before: implies that the script is only valid if executed before a given slot.
+- Signature: specifies that a valid signature from a given public key is expected.
+- All: implies that a list of native scripts must all be satisfied.
+- Any: implies that at least one native script from a list must be satisfied.
+- N-of-M: a generalization of 'All' and 'Any', which lets you specify how many native scripts from a given list must be satisfied.
+- After: implies that the script is only valid if executed after a given slot.
+- Before: implies that the script is only valid if executed before a given slot.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.6.9.png)
 
 The primitives 'All', 'Any' and 'N-of-M' allow you to compose native scripts. 'Signature', 'After' and 'Before' allow us to express terminal conditions. It's a rudimentary language that the ledger understands, yet potent in many situations. In particular, they have been used in the early days of Cardano as minting policies for non-fungible tokens.
 
-
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.6.10.png)<br>
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.6.11.png)
 
 ### Marlowe
 Another excellent example of eDSL on Cardano is Marlowe. As the result of multiple years of research and effort, Marlowe is an eDSL specifically designed to represent a large variety of typical financial operations such as escrows, bonds, swaps, etc. Like native scripts, Marlowe also comes with six primitives that are limited in scope, although they have more elaborate logic than native scripts. Those primitives are Pay, Close, If, When, Let and Assert. As you can imagine, Marlowe can express more complex branching logic than a mere multi-signature using If and When.
@@ -144,149 +143,142 @@ This completes our unit about programming the Cardano blockchain. We've introduc
 
 ## Glossary
 
-Type System
-A type system is a logical framework made up of a set of rules that give each term—a word, phrase, or other group of symbols—an attribute termed a type (for instance, integer, floating point, or string).
-Type Theory
-Type theory is the academic study of type systems, and a type theory is the formal presentation of a particular type system. One influential type theory is Alonzo Church's typed λ-calculus.
-Machine code vs Assembly language
-Low-level programming languages used to create programs include machine language and assembly language. While assembly language is a representation of machine language that is comprehensible by humans, machine language is the binary code that computers comprehend and execute.
-Polymorphic
-Polymorphism is the notion that you can access objects of different types through the same interface. In other words, you can have multiple implementations of the same abstract concept.
-Lambda calculus
-Lambda calculus is a mathematical system used to describe mathematical functions and programs. It covers some of the key, universal characteristics of a wide range of programming languages.
-Static typed languages
-A language is said to be statically-typed if the variable types are known at compile-time instead of at run-time. Compile time is when the programming code is converted to machine code. Runtime is the time when a program is running and usually occurs after compile time.
-
+- *Type System:* A type system is a logical framework made up of a set of rules that give each term—a word, phrase, or other group of symbols—an attribute termed a type (for instance, integer, floating point, or string).
+- *Type Theory:* Type theory is the academic study of type systems, and a type theory is the formal presentation of a particular type system. One influential type theory is Alonzo Church's typed λ-calculus.
+- *Machine code vs Assembly language:* Low-level programming languages used to create programs include machine language and assembly language. While assembly language is a representation of machine language that is comprehensible by humans, machine language is the binary code that computers comprehend and execute.
+- *Polymorphic:* Polymorphism is the notion that you can access objects of different types through the same interface. In other words, you can have multiple implementations of the same abstract concept.
+- *Lambda calculus:* Lambda calculus is a mathematical system used to describe mathematical functions and programs. It covers some of the key, universal characteristics of a wide range of programming languages.
+- *Static typed languages:* A language is said to be statically-typed if the variable types are known at compile-time instead of at run-time. Compile time is when the programming code is converted to machine code. Runtime is the time when a program is running and usually occurs after compile time.
 
 ## Questions
 
 **Sub-Unit 1**
 
 *What do we call a programming language which is close to natural language and far from machine instructions?*
-Smart
-**High-level (CORRECT ANSWER)**
-Complex-level
-Turing-complete
+- Smart
+- **High-level (CORRECT ANSWER)**
+- Complex-level
+- Turing-complete
 
 *True or False, a program is a specification for a machine?*
-**True (CORRECT ANSWER)**
-False
+- **True (CORRECT ANSWER)**
+- False
 
 *Select the correct statements about programming languages:*
-**At a very high level, a programming language is nothing more than a set of instructions for a computer to execute (CORRECT ANSWER)**
-**A programming language is something that sits between us humans and the machine as a means of communication (CORRECT ANSWER)**
-What sets a programming language apart is how the specification has to be interpreted by human speech
-There exists only one level of programming languages
-Most programmers usually consider the C language a high-level programming language
+- **At a very high level, a programming language is nothing more than a set of instructions for a computer to execute (CORRECT ANSWER)**
+- **A programming language is something that sits between us humans and the machine as a means of communication (CORRECT ANSWER)**
+- What sets a programming language apart is how the specification has to be interpreted by human speech
+- There exists only one level of programming languages
+- Most programmers usually consider the C language a high-level programming language
 
 **Sub-Unit 2**
 
 *Which statement gives a high-level definition of a 'Virtual Machine'?*
-A computer which only exists in the metaverse
-A program that runs in the cloud
-**It's a program that behaves as if it were a computer, with hardware components, peripherals, etc.. (CORRECT ANSWER)**
-A blockchain execution engine
+- A computer which only exists in the metaverse
+- A program that runs in the cloud
+- **It's a program that behaves as if it were a computer, with hardware components, peripherals, etc.. (CORRECT ANSWER)**
+- A blockchain execution engine
 
 *Which of the following statements is NOT true regarding virtual machines?*
-They can be used to precisely measure execution steps of a program
-They need real machine resources to run
-They are often used in the blockchain industry
-**They can only emulate hardware components that exist in the real world (CORRECT ANSWER)**
+- They can be used to precisely measure execution steps of a program
+- They need real machine resources to run
+- They are often used in the blockchain industry
+- **They can only emulate hardware components that exist in the real world (CORRECT ANSWER)**
 
 *Select the correct statements about virtual machines:*
-**A virtual machine is an execution environment that mimics a specific hardware architecture  (CORRECT ANSWER)**
-**It provides the same capabilities and interfaces that the real architecture would have  (CORRECT ANSWER)**
-It is a program that behaves as if it were separate from a computer, only making use of software components, etc
-One notable trait of virtual machines is how they cannot emulate an architecture that doesn't exist in the real world
+- **A virtual machine is an execution environment that mimics a specific hardware architecture  (CORRECT ANSWER)**
+- **It provides the same capabilities and interfaces that the real architecture would have  (CORRECT ANSWER)**
+- It is a program that behaves as if it were separate from a computer, only making use of software components, etc
+- One notable trait of virtual machines is how they cannot emulate an architecture that doesn't exist in the real world
 
 **Sub-Unit 3**
 
 *Which of the following statements are correct:*
-**Virtual machines provide a safe execution environment for smart contracts (CORRECT ANSWER)**
-Virtual machines create a very unsafe execution environment for smart contracts
-**Blockchain virtual machines need to be able to quantify resource usage with a high degree of precision (CORRECT ANSWER)**
-A virtual machine interface is not able to emulate another machine’s architecture
+- **Virtual machines provide a safe execution environment for smart contracts (CORRECT ANSWER)**
+- Virtual machines create a very unsafe execution environment for smart contracts
+- **Blockchain virtual machines need to be able to quantify resource usage with a high degree of precision (CORRECT ANSWER)**
+- A virtual machine interface is not able to emulate another machine’s architecture
 
 *What is executed by the Cardano ledger when evaluating smart contracts?*
-Haskell
-**Plutus Core (CORRECT ANSWER)**
-Assembly
-Solidity
+- Haskell
+- **Plutus Core (CORRECT ANSWER)**
+- Assembly
+- Solidity
 
 *Select the correct statements:*
-The Cardano ledger directly executes Haskell programs
-**The Cardano ledger only comprehends Plutus Core (CORRECT ANSWER)**
-**Plutus refers to the programming platform which encompasses elements such as (Untyped) Plutus Core and Plutus Tx (CORRECT ANSWER)**
-**Plutus Application Framework: a collection of tools for working with smart contracts in Haskell (CORRECT ANSWER)**
-Cardano only provides one higher-level programming language that compile down to UPLC
+- The Cardano ledger directly executes Haskell programs
+- **The Cardano ledger only comprehends Plutus Core (CORRECT ANSWER)**
+- **Plutus refers to the programming platform which encompasses elements such as (Untyped) Plutus Core and Plutus Tx (CORRECT ANSWER)**
+- **Plutus Application Framework: a collection of tools for working with smart contracts in Haskell (CORRECT ANSWER)**
+- Cardano only provides one higher-level programming language that compile down to UPLC
 
 **Sub-Unit 4**
 
 *The Plutus virtual machine measures resource usage along two dimensions. What are they?*
-Steps and disk space
-Disk space and energy
-**Steps and memory (CORRECT ANSWER)**
-Memory and energy
+- Steps and disk space
+- Disk space and energy
+- **Steps and memory (CORRECT ANSWER)**
+- Memory and energy
 
 *How does the virtual machine handle programs that exceed their authorized budget?*
-It terminates the program immediately
-It allows the program to continue execution
-**It interrupts the execution if a program exceeds its authorized budget (CORRECT ANSWER)**
-It increases the authorized budget for the program
+- It terminates the program immediately
+- It allows the program to continue execution
+- **It interrupts the execution if a program exceeds its authorized budget (CORRECT ANSWER)**
+- It increases the authorized budget for the program
 
 *What can programmers do with the virtual machine in their own development environment?*
-They can only simulate executions of smart contracts
-They can't use the virtual machine for development
-**They can utilize the virtual machine to simulate executions of smart contracts on their own development environment in the very conditions that the ledger would. (CORRECT ANSWER)**
-They can only execute smart contracts on the main ledger
+- They can only simulate executions of smart contracts
+- They can't use the virtual machine for development
+- **They can utilize the virtual machine to simulate executions of smart contracts on their own development environment in the very conditions that the ledger would. (CORRECT ANSWER)**
+- They can only execute smart contracts on the main ledger
 
 **Sub-Unit 5**
 
 *Which of the following is NOT true regarding Haskell?*
-Haskell is a natural first choice for programmers, since the rest of Cardano is also implemented in Haskell 
-Haskell is a functional programming language with strong static typing and high expressiveness 
-**The Cardano ledger only understands Haskell (CORRECT ANSWER)**
-The Cardano ledger only understands Plutus core
+- Haskell is a natural first choice for programmers, since the rest of Cardano is also implemented in Haskell 
+- Haskell is a functional programming language with strong static typing and high expressiveness 
+- **The Cardano ledger only understands Haskell (CORRECT ANSWER)**
+- The Cardano ledger only understands Plutus core
 
 *Which statement is NOT true about Aiken?*
-It is a pure functional programming language
-It is Turing-complete
-**It is complex to set up and configure (CORRECT ANSWER)**
-It compiles to Plutus Core
+- It is a pure functional programming language
+- It is Turing-complete
+- **It is complex to set up and configure (CORRECT ANSWER)**
+- It compiles to Plutus Core
 
 *What is one of the main characteristics of Helios, a Cardano-specific programming language?*
-It is a multi-paradigm language
-It is based on the Haskell programming language
-**It is a purely functional language inspired by TypeScript (CORRECT ANSWER)**
-It relies heavily on external code libraries
+- It is a multi-paradigm language
+- It is based on the Haskell programming language
+- **It is a purely functional language inspired by TypeScript (CORRECT ANSWER)**
+- It relies heavily on external code libraries
 
 *What sets Helios apart in terms of its ecosystem?*
-It is built on top of the Haskell ecosystem
-**It is a wholly siloed ecosystem with no external dependencies to any library (CORRECT ANSWER)**
-It relies on numerous external code libraries
+- It is built on top of the Haskell ecosystem
+- **It is a wholly siloed ecosystem with no external dependencies to any library (CORRECT ANSWER)**
+- It relies on numerous external code libraries
 
 **Sub-Unit 6**
 
 *What does 'eDSL' mean?*
-Extended Domain-Specific Language
-**Embedded Domain-Specific Language (CORRECT ANSWER)**
-Enabled Domain Specific Language
-Efficient Domain Specific Language
+- Extended Domain-Specific Language
+- **Embedded Domain-Specific Language (CORRECT ANSWER)**
+- Enabled Domain Specific Language
+- Efficient Domain Specific Language
 
 *What kind of trustless smart contract logic could you implement using a Cardano native script?*
-**A multi-signature between 3 participants, but only after a known date (CORRECT ANSWER)**
-An asset swap
-A token minting policy which ensures a maximum supply of tokens.
-A multi-signature between 2 participants, with different permissions for each signatory
+- **A multi-signature between 3 participants, but only after a known date (CORRECT ANSWER)**
+- An asset swap
+- A token minting policy which ensures a maximum supply of tokens.
+- A multi-signature between 2 participants, with different permissions for each signatory
 
 *What are the six primitives that come with Marlowe?*
-Add, Subtract, Multiply, Divide, Equals, Not Equals
-**Pay, Close, If, When, Let, Assert (CORRECT ANSWER)**
-Create, Modify, Delete, Retrieve, Execute, Verify
-Input, Output, Loop, Break, Continue, Function
+- Add, Subtract, Multiply, Divide, Equals, Not Equals
+- **Pay, Close, If, When, Let, Assert (CORRECT ANSWER)**
+- Create, Modify, Delete, Retrieve, Execute, Verify
+- Input, Output, Loop, Break, Continue, Function
 
 *How does Marlowe's level of Turing completeness compare to languages like Haskell, Aiken, and Helios?*
-Marlowe is Turing-Complete, just like Haskell, Aiken, and Helios
-Marlowe is more limited in its expressive power compared to Haskell, Aiken, and Helios
-**Marlowe is not Turing-Complete, while Haskell, Aiken, and Helios are (CORRECT ANSWER)**
-Marlowe is less secure but more versatile than Haskell, Aiken, and Helios
+- Marlowe is Turing-Complete, just like Haskell, Aiken, and Helios
+- Marlowe is more limited in its expressive power compared to Haskell, Aiken, and Helios
+- **Marlowe is not Turing-Complete, while Haskell, Aiken, and Helios are (CORRECT ANSWER)**
+- Marlowe is less secure but more versatile than Haskell, Aiken, and Helios
