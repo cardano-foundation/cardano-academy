@@ -19,10 +19,10 @@ For the rest of this module, we’re going to apply what we learned so far and g
 First, let's introduce two typical Cardano users. Alice and Bob are friends who decide to learn about Cardano together. Alice is a technophobe who prefers friendly GUIs while Bob is a techie who has used other blockchains and command line tools before.
 
 There are a number of resources charting the many projects in a busy ecosystem: 
-Cardano Developer Portal
-Essential Cardano
-CardanoCube
-AdaPulse
+- [Cardano Developer Portal](https://developers.cardano.org/showcase)
+- [Essential Cardano](https://www.essentialcardano.io/)
+- [CardanoCube](https://www.cardanocube.io/cardano-ecosystem-interactive-map)
+- [AdaPulse](https://adapulse.io/)
 
 Any tool or service we use in this module is not an endorsement or investment advice. 
 
@@ -57,31 +57,31 @@ Light wallets (aka Web Wallets, aka online wallets) are convenient if you want f
 
 So it is a trade-off of convenience versus risk acceptance. Many users hold their main secret keys on a hardware wallet and use a light wallet for daily use, similar to having a bank account for your savings while carrying ‘petty cash’ in your pocket.
 
-Mobile wallets are app-based wallets installed on a smartphone via the iPhone App Store or Android Play Store. Such wallets are convenient to install and use QR codes for day-to-day transactions. It is best practice to encrypt your mobile wallet with a spending password and activate MFA (Multi-Factor Authentication). Your recovery phrase should be backed up in case your device is lost or stolen, for example, on a paper or a steel wallet in another location.
+**Mobile wallets** are app-based wallets installed on a smartphone via the iPhone App Store or Android Play Store. Such wallets are convenient to install and use QR codes for day-to-day transactions. It is best practice to encrypt your mobile wallet with a spending password and activate MFA (Multi-Factor Authentication). Your recovery phrase should be backed up in case your device is lost or stolen, for example, on a paper or a steel wallet in another location.
 
-Desktop wallets are downloaded to your laptop or computer. Most people who have held ada in the longer term would have on-boarded to Cardano using Daedalus. Daedalus is a full-node wallet, which downloads the entire blockchain and must sync each time you use it. They are generally secure and reliable as you are not relying on external parties to provide data. 
+**Desktop wallets** are downloaded to your laptop or computer. Most people who have held ada in the longer term would have on-boarded to Cardano using Daedalus. Daedalus is a full-node wallet, which downloads the entire blockchain and must sync each time you use it. They are generally secure and reliable as you are not relying on external parties to provide data. 
 
 On the downside, full-node wallets are not as flexible or portable. They take up more space and take longer to fully sync up depending on your local system’s resources. A full node is only as secure as the system it lives in. If your computer is hacked, or accessed by another user, your wallet is compromised. You are liable to lose your ada if you install malware or give access to malicious actors to your system. It is a good practice to always multiply the layers of security when you can. 
 
-A hardware wallet is a physical device that resembles a USB key or a flash drive. Unlike ‘hot’ wallets, hardware wallets have no connection to the internet, so are considered ‘cold’ wallets. The device generates a random number that is used to create a seed phrase, and in turn, the public and private keys. They can work in tandem with light wallets via a Bluetooth or USB connection, without your keys leaving the device. In such a hybrid setup, it is the light wallet that generates the transaction and sends it to the hardware wallet which signs the transaction. The signed transaction is then sent back to the light wallet and broadcasted to the network.
+A **hardware wallet** is a physical device that resembles a USB key or a flash drive. Unlike ‘hot’ wallets, hardware wallets have no connection to the internet, so are considered ‘cold’ wallets. The device generates a random number that is used to create a seed phrase, and in turn, the public and private keys. They can work in tandem with light wallets via a Bluetooth or USB connection, without your keys leaving the device. In such a hybrid setup, it is the light wallet that generates the transaction and sends it to the hardware wallet which signs the transaction. The signed transaction is then sent back to the light wallet and broadcasted to the network.
 
 The disadvantage of the hardware wallet is you risk losing the device or physically damaging it. There are some wallets with proprietary code and others with open-source code. There is an element of trust in the manufacturer, who can add additional (unwanted) functionality via firmware upgrades. Manufacturing standards and conditions can change without your consent or prior knowledge. The hardware wallet space is also constantly innovating with wallets such as Ngrave completely air-gapped and relying on QR codes instead of Bluetooth or USB connections.
 
 As the name implies, a paper wallet is a physical paper document with your seed phrase on it. The wallet can be a written or typed record of your seed phrase or a printed QR code. If you use a paper wallet, make it durable with laminated paper and store a copy in multiple ‘safe’ physical locations. Paper wallets are a good choice if you do not use your funds day to day, and are more interested in HODLing long term. If you lose that paper, and you have no backup, say goodbye to your funds. 
 
-Steel wallets are sturdier versions of paper wallets which are less vulnerable to fire and water, and obviously less likely to degrade or suffer physical damage.
+**Steel wallets** are sturdier versions of paper wallets which are less vulnerable to fire and water, and obviously less likely to degrade or suffer physical damage.
 
 
 ###  Advanced Custody Solutions
 Most retail users will choose one of the above options, however, there are more complex custody options available for enterprises. These cater to more advanced users and are mentioned here for completeness.
 
-A hardware security module (HSM) is a traditional security solution for managing digital keys and has been used widely in PKI (public key infrastructure) environments and in the financial services and retail banking sectors. These institutions have been faced with custody challenges for decades and are well-placed to advise on enterprise custodial solutions. This is somewhat ironic as many see crypto as a replacement for such institutions.
+A **hardware security module (HSM)** is a traditional security solution for managing digital keys and has been used widely in PKI (public key infrastructure) environments and in the financial services and retail banking sectors. These institutions have been faced with custody challenges for decades and are well-placed to advise on enterprise custodial solutions. This is somewhat ironic as many see crypto as a replacement for such institutions.
 
 The HSM provides a safe environment to interact with your private key while facilitating encryption, decryption, hash function computations, signing, and signature verification. These modules typically come in the form of a plug-in card or an external device that connects directly to a computer or server. An HSM is usually used for the full life cycle of the private keys, including true random number generation (TRNG), symmetric and asymmetric key generation, distribution, rotation, storage, destruction, and archiving. 
 
-Multi-signature wallets require multiple signatures to verify ownership and execute transactions. A multi-sig wallet is a protocol, or construct, built on top of several credentials held in different wallets. It is not only restricted to private keys but can also be constructed out of scripts. When setting up a multi-sig wallet, the owner assigns individual credentials to each trusted party. There can be different configurations and thresholds set, such as m of n signatures required for certain transactions. Multi-signature wallets rely heavily on open-source privacy-focused software.
+**Multi-signature wallets** require multiple signatures to verify ownership and execute transactions. A multi-sig wallet is a protocol, or construct, built on top of several credentials held in different wallets. It is not only restricted to private keys but can also be constructed out of scripts. When setting up a multi-sig wallet, the owner assigns individual credentials to each trusted party. There can be different configurations and thresholds set, such as m of n signatures required for certain transactions. Multi-signature wallets rely heavily on open-source privacy-focused software.
 
-Multi-part computation (MPC) wallets employ cryptographic data from multiple parties, using multiple devices, to perform calculations using their combined data points without revealing any party’s individual input. Unlike a multi-sig wallet, MPC wallets don’t assign multiple private keys but instead split a single private key into several smaller parts using algorithms. These algorithmically distributed keys are later processed to generate the whole private key. An MPC wallet can execute a verified transaction using a digital signature created by this shared private key. MPC wallets are typically based on proprietary software and therefore reliant on third-party support.
+**Multi-part computation (MPC)** wallets employ cryptographic data from multiple parties, using multiple devices, to perform calculations using their combined data points without revealing any party’s individual input. Unlike a multi-sig wallet, MPC wallets don’t assign multiple private keys but instead split a single private key into several smaller parts using algorithms. These algorithmically distributed keys are later processed to generate the whole private key. An MPC wallet can execute a verified transaction using a digital signature created by this shared private key. MPC wallets are typically based on proprietary software and therefore reliant on third-party support.
 
 MPC and multi-signature wallets attempt to address some of the shortcomings with single-signature wallets. Both require multiple users to verify and sign transactions. In theory, the chance of hackers compromising all parties simultaneously is unlikely. These solutions are more appropriate for enterprise users, where governance and accountability can be a regulatory requirement. For example, Coinbase Custody, Fireblocks, BitGo and Gemini all offer various insurance guarantees as well as SOC 1 and 2 compliance. 
 
@@ -89,7 +89,7 @@ MPC and multi-signature wallets attempt to address some of the shortcomings with
 ###  Setting up a Wallet
 Equipped with all this information, Alice has a look on the Developer Portal Showcase section and chooses a light wallet. The landing page allows her to simply add a browser extension and prompts her to ‘Create’ wallet. Alice is new to crypto and apprehensive about using real money starting off. Her friend Bob advises her to select ‘Cardano Testnet’ at first until she finds her feet.
 
-Note: Cardano has two testnets which are independent networks, completely separate from the Cardano mainnet. Preview is an early-stage public testnet where updates and hard forks will happen first. Epochs are 1 day long. Preprod is a later-stage public testnet that receives updates and hard forks four weeks before mainnet. Epochs are five days long, protocol parameters are usually the same as mainnet.
+*Note: Cardano has two testnets which are independent networks, completely separate from the Cardano mainnet. Preview is an early-stage public testnet where updates and hard forks will happen first. Epochs are 1 day long. Preprod is a later-stage public testnet that receives updates and hard forks four weeks before mainnet. Epochs are five days long, protocol parameters are usually the same as mainnet.*
 
 Alice proceeds with the ‘Create’ wallet option where she is asked to name her wallet and ‘Create a password’. This is commonly referred to as a ‘spending password’ and must be re-entered before certain operations. She is then presented with her ‘seed phrase’ and a severe warning of the importance of writing these words down offline. The next step in the process is to confirm some of these words back before hitting ‘Verify and Unlock’.
 
@@ -127,7 +127,8 @@ Alice’s light wallet displays account balances, monitors addresses, and stores
 
 
 As Alice is using the testnet, the address format is as follows:
-Example of Address
+
+**Example of Address**:<br>
 Addr_test1qzllpqsy4stfdfcqnfrckkdnvzjlem8y92ttqzye6k42p832sj4qqdjps638a5g7jet29yevwru2a9trapjh7uggul0sjma3t4
 
 Alice notices the 10,000 tAda she requested from the faucet has arrived in her wallet. Bob congratulates her and suggests she send him some tAda as a first transaction once he sets up his wallet using the CLI.
@@ -300,26 +301,26 @@ Centralized exchanges (CEX) behave like a bank for cryptocurrencies. They handle
 Let’s zoom out for a moment, and review the typical inner workings of a CEX:
 
 
-Customer Deposits: Using a payment gateway API, the user deposits fiat currency into the exchange’s wallet. This fiat money is then transferred to the CEX’s wallet, often in return for a transaction fee. Some bank transfers incur no fee. An entry of this user deposit is made in the CEX’s database. 
-Buying/selling crypto: The customer can buy, or sell, any crypto supported by the exchange. At this stage, no transaction typically occurs on the blockchain. The CEX uses its trading engine to match buyers with sellers and then updates its database accordingly. The exchange profits by charging transaction fees.
-For standard ‘retail investors’, none of their CEX trading history is recorded on the blockchain. The balance you see in your CEX wallet is just a database entry for what the CEX owes you. Most of the centralized exchanges do not share the private keys of user wallets. They don’t need to, as they’re more likely to host specific exchange wallets for each cryptocurrency. 
-Customer withdrawals: when a customer wants to withdraw their assets to their own personal crypto wallet, the transfer is generally from the CEX's crypto wallet to the customer’s crypto wallet ‘receive address’, which in turn, is derived from the wallet’s private key.
+1. Customer Deposits: Using a payment gateway API, the user deposits fiat currency into the exchange’s wallet. This fiat money is then transferred to the CEX’s wallet, often in return for a transaction fee. Some bank transfers incur no fee. An entry of this user deposit is made in the CEX’s database. 
+2. Buying/selling crypto: The customer can buy, or sell, any crypto supported by the exchange. At this stage, no transaction typically occurs on the blockchain. The CEX uses its trading engine to match buyers with sellers and then updates its database accordingly. The exchange profits by charging transaction fees.
+3. For standard ‘retail investors’, none of their CEX trading history is recorded on the blockchain. The balance you see in your CEX wallet is just a database entry for what the CEX owes you. Most of the centralized exchanges do not share the private keys of user wallets. They don’t need to, as they’re more likely to host specific exchange wallets for each cryptocurrency. 
+4. Customer withdrawals: when a customer wants to withdraw their assets to their own personal crypto wallet, the transfer is generally from the CEX's crypto wallet to the customer’s crypto wallet ‘receive address’, which in turn, is derived from the wallet’s private key.
 
 
 
 Note that while this is the typical experience for most ‘retail investors’, CEXs also offer a suite of institutional products and services to help financial services companies and hedge funds safeguard crypto assets. Some of these services offer various custodial solutions featuring features built around multi-sig and Multi-party computation (MPC).
 
 ###  Alice is Now Ready to ‘Buy Crypto’
-She signs in to her exchange account, verifying her access code via her MFA device.
-She selects a Buy/Sell option.
-She clicks Buy, enters ADA (Cardano) as the cryptocurrency to purchase. 
-She enters the amount of ada she wants to purchase and selects a payment method from the list (usually bank transfers incur less fees than credit or debit card deposit). 
+1. She signs in to her exchange account, verifying her access code via her MFA device.
+2. She selects a Buy/Sell option.
+3. She clicks Buy, enters ADA (Cardano) as the cryptocurrency to purchase. 
+4. She enters the amount of ada she wants to purchase and selects a payment method from the list (usually bank transfers incur less fees than credit or debit card deposit). 
 
 Some exchanges employ ‘cool down’ periods where you may not be able to withdraw for 24-72 hours after the first transaction on a new debit card. 
 
-Alice confirms her purchase via email and enters the 2FA code from her device. She then receives her ada on her CEX account.
-Alice's friend Bob emphasizes the importance of not leaving funds on CEXs and advises her to withdraw to her personal wallet ASAP. She takes his advice, chooses the ‘Withdraw’ option, and pastes her wallet ‘receive address’ and confirms the withdrawal request. Most exchanges offer helpful ‘tool tips’ and won’t allow withdrawals to an invalid address structure. 
-Alice checks her wallet and sees her balance updated. She reviews the transaction history in her wallet and also via her favorite explorer. Like with everything in Cardano, there are many different options to choose from when it comes to explorer tools.
+5. Alice confirms her purchase via email and enters the 2FA code from her device. She then receives her ada on her CEX account.
+6. Alice's friend Bob emphasizes the importance of not leaving funds on CEXs and advises her to withdraw to her personal wallet ASAP. She takes his advice, chooses the ‘Withdraw’ option, and pastes her wallet ‘receive address’ and confirms the withdrawal request. Most exchanges offer helpful ‘tool tips’ and won’t allow withdrawals to an invalid address structure. 
+7. Alice checks her wallet and sees her balance updated. She reviews the transaction history in her wallet and also via her favorite explorer. Like with everything in Cardano, there are many different options to choose from when it comes to explorer tools.
 
 
 
@@ -359,6 +360,7 @@ Echo 'addr1q9qflm25pwc500tzv….2a9trapjh7uggul0suae7av' > alice_address.addr
 
 
 $alice_address=$(cat alice_address.addr)
+
 ###  Build the Tx Payload
 Transactions in Cardano are deterministic, meaning they’re predictable ahead of time. This is not the same experience on other blockchains where the same transaction can have different outcomes and transaction fees depending on when it is executed. As we will see, when Bob builds a transaction (Tx), he will provide all the details upfront and know what transaction fees are before he has to proceed. 
 
@@ -455,132 +457,125 @@ Alice's balance in her light wallet has now been topped up by 50 ada. She can al
 And with that, we have made it to the end of another unit! To review, we looked at the different wallet options and the rationale for choosing one over another. We went through the steps involved in setting up a wallet as a browser extension, as well as with the cardano-cli. We went through the process of buying ADA on an exchange and withdrawing it to our wallet. We sent some tAda on the testnet from both the browser extension and the cli. We are now set up to continue our journey in the next unit where we’ll explore staking.
 
 ## References
-[Ref.4.1.1] CIP-30, Cardano dApp Wallet Web Bridge, Cardano.org, Available from:  CIP-30, Cardano dApp Wallet Web Bridge , Accessed: 16 Aug 2023
-[Ref.4.1.2] Essential Cardano Guide to the Ecosystem, Available from: https://landing.essentialcardano.io/guide-to-the-ecosystem , Accessed: 16 Aug 2023
-[Ref.4.1.3] Testnets faucet, Cardano.org, Available from: https://docs.cardano.org/cardano-testnet/tools/faucet/, Accessed: 16 Aug 2023
-[Ref.4.1.4] Cardano Developer Portal, Cardano.org, Available from: https://developers.cardano.org/ , Accessed: 16 Aug 2023
-[Ref.4.1.5] Cardano Node Course, IOG, Available from: https://cardano-course.gitbook.io/cardano-course/ , Accessed: 16 Aug 2023
-[Ref.4.1.6] Cardano Node CLI Reference, IOG, Available from: https://github.com/input-output-hk/cardano-node-wiki/blob/main/docs/reference/cardano-node-cli-reference.md , Accessed: 16 Aug 2023
-[Ref.4.1.7] Cardano Tracking Tools, Cardano.org, Available from: https://docs.cardano.org/new-to-cardano/cardano-tracking-tools/ , Accessed: 16 Aug 2023
-[Ref.4.1.8] Cardano Foundation’s Open Beta Phase of New Cardano Explorer, Cardano Foundation, https://cardanofoundation.org/en/news/cardano-foundation%E2%80%99s-open-beta-phase-of-new-cardano-explorer/ , Accessed: 16 Aug 2023
-[Ref.4.1.8] CIP 2 - Coin Selection Algorithms for Cardano, Cardano.org, https://cips.cardano.org/cips/cip2/ , Accessed: 16 Aug 2023
+[Ref.4.1.1] CIP-30, Cardano dApp Wallet Web Bridge, Cardano.org, Available from:  CIP-30, Cardano dApp Wallet Web Bridge , Accessed: 16 Aug 2023<br>
+[Ref.4.1.2] Essential Cardano Guide to the Ecosystem, Available from: https://landing.essentialcardano.io/guide-to-the-ecosystem , Accessed: 16 Aug 2023<br>
+[Ref.4.1.3] Testnets faucet, Cardano.org, Available from: https://docs.cardano.org/cardano-testnet/tools/faucet/, Accessed: 16 Aug 2023<br>
+[Ref.4.1.4] Cardano Developer Portal, Cardano.org, Available from: https://developers.cardano.org/ , Accessed: 16 Aug 2023<br>
+[Ref.4.1.5] Cardano Node Course, IOG, Available from: https://cardano-course.gitbook.io/cardano-course/ , Accessed: 16 Aug 2023<br>
+[Ref.4.1.6] Cardano Node CLI Reference, IOG, Available from: https://github.com/input-output-hk/cardano-node-wiki/blob/main/docs/reference/cardano-node-cli-reference.md , Accessed: 16 Aug 2023<br>
+[Ref.4.1.7] Cardano Tracking Tools, Cardano.org, Available from: https://docs.cardano.org/new-to-cardano/cardano-tracking-tools/ , Accessed: 16 Aug 2023<br>
+[Ref.4.1.8] Cardano Foundation’s Open Beta Phase of New Cardano Explorer, Cardano Foundation, https://cardanofoundation.org/en/news/cardano-foundation%E2%80%99s-open-beta-phase-of-new-cardano-explorer/ , Accessed: 16 Aug 2023<br>
+[Ref.4.1.8] CIP 2 - Coin Selection Algorithms for Cardano, Cardano.org, https://cips.cardano.org/cips/cip2/ , Accessed: 16 Aug 2023<br>
 
 ## Glossary
-Term
-Definitions
-Light wallet
-Light wallets (aka light client, aka light node wallets) have reduced data requirements allowing them to run faster (lighter). Light wallets do not download the blockchain in its entirety, just a fraction of it. They typically work by connecting with a server(s) that allow them to obtain data from the blockchain.
-Full node wallet
-A full-node wallet does everything that a regular cardano-node does and contains a complete copy of the blockchain ledger. This is why you will notice much greater 'sync times' when opening a Daedalus wallet for example.
-Service Organization Control (SOC)
-SOC reports enable companies to feel confident that service providers are operating in an ethical and compliant manner. SOC 1 evaluates an organization's internal controls over financial reporting, whereas SOC 2 is an audit that ensures your service providers securely manage your data.
-CNFT
-NFTs leverage cryptography to make an asset or digital object unique. CNFTs refer to Cardano NFTs specifically.
-OG
-OG (crypto Original Gangster) is slang for a founder of any early crypto blockchain. A crypto OG can also refer to an early investor in Bitcoin, Ethereum, Cardano, etc.
-Shoulder surfing
-A shoulder surfing attack is when an attacker can physically view your device screen and keypad to obtain your personal information.
+
+- *Light wallet*: Light wallets (aka light client, aka light node wallets) have reduced data requirements allowing them to run faster (lighter). Light wallets do not download the blockchain in its entirety, just a fraction of it. They typically work by connecting with a server(s) that allow them to obtain data from the blockchain.
+- *Full node wallet*: A full-node wallet does everything that a regular cardano-node does and contains a complete copy of the blockchain ledger. This is why you will notice much greater 'sync times' when opening a Daedalus wallet for example.
+- *Service Organization Control (SOC)*: SOC reports enable companies to feel confident that service providers are operating in an ethical and compliant manner. SOC 1 evaluates an organization's internal controls over financial reporting, whereas SOC 2 is an audit that ensures your service providers securely manage your data.
+- *CNFT*: NFTs leverage cryptography to make an asset or digital object unique. CNFTs refer to Cardano NFTs specifically.
+- *OG*: OG (crypto Original Gangster) is slang for a founder of any early crypto blockchain. A crypto OG can also refer to an early investor in Bitcoin, Ethereum, Cardano, etc.
+- *Shoulder surfing*: A shoulder surfing attack is when an attacker can physically view your device screen and keypad to obtain your personal information.
 
 
 ## Questions
-Sub-Unit 1
 
+**Sub-Unit 1**
 
-Where are assets stored?  
-In public key(s)
-On the blockchain ledger (CORRECT ANSWER)
-In private key(s)
-In wallets
+*Where are assets stored?*  
+- In public key(s)
+- **On the blockchain ledger (CORRECT ANSWER)**
+- In private key(s)
+- In wallets
 
-True or False: You can restore all your accounts, private keys, public keys and receiving addresses using just one seed (recovery) phrase.
-True (CORRECT ANSWER)
-False
+*True or False: You can restore all your accounts, private keys, public keys and receiving addresses using just one seed (recovery) phrase.*
+- **True (CORRECT ANSWER)**
+- False
 
-Which of the following are ‘full node’ wallets? Select all that apply
-Daedalus (CORRECT ANSWER)
-MetaMask 
-Yoroi
-Typhon
-Eternl
-Flint
-GeroWallet
+*Which of the following are ‘full node’ wallets? Select all that apply*
+- **Daedalus (CORRECT ANSWER)**
+- MetaMask 
+- Yoroi
+- Typhon
+- Eternl
+- Flint
+- GeroWallet
 
-Which of the following are advisable precautions you should take when using a mobile wallet? Select all that apply.
-Use a ‘spending password’ (CORRECT ANSWER)
-Activate MFA (CORRECT ANSWER)
-Only use your device in ‘dark mode’ in the evenings.
-Be conscious of shoulder surfing attacks (CORRECT ANSWER)
-Backup your seed phrase elsewhere (CORRECT ANSWER)
+*Which of the following are advisable precautions you should take when using a mobile wallet? Select all that apply.*
+- **Use a ‘spending password’ (CORRECT ANSWER)**
+- **Activate MFA (CORRECT ANSWER)**
+- Only use your device in ‘dark mode’ in the evenings.
+- **Be conscious of shoulder surfing attacks (CORRECT ANSWER)**
+- **Backup your seed phrase elsewhere (CORRECT ANSWER)**
 
-True or False: A Light wallet contains a full copy of the blockchain.
-True 
-False (CORRECT ANSWER)
-Sub-Unit 2
+*True or False: A Light wallet contains a full copy of the blockchain.*
+- True 
+- **False (CORRECT ANSWER)**
 
+**Sub-Unit 2**
 
-Where are private cryptographic credentials stored?
-AWS
-Local bank
-Public blockchain
-Wallet (CORRECT ANSWER)
+*Where are private cryptographic credentials stored?*
+- AWS
+- Local bank
+- Public blockchain
+- **Wallet (CORRECT ANSWER)**
 
-Select two options below that require multiple users to verify a transaction.
-Mult-sig wallets (CORRECT ANSWER)
-Paper wallets
-Light wallets
-Hardware wallets
-Non-custodial wallets
-Multi-part computation wallets (CORRECT ANSWER)
-Leather wallets
-Sub-Unit 3
+*Select two options below that require multiple users to verify a transaction.*
+- **Mult-sig wallets (CORRECT ANSWER)**
+- Paper wallets
+- Light wallets
+- Hardware wallets
+- Non-custodial wallets
+- **Multi-part computation wallets (CORRECT ANSWER)**
+- Leather wallets
 
+**Sub-Unit 3**
 
-Select two options below which are the two widely used cli shells.
+*Select two options below which are the two widely used cli shells.*
 Windows explorer 
-Bash (CORRECT ANSWER)
-TextEdit
-PowerShell (CORRECT ANSWER)
+- **Bash (CORRECT ANSWER)**
+- TextEdit
+- **PowerShell (CORRECT ANSWER)**
 
-Which of the following statements are true regarding addresses on Cardano?
-Addresses are derived only from your private key 
-Your public key is derived from your private key (CORRECT ANSWER)
-You can't go back from the public key to the private key, but you can produce the public key from the private key (CORRECT ANSWER) 
-You can calculate the public key from the address, but you can’t calculate the address from the public key
-Sub-Unit 4
+*Which of the following statements are true regarding addresses on Cardano?*
+- Addresses are derived only from your private key 
+- Your public key is derived from your private key (CORRECT ANSWER)
+- **You can't go back from the public key to the private key, but you can produce the public key from the private key (CORRECT ANSWER)** 
+- You can calculate the public key from the address, but you can’t calculate the address from the public key
 
+**Sub-Unit 4**
 
-Which of the following is not a Centralized Exchange (CEX)?
-Binance
-Kraken
-Coinbase
-Minswap (CORRECT ANSWER)
+*Which of the following is not a Centralized Exchange (CEX)?*
+- Binance
+- Kraken
+- Coinbase
+- **Minswap (CORRECT ANSWER)**
 
-What is the main risk of storing your crypto assets on a centralized exchange (CEX)? 
-It is a Web 2 user experience
-You are trusting a third party (CORRECT ANSWER)
-You never own the digital asset
-It is not trendy to be using centralized services
-Sub-Unit 5
+*What is the main risk of storing your crypto assets on a centralized exchange (CEX)?* 
+- It is a Web 2 user experience
+- **You are trusting a third party (CORRECT ANSWER)**
+- You never own the digital asset
+- It is not trendy to be using centralized services
 
+**Sub-Unit 5**
 
-True or False: CEXs (Centralized exchanges) usually have more liquidity than DEXs (Decentralized exchanges)
-True (CORRECT ANSWER)
-False
+*True or False: CEXs (Centralized exchanges) usually have more liquidity than DEXs (Decentralized exchanges)*
+- **True (CORRECT ANSWER)**
+- False
 
-True or False: Centralized exchanges (CEX) profit by charging transaction fees to users for both FIAT and crypto deposits and withdrawals.
-True (CORRECT ANSWER)
-False
-Sub-Unit 6
+*True or False: Centralized exchanges (CEX) profit by charging transaction fees to users for both FIAT and crypto deposits and withdrawals.*
+- **True (CORRECT ANSWER)**
+- False
 
+**Sub-Unit 6**
 
-When choosing a Centralized Exchange, which of the following are metrics to consider that are often listed on market listing sites?
-Liquidity
-Price of asset
-KYC requirements
-All of the above (CORRECT ANSWER)
+*When choosing a Centralized Exchange, which of the following are metrics to consider that are often listed on market listing sites?*
+- Liquidity
+- Price of asset
+- KYC requirements
+- **All of the above (CORRECT ANSWER)**
 
-If Bob wants to receive ada from Alice, what crucial piece of info does he need to share?
-Bobs ‘receiving address’ (CORRECT ANSWER)
-Alice’s ‘receiving address’
-Bob’s private key
-Bob’s favorite wallet provider
+*If Bob wants to receive ada from Alice, what crucial piece of info does he need to share?*
+- **Bobs ‘receiving address’ (CORRECT ANSWER)**
+- Alice’s ‘receiving address’
+- Bob’s private key
+- Bob’s favorite wallet provider
