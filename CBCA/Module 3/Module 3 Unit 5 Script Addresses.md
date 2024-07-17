@@ -25,6 +25,7 @@ Said differently, people own tokens. To maintain ownership of those tokens, they
 
 In the diagram, you can see that Alice has a private key from which she can generate her public key. From that public key, she generates her wallet address. As we learned in earlier units, Alice’s private key cannot be derived from her public key. And generally, her public key cannot be derived from her wallet address. 
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.5.1.png)
 
 ### Accounting
 Alice uses her wallet address to track her funds and to receive tokens from other users. When tokens are sent to Alice’s wallet address, they are locked to that address. They will stay locked until she transfers them to another address. Her private key is the only way that allows her tokens to be moved. That key grants Alice the right to unlock the tokens and transfer them to another user’s address. 
@@ -39,6 +40,7 @@ https://namiwallet.io/
 
 Wallets can be either full-node or light. For example, Daedalus is a wallet where the user runs a dedicated full Cardano node alongside it - getting its data directly from the network. The others are light wallets but rely on centralized services to access the Cardano blockchain, adding an intermediary.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.5.2.png)
 
 ### Improvement Proposals
 Wallet applications are an important aspect of blockchain, as they provide users with a means to engage with the network. Improving the experience that a user has when using a wallet is therefore an important consideration to drive greater network adoption. Encouraging new users to adopt a new technology with a poor user experience is a challenging proposition. As such, this has been a significant driver of improvement proposals over the years, particularly for Bitcoin and Cardano.
@@ -52,6 +54,7 @@ Here we can see that a seed is a piece of data which can be used to create a HD 
 
 Though BIP-32 was a significant improvement in the interoperability and recoverability of wallets, there were still challenges to be overcome. Remembering a seed was not a user-friendly experience, as seeds were nothing more than a relatively long random string of digits. Luckily a solution to this challenge was forthcoming with BIP-39.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.5.3.png)
 
 ## BIP-39
 If you’ve been in crypto for long enough, you most probably had to write down mnemonic phrases (also known as recovery phrases) at some point or another. BIP-39 introduced them. This standard brought a consistent process for turning random seeds into a set of predefined words.
@@ -71,6 +74,7 @@ This means there are 204824 possible combinations. It would take you as many as 
 
  Your time would be better spent doing something else, but ultimately the choice is yours!
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.5.4.png)
 
 ## BIP-44 and CIP-1852
 We discussed earlier that BIP-32 was about creating a hierarchical structure of keys. This is neat, but it doesn’t allow different wallet software to be compatible with one another. What if this other wallet uses a different structure than your wallet? Consider delegation for example. Maybe a certain software uses the first child key as a delegation key, and next keys as payment keys. What if another software does something else? Wouldn’t it be better if you could just use the same recovery phrases in different wallets and it worked the same way?
@@ -120,6 +124,7 @@ Stake addresses
 
 Payment addresses themselves can be divided into 3 categories: base addresses, pointer addresses and enterprise addresses. Let’s go through them in more detail starting with what’s common to each. We will cover stake addresses shortly.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.5.5.png)
 
 ### General Structure
 In Cardano, all payment addresses are made of three parts, the last part being optional (or empty) in some cases. The first part is called the header and contains information about the network the address is compatible with (e.g. main or test network) as well as the type of the address.
@@ -128,12 +133,14 @@ Second is the payment part, or the part that indicates the spending conditions a
 
 Finally, the last part – the delegation part – refers to the stake rights and thus indicates the conditions for delegating the funds associated with the address. The stake rights also state who owns the rewards coming from staking. Similar to the payment parts, the delegation part may be a hash of a public stake key or something more elaborate like a Plutus script.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.5.6.png)
 
 ### Base Addresses
 A base address is an address that has both a payment part and a delegation part. There exist thus 4 sub-types of base addresses depending on how the payment and delegation part are defined: 
 
 We won't go into detail about the different types of scripts yet. For now, it is enough to understand that scripts here refer to either Plutus scripts or so-called native scripts (sometimes also called timelocks) which allow combining multiple public keys and time conditions together. 
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.5.7.png)
 
 ### Pointer addresses
 A pointer address also has both a payment part and a delegation part but the delegation part indirectly refers to stake rights through the use of a pointer. The pointer encodes a location on-chain that points to a delegation certificate. To locate unambiguously any certificate on-chain, a pointer is made up of three coordinates:
@@ -143,7 +150,7 @@ A transaction index (within that slot)
 A (delegation) certificate index (within that transaction)
 Hence, there exist 2 sub-types of pointer addresses, depending on how the payment part is defined:
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.5.8.png)
 
 Pointer addresses were meant to be more compact than base addresses, however, they turned out to be more complicated to use for wallets. Indeed, in a distributed system like Cardano, information – such as the location of delegation certificates – takes time to settle. Pointer addresses could not be created upfront because they’d have nothing to point to. Thus they became impractical, with only a marginal benefit on the overall address length. Consequently, they have been heavily underused. They are now widely considered deprecated and possibly removed in future versions of the protocol.
 
@@ -154,6 +161,7 @@ Exchanges or other organizations that control large amounts of tokens – but ho
 
 Incidentally, there are thus 2 sub-types of enterprise addresses:
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/3.5.9.png)
 
 ### Stake Addresses
 We said there were two types of addresses in Cardano - payment addresses, which we have covered and stake addresses.  A stake address is a special bucket used to receive rewards for participating in the proof-of-stake protocol.
