@@ -14,7 +14,7 @@ Hello everyone, and welcome back. I am your lecturer, [lecturer name], and many 
 ## Table of Contents
 For the rest of this module, we’re going to apply what we learned so far and get hands-on with wallets and addresses. We will first acquire some test ada (tAda), then transfer some real ada as well as delegate our stake. We will run through the steps of creating a native asset, as well as explore the dApp and DEX ecosystem.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/4.2.1.png)<br>
 
 First, let's introduce two typical Cardano users. Alice and Bob are friends who decide to learn about Cardano together. Alice is a technophobe who prefers friendly GUIs while Bob is a techie who has used other blockchains and command line tools before.
 
@@ -29,14 +29,14 @@ Any tool or service we use in this module is not an endorsement or investment ad
 ## Choosing a Wallet and Getting Started
 So let’s dive in. Alice wants to get some ada and to do so she first needs a wallet. A Cardano wallet is used to store your public and private keys. Technically, ada is not stored in a wallet or a device, it is recorded on a public blockchain. However, ada can only be accessed using unique private keys, which grant the owner the power to make transactions. Losing your seed phrase or private key(s) means losing access to your funds. When wallets or exchanges transfer assets, the assets are typically transferred from one address to another and never actually leave the blockchain.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/4.2.2.png)<br>
 
 During the bootstrapping phase of Cardano, most users relied on the Daedalus full node wallet as well as the Yoroi light wallet. As the network was in its formative stages, a full node wallet was more appropriate back then for network security and stability. 
 
 Cardano has progressed a lot since those early days. With the proliferation of CNFTs (Cardano NFTs) and the growing dApp ecosystem, the blockchain has grown in size, and sync times for full-node wallets have become much longer. 
 
-
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/4.2.3.png)<br>
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/4.2.4.png)<br>
 
 Light wallets now supported dApp interactions through browser APIs, so user preference quickly shifted to light wallets. Scaling solutions like Hydra and Mithril have progressed from proposals in research papers to live projects on mainnet. Mithril is a protocol that improves the speed and efficiency of nodes' syncing times. Hydra is the layer-two solution aiming to increase the transaction speed and minimize transaction costs. (Both will be covered in a future course).
 
@@ -44,12 +44,13 @@ CIP-30 (Cardano dApp Wallet Web Bridge) led to a standard approach for dApp inte
 
 As the wallet is effectively the entry point to crypto, most providers are now positioning themselves as ‘one-stop shops’. They offer everything you need for staking, NFT marketplace integrations, lending, etc. Most wallets are now available as a mobile app or browser extension. Some wallets allow you to buy ada directly from their UI via integrations with payment merchants easing the onboarding experience.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/4.2.5.png)<br>
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/4.2.6.png)<br>
 
 ###  Choosing a Wallet 
 Remember when we previously talked about custodial vs non-custodial wallets, we are referring to ownership of private keys. Custodial means a central entity is holding the keys to your wallet. Non-custodial means only you have access to, and responsibility for, your recovery phrase and private key(s). Which is the most secure wallet? It really depends on your own criteria and assumes you are following best practice. Any of the solutions we will cover next can be compromised if the owner is complacent or sometimes just plain unlucky.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/4.2.7.png)<br>
 
 We will start with ‘Hot wallets’ and work our way down to ‘Cold Wallets’ which are generally seen as more secure. 
 
@@ -71,6 +72,7 @@ As the name implies, a paper wallet is a physical paper document with your seed 
 
 **Steel wallets** are sturdier versions of paper wallets which are less vulnerable to fire and water, and obviously less likely to degrade or suffer physical damage.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/4.2.8.png)<br>
 
 ###  Advanced Custody Solutions
 Most retail users will choose one of the above options, however, there are more complex custody options available for enterprises. These cater to more advanced users and are mentioned here for completeness.
@@ -85,6 +87,7 @@ The HSM provides a safe environment to interact with your private key while faci
 
 MPC and multi-signature wallets attempt to address some of the shortcomings with single-signature wallets. Both require multiple users to verify and sign transactions. In theory, the chance of hackers compromising all parties simultaneously is unlikely. These solutions are more appropriate for enterprise users, where governance and accountability can be a regulatory requirement. For example, Coinbase Custody, Fireblocks, BitGo and Gemini all offer various insurance guarantees as well as SOC 1 and 2 compliance. 
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/4.2.9.png)<br>
 
 ###  Setting up a Wallet
 Equipped with all this information, Alice has a look on the Developer Portal Showcase section and chooses a light wallet. The landing page allows her to simply add a browser extension and prompts her to ‘Create’ wallet. Alice is new to crypto and apprehensive about using real money starting off. Her friend Bob advises her to select ‘Cardano Testnet’ at first until she finds her feet.
@@ -103,7 +106,7 @@ Alice chooses ‘Preprod Testnet’ and enters the ‘Receive Address’ she cop
 
 Alice calls Bob to ask him to explain what has just happened. Bob explains to Alice that she just created a seed phrase from which is derived the secret master key of her wallet. From that root key, her wallet can derive account keys which are like unique wallets within a wallet. The account key then derives multiple stake keys and multiple payment keys.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/4.2.10.png)<br>
 
 To recap from earlier units, remember an address contains two parts, one that controls spending (the payment part) and another part that controls stake delegation (the delegation part).
 
@@ -116,15 +119,15 @@ As we explored earlier in Module 2, addresses may also be used to trigger smart 
 
 Addresses are derived from your public key and your public key is derived from your private key. You can't go back from the public key to the private key, but you can produce the public key from the private key. An address is then made up of header information, the hash of the payment credentials, and the hash of the stake credentials. You cannot calculate the public key from the address, but you can calculate the address from the public key. Addresses can't be reversed to public keys. Public keys can't be reversed to private keys. This is the magic of the one-way hash, and why it is used so much throughout crypto. 
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/4.2.11.png)<br>
 
 It may be easier to visualize this process as a tree structure. The seed (recovery phrase) and private key are below ground and inaccessible. The branches represent public keys and the leaves are analogous to a wallet's multiple ‘receiving addresses’.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/4.2.12.png)<br>
 
 Alice’s light wallet displays account balances, monitors addresses, and stores private keys. Transactions can also be created from a wallet and submitted to nodes on the network. These nodes relay transactions across the network until they are processed into a block by a block producer.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/4.2.13.png)<br>
 
 As Alice is using the testnet, the address format is as follows:
 
@@ -133,6 +136,7 @@ Addr_test1qzllpqsy4stfdfcqnfrckkdnvzjlem8y92ttqzye6k42p832sj4qqdjps638a5g7jet29y
 
 Alice notices the 10,000 tAda she requested from the faucet has arrived in her wallet. Bob congratulates her and suggests she send him some tAda as a first transaction once he sets up his wallet using the CLI.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/4.2.14.png)<br>
 
 ###  Creating a Wallet Using the CLI
 Command line interfaces (CLIs) accept typed commands from the user at a terminal prompt; these commands are then run by the computer. The CLI is accessed via a shell program. 
@@ -164,8 +168,7 @@ Parameters follow the command and give specific context with some details often 
 Parameters are passed with a double hyphen, so the syntax is consistent in the format:
 cardano-cli subcommand sub-subcommand --parameters
 
-
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/4.2.15.png)<br>
 
 In documentation and guides, you’ll see the ‘\’ newline character used which just jumps to a new line for better readability. If you are stuck, you can always find out more by just running a given command without parameters. For example, at the command prompt, type:
 
@@ -239,9 +242,7 @@ Alice saves this address as a new contact ‘Bob’ in her friendly wallet GUI a
 
 (transaction id : 65388cf645b2ec119b14313f0c58b47a1b74e9f032ef5e84db0c559a171c1528)
 
-
-
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/4.2.16.png)<br>
 
 Bob runs the following command to query the UTXO in his wallet and gets the confirmation he was looking for in the output:
 
@@ -262,7 +263,7 @@ Before buying some ‘real’ ada, Alice creates a new wallet following the same
 
 addr1q9qflm25pwc50…jet29yevwru2a9trapjh7uggul0suae7av
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/4.2.17.png)<br>
 
 To buy their first ada, most users still rely on established Centralised Exchanges (CEX) such as Coinbase, Kraken, Binance, etc. These exchange platforms allow users to exchange or trade between specific assets, similar to the way platforms exist in classic industries like stocks, forex, bonds, gold, ETFs, etc. Cardano (ADA) is available on most of the main exchanges. 
 
@@ -270,10 +271,13 @@ Traditional exchanges (stock market) are centralized. With classic asset trading
 
 Cryptocurrency exchanges (CEX), or digital currency exchanges (DCE), operate similarly allowing users to trade cryptocurrencies or digital assets. They are traditionally seen as the ‘on-ramp’ to crypto as they accept credit card payments and bank transfers in exchange for digital currencies or crypto. Most cryptocurrency exchanges are also market makers that typically take the bid–ask spreads as a transaction commission or, as a matching platform, charge fees.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/4.2.18.png)<br>
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/4.2.19.png)<br>
 
 ###  Decentralized Exchanges (DEX)
 Most crypto OGs live by the maxim coined by Bitcoin advocate Andreas Antonopoulos “Not your Keys, Not your Coins”. Whoever controls the seed phrase and private keys controls your funds. Storing your crypto assets on a centralized exchange is always a risk as you are trusting a third party. When you have custody of the private key to your wallet, it also allows you to seamlessly interact with Dapps or Decentralised Finance (DeFi) platforms such as decentralized exchanges (DEX). We will explore DEXs in more depth later in this module.
+
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/4.2.20.png)<br>
 
 ###  Choosing a Centralized Exchange (CEX)
 Most users acquire cryptocurrency via one of the many exchanges that operate globally. When choosing an exchange it's important to see which exchanges are available in your country or region and verify their reputation, volume, liquidity, and trustworthiness on platforms like Coinmarketcap, Coingecko, or others. Exchanges have to be compliant with your local government regulations. This usually involves compliance with Know Your Customer (KYC) and Anti-Money Laundering laws.
@@ -296,7 +300,7 @@ Following Bob’s advice, Alice sets up 2FA verification for enhanced security a
 
 Centralized exchanges (CEX) behave like a bank for cryptocurrencies. They handle the decentralized side of the transaction while maintaining an order book. So, if a transaction occurs, you are not usually transacting on the blockchain, rather you are just transacting on a CEX, which is just maintaining records for those transactions on their side.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/4.2.21.png)<br>
 
 Let’s zoom out for a moment, and review the typical inner workings of a CEX:
 
@@ -306,7 +310,7 @@ Let’s zoom out for a moment, and review the typical inner workings of a CEX:
 3. For standard ‘retail investors’, none of their CEX trading history is recorded on the blockchain. The balance you see in your CEX wallet is just a database entry for what the CEX owes you. Most of the centralized exchanges do not share the private keys of user wallets. They don’t need to, as they’re more likely to host specific exchange wallets for each cryptocurrency. 
 4. Customer withdrawals: when a customer wants to withdraw their assets to their own personal crypto wallet, the transfer is generally from the CEX's crypto wallet to the customer’s crypto wallet ‘receive address’, which in turn, is derived from the wallet’s private key.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/4.2.22.png)<br>
 
 Note that while this is the typical experience for most ‘retail investors’, CEXs also offer a suite of institutional products and services to help financial services companies and hedge funds safeguard crypto assets. Some of these services offer various custodial solutions featuring features built around multi-sig and Multi-party computation (MPC).
 
@@ -322,7 +326,7 @@ Some exchanges employ ‘cool down’ periods where you may not be able to withd
 6. Alice's friend Bob emphasizes the importance of not leaving funds on CEXs and advises her to withdraw to her personal wallet ASAP. She takes his advice, chooses the ‘Withdraw’ option, and pastes her wallet ‘receive address’ and confirms the withdrawal request. Most exchanges offer helpful ‘tool tips’ and won’t allow withdrawals to an invalid address structure. 
 7. Alice checks her wallet and sees her balance updated. She reviews the transaction history in her wallet and also via her favorite explorer. Like with everything in Cardano, there are many different options to choose from when it comes to explorer tools.
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/4.2.23.png)<br>
 
 Bob creates a ‘receiving address’ on mainnet
 
@@ -341,6 +345,7 @@ $bob_mainnet_addr=$(cat bob_mainnet_addr.addr)
 
 Bob shares this ‘receiving address’ with Alice so she can send him some real ada on mainnet. Alice adds this address in her ‘Contacts’ section of her light wallet. This is similar to the process most people are familiar with when creating a new contact on their smartphone. She no longer needs to remember the specific address. She sends Bob some real ada and they both confirm the transaction in their favored explorer.
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/4.2.24.png)<br>
 
 ##  Transactions
 It’s important to understand that almost everything happens in Cardano as a result of a transaction. A transaction is usually one of the following on-chain events:
@@ -433,7 +438,7 @@ jq ‘.’ transfer.signed
   "cborHex":"84a30081825868...8d45ef0c89d02950f7970ef5f6"
 }
 
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/4.2.25.png)<br>
 
 ###  Submit the Transaction
 Now Bob is finally ready to submit the transaction by running the following command:
