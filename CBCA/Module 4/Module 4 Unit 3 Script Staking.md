@@ -374,7 +374,7 @@ Bob’s rewards in his reward account can be withdrawn to his payment address at
 ### Step 5. Deregistration
 The stake address deregistration certificate contains the stake address that should be deregistered. Registering a stake address creates a corresponding reward account, which is deleted when the stake address is deregistered. The hold (2 ada) paid during registration is then released. It may take 1-2 epochs, but in this time, rewards are still earned.
 
-![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/4.3.15.png)
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/4.3.115.png)
 
 ## Review
 Wow, we covered a lot of ground in this unit. We recapped the staking process, who SPOs are, and the role they play. We ran through some pointers to look at when choosing a stake pool to delegate to. We then went through the staking steps in a light wallet, and via the CLI. Before we move on to the next unit, take some time to review this animation which illustrates what we just went through.
