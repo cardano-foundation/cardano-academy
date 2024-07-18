@@ -22,9 +22,7 @@ $ cat bob_mainnet_addr.addr | cardano-address address inspect
 
 The output confirms Bob created an address type ‘6’, but there are eight different types of Shelley addresses as outlined in CIP-19. A type 6 Shelley address can be used to send and receive ada, but whose associated stake can't be delegated.
 
-
-
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/4.3.15.png)
 
 Bob now wants to create a ‘0’ address type as he intends to start staking his ada. A type 0 Shelley address is built from a payment part and a staking key part, so Bob needs to create a new ‘stake’ keypair first. 
 
@@ -86,7 +84,7 @@ cat protocol_params.json | grep stakeAddressDeposit
 "stakeAddressDeposit": 2000000,        
 ```
 
-To register his stake key, Bob first needs to produce a registration certificate. He is not sure about his options so just types in the cardano-cli stake-address command first to review the menu options. Bob needs to leverage the registration-certificate sub-subcommand in this case: 
+To register his stake key, Bob first needs to produce a registration certificate. He is not sure about his options so just types in the `cardano-cli stake-address` command first to review the menu options. Bob needs to leverage the `registration-certificate` sub-subcommand in this case: 
 
 ```cmd
 cardano-cli stake-address registration-certificate  \
@@ -105,8 +103,7 @@ cat registration.cert
 }
 ```
 
-Bob is not done yet, he now needs to submit his certificate to the blockchain. For this, he will again use the address command. This time he needs to use a few more options to build the transaction. He uses --certificate-file flag to include his registration certificate, and the --witness-override flag to specify that this will be signed by 2 witnesses: bob_payment.skey and bob_stake.skey
-
+Bob is not done yet, he now needs to submit his certificate to the blockchain. For this, he will again use the `address` command. This time he needs to use a few more options to build the transaction. He uses `--certificate-file` flag to include his registration certificate, and the `--witness-override` flag to specify that this will be signed by 2 witnesses: `bob_payment.skey` and `bob_stake.skey`
 
 Bob uses the ‘jq’ command to process the resulting JSON output. ‘jq’ is a powerful linux command for extracting, manipulating, and transforming JSON data. The ‘-r’ flag here is to get raw output with no double quotes.
 
@@ -137,16 +134,16 @@ cardano-cli transaction submit \
 	--tx-file tx.signed
 ```
 
-Step 2. Delegation
+## Step 2. Delegation
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/4.3.16.png)
 
 
 Bob can now delegate from his stake address to a stake pool by posting a so-called ‘delegation certificate’ to the Cardano blockchain. If Bob wants to change his choice of stake pool, he is free to post a new delegation certificate at any time. 
 
 Technically a delegation certificate contains the stake address delegating its stake rights and the stake pool verification key hash to which the stake is delegated. If a stake address is deregistered, the associated delegation certificate is automatically revoked. Newer delegation certificates supersede older delegation certificates.
 
-
-Bob now wants to delegate his stake. For that, he needs to create a delegation certificate. He inspects the cardano-cli stake-address command by just running it as is at the command prompt. To produce the delegation certificate he needs to know the stake pool id of the pool that he wants to delegate to. Bob decides to delegate to the RATS pool run by Charles Hoskinson:
+Bob now wants to delegate his stake. For that, he needs to create a delegation certificate. He inspects the `cardano-cli stake-address` command by just running it as is at the command prompt. To produce the delegation certificate he needs to know the stake pool id of the pool that he wants to delegate to. Bob decides to delegate to the RATS pool run by Charles Hoskinson:
 
 ```cmd
 cardano-cli transaction submit \
@@ -182,24 +179,21 @@ cardano-cli transaction submit \
 ```
 
 
-Step 3. Rewards Distribution
+## Step 3. Rewards Distribution
 
-
-
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/4.3.17.png)
 
 Bob’s reward account is used to receive rewards for participating in the Proof of Stake consensus mechanism. For each stake address, there is an associated reward account. The lifecycle of the reward account follows that of the associated stake address. 
 
-Step 4. Rewards Withdrawal
+## Step 4. Rewards Withdrawal
 
-
-
-
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/4.3.18.png)
 
 Bob’s rewards in his reward account can be withdrawn to his payment address at any time by using the rewards account balance as an input to a transaction. This transaction follows the Unspent-Transaction-Output (UTXO) architecture, taking the current balance of the reward account as the input amount.
-Step 5. Deregistration
 
+## Step 5. Deregistration
 
+![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/4.3.19.png)
 
 The stake address deregistration certificate contains the stake address that should be deregistered. Registering a stake address creates a corresponding reward account, which is deleted when the stake address is deregistered. The hold (2 ada) paid during registration is then released. It may take 1-2 epochs, but in this time, rewards are still earned.
 
