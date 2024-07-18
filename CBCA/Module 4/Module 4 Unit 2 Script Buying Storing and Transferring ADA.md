@@ -176,7 +176,7 @@ cardano-cli subcommand sub-subcommand --parameters
 
 In documentation and guides, you’ll see the ‘\’ newline character used which just jumps to a new line for better readability. If you are stuck, you can always find out more by just running a given command without parameters. For example, at the command prompt, type:
 
-```json
+```bat
 cardano-cli –help
 
 ```
