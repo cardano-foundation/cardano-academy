@@ -236,7 +236,7 @@ cardano-cli address build \
   	  	--testnet-magic 1
 ```
 
-Note Bob uses the argument ‘-- testnet-magic <integer>’ to specify which testnet he wants to use. In this case, it’s 1 for the ‘Pre-production’ testnet and ‘2’ would be for the ‘Preview’ testnet. Bob then uses the ‘cat’ command which spits out the ‘out-file’ to screen. This is where Bob’s newly created address lies.
+Note Bob uses the argument `-- testnet-magic <integer>` to specify which testnet he wants to use. In this case, it’s 1 for the ‘Pre-production’ testnet and ‘2’ would be for the ‘Preview’ testnet. Bob then uses the ‘cat’ command which spits out the ‘out-file’ to screen. This is where Bob’s newly created address lies.
 
 ```cmd
 $ cat bob_payment.addr 
@@ -354,7 +354,7 @@ Some exchanges employ ‘cool down’ periods where you may not be able to withd
 
 Bob creates a ‘receiving address’ on mainnet
 
-Bob runs the same command as before, creating a new out-file which he ‘cats’ out to screen. He specifies the ‘--mainnet’ argument instead of testnet. Like he did previously, Bob assigns the address to a variable.
+Bob runs the same command as before, creating a new out-file which he ‘cats’ out to screen. He specifies the `--mainnet` argument instead of testnet. Like he did previously, Bob assigns the address to a variable.
 
 ```cmd
 cardano-cli address build \
@@ -419,11 +419,11 @@ Bob wants to send 50 ada, so enters 50000000 lovelace, taking into account the t
 
 Now he is ready to build the first transaction to calculate his fee and save it in a file called bobtx.raw. He will reference the variables in the transaction to improve readability because he previously saved almost all of the required arguments in variables. 
 
-There are two commands you can use to ‘build’ a transaction. First, there is cardano-cli transaction build-raw  which is used in many guides. Building the transaction using this option means calculating the fees manually, adjusting the outputs and re-running the command. This can be useful to understand how the command functions, however, you will need to use multiple variables and there is more margin for typos and errors.
+There are two commands you can use to ‘build’ a transaction. First, there is `cardano-cli transaction build-raw`  which is used in many guides. Building the transaction using this option means calculating the fees manually, adjusting the outputs and re-running the command. This can be useful to understand how the command functions, however, you will need to use multiple variables and there is more margin for typos and errors.
 
-There is another more convenient command cardano-cli transaction build which calculates the fees for you and automatically returns the change to your wallet. Bob checks what is the expected syntax by typing the command first cardano-cli transaction build.
+There is another more convenient command `cardano-cli transaction build` which calculates the fees for you and automatically returns the change to your wallet. Bob checks what is the expected syntax by typing the command first `cardano-cli transaction build`.
 
-He notes it is expecting the format --tx-in $txhash#$txix. This is the input UTXO you want to spend. You can spend multiple UTXOs by adding more --tx-in line(s). The --tx-out parameter is the address of the recipient of the output, just ada in this case. The command structure is as follows:
+He notes it is expecting the format `--tx-in $txhash#$txix`. This is the input UTXO you want to spend. You can spend multiple UTXOs by adding more `--tx-in line(s)`. The `--tx-out` parameter is the address of the recipient of the output, just ada in this case. The command structure is as follows:
 
 
 cardano-cli transaction build --babbage era \
