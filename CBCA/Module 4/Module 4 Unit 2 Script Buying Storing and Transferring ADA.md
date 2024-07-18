@@ -177,16 +177,12 @@ cardano-cli subcommand sub-subcommand --parameters
 In documentation and guides, you’ll see the ‘\’ newline character used which just jumps to a new line for better readability. If you are stuck, you can always find out more by just running a given command without parameters. For example, at the command prompt, type:
 
 ```sql
-select * from meta ;
- id |     start_time      | network_name
-----+---------------------+--------------
-  1 | 2017-09-23 21:44:51 | mainnet
-(1 row)
+cardano-cli –help
 
 ```
 
 
-cardano-cli –help
+
 
 This returns all the available subcommands. You can always check for more details by adding --version or --help at any stage. As Bob will initially be concerned with ‘addresses’ he explores this option further by typing:
 
