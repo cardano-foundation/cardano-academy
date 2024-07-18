@@ -11,8 +11,8 @@ Bob creates a key pair like before:
 
 ```cmd
 cardano-cli address key-gen \
-		--verification-key-file asset_policy.vkey \
-		--signing-key-file asset_policy.skey 
+	--verification-key-file asset_policy.vkey \
+	--signing-key-file asset_policy.skey 
 ```
   	 
 ### Hash the Key
@@ -327,8 +327,8 @@ As each NFT is a unique asset, Bob follows best practice and generates new keys 
 
 ```cmd
 cardano-cli address key-gen \
---verification-key-file nft_payment.vkey \
---signing-key-file nft_payment.skey
+	--verification-key-file nft_payment.vkey \
+	--signing-key-file nft_payment.skey
 ```
 
 As he did before, he uses these two keys to generate an address:
@@ -356,8 +356,8 @@ Just as Bob did when generating native assets, he generates an ‘nft_policy’ 
 
 ```cmd
 cardano-cli address key-gen \
-	--verification-key-file nft_policy.vkey \
-	--signing-key-file nft_policy.skey
+		--verification-key-file nft_policy.vkey \
+		--signing-key-file nft_policy.skey
 ```
 Instead of only defining a single signature like last time, Bob’s script file needs to implement the following characteristics this time:
 
