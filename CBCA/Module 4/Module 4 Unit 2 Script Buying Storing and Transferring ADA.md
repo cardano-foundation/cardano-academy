@@ -132,8 +132,9 @@ Alice’s light wallet displays account balances, monitors addresses, and stores
 As Alice is using the testnet, the address format is as follows:
 
 **Example of Address**:<br>
+```
 Addr_test1qzllpqsy4stfdfcqnfrckkdnvzjlem8y92ttqzye6k42p832sj4qqdjps638a5g7jet29yevwru2a9trapjh7uggul0sjma3t4
-
+```
 Alice notices the 10,000 tAda she requested from the faucet has arrived in her wallet. Bob congratulates her and suggests she send him some tAda as a first transaction once he sets up his wallet using the CLI.
 
 ![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/4.2.14.png)<br>
