@@ -209,6 +209,7 @@ cardano-cli address key-gen \
 
 Bob now uses the ‘cat’ command, so he can review the files he just created:
 
+```cmd
 $ cat bob_payment.skey 
 {
     "type": "PaymentSigningKeyShelley_ed25519",
@@ -223,7 +224,7 @@ $ cat bob_payment.vkey
     "description": "Payment Verification Key",
     "cborHex": "582073a57a4177cb65dbf8e…76f2373cdd6053b21c"
 }
-
+```
 
 Bob now uses the verification key to generate, or ‘build’, an address.
 
