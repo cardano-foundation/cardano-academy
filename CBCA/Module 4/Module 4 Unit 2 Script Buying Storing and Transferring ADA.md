@@ -167,7 +167,10 @@ Each command is organized into ‘sub-menus’ and when you type in a command it
 Parameters follow the command and give specific context with some details often optional. A command line parameter is a placeholder for a value, and an argument is the value that is passed to the placeholder. Commands are usually run with arguments provided by the user to tailor how a command should be executed.
 
 Parameters are passed with a double hyphen, so the syntax is consistent in the format:
+
+~~~
 cardano-cli subcommand sub-subcommand --parameters
+~~~
 
 ![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/4.2.15.png)<br>
 
