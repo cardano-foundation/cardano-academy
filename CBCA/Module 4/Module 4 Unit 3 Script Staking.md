@@ -198,7 +198,7 @@ She opens her wallet and navigates to the ‘Staking’ section. She opens up th
 
 Like any Cardano transaction, she can retrieve details under ‘recent transactions’ and verify by using an explorer. After a few minutes the ‘confirmations’ on-chain increase to assure immutability. Alice is surprised at how seamless the staking process was using her light wallet. She is wondering what is actually going on underneath the hood.
 
-To help reinforce her understanding, Bob suggests Alice should verify everything with the Cardano Foundation Explorer which features a section called ‘Staking Lifecycle’. For the technically curious, Bob also wants to walk through the staking process from the command line interface. The details of the commands Bob runs are in the course notes. 
+To help reinforce her understanding, Bob suggests Alice should verify everything with the Cardano Foundation Explorer which features a section called [Staking Lifecycle](https://beta.explorer.cardano.org/en/staking-lifecycle/). For the technically curious, Bob also wants to walk through the staking process from the command line interface. The details of the commands Bob runs are in the course notes. 
 
 ### Step 1: Registration
 
@@ -212,6 +212,7 @@ To mitigate certain economic attacks, a refundable hold (2 ada) is imposed on Bo
 
 Picking up where he finished in the last unit, Bob runs the following command to inspect his payment address...
 
+```cmd
 $ cat bob_mainnet_addr.addr | cardano-address address inspect
 {
     "stake_reference": "none",
@@ -221,12 +222,13 @@ $ cat bob_mainnet_addr.addr | cardano-address address inspect
     "network_tag": 1,
     "address_type": 6
 }
-
+```
 
 The output confirms Bob created an address type ‘6’, but there are eight different types of Shelley addresses as outlined in CIP-19. A type 6 Shelley address can be used to send and receive ada, but its associated stake can't be delegated.
 
 Bob now wants to create a ‘0’ address type as he intends to start staking his ada. A type 0 Shelley address is built from a payment part and a staking key part, so Bob needs to create a new ‘stake’ keypair first.
 
+```cmd
 cardano-cli stake-address key-gen \
 		--verification-key-file bob_stake.vkey \
 		--signing-key-file bob_stake.skey
@@ -237,18 +239,21 @@ $ cat bob_stake.vkey
     "description": "Stake Verification Key",
     "cborHex": "5820fd9d828ff85294217b77….167114e2c99268906ed58289"
 }
+```
 
 Bob ‘builds’ a stake type 0 address with his two verification keys: the initial ‘payment’ vkey from the previous unit and his newly created ‘stake’ vkey.
 
+```cmd
 cardano-cli address build \
 		--payment-verification-key-file bob_payment.vkey \
 		--stake-verification-key-file bob_stake.vkey \
 		--out-file bob_staking.addr \
 		--mainnet
 cat bob_staking.addr | cardano-address address inspect
-
+```
 
 It should look something like this:
+```cmd
 {
     "stake_reference": "by value",
     "stake_key_hash_bech32": "stake_vkh1kevs5lhejnxy3j6…..e6yn8atev5e3jy7asajygx8zx",      
@@ -260,46 +265,50 @@ It should look something like this:
     "address_type": 0
 }
 $bob_staking_addr=$(cat bob_staking.addr)
-
+``
 
 This new ‘type 0’ gives Bob the ability to send and receive ada, but also to delegate his ada to a staking pool and receive ada rewards for contributing to the network.
 Register stake address 
 
 To confirm some details, Bob checks the protocol parameters…
 
+```cmd
 cardano-cli query protocol-parameters \
 		--mainnet \
 		--out-file protocol_params.json
-
+```
 
 Before Bob can delegate his stake and earn rewards for participating in the protocol, he first needs to register his stake key to the blockchain. Bob inspects the protocol parameters to confirm that this requires a small deposit of 2 ada. The 'grep' command (global regular expression print) is used in searching and matching text files.
 
+```cmd
 cat protocol_params.json | grep stakeAddressDeposit
 "stakeAddressDeposit": 2000000, 
-
+```
 
 To register his stake key, Bob first needs to produce a registration certificate. He is not sure about his options so just types in the cardano-cli stake-address command first to review the menu options. Bob needs to leverage the registration-certificate sub-subcommand in this case:
 
-
+```cmd
 cardano-cli stake-address registration-certificate  \
 	--stake-verification-key-file bob_stake.vkey \
 	--out-file registration.cert
-
+```
 
 Bob wants to review the cert, so runs the ‘cat’ (concatenate) command: 
 
+```cmd
 cat registration.cert
 {
 	"type": "CertificateShelley",
 	"description": "Stake Address Registration Certificate",
 	"cborHex":"82008200581cb6…5f56d6b3a24cfd5e594cc644f761d9"
 }
-
+```
 
 Bob is not done yet, he now needs to submit his certificate to the blockchain. For this, he will again use the address command. This time he needs to use a few more options to build the transaction. He uses --certificate-file flag to include his registration certificate, and the --witness-override flag to specify that this will be signed by 2 witnesses: bob_payment.skey and bob_stake.skey
 
 Bob uses the ‘jq’ command to process the resulting JSON output. ‘jq’ is a powerful Linux command for extracting, manipulating, and transforming JSON data. The ‘-r’ flag here is to get raw output with no double quotes.
 
+```cmd
 cardano-cli transaction build --babbage-era \
 	--mainnet \
 	--witness-override 2 \
@@ -308,10 +317,11 @@ cardano-cli transaction build --babbage-era \
 	--change-address $bob_staking_addr \
 	--certificate-file registration.cert \
 	--out-file tx.raw
-
+```
 
 Next, Bob signs it with both keys then submits it to the blockchain:
 
+```cmd
 cardano-cli transaction sign \
 	--tx-body-file tx.raw \
 	--signing-key-file bob_payment.skey \
@@ -323,17 +333,16 @@ cardano-cli transaction sign \
 cardano-cli transaction submit \
 	--mainnet \
 	--tx-file tx.signed
+```
 
 ### Step 2. Delegation
 Bob can now delegate from his stake address to a stake pool by posting a so-called ‘delegation certificate’ to the Cardano blockchain. If Bob wants to change his choice of stake pool, he is free to post a new delegation certificate at any time. 
 
-
 Technically a delegation certificate contains the stake address delegating its stake rights and the stake pool verification key hash to which the stake is delegated. If a stake address is deregistered, the associated delegation certificate is automatically revoked. Newer delegation certificates supersede older delegation certificates.
-
 
 Bob now wants to delegate his stake. For that, he needs to create a delegation certificate. He inspects the cardano-cli stake-address command by just running it as is at the command prompt. To produce the delegation certificate he needs to know the stake pool id of the pool that he wants to delegate to. Bob decides to delegate to the RATS pool run by Charles Hoskinson:
 
-
+```cmd
 cardano-cli transaction submit \
 	--mainnet \
 
@@ -342,11 +351,11 @@ cardano-cli stake-address delegation-certificate \
 	--stake-verification-key-file bob_stake.vkey \
 	--stake-pool-id 5e376d756f6eec4599..5b13cf204a57c703dc251 \
 	--out-file delegation.cert
-
+```
 
 Just like before, Bob builds, signs and submits this transaction with the certificate as follows:
 
-
+```cmd
 cardano-cli transaction build --babbage-era \
 	--mainnet \
 	--witness-override 2 \
@@ -364,6 +373,7 @@ cardano-cli transaction sign \
 cardano-cli transaction submit \
 	--mainnet \
 	--tx-file tx.signed
+```
 
 ### Step 3. Rewards Distribution
 Bob’s reward account is used to receive rewards for participating in the Proof of Stake consensus mechanism. For each stake address, there is an associated reward account. The lifecycle of the reward account follows that of the associated stake address.
@@ -404,71 +414,71 @@ The minimum attack vector refers to the smallest group of participants required 
 **Sub-Unit 1**
 
 *Which of the following is NOT true of liquid staking? Select all that apply*
-Your funds are not locked up
-You can still send or receive ada when staking on Cardano
-**There is a waiting period before you can access your ada (CORRECT ANSWER)**
-**All proof of stake blockchains have liquid staking (CORRECT ANSWER)**
+- Your funds are not locked up
+- You can still send or receive ada when staking on Cardano
+- **There is a waiting period before you can access your ada (CORRECT ANSWER)**
+- **All proof of stake blockchains have liquid staking (CORRECT ANSWER)**
 
 *True or False: Cardano uses slashing to punish stakers who break the rules.*
-True 
-**False (CORRECT ANSWER)**
+- True 
+- **False (CORRECT ANSWER)**
 
 *Which protocol was the first provably secure Proof of Stake consensus protocol?*
-Ethereum
-**Cardano’s Ouroboros (CORRECT)**
-Avalanche
-Algorand
+- Ethereum
+- **Cardano’s Ouroboros (CORRECT)**
+- Avalanche
+- Algorand
 
 **Sub-Unit 2**
 
-SPO is short for?  
-Stake Pointer Offset
-**Stake Pool Operator (CORRECT ANSWER)**
-Stake Pool Officer
-Swimming Pool Official
+*SPO is short for?*
+- Stake Pointer Offset
+- **Stake Pool Operator (CORRECT ANSWER)**
+- Stake Pool Officer
+- Swimming Pool Official
 
 *Which of the following wallets allow you to stake?*
-Daedalus
-MetaMask 
-Yoroi
-Typhon
-**All of the above (correct answer)**
+- Daedalus
+- MetaMask 
+- Yoroi
+- Typhon
+- **All of the above (correct answer)**
 
 **Sub-Unit 3**
 
 *Which of the following is NOT a consideration when selecting a stake pool?*
-Pool Size 
-Saturation levels 
-**The stake pool must be in the same country as you (CORRECT ANSWER)**
-Are they running a single stake pool or multiple stake pools 
-SPO background
+- Pool Size 
+- Saturation levels 
+- **The stake pool must be in the same country as you (CORRECT ANSWER)**
+- Are they running a single stake pool or multiple stake pools 
+- SPO background
 
 *If you delegate your stake in Epoch N, when will you get your first ada rewards?*
-**Epoch N+4 (CORRECT ANSWER)**
-Epoch N
-Epoch N+2
-Epoch N+1
-Epoch N+3
+- **Epoch N+4 (CORRECT ANSWER)**
+- Epoch N
+- Epoch N+2
+- Epoch N+1
+- Epoch N+3
 
 *True or False: If I change my stake pool, and delegate to a new stake pool, I will lose my rewards I earned with my old stake pool.*
-True 
-**False (CORRECT ANSWER)**
+- True 
+- **False (CORRECT ANSWER)**
 
 *True or False: A stake pool can query their ‘leader schedule’ before the start of an epoch.*
-**True (CORRECT ANSWER)**
-False
+- **True (CORRECT ANSWER)**
+- False
 
 *Which of the following is NOT an explorer on Cardano?*
-CExplorer
-**Etherscan (CORRECT)**
-PoolPeek
-Pooltool
-Adapools.org
+- CExplorer
+- **Etherscan (CORRECT)**
+- PoolPeek
+- Pooltool
+- Adapools.org
 
 **Sub-Unit 4**
 
 *Cardano Foundation Delegations rotate how often?*
-Every month
-Every epoch
-Every hard fork
-**Every 12 months (CORRECT ANSWER)**
+- Every month
+- Every epoch
+- Every hard fork
+- **Every 12 months (CORRECT ANSWER)**
