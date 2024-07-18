@@ -186,13 +186,14 @@ cardano-cli –help
 
 This returns all the available subcommands. You can always check for more details by adding --version or --help at any stage. As Bob will initially be concerned with ‘addresses’ he explores this option further by typing:
 
+```bash
 cardano-cli address —help
-
+```
 
 Bob wants to know more about generating keys types the ‘key-gen’ sub-subcommand to explore further:
-
+```console
  cardano-cli address key-gen –help
-
+```
 To review all the options, review the official CLI command reference. To keep matters simple to begin with, Bob will generate a "leaf key". Most wallet GUIs will use a hierarchy of keys as explained earlier. 
 
 ###  Generate Keys and Address
@@ -200,9 +201,11 @@ Before Bob can exchange test ada (tAda) with Alice, he needs to create a key pai
 
 So Bob will use the cardano-cli ‘address’ subcommand to create payment and secret keys as follows:
 
+```zsh
 cardano-cli address key-gen \
 		--verification-key-file bob_payment.vkey \
   	  	--signing-key-file bob_payment.skey
+```
 
 Bob now uses the ‘cat’ command, so he can review the files he just created:
 
