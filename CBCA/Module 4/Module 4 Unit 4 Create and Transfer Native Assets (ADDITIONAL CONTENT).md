@@ -415,7 +415,7 @@ vi policy.script
 Bob notes the slot number and saves it in a variable. This is the same ‘slot number found inside of the policy.script file:
 ```cmd
 slotnumber="Add actual slot number here"
-```cmd
+```
 He saves the location of the script file into a variable as well:
 ```cmd
 script="policy.script"
