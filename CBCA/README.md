@@ -6,7 +6,7 @@ This folder contains the content for the Cardano Blockchain Certified Associate 
 
 ## How to contribute
 
-See [CONTRIBUTING.md](./CONTRIBUTING.md)
+See [CONTRIBUTING.md](https://github.com/cardano-foundation/cardano-academy/blob/main/CONTRIBUTING.md)
 
 ## License
 
