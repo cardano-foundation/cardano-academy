@@ -184,7 +184,7 @@ cardano-cli –help
 
 
 
-This returns all the available subcommands. You can always check for more details by adding --version or --help at any stage. As Bob will initially be concerned with ‘addresses’ he explores this option further by typing:
+This returns all the available subcommands. You can always check for more details by adding `--version` or `--help` at any stage. As Bob will initially be concerned with ‘addresses’ he explores this option further by typing:
 
 ```cmd
 cardano-cli address —help
@@ -256,7 +256,7 @@ Bob's address is: addr_test1vr2x99uwdkgl3….7q50cxsku3u4d4g4gnpje
 So Bob has just set up an address on the Cardano blockchain, but now he needs to get some funds, but from where or from whom?! He calls his friend Alice and asks her to send him some tAda. He first provides his ‘receiving address’ on the Preprod Testnet,
 
 ```cmd
-(addr_test1vr2x99uwdkgl3d7553mqyttpfd3nurfn7q50cxsku3u4d4g4gnpje). 
+(addr_test1vr2x99uwdkgl3d7553mqyttpfd3nurfn7q50cxsku3u4d4g4gnpje) 
 ```
 
 Alice saves this address as a new contact ‘Bob’ in her friendly wallet GUI and sends him 1,000 tAda. They both verify the transaction in their explorers 
