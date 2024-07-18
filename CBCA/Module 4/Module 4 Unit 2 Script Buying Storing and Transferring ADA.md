@@ -168,15 +168,15 @@ Parameters follow the command and give specific context with some details often 
 
 Parameters are passed with a double hyphen, so the syntax is consistent in the format:
 
-~~~
+```cmd
 cardano-cli subcommand sub-subcommand --parameters
-~~~
+```
 
 ![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/4.2.15.png)<br>
 
 In documentation and guides, you’ll see the ‘\’ newline character used which just jumps to a new line for better readability. If you are stuck, you can always find out more by just running a given command without parameters. For example, at the command prompt, type:
 
-```bat
+```cmd
 cardano-cli –help
 
 ```
@@ -186,12 +186,13 @@ cardano-cli –help
 
 This returns all the available subcommands. You can always check for more details by adding --version or --help at any stage. As Bob will initially be concerned with ‘addresses’ he explores this option further by typing:
 
-```bash
+```cmd
 cardano-cli address —help
 ```
 
 Bob wants to know more about generating keys types the ‘key-gen’ sub-subcommand to explore further:
-```console
+
+```cmd
  cardano-cli address key-gen –help
 ```
 To review all the options, review the official CLI command reference. To keep matters simple to begin with, Bob will generate a "leaf key". Most wallet GUIs will use a hierarchy of keys as explained earlier. 
@@ -201,7 +202,7 @@ Before Bob can exchange test ada (tAda) with Alice, he needs to create a key pai
 
 So Bob will use the cardano-cli ‘address’ subcommand to create payment and secret keys as follows:
 
-```zsh
+```cmd
 cardano-cli address key-gen \
 		--verification-key-file bob_payment.vkey \
   	  	--signing-key-file bob_payment.skey
@@ -228,29 +229,35 @@ $ cat bob_payment.vkey
 
 Bob now uses the verification key to generate, or ‘build’, an address.
 
+```cmd
 cardano-cli address build \
 		--payment-verification-key-file bob_payment.vkey \
 		--out-file bob_payment.addr \
   	  	--testnet-magic 1
-
+```
 
 Note Bob uses the argument ‘-- testnet-magic <integer>’ to specify which testnet he wants to use. In this case, it’s 1 for the ‘Pre-production’ testnet and ‘2’ would be for the ‘Preview’ testnet. Bob then uses the ‘cat’ command which spits out the ‘out-file’ to screen. This is where Bob’s newly created address lies.
 
+```cmd
 $ cat bob_payment.addr 
 addr_test1vr2x99uwdkgl3d7553mqyttpfd3nurfn7q50cxsku3u4d4g4gnpje
+```
 
 When using the cardano-cli to generate keys, note that they are generated randomly without following any of the hierarchical deterministic (HD) wallet derivation standards. This is like a single payment address wallet option, as opposed to the HD Wallet option Alice chose earlier. Note that, as is often the case in Cardano, there is more than one way to do this. You can also derive addresses from a recovery phrase using the cardano-address command. 
  
 It’s best practice with the CLI to use variables, so we can refer back to them later if we need them in scripts or other commands. So Bob saves his address to a variable ‘BOB_ADDRESS’ then uses the ‘echo’ command to confirm it back to us as follows:
 
+```cmd
 $BOB_ADDRESS=$(cat bob_payment.addr)
 echo "Bob's address is: $BOB_ADDRESS"
 Bob's address is: addr_test1vr2x99uwdkgl3….7q50cxsku3u4d4g4gnpje
+```
 
 So Bob has just set up an address on the Cardano blockchain, but now he needs to get some funds, but from where or from whom?! He calls his friend Alice and asks her to send him some tAda. He first provides his ‘receiving address’ on the Preprod Testnet,
 
+```cmd
 (addr_test1vr2x99uwdkgl3d7553mqyttpfd3nurfn7q50cxsku3u4d4g4gnpje). 
-
+```
 
 Alice saves this address as a new contact ‘Bob’ in her friendly wallet GUI and sends him 1,000 tAda. They both verify the transaction in their explorers 
 
@@ -260,6 +267,7 @@ Alice saves this address as a new contact ‘Bob’ in her friendly wallet GUI a
 
 Bob runs the following command to query the UTXO in his wallet and gets the confirmation he was looking for in the output:
 
+```cmd
 cardano-cli query utxo \
 		--address $BOB_ADDRESS \
   	  	--testnet-magic 1
@@ -270,12 +278,14 @@ cardano-cli query utxo \
 TxHash  			   			TxIx	   Amount
 -------------------------------------------------------
 65388cf645b2ec119…84db0c559a171c1528   0	   1000000000
+```
 
 ##  Buying ADA from a Centralized Exchange (CEX)
 Before buying some ‘real’ ada, Alice creates a new wallet following the same steps as before, except this time she chooses ‘Mainnet’. The GUI and user experience are identical otherwise. The only difference is her ‘receiving address’ format has no test in its prefix on mainnet:
 
-
+```cmd
 addr1q9qflm25pwc50…jet29yevwru2a9trapjh7uggul0suae7av
+```
 
 ![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/4.2.17.png)<br>
 
@@ -304,11 +314,11 @@ For newcomers, this familiar experience is convenient and it’s easy to get com
 
 Choosing an exchange from the list, Alice creates an account confirming her country of residence and personal information such as:
 
-full name
-address
-email address and phone number
-payment method (to fund your account, most exchanges accept credit cards or bank transfers)
-a document ID (passport, driver’s license, ID, etc)
+- full name
+- address
+- email address and phone number
+- payment method (to fund your account, most exchanges accept credit cards or bank transfers)
+- a document ID (passport, driver’s license, ID, etc)
 
 Following Bob’s advice, Alice sets up 2FA verification for enhanced security and funds safety. Most exchanges will require 2-step verification for requests such as password changes, or withdrawal requests. 
 
@@ -346,6 +356,7 @@ Bob creates a ‘receiving address’ on mainnet
 
 Bob runs the same command as before, creating a new out-file which he ‘cats’ out to screen. He specifies the ‘--mainnet’ argument instead of testnet. Like he did previously, Bob assigns the address to a variable.
 
+```cmd
 cardano-cli address build \
 		--payment-verification-key-file bob_payment.vkey \
 		--out-file bob_mainnet_addr.addr \
@@ -355,7 +366,7 @@ $ cat bob_mainnet_addr.addr
 
 addr1vx2vgf5luq…..9trhl6u6fy9lf6e770agf4srhw
 $bob_mainnet_addr=$(cat bob_mainnet_addr.addr)
-
+```
 
 Bob shares this ‘receiving address’ with Alice so she can send him some real ada on mainnet. Alice adds this address in her ‘Contacts’ section of her light wallet. This is similar to the process most people are familiar with when creating a new contact on their smartphone. She no longer needs to remember the specific address. She sends Bob some real ada and they both confirm the transaction in their favored explorer.
 
@@ -375,10 +386,12 @@ A combination of the above
 
 For now let's keep it simple, Bob wants to send some ada to Alice’s ‘receiving address’ which she shared with him after she set up her light wallet. As Bob is using the cli, he saves Alice's address in a variable.
 
+```cmd
 Echo 'addr1q9qflm25pwc500tzv….2a9trapjh7uggul0suae7av' > alice_address.addr
 
 
 $alice_address=$(cat alice_address.addr)
+```
 
 ###  Build the Tx Payload
 Transactions in Cardano are deterministic, meaning they’re predictable ahead of time. This is not the same experience on other blockchains where the same transaction can have different outcomes and transaction fees depending on when it is executed. As we will see, when Bob builds a transaction (Tx), he will provide all the details upfront and know what transaction fees are before he has to proceed. 
@@ -388,19 +401,20 @@ Remember from before, we said a UTxO consists of the reference to the transactio
 
 Bob first needs to gather the data he needs for the transaction inputs. He needs to identify the transaction hash and index from where he will send funds. Transaction indexes are not shown in most explorers though the order in which outputs are shown usually follows the real order as found on-chain. Yet to fetch the required details, Bob queries all the UTxO locked by  his own address by running the following command:
 
+```cmd
 cardano-cli query utxo \
 		--address $bob_mainnet_addr \
   	  	--mainnet
 
 TxHash -----------------------TxIx---Amount—--------- fed2616805689e…4c2289204f87   1      55834279 lovelace + TxOutDatumNone
-
+```
 Bob needs each of these values for his transaction, so stores them accordingly in variables as follows:
 
+```cmd
 bob_TX_HASH="fed2616805689edaf1……c4c2289204f87"
 bob_TX_IX="1"
 TRANSFER_AMOUNT="50000000"
-
-
+```
 Bob wants to send 50 ada, so enters 50000000 lovelace, taking into account the transaction fees.
 
 Now he is ready to build the first transaction to calculate his fee and save it in a file called bobtx.raw. He will reference the variables in the transaction to improve readability because he previously saved almost all of the required arguments in variables. 
@@ -411,6 +425,7 @@ There is another more convenient command cardano-cli transaction build which cal
 
 He notes it is expecting the format --tx-in $txhash#$txix. This is the input UTXO you want to spend. You can spend multiple UTXOs by adding more --tx-in line(s). The --tx-out parameter is the address of the recipient of the output, just ada in this case. The command structure is as follows:
 
+
 cardano-cli transaction build --babbage era \
 		--tx-in $bob_TX_HASH#$bob_TX_IX \
 		--tx-out $alice_address+$TRANSFER_AMOUNT \
@@ -418,6 +433,7 @@ cardano-cli transaction build --babbage era \
 		--out-file bobtx.raw
 
 Estimated transaction fee: Lovelace 163421
+```
 
 You may be wondering what the change-address parameter is. Remember, we talked previously about UTXOs and that they could only be spent as one whole UTXO. 
 
@@ -429,21 +445,23 @@ In this scenario, Bob is sending funds from his CLI wallet, so he has to build t
 Note that if the change is smaller than 1 ADA, this will all be consumed as "fee". For example, if Bob has a single UTXO of 3 ada and is sending 2.5 ada to Alice, the remaining 0.5 ada can not be sent back to the change_address (since it would be in violation of the min-utxo, currently 1 ada) and will be consumed as fee. This is where the process of ‘Coin selection’ is important. CIP-2 is dedicated to the topic, which outlines the different algorithms for choosing unspent coins from a wallet in order to pay money to one or more recipients.
 
 Bob can inspect the transaction to ensure that it is what he is expecting:
-
+```cmd
 cardano-cli transaction view --tx-file bobtx.raw
-
+```
 ###  Sign the Transaction
 Bob needs to sign the transactions to prove the authenticity and ownership of the payment key (funds). He signs with the private (secret .skey) key he created earlier.
 
+```cmd
 cardano-cli transaction sign \
 		--signing-key-file bob_payment.skey \
 		--mainnet \
 		--tx-body-file bobtx.raw \
 		--out-file transfer.signed
-
+```
 
 The data returned using the ‘cat’ command can be a little messy, so Bob opts to make it neater using jq command along with the ‘.’ filter:
 
+```cmd
 jq ‘.’ transfer.signed
 
 {
@@ -451,24 +469,27 @@ jq ‘.’ transfer.signed
   "description": "Ledger Cddl Format",
   "cborHex":"84a30081825868...8d45ef0c89d02950f7970ef5f6"
 }
-
+```
 ![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/4.2.25.png)<br>
 
 ###  Submit the Transaction
 Now Bob is finally ready to submit the transaction by running the following command:
 
+```cmd
 cardano-cli transaction submit \
 		--tx-file transfer.signed \
-		--mainnet 
+		--mainnet
+```
 Bob has now successfully transferred ada to Alice’s light wallet. After a few seconds, he checks the output address:
 
+```cmd
 cardano-cli query utxo \
 		--address $alice_address \
 		--mainnet \
 
 TxHash-------------------------TxIx---Amount------------------
 62a8fc5d88706433…d6ccf6e00df     0      50000000 lovelace + TxOutDatumNone
-
+```
 
 Alice's balance in her light wallet has now been topped up by 50 ada. She can also verify this in an explorer. As Alice is not a techie, she asks Bob for some advice on which explorer to use going forward. Bob suggests the visually appealing eUTxO.org explorer as it is more intuitive for beginners trying to understand the benefits of eUTXO. Bob favors the new explorer from the Cardano Foundation which has some features around staking, a topic he is keen to explore now he has his wallet set up.
 
