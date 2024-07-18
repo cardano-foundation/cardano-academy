@@ -265,7 +265,7 @@ It should look something like this:
     "address_type": 0
 }
 $bob_staking_addr=$(cat bob_staking.addr)
-``
+```
 
 This new ‘type 0’ gives Bob the ability to send and receive ada, but also to delegate his ada to a staking pool and receive ada rewards for contributing to the network.
 Register stake address 
