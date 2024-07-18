@@ -103,10 +103,10 @@ This is what our transaction looks like:
 cardano-cli transaction build \ 	
 	--tx-in $TX_HASH#$TX_IX \ 
 	--tx-out $bob_staking_addr+$TX_AMOUNT+”TOKEN_AMOUNT $POLICY_ID.$TOKEN_NAME \
-  --mint “$TOKEN_AMOUNT $POLICY_ID.$TOKEN_NAME” \
-  --minting-script-file policy.script \
+  	--mint “$TOKEN_AMOUNT $POLICY_ID.$TOKEN_NAME” \
+	--minting-script-file policy.script \
 	--change-address $bob_staking_addr 
-  –-out-file mint.raw
+  	–-out-file mint.raw
 ```
 
 Here's a breakdown of the syntax for the ‘tx-out’ parameter:
@@ -192,24 +192,24 @@ Since he will send 10 of his tokens to Alice’s address, he is left with 999990
 $TOKEN_NAME.
 
 cardano-cli transaction build \ 
---tx-in $txhash#$txix \
---tx-out $receiver+$receiver_output+"10 $policyid.$tokenname" \
---change-address $bob_staking_addr \
---out-file rec_matx.raw
+	--tx-in $txhash#$txix \
+	--tx-out $receiver+$receiver_output+"10 $policyid.$tokenname" \
+	--change-address $bob_staking_addr \
+	--out-file rec_matx.raw
 ```
 
 Bob signs, and then submits the transaction:
 
 ```cmd
 cardano-cli transaction sign \ 
---signing-key-file bob_stake.skey \
---mainnet \
---tx-body-file rec_matx.raw \
---out-file rec_matx.signed
+	--signing-key-file bob_stake.skey \
+	--mainnet \
+	--tx-body-file rec_matx.raw \
+	--out-file rec_matx.signed
 
 cardano-cli transaction submit \ 
---tx-file rec_matx.signed \
---mainnet
+	--tx-file rec_matx.signed \
+	--mainnet
 ```
 
 After a few seconds, Alice should see the POAP NFT, for her Cardano Summit event attendance, in her light wallet. 
@@ -235,28 +235,28 @@ Burning tokens is fairly simple. Bob just needs to issue a new minting action, b
 
 ```cmd
    cardano-cli transaction build \ 
---tx-in $txhash#$txix \
---tx-out $bob_staking_addr+$burnoutput+"9995000 $policyid.$TOKEN_NAME"  \
---mint="-5000 $policyid.$TOKEN_NAME" \
---change-address $bob_staking_addr
---minting-script-file policy.script \
---out-file burning.raw
+	--tx-in $txhash#$txix \
+	--tx-out $bob_staking_addr+$burnoutput+"9995000 $policyid.$TOKEN_NAME"  \
+	--mint="-5000 $policyid.$TOKEN_NAME" \
+	--change-address $bob_staking_addr
+	--minting-script-file policy.script \
+	--out-file burning.raw
 ```
 Bob signs the transaction:
 
 ```cmd
    cardano-cli transaction sign \ 
 	--signing-key-file bob_stake.skey  \
---signing-key-file asset_policy.skey  \
---mainnet  \
---tx-body-file burning.raw  \
---out-file burning.signed
+	--signing-key-file asset_policy.skey  \
+	--mainnet  \
+	--tx-body-file burning.raw  \
+	--out-file burning.signed
 ```
 …then sends (submits) the transaction:
 ```
    cardano-cli transaction submit \
---tx-file burning.signed \
---mainnet 
+	--tx-file burning.signed \
+	--mainnet 
 ```
 Bob then checks his address to confirm:
 
@@ -335,9 +335,9 @@ As he did before, he uses these two keys to generate an address:
 
 ```cmd
 	cardano-cli address build \
---payment-verification-key-file nft_payment.vkey \
---out-file nft_payment.addr \ 
---mainnet
+		--payment-verification-key-file nft_payment.vkey \
+		--out-file nft_payment.addr \ 
+		--mainnet
 ```
 He saves his address hash in a variable called nft_address:
 ```cmd
@@ -356,8 +356,8 @@ Just as Bob did when generating native assets, he generates an ‘nft_policy’ 
 
 ```cmd
 cardano-cli address key-gen \
---verification-key-file nft_policy.vkey \
---signing-key-file nft_policy.skey
+	--verification-key-file nft_policy.vkey \
+	--signing-key-file nft_policy.skey
 ```
 Instead of only defining a single signature like last time, Bob’s script file needs to implement the following characteristics this time:
 
@@ -480,29 +480,29 @@ Bob sets his output value to 2000000 Lovelace ( 2 ADA). There are no decimal poi
 
 ```cmd
 cardano-cli transaction build /
---mainnet \
---babbage-era \   
---tx-in $txhash#$txix \
---tx-out $alice_address+$output+"$tokenamount $policyid.$nftname" \ 
---change-address $nft_address \  
---mint="$tokenamount $policyid.$nftname" \
---minting-script-file $script \
---metadata-json-file metadata.json  \
---invalid-hereafter $slotnumber \
---witness-override 2 \
---out-file matx.raw
+	--mainnet \
+	--babbage-era \   
+	--tx-in $txhash#$txix \
+	--tx-out $alice_address+$output+"$tokenamount $policyid.$nftname" \ 
+	--change-address $nft_address \  
+	--mint="$tokenamount $policyid.$nftname" \
+	--minting-script-file $script \
+	--metadata-json-file metadata.json  \
+	--invalid-hereafter $slotnumber \
+	--witness-override 2 \
+	--out-file matx.raw
 ```
 He signs, then submits the transaction:
 ```cmd
-	cardano-cli transaction sign /
---signing-key-file nft_payment.skey  \
---signing-key-file nft_policy.skey  \
---mainnet --tx-body-file matx.raw  \
---out-file matx.signed
+cardano-cli transaction sign /
+	--signing-key-file nft_payment.skey  \
+	--signing-key-file nft_policy.skey  \
+	--mainnet --tx-body-file matx.raw  \
+	--out-file matx.signed
 
 cardano-cli transaction submit /
---tx-file matx.signed \
---mainnet
+	--tx-file matx.signed \
+	--mainnet
 ```
 If everything works as it should, Bob sees the following confirmation:
 
@@ -531,26 +531,26 @@ burnoutput=2000000
 Bob sets the output value to 2000000 Lovelace which is equivalent to 2 ADA. This amount will cover the minimum UTxO requirement. Bob’s runs the following transaction to burn (negative mint) the POAP NFT he previously minted to Alice’s wallet address:
 ```cmd
 cardano-cli transaction build /
---mainnet \
---babbage-era \
---tx-in $txhash#$txix \
---tx-out $alice_address+$burnoutput --mint="-1 $policyid.$nftname" \
---minting-script-file $script \
---change-address $nft_address \
---invalid-hereafter $slot \
---witness-override 2 \
---out-file burning.raw 
+	--mainnet \
+	--babbage-era \
+	--tx-in $txhash#$txix \
+	--tx-out $alice_address+$burnoutput --mint="-1 $policyid.$nftname" \
+	--minting-script-file $script \
+	--change-address $nft_address \
+	--invalid-hereafter $slot \
+	--witness-override 2 \
+	--out-file burning.raw 
 ```
 As usual, Bob then signs and submits the transaction:
 ```cmd
 cardano-cli transaction sign /
---signing-key-file nft_payment.skey \
---signing-key-file nft_policy.skey \
---mainnet  \
---tx-body-file burning.raw \
---out-file burning.signed
+	--signing-key-file nft_payment.skey \
+	--signing-key-file nft_policy.skey \
+	--mainnet  \
+	--tx-body-file burning.raw \
+	--out-file burning.signed
 
 cardano-cli transaction submit /
---tx-file burning.signed \
---mainnet
+	--tx-file burning.signed \
+	--mainnet
 ```
