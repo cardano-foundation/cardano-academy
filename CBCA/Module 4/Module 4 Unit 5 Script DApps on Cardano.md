@@ -356,66 +356,64 @@ And with that, we have reached the end of the course! We hope we have whet your 
 ## Questions
 **Sub-Unit 1**
 
+*Orders on a Cardano DEX can be run ____.*
+- on-chain only
+- **off-chain (correct answer)**
+- on a CEX
+- on the moon
 
-Orders on a Cardano DEX can be run ____.
-on-chain only
-off-chain (correct answer)
-on a CEX
-on the moon
+*Which of these is NOT a Cardano Wallet? Select all that apply.*
+- Nami
+- Eternl
+- **Metamask (correct answer)**
+- Yoroi 
+- Lace
 
-Which of these is NOT a Cardano Wallet? Select all that apply.
-Nami
-Eternl
-Metamask (correct answer)
-Yoroi 
-Lace
+*Which of the following is closer to the currency exchange model found in traditional markets? Select all that apply.**
+- AMM
+- DEX
+- Hardware wallet
+- **An order book model (correct answer)**
 
-Which of the following is closer to the currency exchange model found in traditional markets? Select all that apply.
-AMM
-DEX
-Hardware wallet
-An order book model (correct answer)
+*A tokenized derivative that mimics the value of another asset is called a _____ .* 
+- **Synthetic asset (correct answer)**
+- Stablecoin
+- NFT
+- Digital twin
+- None of the above
 
-A tokenized derivative that mimics the value of another asset is called a _____ . 
-Synthetic asset (correct answer)
-Stablecoin
-NFT
-Digital twin
-None of the above
+**Sub-Unit 2**
 
-Sub-Unit 2
+*Which of the following statements are true regarding Impermanent Loss (IL)?*
+- **It is a risk liquidity providers face when depositing their assets into a liquidity pool (CORRECT)**
+- If you fall victim to IL, you are required to provide KYC documents
+- **It means that you could lose money if the price of the asset changes after you deposit it (CORRECT)**
+- The loss is realized immediately and deducted from your balance
 
+*Which of the following are the two main DEX (decentralized exchange) types?*
+- **Automated market maker (AMM) (CORRECT)**
+- **Order book model (CORRECT)**
+- Double-entry book
+- Coinbase
 
-Which of the following statements are true regarding Impermanent Loss (IL)?
-It is a risk liquidity providers face when depositing their assets into a liquidity pool (CORRECT)
-If you fall victim to IL, you are required to provide KYC documents
-It means that you could lose money if the price of the asset changes after you deposit it (CORRECT)
-The loss is realized immediately and deducted from your balance
+*True or False? An Automated market maker (AMM) model enables automatic, permissionless trading of digital assets.*
+- **True (CORRECT)**
+- False 
 
-Which of the following are the two main DEX (decentralized exchange) types?
-Automated market maker (AMM) (CORRECT)
-Order book model (CORRECT)
-Double-entry book
-Coinbase
+*True or False: An Order Book model is completely different to the currency exchange model found in traditional markets.*
+- True 
+- **False (CORRECT)**
 
-True or False? An Automated market maker (AMM) model enables automatic, permissionless trading of digital assets.
-True (CORRECT)
-False 
+*What enables Cardano DEXs to be based on the Order Book model?*
+- Satoshi’s Vision
+- **UTxO-based smart contracts on Cardano (CORRECT)**
+- Account-based smart contracts on Cardano 
+- Marlowe
 
-True or False: An Order Book model is completely different to the currency exchange model found in traditional markets.
-True 
-False (CORRECT)
+**Sub-Unit 3**
 
-What enables Cardano DEXs to be based on the Order Book model?
-Satoshi’s Vision
-UTxO-based smart contracts on Cardano (CORRECT)
-Account-based smart contracts on Cardano 
-Marlowe
-Sub-Unit 3
-
-
-Who introduced wrapped smart contracts (WSC) to Cardano?
-IOG
-dcSpark  (CORRECT)
-EMURGO
-Cardano Foundation
+*Who introduced wrapped smart contracts (WSC) to Cardano?*
+- IOG
+- **dcSpark  (CORRECT)**
+- EMURGO
+- Cardano Foundation
