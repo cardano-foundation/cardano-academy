@@ -175,6 +175,13 @@ cardano-cli subcommand sub-subcommand --parameters
 ![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/4.2.15.png)<br>
 
 In documentation and guides, you’ll see the ‘\’ newline character used which just jumps to a new line for better readability. If you are stuck, you can always find out more by just running a given command without parameters. For example, at the command prompt, type:
+~~~
+select * from meta ;
+ id |     start_time      | network_name
+----+---------------------+--------------
+  1 | 2017-09-23 21:44:51 | mainnet
+(1 row)
+~~~
 
 cardano-cli –help
 
