@@ -26,7 +26,7 @@ Added by: @joebloggs
 
 ## Changelog
 
-Please add an entry into CHANGELOG.md when submitting changes. New entries should be in the format `[next] DD--MM--YYYY` section. This let's us keep track of unreleased changes for future course iterations. 
+Please add an entry into CHANGELOG.md when submitting changes. This let's us keep track of unreleased changes for future course iterations. 
 
 Each release section will be further broken down into three sections named Added, Changed, and Removed. 
 
