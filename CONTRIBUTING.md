@@ -50,6 +50,6 @@ Please add an entry into CHANGELOG.md when submitting changes. This let's us kee
 ...Feel free to [Start a discussion](https://github.com/cardano-foundation/cardano-academy/discussions/new/choose)
 
 ## Thanks
-Feedback and contributions is welcome, and indeed needed. We are very grateful for the support of the entire Cardano community. Thank you!
+Feedback and contributions are welcome, and indeed needed. As Cardano constantly evolves, we are very grateful for the support of the entire Cardano community. Thank you!
 
 *Contact us:* <academy@cardanofoundation.org>
