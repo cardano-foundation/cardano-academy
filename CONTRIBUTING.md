@@ -48,10 +48,8 @@ Each release section will be further broken down into three sections named Added
 
 ## Discussions
 
-💡 How To Propose An Idea, or ask a a question ❓
-Feel free to bring any idea as a discussion [Start a discussion](https://github.com/cardano-foundation/cardano-academy/discussions/new/choose)
-
-Make sure to mark your question as Answered once resolved!
+💡 Do you have an Idea to propose, or a question to ask? ❓<br>
+...Feel free to start a new discussion [Start a discussion](https://github.com/cardano-foundation/cardano-academy/discussions/new/choose)
 
 ## Thanks
 Feedback and contributions is welcome, and indeed needed. We are very grateful for the support of the entire Cardano community. Thank you!
