@@ -10,7 +10,7 @@ Any updates, typo fixes, or expansion of the course content is more than welcome
 
 Pull requests are welcome, but we do recommend you open an issue to bring any idea to discussion first! Especially if the pull request will end up very large, any significant changes should be discussed up front with the maintainers. This avoids awkward situations where someone puts in a bunch of work to ultimately have the pull request closed due to a potential variety of unforeseen reasons.
 
-The content is created in 'markdown' format, a cheatsheet is available [here](https://www.markdownguide.org/cheat-sheet/).
+The content is in 'markdown' format, a cheatsheet is available [here](https://www.markdownguide.org/cheat-sheet/).
 
 
 ## License and attribution
