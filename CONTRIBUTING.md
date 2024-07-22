@@ -26,7 +26,7 @@ Added by: @joebloggs
 
 ## Changelog
 
-Please add an entry into CHANGELOG.md when submitting changes. This let's us keep track of unreleased changes for future course iterations. We suggest sticking to the following format for consistency:
+Please add an entry into [CHANGELOG.md](https://github.com/cardano-foundation/cardano-academy/blob/main/CHANGELOG.md) when submitting changes. This let's us keep track of unreleased changes for future course iterations. We suggest sticking to the following format for consistency:
 
 ```
 ## [next] - DD--MM--YYYY
