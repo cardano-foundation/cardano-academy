@@ -6,7 +6,7 @@
 
 Contributions in the form of feedback and issues are very much welcome. Whether it may be a suggestion, contributing an infographic, or maybe some questions that you have. It helps in improving the course(s) over time and these are the best kind of contributions to start with.
 
-Do not hesitate to add thumbs up 👍 on suggestions you support to show your interest.
+Do not hesitate to add *thumbs up* 👍 on suggestions you support to show your interest.
 
 Any updates, typo fixes, or expansion of the course content is more than welcome. Note however that courses are generally targeted at beginner, intermediate, advanced audiences.
 
