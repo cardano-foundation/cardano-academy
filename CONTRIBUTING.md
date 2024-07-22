@@ -6,7 +6,7 @@ Fedback is welcome, whether it be a suggestion, contributing an improved infogra
 
 Do not hesitate to add *thumbs up* 👍 on suggestions you support to show your interest.
 
-Any updates, typo fixes, or expansion of the course content is more than welcome. Note however that courses are generally targeted at beginner, intermediate, advanced audiences.
+Any updates, typo fixes, or expansion of the course content is more than welcome. Note however that courses are generally targeted at a specific audience, generally beginner, intermediate, advanced. We often cover the same topic in more detail in later course(s).
 
 Pull requests are welcome, but we do recommend you open an issue to bring any idea to discussion first! Especially if the pull request will end up very large, any significant changes should be discussed up front with the maintainers. This avoids awkward situations where someone puts in a bunch of work to ultimately have the pull request closed due to a potential variety of unforeseen reasons.
 
