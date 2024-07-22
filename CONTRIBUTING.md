@@ -47,7 +47,7 @@ Please add an entry into CHANGELOG.md when submitting changes. This let's us kee
 ## Discussions
 
 💡 Do you have an Idea to propose, or a question to ask? ❓<br>
-...Feel free to start a new discussion [Start a discussion](https://github.com/cardano-foundation/cardano-academy/discussions/new/choose)
+...Feel free to [Start a discussion](https://github.com/cardano-foundation/cardano-academy/discussions/new/choose)
 
 ## Thanks
 Feedback and contributions is welcome, and indeed needed. We are very grateful for the support of the entire Cardano community. Thank you!
