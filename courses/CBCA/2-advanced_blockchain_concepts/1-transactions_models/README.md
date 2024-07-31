@@ -469,16 +469,6 @@ https://ucarecdn.com/e14c6f03-152d-4361-abaf-f1fee5eb2e4e/EUTxOhandbook3.pdf , A
 </details>
 
 
-
-1. Same image - Datum, Script, Redeemer<br>
-![illustration 2.1.19.png](./assets/2.1.19.png)
-
-1. Same image - Redeemer, Datum, Script<br>
-![illustration 2.1.20.png](./assets/2.1.20.png)
-
-1. Same image - Script, Datum, Redeemer (CORRECT ANSWER)**<br>
-![illustration 2.1.21.png](./assets/2.1.21.png)
-
 ### What needs to happen for a EUTxO transaction to be considered valid?
 1. At least half of the scripts involved need to return a non-error value when executed
 1. No scripts involved in the transaction should return when executed
