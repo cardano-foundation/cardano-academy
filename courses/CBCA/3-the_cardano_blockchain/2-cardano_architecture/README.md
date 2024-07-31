@@ -1,9 +1,13 @@
 # Unit 2 - Cardano Architecture
 
 ## Learning Objectives
-By the end of this unit, the learner should be able to:
-- Name the 4 main layers of the Cardano node and describe their roles.
-- Describe each Cardano era and the features they brought to the network
+
+> [!NOTE]
+>
+> By the end of this unit, you should be able to:
+>
+> - [x] Name the 4 main layers of the Cardano node and describe their roles.
+> - [x] Describe each Cardano era and the features they brought to the network
 
 ## Introduction
 Hello everyone, and welcome. My name is (lecturer name)
