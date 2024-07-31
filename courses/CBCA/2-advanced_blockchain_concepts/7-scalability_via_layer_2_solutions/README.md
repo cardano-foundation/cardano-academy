@@ -1,11 +1,15 @@
 # Unit 7 - Scalability: Layer 2 Solutions
 
 ## Learning Objectives
-By the end of this unit, the learner should be able to:
-Understand  the fundamental properties of all layer 2 solutions
-Explain how layer 2 solutions work at a high level
-Explain briefly what state channels and rollups are, their use cases and limitations
-Know what side chains and validiums are and what distinguishes them from state channels and rollups
+
+> [!NOTE]
+>
+> By the end of this unit, you should be able to:
+>
+> - [x] Understand  the fundamental properties of all layer 2 solutions
+> - [x] Explain how layer 2 solutions work at a high level
+> - [x] Explain briefly what state channels and rollups are, their use cases and limitations
+> - [x] Know what side chains and validiums are and what distinguishes them from state channels and rollups
 
 ## Introduction
 Welcome everyone, I am [lecturer name], and I’ll walk you through scalability and layer one solutions.
