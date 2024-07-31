@@ -1,10 +1,14 @@
 # Unit 3 - Double-spending Attack
 
 ## Learning Objectives
-By the end of this unit, the learner should be able to:
-- Describe how double-spending works, citing examples
-- Explain how the risk of double-spending is mitigated
-- Describe and compare a soft fork, and hard fork
+
+> [!NOTE]
+>
+> By the end of this unit, you should be able to:
+>
+> - [x] Describe how double-spending works, citing examples
+> - [x] Explain how the risk of double-spending is mitigated
+> - [x] Describe and compare a soft fork, and hard fork
 
 ## Introduction
 Hello everyone, and welcome. My name is [lecturer name].
