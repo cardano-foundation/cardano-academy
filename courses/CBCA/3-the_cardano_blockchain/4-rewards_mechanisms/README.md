@@ -1,12 +1,16 @@
 # Unit 4 - Rewards Mechanisms
 
 ## Learning Objectives
-By the end of this unit, the learner should be able to:
-- Enumerate the different sources of rewards in Cardano
-- Make parallels between Cardano incentives and proof of work incentives
-- Explain the role of k, a0, tau and rho
-- Understand the difference between the treasury and the reserve
-- Explain how rewards are distributed in Cardano
+
+> [!NOTE]
+>
+> By the end of this unit, you should be able to:
+>
+> - [x] Enumerate the different sources of rewards in Cardano
+> - [x] Make parallels between Cardano incentives and proof of work incentives
+> - [x] Explain the role of k, a0, tau and rho
+> - [x] Understand the difference between the treasury and the reserve
+> - [x] Explain how rewards are distributed in Cardano
 
 ## Introduction
 Hello everyone, and welcome back for another topic. My name is [speaker name] and thank you for joining me today.
