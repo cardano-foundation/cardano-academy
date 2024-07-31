@@ -1,16 +1,15 @@
-# Unit 3 - Blockchain Generations
+# 3 - Blockchain Generations
 
-## Learning Objectives
-
-By the end of this unit, the learner should be able to:
-- Describe and compare three blockchain generations
-- Define and compare native assets and Non-fungible Tokens
-- Summarize the blockchain trilemma and layer 1 and layer 2 scalability solutions
+> [!NOTE]
+>
+> By the end of this unit, you should be able to:
+>
+> - [x] Describe and compare three blockchain generations
+> - [x] Define and compare native assets and Non-fungible Tokens
+> - [x] Summarize the blockchain trilemma and layer 1 and layer 2 scalability solutions
 
 ## Introduction
-Hello everyone, and welcome back! I am your lecturer, [lecturer name], and many thanks for joining me here today! Let's dive in.
 
-## Table of Contents
 January 3, 2009. The first block of Bitcoin is mined by Satoshi Nakamoto at 6:15 pm. Since that genesis moment, much has changed. Three generations of blockchain have since evolved into networks like Cardano, influencing web technology and the future of the web.
 
 In this unit, we explore the evolution of blockchain starting with Bitcoin, and then Ethereum with its innovations such as smart contracts. We’ll look at how third generation blockchains like Cardano address scalability challenges in the Blockchain Trilemma.
@@ -18,6 +17,7 @@ In this unit, we explore the evolution of blockchain starting with Bitcoin, and 
 We have a lot to cover, so let’s get started!
 
 ## First Blockchain Generation
+
 Before blockchain, to transfer assets between two people they needed to either trust each other or have a middleman, like a bank. But with the creation of Bitcoin, using blockchain technology, it became possible to move money quickly and easily without the need for that middleman. The removal of intermediaries represents a monumental change in how and who interacts with money.
 
 The first-ever exchange of Bitcoin for physical goods was for pizza. In May 2010, a programmer from Florida in the USA, Laszlo Hanyecz, successfully traded 10,000 Bitcoins for two pizzas from Papa John’s. They were sold to him by a 19-year-old named Jeremy Sturdivant who, in exchange for the tokens, called in the order. This simple exchange would go down in history as the first-ever exchange of Bitcoin for physical goods, and probably the most expensive pizza in history.
@@ -25,9 +25,11 @@ The first-ever exchange of Bitcoin for physical goods was for pizza. In May 2010
 Bitcoin demonstrated that anyone could send money, as bitcoin, through a decentralized network without intermediaries. However, its use was limited.
 
 ## Second Blockchain Generation;  Ethereum, the World Computer
-Ethereum, launched in August 2014, marked the beginning of the second era in blockchain technology. The core idea? A global computer where applications could run securely with low risk of downtime, fraud, third-party interference, or failure. Additionally, Ethereum empowered developers to create new types of tokens and applications. Due to its blockchain design, the code in Ethereum is transparent and auditable. [Ref.3.1]
+
+Ethereum, launched in August 2014, marked the beginning of the second era in blockchain technology. The core idea? A global computer where applications could run securely with low risk of downtime, fraud, third-party interference, or failure. Additionally, Ethereum empowered developers to create new types of tokens and applications. Due to its blockchain design, the code in Ethereum is transparent and auditable. [^1]
 
 ## 6 Principles
+
 Six principles guide the development and implementation of Ethereum. These are atomicity, synchrony, provenance, permanence, immortality, and immutability.
 
 **Atomicity** means the application code will not run partially. Either an entire set of instructions is executed, or none at all. This guarantees the consistency of the system’s state. An atomic sequence of operations ensures that if a fault occurs anywhere in the sequence, the state of the system doesn’t change – as if no operations at all were even done in the first place. The only way to modify the state of the system is by performing the entire sequence.
@@ -40,7 +42,7 @@ Six principles guide the development and implementation of Ethereum. These are a
 
 **Immortality** captures how a blockchain operates irrespective of any central supervision. Programs deployed on the Ethereum blockchain cannot be removed or shut down by an external system administrator making them resistant to censorship and ensuring the long-term viability of the network.
 
-And finally, **immutability**, meaning the program code, or its outcomes, can never be changed or deleted [Ref.3.2].
+And finally, **immutability**, meaning the program code, or its outcomes, can never be changed or deleted [^2].
 
 ## Smart Contracts
 A key innovation of Ethereum is the smart contract. A smart contract is a program stored on a blockchain. It has a set of rules and conditions that capture a procedure to execute when activated – without the need for intermediaries. Use cases like managing financial transactions, contracts between two parties, token exchanges, workflows, and decentralized applications abound. The code in a smart contract is publicly available and can be audited for security, providing an additional layer of trust and accountability. Deployed smart contracts cannot be deleted by default, and interactions with them are irreversible.
@@ -50,6 +52,7 @@ Nick Szabo conceptualized smart contracts in 1997, and Ethereum implemented the 
 A smart contract follows an “if this, then that” logic with the ‘this’ and the ‘that’ defined by the smart contract creator. Decentralized applications or DApps, can be created by combining smart contracts with a front-end user interface. There are many use cases and examples of DApps, like Compound for lending and borrowing or Filecoin for storage.
 
 ## Native Assets and Non-Fungible Tokens
+
 In blockchain, tokens are digital assets that give the holder the right to perform certain actions. Each blockchain has its own native token, designed to work directly with the blockchain's functionality. For example, Cardano has "ada," Ethereum has "ether," and Bitcoin has the bitcoin token. These tokens serve multiple purposes. They can represent ownership of an asset or hold voting rights for example, as well as being a medium of exchange and store of value. In other words, a cryptocurrency – with monetary value and that can be traded or used in transactions.
 
 Some blockchains, like Ethereum, allow for the creation of other tokens through smart contracts. These tokens, created for specific use within DApps, have value based on user demand. Unlike native tokens, they don't have real-world value and are not always interchangeable.
@@ -61,6 +64,7 @@ The process for creating tokens varies by blockchain. This will be covered in mo
 ![illustration 1.3.1.png](./assets/1.3.1.png)
 
 ## Decentralized Finance (DeFi)
+
 Ethereum provides a way to create decentralized finance applications, known as DeFI. DeFi are financial services that enable trading, lending, fundraising, and investing without traditional intermediaries like banks. DeFi transactions are conducted directly on the blockchain, making them faster and more accessible to people everywhere.
 
 In conventional finance, banks and other intermediaries play a central role in moving money and processing transactions. This can make financial services slow, expensive, and inaccessible, particularly for people in some parts of the world. A loan approval process, for example, may take
@@ -72,6 +76,7 @@ DeFi aims to solve these problems by reducing the role of intermediaries and mak
 ![illustration 1.3.2.png](./assets/1.3.2.png)
 
 ## Decentralized Autonomous Organization (DAO)
+
 Blockchain technology has the potential to revolutionize how we interact with organizations.
 
 The idea of an entity where the rules and decisions are transparent and maintained on the blockchain opens up the possibility of new ways to manage important functions across society. The benefits can improve trust and engagement in governance, finance, education, and healthcare where there is full visibility of transactions, decisions, and history.
@@ -87,16 +92,21 @@ Compared to traditional organizations, DAOs have the potential to be more effici
 ![illustration 1.3.3.png](./assets/1.3.3.png)
 
 ## Third Blockchain Generation
+
 That sums up the second generation of blockchain technology and the great contributions made advancing blockchain. However, significant challenges remain: scalability, interoperability, and sustainability. Third-generation blockchains, like Cardano, work to address these issues. But how are they working to solve them? To answer this, let’s go back to the 1980s.
 
 ![illustration 1.3.4.png](./assets/1.3.4.png)
+
 ## The Blockchain Trilemma
+
 Eric Brewer, a computer scientist, proposed a theory that in a distributed data network, you can only achieve two out of three properties at the same time: consistency, availability, or partition tolerance. He called this the CAP theorem.
 
 Fast forward to today, Eric’s idea has evolved into the Blockchain Trilemma, a phrase coined by Ethereum Co-Founder Vitalik Buterin. It states that it is impossible to build and operate a blockchain protocol which is entirely decentralized, scalable, and secure. In other words, public blockchains must make trade-offs between security, decentralization, and scalability. It is a known challenge in the technology's adoption, but there is no scientific law that prohibits all three aspects from being achieved simultaneously. The goal of the third generation is to work to solve these issues so that the full promise of blockchain can be made available to all.
+
 ![illustration 1.3.5.png](./assets/1.3.5.png)
 
 ## Scalability, Decentralization, and Security
+
 Let’s break down the blockchain trilemma:
 
 On one side is scalability. This is the ability to consistently process transactions at a given rate even as the number of transactions increases.
@@ -106,6 +116,7 @@ On another is decentralization. Ensuring the blockchain is not reliant on any ce
 Lastly, security: Operate as expected, defend from attacks, be resilient; to bugs, hardware failures – any unforeseen vulnerability.
 
 ## Cardano Native Token
+
 Third-generation blockchains have looked to introduce ways of maintaining or increasing security without compromising scalability and decentralization. Cardano, for instance, does this in multiple ways. Let’s take a quick look at how Cardano addresses one aspect of security – inherited security in tokens, compared with Ethereum.
 
 In Ethereum, new tokens can be created using smart contracts. The programmability feature of Ethereum tokens makes them very flexible. However, this approach is less secure than it should be because it operates as a program on top of the Ethereum protocol, not part of the core protocol.
@@ -115,7 +126,9 @@ Cardano takes a different approach. Cardano’s native token is ada and, like in
 Having native tokens also reduces computing resources that are needed to transact assets on the network. It is still possible to have smart contracts enforce some rules, but it is by no means a requirement. Many different types of assets can even be exchanged at once in a single transaction. All of this together adds efficiency, and also helps to scale the network down the line.
 
 ![illustration 1.3.6.png](./assets/1.3.6.png)
+
 ## Consensus Protocol Improvement
+
 Now, in addition to security, scalability, and decentralization, third generation blockchains also require interoperability and sustainability. Interoperability is the ability to easily transfer value from one blockchain to another.
 
 Sustainability refers to the ability of a blockchain to maintain itself and operate in an environmentally responsible manner. The energy consumption of blockchain technology has been a topic of debate, with different perspectives on its impact. Some third-generation blockchains, like Cardano, are dedicated to promoting sustainability and have incorporated it into their development strategy. One way this is being achieved is by using alternative consensus mechanisms like proof of stake.
@@ -124,16 +137,16 @@ Unlike proof of work, proof-of-stake mechanisms do not rely on computational eff
 
 ![illustration 1.3.7.png](./assets/1.3.7.png)
 
-
 ## Blockchain Layers
+
 Blockchain architecture is generally divided into layers. Layer 1 is the blockchain itself - the base network. Layer 2 refers to the structures built upon the base layer. Layer 2 solutions are designed to improve scalability and efficiency. However, blockchain scalability solutions are being developed for both layer 1 and layer 2.
 
 The key idea behind layer 2 solutions is that they do not need to rely on the underlying blockchain protocol when processing transactions. Lightning Network in Bitcoin, Arbitrum, Optimism or ZkSync projects in Ethereum, and Hydra in Cardano are all layer 2 solutions. We will dive into both layer 1 and layer 2 solutions in later units.
 
 ![illustration 1.3.8.png](./assets/1.3.8.png)
 
-
 ## Blockchain Types
+
 As blockchain technology has evolved, so have the ledgers used in blockchains. Ledgers are systems for keeping records and have been used for centuries in important practices such as trading, accounting, legal, and governance.
 
 There are two main types of ledgers: public and private. Public ledgers are open for anyone to view and can be used for references in various fields such as commodity prices, land registries, and company registries. Private ledgers, however, are only accessible by designated individuals and often contain sensitive data.
@@ -143,6 +156,7 @@ In blockchain technology, there are also public and private blockchains. Public 
 There's also the distinction between permissionless and permissioned blockchains. In permissionless blockchains, users can participate without any credentials, but in permissioned blockchains, even if they are public, users must have credentials to participate and access is restricted.
 
 So we can categorize blockchain types this way:
+
 - Public, permissionless
 - Public, permissioned
 - Private, permissionless
@@ -151,8 +165,6 @@ So we can categorize blockchain types this way:
 ![illustration 1.3.9.png](./assets/1.3.9.png)
 
 As shown in the diagram, a permissionless blockchain operates with anonymous participants, no central authority, and is trustless. Compare with a permissioned blockchain which is not anonymous, managed by a set of authorities, and provides trust to a limited extent through these authorities
-
-
 
 |       | Permissionless | Permissioned     |
 | :---        |    :----   |         :--- |
@@ -165,6 +177,7 @@ As shown in the diagram, a permissionless blockchain operates with anonymous par
 Bitcoin and Cardano are not only public blockchains, but also permissionless. This means anyone can interact with the ledger. Transaction data can be viewed all the way back to the genesis block, or block zero. Any user of the system can take part in the consensus by setting up their own block producer. We’ll talk more about block producers in later units.
 
 ## Evolution of the Internet – Web 1.0, 2.0, and 3.0
+
 The internet, and specifically web technology, has been evolving since the first website was created in 1991 by Tim Berners-Lee at CERN.
 
 We can group the progression of the web into three phases.
@@ -178,19 +191,12 @@ The next phase is Web 3.0, an open and decentralized ecosystem with data distrib
 ![illustration 1.3.10.png](./assets/1.3.10.png)
 
 ## Review
+
 In this module, we covered the first generation of blockchain technology represented by Bitcoin, and how it showed that value can be transferred anywhere in the world quickly and securely through a decentralized network. Next, we explored the second-generation blockchains represented by Ethereum, and how they added new features such as smart contracts, the creation of decentralized applications, and new kinds of tokens. We looked at how organizations can be represented by on-chain entities called DAOs and the wide range of decentralized financial use cases, or DeFi.
 
 We then examined the third generation of blockchains, which aims to address the challenges of the Blockchain Trilemma, including interoperability and sustainability. We studied Layer 1 and Layer 2 solutions such as sharding, sidechains, and state channels. Finally, we discussed the different types of blockchain ledger systems and how the Internet is evolving.
 
 That’s it for now, and until next time!
-
-## References
-[Ref.3.1] Buterin, V. “Ethereum Paper”, 2014, Available: https://ethereum.org/en/whitepaper/, Accessed: 2 Dec 2022.<br>
-[Ref.3.2] Wood, G., “DEVCON1: Ethereum for Dummies“, Available: https://www.youtube.com/watch?v=U_LK0t_qaPo, Accessed: 20 Dec 2022.<br>
-[Ref.3.3] Szabo, N. "Formalizing and securing relationships on public networks." First Monday, 1997.<br>
-[Ref.3.4] Brewer, E. "CAP twelve years later: How the "rules" have changed," in Computer, vol. 45, no. 2, pp. 23-29, Feb. 2012.<br>
-[Ref.3.5] Eisenhardt, K.M., "Agency Theory: An Assessment and Review", The Academy of Management Review, 14 (1): 57–74, 1989.<br>
-[Ref.3.6] Han, R., Yu, J., Lin, H., Chen, S., and Esteves-Veríssimo, P., "On the security and performance of blockchain sharding." Cryptology ePrint Archive, 2021.<br>
 
 ## Questions
 
@@ -421,3 +427,12 @@ That’s it for now, and until next time!
     | ---     | ---           | ---           |
     | Static  | Dynamic       | Decentralized |
 </details>
+
+## References
+
+[^1] Buterin, V. “Ethereum Paper”, 2014, Available: https://ethereum.org/en/whitepaper/, Accessed: 2 Dec 2022.
+[^2] Wood, G., “DEVCON1: Ethereum for Dummies“, Available: https://www.youtube.com/watch?v=U_LK0t_qaPo, Accessed: 20 Dec 2022.
+[^3] Szabo, N. "Formalizing and securing relationships on public networks." First Monday, 1997.
+[^4] Brewer, E. "CAP twelve years later: How the "rules" have changed," in Computer, vol. 45, no. 2, pp. 23-29, Feb. 2012.
+[^5] Eisenhardt, K.M., "Agency Theory: An Assessment and Review", The Academy of Management Review, 14 (1): 57–74, 1989.
+[^6] Han, R., Yu, J., Lin, H., Chen, S., and Esteves-Veríssimo, P., "On the security and performance of blockchain sharding." Cryptology ePrint Archive, 2021.

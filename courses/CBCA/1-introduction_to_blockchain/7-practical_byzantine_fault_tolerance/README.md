@@ -1,29 +1,30 @@
-# Unit 7 - Practical Byzantine Fault Tolerance
+# 7 - Practical Byzantine Fault Tolerance
 
-## Learning Objectives
-By the end of this unit, the learner should be able to:
-
-- Understand what Byzantine fault-tolerant systems are
-- Know the difference between synchronous and asynchronous systems
-- Understand Practical Byzantine Fault Tolerant (PBFT) family of algorithms
-- Understand  the limitations of classic PBFT
+> [!NOTE]
+>
+> By the end of this unit, you should be able to:
+>
+> - [x] Understand what Byzantine fault-tolerant systems are
+> - [x] Know the difference between synchronous and asynchronous systems
+> - [x] Understand Practical Byzantine Fault Tolerant (PBFT) family of algorithms
+> - [x] Understand the limitations of classic PBFT
 
 ## Introduction
-Welcome back to this new exciting chapter about consensus algorithms. My name is [lecturer name] and I'll be your lecturer for the next unit.
 
-## Table of Contents
 Today, we'll talk about consensus in distributed systems. More specifically, we'll explore practical Byzantine fault tolerance. We will see how it is the basis for many other algorithms in the blockchain space. Ready?
 
 ## A Recap on Consensus and Blockchains
+
 We covered consensus when we first introduced distributed systems such as blockchains a few units back. Let’s take a few minutes to recap what we covered.
 
 A consensus algorithm is a mechanism whereby different actors can reach agreement on a value. In the case of distributed ledger, that value is the entire ledger; or said differently, it is the record of who owns what in the system.
 
-There are many ways of achieving consensus, for example,  through a central all-knowing authority which is tasked to resolve any possible conflict. The challenge comes when designing a consensus algorithm that must have certain desirable properties. For example, permissionless blockchains need the property that anyone should be able to take part in the consensus algorithm. Another property needed for consensus algorithms is fault tolerance in an adversarial environment.
+There are many ways of achieving consensus, for example, through a central all-knowing authority which is tasked to resolve any possible conflict. The challenge comes when designing a consensus algorithm that must have certain desirable properties. For example, permissionless blockchains need the property that anyone should be able to take part in the consensus algorithm. Another property needed for consensus algorithms is fault tolerance in an adversarial environment.
 
-![alt text](https://github.com/cardano-foundation/cardano-academy/blob/main/CBCA/Diagrams/1.7.1.jpg)
+![illustration 1.7.1.png](./assets/1.7.1.png)
 
 ## Fault Tolerance
+
 Fault tolerance is the ability of a system to keep functioning even in the presence of arbitrary faults. Faults can be genuine defects of certain parts of the systems, or they can be of adversarial nature.
 
 You probably remember the Byzantine Generals Problem, and how messengers can't be trusted as they might have been bribed or killed.
@@ -33,14 +34,14 @@ A system that is resilient to this kind of adversarial failures is said to be By
 More specifically, a BFT consensus algorithm will ensure two fundamental properties: safety and liveness. We've covered this in unit 1: safety refers to the property of a distributed system to commit to the same value, whereas liveness indicates that the system can continuously commit to new values and make progress.
 
 ## Synchrony
+
 Before we continue, we need to introduce one key concept in the study of distributed systems - synchrony. Distributed systems are typically classified into two main categories: synchronous systems and asynchronous systems. However, things aren't as binary in real life and there exists a whole range of hybrid situations in between.
 
 ![illustration 1.7.2.png](./assets/1.7.2.png)
 
 A system is said to be synchronous if a defined time bound exists between the moment a request is sent and a response received. If there's no such upper bound, we say that the system is asynchronous.
 
-The Internet is an example of an asynchronous distributed system. When requesting a particular website, there is no guarantee how long your browser will take to get a response.
-Indeed, the underlying communication protocols that make the Internet do not guarantee that servers respond under a known time limit. Most browsers, however, will not wait forever and therefore have to implement timeouts: they’ll stop waiting for a response after a certain delay. Yet, they can’t really tell the difference between a server that isn’t responding or a server that is simply taking a long time to respond.
+The Internet is an example of an asynchronous distributed system. When requesting a particular website, there is no guarantee how long your browser will take to get a response. Indeed, the underlying communication protocols that make the Internet do not guarantee that servers respond under a known time limit. Most browsers, however, will not wait forever and therefore have to implement timeouts: they’ll stop waiting for a response after a certain delay. Yet, they can’t really tell the difference between a server that isn’t responding or a server that is simply taking a long time to respond.
 
 On the other hand, many blockchain consensus protocols are synchronous. This is the case for Bitcoin or Ouroboros. Yet, synchrony is achieved in different ways for each. In the former, the chain difficulty is adjusted by the protocol to ensure that a block is mined within a defined time frame. This gives a probabilistic upper bound and an average block time that the system can use as points of synchronization. In Ouroboros, nodes are assumed to share a globally synchronized clock. As if each node operator had once met to adjust their watch precisely before starting.
 
@@ -48,7 +49,7 @@ Synchronizing clocks may sound trivial but it is not – in particular across a 
 
 ![illustration 1.7.3.png](./assets/1.7.3.png)
 
-The Network Time Protocol is one of the oldest distributed networking protocols still in operation, operating without interruption since the early 80s. It works as a hierarchy of clocks.  The higher in the hierarchy, the more precise are the clocks. At the highest level there are literal atomic clocks. Then comes primary time servers, connected to atomic clocks, then other servers, etc.. down to your own devices. Each layer will periodically synchronize their clocks with the layer above and is equipped with a local clock that keeps track of time otherwise. In your computer or mobile device, that's the little quartz. Such manufactured quartz clocks in common retail devices are good enough to only drift by a few milliseconds each day, so they only need a little nudge once in a while. Servers from the layers above are equipped with more accurate clocks that drift less yet still synchronize from time to time with their above layer. And so forth up until the atomic clocks that are considered the most precise source of time we have.
+The Network Time Protocol is one of the oldest distributed networking protocols still in operation, operating without interruption since the early 80s. It works as a hierarchy of clocks. The higher in the hierarchy, the more precise are the clocks. At the highest level there are literal atomic clocks. Then comes primary time servers, connected to atomic clocks, then other servers, etc., down to your own devices. Each layer will periodically synchronize their clocks with the layer above and is equipped with a local clock that keeps track of time otherwise. In your computer or mobile device, that's the little quartz. Such manufactured quartz clocks in common retail devices are good enough to only drift by a few milliseconds each day, so they only need a little nudge once in a while. Servers from the layers above are equipped with more accurate clocks that drift less yet still synchronize from time to time with their above layer. And so forth up until the atomic clocks that are considered the most precise source of time we have.
 
 Now that we understand clock synchronization, let’s go back and look at the fundamental role of synchrony in system designs, especially distributed systems. While synchronous systems are usually easier to reason about since they come with stronger assumptions and guarantees – for example, on the time it takes for a node to reply – they often fall short when it comes to reflecting the actual reality of our world. In the real world, systems are not perfect and suffer from faults and delays. Thus, protocols that require strong synchrony between nodes are usually not fit for use in practice.
 
@@ -58,9 +59,9 @@ So, designing distributed asynchronous systems is hard. But let's not lose all h
 
 As of today, many blockchain systems such as Cosmos, Binance Smart Chain and Hyperledger Fabric are based on PBFT or some variant of it. Getting a good understanding of PBFT shall give you more insights regarding existing systems. We'll also cover the trade-offs that come with such an approach and why scientists have continued exploring other consensus methods such as Bitcoin or Ouroboros.
 
-## Practical Byzantine Fault Tolerance##
+## Practical Byzantine Fault Tolerance
 
-**Overview**
+### Overview
 
 Practical Byzantine Fault Tolerance is a consensus protocol that works in an asynchronous setting. Or, almost. As explained above, designing a distributed consensus protocol in a fully asynchronous setting has been proven not feasible.
 
@@ -72,7 +73,8 @@ Finally, the algorithm makes use of various public-key cryptography techniques s
 
 From there, the algorithm works as a state-machine replication. Each node of the system maintains a view of the system, replicated on each node. This can be, for example, a ledger. In order to adopt a new view, a transition must happen following a 3-step commit algorithm.
 
-## Algorithm
+### Algorithm
+
 Let’s look at the algorithm in more detail. One client makes a request to a node of the system. For example, a user tries to submit a transaction that modifies the ledger. The node must then forward the request to all other nodes of the system. Each node then replies to the original client with the outcome of executing the request.
 
 To continue with our analogy, think about each node of the system sending back the result of applying the transaction to the ledger. Incidentally, in this type of algorithm, each message in the protocol is authenticated by digital signatures, very much like transactions on a blockchain. This allows nodes to prove the origin of messages and prevent malicious nodes from possibly tampering with them.
@@ -86,6 +88,7 @@ From there, there are two possible outcomes. Either replicas have already seen t
 This allows the process to eventually go through, even if the primary node turns out to be inoperative. Whatever the reason might be. This is what happens from a client perspective, although there are more subtleties happening in the background between the replicas. The consensus indeed happens over multiple steps and messages exchanged between the replicas; with different thresholds. Only at the end of this internal dance will replicas respond to the client and update their internal view of the system. This is because replicas can’t generally trust the primary node and must first gossip between themselves before committing to a final decision. I am sure this is sparking many questions in your head and I can only recommend to the more tech-savvy to read the original paper on practical Byzantine fault tolerance.
 
 ## Vote-Based Consensus
+
 This type of consensus is sometimes called "vote-based consensus" to capture the idea of replicas actively confirming an outcome proposed by a primary node. As you can imagine, they are quite message-heavy since they require multiple rounds of communication between all nodes of the systems.
 
 In a best-case scenario, they provide an almost instant finality, which is reached as soon as one-third plus one of the nodes have replied. When the number of nodes is small, this can be pretty quick.
@@ -96,7 +99,8 @@ Indeed, in the original paper, a change of the primary node is only truly necess
 
 Another example is Tendermint which is a modular PBFT consensus framework. It has been used in blockchains such as Cosmos, coupled with proof-of-stake to weigh the choice of the next primary node.
 
-## Limitations
+### Limitations
+
 Vote-based consensus is relatively simple – mind you, comparatively to other proof-based approaches. It works well in private and consortium setups, in which the decentralization degree is lower than in public blockchains.
 
 ![illustration 1.7.5.png](./assets/1.7.5.png)
@@ -113,6 +117,7 @@ A consequence of these two things means that PBFT consensus algorithms are more 
 If you’ve been in the blockchain space for a while, you probably realize that these shortcomings can be a blocker for many projects aiming for greater decentralization and openness. For this reason, research has continued for many years to explore alternatives or to evolve the approach outlined by the practical byzantine fault tolerance consensus. Another significant milestone in this journey is the publication of the Bitcoin protocol, about ten years after which has paved the way for proof-based consensus algorithms.
 
 ## Review
+
 In this unit we have covered consensus in distributed systems. We focused on Practical Byzantine Fault Tolerance and looked at the concept of synchrony in distributed systems. Finally, we explored vote-based consensus and its limitations.
 
 ## Glossary
@@ -122,14 +127,7 @@ In this unit we have covered consensus in distributed systems. We focused on Pra
 - *Fault tolerance*: Fault tolerance is the ability of a system to keep functioning even in the presence of arbitrary faults.<br>
 - *Network Time Protocol (NTP)*: The Network Time Protocol is a well-known Internet protocol used to synchronize clocks of various machines across the planet.<br>
 
-## References
-- [Practical Byzantine Fault Tolerance](https://pmg.csail.mit.edu/papers/osdi99.pdf))
-- [Impossibility of Distributed Consensus with One Faulty Process](https://dl.acm.org/doi/pdf/10.1145/3149.214121)
-- [Ouroboros BFT - A Simple Byzantine Fault Tolerant Consensus Protocol](https://eprint.iacr.org/2018/1049.pdf)
-- [Tendermint Documentation](https://docs.tendermint.com/v0.34/)
-- [HyperLedger Sawtooth PBFT](https://sawtooth.hyperledger.org/docs/1.2/pbft/introduction-to-sawtooth-pbft.html)
-- [An introduction to PBFT consensus](https://sawtooth.hyperledger.org/docs/1.2/pbft/introduction-to-sawtooth-pbft.html)
-- [Internet Time Synchronization: the Network Time Protocol](https://www.rfc-editor.org/rfc/rfc1129.pdf)
+## Questions
 
 ### What is the main goal of a consensus algorithm?
 
@@ -351,3 +349,13 @@ In this unit we have covered consensus in distributed systems. We focused on Pra
 
 1. True.
 </details>
+
+## References
+
+- [Practical Byzantine Fault Tolerance](https://pmg.csail.mit.edu/papers/osdi99.pdf))
+- [Impossibility of Distributed Consensus with One Faulty Process](https://dl.acm.org/doi/pdf/10.1145/3149.214121)
+- [Ouroboros BFT - A Simple Byzantine Fault Tolerant Consensus Protocol](https://eprint.iacr.org/2018/1049.pdf)
+- [Tendermint Documentation](https://docs.tendermint.com/v0.34/)
+- [HyperLedger Sawtooth PBFT](https://sawtooth.hyperledger.org/docs/1.2/pbft/introduction-to-sawtooth-pbft.html)
+- [An introduction to PBFT consensus](https://sawtooth.hyperledger.org/docs/1.2/pbft/introduction-to-sawtooth-pbft.html)
+- [Internet Time Synchronization: the Network Time Protocol](https://www.rfc-editor.org/rfc/rfc1129.pdf)

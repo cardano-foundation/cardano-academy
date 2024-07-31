@@ -1,22 +1,22 @@
-# Unit 2 - What is Blockchain
+# 2 - What is Blockchain
 
-## Learning Objectives
-By the end of this unit, the learner should be able to:
-
-- Give a high-level definition of what blockchain is
-- Understand the main components of a typical blockchain network
-- Understand a simple blockchain data structure
-- Learn the use cases of blockchain technology and how it helps different industries
-- Learn about career opportunities in blockchain
+> [!NOTE]
+>
+> By the end of this unit, you should be able to:
+>
+> - [x] Give a high-level definition of what blockchain is
+> - [x] Understand the main components of a typical blockchain network
+> - [x] Understand a simple blockchain data structure
+> - [x] Learn the use cases of blockchain technology and how it helps different industries
+> - [x] Learn about career opportunities in blockchain
 
 ## Introduction
-Hello everyone, and welcome. I am your lecturer, [lecturer name]. In this unit, we will look into how blockchain works at a basic level. Follow along at your own pace. Feel free to go back and review as needed.
 
-## Table of Contents
 Previously, we talked about consensus algorithms. These help distributed networks reach agreement without a central authority. Now we will learn about blockchain and who participates in it. We’ll also touch on some use cases. We have plenty to cover, so let’s get started!
 
 ## The First Message from Satoshi
-In 2008, Satoshi Nakamoto introduced blockchain technology. The publication of the Bitcoin whitepaper describing a peer-to-peer electronic cash system kicked off a whole new era of blockchain technology and digital currencies. The key innovation was a new mechanism allowing users in a network to reach agreement on various decisions without a central manager or controlling entity. The way the agreement is reached is called a consensus algorithm. Bitcoin introduced the proof-of-work consensus algorithm.
+
+In 2008, Satoshi Nakamoto introduced blockchain technology [^1]. The publication of the Bitcoin whitepaper describing a peer-to-peer electronic cash system kicked off a whole new era of blockchain technology and digital currencies. The key innovation was a new mechanism allowing users in a network to reach agreement on various decisions without a central manager or controlling entity. The way the agreement is reached is called a consensus algorithm. Bitcoin introduced the proof-of-work consensus algorithm.
 
 ![illustration 1.2.1.png](./assets/1.2.1.png)
 
@@ -30,7 +30,7 @@ Some still associate blockchain with Bitcoin, but blockchain technology isn’t 
 
 What exactly is a blockchain? It allows users to send and receive digital assets securely and transparently without needing a central authority or intermediary. It achieves this by having a copy of all transactions, or ledger, duplicated and distributed across a network of computer nodes. These nodes work to reach agreement, and keep in sync using a consensus mechanism. This set of interconnected nodes stores data or items of value in blocks, where each block is tied to the previous, resulting in a chain of blocks. That’s how we get the name blockchain.
 
-Blockchain technology, also referred to as Distributed Ledger Technology, or DLT, provides a decentralized and accessible data structure for conducting many kinds of transactions, ranging from financial payments to information exchange, from commerce to Internet of Things. [Ref.2.2].
+Blockchain technology, also referred to as Distributed Ledger Technology, or DLT, provides a decentralized and accessible data structure for conducting many kinds of transactions, ranging from financial payments to information exchange, from commerce to Internet of Things. [^2].
 
 ![illustration 1.2.2.png](./assets/1.2.2.png)
 
@@ -43,6 +43,7 @@ A true P2P network has a distributed structure, meaning there is no central node
 A consensus algorithm is necessary for the different block producers to reach agreement when creating a new block to add to the chain. The consensus algorithm used in the Bitcoin network is called proof of work. We’ll cover this in more detail in another unit.
 
 ## Data Structure of a Blockchain
+
 Let’s dive into the different components of a blockchain, starting with blocks.
 Blocks contain verified transactions linked to each other in a chain in chronological order. Transactions cannot be altered; they become permanently inscribed in the block. This is an important blockchain feature in that it stores records immutably, meaning they cannot be changed, forged, or even deleted, as this would break the chain of blocks.
 
@@ -55,6 +56,7 @@ The block body contains transaction data. A transaction might be a financial pay
 The block header contains its time stamp and a hash–proof of everything contained in the block body as well as the hash of the previous block.
 
 ## Hash Function
+
 Let’s start with that hash in the block header. What is it?
 
 ![illustration 1.2.4.png](./assets/1.2.4.png)
@@ -64,6 +66,7 @@ A hash function is used to obtain a compact representation of some piece of data
 Any changes to the original input will be reflected in a completely different hash output. We’ll explore hashing in greater depth in the following units.
 
 ## How Are Blocks Chained Together
+
 Let's go back to our earlier diagram of the blockchain structure and see how those blocks are chained together. Any ideas?
 
 ![illustration 1.2.5.png](./assets/1.2.5.png)
@@ -77,6 +80,7 @@ And with that, we’ve reached the first milestone in your blockchain journey: g
 **Shall we go on?**
 
 ## Use Cases
+
 Let’s briefly discuss use cases.
 
 Blockchain builds trust into network nodes through its consensus algorithm, empowering designers and innovators to rethink applications that no longer use a central authority.  Decentralized, distributed networks have the potential to change how we interact with existing societal organizations like banks, businesses, and the government.
@@ -90,6 +94,7 @@ One organizational structure that can exist on a blockchain is called a DAO, or 
 ![illustration 1.2.6.png](./assets/1.2.6.png)
 
 ## Careers in Blockchain
+
 Blockchain technology has created, and will continue to create many jobs in the industry. Traditional roles in analysis, coding, economics and security can transfer to blockchain with upskilling. The titles may just change to smart contract developer, token economist, DeFi analyst, and so on. Technical and non-technical skills along with a burning curiosity can bring success in this rapidly evolving industry.
 
 Blockchain is also driving research and development in many areas of science from cryptography to compliance. There has been significant progress in consensus algorithms, multi-party computation, and programming languages, for example.
@@ -97,14 +102,11 @@ Blockchain is also driving research and development in many areas of science fro
 ![illustration 1.2.7.png](./assets/1.2.7.png)
 
 ## Review
+
 So here we are, at the end of this unit, covering the basics of blockchain.
 We looked at a blockchain's main components, block creation, and block data. We looked at the importance of the hash mechanism, and how this effectively allows to create ‘a chain of blocks’.
 
 That’s it for now, and I will see you next time.
-
-## Reference
-[Ref.2.1] S. Nakamoto, “Bitcoin: A Peer-to-Peer Electronic Cash System”, 2008, Available: https://bitcoin.org/bitcoin.pdf, Accessed: 20 Aug 2022.<br>
-[Ref.2.2] “What is a blockchain?”, Available: https://docs.cardano.org/new-to-cardano/what-is-a-blockchain, Accessed: 20 Aug 2022.<br>
 
 ## Questions
 
@@ -258,3 +260,8 @@ That’s it for now, and I will see you next time.
 
 1. The hash of the previous block.
 </details>
+
+## References
+
+[^1]: S. Nakamoto, “Bitcoin: A Peer-to-Peer Electronic Cash System”, 2008, Available: https://bitcoin.org/bitcoin.pdf, Accessed: 20 Aug 2022.
+[^2]: “What is a blockchain?”, Available: https://docs.cardano.org/new-to-cardano/what-is-a-blockchain, Accessed: 20 Aug 2022.

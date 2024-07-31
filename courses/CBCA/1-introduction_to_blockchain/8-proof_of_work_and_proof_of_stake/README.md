@@ -1,19 +1,20 @@
-# Proof of Work & Proof of Stake
+# 8 - Proof of Work & Proof of Stake
 
-## Learning Objectives
-By the end of this unit, the learner should be able to:
-- Understand the key concepts behind proof of work including the limitations
-- Understand the key concepts behind proof of stake including the limitations
-- Compare proof of stake to proof of work
-- Understand the differentiators of different proof-of-stake systems
+> [!NOTE]
+>
+> By the end of this unit, you should be able to:
+>
+> - [x] Understand the key concepts behind proof of work including the limitations
+> - [x] Understand the key concepts behind proof of stake including the limitations
+> - [x] Compare proof of stake to proof of work
+> - [x] Understand the differentiators of different proof-of-stake systems
 
 ## Introduction
-Hello everyone, and welcome. My name is [lecturer name]
 
-## Table of contents
 In this unit, we explore two major consensus algorithms, proof of work (PoW) and proof of stake (PoS).  By the end of this unit, you will be able to differentiate between both, and understand their respective advantages and shortcomings. Let’s get started!
 
 ## Proof-Based Consensus
+
 Proof-based consensus algorithms form the backbone of many blockchain networks, with proof of work and proof of stake being the most widely used.
 
 Both proof of work and proof of stake add new blocks to a chain. In both cases, block producers contribute a resource to the network. In fact, block producers are given a chance to produce a block proportionally to the resource they contribute to the network. In proof of work, the resource is quantified in hashing power. In proof of stake, it is the underlying native currency of the network, also known as stake.
@@ -24,8 +25,7 @@ In proof of work, the higher the hashing power, the higher the chances for a nod
 
 You may now wonder how we go from hashing power or stake to choosing a block producer. If that's the case, not to worry, we are about to dive in, starting with proof of work.
 
-## Proof of Work
-**Introduction**<br>
+## Overview of proof of Work
 
 Block producers are called miners in proof of work. Their role is to solve mathematical puzzles based on the rules of the respective protocol. In particular, miners must find a suitable hash digest value for their block to be added to the chain. By ’suitable’ we mean the hash value must meet a specific criteria: Typically, we talk about a number of leading zeros when represented as a hexadecimal value.
 
@@ -39,7 +39,8 @@ The number of leading zeros is chosen by the protocol. It is adjusted based on t
 
 Once miners have done the work, they are entitled to produce a block. They can broadcast the block they have mined to the network. The block itself serves as proof. In fact, any other miner can easily and quickly calculate the hash digest value of that block. They can verify that it meets the requirements imposed by the protocol. There's no ambiguity about the results. It is also entirely safe for miners since no other node of the system can tamper with their block. If they attempted to, the hash value would change and there is virtually zero chance that the new hash would satisfy the chain difficulty. To alter a block, miners would have to redo the work. And this is why the work must take significantly longer than the proof verification.
 
-## Proof of Work vs Bitcoin
+### Proof of Work vs Bitcoin
+
 Although proof of work is often synonymous with Bitcoin, it should be noted that there is a difference between the Bitcoin protocol and proof of work in principle. We just described a very Bitcoin-centric view involving miners, nonces, and hashing. However, what is truly fundamental to proof of work is this notion of asymmetry between a prover and a verifier. Work must be hard to produce, but easy to verify.
 
 So even if proof of work is often described as the "Bitcoin consensus" or "original blockchain consensus", it is a consensus far older than Bitcoin itself. The term was formalized and defined for the first time by Markus Jakobsson and Ari Juels in their paper "Proofs of Work and Bread Pudding Protocols" in 1999, yet the concept even predates this. In their paper, Jakobsson and Juels describe that in proof of work, a "prover demonstrates to a verifier that she has performed a certain amount of computational work in a specified interval of time".
@@ -47,6 +48,7 @@ So even if proof of work is often described as the "Bitcoin consensus" or "origi
 Fast forward to Bitcoin, Satoshi Nakamoto used proof of work as part of the overall Bitcoin consensus mechanism. He coupled this with a cryptocurrency to create the first public permissionless Byzantine fault-tolerant consensus algorithm. While Bitcoin uses proof of work at its core, it also adds elements, such as the longest chain rule and the notion of adjustable difficulty.
 
 ## Drawbacks
+
 Proof of work, especially Bitcoin proof of work, is fantastic from an intellectual perspective because it solves a complex problem elegantly. Yet, one of the most commonly cited drawbacks is energy consumption. Indeed, the system's security directly depends on its total hashing power. The more hashing power, the less feasible it is for a malicious actor to suddenly acquire a large portion of it. Paradoxically, adding more power to the system doesn't make it perform better, as the difficulty is constantly adjusted. 10 years ago, Bitcoin produced one block every 10 minutes. Today it still produces one block every 10 minutes despite using about 5 million times more computing power. While the system isn't particularly more efficient and uses a lot of energy, it is significantly harder to falsify than 10 years ago.
 
 However, this race to energy and dedicated hardware isn't sustainable for many. A large portion of the blockchain industry looked at ways to drastically reduce the energy requirements of proof-of-work consensus algorithms. Others explored the idea of creating "useful work" rather than merely computing a meaningless hash value. Ofelimos, for example, describes a protocol for solving optimization problems through work in a distributed fashion.
@@ -54,14 +56,17 @@ However, this race to energy and dedicated hardware isn't sustainable for many. 
 Some of these efforts led to new proof-based consensus algorithms. The most widely explored family, you guessed it, is proof of stake.
 
 ## Proof of Stake
-**Virtual resources**<br>
+
+### Virtual resources
+
 Proof of stake borrows from the core idea behind proof of work: block producers are elected proportionally to their hashing power. Zooming out a bit, hashing power is a resource that participants to the consensus protocol commit to the system. What if another type of resource was used? Moreover, how do we ensure it doesn’t create any unintended consequences such as the energy consumption of proof of work? The answer proposed by Sunny King and Scott Nadal, the inventors of PeerCoin in 2012, was to use stake; a completely virtual resource.
 
 This is the first fundamental difference between proof of work and proof of stake. The former relies on a physical resource that materializes as dedicated hardware: the mining rigs. The latter is entirely virtual and only exists -- at least initially -- within the system itself. In proof of stake, block producers will commit their own assets to the consensus protocol and are chosen proportionally to their commitment. It is called stake as it reflects how much "skin-in-the-game" each participant has in the system. And similarly to proof of work, security assumptions only hold provided that a majority or supermajority of the stake is owned by honest participants.
 
 ![illustration 1.8.4.png](./assets/1.8.4.png)
 
-**Follow the Satoshi**<br>
+### Follow the Satoshi
+
 So, we have the stake. But where is the proof? And how do we tie the two together? One core idea initially formulated by Bentov et al is an algorithm called "follow-the-satoshi". The idea is simple.
 
 Imagine all the circulating supply of a network divided into its smallest possible unit. In the case of Bitcoin, the smallest unit is a Satoshi, where 100 million Satoshi equals 1 bitcoin. Billions and billions of coins of the smallest amount. Each of those coins would have an owner engraved on it. Now, put all these coins in a rather large bag and blindly pick one at random. The owner of the chosen coin becomes the designated block producer.
@@ -74,7 +79,8 @@ Interestingly enough, this concept initially introduced for proof-of-stake conse
 
 One question remains: how to pick a Satoshi at random?
 
-**(Pseudo-) Randomness**<br>
+### (Pseudo-) Randomness
+
 Randomness is a challenging topic in computer science and mathematics. It is suitably complex, that it has become a source of philosophical debates about randomness and whether humans, or anything built by them, can produce random outcomes. Instead, scientists prefer to work with the notion of pseudo-randomness. A value is pseudo-random if it appears to be statistically random. Said differently, finding a pattern that could explain how values are produced is computationally infeasible. While it may sound easy, humans are generally terrible at producing even pseudo-random outputs. Repeatedly picking a number between 0 and 10 in your head would likely end up with regularities and noticeable patterns on a large enough sample. Thus, whenever someone, including in this course, refers to randomness in computer science, they actually mean pseudo-randomness.
 
 In proof of work, block producers are chosen pseudo-randomly, due to the nature of the work. In the case of Bitcoin, it is due to the nature of hashing functions chosen for their uniformity. Every hash value is generated with a roughly equal probability across the entire range of possible outputs. It's like rolling a dice, though, with billions and billions of sides. This is very convenient as it acts as a relatively good source of pseudo-randomness. It is impossible to predict who will win the lottery. Effectively it leads to a random election of block producers -- also called leaders.
@@ -91,7 +97,8 @@ Later, advances in cryptography by Micali et al led to the elaboration of Verifi
 
 In any case, one of the primary goals for proof-of-stake systems is to rely on a source of randomness that does not demand performing heavy computations. Instead, they leverage complex cryptographic techniques to harness similar benefits for a fraction of the energy cost. We could coin this as our third fundamental difference. Proof-of-stake systems tend to be much more energy efficient and minimize the number of real resources they use. In contrast, proof-of-work systems encourage a continuous race using energy consumption.
 
-**Drawbacks**<br>
+### Drawbacks
+
 Is proof of stake the silver bullet, then? As always, reality isn't binary. A significant issue of proof-of-stake systems is their plutocratic aspect: the rich get richer over time. The rights to produce blocks is proportional to the stake owned, and block producers are awarded for producing blocks. Thus participants that produce more blocks get awarded more. And consequently, they are increasingly more likely to produce future blocks.
 
 In addition, using stake as a consensus resource may contradict a currency's very purpose. By spending their stake, users in the network arguably reduce their influence and ability to participate in consensus. Pushing this line of thought to the extreme, proof-of-stake consensus could completely paralyze a network. This would harm one of the key properties of distributed systems: liveness.
@@ -101,36 +108,35 @@ Third, there are many debates regarding the bootstrapping of proof-of-stake netw
 All-in-all, these are relevant concerns to remember when looking at proof-of-stake projects and how they are composed. Many projects introduce mechanisms to cope with these drawbacks and mitigate their impact.
 
 ## Proof of Stake vs Proof of Stake
+
 We've covered the fundamentals behind proof of work, proof of stake, and their key differences. However, the proof-of-stake landscape is even more scattered and deserves more attention. So let's compare proof of stake with proof of stake.
 
 ![illustration 1.8.8.png](./assets/1.8.8.png)
 
-**Delegation**<br>
+### Delegation
+
 The first differentiator relates to the ability of stakeholders to delegate their stake. This is common in the proof-of-stake landscape and for good reasons. Indeed, delegation can allow many small actors to unite and stand against more prominent actors. In a certain way, this is a mechanism to limit the plutocratic aspect of proof-of-stake systems. On a different note, it also copes with stakeholders' lack of desire (or capacity) to actively participate in the consensus protocol. Not everyone wants to run a node and keep an eye on a complex infrastructure stack. In fact only some people are equipped to do so.
 
 As stake is ultimately the resource used for consensus, it is crucial for the security of proof-of-stake protocols that the largest possible amount of stake participates in the consensus. Remember that a majority of honest participants is required. The lower the active stake, the easier malicious actors can reach the critical threshold. Still, some protocols purposely decide to not introduce any form of delegation, while others, like Cardano, do.
 
 In most delegated proof of stake, delegators are also rewarded for it. This is because delegating is indirect participation in the consensus. It helps to secure the network. As such, this behavior is generally incentivised through rewards.
 
-**Slashing**<br>
+### Slashing
+
 Some protocols also implement slashing mechanisms to sanction adversarial behaviors in the system. Consequently, participants in the consensus protocol that do not follow the rules or misbehave forfeit a portion of their stake to the protocol. This might happen regardless of delegation but is mainly used in delegated settings. In such a scenario, it becomes a way for delegators to ensure that their chosen representative does their job correctly. For some, it is essential for the good functioning of proof-of-stake protocols. For others, it creates an unhealthy relationship between delegators and delegates.
 
-**Liquid vs Frozen Stake**<br>
+### Liquid vs Frozen Stake
+
 Finally, let's briefly talk about stake liquidity, another common differentiator of proof-of-stake systems. Many systems have opted to make stakes illiquid or frozen. This means that stake, while used to participate in the consensus, cannot be exchanged like a regular asset. It is locked for the duration of the consensus. This approach creates an artificial separation between the stake and the actual network currency, even though they are, in principle, coming from the same initial quantity.
 
 On the other hand, some protocols, like Cardano, choose to keep the stake liquid. Indeed, while staked, Ada can still be exchanged on the network. This may spark the question: how can one ‘follow-the-Satoshi’ if it constantly moves? In the case of Cardano, this is achieved through regular snapshots. The time is divided into chunks, and the leader election is done using the stake distribution of previous chunks. We'll explain this in more detail in the subsequent units.
 
 ## Review
+
 Oof! This probably felt like a lot. Indeed, we've covered many things. Please take a moment to pause, and let's do a final review of the key points. We've seen how proof of work is about creating a mathematical puzzle that is hard to solve but easy to verify. We've spoken about how Bitcoin uses proof of work at its core while introducing new concepts such as the longest chain rule and the adjustable chain difficulty. We've mentioned the energy waste that led scientists to look for alternative solutions to proof of work and how proof of stake came to be. We then discussed how to find a random leader by "following the satoshi" and highlighted the importance and difficulty of finding a good source of randomness. Finally, we discussed a few drawbacks attributed to proof of stake and essential differentiators between various proof-of-stake systems: delegation, slashing and liquid staking.
 
-## References
-Nguyen, Cong & Dinh Thai, Hoang & Nguyen, Diep & Niyato, Dusit & Nguyen, Huynh & Dutkiewicz, Eryk. (2019). Proof-of-stake Consensus Mechanisms for Future Blockchain Networks: Fundamentals, Applications and Opportunities. IEEE Access. PP. 1-1. 10.1109/ACCESS.2019.2925010. <br>
-Jakobsson, Markus, and Ari Juels. "Proofs of work and bread pudding protocols." In Secure information networks, pp. 258-272. Springer, Boston, MA, 1999.<br>
-Nakamoto, Satoshi. "Bitcoin whitepaper." URL: https://bitcoin. org/bitcoin. pdf-(: 17.07. 2019) (2008).
-King, Sunny, and Scott Nadal. "Ppcoin: Peer-to-peer crypto-currency with proof of stake." self-published paper, August 19, no. 1 (2012).<br>
-Giang-Truong Nguyen and Kyungbaek Kim (2018). A Survey about Consensus Algorithms Used in Blockchain. Journal of Information Processing Systems, 14(1), 101-128. DOI: 10.3745/JIPS.01.0024.<br>
-
 ## Glossary
+
 - *Slashing*: This is when participants in the consensus protocol do not follow the rules or misbehave, and forfeit a portion of their stake in the protocol.
 - *Liquid Stake* : When stake is used to participate in consensus, it can also be exchanged like a regular asset.
 - *Frozen Stake*: When stake is used to participate in consensus, it cannot be exchanged like a regular asset. It is locked for the duration of the consensus.
@@ -349,3 +355,11 @@ Giang-Truong Nguyen and Kyungbaek Kim (2018). A Survey about Consensus Algorithm
 - [x] Frozen stakes create a separation between the stake and the network currency.
 - [x] If frozen, stakes can't be exchanged like regular assets and are locked during consensus.
 </details>
+
+## References
+
+Nguyen, Cong & Dinh Thai, Hoang & Nguyen, Diep & Niyato, Dusit & Nguyen, Huynh & Dutkiewicz, Eryk. (2019). Proof-of-stake Consensus Mechanisms for Future Blockchain Networks: Fundamentals, Applications and Opportunities. IEEE Access. PP. 1-1. 10.1109/ACCESS.2019.2925010. <br>
+Jakobsson, Markus, and Ari Juels. "Proofs of work and bread pudding protocols." In Secure information networks, pp. 258-272. Springer, Boston, MA, 1999.<br>
+Nakamoto, Satoshi. "Bitcoin whitepaper." URL: https://bitcoin. org/bitcoin. pdf-(: 17.07. 2019) (2008).
+King, Sunny, and Scott Nadal. "Ppcoin: Peer-to-peer crypto-currency with proof of stake." self-published paper, August 19, no. 1 (2012).<br>
+Giang-Truong Nguyen and Kyungbaek Kim (2018). A Survey about Consensus Algorithms Used in Blockchain. Journal of Information Processing Systems, 14(1), 101-128. DOI: 10.3745/JIPS.01.0024.<br>

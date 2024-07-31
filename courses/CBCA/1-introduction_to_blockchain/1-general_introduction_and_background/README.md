@@ -1,19 +1,17 @@
-# Unit 1 - General Introduction and Background
+# 1 - General Introduction and Background
 
-## Learning Objectives
-
-By the end of this unit, the learner should be able to:
-
-- Describe decentralization and its importance
-- Describe how consensus algorithms in a decentralized system provide a mechanism to reach agreement without a central authority
-- Describe the decentralization challenges, such as scalability, throughput, and latency
-- Summarize how Blockchain technology introduces a new consensus algorithm class contributing to the decentralization challenges.
+> [!NOTE]
+>
+> By the end of this unit, you should be able to:
+>
+> - [x] Describe decentralization and its importance
+> - [x] Describe how consensus algorithms in a decentralized system provide a mechanism to reach agreement without a central authority
+> - [x] Describe the decentralization challenges, such as scalability, throughput, and latency
+> - [x] Summarize how Blockchain technology introduces a new consensus algorithm class contributing to the decentralization challenges.
 
 ## Introduction
 
 Blockchain. A topic sparking interest, working its way into conversations with friends, social media, news media, and even public policy. But there’s also a lot of noise out there. Plenty of misinformation and misconception. Some people think blockchain is just about cryptocurrency or means the same thing as Bitcoin. Others believe it's slow, or implies a completely decentralized system. Blockchain goes far beyond finance and cryptocurrencies. It’s the technology for building decentralized applications – the foundation of the next Internet. And so, has the potential to help change the world for the better. By the end of this course, you’ll have gained a considerable understanding of what blockchain is, what it can do, and what better means. **Let’s get going**.
-
-Hello everyone, and welcome. I am your lecturer, [lecturer name], and I am here to guide you on your blockchain learning journey.
 
 We will look at the current state of blockchain technology. We’ll get insight from the challenges that have been solved and insight from those ready to be solved. Subsequent modules will build upon your understanding from this unit. We’ll cover more complex topics, building your skill set, so that you can apply this new-found knowledge of blockchain technology.
 
@@ -45,7 +43,7 @@ In a decentralized financial platform, say you deposit 20 euros in Germany. When
 
 ## The Original Byzantine General Problem Paper
 
-But accomplishing this? Not so easy. Designing a consensus algorithm for a decentralized system is complex. Many different concerns must be addressed. In 1982, Lamport, Shostak, and Pease illuminated these concerns in a scientific paper called the Byzantine Generals Problem – also known as the BGP.
+But accomplishing this? Not so easy. Designing a consensus algorithm for a decentralized system is complex. Many different concerns must be addressed. In 1982, Lamport, Shostak, and Pease illuminated these concerns in a scientific paper called the Byzantine Generals Problem – also known as the BGP[^3].
 
 ![illustration 1.1.2.png](./assets/1.1.2.png)
 
@@ -70,11 +68,12 @@ Multiple communication rounds have occurred and now each general has messages fr
 ![illustration 1.1.4.png](./assets/1.1.4.png)
 
 ## Distributed Network
-Consensus algorithms are a source of much discussion in the design of distributed and decentralized computer networks, especially in the blockchain domain. This diagram shows a distributed network containing components, computers, and communication channels. Components are located on different computers in a network and communicate by passing messages to one another via the communication channels. The objective of the communication is to achieve consensus or reach a common goal [Ref.1.1, Ref.1.2].
+
+Consensus algorithms are a source of much discussion in the design of distributed and decentralized computer networks, especially in the blockchain domain. This diagram shows a distributed network containing components, computers, and communication channels. Components are located on different computers in a network and communicate by passing messages to one another via the communication channels. The objective of the communication is to achieve consensus or reach a common goal [^1] [^2].
 
 ![illustration 1.1.5.png](./assets/1.1.5.png)
 
-The BGP is used in computer science to show the challenges in designing a distributed system. These include the need to maintain concurrency between network components which requires managing multiple computations simultaneously. Another challenge is synchronizing components and handling independent failures [Ref.1.1]. Computers on distributed systems, called nodes, need to reach consensus despite the presence of dishonest or failed nodes. This challenge of synchronization and coordination has been driving research in consensus algorithms and helping to evolve blockchain. But what do we mean by network? And why does the distribution matter?
+The BGP is used in computer science to show the challenges in designing a distributed system. These include the need to maintain concurrency between network components which requires managing multiple computations simultaneously. Another challenge is synchronizing components and handling independent failures [^1]. Computers on distributed systems, called nodes, need to reach consensus despite the presence of dishonest or failed nodes. This challenge of synchronization and coordination has been driving research in consensus algorithms and helping to evolve blockchain. But what do we mean by network? And why does the distribution matter?
 
 ## Network Definition
 
@@ -82,7 +81,7 @@ A network is a system of linked nodes or computers that share resources such as 
 
 ## Network Types
 
-Networks can be arranged in a number of ways. Generally, we can group the arrangement into three categories: centralized, decentralized, and distributed. These terms reference how a network is controlled and the allocation of resources across the network.
+Networks can be arranged in a number of ways. Generally, we can group the arrangement into three categories: centralized, decentralized, and distributed [^4]. These terms reference how a network is controlled and the allocation of resources across the network.
 
 Note that network terms vary by context. In the blockchain industry, “centralized” and “decentralized” are commonly used to describe the social dynamics and relationships between entities. We will look at them in the academic sense.
 
