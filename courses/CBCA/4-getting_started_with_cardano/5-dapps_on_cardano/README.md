@@ -224,7 +224,7 @@ Cornucopias is disrupting this model and is aiming to become the first Triple-A 
 ![illustration 4.5.22.png](./assets/4.5.22.png)
 
 ### RealFi
-DApps on Cardano are not all about making money through DeFi or playing games. The term “RealFi” stands for “Real Finance” and was originally coined by John O’Connor, IOG’s Director of African Operations. RealFi refers to DApps that have a real-world impact. Let's look at some of the projects from the [Cardano RealFi Consortium](https://www.real-fi.org/).
+DApps on Cardano are not all about making money through DeFi or playing games. The term “RealFi” stands for “Real Finance” and was originally coined by John O’Connor, IOG’s Director of African Operations. RealFi refers to DApps that have a real-world impact. Let's look at some of the projects from the Cardano RealFi.
 
 ![illustration 4.5.23.png](./assets/4.5.23.png)
 

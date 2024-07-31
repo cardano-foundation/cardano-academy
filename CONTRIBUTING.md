@@ -24,7 +24,7 @@ The content is in 'markdown' format, a cheatsheet is available [here](https://ww
 
 ## License and attribution
 
-All contributions must be properly licensed and attributed. If you are contributing your own original work, then you are offering it under a [Mozilla Public License 2.0](https://github.com/cardano-foundation/cardano-academy/blob/main/LICENSE) . You are responsible for adding your own name or pseudonym in the Github Contributors section, as attribution for your contribution.
+All contributions must be properly licensed and attributed. If you are contributing your own original work, then you are offering it under a [Mozilla Public License 2.0](./LICENSE) . You are responsible for adding your own name or pseudonym in the Github Contributors section, as attribution for your contribution.
 
 If you are sourcing a contribution from somewhere else, it must carry a compatible license. You need to indicate the original source and original license, by including an comment above your contribution in this suggested format:
 

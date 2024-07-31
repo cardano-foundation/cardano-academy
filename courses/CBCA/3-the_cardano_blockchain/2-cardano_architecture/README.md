@@ -18,7 +18,7 @@ The Cardano blockchain is powered by a flock of interconnected nodes. The Cardan
 
 [The networking layer](https://github.com/input-output-hk/ouroboros-network/#ouroboros-network) is a peer-to-peer networking stack geared towards Proof-of-Stake systems. This includes a framework for writing typed protocols. Said differently, protocols can be written in a high-level language and checked by automated tools for their correctness without the need for being actually executed. On top of that, the networking stack supports pipelining, multiplexing and various protections against adversarial peers.
 
-The [consensus layer](https://github.com/input-output-hk/ouroboros-network/tree/master/ouroboros-consensus#consensus) is an implementation of the Ouroboros family of consensus protocols. If you've heard about "The Hard-Fork Combinator", you can find it here.
+The [consensus layer](https://github.com/IntersectMBO/ouroboros-consensus?tab=readme-ov-file#ouroboros-consensus) is an implementation of the Ouroboros family of consensus protocols. If you've heard about "The Hard-Fork Combinator", you can find it here.
 
 The [settlement layer](https://github.com/input-output-hk/cardano-ledger-specs#cardano-ledger) is a financial distributed ledger derived from formal specifications. This is where the core Cardano objects and the rules for using them are defined. It is the bedrock on top of which all other components are built upon.
 

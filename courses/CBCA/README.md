@@ -15,8 +15,8 @@ This folder contains the content for the Cardano Blockchain Certified Associate 
 
 ## How to contribute
 
-See [CONTRIBUTING.md](../CONTRIBUTING.md)
+See [CONTRIBUTING.md](../../CONTRIBUTING.md)
 
 ## License
 
-[MPL-2.0](../LICENSE)
+[MPL-2.0](../../LICENSE)

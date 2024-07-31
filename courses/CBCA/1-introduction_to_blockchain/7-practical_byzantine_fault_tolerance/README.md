@@ -356,6 +356,6 @@ In this unit we have covered consensus in distributed systems. We focused on Pra
 - [Impossibility of Distributed Consensus with One Faulty Process](https://dl.acm.org/doi/pdf/10.1145/3149.214121)
 - [Ouroboros BFT - A Simple Byzantine Fault Tolerant Consensus Protocol](https://eprint.iacr.org/2018/1049.pdf)
 - [Tendermint Documentation](https://docs.tendermint.com/v0.34/)
-- [HyperLedger Sawtooth PBFT](https://sawtooth.hyperledger.org/docs/1.2/pbft/introduction-to-sawtooth-pbft.html)
-- [An introduction to PBFT consensus](https://sawtooth.hyperledger.org/docs/1.2/pbft/introduction-to-sawtooth-pbft.html)
+- [HyperLedger Sawtooth PBFT](https://www.hyperledger.org/blog/2019/02/13/introduction-to-sawtooth-pbft)
+- [An introduction to PBFT consensus](https://medium.com/tronnetwork/an-introduction-to-pbft-consensus-algorithm-11cbd90aaec)
 - [Internet Time Synchronization: the Network Time Protocol](https://www.rfc-editor.org/rfc/rfc1129.pdf)
