@@ -235,8 +235,13 @@ https://ucarecdn.com/e14c6f03-152d-4361-abaf-f1fee5eb2e4e/EUTxOhandbook3.pdf , A
 - **To browse the tokens associated with each address (CORRECT ANSWER)**
 
 ### A wallet address is derived from a public key and represents ownership. Addresses are commonly shared between users and applications.
-- **TRUE (CORRECT ANSWER)**
-- FALSE
+1. True
+1. False
+
+<details><summary>See correct answer</summary>
+
+1. True
+</details>
 
 ### What are transactions in blockchain?
 - Private contracts or agreements that occur off-chain, and are not recorded on the blockchain
@@ -244,8 +249,13 @@ https://ucarecdn.com/e14c6f03-152d-4361-abaf-f1fee5eb2e4e/EUTxOhandbook3.pdf , A
 - Software programs that can be executed in full or partially
 
 ### Transactions are atomic modifications to the blockchain ledger, meaning they can only be fully executed, never partially.
-- **TRUE  (CORRECT ANSWER)**
-- FALSE
+1. True
+1. False
+
+<details><summary>See correct answer</summary>
+
+1. True
+</details>
 
 ### Select two correct statements about the transaction lifecycle in a blockchain network.
 - A transaction is created by the owner of the inputs and it cannot be created by anyone else
@@ -274,12 +284,22 @@ https://ucarecdn.com/e14c6f03-152d-4361-abaf-f1fee5eb2e4e/EUTxOhandbook3.pdf , A
 - **Tokens are stored in UTxOs and are moved from one group to another when transactions happen (CORRECT ANSWER)**
 
 ### Some blockchains use an UTxO-based transaction model. In these, when a transaction takes place, the tokens locked in UTxOs are moved from one UTxO to another one or to multiple other ones. Each UTxO has to be spent in its entirety.
-**True (CORRECT ANSWER)**
-False
+1. True
+1. False
+
+<details><summary>See correct answer</summary>
+
+1. True
+</details>
 
 ### When using a UTxO as a transaction input for token transfers, the UTxO can be divided, so you only use what you need as input.
-True
-**False (CORRECT ANSWER)**
+1. True
+1. False
+
+<details><summary>See correct answer</summary>
+
+2. False
+</details>
 
 ### What can Alice do if she doesn’t have a single UTxO with enough tokens to complete a transaction?
 - She has no other option but to cancel the transaction as it cannot be completed
