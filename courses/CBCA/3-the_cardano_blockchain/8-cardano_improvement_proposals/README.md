@@ -1,11 +1,16 @@
 # Unit 8 - Cardano Community
 
 ## Learning Objectives
-By the end of this unit, the learner should be able to:
-- Enumerate the major sections of a CIP document
-- Explain roughly how the CIP process works
-- Understand the actors involved in the CIP process and their role
-- List a few major CIPs with their impact on the Cardano ecosystem
+
+> [!NOTE]
+>
+> By the end of this unit, you should be able to:
+>
+> - [x] Enumerate the major sections of a CIP document
+> - [x] Explain roughly how the CIP process works
+> - [x] Understand the actors involved in the CIP process and their role
+> - [x] List a few major CIPs with their impact on the Cardano ecosystem
+
 
 ## Introduction
 Welcome, everyone. My name is [lecturer name], and I'll be your host for this new unit about Cardano Improvement Proposals, known as CIPs.
