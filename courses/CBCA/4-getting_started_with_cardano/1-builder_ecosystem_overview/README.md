@@ -1,14 +1,18 @@
 # Unit 1 - Builder Ecosystem Overview
 
 ## Learning Objectives
-By the end of this unit, the learner should:
-- be able to understand how wallets and dApps interact
-- have heard about Cardano Improvement Proposals (C.I.P.)
-- know available programming frameworks in Cardano
-- be able to understand what an API query layer does and know some of the popular options available in Cardano
-- be able to explain what Demeter is and when it could be used
-- know about popular explorers available in Cardano
-- have heard of NMKR and what it is used for
+
+> [!NOTE]
+>
+> By the end of this unit, you should be able to:
+>
+> - [x] be able to understand how wallets and dApps interact
+> - [x] have heard about Cardano Improvement Proposals (C.I.P.)
+> - [x] know available programming frameworks in Cardano
+> - [x] be able to understand what an API query layer does and know some of the popular options available in Cardano
+> - [x] be able to explain what Demeter is and when it could be used
+> - [x] know about popular explorers available in Cardano
+> - [x] have heard of NMKR and what it is used for
 
 ## Introduction
 Welcome everyone. My name is [lecturer name] and today, we’ll explore the Cardano builder ecosystem at large.
