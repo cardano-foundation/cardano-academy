@@ -1,15 +1,19 @@
 # Unit 6 - Scalability: Layer 1 Solutions
 
 ## Learning Objectives
-By the end of this unit, the learner should be able to:
-- Explain what is a ‘scalable system’
-- Tell the difference between vertical and horizontal scalability
-- Be critical of the interplay between key dimensions of blockchain systems
-- Explain why TPS alone is a poor metric for comparing blockchains systems
-- Enumerate few well-known order of magnitudes related to the blockchain industry
-- Explain in laym- an terms the big-O notation and integrate that quadratic = bad, linear = good, logarithmic = better
-- Articulate the difference between parallelism and concurrency
-- Enumerate a few scalability techniques on layer one blockchain systems
+
+> [!NOTE]
+>
+> By the end of this unit, you should be able to:
+>
+> - [x] Explain what is a ‘scalable system’
+> - [x] Tell the difference between vertical and horizontal scalability
+> - [x] Be critical of the interplay between key dimensions of blockchain systems
+> - [x] Explain why TPS alone is a poor metric for comparing blockchains systems
+> - [x] Enumerate few well-known order of magnitudes related to the blockchain industry
+> - [x] Explain in laym- an terms the big-O notation and integrate that quadratic = bad, linear = good, logarithmic = better
+> - [x] Articulate the difference between parallelism and concurrency
+> - [x] Enumerate a few scalability techniques on layer one blockchain systems
 
 ## Introduction
 Welcome everyone, I am [lecturer name], and I’ll walk you through scalability and layer one solutions.
