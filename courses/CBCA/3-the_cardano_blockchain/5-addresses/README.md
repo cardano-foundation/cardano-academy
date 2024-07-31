@@ -1,11 +1,15 @@
 # Unit 5 - Addresses
 
 ## Learning Objectives
-By the end of this unit, the learner should be able to:
-- Explain the principles behind hierarchical deterministic wallets
-- Explain roughly what is text encoding is and what mnemonic phrases represent
-- Enumerate the different types of Cardano addresses and their roles
-- Highlight the specifics of Cardano stake addresses
+
+> [!NOTE]
+>
+> By the end of this unit, you should be able to:
+>
+> - [x] Explain the principles behind hierarchical deterministic wallets
+> - [x] Explain roughly what is text encoding is and what mnemonic phrases represent
+> - [x] Enumerate the different types of Cardano addresses and their roles
+> - [x] Highlight the specifics of Cardano stake addresses
 
 ## Introduction
 Hello everyone, and welcome back. I am your lecturer, [lecturer name], and many thanks for joining me today!
