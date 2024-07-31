@@ -1,11 +1,16 @@
 # Unit 5 - DApps on Cardano
 
 ## Learning Objectives
-By the end of this unit, the learner should be able to:
-- Recap what a DApp is and  how its architecture is unique on Cardano
-- Run through the user experience of connecting a wallet to a DApp
-- Take a brief tour of some DApps on Cardano
-- Preview the future of DApps on Cardano
+
+> [!NOTE]
+>
+> By the end of this unit, you should be able to:
+>
+> - [x] Recap what a DApp is and  how its architecture is unique on Cardano
+> - [x] Run through the user experience of connecting a wallet to a DApp
+> - [x] Take a brief tour of some DApps on Cardano
+> - [x] Preview the future of DApps on Cardano
+
 
 ## Introduction
 Hello everyone, and welcome back. I am your lecturer, [lecturer name], and many thanks for joining me today!
