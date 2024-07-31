@@ -1,11 +1,15 @@
 # Unit 1 - Cardano Genesis
 
 ## Learning Objectives
-By the end of this unit, the learner should be able to:
-- Describe the mission and principles of Cardano
-- Explain what is peer-review science and formal methods
-- Describe Cardano’s genesis and genesis entities
-- Have a high-level understanding of the roadmap
+
+> [!NOTE]
+>
+> By the end of this unit, you should be able to:
+>
+> - [x] Describe the mission and principles of Cardano
+> - [x] Explain what is peer-review science and formal methods
+> - [x] Describe Cardano’s genesis and genesis entities
+> - [x] Have a high-level understanding of the roadmap
 
 ## Introduction
 Hello everyone, and welcome. My name is (lecturer name) and I’ll walk you through the Cardano project and how it came to be.
