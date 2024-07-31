@@ -262,10 +262,10 @@ https://ucarecdn.com/e14c6f03-152d-4361-abaf-f1fee5eb2e4e/EUTxOhandbook3.pdf , A
 </details>
 
 ### Select two correct statements about the transaction lifecycle in a blockchain network.
-- A transaction is created by the owner of the inputs and it cannot be created by anyone else
-- **The creator of a transaction and the signer can be two different individuals (CORRECT ANSWER)**
-- A transaction is always only propagated by end users to other users in a peer-to-peer fashion
-- **A transaction, once validated, is added to a block and distributed across the network in a peer-to-peer fashion (CORRECT ANSWER)**
+1. A transaction is created by the owner of the inputs and it cannot be created by anyone else
+1. **The creator of a transaction and the signer can be two different individuals (CORRECT ANSWER)**
+1. A transaction is always only propagated by end users to other users in a peer-to-peer fashion
+1. **A transaction, once validated, is added to a block and distributed across the network in a peer-to-peer fashion (CORRECT ANSWER)**
 
 ### Analyze the image below and select the missing steps in the transaction life cycle
 
