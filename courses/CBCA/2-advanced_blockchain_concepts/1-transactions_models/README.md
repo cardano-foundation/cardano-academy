@@ -268,10 +268,11 @@ https://ucarecdn.com/e14c6f03-152d-4361-abaf-f1fee5eb2e4e/EUTxOhandbook3.pdf , A
 1. The creator of a transaction and the signer can be two different individuals
 1. A transaction is always only propagated by end users to other users in a peer-to-peer fashion
 1. A transaction, once validated, is added to a block and distributed across the network in a peer-to-peer fashion
-<details><summary>See correct answer</summary>
-2. The creator of a transaction and the signer can be two different individuals.
-4. A transaction, once validated, is added to a block and distributed across the network in a peer-to-peer fashion
 
+<details><summary>See correct answer</summary>
+
+2. The creator of a transaction and the signer can be two different individuals.
+4. A transaction, once validated, is added to a block and distributed across the network in a peer-to-peer fashion.
 </details>
 
 
@@ -281,9 +282,14 @@ https://ucarecdn.com/e14c6f03-152d-4361-abaf-f1fee5eb2e4e/EUTxOhandbook3.pdf , A
 ![illustration 2.1.17.png](./assets/2.1.17.png)
 
 
-- **A: The transaction is signed; B: The transaction is verified (CORRECT ANSWER)**
-- A: The transaction is verified; B: The transaction is signed
-- A: The transaction is verified; B: The transaction is received
+1. A: The transaction is signed; B: The transaction is verified
+1. A: The transaction is verified; B: The transaction is signed
+1. A: The transaction is verified; B: The transaction is received
+
+<details><summary>See correct answer</summary>
+
+1. A: The transaction is signed; B: The transaction is verified
+</details>
 
 ### Why do most blockchain transactions include a transaction fee?
 - The fee is a required payment that the recipient of the transaction has to pay as a reward to the sender
