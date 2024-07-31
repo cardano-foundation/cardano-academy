@@ -1,12 +1,16 @@
 # Unit 7 - Cardano Community
 ## Learning Objectives
-By the end of this unit, the learner should be able to:
-- Understand why Community matters to a blockchain
-- Define the different aspects of Decentralization
-- Understand why 'Community Is Marketing From Within'
-- Understand the role Community plays in Governance
-- Understand what attracted people to Cardano in the early years
-- Understand who the different Community Groups are
+
+> [!NOTE]
+>
+> By the end of this unit, you should be able to:
+>
+> - [x] Understand why Community matters to a blockchain
+> - [x] Define the different aspects of Decentralization
+> - [x] Understand why 'Community Is Marketing From Within'
+> - [x] Understand the role Community plays in Governance
+> - [x] Understand what attracted people to Cardano in the early years
+> - [x] Understand who the different Community Groups are
 
 ## Introduction
 Hello everyone, and welcome back. I am your lecturer, [lecturer name], and many thanks for joining me today!
