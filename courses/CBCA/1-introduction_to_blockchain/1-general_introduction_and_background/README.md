@@ -215,16 +215,16 @@ And with that, we will see you in the next unit!
 2. They provide a way for different components to achieve agreement.
 </details>
 
-### In a typical blockchain:*
+### In a typical blockchain...
 
-1. Decisions are made by an elected leading authority
-1. Decisions are made at random
-1. There’s no decision to be made
-1. Decisions are reached through a consensus algorithm.
+1. decisions are made by an elected leading authority.
+1. decisions are made at random.
+1. there’s no decision to be made.
+1. decisions are reached through a consensus algorithm.
 
 <details><summary>See correct answer</summary>
 
-4. Decisions are reached through a consensus algorithm.
+4. decisions are reached through a consensus algorithm.
 </details>
 
 ### Why is the distribution of components important in a distributed system?
