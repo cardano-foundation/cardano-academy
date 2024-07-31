@@ -1,12 +1,16 @@
 # Unit 1 - Transactions Models
 
 ## Learning Objectives
-By the end of this unit, the learner should be able to:
-- Define transaction models in the context of blockchain
-- Be able to differentiate between the main types of transaction models
-- Describe Extended UTxO (EUTxO)
-- Describe different transaction types on blockchain
-- Define a token and the life cycle of a transaction using a token
+
+> [!NOTE]
+>
+> By the end of this unit, you should be able to:
+>
+> - [x] Define transaction models in the context of blockchain
+> - [x] Be able to differentiate between the main types of transaction models
+> - [x] Describe Extended UTxO (EUTxO)
+> - [x] Describe different transaction types on blockchain
+> - [x] Define a token and the life cycle of a transaction using a token
 
 ## Introduction
 Hello everyone, and welcome. My name is [lecturer name].
