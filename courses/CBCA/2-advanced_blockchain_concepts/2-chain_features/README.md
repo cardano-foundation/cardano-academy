@@ -1,10 +1,15 @@
 # Unit 5.2 - Chain Features
 ## Learning Objectives
-By the end of this unit the learner should be able to:
-- Explain how a block producer joins a blockchain and explain the longest chain rule in PoW and PoS
-- Describe transaction confirmation, block height, block time, block size, and chain depth.
-- Describe block header and block body format and contents
-- Explain the meaning and use of the common prefix
+
+> [!NOTE]
+>
+> By the end of this unit, you should be able to:
+>
+> - [x] Explain how a block producer joins a blockchain and explain the longest chain rule in PoW and PoS
+> - [x] Describe transaction confirmation, block height, block time, block size, and chain depth
+> - [x] Describe block header and block body format and contents
+> - [x] Explain the meaning and use of the common prefix
+
 
 ## Introduction
 Hello everyone, and welcome. My name is [lecturer name].
