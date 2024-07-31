@@ -224,11 +224,10 @@ https://ucarecdn.com/e14c6f03-152d-4361-abaf-f1fee5eb2e4e/EUTxOhandbook3.pdf , A
 1. It is not yet possible to create different types of tokens in newer platforms
 
 <details><summary>See correct answer</summary>
+
 2. Each public permissionless blockchain has its own unique token.
-3. The main method of exchanging value for transactions and motivating participants in the network is by using native tokens
+3. The main method of exchanging value for transactions and motivating participants in the network is by using native tokens.
 </details>
-
-
 
 *What are blockchain explorers used for?*
 - To alter or delete transaction records in the blockchain
