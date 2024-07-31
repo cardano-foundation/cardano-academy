@@ -292,15 +292,25 @@ https://ucarecdn.com/e14c6f03-152d-4361-abaf-f1fee5eb2e4e/EUTxOhandbook3.pdf , A
 </details>
 
 ### Why do most blockchain transactions include a transaction fee?
-- The fee is a required payment that the recipient of the transaction has to pay as a reward to the sender
-- **The fee is mainly there to pay block producers and prevent system resources abuses (CORRECT ANSWER)**
-- The fee only exists to pay blockchain core developers
+1. The fee is a required payment that the recipient of the transaction has to pay as a reward to the sender
+1. The fee is mainly there to pay block producers and prevent system resources abuses
+1. The fee only exists to pay blockchain core developers
+<details><summary>See correct answer</summary>
+
+2. The fee is mainly there to pay block producers and prevent system resources abuses
+</details>
 
 ### Select the correct statements about UTxO-based and account-based transaction models.
-- UTxO stands for Unauthorized Transaction Output
-- **When an account-based transaction takes place, the balance in a user’s account will either increase or decrease (CORRECT ANSWER)**
-- Bitcoin uses account-based transaction models
-- **Tokens are stored in UTxOs and are moved from one group to another when transactions happen (CORRECT ANSWER)**
+1. UTxO stands for Unauthorized Transaction Output
+1. When an account-based transaction takes place, the balance in a user’s account will either increase or decrease
+1. Bitcoin uses account-based transaction models
+1. Tokens are stored in UTxOs and are moved from one group to another when transactions happen
+<details><summary>See correct answer</summary>
+
+2. When an account-based transaction takes place, the balance in a user’s account will either increase or decrease.
+4. Tokens are stored in UTxOs and are moved from one group to another when transactions happen 
+</details>
+
 
 ### Some blockchains use an UTxO-based transaction model. In these, when a transaction takes place, the tokens locked in UTxOs are moved from one UTxO to another one or to multiple other ones. Each UTxO has to be spent in its entirety.
 1. True
@@ -330,85 +340,85 @@ https://ucarecdn.com/e14c6f03-152d-4361-abaf-f1fee5eb2e4e/EUTxOhandbook3.pdf , A
 
 
 ### Select two correct statements about UTxO transaction fees.
-- **A ledger must confirm that the difference between the inputs and outputs equals the amount declared as fees or the UTxO transaction will be rejected (CORRECT ANSWER)**
-- Transaction fees are 2% of the sum of all inputs
-- Users will pay a lower transaction fee if they spend their inputs fully
-- **On Cardano, fees can be explicitly stated in the transaction (CORRECT ANSWER)**
+1. **A ledger must confirm that the difference between the inputs and outputs equals the amount declared as fees or the UTxO transaction will be rejected (CORRECT ANSWER)**
+1. Transaction fees are 2% of the sum of all inputs
+1. Users will pay a lower transaction fee if they spend their inputs fully
+1. **On Cardano, fees can be explicitly stated in the transaction (CORRECT ANSWER)**
 
 ### Select two correct statements about spent and new UTxOs in a blockchain.
-- **Each UTxO can be used as an input to a new transaction (CORRECT ANSWER)**
-- When a UTxO becomes “spent” after being used, it can still be used again
-- **Once a UTxO is used, it can’t be used again (CORRECT ANSWER)**
-- Newly created UTxOs are known as ‘fees’
+1. **Each UTxO can be used as an input to a new transaction (CORRECT ANSWER)**
+1. When a UTxO becomes “spent” after being used, it can still be used again
+1. **Once a UTxO is used, it can’t be used again (CORRECT ANSWER)**
+1. Newly created UTxOs are known as ‘fees’
 
 ### How do full-node wallets calculate a user’s token balance?
-- By consulting with a central server that maintains the blockchain ledger
-- By relying on a user's private key to calculate their token balance based on their account status
-- **By keeping track of all UTxOs and summing up the tokens in each UTxO (CORRECT ANSWER)**
+1. By consulting with a central server that maintains the blockchain ledger
+1. By relying on a user's private key to calculate their token balance based on their account status
+1. **By keeping track of all UTxOs and summing up the tokens in each UTxO (CORRECT ANSWER)**
 
 ### Which two components uniquely identify an UTxO entry?
-- Block header
-- Address
-- **Transaction id (CORRECT ANSWER)**
-- **Output index (CORRECT ANSWER)**
-- Private key
+1. Block header
+1. Address
+1. **Transaction id (CORRECT ANSWER)**
+1. **Output index (CORRECT ANSWER)**
+1. Private key
 
 ### Select the answer option that correctly labels the highlighted areas on the image below. (Image Question)
 
 ![illustration 2.1.18.png](./assets/2.1.18.png)
 
-- **A = Transaction id, B = output index (CORRECT ANSWER)**
-- A = Output index, B = blockchain state
-- A = Transaction id, B = private key
-- A = Private key, B = output index
+1. **A = Transaction id, B = output index (CORRECT ANSWER)**
+1. A = Output index, B = blockchain state
+1. A = Transaction id, B = private key
+1. A = Private key, B = output index
 
 ### Match the correct statements to the correct models: UTxO or Account-based
 
 *Statement A: Balances are modifiable registries stored in the global state*
 *Statement B: Entries can be spent and new ones can be created as change*
 *Statement C: A previous state and a new state is fully captured within the transaction*
-- **A: Account-based, B: UTxO-based, C: UTxO-based (CORRECT ANSWER)**
-- A: UTxO-based, B: UTxO-based, C: Account-based
-- A: UTxO-based, B: Account-based, C: Account-based
+1. **A: Account-based, B: UTxO-based, C: UTxO-based (CORRECT ANSWER)**
+1. A: UTxO-based, B: UTxO-based, C: Account-based
+1. A: UTxO-based, B: Account-based, C: Account-based
 
 ### Cardano introduced the EUTxO. What does the acronym stand for?
-- External unspent transaction output
-- **Extended unspent transaction output (CORRECT ANSWER)**
-- Exponential unspent transaction output
-- Exceptional unspent transaction output
+1. External unspent transaction output
+1. **Extended unspent transaction output (CORRECT ANSWER)**
+1. Exponential unspent transaction output
+1. Exceptional unspent transaction output
 
 ### Cardano smart contracts are executed when a transaction is sent to them, not when someone tries to spend from an UTxO that has a smart contract attached.
-- TRUE
-- **FALSE (CORRECT ANSWER)**
+1. TRUE
+1. **FALSE (CORRECT ANSWER)**
 
 ### What is a unique advantage of the EUTxO model over the Account-based model?
-- Transactions in the EUTxO model rely on external factors like time or the global state, while Account-based model transactions do not
-- In the EUTxO model, the success or failure of transaction validation depends on external block producers' decisions
-- **The validity of a transaction in the EUTxO model only depends on elements specified in the transaction (CORRECT ANSWER)**
+1. Transactions in the EUTxO model rely on external factors like time or the global state, while Account-based model transactions do not
+1. In the EUTxO model, the success or failure of transaction validation depends on external block producers' decisions
+1. **The validity of a transaction in the EUTxO model only depends on elements specified in the transaction (CORRECT ANSWER)**
 
 ### What makes the EUTxO model completely deterministic?
-- **The script and datum are known ahead of time and given the same inputs, the outcome of the script is always predictable (CORRECT ANSWER)**
-- The outcome of the script varies unpredictably with each transaction
-- It allows for unlimited transactions without any prior knowledge of the script or datum
+1. **The script and datum are known ahead of time and given the same inputs, the outcome of the script is always predictable (CORRECT ANSWER)**
+1. The outcome of the script varies unpredictably with each transaction
+1. It allows for unlimited transactions without any prior knowledge of the script or datum
 
 ### In the context of the EUTxO model, what is the role of the redeemer?
-- It provides information needed to lock the funds in a script
-- **It provides the information needed to unlock the funds when attempting to spend them (CORRECT ANSWER)**
-- It functions as the script itself, defining the arbitrary unlocking logic for the unspent output
+1. It provides information needed to lock the funds in a script
+1. **It provides the information needed to unlock the funds when attempting to spend them (CORRECT ANSWER)**
+1. It functions as the script itself, defining the arbitrary unlocking logic for the unspent output
 
 ### Select the image that refers to the correct order of a script, datum and redeemer. (Image Question)
 
-- Same image - Datum, Script, Redeemer<br>
+1. Same image - Datum, Script, Redeemer<br>
 ![illustration 2.1.19.png](./assets/2.1.19.png)
 
--Same image - Redeemer, Datum, Script<br>
+1. Same image - Redeemer, Datum, Script<br>
 ![illustration 2.1.20.png](./assets/2.1.20.png)
 
-- **CORRECT - Script, Datum, Redeemer (CORRECT ANSWER)**<br>
+1. **CORRECT - Script, Datum, Redeemer (CORRECT ANSWER)**<br>
 ![illustration 2.1.21.png](./assets/2.1.21.png)
 
 ### What needs to happen for a EUTxO transaction to be considered valid?
-- At least half of the scripts involved need to return a non-error value when executed
-- No scripts involved in the transaction should return when executed
-- **All scripts involved must return a non-error value when executed (CORRECT ANSWER)**
+1. At least half of the scripts involved need to return a non-error value when executed
+1. No scripts involved in the transaction should return when executed
+1. **All scripts involved must return a non-error value when executed (CORRECT ANSWER)**
 
