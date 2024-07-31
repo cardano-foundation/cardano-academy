@@ -1,12 +1,15 @@
 # Unit 2 - Buying, Storing and Transferring ADA
 
 ## Learning Objectives
-By the end of this unit, the learner should be able to:
-- Understand the different options when choosing a Cardano wallet.
-- Set up a wallet using a browser extension and the CLI
-- Request tAda (test ada) from the faucet
-- Buy ada from a centralized exchange (CEX) and send it to another ada wallet
 
+> [!NOTE]
+>
+> By the end of this unit, you should be able to:
+>
+> - [x] Understand the different options when choosing a Cardano wallet.
+> - [x] Set up a wallet using a browser extension and the CLI
+> - [x] Request tAda (test ada) from the faucet
+> - [x] Buy ada from a centralized exchange (CEX) and send it to another ada wallet
 
 ## Introduction
 Hello everyone, and welcome back. I am your lecturer, [lecturer name], and many thanks for joining me today!
