@@ -1,11 +1,15 @@
 # Unit 3 - Staking
 
 ## Learning Objectives
-By the end of this unit, the learner should be able to:
-- Recap of how staking works on Cardano
-- Understand what a stake pool is, and the SPOs role.
-- Know what to look for when choosing a SPO
-- Run through the staking process with a light wallet, and the CLI
+
+> [!NOTE]
+>
+> By the end of this unit, you should be able to:
+>
+> - [x] Recap of how staking works on Cardano
+> - [x] Understand what a stake pool is, and the SPOs role.
+> - [x] Know what to look for when choosing a SPO
+> - [x] Run through the staking process with a light wallet, and the CLI
 
 ## Introduction
 Hello everyone, and welcome back. I am your lecturer, [lecturer name], and many thanks for joining me today!
