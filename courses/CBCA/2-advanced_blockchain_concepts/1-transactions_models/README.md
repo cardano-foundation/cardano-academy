@@ -306,9 +306,13 @@ https://ucarecdn.com/e14c6f03-152d-4361-abaf-f1fee5eb2e4e/EUTxOhandbook3.pdf , A
 </details>
 
 ### What can Alice do if she doesn’t have a single UTxO with enough tokens to complete a transaction?
-- She has no other option but to cancel the transaction as it cannot be completed
-- **She can use multiple UTxOs to gather the needed amount (CORRECT ANSWER)**
-- She can borrow additional tokens from other users
+1. She has no other option but to cancel the transaction as it cannot be completed
+1. She can use multiple UTxOs to gather the needed amount
+1. She can borrow additional tokens from other users
+<details><summary>See correct answer</summary>
+2. She can use multiple UTxOs to gather the needed amount
+</details>
+
 
 ### Select two correct statements about UTxO transaction fees.
 - **A ledger must confirm that the difference between the inputs and outputs equals the amount declared as fees or the UTxO transaction will be rejected (CORRECT ANSWER)**
