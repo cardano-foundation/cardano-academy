@@ -230,9 +230,13 @@ https://ucarecdn.com/e14c6f03-152d-4361-abaf-f1fee5eb2e4e/EUTxOhandbook3.pdf , A
 </details>
 
 ### What are blockchain explorers used for?
-- To alter or delete transaction records in the blockchain
-- To generate new tokens or coins outside of the network's predefined rules
-- **To browse the tokens associated with each address (CORRECT ANSWER)**
+1. To alter or delete transaction records in the blockchain
+1. To generate new tokens or coins outside of the network's predefined rules
+1. To browse the tokens associated with each address
+
+<details><summary>See correct answer</summary>
+3. To browse the tokens associated with each address
+</details>
 
 ### A wallet address is derived from a public key and represents ownership. Addresses are commonly shared between users and applications.
 1. True
