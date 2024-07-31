@@ -1,12 +1,16 @@
 # Unit 5 - Web3 Architecture
 
 ## Learning Objectives
-By the end of this unit, the learner should be able to:
-- Describe and compare blockchain mainnet and testnets
-- Explain the purpose of a faucet and its use on test networks
-- Describe the operation of blockchain architecture components
-- Describe the Cardano communication protocols
-- Explain decentralized applications (dApp) and Web3 applications
+
+> [!NOTE]
+>
+> By the end of this unit, you should be able to:
+>
+> - [x] Describe and compare blockchain mainnet and testnets
+> - [x] Explain the purpose of a faucet and its use on test networks
+> - [x] Describe the operation of blockchain architecture components
+> - [x] Describe the Cardano communication protocols
+> - [x] Explain decentralized applications (dApp) and Web3 applications
 
 ## Introduction
 Hello everyone, and welcome. My name is [lecturer name], and many thanks for joining us today.
