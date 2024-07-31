@@ -1,5 +1,15 @@
 # Contributing
 
+## Folder organization & conventions
+
+- [x] Courses are placed in their own directory, under a top-level directory [_courses_](./courses).
+- [x] Longer courses can be divided into _modules_ and _units_. A module is a collection of units.
+- [x] Units shall be placed in their own directory, with a single `README.md` file as the content.
+- [x] Diagrams or illustrations shall be nested in units' directories under `assets`.
+- [x] Modules and units must be numbered, starting from 1. They shall also have a title.
+- [x] Prefer underscores over spaces in folders and filenames.
+- [x] Modules and units shall be named as `{number}-{title}`. e.g. `1-blockchain_overview`
+
 ## Feedback
 
 Fedback is welcome, whether it be a suggestion, contributing an improved infographic, or maybe some questions that you have. It helps in improving the course(s) over time and these are the best kind of contributions to start with.
@@ -26,10 +36,10 @@ Added by: @joebloggs
 
 ## Changelog
 
-Please add an entry into [CHANGELOG.md](https://github.com/cardano-foundation/cardano-academy/blob/main/CHANGELOG.md) when submitting changes. This let's us keep track of unreleased changes for future course iterations. We suggest sticking to the following format for consistency:
+We keep changelogs for each course. Please add an entry into their corresponding _CHANGELOG.md_ when submitting changes. This let's us keep track of unreleased changes for future course iterations. Each changelog must abide by the following format:
 
 ```
-## [next] - DD--MM--YYYY
+## {version} - {YYYY-MM-DD}
 
 ### Added
 
@@ -43,6 +53,10 @@ Please add an entry into [CHANGELOG.md](https://github.com/cardano-foundation/ca
 
 - something is gone now
 ```
+
+> [!TIP]
+>
+> When not-yet-release, use `unreleased` as a version and date.
 
 ## Discussions
 
