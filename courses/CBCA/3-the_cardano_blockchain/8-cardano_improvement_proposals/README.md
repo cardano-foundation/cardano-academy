@@ -1,4 +1,4 @@
-# Unit 8 - Cardano Community
+# Unit 8 - Cardano Improvement Proposals
 
 ## Learning Objectives
 
