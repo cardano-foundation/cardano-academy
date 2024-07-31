@@ -1,11 +1,15 @@
 # Unit 3 - Ouroboros Consensus Algorithms
 
 ## Learning Objective
-By the end of this unit, the learner should be able to:
-- State the two fundamental features of distributed ledgers, and the three key properties they must have.
-- Explain what is provable security.
-- Enumerate the commonalities between Ouroboros protocols
-- Give an overview of the different Ouroboros protocols
+
+> [!NOTE]
+>
+> By the end of this unit, you should be able to:
+>
+> - [x] State the two fundamental features of distributed ledgers, and the three key properties they must have.
+> - [x] Explain what is provable security.
+> - [x] Enumerate the commonalities between Ouroboros protocols
+> - [x] Give an overview of the different Ouroboros protocols
 
 ## Introduction
 Hello everyone, and welcome. My name is (lecturer name) and I’ll be your host for this unit.
