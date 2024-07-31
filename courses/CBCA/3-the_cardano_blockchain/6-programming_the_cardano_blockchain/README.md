@@ -1,13 +1,17 @@
 # Unit 6 - Programming The Cardano Blockchain
 
 ## Learning Objective
-By the end of this unit, the learner should be able to:
-- Gain a high-level understanding of what a ‘Virtual Machine’ is
-- Understand what  compilers are and how they work
-- Understand what  Plutus Core is
-- Understand  the memory and steps execution costs
-- Describe a few programming languages available on Cardano
-- Enumerate the pros and cons of each
+
+> [!NOTE]
+>
+> By the end of this unit, you should be able to:
+>
+> - [x] Gain a high-level understanding of what a ‘Virtual Machine’ is
+> - [x] Understand what  compilers are and how they work
+> - [x] Understand what  Plutus Core is
+> - [x] Understand  the memory and steps execution costs
+> - [x] Describe a few programming languages available on Cardano
+> - [x] Enumerate the pros and cons of each
 
 ## Introduction
 Hello everyone, and welcome back for another topic. My name is [speaker name] and thank you for joining me today.
