@@ -243,29 +243,38 @@ https://ucarecdn.com/e14c6f03-152d-4361-abaf-f1fee5eb2e4e/EUTxOhandbook3.pdf , A
 1. False
 
 <details><summary>See correct answer</summary>
-
 1. True
 </details>
 
 ### What are transactions in blockchain?
-- Private contracts or agreements that occur off-chain, and are not recorded on the blockchain
-- **Data structures containing orders to transfer blockchain tokens between user addresses (CORRECT ANSWER)**
-- Software programs that can be executed in full or partially
+1. Private contracts or agreements that occur off-chain, and are not recorded on the blockchain
+1. Data structures containing orders to transfer blockchain tokens between user addresses
+1. Software programs that can be executed in full or partially
+<details><summary>See correct answer</summary>
+2. Data structures containing orders to transfer blockchain tokens between user addresses
+</details>
+
 
 ### Transactions are atomic modifications to the blockchain ledger, meaning they can only be fully executed, never partially.
 1. True
 1. False
 
 <details><summary>See correct answer</summary>
-
 1. True
 </details>
 
 ### Select two correct statements about the transaction lifecycle in a blockchain network.
 1. A transaction is created by the owner of the inputs and it cannot be created by anyone else
-1. **The creator of a transaction and the signer can be two different individuals (CORRECT ANSWER)**
+1. The creator of a transaction and the signer can be two different individuals
 1. A transaction is always only propagated by end users to other users in a peer-to-peer fashion
-1. **A transaction, once validated, is added to a block and distributed across the network in a peer-to-peer fashion (CORRECT ANSWER)**
+1. A transaction, once validated, is added to a block and distributed across the network in a peer-to-peer fashion
+<details><summary>See correct answer</summary>
+2. The creator of a transaction and the signer can be two different individuals.
+4. A transaction, once validated, is added to a block and distributed across the network in a peer-to-peer fashion
+
+</details>
+
+
 
 ### Analyze the image below and select the missing steps in the transaction life cycle
 
