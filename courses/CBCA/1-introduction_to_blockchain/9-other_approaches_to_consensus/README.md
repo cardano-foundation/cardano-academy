@@ -138,103 +138,178 @@ https://www.gemini.com/cryptopedia/blockchain-consensus-mechanism-types-of-algor
 
 ## Questions
 
-**Sub-Unit 1**
+### Why are hybrid algorithms useful for achieving consensus?
 
-*Why are hybrid algorithms useful for achieving consensus?*
-- They increase the complexity and resource requirements of individual algorithms, leading to a more exclusive network participation
-- They solely rely on one type of consensus algorithm, decreasing any risks from outside algorithms
-- **They reduce the potential weaknesses linked to individual algorithms (CORRECT ANSWER)**
+1. They increase the complexity and resource requirements of individual algorithms, leading to a more exclusive network participation.
+1. They solely rely on one type of consensus algorithm, decreasing any risks from outside algorithms.
+1. They reduce the potential weaknesses linked to individual algorithms.
 
-*True or False. All proof-based protocols provide the same level of security and robustness.*
-- True
-- **False (CORRECT ANSWER)**
+<details><summary>See correct answer</summary>
 
-**Sub-Unit 2**
+3. They reduce the potential weaknesses linked to individual algorithms.
+</details>
 
-*What makes proof of authority (PoA) different from proof of stake when it comes to the requirements for validators?*
-- PoA only relies on financial capital
-- **PoA requires both financial investment and reputation at stake (CORRECT ANSWER)**
-- PoA is entirely decentralized and doesn't require any investment
+### True or False. All proof-based protocols provide the same level of security and robustness.
 
-*What types of blockchain are proof of authority consensus mechanisms suitable for?*
-- They are suitable for fully decentralized public blockchains that prioritize anonymity
-- **They are suitable for private, permissioned blockchains or consortiums that require high scalability (CORRECT ANSWER)**
-- They are suitable only for blockchains that solely rely on financial investment
+1. True.
+1. False.
 
-**Sub- Unit 3**
+<details><summary>See correct answer</summary>
 
-*In proof of activity protocols, which of the following is true?*
-- **Blocks are forged by miners following proof of work, and checked by validators using proof of stake (CORRECT ANSWER)**
-- Block producers are selected based on how much traffic they have generated for the network in the past
-- Block producers must hand over proofs of employment from a trusted list of companies to be entitled to mine blocks
-- Miners cannot produce empty blocks. All blocks have to contain as many transactions as possible
+2. False.
+</details>
 
-**Sub-Unit 4**
+### What makes proof of authority (PoA) different from proof of stake when it comes to the requirements for validators?
 
-*What distinguishes the proof of importance (PoI) consensus mechanism from traditional proof-of-stake methods?*
-- PoI relies solely on nodes' financial stake for participation in consensus
-- **PoI evaluates nodes' contributions by considering factors beyond just the financial stake (CORRECT ANSWER)**
-- PoI prioritizes the oldest nodes in the network for block production
-- PoI is exclusively used for decentralized finance (DeFi) projects
+1. PoA only relies on financial capital.
+1. PoA requires both financial investment and reputation at stake.
+1. PoA is entirely decentralized and doesn't require any investment.
 
-*Take a look at the two images below and select the proof of importance (PoI) image. (Image Question)*
+<details><summary>See correct answer</summary>
 
-![illustration 1.9.9.png](./assets/1.9.9.png)
-- Image A: Proof of importance
-- **Image B: Proof of importance (CORRECT ANSWER)**
-- Both images are examples of PoI
+2. PoA requires both financial investment and reputation at stake.
+</details>
 
-**Sub-Unit 5**
+### What types of blockchain are proof of authority consensus mechanisms suitable for?
 
-*Select the INCORRECT statement regarding proof of burn (PoB).*
-- Miners must destroy tokens to be granted rights to forge blocks
-- Slimcoin is a project that uses PoB as its main consensus mechanism
-- **Only early adopters can burn coins and participate in consensus as burning is only allowed for old coins (CORRECT ANSWER)**
-- PoB still requires mining blocks using an approach similar to PoW, but with far less energy
+1. They are suitable for fully decentralized public blockchains that prioritize anonymity.
+1. They are suitable for private, permissioned blockchains or consortiums that require high scalability.
+1. They are suitable only for blockchains that solely rely on financial investment.
 
-**Sub-Unit 6**
+<details><summary>See correct answer</summary>
 
-*Select two correct statements about proof of capacity (PoC) / proof of space (PoSpace) consensus algorithms.*
-- Datasets do not take a long time to generate since they don’t need large amounts of memory
-- Hard disk storage is a much more expensive option than computing devices for proof of work
-- **The more plots a block producer has, the more chance it will get to generate the next new block (CORRECT ANSWER)**
-- “Plots” are large datasets on the hard disks generated by proof of space (CORRECT ANSWER)
+2. They are suitable for private, permissioned blockchains or consortiums that require high scalability.
+</details>
 
-*What is the main consensus resource used for choosing block producers in proof of capacity (PoC)?*
-- Electric battery capacitance
-- Water tank capacity
-- Diplomas and official certifications
-- **Disk storage space (CORRECT ANSWER)**
+### In proof of activity protocols, which of the following is true?
 
-**Sub-Unit 7**
+1. Blocks are forged by miners following proof of work, and checked by validators using proof of stake.
+1. Block producers are selected based on how much traffic they have generated for the network in the past.
+1. Block producers must hand over proofs of employment from a trusted list of companies to be entitled to mine blocks.
+1. Miners cannot produce empty blocks. All blocks have to contain as many transactions as possible.
 
-*How does the proof of elapsed time (PoET) method allow a block producer to generate a new block?*
-- By using a voting mechanism among all the block producers
-- **By requesting a wait-time from a trusted source, waiting for it to elapse, and if no one else finishes first, they get the chance to create a new block (CORRECT ANSWER)**
-- By counting the number of transactions a block producer has processed before
+<details><summary>See correct answer</summary>
 
-*True or False. Proof of elapsed time requires specific hardware.*
-- **True (CORRECT ANSWER)**
-- False
+1. Blocks are forged by miners following proof of work, and checked by validators using proof of stake.
+</details>
 
-**Sub-Unit 8**
+### What distinguishes the proof of importance (PoI) consensus mechanism from traditional proof-of-stake methods?
 
-*What factors influence a user's contribution level in a proof of contribution protocol?*
--**Staking amount, historical track record, and the accuracy of calculated results (CORRECT ANSWER)**
-- Number of blocks generated, staking amount, and network speed
-- Accuracy of calculated results, total stake lost, and transaction fees
-- Historical track record, network connectivity, and total stake in the network
+1. PoI relies solely on nodes' financial stake for participation in consensus.
+1. PoI evaluates nodes' contributions by considering factors beyond just the financial stake.
+1. PoI prioritizes the oldest nodes in the network for block production.
+1. PoI is exclusively used for decentralized finance (DeFi) projects.
 
-**Sub-Unit 9**
+<details><summary>See correct answer</summary>
 
-*This type of protocol uses calibrated hashing functions as a way to measure the passing of time. Which one is it?*
-- Proof of time (PoT)
-- Proof of hashing (PoH)
-- **Proof of history (PoH) (CORRECT ANSWER)**
-- Proof of delay (PoD)
+2. PoI evaluates nodes' contributions by considering factors beyond just the financial stake.
+</details>
 
-*What type(s) of consensus does Solana use?*
-- Proof of stake (PoS) and proof of elapsed time (PoET)
-- **Proof of stake (PoS) and Proof of History (PoH) (CORRECT ANSWER)**
-- Proof of work (PoW) and proof of history (PoH)
-- Proof of restart (PoR)
+### Take a look at the two images below and select the proof of importance (PoI) image.
+
+<!-- TODO: It would be better to split this image in two and have the question be about selecting the right one -->
+
+<img alt="illustration 1.9.9.png" src="./assets/1.9.9.png" width="500" />
+
+1. Image A: Proof of importance.
+1. Image B: Proof of importance.
+1. Both images are examples of PoI.
+
+<details><summary>See correct answer</summary>
+
+2. Image B: Proof of importance.
+</details>
+
+### Select the INCORRECT statement regarding proof of burn (PoB).
+
+1. Miners must destroy tokens to be granted rights to forge blocks.
+1. Slimcoin is a project that uses PoB as its main consensus mechanism.
+1. Only early adopters can burn coins and participate in consensus as burning is only allowed for old coins.
+1. PoB still requires mining blocks using an approach similar to PoW, but with far less energy.
+
+<details><summary>See correct answer</summary>
+
+3. Only early adopters can burn coins and participate in consensus as burning is only allowed for old coins.
+</details>
+
+### Select two correct statements about proof of capacity (PoC) / proof of space (PoSpace) consensus algorithms.
+
+- [ ] Datasets do not take a long time to generate since they don’t need large amounts of memory.
+- [ ] Hard disk storage is a much more expensive option than computing devices for proof of work.
+- [ ] The more plots a block producer has, the more chance it will get to generate the next new block.
+- [ ] “Plots” are large datasets on the hard disks generated by proof of space.
+
+<details><summary>See correct answer</summary>
+
+- [x] The more plots a block producer has, the more chance it will get to generate the next new block.
+- [x] “Plots” are large datasets on the hard disks generated by proof of space.
+</details>
+
+### What is the main consensus resource used for choosing block producers in proof of capacity (PoC)?
+
+1. Electric battery capacitance.
+1. Water tank capacity.
+1. Diplomas and official certifications.
+1. Disk storage space.
+
+<details><summary>See correct answer</summary>
+
+4. Disk storage space.
+</details>
+
+### How does the proof of elapsed time (PoET) method allow a block producer to generate a new block?
+
+1. By using a voting mechanism among all the block producers.
+1. By requesting a wait-time from a trusted source, waiting for it to elapse, and if no one else finishes first, they get the chance to create a new block.
+1. By counting the number of transactions a block producer has processed before.
+
+<details><summary>See correct answer</summary>
+
+2. By requesting a wait-time from a trusted source, waiting for it to elapse, and if no one else finishes first, they get the chance to create a new block.
+</details>
+
+### Proof of elapsed time requires specific hardware.
+
+1. True.
+1. False.
+
+<details><summary>See correct answer</summary>
+
+1. True.
+</details>
+
+### What factors influence a user's contribution level in a proof of contribution protocol?
+
+1. Staking amount, historical track record, and the accuracy of calculated results.
+1. Number of blocks generated, staking amount, and network speed.
+1. Accuracy of calculated results, total stake lost, and transaction fees.
+1. Historical track record, network connectivity, and total stake in the network.
+
+<details><summary>See correct answer</summary>
+
+1. Staking amount, historical track record, and the accuracy of calculated results.
+</details>
+
+### This type of protocol uses calibrated hashing functions as a way to measure the passing of time. Which one is it?
+
+1. Proof of time (PoT).
+1. Proof of hashing (PoH).
+1. Proof of history (PoH).
+1. Proof of delay (PoD).
+
+<details><summary>See correct answer</summary>
+
+3. Proof of history (PoH).
+</details>
+
+### What type(s) of consensus does Solana use?
+
+1. Proof of stake (PoS) and proof of elapsed time (PoET).
+1. Proof of stake (PoS) and Proof of History (PoH).
+1. Proof of work (PoW) and proof of history (PoH).
+1. Proof of restart (PoR).
+
+<details><summary>See correct answer</summary>
+
+2. Proof of stake (PoS) and Proof of History (PoH).
+</details>

@@ -194,113 +194,230 @@ That’s it for now, and until next time!
 
 ## Questions
 
-**Sub-Unit 1**
+### Select two correct statements about Ethereum.
 
-*Select two correct statements about Ethereum.*
-- It established a central authority to oversee blockchain operations
-- **The core idea was to create a global computer that could run applications in a distributed manner  (CORRECT ANSWER)**
-- It allowed developers to work without any rules/regulations
-- **It provided a platform for developers to build new types of tokens  (CORRECT ANSWER)**
+- [ ] It established a central authority to oversee blockchain operations.
+- [ ] The core idea was to create a global computer that could run applications in a distributed manner.
+- [ ] It allowed developers to work without any rules/regulations.
+- [ ] It provided a platform for developers to build new types of tokens.
 
-**Sub-Unit 2**
+<details><summary>See correct answer</summary>
 
-*Select three correct statements about the six Ethereum principles.*
-- **Immutability enables the program code to never be changed or deleted (CORRECT ANSWER)**
-- **Permanence stores data offline, making it retrievable (CORRECT ANSWER)**
-- Atomicity allows for the entire state of the system to change if a fault occurs
-- Provenance prevents data from being deleted
-- **Immortality gives resistance to censorship and external shutdown (CORRECT ANSWER)**
+- [x] The core idea was to create a global computer that could run applications in a distributed manner.
+- [x] It provided a platform for developers to build new types of tokens.
+</details>
 
-*Select the two correct statements about provenance, one of Ethereum’s six principles.*
-- **It establishes a clear chain of custody for digital assets (CORRECT ANSWER)**
-- It automatically destroys the originator of failed transactions
-- **It provides the ability to trace back events leading to the system's states (CORRECT ANSWER)**
-- It allows for some execution paths to be verified
+### Select three correct statements about the six Ethereum principles.
 
-*Which blockchain introduced the concept of smart contracts?*
-- Bitcoin
-- **Ethereum (CORRECT ANSWER)**
-- Cardano
-- Algorand
+- [ ] Immutability enables the program code to never be changed or deleted.
+- [ ] Permanence stores data offline, making it retrievable.
+- [ ] Atomicity allows for the entire state of the system to change if a fault occurs.
+- [ ] Provenance prevents data from being deleted.
+- [ ] Immortality gives resistance to censorship and external shutdown.
 
-**Sub-Unit 3**
+<details><summary>See correct answer</summary>
 
-*A token can:*
-- **represent ownership of an asset (CORRECT ANSWER)**
-- **hold voting rights (CORRECT ANSWER)**
-- **serve as a medium of exchange (CORRECT ANSWER)**
-- **be used as a way to store value (CORRECT ANSWER)**
-- act as a consensus algorithm
+- [x] Immutability enables the program code to never be changed or deleted.
+- [x] Permanence stores data offline, making it retrievable.
+- [x] Immortality gives resistance to censorship and external shutdown.
+</details>
 
-**Sub-Unit 4**
+### Select the two correct statements about provenance, one of Ethereum’s six principles.
 
-*DeFi are financial services that enable trading, lending, fundraising, and investing, without the need for traditional trusted intermediaries like banks.*
-- **TRUE (CORRECT ANSWER)**
-- FALSE
+1. It establishes a clear chain of custody for digital assets.
+1. It automatically destroys the originator of failed transactions.
+1. It provides the ability to trace back events leading to the system's states.
+1. It allows for some execution paths to be verified.
 
-*Instead of managing services through a central authority, what does decentralized finance (DeFi) do?*
-- Rely on traditional financial institutions and intermediaries
-- **Use smart contracts to establish and execute financial agreements (CORRECT ANSWER)**
-- Use physical contracts and paperwork for financial agreements
+<details><summary>See correct answer</summary>
 
-*Take a look at the two images below and select the correct answer option that describes the process. (Image Question)*
+- [x] It establishes a clear chain of custody for digital assets.
+- [x] It provides the ability to trace back events leading to the system's states.
+</details>
 
-![illustration 1.3.11.png](./assets/1.3.11.png)
-- **A = Decentralized Finance, B = Centralized Finance (CORRECT ANSWER)**
-- A = Decentralized Autonomous Organization, B = Decentralized Finance
-- A = Centralized Finance, B = Decentralized Finance
+### Which blockchain introduced the concept of smart contracts?
 
-*Select two correct statements about a Decentralized Autonomous Organization (DAO).*
-- **It can be more efficient and require fewer management layers (CORRECT ANSWER)**
-- **In a DAO, decision-making and rule-making are transparent (CORRECT ANSWER)**
-- It is immune to all security risks
-- DAOs prioritize short-term gains over long-term stability
+1. Bitcoin.
+1. Ethereum.
+1. Cardano.
+1. Algorand.
 
-*The Blockchain Trilemma states it is impossible to build and operate a blockchain protocol that is simultaneously:*
-- **Decentralized (CORRECT ANSWER)**
-- **Scalable (CORRECT ANSWER)**
-- Centralized
-- **Secure (CORRECT ANSWER)**
-- Programmable
+<details><summary>See correct answer</summary>
 
-*Cardano is a first-generation blockchain.*
-- TRUE
-- **FALSE (CORRECT ANSWER)**
+2. Ethereum.
+</details>
 
-**Sub-Unit 6**
+### A token can...
 
-*How does Cardano increase security of tokens without compromising scalability and decentralization?*
-- Cardano introduces more intermediaries into the system as new tokens are created
-- Cardano allows for new tokens to be created using smart contracts
-- **Cardano’s protocol ensures that developer-defined tokens inherit the same security properties as its native token (CORRECT ANSWER)**
+- [ ] represent ownership of an asset.
+- [ ] hold voting rights.
+- [ ] serve as a medium of exchange.
+- [ ] be used as a way to store value.
+- [ ] act as a consensus algorithm.
 
-**Sub-Unit 7**
+<details><summary>See correct answer</summary>
 
-*Private blockchains do not exist. Blockchains are always public.*
-- True
-- **False (CORRECT ANSWER)**
+- [x] represent ownership of an asset.
+- [x] hold voting rights.
+- [x] serve as a medium of exchange.
+- [x] be used as a way to store value.
+</details>
 
-*Select the correct statements about public and private ledgers and blockchains.*
-- Public ledgers often contain sensitive data
-- **Ledgers are used for keeping records in both public and private blockchains (CORRECT ANSWER)**
-- **Private blockchains can only be accessed by authorized users (CORRECT ANSWER)**
-- Private ledgers are open for anyone to view
+### DeFi are financial services that enable trading, lending, fundraising, and investing, without the need for traditional trusted intermediaries like banks.
 
-**Sub-Unit 8**
+1. True.
+1. False.
 
-- *Blockchain is related to Web 3*
-- **True (CORRECT ANSWER)**
-- False
+<details><summary>See correct answer</summary>
 
-*Select two correct statements on the evolution of the Internet.*
-- **Web 3.0 has data distributed and stored securely across many devices (CORRECT ANSWER)**
-- Web 1.0 is an open and decentralized ecosystem
-- **Web 2.0 is the current state of the Internet (CORRECT ANSWER)**
+1. True.
+</details>
 
-*Take a look at the image below and select the correct option that describes the three web phases. (Image Question)*
-![illustration 1.3.12.png](./assets/1.3.12.png)
-- A: Dynamic, B: Decentralized, C: Static
-- **A: Static, B: Dynamic, C: Decentralized (CORRECT ANSWER)**
-- A: Static, B: Decentralized, C: Dynamic
+### Instead of managing services through a central authority, what does decentralized finance (DeFi) do?
 
-  | - No anonymous participants<br> - No single authority, but a group of authorities<br> - The authorities provides some level of trust<br>    |
+1. Rely on traditional financial institutions and intermediaries.
+1. Use smart contracts to establish and execute financial agreements.
+1. Use physical contracts and paperwork for financial agreements.
+
+<details><summary>See correct answer</summary>
+
+2. Use smart contracts to establish and execute financial agreements.
+</details>
+
+### Take a look at the two images below and select the correct answer option that describes the process.
+
+<img alt="illustration 1.3.11.png" src="./assets/1.3.11.png" width="600" />
+
+1.    | A                                     | B                     |
+      | ---                                   | ---                   |
+      | Decentralized Finance                 | Centralized Finance   |
+1.    | A                                     | B                     |
+      | ---                                   | ---                   |
+      | Decentralized Autonomous Organization | Decentralized Finance |
+1.    | A                                     | B                     |
+      | ---                                   | ---                   |
+      | Centralized Finance                   | Decentralized Finance |
+
+<details><summary>See correct answer</summary>
+
+1.   | A                     | B                   |
+     | ---                   | ---                 |
+     | Decentralized Finance | Centralized Finance |
+</details>
+
+### Select two correct statements about a Decentralized Autonomous Organization (DAO).
+
+- [ ] It can be more efficient and require fewer management layers.
+- [ ] In a DAO, decision-making and rule-making are transparent.
+- [ ] It is immune to all security risks.
+- [ ] DAOs prioritize short-term gains over long-term stability.
+
+<details><summary>See correct answer</summary>
+
+- [x] It can be more efficient and require fewer management layers.
+- [x] In a DAO, decision-making and rule-making are transparent.
+</details>
+
+### The Blockchain Trilemma states it is impossible to build and operate a blockchain protocol that is simultaneously:
+
+- [ ] Decentralized.
+- [ ] Scalable.
+- [ ] Centralized.
+- [ ] Secure.
+- [ ] Programmable.
+
+<details><summary>See correct answer</summary>
+
+- [x] Decentralized.
+- [x] Scalable.
+- [x] Secure.
+</details>
+
+### Cardano is a first-generation blockchain.
+
+1. True.
+1. False.
+
+<details><summary>See correct answer</summary>
+
+2. False.
+</details>
+
+### How does Cardano increase security of tokens without compromising scalability and decentralization?
+
+1. Cardano introduces more intermediaries into the system as new tokens are created.
+1. Cardano allows for new tokens to be created using smart contracts.
+1. Cardano’s protocol ensures that developer-defined tokens inherit the same security properties as its native token.
+
+<details><summary>See correct answer</summary>
+
+3. Cardano’s protocol ensures that developer-defined tokens inherit the same security properties as its native token.
+</details>
+
+### Private blockchains do not exist. Blockchains are always public.
+
+1. True.
+1. False.
+
+<details><summary>See correct answer</summary>
+
+2. False.
+</details>
+
+### Select the correct statements about public and private ledgers and blockchains.
+
+- [ ] Public ledgers often contain sensitive data.
+- [ ] Ledgers are used for keeping records in both public and private blockchains.
+- [ ] Private blockchains can only be accessed by authorized users.
+- [ ] Private ledgers are open for anyone to view.
+
+<details><summary>See correct answer</summary>
+
+- [x] Ledgers are used for keeping records in both public and private blockchains.
+- [x] Private blockchains can only be accessed by authorized users.
+</details>
+
+### Blockchain is related to Web 3.
+
+1. True.
+1. False.
+
+<details><summary>See correct answer</summary>
+
+1. True.
+</details>
+
+### Select two correct statements on the evolution of the Internet.
+
+- [ ] Web 3.0 has data distributed and stored securely across many devices.
+- [ ] Web 1.0 is an open and decentralized ecosystem.
+- [ ] Web 2.0 is the current state of the Internet.
+
+<details><summary>See correct answer</summary>
+
+- [x] Web 3.0 has data distributed and stored securely across many devices.
+- [x] Web 2.0 is the current state of the Internet.
+</details>
+
+### Take a look at the image below and select the correct option that describes the three web phases.
+
+<!-- TODO: This illustration is incorrect. -->
+
+<img alt="illustration 1.3.12.png" src="./assets/1.3.12.png" width="600" />
+
+1.  | A       | B             | C             |
+    | ---     | ---           | ---           |
+    | Dynamic | Decentralized | Static        |
+1.  | A       | B             | C             |
+    | ---     | ---           | ---           |
+    | Static  | Dynamic       | Decentralized |
+1.  | A       | B             | C             |
+    | ---     | ---           | ---           |
+    | Static  | Decentralized | Dynamic       |
+
+<details><summary>See correct answer</summary>
+
+1.  | A       | B             | C             |
+    | ---     | ---           | ---           |
+    | Static  | Dynamic       | Decentralized |
+</details>

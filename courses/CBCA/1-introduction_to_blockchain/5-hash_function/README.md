@@ -102,72 +102,130 @@ Let’s move on!
 
 ## Questions
 
-**Sub-Unit 1**
+### A cryptographic hash function is a type of mathematical function that takes a data input of arbitrary size and converts it into a variable-length output.
 
-*A cryptographic hash function is a type of mathematical function that takes a data input of arbitrary size and converts it into a variable-length output.*
-- TRUE
-- **FALSE (CORRECT ANSWER)**
+1. True.
+1. False.
 
-*A cryptographic hash function is reversible.*
-- TRUE
-- **FALSE (CORRECT ANSWER)**
+<details><summary>See correct answer</summary>
 
-*Select the correct statement about hash functions.*
-- Hash functions can be reversed to reconstruct the original input
-- The length of the hash digest is determined by the input
-- **Hash functions produce a fixed-length output (CORRECT ANSWER)**
+2. False.
+</details>
 
-**Sub-Unit 2**
+### A cryptographic hash function is reversible.
 
-*What does the "avalanche effect" refer to in hash functions?*
-- A gradual decrease in the performance of a hash function over time
-- The ability of a hash function to produce consistent outputs despite changes in inputs
-- **When a tiny change in the input results in a significant change in output (CORRECT ANSWER)**
-- An increase in the length of the hash digest to enhance the security of the hash function
+1. True.
+1. False.
 
-*In a cryptographic hash function, the avalanche effect occurs when a tiny change in the input results in a significant change in the output.*
-- **TRUE (CORRECT ANSWER)**
-- FALSE
+<details><summary>See correct answer</summary>
 
-**Sub-Unit 3**
-*Hash functions need to be tamper-resistant. For instance, it should be infeasible to find out the original message from the message’s hash value. How is this type of resistance typically referred to?*
-- Primary resistance
-- **Preimage resistance (CORRECT ANSWER)**
-- Weak collision resistance
-- Collision resistance
+2. False.
+</details>
 
-**Sub-Unit 4**
-*What is the primary difference between second preimage resistance and collision resistance in hash functions?
-Select two of the following:*
-- **Second preimage resistance requires a known hash digest of an existing message, while collision resistance does not (CORRECT ANSWER)**
-- Second preimage resistance is necessary for digital signatures, while collision resistance is not
-- Second preimage resistance is easier to achieve compared to collision resistance
-- **Second preimage resistance assumes that the attacker has a hash digest of an existing message, while collision resistance attempts to find any two messages that yield the same digest (CORRECT ANSWER)**
+### Select the correct statement about hash functions.
 
-*Which property is considered a stronger requirement for a hash function: second preimage resistance or collision resistance?*
-- Second Preimage Resistance
-- **Collision Resistance (CORRECT ANSWER)**
-- Both properties are equally strong
+1. Hash functions can be reversed to reconstruct the original input.
+1. The length of the hash digest is determined by the input.
+1. Hash functions produce a fixed-length output.
 
-**Sub-Unit 5**
+<details><summary>See correct answer</summary>
 
-*Which hash function was proven to not be resistant to collisions in 2004 and is no longer recommended?*
-- **MD5 (CORRECT ANSWER)**
-- SHA-0
-- SHA-1
-- SHA-2
+3. Hash functions produce a fixed-length output.
+</details>
 
-**Sub-Unit 6**
+### What does the "avalanche effect" refer to in hash functions?
 
-*What are the primary advantages of storing hash values of passwords instead of storing passwords in cleartext?*
-- **It ensures that the original passwords remain confidential even if the database is compromised (CORRECT ANSWER)**
-- It eliminates the need for users to remember their passwords
-- It allows the passwords to be easily decrypted in case of forgotten passwords
+1. A gradual decrease in the performance of a hash function over time.
+1. The ability of a hash function to produce consistent outputs despite changes in inputs.
+1. When a tiny change in the input results in a significant change in output.
+1. An increase in the length of the hash digest to enhance the security of the hash function.
 
-*Select two correct statements about the use of hash functions and data integrity checks.
-Using hash functions for data integrity checks:*
-- **Will detect any changes to an original text (CORRECT ANSWER)**
-- Will provide assurance about the originality of text
-- **Can generate checksums for large documents (CORRECT ANSWER)**
-- Is the least popular application of hash functions as it is difficult to action
+<details><summary>See correct answer</summary>
 
+3. When a tiny change in the input results in a significant change in output.
+</details>
+
+### In a cryptographic hash function, the avalanche effect occurs when a tiny change in the input results in a significant change in the output.
+
+1. True.
+1. False.
+
+<details><summary>See correct answer</summary>
+
+1. True.
+</details>
+
+### Hash functions need to be tamper-resistant. For instance, it should be infeasible to find out the original message from the message’s hash value. How is this type of resistance typically referred to?
+
+1. Primary resistance.
+1. Preimage resistance.
+1. Weak collision resistance.
+1. Collision resistance.
+
+<details><summary>See correct answer</summary>
+
+2. Preimage resistance.
+</details>
+
+### What is the primary difference between second preimage resistance and collision resistance in hash functions?
+
+> [!TIP]
+> Select two of the following.
+
+- [ ] Second preimage resistance requires a known hash digest of an existing message, while collision resistance does not.
+- [ ] Second preimage resistance is necessary for digital signatures, while collision resistance is not.
+- [ ] Second preimage resistance is easier to achieve compared to collision resistance.
+- [ ] Second preimage resistance assumes that the attacker has a hash digest of an existing message, while collision resistance attempts to find any two messages that yield the same digest.
+
+<details><summary>See correct answer</summary>
+
+- [x] Second preimage resistance requires a known hash digest of an existing message, while collision resistance does not.
+- [x] Second preimage resistance assumes that the attacker has a hash digest of an existing message, while collision resistance attempts to find any two messages that yield the same digest.
+</details>
+
+### Which property is considered a stronger requirement for a hash function: second preimage resistance or collision resistance?
+
+1. Second Preimage Resistance.
+1. Collision Resistance.
+1. Both properties are equally strong.
+
+<details><summary>See correct answer</summary>
+
+2. Collision Resistance.
+</details>
+
+### Which hash function was proven to not be resistant to collisions in 2004 and is no longer recommended?
+
+1. MD5.
+1. SHA-0.
+1. SHA-1.
+1. SHA-2.
+
+<details><summary>See correct answer</summary>
+
+1. MD5
+</details>
+
+### What are the primary advantages of storing hash values of passwords instead of storing passwords in cleartext?
+
+1. It ensures that the original passwords remain confidential even if the database is compromised.
+1. It eliminates the need for users to remember their passwords.
+1. It allows the passwords to be easily decrypted in case of forgotten passwords.
+
+<details><summary>See correct answer</summary>
+
+1. It ensures that the original passwords remain confidential even if the database is compromised.
+</details>
+
+### Select two correct statements about the use of hash functions in the context of data integrity checks.
+
+- [ ] They detect any changes to an original text.
+- [ ] They provide assurance about the originality of text.
+- [ ] They can generate checksums for large documents.
+- [ ] They are the least popular application of hash functions as it is difficult to action.
+
+<details><summary>See correct answer</summary>
+
+- [x] They detect any changes to an original text.
+- [x] They can generate checksums for large documents.
+</details>

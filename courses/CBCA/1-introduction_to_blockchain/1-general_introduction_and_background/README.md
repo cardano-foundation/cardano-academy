@@ -155,125 +155,201 @@ Let’s look at the different consensus protocols on this chart, and give a smal
 
 On this chart, you can see a variety of consensus algorithms mapped out along the dimensions of performance and scalability. Performance is expressed in transactions per second, TPS, while scalability corresponds to the number of nodes.
 
-As you can see, standard BFT or Byzantine Fault-Tolerant protocols provide very high throughput but work with only a small number of nodes. Conversely, the standard proof-of-work protocol used in the Bitcoin network can handle a large number of nodes, but throughput is low.
+As you can see, standard BFT or Byzantine Fault-Tolerant protocols provide very high throughput but work with only a small number of nodes [^5]. Conversely, the standard proof-of-work protocol used in the Bitcoin network can handle a large number of nodes, but throughput is low.
 
 The holy grail is to increase the number on both dimensions, getting more nodes in the network as well as more transactions per second. We’ll be examining attempts to climb into the top right corner of this chart in the coming units. In particular, when we look into the evolution of blockchain from first to third generation along this core challenge of scalability. We will also discuss consensus algorithms in more detail in other units.
 
 ![illustration 1.1.9.png](./assets/1.1.9.png)
 
 ## Review
+
 With that, we’ve come to the end of the first unit. Understanding these concepts gives a solid context for what comes next. Let’s quickly review what we have covered so far:
 
 In this unit, we looked at the major differences between centralized, decentralized, and distributed networks. We also considered the Byzantine Generals Problem along with Byzantine Failures, Crash Fault Tolerance, and Byzantine Fault Tolerance. Finally, we have learned how Bitcoin and blockchain introduced a new class of consensus protocols, proof-of-X, or PoX, protocols, enabling consensus to be achieved at a larger scale in a decentralized network.
 
 And with that, we will see you in the next unit!
 
-## References
-
-[Ref.1.2]  Apt, Krzysztof R., Ernst-Rüdiger Olderog, and K. R. Apt., “Verification of sequential and concurrent programs.” Chapter 11: Distributed Programs, London: Springer, 2009. <br>
-[Ref.1.3] Lamport, L.; Shostak, R.; Pease, M., "The Byzantine Generals Problem." ACM Transactions on Programming Languages and Systems. 4 (3): 382–401. July 1982. <br>
-[Ref.1.4]  Baran, P., "On Distributed Communications Networks." IEEE Transactions on Communications Systems, vol. 12, no. 1, pp. 1-9, March 1964. <br>
-[Ref.1.5] Fischer, M.J., Lynch, N.A. and Paterson, M.S., “Impossibility of distributed consensus with one faulty process.” Journal of the ACM (JACM), 32(2), pp.374-382, 1985.<br>
-[Ref.1.6] Vukolić, M. “The Quest for Scalable Blockchain Fabric: Proof-of-Work vs. BFT Replication.” International workshop on open problems in network security, pp. 112-125. Springer, Cham, 2015. <br>
-
 ## Questions
 
-**Sub-Unit 1**
+### Why is decentralization important in public permissionless ledgers?
 
-*Why is decentralization important in public permissionless ledgers?*
-- It eliminates the need for consensus algorithms
-- **It reduces the risk of system compromise (CORRECT ANSWER)**
-- It limits the number of entities with decision-making power
+1. It eliminates the need for consensus algorithms
+1. It reduces the risk of system compromise
+1. It limits the number of entities with decision-making power
 
-*Decentralization reduces risk in a system by:*
-- **Distributing decision-making power instead of having a single point of failure (CORRECT ANSWER)**
-- Requiring a central authority to oversee decision-making
-- Eliminating the need for consensus algorithms and enabling faster decision-making
+<details><summary>See correct answer</summary>
 
-**Sub-Unit 2**
+2. It reduces the risk of system compromise
+</details>
 
-*What’s a common example used to illustrate challenges related to consensus algorithms?*
-- Byzantine Generic Problem
-- **Byzantine Generals Problem (CORRECT ANSWER)**
-- Byzantine Army Problem
-- Byzantine Fault-Tolerant
+### Decentralization reduces risk in a system by...
 
+1. Distributing decision-making power instead of having a single point of failure
+1. Requiring a central authority to oversee decision-making
+1. Eliminating the need for consensus algorithms and enabling faster decision-making
 
-*What is the role of consensus algorithms in blockchain technology?*
-- **They provide a way for different components to achieve agreement (CORRECT ANSWER)**
-- They encrypt information to ensure privacy of all users
-- They eliminate the need for data replication across multiple servers
+<details><summary>See correct answer</summary>
 
-**Sub-Unit 3**
+1. Distributing decision-making power instead of having a single point of failure
+</details>
 
-*In a typical blockchain:*
-- Decisions are made by an elected leading authority
-- Decisions are made at random
-- There’s no decision to be made
-- **Decisions are reached through a consensus algorithm (CORRECT ANSWER)**
+### What’s a common example used to illustrate challenges related to consensus algorithms?
 
-*Why is the distribution of components important in a distributed system?*
-- Distribution ensures that all components operate at the same speed and efficiently
-- **Distribution ensures better resilience of the system to faults (CORRECT ANSWER)**
-- Distribution eliminates the need for synchronization and coordination among components
+1. Byzantine Generic Problem
+1. Byzantine Generals Problem
+1. Byzantine Army Problem
+1. Byzantine Fault-Tolerant
 
-*Take a look at the image of a distributed network below and select the missing label. (Image Question)*
-- Defender
-- **Communication channel (CORRECT ANSWER)**
-- Chain of blocks
+<details><summary>See correct answer</summary>
 
-**Sub-Unit 4**
+2. Byzantine Generals Problem
+</details>
 
-*A network is a system of interconnected nodes that share resources such as storage, processing units, and communication channel bandwidth.*
-- **TRUE (CORRECT ANSWER)**
-- FALSE
+### What is the role of consensus algorithms in blockchain technology?
 
-*Generally, the arrangement of networks can be grouped into three categories. Please select all that apply:*
-- **Centralized (CORRECT ANSWER)**
-- Communication channels
-- **Decentralized (CORRECT ANSWER)**
-- **Distributed (CORRECT ANSWER)**
-- Components
+1. They provide a way for different components to achieve agreement.
+1. They encrypt information to ensure privacy of all users.
+1. They eliminate the need for data replication across multiple servers.
 
-*Select two correct statements about different network types.*
-- **Decentralized networks provide better tolerance to failures (CORRECT ANSWER)**
-- In centralized networks, no single node controls the network
-- Distributed networks are the least resilient to faults
-- **A centralized network does not require consensus (CORRECT ANSWER)**
+<details><summary>See correct answer</summary>
 
-*A decentralized network does not require consensus, as all nodes on the network follow the directions of the central node.*
-- TRUE
-- **FALSE (CORRECT ANSWER)**
+2. They provide a way for different components to achieve agreement.
+</details>
 
-**Sub-Unit 6**
+### In a typical blockchain:*
 
-**Select the correct statement about throughput, latency and scalability.**
-- Scalability refers to maintaining less throughput as the number of nodes in a network increases
-- Latency is the delay in a node coming online
-- **Throughput is the rate a consensus algorithm delivers a decision (CORRECT ANSWER)**
+1. Decisions are made by an elected leading authority
+1. Decisions are made at random
+1. There’s no decision to be made
+1. Decisions are reached through a consensus algorithm.
 
-*Security is an important property when designing a consensus algorithm. It refers to a decision that will eventually be made.*
-- TRUE
-- **FALSE (CORRECT ANSWER)**
+<details><summary>See correct answer</summary>
 
-**Sub-Unit 7**
+4. Decisions are reached through a consensus algorithm.
+</details>
 
-*Select the two correct statements about Crash Fault Tolerant (CFT) and Byzantine Fault Tolerance (BFT).*
-- **A CFT consensus algorithm can handle scenarios where a general is not always reliable (CORRECT ANSWER)**
-- The term for when a loyal general communicates is called a Byzantine failure
-- **A BFT consensus algorithm is designed to handle scenarios where any general may betray loyal generals by disrupting communications (CORRECT ANSWER)**
-- A BFT system cannot continue operating after a failure
+### Why is the distribution of components important in a distributed system?
 
-*Which two of the following options demonstrate why Byzantine Fault-Tolerant consensus algorithms are important?*
-- **They allow the network to continue operating even if some of the nodes fail (CORRECT ANSWER)**
-- **They allow the network to continue operating even if some of the nodes act maliciously (CORRECT ANSWER)**
-- It allows the network to continue scaling even if there are no nodes online
-- It allows the creation of the network even if there are no nodes online
+1. Distribution ensures that all components operate at the same speed and efficiently.
+1. Distribution ensures better resilience of the system to faults.
+1. Distribution eliminates the need for synchronization and coordination among components.
 
-**Sub-Unit 8**
+<details><summary>See correct answer</summary>
 
-*What is the significance of the Bitcoin network's launch in January 2009?*
-- It marked the first time a country had issued a digital currency
-- It established the first global network for sharing music files
-- It introduced the first online platform for stock trading
-- **It established the first public and permissionless blockchain (CORRECT ANSWER)**
+2. Distribution ensures better resilience of the system to faults.
+</details>
+
+### A network is a system of interconnected nodes that share resources such as storage, processing units, and communication channel bandwidth.
+
+1. True
+1. False
+
+<details><summary>See correct answer</summary>
+
+1. True
+</details>
+
+### Generally, the arrangement of networks can be grouped into three categories. Please select all that apply:
+
+- [ ] Centralized
+- [ ] Communication channels
+- [ ] Decentralized
+- [ ] Distributed
+- [ ] Components
+
+<details><summary>See correct answer</summary>
+
+- [x] Centralized
+- [x] Decentralized
+- [x] Distributed
+</details>
+
+### Select two correct statements about different network types.
+
+1. Decentralized networks provide better tolerance to failures.
+1. In centralized networks, no single node controls the network.
+1. Distributed networks are the least resilient to faults.
+1. A centralized network does not require consensus.
+
+<details><summary>See correct answer</summary>
+
+1. Decentralized networks provide better tolerance to failures.
+4. A centralized network does not require consensus.
+</details>
+
+### A decentralized network does not require consensus, as all nodes on the network follow the directions of the central node.
+
+1. True
+1. False
+
+<details><summary>See correct answer</summary>
+
+2. False
+</details>
+
+### Select the correct statement about throughput, latency and scalability.
+
+1. Scalability refers to maintaining less throughput as the number of nodes in a network increases.
+1. Latency is the delay in a node coming online.
+1. Throughput is the rate a consensus algorithm delivers a decision.
+
+<details><summary>See correct answer</summary>
+
+3. Throughput is the rate a consensus algorithm delivers a decision.
+</details>
+
+### Security is an important property when designing a consensus algorithm. It refers to a decision that will eventually be made.
+
+1. True
+1. False
+
+<details><summary>See correct answer</summary>
+
+2. False
+</details>
+
+### Select the two correct statements about Crash Fault Tolerant (CFT) and Byzantine Fault Tolerance (BFT).
+
+- [ ] A CFT consensus algorithm can handle scenarios where a general is not always reliable.
+- [ ] The term for when a loyal general communicates is called a Byzantine failure.
+- [ ] A BFT consensus algorithm is designed to handle scenarios where any general may betray loyal generals by disrupting communications.
+- [ ] A BFT system cannot continue operating after a failure.
+
+<details><summary>See correct answer</summary>
+
+- [x] A CFT consensus algorithm can handle scenarios where a general is not always reliable.
+- [x] A BFT consensus algorithm is designed to handle scenarios where any general may betray loyal generals by disrupting communications.
+</details>
+
+### Which two of the following options demonstrate why Byzantine Fault-Tolerant consensus algorithms are important?
+
+- [ ] They allow the network to continue operating even if some of the nodes fail.
+- [ ] They allow the network to continue operating even if some of the nodes act maliciously.
+- [ ] It allows the network to continue scaling even if there are no nodes online.
+- [ ] It allows the creation of the network even if there are no nodes online.
+
+<details><summary>See correct answer</summary>
+
+- [x] They allow the network to continue operating even if some of the nodes fail.
+- [x] They allow the network to continue operating even if some of the nodes act maliciously.
+</details>
+
+### What is the significance of the Bitcoin network's launch in January 2009?
+
+1. It marked the first time a country had issued a digital currency
+1. It established the first global network for sharing music files
+1. It introduced the first online platform for stock trading
+1. It established the first public and permissionless blockchain
+
+<details><summary>See correct answer</summary>
+
+4. It established the first public and permissionless blockchain
+</details>
+
+## References
+
+[^1]: Van Steen, M. and Tanenbaum, A., “Distributed systems.” Leiden, The Netherlands: Maarten van Steen, 2017.
+[^2]: Apt, Krzysztof R., Ernst-Rüdiger Olderog, and K. R. Apt., “Verification of sequential and concurrent programs.” Chapter 11: Distributed Programs, London: Springer, 2009.
+[^3]: Lamport, L.; Shostak, R.; Pease, M., "The Byzantine Generals Problem." ACM Transactions on Programming Languages and Systems. 4 (3): 382–401. July 1982.
+[^4]: Baran, P., "On Distributed Communications Networks." IEEE Transactions on Communications Systems, vol. 12, no. 1, pp. 1-9, March 1964.
+[^5]: Vukolić, M. “The Quest for Scalable Blockchain Fabric: Proof-of-Work vs. BFT Replication.” International workshop on open problems in network security, pp. 112-125. Springer, Cham, 2015.

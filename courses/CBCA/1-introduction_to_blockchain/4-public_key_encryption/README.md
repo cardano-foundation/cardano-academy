@@ -135,79 +135,144 @@ See you next time.
 
 ## Questions
 
-**Sub-Unit 1**
-*Which of the following images accurately depicts the flow of an encryption scheme? (Image Question)*
+### Which of the following images accurately depicts the flow of an encryption scheme?
 
-![illustration 1.4.9.png](./assets/1.4.9.png)
+1. <img  alt="illustration 1.4.9.png"  src="./assets/1.4.9.png" width="400" />
+1. <img alt="illustration 1.4.10.png" src="./assets/1.4.10.png" width="400" />
+1. <img alt="illustration 1.4.11.png" src="./assets/1.4.11.png" width="400" />
 
-![illustration 1.4.10.png](./assets/1.4.10.png)
+<details><summary>See correct answer</summary>
 
-![illustration 1.4.11.png](./assets/1.4.11.png)
+2. <img alt="illustration 1.4.10.png" src="./assets/1.4.10.png" width="400" />
+</details>
 
-B. is the correct image/answer
+### What is the role of the encryption key in the encryption process?
 
-*What is the role of the encryption key in the encryption process?*
-- It serves as a delivery address to send the message to
-- It determines how much of the ciphertext will be revealed
-- **It allows only the participants in the conversation to decrypt the message (CORRECT ANSWER)**
+1. It serves as a delivery address to send the message to.
+1. It determines how much of the ciphertext will be revealed.
+1. It allows only the participants in the conversation to decrypt the message.
 
-**Sub-Unit 2**
+<details><summary>See correct answer</summary>
 
-*Symmetric encryption uses two different keys to encrypt and decrypt the data respectively.*
-- TRUE
-- **FALSE (CORRECT ANSWER)**
+3. It allows only the participants in the conversation to decrypt the message.
+</details>
 
-*Select the correct statement about symmetric encryption algorithms.*
-- They require no coordination between participants
-- **They are a fast and easy way to encrypt a cleartext message (CORRECT ANSWER)**
-- They are less likely to be decrypted by adversaries than other encryption algorithms
+### Symmetric encryption uses two different keys to encrypt and decrypt the data respectively.
 
-*What type of encryption algorithm does the following image depict? (Image Question)*
-![illustration 1.4.12.png](./assets/1.4.12.png)
+1. True.
+1. False.
 
-- **A symmetric-key algorithm (CORRECT ANSWER)**
-- An asymmetric-key algorithm
-- This could be either a symmetric or an asymmetric key algorithm
+<details><summary>See correct answer</summary>
 
-**Sub-Unit 3**
+2. False.
+</details>
 
-*Encryption encodes a message into text that can’t be understood. In asymmetric encryption:*
-- Both the sender and the receiver share a private key
-- There is only one key to encrypt and decrypt the message
-**- Both private keys and public keys can be used to encrypt and decrypt messages (CORRECT ANSWER)**
-- Messages can only be encrypted with a private key
+### Select the correct statement about symmetric encryption algorithms.
 
-*A private key should be shared with the recipient of the message
-- TRUE
-- **FALSE (CORRECT ANSWER)**
+1. They require no coordination between participants.
+1. They are a fast and easy way to encrypt a cleartext message.
+1. They are less likely to be decrypted by adversaries than other encryption algorithms.
 
-*In public key cryptography, both parties generate their own private key and associated public key from their private key.*
-- **TRUE (CORRECT ANSWER)**
-- FALSE
+<details><summary>See correct answer</summary>
 
-*How does asymmetric encryption differ from symmetric encryption regarding key sharing?*
-- Asymmetric encryption requires the exchange of a shared key
-- Asymmetric encryption uses a private key for encryption and a public key for decryption
-- **Asymmetric encryption does not require sharing a private key, but the public key is meant to be shared (CORRECT ANSWER)**
+2. They are a fast and easy way to encrypt a cleartext message.
+</details>
 
-**Sub-Unit 5**
+### What type of encryption algorithm does the following image depict?
 
-*The Elliptic Curve Digital Signature Algorithm (ECDSA) is an example of symmetric key algorithms.*
-- True
-- **False (CORRECT ANSWER)**
+<img alt="illustration 1.4.12.png" src="./assets/1.4.12.png" width="600" />
 
-*Which asymmetric encryption algorithm should you use if you’re looking for faster performance and smaller key sizes compared to RSA?*
-- AES
-- **ECC (CORRECT ANSWER)**
-- DES
+1. A symmetric-key algorithm.
+1. An asymmetric-key algorithm.
+1. This could be either a symmetric or an asymmetric key algorithm.
 
-*Which asymmetric encryption algorithm is commonly used for digitally signing cryptocurrency transactions, such as in Bitcoin?*
-- RSA
-- ECC
-- **ECDSA (CORRECT ANSWER)**
 
-**Sub-Unit 7**
+<details><summary>See correct answer</summary>
 
-*Quantum computers may render some encryption algorithms obsolete as they can factorize numbers very efficiently thus being able to break some algorithms**
-- **TRUE (CORRECT ANSWER)**
-- FALSE
+1. A symmetric-key algorithm.
+</details>
+
+### Encryption encodes a message into text that can’t be understood. In asymmetric encryption...
+
+1. both the sender and the receiver share a private key.
+1. there is only one key to encrypt and decrypt the message.
+1. both private keys and public keys can be used to encrypt and decrypt messages.
+1. messages can only be encrypted with a private key.
+
+<details><summary>See correct answer</summary>
+
+3. Both private keys and public keys can be used to encrypt and decrypt messages.
+</details>
+
+### A private key should be shared with the recipient of the message.
+
+1. True.
+1. False.
+
+<details><summary>See correct answer</summary>
+
+2. False.
+</details>
+
+### In public key cryptography, both parties generate their own private key and associated public key from their private key.
+
+1. True.
+1. False.
+
+<details><summary>See correct answer</summary>
+
+1. True.
+</details>
+
+### How does asymmetric encryption differ from symmetric encryption regarding key sharing?
+
+1. Asymmetric encryption requires the exchange of a shared key.
+1. Asymmetric encryption uses a private key for encryption and a public key for decryption.
+1. Asymmetric encryption does not require sharing a private key, but the public key is meant to be shared.
+
+<details><summary>See correct answer</summary>
+
+3. Asymmetric encryption does not require sharing a private key, but the public key is meant to be shared.
+</details>
+
+### The Elliptic Curve Digital Signature Algorithm (ECDSA) is an example of symmetric key algorithms.
+
+1. True.
+1. False.
+
+<details><summary>See correct answer</summary>
+
+2. False
+</details>
+
+### Which asymmetric encryption algorithm should you use if you’re looking for faster performance and smaller key sizes compared to RSA?
+
+1. AES.
+1. ECC.
+1. DES.
+
+<details><summary>See correct answer</summary>
+
+2. ECC.
+</details>
+
+### Which asymmetric encryption algorithm is commonly used for digitally signing cryptocurrency transactions, such as in Bitcoin?
+
+1. RSA.
+1. ECC.
+1. ECDSA.
+
+<details><summary>See correct answer</summary>
+
+3. ECDSA.
+</details>
+
+### Quantum computers may render some encryption algorithms obsolete as they can factorize numbers very efficiently thus being able to break some algorithms.
+
+1. True.
+1. False.
+
+<details><summary>See correct answer</summary>
+
+1. True.
+</details>

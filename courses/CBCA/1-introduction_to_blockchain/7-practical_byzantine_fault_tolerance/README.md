@@ -131,118 +131,223 @@ In this unit we have covered consensus in distributed systems. We focused on Pra
 - [An introduction to PBFT consensus](https://sawtooth.hyperledger.org/docs/1.2/pbft/introduction-to-sawtooth-pbft.html)
 - [Internet Time Synchronization: the Network Time Protocol](https://www.rfc-editor.org/rfc/rfc1129.pdf)
 
-## Questions
+### What is the main goal of a consensus algorithm?
 
-**Sub-Unit 1**
+1. To resolve conflicts between individuals.
+1. To reach agreement between actors on a certain value.
+1. To enhance connectivity in a peer-to-peer network.
+1. To synchronize clocks between machines.
 
-*What is the main goal of a consensus algorithm?**
-- To resolve conflicts between individuals
-- **To reach agreement between actors on a certain value (CORRECT ANSWER)**
-- To enhance connectivity in a peer-to-peer network
-- To synchronize clocks between machines
+<details><summary>See correct answer</summary>
 
-*Select the correct statements about the Network Time Protocol (NTP).*
-- The NTP is one of the newest distributed networking protocols
-- **Each layer of the NTP will regularly synchronize its clocks with the layer above (CORRECT ANSWER)**
-- **The higher the clocks are in the hierarchy, the more precise they are (CORRECT ANSWER)**
-- The atomic clocks are considered the most inaccurate source of time
+2. To reach agreement between actors on a certain value.
+</details>
 
-*How do computers usually synchronize clocks around the world?*
-- Clocks are calibrated once by the manufacturer with pre-configured timezones
-- They rely on blockchain technology to reach consensus on the current universal time
-- It’s a natural physical phenomenon that happens when electrifying quartz at a certain voltage
-- **They use a networking protocol called NTP to synchronize to the universal time (CORRECT ANSWER)**
+### Select the correct statements about the Network Time Protocol (NTP).
 
-*Why do many distributed systems prefer to use asynchronous protocols over synchronous protocols, despite the complexity of designing asynchronous systems?*
-- Asynchronous protocols are used because they make consensus easy to achieve in distributed systems
-- **Asynchronous protocols accurately reflect the imperfections of real-world systems, such as faults and delays (CORRECT ANSWER)**
-- Asynchronous protocols are cheaper to implement and require less computational power
+- [ ] The NTP is one of the newest distributed networking protocols.
+- [ ] Each layer of the NTP will regularly synchronize its clocks with the layer above.
+- [ ] The higher the clocks are in the hierarchy, the more precise they are.
+- [ ] The atomic clocks are considered the most inaccurate source of time.
 
-*True or False. In a fully asynchronous networking system, responses to requests are always received before a certain known delay.*
-- True
-- **False (CORRECT ANSWER)**
+<details><summary>See correct answer</summary>
 
-**Sub-Unit 2**
+- [x] Each layer of the NTP will regularly synchronize its clocks with the layer above.
+- [x] The higher the clocks are in the hierarchy, the more precise they are.
+</details>
 
-*What is the difference between synchronous and asynchronous systems?*
-- Synchronous systems require a globally synchronized clock, while asynchronous systems do not
-- Synchronous systems rely on the chain difficulty being adjusted by the protocol, while asynchronous systems do not
-- **Synchronous systems have a defined time bound between sending a request and receiving a response, while asynchronous systems have no such upper bound (CORRECT ANSWER)**
-- Synchronous systems only operate in blockchain technology, while asynchronous systems are only found in Internet protocols
+### How do computers usually synchronize clocks around the world?
 
-*Select the correct statements about the Network Time Protocol (NTP).*
-- The NTP is one of the newest distributed networking protocols
-- **Each layer of the NTP will regularly synchronize its clocks with the layer above (CORRECT ANSWER)**
-- **The higher the clocks are in the hierarchy, the more precise they are (CORRECT ANSWER)**
-- The atomic clocks are considered the most inaccurate source of time
+1. Clocks are calibrated once by the manufacturer with pre-configured timezones.
+1. They rely on blockchain technology to reach consensus on the current universal time.
+1. It’s a natural physical phenomenon that happens when electrifying quartz at a certain voltage.
+1. They use a networking protocol called NTP to synchronize to the universal time.
 
-*How do computers usually synchronize clocks around the world?*
-- Clocks are calibrated once by the manufacturer with pre-configured timezones
-- They rely on blockchain technology to reach consensus on the current universal time
-- It’s a natural physical phenomenon that happens when electrifying quartz at a certain voltage
-- **They use a networking protocol called NTP to synchronize to the universal time (CORRECT ANSWER)**
+<details><summary>See correct answer</summary>
 
-*Why do many distributed systems prefer to use asynchronous protocols over synchronous protocols, despite the complexity of designing asynchronous systems?*
-- Asynchronous protocols are used because they make consensus easy to achieve in distributed systems
-- **Asynchronous protocols accurately reflect the imperfections of real-world systems, such as faults and delays (CORRECT ANSWER)**
-- Asynchronous protocols are cheaper to implement and require less computational power
+4. They use a networking protocol called NTP to synchronize to the universal time.
+</details>
 
-*True or False. In a fully asynchronous networking system, responses to requests are always received before a certain known delay.*
-- True
-- **False (CORRECT ANSWER)**
+### Why do many distributed systems prefer to use asynchronous protocols over synchronous protocols, despite the complexity of designing asynchronous systems?
 
-**Sub-Unit 3**
+1. Asynchronous protocols are used because they make consensus easy to achieve in distributed systems.
+1. Asynchronous protocols accurately reflect the imperfections of real-world systems, such as faults and delays.
+1. Asynchronous protocols are cheaper to implement and require less computational power.
 
-*What does ‘PBFT’ stand for?*
-- Provably Better Fault Tolerance
-- Pure Blazing Fast Transactions
-- **Practical Byzantine Fault Tolerance (CORRECT ANSWER)**
-- Pragmatic Byzantine Fault Tolerance
+<details><summary>See correct answer</summary>
 
-*True or False: It is impossible to design a distributed consensus algorithm in a fully asynchronous setting.*
-- **True (CORRECT ANSWER)**
-- False
+2. Asynchronous protocols accurately reflect the imperfections of real-world systems, such as faults and delays.
+</details>
 
-*What is the core assumption of PBFT’s security model?*
-- **At most one-third of the actors in the system are malicious (CORRECT ANSWER)**
-- At most half of the actors in the system are malicious
-- At least one actor in the system is honest
-- No actor in the system is malicious
+### In a fully asynchronous networking system, responses to requests are always received before a certain known delay.
 
-**Sun-Unit 4**
+1. True.
+1. False.
 
-*In a PBFT algorithm, how many consistent results must be gathered by the original sender to safely assume it has gotten the right answer, and why?*
-- One-third of the nodes, because no more than one-third of the nodes can be faulty
-- **One-third plus one of the nodes, because no more than one-third of the nodes can be faulty (CORRECT ANSWER)**
-- One-half of the nodes, because no more than half of the nodes can be faulty
-- All of the nodes, because no nodes can be faulty
+<details><summary>See correct answer</summary>
 
-*In the PBFT algorithm, what happens if replicas do not receive the request from the primary node that they were expecting?*
-- The replicas immediately send the result to the user
-- The replicas ignore the lack of communication and continue waiting
-- **The replicas assume the primary node is faulty and elect a new primary node (CORRECT ANSWER)**
-- The replicas stop the process and fail the transaction
+2. False.
+</details>
 
-*In PBFT, what’s the role of the primary node?*
-- It gathers votes from replicas, tallies, and forwards the result back to the client
-- **It propagates client’s requests to replicas, thus initiating the consensus procedure (CORRECT ANSWER)**
-- It serves as a gatekeeper for new replicas wanting to join the network
-- It is the one that authorizes state changes in the system
+### What is the difference between synchronous and asynchronous systems?
 
-**Sun-Unit 5**
+1. Synchronous systems require a globally synchronized clock, while asynchronous systems do not.
+1. Synchronous systems rely on the chain difficulty being adjusted by the protocol, while asynchronous systems do not.
+1. Synchronous systems have a defined time bound between sending a request and receiving a response, while asynchronous systems have no such upper bound.
+1. Synchronous systems only operate in blockchain technology, while asynchronous systems are only found in Internet protocols.
 
-*Vote-based consensus is a consensus method:*
-- **Where replicas actively confirm an outcome proposed by a primary node, involving multiple rounds of communication between all nodes (CORRECT ANSWER)**
-- That relies solely on the primary node, without the need for communication with replicas
-- That changes primary nodes frequently, regardless of defects or unresponsiveness
-- That minimizes communication between nodes and reaches finality with only one round of voting
+<details><summary>See correct answer</summary>
 
-*Select the correct statements regarding vote-based consensus.*
-- It requires minimal communication and easily scales to thousands of nodes
-- **It creates challenges in communication because of many messages for consensus (CORRECT ANSWER)**
-- **It makes adding new nodes complex since existing nodes must approve the change (CORRECT ANSWER)**
-- It only relies on the primary node to establish consensus without any need for validation by replicas
+3. Synchronous systems have a defined time bound between sending a request and receiving a response, while asynchronous systems have no such upper bound.
+</details>
 
-*True or False. Vote-based consensus does not scale well to a high number of nodes.*
-- **True (CORRECT ANSWER)**
-- False
+### Select the correct statements about the Network Time Protocol (NTP).
+
+- [ ] The NTP is one of the newest distributed networking protocols.
+- [ ] Each layer of the NTP will regularly synchronize its clocks with the layer above.
+- [ ] The higher the clocks are in the hierarchy, the more precise they are.
+- [ ] The atomic clocks are considered the most inaccurate source of time.
+
+<details><summary>See correct answer</summary>
+
+- [x] Each layer of the NTP will regularly synchronize its clocks with the layer above.
+- [x] The higher the clocks are in the hierarchy, the more precise they are.
+</details>
+
+### How do computers usually synchronize clocks around the world?
+
+1. Clocks are calibrated once by the manufacturer with pre-configured timezones.
+1. They rely on blockchain technology to reach consensus on the current universal time.
+1. It’s a natural physical phenomenon that happens when electrifying quartz at a certain voltage.
+1. They use a networking protocol called NTP to synchronize to the universal time.
+
+<details><summary>See correct answer</summary>
+
+4. They use a networking protocol called NTP to synchronize to the universal time.
+</details>
+
+### Why do many distributed systems prefer to use asynchronous protocols over synchronous protocols, despite the complexity of designing asynchronous systems?
+
+1. Asynchronous protocols are used because they make consensus easy to achieve in distributed systems.
+1. Asynchronous protocols accurately reflect the imperfections of real-world systems, such as faults and delays.
+1. Asynchronous protocols are cheaper to implement and require less computational power.
+
+<details><summary>See correct answer</summary>
+
+2. Asynchronous protocols accurately reflect the imperfections of real-world systems, such as faults and delays.
+</details>
+
+### In a fully asynchronous networking system, responses to requests are always received before a certain known delay.
+
+1. True.
+1. False.
+
+<details><summary>See correct answer</summary>
+
+2. False.
+</details>
+
+### What does ‘PBFT’ stand for?
+
+1. Provably Better Fault Tolerance.
+1. Pure Blazing Fast Transactions.
+1. Practical Byzantine Fault Tolerance.
+1. Pragmatic Byzantine Fault Tolerance.
+
+<details><summary>See correct answer</summary>
+
+3. Practical Byzantine Fault Tolerance.
+</details>
+
+### It is impossible to design a distributed consensus algorithm in a fully asynchronous setting.
+
+1. True.
+1. False.
+
+<details><summary>See correct answer</summary>
+
+1. True.
+</details>
+
+### What is the core assumption of PBFT’s security model?
+
+1. At most one-third of the actors in the system are malicious.
+1. At most half of the actors in the system are malicious.
+1. At least one actor in the system is honest.
+1. No actor in the system is malicious.
+
+<details><summary>See correct answer</summary>
+
+1. At most one-third of the actors in the system are malicious.
+</details>
+
+### In a PBFT algorithm, how many consistent results must be gathered by the original sender to safely assume it has gotten the right answer, and why?
+
+1. One-third of the nodes, because no more than one-third of the nodes can be faulty.
+1. One-third plus one of the nodes, because no more than one-third of the nodes can be faulty.
+1. One-half of the nodes, because no more than half of the nodes can be faulty.
+1. All of the nodes, because no nodes can be faulty.
+
+<details><summary>See correct answer</summary>
+
+2. One-third plus one of the nodes, because no more than one-third of the nodes can be faulty.
+</details>
+
+### In the PBFT algorithm, what happens if replicas do not receive the request from the primary node that they were expecting?
+
+1. The replicas immediately send the result to the user.
+1. The replicas ignore the lack of communication and continue waiting.
+1. The replicas assume the primary node is faulty and elect a new primary node.
+1. The replicas stop the process and fail the transaction.
+
+<details><summary>See correct answer</summary>
+
+3. The replicas assume the primary node is faulty and elect a new primary node.
+</details>
+
+### In PBFT, what’s the role of the primary node?
+
+1. It gathers votes from replicas, tallies, and forwards the result back to the client.
+1. It propagates client’s requests to replicas, thus initiating the consensus procedure.
+1. It serves as a gatekeeper for new replicas wanting to join the network.
+1. It is the one that authorizes state changes in the system.
+
+<details><summary>See correct answer</summary>
+
+2. It propagates client’s requests to replicas, thus initiating the consensus procedure.
+</details>
+
+### Vote-based consensus is a consensus method:
+
+1. Where replicas actively confirm an outcome proposed by a primary node, involving multiple rounds of communication between all nodes.
+1. That relies solely on the primary node, without the need for communication with replicas.
+1. That changes primary nodes frequently, regardless of defects or unresponsiveness.
+1. That minimizes communication between nodes and reaches finality with only one round of voting.
+
+<details><summary>See correct answer</summary>
+
+1. Where replicas actively confirm an outcome proposed by a primary node, involving multiple rounds of communication between all nodes.
+</details>
+
+### Select the correct statements regarding vote-based consensus.
+
+- [ ] It requires minimal communication and easily scales to thousands of nodes.
+- [ ] It creates challenges in communication because of many messages for consensus.
+- [ ] It makes adding new nodes complex since existing nodes must approve the change.
+- [ ] It only relies on the primary node to establish consensus without any need for validation by replicas.
+
+<details><summary>See correct answer</summary>
+
+- [x] It creates challenges in communication because of many messages for consensus.
+- [x] It makes adding new nodes complex since existing nodes must approve the change.
+</details>
+
+### True or False. Vote-based consensus does not scale well to a high number of nodes.
+
+1. True.
+1. False.
+
+<details><summary>See correct answer</summary>
+
+1. True.
+</details>

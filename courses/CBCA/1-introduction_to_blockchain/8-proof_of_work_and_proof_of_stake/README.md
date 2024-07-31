@@ -138,115 +138,214 @@ Giang-Truong Nguyen and Kyungbaek Kim (2018). A Survey about Consensus Algorithm
 
 ## Questions
 
-**Sub-Unit 1**
+### Select the two correct statements about proof of work and proof of stake systems.
 
-*Select the two correct statements about proof of work and proof of stake systems.*
-- Only proof of stake adds new blocks to a chain
-- **In proof of stake, “stake” refers to the underlying native currency of the network (CORRECT ANSWER)**
-- Block producers only contribute resources to the network in proof of work
-- **In proof of work, the resource block producers contribute to the network is quantified in hashing power (CORRECT ANSWER)**
+- [ ] Only proof of stake adds new blocks to a chain.
+- [ ] In proof of stake, “stake” refers to the underlying native currency of the network.
+- [ ] Block producers only contribute resources to the network in proof of work.
+- [ ] In proof of work, the resource block producers contribute to the network is quantified in hashing power.
 
-*What is the key difference between proof of work and other proof-based consensus algorithms, such as proof of stake?*
-- The assumption that non-malicious actors control the majority of the system
-- **The type of resource needed to achieve consensus (CORRECT ANSWER)**
-- The number of nodes required for consensus
-- The use of digital signatures for authentication
+<details><summary>See correct answer</summary>
 
-**Sub-Unit 2**
+- [x] In proof of stake, “stake” refers to the underlying native currency of the network.
+- [x] In proof of work, the resource block producers contribute to the network is quantified in hashing power.
+</details>
 
-*What is crucial about the “work” in proof-of-work consensus?*
-- It must use complex cryptographic functions
-- **It must be complex enough to take some time yet be feasible (CORRECT ANSWER)**-
-- It must be as fast as possible to perform
-- It can be made more efficient by adding more computing resources
+### What is the key difference between proof of work and other proof-based consensus algorithms, such as proof of stake?
 
-*True or False: Bitcoin invented proof of work.*
-- True
-- **False (CORRECT ANSWER)**
+1. The assumption that non-malicious actors control the majority of the system.
+1. The type of resource needed to achieve consensus.
+1. The number of nodes required for consensus.
+1. The use of digital signatures for authentication.
 
-*What is one of the most common drawbacks of the proof-of-work consensus algorithm, especially in the context of Bitcoin?*
-- It produces too many blocks over time
-- It becomes easier to falsify over time
-- **It consumes a significant amount of energy (CORRECT ANSWER)**
+<details><summary>See correct answer</summary>
 
-**Sub-Unit 3**
+2. The type of resource needed to achieve consensus.
+</details>
 
-*Select the correct statements about proof-of-stake consensus algorithms.*
-- In proof of stake, block producers are elected according to their hashing power
-- **In proof of stake, block producers will commit their own assets to the consensus protocol and are chosen proportionally to their commitment (CORRECT ANSWER)**
-- **Proof of work relies on physical resources such as mining rigs, while proof of stake uses a completely virtual resource called stake (CORRECT ANSWER)**
-- In proof of stake, block producers are elected based on their ownership of mining rigs
+### What is crucial about the “work” in proof-of-work consensus?
 
-*View the images below and select the one showcasing a proof-of-stake algorithm. (Image Question)*
+1. It must use complex cryptographic functions.
+1. It must be complex enough to take some time yet be feasible.
+1. It must be as fast as possible to perform.
+1. It can be made more efficient by adding more computing resources.
 
-![illustration 1.8.9.png](./assets/1.8.9.png)
+<details><summary>See correct answer</summary>
 
-- Image A shows a proof-of-stake algorithm
-- **Image B shows a proof-of-stake algorithm (CORRECT ANSWER)**
-- Both images show a proof-of-stake algorithm
+2. It must be complex enough to take some time yet be feasible.
+</details>
 
-*What is the fundamental principle of the "Follow-the-Satoshi" algorithm?*
-- The owner of the first Satoshi created in a block becomes the designated block producer
-- **The owner of a randomly picked Satoshi from all available coins becomes the designated block producer (CORRECT ANSWER)**
-- The owner of the last Satoshi created in a block becomes the designated block producer
+### Proof of work was invented for Bitcoin.
 
-*True or False: “Follow-the-Satoshi” is a methodology to create NFTs on Bitcoin.*
-- True
-- **False (CORRECT ANSWER)**
+1. True.
+1. False.
 
-*Select the correct statement that best describes a significant concern that relates to proof-of-stake systems.*
-- **Proof-of-stake systems can lead to a plutocratic aspect where the rich get richer, as block production rights are proportional to the stake owned (CORRECT ANSWER)**
-- Proof of stake has never used Initial Coin Offerings (ICOs) for bootstrapping and always relies on mining for token issuance
-- In proof-of-stake systems, block producers are chosen randomly without any regard to the amount of stake owned
+<details><summary>See correct answer</summary>
 
-*What is NOT true about proof-of-stake consensus?*
-- It requires a good source of randomness
-- It utilizes a virtual resource to choose block producers
-- **It can cope with arbitrarily many adversaries in the system (CORRECT ANSWER)**
-- It is more energy-efficient than typical proof of work
+2. False.
+</details>
 
-**Sub-Unit 4**
+### What is one of the most common drawbacks of the proof-of-work consensus algorithm, especially in the context of Bitcoin?
 
-*True or False: Proof of work and proof of stake both work like a lottery to elect a block producer.*
-- **True (CORRECT ANSWER)**
-- False
+1. It produces too many blocks over time.
+1. It becomes easier to falsify over time.
+1. It consumes a significant amount of energy.
 
-*Where does proof of work get its source of randomness for the leader election?*
-- From the content of blocks, transactions and other data from users
-- From the moment blocks are created
-- From the determinism of hashing functions
-- **From the uniformity and collision resistance of hashing functions (CORRECT ANSWER)**
+<details><summary>See correct answer</summary>
 
-*What is the name of the cryptographic tool that several major proof-of-stake blockchain use to generate randomness?*
-- PBFT
-- **VRF (CORRECT ANSWER)**
-- Follow-the-Satoshi
-- Hashing
+3. It consumes a significant amount of energy.
+</details>
 
-**Sub-Unit 5**
+### Select the correct statements about proof-of-stake consensus algorithms.
 
-*What is always true about delegation in the context of proof of stake?*
-- **It enables more stakeholders to take part in the consensus (CORRECT ANSWER)**
-- It requires the custody of assets through a delegate
-- It introduces a risk to forfeit assets when a malicious delegate misbehaves
-- It prevents assets from being exchanged while delegated
+- [ ] In proof of stake, block producers are elected according to their hashing power.
+- [ ] In proof of stake, block producers will commit their own assets to the consensus protocol and are chosen proportionally to their commitment.
+- [ ] Proof of work relies on physical resources such as mining rigs, while proof of stake uses a completely virtual resource called stake.
+- [ ] In proof of stake, block producers are elected based on their ownership of mining rigs.
 
-*True or False: The more stake participates in the consensus, the more secure a proof-of-stake system?*
-- **True (CORRECT ANSWER)**
-- False
+<details><summary>See correct answer</summary>
 
-**Sub-Unit 6**
+- [x] In proof of stake, block producers will commit their own assets to the consensus protocol and are chosen proportionally to their commitment.
+- [x] Proof of work relies on physical resources such as mining rigs, while proof of stake uses a completely virtual resource called stake.
+</details>
 
-*Select two correct statements about slashing in proof-of-stake systems.*
-- **It was designed to try and sanction adversarial behaviors within a system (CORRECT ANSWER)**
-- It was designed as a way to reward participants by adding to their portion of the stake
-- It was designed to build stronger relationships between delegators and delegates
-- **It causes any participants who misbehave to forfeit a portion of their stake (CORRECT ANSWER)**
+### View the images below and select the one showcasing a proof-of-stake algorithm.
 
-**Sub-Unit 7**
+<!-- TODO: It would be better to split this image in two and have the question be about selecting the right one -->
 
-*Select the correct statements about liquid and frozen stakes.*
-- **Frozen stakes create a separation between the stake and the network currency (CORRECT ANSWER)**
-- Cardano never chooses to keep its stakes liquid
-- The “follow-the-Satoshi” algorithm is impossible if the stakes are liquid
-- **If frozen, stakes can't be exchanged like regular assets and are locked during consensus (CORRECT ANSWER)**
+<img alt="illustration 1.8.9.png" src="./assets/1.8.9.png" width="500" />
+
+1. Image A shows a proof-of-stake algorithm.
+1. Image B shows a proof-of-stake algorithm.
+1. Both images show a proof-of-stake algorithm.
+
+<details><summary>See correct answer</summary>
+
+2. Image B shows a proof-of-stake algorithm.
+</details>
+
+### What is the fundamental principle of the "Follow-the-Satoshi" algorithm?
+
+1. The owner of the first Satoshi created in a block becomes the designated block producer.
+1. The owner of a randomly picked Satoshi from all available coins becomes the designated block producer.
+1. The owner of the last Satoshi created in a block becomes the designated block producer.
+
+<details><summary>See correct answer</summary>
+
+2. The owner of a randomly picked Satoshi from all available coins becomes the designated block producer.
+</details>
+
+### “Follow-the-Satoshi” is a methodology to create NFTs on Bitcoin.
+
+1. True.
+1. False.
+
+<details><summary>See correct answer</summary>
+
+2. False.
+</details>
+
+### Select the correct statement that best describes a significant concern that relates to proof-of-stake systems.
+
+1. Proof-of-stake systems can lead to a plutocratic aspect where the rich get richer, as block production rights are proportional to the stake owned.
+1. Proof of stake has never used Initial Coin Offerings (ICOs) for bootstrapping and always relies on mining for token issuance.
+1. In proof-of-stake systems, block producers are chosen randomly without any regard to the amount of stake owned.
+
+<details><summary>See correct answer</summary>
+
+1. Proof-of-stake systems can lead to a plutocratic aspect where the rich get richer, as block production rights are proportional to the stake owned.
+</details>
+
+### What is NOT true about proof-of-stake consensus?
+
+1. It requires a good source of randomness.
+1. It utilizes a virtual resource to choose block producers.
+1. It can cope with arbitrarily many adversaries in the system.
+1. It is more energy-efficient than typical proof of work.
+
+<details><summary>See correct answer</summary>
+
+3. It can cope with arbitrarily many adversaries in the system.
+</details>
+
+### True or False: Proof of work and proof of stake both work like a lottery to elect a block producer.
+
+1. True.
+1. False.
+
+<details><summary>See correct answer</summary>
+
+1. True.
+</details>
+
+### Where does proof of work get its source of randomness for the leader election?
+
+1. From the content of blocks, transactions and other data from users.
+1. From the moment blocks are created.
+1. From the determinism of hashing functions.
+1. From the uniformity and collision resistance of hashing functions.
+
+<details><summary>See correct answer</summary>
+
+4. From the uniformity and collision resistance of hashing functions.
+</details>
+
+### What is the name of the cryptographic tool that several major proof-of-stake blockchains use to generate randomness?
+
+1. PBFT.
+1. VRF.
+1. Follow-the-Satoshi.
+1. Hashing.
+
+<details><summary>See correct answer</summary>
+
+2. VRF.
+</details>
+
+### What is always true about delegation in the context of proof of stake?
+
+1. It enables more stakeholders to take part in the consensus.
+1. It requires the custody of assets through a delegate.
+1. It introduces a risk to forfeit assets when a malicious delegate misbehaves.
+1. It prevents assets from being exchanged while delegated.
+
+<details><summary>See correct answer</summary>
+
+1. It enables more stakeholders to take part in the consensus.
+</details>
+
+### The more stake participates in the consensus, the more secure a proof-of-stake system?
+
+1. True.
+1. False.
+
+<details><summary>See correct answer</summary>
+
+1. True.
+</details>
+
+### Select two correct statements about slashing in proof-of-stake systems.
+
+- [ ] It was designed to try and sanction adversarial behaviors within a system.
+- [ ] It was designed as a way to reward participants by adding to their portion of the stake.
+- [ ] It was designed to build stronger relationships between delegators and delegates.
+- [ ] It causes any participants who misbehave to forfeit a portion of their stake.
+
+<details><summary>See correct answer</summary>
+
+- [x] It was designed to try and sanction adversarial behaviors within a system.
+- [x] It causes any participants who misbehave to forfeit a portion of their stake.
+</details>
+
+### Select the correct statements about liquid and frozen stakes.
+
+- [ ] Frozen stakes create a separation between the stake and the network currency.
+- [ ] Cardano never chooses to keep its stakes liquid.
+- [ ] The “follow-the-Satoshi” algorithm is impossible if the stakes are liquid.
+- [ ] If frozen, stakes can't be exchanged like regular assets and are locked during consensus.
+
+<details><summary>See correct answer</summary>
+
+- [x] Frozen stakes create a separation between the stake and the network currency.
+- [x] If frozen, stakes can't be exchanged like regular assets and are locked during consensus.
+</details>

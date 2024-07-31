@@ -114,137 +114,260 @@ https://crypto.stanford.edu/pbc/notes/crypto/factoring.html, Accessed: Aug 29, 2
 
 ## Questions
 
-**Sub-Unit 1**
+### Digital signatures can authenticate the identity of the sender of a transaction, plus verify that a transaction has not been tampered with or altered in any way.
 
-*Study the statement below and choose the correct option.
-Digital signatures can authenticate the identity of the sender of a transaction, plus verify that a transaction has not been tampered with or altered in any way.*
-- **True (CORRECT ANSWER)**
-- False
+1. True.
+1. False.
 
-*What property ensures that a sender cannot deny sending a message at any point in time?*
-- Confidentiality
-- Integrity
-- **Non-repudiation (CORRECT ANSWER)**
-- Availability
+<details><summary>See correct answer</summary>
 
-*Which of the following is used to authenticate the identity of the sender of a transaction and verify that a transaction has not been tampered with?*
-- Encryption
-- **Digital signature (CORRECT ANSWER)**
-- Symmetric key
+1. True.
+</details>
 
-*What does the signing algorithm in a digital signature scheme use to create a signature?*
-- The sender’s public key and the original message
-- **The sender’s private key and the original message (CORRECT ANSWER)**
-- The receiver’s public key and the original message
-- The receiver’s private key and the original
+### What property ensures that a sender cannot deny sending a message at any point in time?
 
-*A digital signature scheme requires which two algorithms?*
-- **Signing algorithm (CORRECT ANSWER)**
-- Consensus algorithm
-- Transaction algorithm
-- **Verifying algorithm (CORRECT ANSWER)**
+1. Confidentiality.
+1. Integrity.
+1. Non-repudiation.
+1. Availability.
 
-**Sub-Unit 2**
+<details><summary>See correct answer</summary>
 
-*Study the image below and label a and b respectively. Select two CORRECT options: (Image Question)*
+3. Non-repudiation.
+</details>
+
+
+### Which of the following is used to authenticate the identity of the sender of a transaction and verify that a transaction has not been tampered with?
+
+1. Encryption.
+1. Digital signature.
+1. Symmetric key.
+
+<details><summary>See correct answer</summary>
+
+2. Digital signature.
+</details>
+
+### What does the signing algorithm in a digital signature scheme use to create a signature?
+
+1. The sender’s public key and the original message.
+1. The sender’s private key and the original message.
+1. The receiver’s public key and the original message.
+1. The receiver’s private key and the original.
+
+<details><summary>See correct answer</summary>
+
+2. The sender’s private key and the original message.
+</details>
+
+### A digital signature scheme requires which two algorithms?
+
+- [ ] Signing algorithm.
+- [ ] Consensus algorithm.
+- [ ] Transaction algorithm.
+- [ ] Verifying algorithm.
+
+<details><summary>See correct answer</summary>
+
+- [x] Signing algorithm.
+- [x] Verifying algorithm.
+</details>
+
+### Study the image below and label A and B respectively. Select two correct options.
+
 ![illustration 1.6.5.png](./assets/1.6.5.png)<br>
-**a- Encryption algorithm (CORRECT ANSWER)**<br>
-b- Encryption algorithm<br>
-a- Decryption algorithm<br>
-**b- Decryption algorithm (CORRECT ANSWER)**<br>
 
-*Alice calculates the hash of the cleartext message and encrypts it using her private key. Bob receives the message, calculates its hash, and decrypts the encrypted hash using Alice’s public key. What does it mean if the generated and decrypted hash values in the digital signature process are the same?*
-- The signature is invalid
-- **The signature is valid (CORRECT ANSWER)**
-- The original message was tampered with during transmission
+1.  | A                    | B                    |
+    | ---                  | ---                  |
+    | Encryption algorithm | Decryption algorithm |
+1.  | A                    | B                    |
+    | ---                  | ---                  |
+    | Decryption algorithm | Encryption algorithm |
 
-*After receiving a message, what can you do to validate the digital signature?*
-- **Decrypt the received hash using the sender’s public key and compare it with the hash value you calculated for the received message (CORRECT ANSWER)**
-- Encrypt a new hash of the received message using your private key and compare it with the received encrypted hash
-- Decrypt the received hash using the sender’s private key and compare it with the hash value you calculated for the received message
+<details><summary>See correct answer</summary>
 
-*What happens if an adversary alters the cleartext message during transmission?*
-- The original hash value and the hash value of the received message will match
-- **The hash value of the received message will not match the original hash value when decrypted (CORRECT ANSWER)**
-- The adversary will be able to produce a new valid digital signature
+1.  | A                    | B                    |
+    | ---                  | ---                  |
+    | Encryption algorithm | Decryption algorithm |
+</details>
 
-*Why can't an adversary create a new valid digital signature after modifying a message?*
-- Because the adversary doesn't have the correct hashing algorithm
-- Because creating a valid signature requires access to the sender’s public key
-- **Because creating a valid signature requires access to the sender’s private key (CORRECT ANSWER)**
-- Because the adversary cannot decrypt the received encrypted hash
+### Alice calculates the hash of the cleartext message and encrypts it using her private key. Bob receives the message, calculates its hash, and decrypts the encrypted hash using Alice’s public key. What does it mean if the generated and decrypted hash values in the digital signature process are the same?
 
-**Sub-Unit 3**
+1. The signature is invalid.
+1. The signature is valid.
+1. The original message was tampered with during transmission.
 
-*Which cryptographic assumption does the RSA digital signature algorithm rely on?*
-- The discrete log problem is hard to solve
-- **That factoring two large prime numbers is difficult (CORRECT ANSWER)**
-- That elliptic curve cryptography is secure
+<details><summary>See correct answer</summary>
 
-*Which cryptographic assumption does the DSA digital signature algorithm rely on?*
-- **The discrete log problem is hard to solve (CORRECT ANSWER)**
-- That factoring two large prime numbers is difficult
-- That elliptic curve cryptography is secure
+2. The signature is valid.
+</details>
 
-*What variant of the digital signature scheme does Cardano use?*
-- RSA
-- DSA
-- **Ed25519 (CORRECT ANSWER)**
-- Schnorr signature
+### After receiving a message, what can you do to validate the digital signature?
 
-*What cryptographic algorithm did Bitcoin transition to in 2022 to improve its scalability, efficiency, and privacy?*
-- RSA signature
-- DSA signature
-- ECDSA signature
-- **Schnorr signature (CORRECT ANSWER)**
+1. Decrypt the received hash using the sender’s public key and compare it with the hash value you calculated for the received message.
+1. Encrypt a new hash of the received message using your private key and compare it with the received encrypted hash.
+1. Decrypt the received hash using the sender’s private key and compare it with the hash value you calculated for the received message.
 
-**Sub-unit 4**
+<details><summary>See correct answer</summary>
 
-*Study the statement below and select the correct option.
+1. Decrypt the received hash using the sender’s public key and compare it with the hash value you calculated for the received message.
+</details>
 
-In a custodial wallet, the user's credentials and tokens both remain in the possession of the user.*
+### What happens if an adversary alters the cleartext message during transmission?
 
-- True
-- **False (CORRECT ANSWER)**
+1. The original hash value and the hash value of the received message will match.
+1. The hash value of the received message will not match the original hash value when decrypted.
+1. The adversary will be able to produce a new valid digital signature.
 
-*What does a custodial wallet refer to in the context of a cryptocurrency exchange?*
-- A wallet where users maintain full control over their credentials and tokens
-- **A wallet where the exchange, acting as the custodian, is in possession of the user's credentials and tokens (CORRECT ANSWER)**
-- A wallet that provides multi-factor authentication
+<details><summary>See correct answer</summary>
 
-*How does a cryptocurrency exchange authenticate its users?*
-- **Using a centralized authentication system (CORRECT ANSWER)**
-- Using a blockchain-based authentication system
-- Using a decentralized authentication system
+2. The hash value of the received message will not match the original hash value when decrypted.
+</details>
 
-*What is a non-custodial wallet in the context of digital assets?*
-- A wallet where the exchange has control over the user's keys and tokens
-- A wallet where a third-party company controls the user's keys and tokens
-- **A wallet where the user has complete control over their keys and tokens (CORRECT ANSWER)**
+### Why can't an adversary create a new valid digital signature after modifying a message?
 
-*In the context of non-custodial wallets, what role does the private key play? Select two CORRECT options.*
-- **It allows anyone with access to it to produce digital signatures (CORRECT ANSWER)**
-- **It allows anyone with access to it to take control of the asset (CORRECT ANSWER)**
-- It plays a part in the signature verification procedure
-- It allows users to receive funds
+1. Because the adversary doesn't have the correct hashing algorithm.
+1. Because creating a valid signature requires access to the sender’s public key.
+1. Because creating a valid signature requires access to the sender’s private key.
+1. Because the adversary cannot decrypt the received encrypted hash.
 
-**Sub-Unit 5**
+<details><summary>See correct answer</summary>
 
-*Study the statement below and select the correct option.
+3. Because creating a valid signature requires access to the sender’s private key.
+</details>
 
-In hot storage, an application or platform is connected to the blockchain network. The owner manages their token holdings through this platform or application*
+### Which cryptographic assumption does the RSA digital signature algorithm rely on?
 
-- **True (CORRECT ANSWER)**
-- False
+1. The discrete log problem is hard to solve.
+1. That factoring two large prime numbers is difficult.
+1. That elliptic curve cryptography is secure.
 
-*What type of storage is defined as an application or platform that is connected to the blockchain network?*
-- Remote storage
-- Cold storage
-- **Hot storage (CORRECT ANSWER)**
-- Offline storage
+<details><summary>See correct answer</summary>
 
-*What is a defining characteristic of cold storage?*
-- It stores private keys online
-- It stores private keys in an easily accessible location
-- **It stores private keys offline (CORRECT ANSWER)**
-- It stores private keys in a way that is connected to the blockchain network
+2. That factoring two large prime numbers is difficult.
+</details>
+
+### Which cryptographic assumption does the DSA digital signature algorithm rely on?
+
+1. The discrete log problem is hard to solve.
+1. That factoring two large prime numbers is difficult.
+1. That elliptic curve cryptography is secure.
+
+<details><summary>See correct answer</summary>
+
+1. The discrete log problem is hard to solve.
+</details>
+
+### What variant of the digital signature scheme does Cardano use?
+
+1. RSA.
+1. DSA.
+1. Ed25519.
+1. Schnorr signature.
+
+<details><summary>See correct answer</summary>
+
+3. Ed25519.
+</details>
+
+### What cryptographic algorithm did Bitcoin transition to in 2022 to improve its scalability, efficiency, and privacy?
+
+1. RSA signature.
+1. DSA signature.
+1. ECDSA signature.
+1. Schnorr signature.
+
+<details><summary>See correct answer</summary>
+
+1. Schnorr signature.
+</details>
+
+### In a custodial wallet, the user's credentials and tokens both remain in the possession of the user.
+
+1. True.
+1. False.
+
+<details><summary>See correct answer</summary>
+
+2. False.
+</details>
+
+### What does a custodial wallet refer to in the context of a cryptocurrency exchange?
+
+1. A wallet where users maintain full control over their credentials and tokens.
+1. A wallet where the exchange, acting as the custodian, is in possession of the user's credentials and tokens.
+1. A wallet that provides multi-factor authentication.
+
+<details><summary>See correct answer</summary>
+
+2. A wallet where the exchange, acting as the custodian, is in possession of the user's credentials and tokens.
+</details>
+
+### How does a cryptocurrency exchange authenticate its users?
+
+1. Using a centralized authentication system.
+1. Using a blockchain-based authentication system.
+1. Using a decentralized authentication system.
+
+<details><summary>See correct answer</summary>
+
+1. Using a centralized authentication system.
+</details>
+
+### What is a non-custodial wallet in the context of digital assets?
+
+1. A wallet where the exchange has control over the user's keys and tokens.
+1. A wallet where a third-party company controls the user's keys and tokens.
+1. A wallet where the user has complete control over their keys and tokens.
+
+<details><summary>See correct answer</summary>
+
+3. A wallet where the user has complete control over their keys and tokens.
+</details>
+
+### In the context of non-custodial wallets, what role does the private key play? Select two CORRECT options.
+
+- [ ] It allows anyone with access to it to produce digital signatures.
+- [ ] It allows anyone with access to it to take control of the asset.
+- [ ] It plays a part in the signature verification procedure.
+- [ ] It allows users to receive funds.
+
+<details><summary>See correct answer</summary>
+
+- [x] It allows anyone with access to it to produce digital signatures.
+- [x] It allows anyone with access to it to take control of the asset.
+</details>
+
+### In hot storage, an application or platform is connected to the blockchain network. The owner manages their token holdings through this platform or application
+
+1. True.
+1. False.
+
+<details><summary>See correct answer</summary>
+
+1. True.
+</details>
+
+### What type of storage is defined as an application or platform that is connected to the blockchain network?
+
+1. Remote storage.
+1. Cold storage.
+1. Hot storage.
+1. Offline storage.
+
+<details><summary>See correct answer</summary>
+
+3. Hot storage.
+</details>
+
+### What is a defining characteristic of cold storage?
+
+1. It stores private keys online.
+1. It stores private keys in an easily accessible location.
+1. It stores private keys offline.
+1. It stores private keys in a way that is connected to the blockchain network.
+
+<details><summary>See correct answer</summary>
+
+3. It stores private keys offline.
+</details>

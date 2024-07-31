@@ -108,89 +108,153 @@ That’s it for now, and I will see you next time.
 
 ## Questions
 
-**Sub-Unit 1**
+### Blockchains need consensus algorithms. In a blockchain, consensus algorithms...
 
-*Blockchains need consensus algorithms. In a blockchain, consensus algorithms:*
-- Force all participants to agree
-- **Allow participants to reach a decision without a central authority (CORRECT ANSWER)**
-- Allow participants to reach a decision with the help of a central authority
-- Expel malicious or faulty participants
+1. force all participants to agree.
+1. allow participants to reach a decision without a central authority.
+1. allow participants to reach a decision with the help of a central authority.
+1. expel malicious or faulty participants.
 
-*In a typical blockchain:*
-- Decisions are made by an elected leading authority
-- Decisions are made at random.
-- There’s no decision to be made
-- **Decisions are reached through a consensus algorithm (CORRECT ANSWER)**
+<details><summary>See correct answer</summary>
 
-**Sub-Unit 2**
+2. allow participants to reach a decision without a central authority.
+</details>
 
-*Which of the following is not a fundamental component of blockchain technology?*
-Network nodes
-- A peer-to-peer network
-- A consensus algorithm
-- **A decentralized autonomous organization (CORRECT ANSWER)**
-- A chain of blocks that form the distributed ledger
+### In a typical blockchain...
 
-*Which of the following better describes blockchain technology?*
-- Internet of things (IoT)
-- Artificial intelligence (AI)
-- **Distributed ledger technology (DLT) (CORRECT ANSWER)**
-- Decentralized finance (DeFi)
+1. decisions are made by an elected leading authority.
+1. decisions are made at random.
+1. there’s no decision to be made.
+1. decisions are reached through a consensus algorithm.
 
-*A blockchain allows users to send and receive digital assets securely and without needing a central authority or intermediary.*
-- **TRUE (CORRECT ANSWER)**
-- FALSE
+<details><summary>See correct answer</summary>
 
-*Examine the image below and select the correct labels. (Image Questions)*
+4. decisions are reached through a consensus algorithm.
+</details>
 
-![illustration 1.2.8.png](./assets/1.2.8.png)
+### Which of the following is not a fundamental component of blockchain technology?
 
-- A: Encryption Algorithm; B: Communicator; C: Network Nodes
-- **A: Consensus Algorithm; B: Block Producer; C: Chain of Blocks (CORRECT ANSWER)**
-- A: Block Producer; B: Encryption Algorithm; C: Chain of Blocks
+1. Network nodes.
+1. A peer-to-peer network.
+1. A consensus algorithm.
+1. A decentralized autonomous organization.
+1. A chain of blocks that form the distributed ledger.
 
-**Sub-Unit 3**
+<details><summary>See correct answer</summary>
 
-*In blockchain, each block has a header and a body. Generally speaking, what’s part of the header?*
-- Time stamp and transaction data
-- Hash of previous block and transaction data
-- **Hash of previous block and time stamp (CORRECT ANSWER)**
-- Hash of previous block, time stamp, transaction data
+4. A decentralized autonomous organization (CORRECT ANSWER)**
+</details>
 
-*A block header contains complete transaction data.*
-- TRUE
-- **FALSE (CORRECT ANSWER)**
+### Which of the following better describes blockchain technology?
 
-**Sub-Unit 4**
+1. Internet of things (IoT).
+1. Artificial intelligence (AI).
+1. Distributed ledger technology (DLT).
+1. Decentralized finance (DeFi).
 
-*A hash function produces a fingerprint of data, creating an output for a given input. Select the correct one.*
-- **A hash function creates a fixed-size output (CORRECT ANSWER)**
-- The size of the output depends on the input
-- Each system decides if the length of the output is fixed or not
-- The size of the output is dynamic
+<details><summary>See correct answer</summary>
 
-*What maintains the integrity of a blockchain?*
-- Each block has a unique, independent identifier
-- Each block contains the next block's hash
-- **Each block includes the previous block's hash (CORRECT ANSWER)**
-- Each change in a block only impacts that block's hash
+3. Distributed ledger technology (DLT)
+</details>
 
-*Select the image that shows the correct data structure of a block. (Image Question)*
-- Image 1:
-![illustration 1.2.9.png](./assets/1.2.9.png)
+### A blockchain allows users to send and receive digital assets securely and without needing a central authority or intermediary.
 
-Header, Time Stamp, Hash of next block, Transaction data, Body, Proof of Body
-- Image 2:
-![illustration 1.2.10.png](./assets/1.2.10.png)
+1. True.
+1. False.
 
-Header, Hash of Previous Block, Proof of Header, Time Stamp, Body, Transaction Data
-- Image 3:
-![illustration 1.2.11.png](./assets/1.2.11.png)
-**Header, hash of previous block, time stamp, proof of body, Body, Transaction data (CORRECT ANSWER)**
+<details><summary>See correct answer</summary>
 
-*What links blocks together?*
-- **The hash of the previous block (CORRECT ANSWER)**
-- The date when the new block was created
-- The time stamp of all blocks
-- The transaction data ID
+1. True.
+</details>
 
+### Examine the image below and select the correct labels.
+
+<img alt="illustration 1.2.8.png" src="./assets/1.2.8.png" width="500" />
+
+1.   | A                    | B                    | C               |
+     | ---                  | ---                  | ---             |
+     | Encryption Algorithm | Communicator         | Network Nodes   |
+2.   | A                    | B                    | C               |
+     | ---                  | ---                  | ---             |
+     | Consensus Algorithm  | Block Producer       | Chain of Blocks |
+3.   | A                    | B                    | C               |
+     | ---                  | ---                  | ---             |
+     | Block Producer       | Encryption Algorithm | Chain of Blocks |
+
+<details><summary>See correct answer</summary>
+
+2.   | A                   | B              | C               |
+     | ---                 | ---            | ---             |
+     | Consensus Algorithm | Block Producer | Chain of Blocks |
+</details>
+
+### In blockchain, each block has a header and a body. Generally speaking, what’s part of the header?
+
+1. Time stamp and transaction data.
+1. Hash of previous block and transaction data.
+1. Hash of previous block and time stamp.
+1. Hash of previous block, time stamp, transaction data.
+
+<details><summary>See correct answer</summary>
+
+3. Hash of previous block and time stamp.
+</details>
+
+### A block header contains complete transaction data.
+
+1. True.
+1. False.
+
+<details><summary>See correct answer</summary>
+
+1. False.
+</details>
+
+### A hash function produces a fingerprint of data, creating an output for a given input. Select the correct one.
+
+1. A hash function creates a fixed-size output.
+1. The size of the output depends on the input.
+1. Each system decides if the length of the output is fixed or not.
+1. The size of the output is dynamic.
+
+<details><summary>See correct answer</summary>
+
+1. A hash function creates a fixed-size output.
+</details>
+
+### What maintains the integrity of a blockchain?
+
+1. Each block has a unique, independent identifier.
+1. Each block contains the next block's hash.
+1. Each block includes the previous block's hash.
+1. Each change in a block only impacts that block's hash.
+
+<details><summary>See correct answer</summary>
+
+3. Each block includes the previous block's hash.
+</details>
+
+### Select the image that shows the correct data structure of a block.
+
+| 1   | 2   | 3   |
+| --- | --- | --- |
+| <img alt="Header, Time Stamp, Hash of next block, Transaction data, Body, Proof of Body" src="./assets/1.2.9.png" width="250" /> | <img alt="Header, Hash of Previous Block, Proof of Header, Time Stamp, Body, Transaction Data" src="./assets/1.2.10.png" width="250" /> | <img alt="Header, hash of previous block, time stamp, proof of body, Body, Transaction data." src="./assets/1.2.11.png" width="250" /> |
+
+<details><summary>See correct answer</summary>
+
+| 3                                                                                                                                      |
+| ---                                                                                                                                    |
+| <img alt="Header, hash of previous block, time stamp, proof of body, Body, Transaction data." src="./assets/1.2.11.png" width="250" /> |
+</details>
+
+### What links blocks together?
+
+1. The hash of the previous block.
+1. The date when the new block was created.
+1. The time stamp of all blocks.
+1. The transaction data ID.
+
+<details><summary>See correct answer</summary>
+
+1. The hash of the previous block.
+</details>
