@@ -1,11 +1,15 @@
 # Unit 4 - Block Reward and Transaction Fee
 
 ## Learning Objectives
-By the end of this unit, the learner should be able to:
-- Explain why incentives are necessary in blockchain
-- Describe Sybil attacks and how incentives might mitigate them
-- Describe the different types of incentives
-- Explain and compare incentive mechanisms in Bitcoin and Cardano
+
+> [!NOTE]
+>
+> By the end of this unit, you should be able to:
+>
+> - [x] Explain why incentives are necessary in blockchain
+> - [x] Describe Sybil attacks and how incentives might mitigate them
+> - [x] Describe the different types of incentives
+> - [x] Explain and compare incentive mechanisms in Bitcoin and Cardano
 
 ## Introduction
 Hello everyone, and welcome. My name is [lecturer name].
