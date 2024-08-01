@@ -430,15 +430,14 @@ First, we reviewed the components of a blockchain and the basic structure of a b
 1. Chain hash
 1. Common prefix
 1. Chain quality
-1. Determinism
 1. Chain growth
+1. Determinism
 
 <details><summary>See correct answer</summary>
 
 2. Common prefix
 3. Chain quality
-
-5. Chain growth
+4. Chain growth
 </details>
 
 
