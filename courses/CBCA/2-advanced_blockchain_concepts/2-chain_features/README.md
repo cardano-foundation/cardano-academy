@@ -328,12 +328,12 @@ First, we reviewed the components of a blockchain and the basic structure of a b
 
 
 ### In order to produce a block, Bitcoin miners need to find a nonce that solves a mathematical problem.
-1. True 
-1. False
+1. TRUE 
+1. FALSE
 
 <details><summary>See correct answer</summary>
 
-1. True
+1. TRUE
 </details>
 
 ### How does the process of block production differ in proof-of-work and proof-of-stake consensus algorithms?
