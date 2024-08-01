@@ -177,7 +177,7 @@ First, we reviewed the components of a blockchain and the basic structure of a b
 ### Select the step NOT involved in block generation.
 1. The block producer first selects a set of transactions from their mempool
 1. The block producer creates a block of these transactions
-1. The block producer ensures that at least two other block producers have included the same transactions as theM
+1. The block producer ensures that at least two other block producers have included the same transactions as them
 1. The block producer adds a proof to the block to show they are entitled to produce it
 
 <details><summary>See correct answer</summary>
