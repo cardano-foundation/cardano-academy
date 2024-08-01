@@ -437,6 +437,7 @@ First, we reviewed the components of a blockchain and the basic structure of a b
 
 2. Common prefix
 3. Chain quality
+
 5. Chain growth
 </details>
 
