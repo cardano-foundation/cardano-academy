@@ -175,161 +175,322 @@ First, we reviewed the components of a blockchain and the basic structure of a b
 ## Questions
 
 ### Select the step NOT involved in block generation.
-- The block producer first selects a set of transactions from their mempool
-- The block producer creates a block of these transactions
-- **The block producer ensures that at least two other block producers have included the same transactions as them (CORRECT ANSWER)**
-- The block producer adds a proof to the block to show they are entitled to produce it
+1. The block producer first selects a set of transactions from their mempool
+1. The block producer creates a block of these transactions
+1. The block producer ensures that at least two other block producers have included the same transactions as theM
+1. The block producer adds a proof to the block to show they are entitled to produce it
+
+<details><summary>See correct answer</summary>
+
+3. The block producer ensures that at least two other block producers have included the same transactions as them
+</details>
+
 
 ### A block producer joins a public permissionless blockchain network. Then, he sends a request to other nodes to locate them and adds whoever responds to his neighboring nodes list. After that, he receives copies of the blockchain data from his neighboring nodes. He is now faced with multiple versions of the blockchain and can’t determine which version is the correct one. What step has the block producer likely missed in the process of joining the blockchain network?
 
-- He didn't establish a trust relationship with the nodes that responded to his request
-- **He didn't apply the longest chain rule to determine the correct version of the blockchain (CORRECT ANSWER)**
-- He didn't request authentication before adding nodes to his neighboring nodes list
-- He didn't ask for permission before joining the public network
+1. He didn't establish a trust relationship with the nodes that responded to his request
+1. He didn't apply the longest chain rule to determine the correct version of the blockchain
+1. He didn't request authentication before adding nodes to his neighboring nodes list
+1. He didn't ask for permission before joining the public network
+
+<details><summary>See correct answer</summary>
+
+2. He didn't apply the longest chain rule to determine the correct version of the blockchain
+</details>
 
 ### What are the important steps and resources a new block-producing node requires to successfully join a network? Select two answers.
-- **The new block producer should have the correct genesis configuration provided by a trusted source (CORRECT ANSWER)**
-- The new block producer must gain approval from all existing nodes in the network before they can join
-- **The new block producer must apply the longest chain rule when receiving subsequent blocks from other block producers (CORRECT ANSWER)**
-- The new block producer needs to generate the genesis block independently before starting to synchronize the blockchain
+1. The new block producer should have the correct genesis configuration provided by a trusted source
+1. The new block producer must gain approval from all existing nodes in the network before they can join
+1. The new block producer must apply the longest chain rule when receiving subsequent blocks from other block producers
+1. The new block producer needs to generate the genesis block independently before starting to synchronize the blockchain
+<details><summary>See correct answer</summary>
+
+1. The new block producer should have the correct genesis configuration provided by a trusted source
+3. The new block producer must apply the longest chain rule when receiving subsequent blocks from other block producers
+</details>
+
 
 ### Only proof-of-work blockchains like Bitcoin apply the longest chain rule.
-- TRUE
-- **FALSE (CORRECT ANSWER)**
+1. TRUE
+1. FALSE 
+<details><summary>See correct answer</summary>
+
+2. FALSE
+</details>
+
 
 ### How is the correct chain determined in a proof-of-stake algorithm like Cardano's, using the longest chain rule?*
 
-- **A new node must synchronize with existing nodes (CORRECT ANSWER)**
-- **The node must identify similarities and differences between received copies of the blockchain (CORRECT ANSWER)**
-- The node must select the chain that is farthest from the other branches
-- **The node must determine the correct chain by selecting the one that is closest to other branches (CORRECT ANSWER)**
-- The node must generate a new chain independently, which then gets adopted if it's longer than the current chain
+1. A new node must synchronize with existing nodes
+1. The node must identify similarities and differences between received copies of the blockchain
+1. The node must select the chain that is farthest from the other branches
+1. The node must determine the correct chain by selecting the one that is closest to other branches
+1. The node must generate a new chain independently, which then gets adopted if it's longer than the current chain
+<details><summary>See correct answer</summary>
+
+1. A new node must synchronize with existing nodes
+2. The node must identify similarities and differences between received copies of the blockchain
+4. The node must determine the correct chain by selecting the one that is closest to other branches
+</details>
+
 
 ### Node X has Chain A and encounters Chain B, which is longer than Chain A. They both have a common prefix respecting k=3. What will Node X do according to the longest chain principle? (Image Question)
 
 ![illustration 2.2.19.png](./assets/2.2.19.png)
 
-*Node X will:*
-- Discard both Chain A and Chain B and start a new chain
-- Continue with Chain A as it was the original chain it had
-- Remove three blocks from Chain A to match Chain B, and then continue with Chain A
-- **Adopt Chain B as it represents a valid fork longer than Chain A (CORRECT ANSWER)**
+**Node X will:**
+1. Discard both Chain A and Chain B and start a new chain
+1. Continue with Chain A as it was the original chain it had
+1. Remove three blocks from Chain A to match Chain B, and then continue with Chain A
+1. Adopt Chain B as it represents a valid fork longer than Chain A
+<details><summary>See correct answer</summary>
+
+4. Adopt Chain B as it represents a valid fork longer than Chain A
+</details>
+
 
 ### A mempool collects:
-- Smart contracts that have already been executed
-- A user’s full collection of memes and NFTs
-- **Transactions that are waiting to be processed and added to a block (CORRECT ANSWER)**
-- The records of past transactions
+1. Smart contracts that have already been executed
+1. A user’s full collection of memes and NFTs
+1. Transactions that are waiting to be processed and added to a block
+1. The records of past transactions
+<details><summary>See correct answer</summary>
+
+3. Transactions that are waiting to be processed and added to a block
+</details>
+
 
 ### When a user sends a transaction via their wallet application, the transaction, along with other transactions, is collected into a "mempool" of unconfirmed transactions for each block producer.
-- **TRUE  (CORRECT ANSWER)**
-- FALSE
+1. TRUE
+1. FALSE
+
+<details><summary>See correct answer</summary>
+
+1. TRUE
+</details>
+
 
 ### Select two correct statements about mempools.
-- There is a global shared mempool for all block producers to use
-- Mempools are uncapped in terms of size
-- **Each block-producing node maintains its own mempool (CORRECT ANSWER)**
-- **Different nodes of a network may have different transactions in their mempools (CORRECT ANSWER)**
+1. There is a global shared mempool for all block producers to use
+1. Mempools are uncapped in terms of size
+1. Each block-producing node maintains its own mempool
+1. Different nodes of a network may have different transactions in their mempools
+
+<details><summary>See correct answer</summary>
+
+3. Each block-producing node maintains its own mempool
+4. Different nodes of a network may have different transactions in their mempools
+</details>
+
 
 ### What might affect a block producer's chances of generating the next block in a proof of work consensus algorithm?
-- The number of transactions it has handled before
-- **The amount of processing power it possesses (CORRECT ANSWER)**
-- The age of the node in the network
-- The distance from the central server
+1. The number of transactions it has handled before
+1. The amount of processing power it possesses
+1. The age of the node in the network
+1. The distance from the central server
+
+<details><summary>See correct answer</summary>
+
+2. The amount of processing power it possesses
+</details>
 
 ### In the context of the Bitcoin proof-of-work consensus algorithms, what does 'Difficulty Level' refer to?
 
-*Difficulty Level:*
-- Signifies the number of block producers or miners participating in the blockchain network
-- **Is the measure of how challenging it is to find a valid block hash with a required minimum number of leading zeros (CORRECT ANSWER)**
-- Refers to the total number of attempts a miner can make to solve the mathematical problem for block generation
+**Difficulty Level:**
+1. Signifies the number of block producers or miners participating in the blockchain network
+1. Is the measure of how challenging it is to find a valid block hash with a required minimum number of leading zeros 
+1. Refers to the total number of attempts a miner can make to solve the mathematical problem for block generation
+
+<details><summary>See correct answer</summary>
+2. Is the measure of how challenging it is to find a valid block hash with a required minimum number of leading zeros
+</details>
+
 
 ### Select the correct option to complete the sentence. In the context of a proof-of-work consensus algorithm, a ‘nonce’ _____ .
-- Refers to the timestamp included in the block data
-- **Is a random number that miners add to the block data (CORRECT ANSWER)**
-- Represents the number of leading zeros required in a valid hash
-- Is the previous block's hash that is combined with other data to produce a valid hash
+1. Refers to the timestamp included in the block data
+1. Is a random number that miners add to the block data
+1. Represents the number of leading zeros required in a valid hash
+1. Is the previous block's hash that is combined with other data to produce a valid hash
+
+<details><summary>See correct answer</summary>
+
+2. Is a random number that miners add to the block data
+</details>
 
 ### In order to produce a valid hash, a miner must:
-- **Combine a 'nonce' with other data like the previous block's hash, timestamp, difficulty level, and transaction data and run this through a hashing algorithm (CORRECT ANSWER)**
-- Accurately predict an input message and running it through a hashing algorithm
-- Run the block data through a decryption algorithm to find the correct nonce for generating the hash
+1. Combine a 'nonce' with other data like the previous block's hash, timestamp, difficulty level, and transaction data and run this through a hashing algorithm
+1. Accurately predict an input message and running it through a hashing algorithm
+1. Run the block data through a decryption algorithm to find the correct nonce for generating the hash
+
+<details><summary>See correct answer</summary>
+1. Combine a 'nonce' with other data like the previous block's hash, timestamp, difficulty level, and transaction data and run this through a hashing algorithm
+</details>
+
 
 ### In order to produce a block, Bitcoin miners need to find a nonce that solves a mathematical problem.
-- **True (CORRECT ANSWER)**
-- False
+1. True 
+1. False
+
+<details><summary>See correct answer</summary>
+
+1. True
+</details>
 
 ### How does the process of block production differ in proof-of-work and proof-of-stake consensus algorithms?
-- In proof of work, block producers or miners create blocks through a process called 'minting', while in proof of stake, validators create blocks through a process called 'mining'
-- **In proof of work, the chances of producing a block are roughly proportional to a block producer's computing power, while in proof of stake, it is roughly proportional to the number of tokens a block producer controls (CORRECT ANSWER)**
-- Both proof of work and proof of stake require block producers to solve complex mathematical problems to validate blocks
+1. In proof of work, block producers or miners create blocks through a process called 'minting', while in proof of stake, validators create blocks through a process called 'mining'
+1. In proof of work, the chances of producing a block are roughly proportional to a block producer's computing power, while in proof of stake, it is roughly proportional to the number of tokens a block producer controls
+1. Both proof of work and proof of stake require block producers to solve complex mathematical problems to validate blocks
+
+<details><summary>See correct answer</summary>
+
+2. In proof of work, the chances of producing a block are roughly proportional to a block producer's computing power, while in proof of stake, it is roughly proportional to the number of tokens a block producer controls
+</details>
 
 ### In the context of Cardano’s proof-of-stake consensus algorithm, what is the role of the Verifiable Random Function (VRF)? The VRF is:
-- Used by block producers to compete with each other in finding suitable nonces
-- **A cryptographic mechanism each block producer uses to determine whether it's responsible for creating the next block (CORRECT ANSWER)**
-- A mathematical problem that all miners must solve in order to produce a valid block
-- The number of tokens a block producer must control in order to participate in block creation
+1. Used by block producers to compete with each other in finding suitable nonces
+1. A cryptographic mechanism each block producer uses to determine whether it's responsible for creating the next block 
+1. A mathematical problem that all miners must solve in order to produce a valid block
+1. The number of tokens a block producer must control in order to participate in block creation
+
+<details><summary>See correct answer</summary>
+
+2. A cryptographic mechanism each block producer uses to determine whether it's responsible for creating the next block
+</details>
+
 
 ### In proof of stake, a block producer competes with other block producers to generate the next block. The chances of a block producer winning the competition and being able to create the next block depend on the amount of processing power the block producer has.
-- TRUE
-- **FALSE (CORRECT ANSWER)**
+1. TRUE
+1. FALSE (CORRECT ANSWER)
+
+<details><summary>See correct answer</summary>
+
+2. FALSE
+</details>
+
 
 ### Once a new block is propagated across a blockchain network, what happens to the confirmed transactions in a node's mempool?
-- The node adds the confirmed transactions to its mempool
-- **Nothing (CORRECT ANSWER)**
-- The node sends the confirmed transactions back to the block producer for further validation
-- The node ignores the confirmed transactions in its mempool
+1. The node adds the confirmed transactions to its mempool
+1. Nothing 
+1. The node sends the confirmed transactions back to the block producer for further validation
+1. The node ignores the confirmed transactions in its mempool
+
+<details><summary>See correct answer</summary>
+
+2. Nothing
+</details>
+
 
 ### Select two correct statements about chain depth. Chain depth:
-- Refers to the total number of blocks in a blockchain
-- Is the number of transactions included in a single block
-- **Is the difference between the total length of the blockchain and the block number where a transaction is included (CORRECT ANSWER)**
-- **Represents the number of confirmation blocks for a particular transaction (CORRECT ANSWER)**
+1. Refers to the total number of blocks in a blockchain
+1. Is the number of transactions included in a single block
+1. Is the difference between the total length of the blockchain and the block number where a transaction is included
+1. Represents the number of confirmation blocks for a particular transaction
+
+<details><summary>See correct answer</summary>
+
+3. Is the difference between the total length of the blockchain and the block number where a transaction is included
+4. Represents the number of confirmation blocks for a particular transaction
+</details>
+
 
 ### What distinguishes a block header from a block body in the structure of a blockchain block?
-- The block header contains a list of transactions, while the block body contains metadata about the block
-- **The block header acts as a short identifier of the block and its producer and provides proof of entitlement to produce the block, while the block body contains a list of transactions (CORRECT ANSWER)**
-- The block header includes the hash of the previous header to form a chain, while the block body contains an identifier of the block producer and the current version of the protocol
+1. The block header contains a list of transactions, while the block body contains metadata about the block
+1. The block header acts as a short identifier of the block and its producer and provides proof of entitlement to produce the block, while the block body contains a list of transactions
+1. The block header includes the hash of the previous header to form a chain, while the block body contains an identifier of the block producer and the current version of the protocol
+
+<details><summary>See correct answer</summary>
+
+2. The block header acts as a short identifier of the block and its producer and provides proof of entitlement to produce the block, while the block body contains a list of transactions 
+</details>
+
 
 ### When a node receives a block in a blockchain network, what validation process does it perform depending on the consensus protocol?
-- In a proof-of-work protocol, the node checks the block body to verify the block producer's identity, while in a proof-of-stake protocol, it verifies the block header hash
-- **In a proof-of-work protocol, the node calculates the block header hash and checks if it has the right number of leading zeros, while in a proof-of-stake protocol, it checks the schedule to confirm the block producer's entitlement to produce that specific block (CORRECT ANSWER)**
-- In both proof-of-work and proof-of-stake protocols, the node verifies the validity of the block by checking the block body hash
+1. In a proof-of-work protocol, the node checks the block body to verify the block producer's identity, while in a proof-of-stake protocol, it verifies the block header hash
+1. In a proof-of-work protocol, the node calculates the block header hash and checks if it has the right number of leading zeros, while in a proof-of-stake protocol, it checks the schedule to confirm the block producer's entitlement to produce that specific block
+1. In both proof-of-work and proof-of-stake protocols, the node verifies the validity of the block by checking the block body hash
+<details><summary>See correct answer</summary>
+
+2. In a proof-of-work protocol, the node calculates the block header hash and checks if it has the right number of leading zeros, while in a proof-of-stake protocol, it checks the schedule to confirm the block producer's entitlement to produce that specific block
+</details>
+
 
 ### Which of the following would you find in the block body?
-- **Transaction data (CORRECT ANSWER)**
-- Block producer signature
-- The hash of the previous block
-- The protocol version
+1. Transaction data
+1. Block producer signature
+1. The hash of the previous block
+1. The protocol version
+
+<details><summary>See correct answer</summary>
+
+1. Transaction data
+</details>
+
 
 ### Maximum block size and average block time can be tuned and adjusted to make sure that the blockchain protocol has three fundamental properties:
-- Chain hash
-- **Common prefix (CORRECT ANSWER)**
-- **Chain quality (CORRECT ANSWER)**
-- Determinism
-- **Chain growth (CORRECT ANSWER)**
+1. Chain hash
+1. Common prefix
+1. Chain quality
+1. Determinism
+1. Chain growth
+
+<details><summary>See correct answer</summary>
+
+2. Common prefix
+3. Chain quality
+5. Chain growth
+</details>
+
 
 ### Which of the following statements accurately describes Chain Growth, Common Prefix, and Chain Quality in the context of blockchain?
-- Chain Growth - the number of dishonest blocks in a chain, Common Prefix - the proportion of honest blocks, Chain Quality - how quickly the chain grows
-- **Chain Growth - the speed at which new blocks are added to the chain, Common Prefix - the part of the chain that can be trusted in an honest node's local chain, Chain Quality - the proportion of honest blocks in an honest node's chain (CORRECT ANSWER)**
-- Chain Growth - the proportion of honest blocks in the chain, Common Prefix - how quickly new blocks are added to the chain, Chain Quality - the common blocks between two different nodes' chains
+1. Chain Growth - the number of dishonest blocks in a chain, Common Prefix - the proportion of honest blocks, Chain Quality - how quickly the chain grows
+1. Chain Growth - the speed at which new blocks are added to the chain, Common Prefix - the part of the chain that can be trusted in an honest node's local chain, Chain Quality - the proportion of honest blocks in an honest node's chain
+1. Chain Growth - the proportion of honest blocks in the chain, Common Prefix - how quickly new blocks are added to the chain, Chain Quality - the common blocks between two different nodes' chains
+
+<details><summary>See correct answer</summary>
+
+2. Chain Growth - the speed at which new blocks are added to the chain, Common Prefix - the part of the chain that can be trusted in an honest node's local chain, Chain Quality - the proportion of honest blocks in an honest node's chain
+</details>
+
 
 ### What does the chain growth refer to in a blockchain network? Chain growth measures:
-- The minimum number of blocks that two chains from honest nodes have in common
-- **How quickly the honest parties’ chain grows, defined by the number of blocks added to the chain in a given time period (CORRECT ANSWER)**
-- The complexity of the mathematical problem a block producer needs to solve in order to create a new block
+1. The minimum number of blocks that two chains from honest nodes have in common
+1. How quickly the honest parties’ chain grows, defined by the number of blocks added to the chain in a given time period
+1. The complexity of the mathematical problem a block producer needs to solve in order to create a new block
+
+<details><summary>See correct answer</summary>
+
+2. How quickly the honest parties’ chain grows, defined by the number of blocks added to the chain in a given time period
+</details>
+
 
 ### What does the common prefix signify in a blockchain network? It signifies ________ .
-- The proportion of honest blocks in the chain
-- **The part of the chain that can be trusted in an honest node's local chain (CORRECT ANSWER)**
-- The proportion of blocks produced by dishonest nodes
+1. The proportion of honest blocks in the chain
+1. The part of the chain that can be trusted in an honest node's local chain
+1. The proportion of blocks produced by dishonest nodes
+
+<details><summary>See correct answer</summary>
+
+2. The part of the chain that can be trusted in an honest node's local chain
+</details>
+
 
 ### What does the term chain quality refer to in the context of blockchain?
-- **The proportion of honest blocks in the chain of an honest node (CORRECT ANSWER)**
-- The number of blocks that can be cut off from a node's local chain to match another node's chain
-- The minimum number of leading zeros required in a block's hash value
+1. The proportion of honest blocks in the chain of an honest node
+1. The number of blocks that can be cut off from a node's local chain to match another node's chain
+1. The minimum number of leading zeros required in a block's hash value
+
+<details><summary>See correct answer</summary>
+
+1. The proportion of honest blocks in the chain of an honest node
+</details>
+
 
 ### What does the term chain quality refer to in the context of blockchain?
-- **The proportion of honest blocks in the chain of an honest node (CORRECT ANSWER)**
-- The number of blocks that can be cut off from a node's local chain to match another node's chain
-- The minimum number of leading zeros required in a block's hash value
+1. The proportion of honest blocks in the chain of an honest node 
+1. The number of blocks that can be cut off from a node's local chain to match another node's chain
+1. The minimum number of leading zeros required in a block's hash value
+
+<details><summary>See correct answer</summary>
+
+1. The proportion of honest blocks in the chain of an honest node
+</details>
