@@ -161,13 +161,13 @@ And with that. Thank you, and see you next time.
 ![illustration 2.3.11.png](./assets/2.3.11.png)
 
 1. Mallory needs to create another transaction that conflicts with the first one 
-1. Mallory needs to wait for the first transaction to clear before creating the second one
 1. The second transaction needs to be placed in a different branch
+1. Mallory needs to wait for the first transaction to clear before creating the second one
 1. The second transaction needs to be placed in the same branch
 <details><summary>See correct answer</summary>
 
 1. Mallory needs to create another transaction that conflicts with the first one.
-3. The second transaction needs to be placed in a different branch.
+2. The second transaction needs to be placed in a different branch.
 </details>
 
 ### When it comes to double-spending attacks, how do the dishonest nodes get their alternative chain to be accepted by all nodes?
