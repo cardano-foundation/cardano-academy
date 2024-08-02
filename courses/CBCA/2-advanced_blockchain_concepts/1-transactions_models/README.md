@@ -271,12 +271,10 @@ https://ucarecdn.com/e14c6f03-152d-4361-abaf-f1fee5eb2e4e/EUTxOhandbook3.pdf , A
 - [ ] A transaction, once validated, is added to a block and distributed across the network in a peer-to-peer fashion
 
 <details><summary>See correct answer</summary>
-- [ ] A transaction is created by the owner of the inputs and it cannot be created by anyone else
+
 - [x] The creator of a transaction and the signer can be two different individuals
-- [ ] A transaction is always only propagated by end users to other users in a peer-to-peer fashion
 - [x] A transaction, once validated, is added to a block and distributed across the network in a peer-to-peer fashion
 </details>
-
 
 
 ### Analyze the image below and select the missing steps in the transaction life cycle
@@ -310,9 +308,7 @@ https://ucarecdn.com/e14c6f03-152d-4361-abaf-f1fee5eb2e4e/EUTxOhandbook3.pdf , A
  
 <details><summary>See correct answer</summary>
 
-- [ ] UTxO stands for Unauthorized Transaction Output.
 - [x] When an account-based transaction takes place, the balance in a user’s account will either increase or decrease.
-- [ ] Bitcoin uses account-based transaction models.
 - [x] Tokens are stored in UTxOs and are moved from one group to another when transactions happen.
 
 </details>
@@ -350,9 +346,8 @@ https://ucarecdn.com/e14c6f03-152d-4361-abaf-f1fee5eb2e4e/EUTxOhandbook3.pdf , A
 - [ ] Users will pay a lower transaction fee if they spend their inputs fully
 - [ ] On Cardano, fees can be explicitly stated in the transaction
 <details><summary>See correct answer</summary>
-- [x] A ledger must confirm that the difference between the inputs and outputs equals the amount declared as fees or the UTxO transaction will be rejected 
-- [ ] Transaction fees are 2% of the sum of all inputs
-- [ ] Users will pay a lower transaction fee if they spend their inputs fully
+
+- [x] A ledger must confirm that the difference between the inputs and outputs equals the amount declared as fees or the UTxO transaction will be rejected
 - [x] On Cardano, fees can be explicitly stated in the transaction
 </details>
 
@@ -384,11 +379,9 @@ https://ucarecdn.com/e14c6f03-152d-4361-abaf-f1fee5eb2e4e/EUTxOhandbook3.pdf , A
 - [ ] Output index
 - [ ] Private key
 <details><summary>See correct answer</summary>
-- [ ] Block header
-- [ ] Address
+ 
 - [x] Transaction id
 - [x] Output index
-- [ ] Private key
 </details>
 
 
