@@ -238,14 +238,14 @@ And with that. Thank you, and see you next time.
 </details>
 
 ### Select the correct statements about soft forks in a blockchain protocol.
-1. A soft fork requires all nodes to upgrade to the latest protocol version
-1. A soft fork introduces changes in a way that doesn’t require every node to upgrade (CORRECT ANSWER)
+1. A soft fork requires all nodes to upgrade to the latest protocol version  
 1. After a soft fork, block producers using the previous protocol will not recognize new blocks as valid
-Soft forks are backward compatible
+1. A soft fork introduces changes in a way that doesn’t require every node to upgrade
+1. Soft forks are backward compatible
 <details><summary>See correct answer</summary>
 
 3. After a soft fork, block producers using the previous protocol will not recognize new blocks as valid
-Soft forks are backward compatible
+4. Soft forks are backward compatible
 </details>
 
 ### A blockchain updated its code. Nodes that have not updated their client software can still follow and validate the chain. They may nevertheless not be able to produce new blocks. What type of update does this describe?
