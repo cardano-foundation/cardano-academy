@@ -199,14 +199,14 @@ First, we reviewed the components of a blockchain and the basic structure of a b
 </details>
 
 ### What are the important steps and resources a new block-producing node requires to successfully join a network? Select two answers.
-1. The new block producer should have the correct genesis configuration provided by a trusted source
-1. The new block producer must apply the longest chain rule when receiving subsequent blocks from other block producers
-1. The new block producer must gain approval from all existing nodes in the network before they can join
-1. The new block producer needs to generate the genesis block independently before starting to synchronize the blockchain
+- [ ] The new block producer should have the correct genesis configuration provided by a trusted source
+- [ ] The new block producer must apply the longest chain rule when receiving subsequent blocks from other block producers
+- [ ] The new block producer must gain approval from all existing nodes in the network before they can join
+- [ ] The new block producer needs to generate the genesis block independently before starting to synchronize the blockchain
 <details><summary>See correct answer</summary>
 
-1. The new block producer should have the correct genesis configuration provided by a trusted source
-2. The new block producer must apply the longest chain rule when receiving subsequent blocks from other block producers
+- [x] The new block producer should have the correct genesis configuration provided by a trusted source
+- [x] The new block producer must apply the longest chain rule when receiving subsequent blocks from other block producers
 </details>
 
 
@@ -221,16 +221,16 @@ First, we reviewed the components of a blockchain and the basic structure of a b
 
 ### How is the correct chain determined in a proof-of-stake algorithm like Cardano's, using the longest chain rule?*
 
-1. A new node must synchronize with existing nodes
-1. The node must identify similarities and differences between received copies of the blockchain
-1. The node must determine the correct chain by selecting the one that is closest to other branches
-1. The node must select the chain that is farthest from the other branches
-1. The node must generate a new chain independently, which then gets adopted if it's longer than the current chain
+- [ ] A new node must synchronize with existing nodes
+- [ ] The node must identify similarities and differences between received copies of the blockchain
+- [ ] The node must select the chain that is farthest from the other branches
+- [ ] The node must determine the correct chain by selecting the one that is closest to other branches
+- [ ] The node must generate a new chain independently, which then gets adopted if it's longer than the current chain
 <details><summary>See correct answer</summary>
 
-1. A new node must synchronize with existing nodes
-2. The node must identify similarities and differences between received copies of the blockchain
-3. The node must determine the correct chain by selecting the one that is closest to other branches
+- [x] A new node must synchronize with existing nodes
+- [x] The node must identify similarities and differences between received copies of the blockchain
+- [x] The node must determine the correct chain by selecting the one that is closest to other branches
 </details>
 
 
@@ -271,15 +271,15 @@ First, we reviewed the components of a blockchain and the basic structure of a b
 
 
 ### Select two correct statements about mempools.
-1. There is a global shared mempool for all block producers to use
-1. Mempools are uncapped in terms of size
-1. Each block-producing node maintains its own mempool
-1. Different nodes of a network may have different transactions in their mempools
+- [ ] There is a global shared mempool for all block producers to use
+- [ ] Each block-producing node maintains its own mempool
+- [ ] Mempools are uncapped in terms of size
+- [ ] Different nodes of a network may have different transactions in their mempools
 
 <details><summary>See correct answer</summary>
 
-3. Each block-producing node maintains its own mempool
-4. Different nodes of a network may have different transactions in their mempools
+- [x] Each block-producing node maintains its own mempool
+- [x] Different nodes of a network may have different transactions in their mempools
 </details>
 
 
@@ -381,15 +381,15 @@ First, we reviewed the components of a blockchain and the basic structure of a b
 
 
 ### Select two correct statements about chain depth. Chain depth:
-1. Refers to the total number of blocks in a blockchain
-1. Is the number of transactions included in a single block
-1. Is the difference between the total length of the blockchain and the block number where a transaction is included
-1. Represents the number of confirmation blocks for a particular transaction
+- [ ] Represents the number of confirmation blocks for a particular transaction
+- [ ] Refers to the total number of blocks in a blockchain
+- [ ] Is the number of transactions included in a single block
+- [ ] Is the difference between the total length of the blockchain and the block number where a transaction is included
 
 <details><summary>See correct answer</summary>
 
-3. Is the difference between the total length of the blockchain and the block number where a transaction is included
-4. Represents the number of confirmation blocks for a particular transaction
+- [x] Is the difference between the total length of the blockchain and the block number where a transaction is included
+- [x] Represents the number of confirmation blocks for a particular transaction
 </details>
 
 
@@ -427,17 +427,17 @@ First, we reviewed the components of a blockchain and the basic structure of a b
 
 
 ### Maximum block size and average block time can be tuned and adjusted to make sure that the blockchain protocol has three fundamental properties:
-1. Chain hash
-1. Common prefix
-1. Chain quality
-1. Chain growth
-1. Determinism
+- [ ] Common prefix
+- [ ] hain hash
+- [ ] Chain quality
+- [ ] Chain growth
+- [ ] Determinism
 
 <details><summary>See correct answer</summary>
 
-2. Common prefix
-3. Chain quality
-4. Chain growth
+- [x] Common prefix
+- [x] Chain quality
+- [x] Chain growth
 </details>
 
 
