@@ -303,12 +303,13 @@ https://ucarecdn.com/e14c6f03-152d-4361-abaf-f1fee5eb2e4e/EUTxOhandbook3.pdf , A
 ### Select the correct statements about UTxO-based and account-based transaction models.
 1. UTxO stands for Unauthorized Transaction Output
 1. When an account-based transaction takes place, the balance in a user’s account will either increase or decrease
-1. Bitcoin uses account-based transaction models
 1. Tokens are stored in UTxOs and are moved from one group to another when transactions happen
+1. Bitcoin uses account-based transaction models
+ 
 <details><summary>See correct answer</summary>
 
 2. When an account-based transaction takes place, the balance in a user’s account will either increase or decrease.
-4. Tokens are stored in UTxOs and are moved from one group to another when transactions happen 
+3. Tokens are stored in UTxOs and are moved from one group to another when transactions happen 
 </details>
 
 
