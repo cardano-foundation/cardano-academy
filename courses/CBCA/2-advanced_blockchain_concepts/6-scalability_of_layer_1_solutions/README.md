@@ -280,180 +280,327 @@ Next time, we’ll discuss achieving scalability through modularity and off-chai
 
 ## Questions
 
-**Sub-Unit 1**
+### Select two correct statements about vertical scaling and horizontal scaling.
+1. Vertical scaling improves a system by adding extra components next to existing ones
+1. Horizontal scaling typically involves using better hardware or software solutions to upgrade a system
+1. Vertical scaling improves the system's components, which benefits every layer of the system (CORRECT ANSWER)
+1. Horizontal scaling refers to increasing a system's capacity by performing tasks in parallel using additional similar components
 
-*Select two correct statements about vertical scaling and horizontal scaling.*
-- Vertical scaling improves a system by adding extra components next to existing ones
-- Horizontal scaling typically involves using better hardware or software solutions to upgrade a system
-- Vertical scaling improves the system's components, which benefits every layer of the system (CORRECT ANSWER)
-- **Horizontal scaling refers to increasing a system's capacity by performing tasks in parallel using additional similar components (CORRECT ANSWER)**
+<details><summary>See correct answer</summary>
 
-*True or False: Scalability is a property of a system to handle a growing workload.*
-- **True (CORRECT ANSWER)**
-- False
+4. Horizontal scaling refers to increasing a system's capacity by performing tasks in parallel using additional similar components
+</details>
 
-*What do we call a system that grows and shrinks its resources automatically based on its workload?*
-- Adaptable
-- **Elastic (CORRECT ANSWER)**
-- Bouncing
-- Adjustable
+### True or False: Scalability is a property of a system to handle a growing workload.
+1. True
+1. False
 
-**Sub-Unit 2**
+<details><summary>See correct answer</summary>
 
-*Select three correct statements about the 5 key dimensions of scalability in blockchain systems.*
-- **The two sub-dimensions of storage are: the ledger state and the historical data (CORRECT ANSWER)**
-- Minimum network communication between nodes is needed to achieve consensus
-- Costs only relate to the end users participating on the network
-- **Consensus includes anything that has an impact on the decision-making capacity of the system (CORRECT ANSWER)**
-- **Execution encompasses all system computations (CORRECT ANSWER)**
+1. True
+</details>
 
-*What does "layer one" refer to in the context of blockchain systems?*
-- The physical hardware on which a blockchain runs
-- **A blockchain platform with its consensus mechanism (CORRECT ANSWER)**
-- The first version of any blockchain
+### What do we call a system that grows and shrinks its resources automatically based on its workload?
+1. Adaptable
+1. Elastic
+1. Bouncing
+1. Adjustable
 
-*What is the primary challenge when trying to improve scalability in blockchain systems?*
-- It always costs more money
-- **Improving one dimension may increase the resources needed in other dimensions (CORRECT ANSWER)**
-- Blockchain systems are too new for scalability improvements
+<details><summary>See correct answer</summary>
 
-**Sub-Unit 3**
+2. Elastic
+</details>
 
-*What is the main purpose of using an order of magnitude?*
-- To provide exact measurements for calculations
-- **To make approximate comparisons between two values of the same dimension (CORRECT ANSWER)**
-- To measure the precise value of any physical phenomena
+### Select three correct statements about the 5 key dimensions of scalability in blockchain systems.
+- [ ] The two sub-dimensions of storage are: the ledger state and the historical data
+- [ ] Minimum network communication between nodes is needed to achieve consensus
+- [ ] Costs only relate to the end users participating on the network
+- [ ] Consensus includes anything that has an impact on the decision-making capacity of the system 
+- [ ] Execution encompasses all system computations (
 
-*Why do engineers and physicists often use orders of magnitude?*
-- **Because precise values can be deceptive (CORRECT ANSWER)**
-- Because it's easier to calculate than using real numbers
-- **Because approximations are often more practical (CORRECT ANSWER)**
-- Because it’s a more recent method of measurement
+<details><summary>See correct answer</summary>
 
-*Select the correct statements about orders of magnitude.*
-- Differences are compared to a reference value of 10
-- **Differences are measured in multiples of 10 (CORRECT ANSWER)**
-- Differences are measured in multiples of 100
-- **Differences are compared to a reference value of 0 (CORRECT ANSWER**
+- [x] The two sub-dimensions of storage are: the ledger state and the historical data 
+- [x] Consensus includes anything that has an impact on the decision-making capacity of the system 
+- [x] Execution encompasses all system computations 
+</details>
 
-*What does the "big-O notation" help in describing?*
-- The physical size of a quantity
-- **The rate of growth of a quantity relative to another (CORRECT ANSWER)**
-- The direction of growth of a quantity
 
-*Match the correct common orders of approximation.*
+### What does "layer one" refer to in the context of blockchain systems?
+1. The physical hardware on which a blockchain runs
+1. A blockchain platform with its consensus mechanism
+1. The first version of any blockchain
+
+<details><summary>See correct answer</summary>
+
+2. A blockchain platform with its consensus mechanism
+</details>
+
+### What is the primary challenge when trying to improve scalability in blockchain systems?
+1. It always costs more money
+1. Improving one dimension may increase the resources needed in other dimensions
+1. Blockchain systems are too new for scalability improvements
+
+<details><summary>See correct answer</summary>
+
+2. Improving one dimension may increase the resources needed in other dimensions
+</details>
+
+
+### What is the main purpose of using an order of magnitude?
+1. To provide exact measurements for calculations
+1. To make approximate comparisons between two values of the same dimension
+1. To measure the precise value of any physical phenomena
+
+<details><summary>See correct answer</summary>
+
+2. To make approximate comparisons between two values of the same dimension
+</details>
+
+### Why do engineers and physicists often use orders of magnitude?
+- [ ] Because precise values can be deceptive
+- [ ] Because it's easier to calculate than using real numbers
+- [ ] Because approximations are often more practical
+- [ ] Because it’s a more recent method of measurement
+
+<details><summary>See correct answer</summary>
+
+- [x] Because precise values can be deceptive
+- [x] Because approximations are often more practical
+</details>
+
+### Select the correct statements about orders of magnitude.
+- [ ] Differences are compared to a reference value of 10
+- [ ] Differences are measured in multiples of 10
+- [ ] Differences are measured in multiples of 100
+- [ ] Differences are compared to a reference value of 0
+
+<details><summary>See correct answer</summary>
+
+- [x] Differences are measured in multiples of 10
+- [x] Differences are compared to a reference value of 0
+</details>
+
+### What does the "big-O notation" help in describing?
+1. The physical size of a quantity
+1. The rate of growth of a quantity relative to another
+1. The direction of growth of a quantity
+
+<details><summary>See correct answer</summary>
+
+2. The rate of growth of a quantity relative to another
+</details>
+
+### Match the correct common orders of approximation.
 
 ![illustration 2.6.32.png](./assets/2.6.32.png)
 
-- A: Quadratic growth; B: Logarithmic growth; C: Linear growth; D: Constant growth
-- A: Constant growth; B: Quadratic growth; C: Constant growth; D: Logarithmic growth
-- **A: Linear growth; B: Logarithmic growth; C: Quadratic growth; D: Constant growth (CORRECT ANSWER)**
+1. A: Quadratic growth; B: Logarithmic growth; C: Linear growth; D: Constant growth
+1. A: Constant growth; B: Quadratic growth; C: Constant growth; D: Logarithmic growth
+1. A: Linear growth; B: Logarithmic growth; C: Quadratic growth; D: Constant growth
 
-**Sub-Unit 4**
+<details><summary>See correct answer</summary>
 
-*Select the correct statement about parallelism and concurrency.*
-- **Parallelism allows for the simultaneous execution of multiple tasks at the same time (CORRECT ANSWER)**
-- Parallelism is the act of managing several tasks at intervals
-- **Concurrency splits a task into smaller independent tasks (CORRECT ANSWER)**
-- Concurrency is the art of deleting some tasks to speed things up
+3. A: Linear growth; B: Logarithmic growth; C: Quadratic growth; D: Constant growth
+</details>
 
-*Why is the UTxO transaction model highlighted as a strength in the context of concurrency? Select 1*
-- It ensures that transactions are executed in order
-- It supports multi-threading capabilities
-- **It guarantees that transactions are truly independent, allowing for parallel processing (CORRECT ANSWER)**
-- It requires fewer resources for transaction validation
+### Select the correct statement about parallelism and concurrency.
+- [ ] Parallelism allows for the simultaneous execution of multiple tasks at the same time
+- [ ] Parallelism is the act of managing several tasks at intervals
+- [ ] Concurrency splits a task into smaller independent tasks
+- [ ] Concurrency is the art of deleting some tasks to speed things up
 
-*What is a core reason concurrency is important for parallelism? Select 1*
-- It makes parallelism more effective since it links all tasks together, making it impossible to execute the one without the other
-- **It allows for independent tasks to be executed, making parallelism more effective (CORRECT ANSWER)**
-- Parallelism does not need concurrency to run successfully
+<details><summary>See correct answer</summary>
 
-**Sub-Unit 5**
+- [x] Parallelism allows for the simultaneous execution of multiple tasks at the same time
+- [x] Concurrency splits a task into smaller independent tasks
+</details>
 
-*True or False: Better hardware always results in better performances.*
-- True
-- **False (CORRECT ANSWER)**
+### Why is the UTxO transaction model highlighted as a strength in the context of concurrency? Select 1
+1. It ensures that transactions are executed in order
+1. It supports multi-threading capabilities
+1. It guarantees that transactions are truly independent, allowing for parallel processing
+1. It requires fewer resources for transaction validation
 
-*True or False: Algorithms with quadratic complexity never work in practice.*
-- True
-- **False (CORRECT ANSWER)**
+<details><summary>See correct answer</summary>
 
-*Select two correct statements about compression.*
-- Blockchains are the easiest systems to compress
-- **Compression algorithms find and replace similar data patterns with smaller ones (CORRECT ANSWER)**
-- **Lossy compression removes less important data instead of replacing patterns (CORRECT ANSWER)**
-- Lossless compression means that the original data can’t be retrieved after decompression
+3. It guarantees that transactions are truly independent, allowing for parallel processing
+</details>
 
-*There exist two main families of compression algorithms. What are they called?*
-- Fast and slow compressions
-- Eventual and immediate compressions
-- **Lossy and lossless compressions (CORRECT ANSWER)**
-- Efficient and poor compressions
+### What is a core reason concurrency is important for parallelism? Select 1
+1. It makes parallelism more effective since it links all tasks together, making it impossible to execute the one without the other
+1. It allows for independent tasks to be executed, making parallelism more effective
+1. Parallelism does not need concurrency to run successfully
 
-*True or False: The computation of a hash digest is roughly the same order of magnitude as the verification of a digital signature?*
-- True
-- **False (CORRECT ANSWER)**
+<details><summary>See correct answer</summary>
 
-**Sub-Unit 6**
+2. It allows for independent tasks to be executed, making parallelism more effective
+</details>
 
-*What does batching as a scalability technique refer to? Select 1*
-- **Grouping many similar actions to execute them all at once (CORRECT ANSWER)**
-- Increasing the size of a system's memory
-- Separating tasks into individual units for easier management
 
-*Up to what extent can batching improve performance? Select 1*
-- It always improves performance regardless of the batch size
-- **Only until a certain level, beyond that, it might slow down the system (CORRECT ANSWER)**
-- Performance decreases linearly with batching
-- Batching has no effect on performance
+### Better hardware always results in better performances.
+1. True
+1. False
 
-*In which scenario is pipelining most efficient? Select 1*
-- When each task is extremely long and requires focused attention
-- **When there is a significant idle time between tasks and one actor waits for another (CORRECT ANSWER)**
-- When tasks cannot be broken down into smaller steps
+<details><summary>See correct answer</summary>
 
-*What do we call an approach that makes use of the idle time between tasks to start new tasks? Select 1*
-- Batching
-- **Pipelining (CORRECT ANSWER)**
-- Sharding
-- Amortizing
+2. False
+</details>
 
-*What’s generally true about sharding?*
-- There can be an infinite number of shards
-- Sharding often reduces the complexity of a system
-- Shards can work fully independently of one another without supervision
-- **All shards perform a similar task with different data (CORRECT ANSWER)**
+### Algorithms with quadratic complexity never work in practice.
+1. True
+1. False
 
-*Which of the following statements best describes the results of sharding? Select 1*
-- When combined, the work of multiple smaller shards is different from a single large shard
-- **When combined, the work of multiple smaller shards matches that of a single large shard (CORRECT ANSWER)**
-- When combined, the work of multiple smaller shards is more than that of a single large shard
+<details><summary>See correct answer</summary>
 
-*Why could sharding weaken a system, especially in the context of consensus algorithms? Select 1*
-- Gathering consensus resources on a much smaller shard is harder
-- **Gathering consensus on smaller shards is easier, which increases vulnerability to attacks (CORRECT ANSWER)**
-- Sharding always reduces the efficiency of the original system
+2. False
+</details>
 
-**Sub-Unit 7**
+### Select two correct statements about compression.
+- [ ] Blockchains are the easiest systems to compress
+- [ ] Compression algorithms find and replace similar data patterns with smaller ones
+- [ ] Lossy compression removes less important data instead of replacing patterns
+- [ ] Lossless compression means that the original data can’t be retrieved after decompression
 
-*What does 'amortized performance' in computer science refer to? Select 1*
-- Looking at a system's worst-case performance
-- Analyzing a system's best-case performance
-- **Evaluating a system's average performance over many cases (CORRECT ANSWER)**
+<details><summary>See correct answer</summary>
 
-*What does the technique of 'eventual consistency' imply? Select 1*
-- It implies immediate synchronization
-- It implies that the system will settle immediately
-- **It implies that the system will settle at a future point (CORRECT ANSWER)**
-- It implies that data is always consistent
+- [x] Compression algorithms find and replace similar data patterns with smaller ones
+- [x] Lossy compression removes less important data instead of replacing patterns
+</details>
 
-*In the context of the eventual consistency technique, what does a ‘transient state’ refer to? Select 1*
-- A state where data is immediately consistent
-- **A temporary state before data is written to disk (CORRECT ANSWER)**
-- A state where data is lost forever
 
-*What is one risk associated with the 'eventual consistency' technique?*
-- Slowing down the system
-- Too many actions being executed at once
-- **The risk of data loss before data is synced (CORRECT ANSWER)**
+### There exist two main families of compression algorithms. What are they called?
+1. Fast and slow compressions
+1. Eventual and immediate compressions
+1. Lossy and lossless compressions
+1. Efficient and poor compressions
 
+<details><summary>See correct answer</summary>
+
+3. Lossy and lossless compressions
+</details>
+
+### The computation of a hash digest is roughly the same order of magnitude as the verification of a digital signature?
+1. True
+1. False
+
+<details><summary>See correct answer</summary>
+
+2. False
+</details>
+
+### What does batching as a scalability technique refer to? Select 1
+1. Grouping many similar actions to execute them all at once
+1. Increasing the size of a system's memory
+1. Separating tasks into individual units for easier management
+
+<details><summary>See correct answer</summary>
+
+1. Grouping many similar actions to execute them all at once
+</details>
+
+### Up to what extent can batching improve performance? Select 1
+1. It always improves performance regardless of the batch size
+1. Only until a certain level, beyond that, it might slow down the system
+1. Performance decreases linearly with batching
+1. Batching has no effect on performance
+
+<details><summary>See correct answer</summary>
+
+2. Only until a certain level, beyond that, it might slow down the system
+</details>
+
+### In which scenario is pipelining most efficient? Select 1
+1. When each task is extremely long and requires focused attention
+1. When there is a significant idle time between tasks and one actor waits for another 
+1. When tasks cannot be broken down into smaller steps
+
+<details><summary>See correct answer</summary>
+
+2. When there is a significant idle time between tasks and one actor waits for another
+</details>
+
+
+### What do we call an approach that makes use of the idle time between tasks to start new tasks? Select 1
+1. Batching
+1. Pipelining
+1. Sharding
+1. Amortizing
+
+<details><summary>See correct answer</summary>
+
+2. Pipelining
+</details>
+
+### What’s generally true about sharding?
+1. There can be an infinite number of shards
+1. Sharding often reduces the complexity of a system
+1. Shards can work fully independently of one another without supervision
+1. All shards perform a similar task with different data
+
+<details><summary>See correct answer</summary>
+
+4. All shards perform a similar task with different data
+</details>
+
+### Which of the following statements best describes the results of sharding? Select 1
+1. When combined, the work of multiple smaller shards is different from a single large shard
+1. When combined, the work of multiple smaller shards matches that of a single large shard
+1. When combined, the work of multiple smaller shards is more than that of a single large shard
+
+<details><summary>See correct answer</summary>
+
+2. When combined, the work of multiple smaller shards matches that of a single large shard
+</details>
+
+### Why could sharding weaken a system, especially in the context of consensus algorithms? Select 1
+1. Gathering consensus resources on a much smaller shard is harder
+1. Gathering consensus on smaller shards is easier, which increases vulnerability to attacks
+1. Sharding always reduces the efficiency of the original system
+
+<details><summary>See correct answer</summary>
+
+2. Gathering consensus on smaller shards is easier, which increases vulnerability to attacks
+</details>
+
+### What does 'amortized performance' in computer science refer to? Select 1
+1. Looking at a system's worst-case performance
+1. Analyzing a system's best-case performance
+1. Evaluating a system's average performance over many cases
+
+<details><summary>See correct answer</summary>
+
+3. Evaluating a system's average performance over many cases
+</details>
+
+### What does the technique of 'eventual consistency' imply? Select 1
+1. It implies immediate synchronization
+1. It implies that the system will settle immediately
+1. It implies that the system will settle at a future point
+1. It implies that data is always consistent
+
+<details><summary>See correct answer</summary>
+
+3. It implies that the system will settle at a future point
+</details>
+
+
+### In the context of the eventual consistency technique, what does a ‘transient state’ refer to? Select 1
+1. A state where data is immediately consistent
+1. A temporary state before data is written to disk
+1. A state where data is lost forever
+
+<details><summary>See correct answer</summary>
+
+2. A temporary state before data is written to disk
+</details>
+
+### What is one risk associated with the 'eventual consistency' technique?
+1. Slowing down the system
+1. Too many actions being executed at once
+1. The risk of data loss before data is synced
+
+<details><summary>See correct answer</summary>
+
+3. The risk of data loss before data is synced
+</details>
