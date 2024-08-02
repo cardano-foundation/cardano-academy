@@ -353,13 +353,13 @@ https://ucarecdn.com/e14c6f03-152d-4361-abaf-f1fee5eb2e4e/EUTxOhandbook3.pdf , A
 
 ### Select two correct statements about spent and new UTxOs in a blockchain.
 1. Each UTxO can be used as an input to a new transaction
-1. When a UTxO becomes “spent” after being used, it can still be used again
 1. Once a UTxO is used, it can’t be used again
+1. When a UTxO becomes “spent” after being used, it can still be used again
 1. Newly created UTxOs are known as ‘fees’
 <details><summary>See correct answer</summary>
 
 1. Each UTxO can be used as an input to a new transaction.
-3. Once a UTxO is used, it can’t be used again.
+2. Once a UTxO is used, it can’t be used again.
 </details>
 
 ### How do full-node wallets calculate a user’s token balance?
