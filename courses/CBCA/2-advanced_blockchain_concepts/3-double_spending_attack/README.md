@@ -201,14 +201,14 @@ And with that. Thank you, and see you next time.
 </details>
 
 ### Select two correct statements about how to avoid double-spending attacks.
-1. Waiting before confirming a transaction assures the user that a fork will not appear in the blockchain and that the tokens are indeed theirs
-1. The number of blocks the user needs to wait for will be the same for all transactions
-1. The number of blocks the user should wait for before accepting a transaction depends on the block generation power held by potential attackers 
 1. If malicious actors control 5% of a network's power, the user should wait for five blocks new before confirming a transaction
-<details><summary>See correct answer</summary>
-
+1. The number of blocks the user needs to wait for will be the same for all transactions
 1. Waiting before confirming a transaction assures the user that a fork will not appear in the blockchain and that the tokens are indeed theirs
-3. The number of blocks the user should wait for before accepting a transaction depends on the block generation power held by potential attacker
+1. The number of blocks the user should wait for before accepting a transaction depends on the block generation power held by potential attackers 
+
+<details><summary>See correct answer</summary>
+3. Waiting before confirming a transaction assures the user that a fork will not appear in the blockchain and that the tokens are indeed theirs
+4. The number of blocks the user should wait for before accepting a transaction depends on the block generation power held by potential attacker
 </details>
 
 ### To mitigate against a double spending attack, the honest user must wait for a certain amount of time, or a certain number of blocks, after receiving a transaction before accepting it as valid. This time depends on the transaction amount.
