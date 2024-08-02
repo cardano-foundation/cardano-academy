@@ -357,10 +357,9 @@ https://ucarecdn.com/e14c6f03-152d-4361-abaf-f1fee5eb2e4e/EUTxOhandbook3.pdf , A
 - [ ] Once a UTxO is used, it can’t be used again 
 - [ ] Newly created UTxOs are known as ‘fees’
 <details><summary>See correct answer</summary>
+ 
 - [x] Each UTxO can be used as an input to a new transaction
-- [ ] When a UTxO becomes “spent” after being used, it can still be used again
 - [x] Once a UTxO is used, it can’t be used again 
-- [ ] Newly created UTxOs are known as ‘fees’
 </details>
 
 ### How do full-node wallets calculate a user’s token balance?
