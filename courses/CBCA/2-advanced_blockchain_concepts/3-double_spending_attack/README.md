@@ -208,6 +208,7 @@ And with that. Thank you, and see you next time.
 
 <details><summary>See correct answer</summary>
 3. Waiting before confirming a transaction assures the user that a fork will not appear in the blockchain and that the tokens are indeed theirs.
+
 4. The number of blocks the user should wait for before accepting a transaction depends on the block generation power held by potential attacker
 </details>
 
