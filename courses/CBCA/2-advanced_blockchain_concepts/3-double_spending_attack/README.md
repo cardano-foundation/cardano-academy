@@ -160,14 +160,14 @@ And with that. Thank you, and see you next time.
 
 ![illustration 2.3.11.png](./assets/2.3.11.png)
 
-1. Mallory needs to create another transaction that conflicts with the first one 
-1. The second transaction needs to be placed in a different branch
-1. Mallory needs to wait for the first transaction to clear before creating the second one
-1. The second transaction needs to be placed in the same branch
+- [ ] Mallory needs to wait for the first transaction to clear before creating the second one
+- [ ] Mallory needs to create another transaction that conflicts with the first one 
+- [ ] The second transaction needs to be placed in a different branch
+- [ ] The second transaction needs to be placed in the same branch
 <details><summary>See correct answer</summary>
 
-1. Mallory needs to create another transaction that conflicts with the first one.
-2. The second transaction needs to be placed in a different branch.
+- [x] Mallory needs to create another transaction that conflicts with the first one.
+- [x] The second transaction needs to be placed in a different branch.
 </details>
 
 ### When it comes to double-spending attacks, how do the dishonest nodes get their alternative chain to be accepted by all nodes?
@@ -180,14 +180,14 @@ And with that. Thank you, and see you next time.
 </details>
 
 ### Select the statements that best describe the concept of block generation power in the context of proof-of-work and proof-of-stake mechanisms.
-1. In proof of work, it refers to the number of blockchain tokens controlled by each block producer
-1. In proof of stake, it refers to the computing power, typically measured in hash rate
-1. In proof of work, it refers to the computing power, typically measured in hash rate 
-1. In proof of stake, it refers to the number of blockchain tokens controlled by each block producer 
+- [ ] In proof of work, it refers to the number of blockchain tokens controlled by each block producer
+- [ ] In proof of stake, it refers to the computing power, typically measured in hash rate
+- [ ] In proof of work, it refers to the computing power, typically measured in hash rate 
+- [ ] In proof of stake, it refers to the number of blockchain tokens controlled by each block producer 
 <details><summary>See correct answer</summary>
 
-3. In proof of work, it refers to the computing power, typically measured in hash rate
-4. In proof of stake, it refers to the number of blockchain tokens controlled by each block producer 
+- [x] In proof of work, it refers to the computing power, typically measured in hash rate
+- [x] In proof of stake, it refers to the number of blockchain tokens controlled by each block producer 
 </details>
 
 ### Which of the following is accurate for proof-of-stake blockchains?
@@ -201,15 +201,15 @@ And with that. Thank you, and see you next time.
 </details>
 
 ### Select two correct statements about how to avoid double-spending attacks.
-1. If malicious actors control 5% of a network's power, the user should wait for five blocks new before confirming a transaction
-1. The number of blocks the user needs to wait for will be the same for all transactions
-1. Waiting before confirming a transaction assures the user that a fork will not appear in the blockchain and that the tokens are indeed theirs
-1. The number of blocks the user should wait for before accepting a transaction depends on the block generation power held by potential attackers 
+- [ ] If malicious actors control 5% of a network's power, the user should wait for five blocks new before confirming a transaction
+- [ ] Waiting before confirming a transaction assures the user that a fork will not appear in the blockchain and that the tokens are indeed theirs
+- [ ] The number of blocks the user needs to wait for will be the same for all transactions
+- [ ] The number of blocks the user should wait for before accepting a transaction depends on the block generation power held by potential attackers 
 
 <details><summary>See correct answer</summary>
-3. Waiting before confirming a transaction assures the user that a fork will not appear in the blockchain and that the tokens are indeed theirs.
-
-4. The number of blocks the user should wait for before accepting a transaction depends on the block generation power held by potential attacker
+  
+- [x] Waiting before confirming a transaction assures the user that a fork will not appear in the blockchain and that the tokens are indeed theirs.
+- [x] The number of blocks the user should wait for before accepting a transaction depends on the block generation power held by potential attacker
 </details>
 
 ### To mitigate against a double spending attack, the honest user must wait for a certain amount of time, or a certain number of blocks, after receiving a transaction before accepting it as valid. This time depends on the transaction amount.
@@ -238,14 +238,14 @@ And with that. Thank you, and see you next time.
 </details>
 
 ### Select the correct statements about soft forks in a blockchain protocol.
-1. A soft fork requires all nodes to upgrade to the latest protocol version  
-1. After a soft fork, block producers using the previous protocol will not recognize new blocks as valid
-1. A soft fork introduces changes in a way that doesn’t require every node to upgrade
-1. Soft forks are backward compatible
+- [ ] A soft fork requires all nodes to upgrade to the latest protocol version  
+- [ ] After a soft fork, block producers using the previous protocol will not recognize new blocks as valid
+- [ ] A soft fork introduces changes in a way that doesn’t require every node to upgrade
+- [ ] Soft forks are backward compatible
 <details><summary>See correct answer</summary>
 
-3. After a soft fork, block producers using the previous protocol will not recognize new blocks as valid
-4. Soft forks are backward compatible
+- [x] After a soft fork, block producers using the previous protocol will not recognize new blocks as valid
+- [x] Soft forks are backward compatible
 </details>
 
 ### A blockchain updated its code. Nodes that have not updated their client software can still follow and validate the chain. They may nevertheless not be able to produce new blocks. What type of update does this describe?
@@ -258,15 +258,15 @@ And with that. Thank you, and see you next time.
 </details>
 
 ### Which of the following statements are true about forks?*
-1. A double-spending attack creates a fork as a result of the competition between honest and dishonest block producers
-1. There are two types of forks: soft and hard
-1. Blockchains generate forks at regular intervals to maintain the technology 
-1. Hard forks allow for backward compatibility
-1. A hard fork reduces the block generation power of the network
+- [ ] A double-spending attack creates a fork as a result of the competition between honest and dishonest block producers
+- [ ] Blockchains generate forks at regular intervals to maintain the technology 
+- [ ] Hard forks allow for backward compatibility
+- [ ] There are two types of forks: soft and hard
+- [ ] A hard fork reduces the block generation power of the network
 <details><summary>See correct answer</summary>
 
-1. A double-spending attack creates a fork as a result of the competition between honest and dishonest block producers 
-2. There are two types of forks: soft and hard
+- [x] A double-spending attack creates a fork as a result of the competition between honest and dishonest block producers 
+- [x] There are two types of forks: soft and hard
 </details>
 
 ### What happens during a hard fork in a blockchain protocol?*
