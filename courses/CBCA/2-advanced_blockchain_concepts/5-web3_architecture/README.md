@@ -153,112 +153,191 @@ Developer-tools: https://www.essentialcardano.io/article/a-list-of-community-bui
 
 ## Questions
 
-**Sub-Unit 1**
+### How do nodes in a network typically connect and verify information?
+1. By receiving authentication from a central authority
+1. By seeking out other nodes/peers and verifying information independently
+1. By relying solely on the longest-chain rule for all interactions
+1. By accessing a central database for peer information
 
-*How do nodes in a network typically connect and verify information?*
-- By receiving authentication from a central authority
-- **By seeking out other nodes/peers and verifying information independently (CORRECT ANSWER)**
-- By relying solely on the longest-chain rule for all interactions
-- By accessing a central database for peer information
+<details><summary>See correct answer</summary>
 
-**Sub-Unit 2**
+2. By seeking out other nodes/peers and verifying information independently
+</details>
 
-*What is the main difference between a mainnet and a testnet in blockchain?*
-- **A mainnet holds real assets and history, while a testnet allows for the creation of tokens at will for testing purposes (CORRECT ANSWER)**
-- A blockchain can have multiple mainnets but only one testnet.
-- A mainnet is only used for testing, while a testnet processes real transactions
-- A mainnet is for testing where tokens do not have any real value, while a testnet is a live network where tokens have value
+### What is the main difference between a mainnet and a testnet in blockchain?
+1. A mainnet holds real assets and history, while a testnet allows for the creation of tokens at will for testing purposes 
+1. A blockchain can have multiple mainnets but only one testnet.
+1. A mainnet is only used for testing, while a testnet processes real transactions
+1. A mainnet is for testing where tokens do not have any real value, while a testnet is a live network where tokens have value
 
-*Select the correct statement about testnets and mainnets.**
-- Mainnets can change as the blockchain evolves, but testnets remain static
-- A node can simultaneously be connected to both a mainnet and a testnet
-- **Web3 applications can typically be configured to work on a variety of networks (CORRECT ANSWER)**
+<details><summary>See correct answer</summary>
 
-*How do we typically refer to the main blockchain network of a given protocol?**
-- Skynet
-- **Mainnet (CORRECT ANSWER)**
-- Masternet
-- Magnet
+1. A mainnet holds real assets and history, while a testnet allows for the creation of tokens at will for testing purposes
+</details>
 
-*Select the correct statements about Preview and Preprod.*
-- Preprod is a less stable network compared to Preview
-- **The Preprod network is meant to simulate mainnet conditions for dApps (CORRECT ANSWER)**
-- Preprod networks run alongside testnet
-- **The Preview network is where new software is deployed (CORRECT ANSWER)**
+### Select the correct statement about testnets and mainnets.
+1. Mainnets can change as the blockchain evolves, but testnets remain static
+1. A node can simultaneously be connected to both a mainnet and a testnet
+1. Web3 applications can typically be configured to work on a variety of networks
 
-*Which network forks well before mainnet?*
-- Preprod
-- Plutus Playground
-- **Preview (CORRECT ANSWER)**
-- None of above
+<details><summary>See correct answer</summary>
 
-**Sub-Unit 3**
+3. Web3 applications can typically be configured to work on a variety of networks
+</details>
 
-*How do users get tokens on a testnet?*
-- They earn them through mining
-- **They request them from a tool known as a faucet (CORRECT ANSWER)**
-- They get them through complex cryptographic challenges
+### How do we typically refer to the main blockchain network of a given protocol?
+1. Skynet
+1. Mainnet
+1. Masternet
+1. Magnet
 
-*Why are test tokens used when testing a DApp instead of tokens from the mainnet?*
-- Test tokens have more features compared to mainnet tokens
-- Test tokens can be easily exchanged for real-world currency
-- **Using mainnet tokens for testing would risk valuable funds if bugs are found (CORRECT ANSWER)**
-- Developers prefer using tokens that can be bought from exchanges
+<details><summary>See correct answer</summary>
 
-*How are tokens on Cardano's testnets distinguished from those on its mainnet?*
-- Test tokens are encrypted differently
-- **Test tokens are prefixed with a lowercase “t” (CORRECT ANSWER)**
-- Test tokens are twice the size of mainnet tokens
-- Test tokens have an expiration date
+2. Mainnet
+</details>
 
-**Sub-Unit 4**
+### Select the correct statements about Preview and Preprod.
+- [ ] Preprod is a less stable network compared to Preview
+- [ ] The Preprod network is meant to simulate mainnet conditions for dApps 
+- [ ] Preprod networks run alongside testnet
+- [ ] The Preview network is where new software is deployed 
 
-*TPS (Transaction Per Second) is an accurate measure to compare different blockchain networks and protocols?*
-- True
-- **False (CORRECT ANSWER)**
+<details><summary>See correct answer</summary>
 
-*What is the main purpose of an Application Programming Interface (API) in blockchain?*
-- To code the smart contracts on the blockchain
-- To control the consensus algorithm of the blockchain
-- **To access the blockchain network through a node and perform actions (CORRECT ANSWER)**
-- To protect the blockchain from potential threats
+- [x] The Preprod network is meant to simulate mainnet conditions for dApps 
+- [x] The Preview network is where new software is deployed 
+</details>
 
-*Why does a DApp usually include a node as part of its application?*
-- To serve as backup storage for the blockchain
-- **To receive information directly from the network (CORRECT ANSWER)**
-- **To monitor transactions related to its smart contracts (CORRECT ANSWER)**
-- To authenticate users for security purposes
+### Which network forks well before mainnet?
+1. Preprod
+1. Plutus Playground
+1. Preview 
+1. None of above
 
-**Sub-Unit 5**
+<details><summary>See correct answer</summary>
 
-*In a permissionless distributed network, nodes have to register and authenticate to join the network.*
-- True
-- **False (CORRECT ANSWER)**
+3. Preview
+</details>
 
-*The main distinguishing feature between Web2 applications and Web3 applications is…*
-- Web3 applications are usually faster because they leverage distributed peer-to-peer networks.
-- **Web3 applications rely on a blockchain to provide data and do arbitration (CORRECT ANSWER)**
-- Web3 applications are simpler to develop because they do not require any backend
-- Web3 applications are always free to use and open source
 
-*In a distributed Web3 application, users' credentials are typically stored:*
-- On a server, in a user account protected by an email and a passphrase
-- In the application itself, and they are never sent to the server
-- **In a secure hardware or software wallet, used by the application on demand (CORRECT ANSWER)**
-- On the blockchain, kept secure by the ledger and all network validators
+### How do users get tokens on a testnet?
+1. They earn them through mining
+1. They request them from a tool known as a faucet
+1. They get them through complex cryptographic challenges
 
-**Sub-Unit 6**
+<details><summary>See correct answer</summary>
 
-*What are the primary functions of Ogmios in the Nebula app?*
-- Defining the rules for operating the marketplace
-- **Synchronizing blocks from the node (CORRECT ANSWER)**
-- **Simplifying communication protocols (CORRECT ANSWER)**
-- **Assisting in transaction operations (CORRECT ANSWER)**
-- Creating transactions involved in the Nebula protocol
+2. They request them from a tool known as a faucet
+</details>
 
-*Which software development kit (SDK) does Nebula utilize for creating transactions?*
-- Blockfrost
-- Ogmios
-- **Lucid (CORRECT ANSWER)**
-- Mesh
+### Why are test tokens used when testing a DApp instead of tokens from the mainnet?
+1. Test tokens have more features compared to mainnet tokens
+1. Test tokens can be easily exchanged for real-world currency
+1. Using mainnet tokens for testing would risk valuable funds if bugs are found
+1. Developers prefer using tokens that can be bought from exchanges
 
+<details><summary>See correct answer</summary>
+
+3. Using mainnet tokens for testing would risk valuable funds if bugs are found
+</details>
+
+### How are tokens on Cardano's testnets distinguished from those on its mainnet?
+1. Test tokens are encrypted differently
+1. Test tokens are prefixed with a lowercase “t”
+1. Test tokens are twice the size of mainnet tokens
+1. Test tokens have an expiration date
+
+<details><summary>See correct answer</summary>
+
+2. Test tokens are prefixed with a lowercase “t”
+</details>
+
+### TPS (Transaction Per Second) is an accurate measure to compare different blockchain networks and protocols?
+1. TRUE
+1. FALSE
+
+<details><summary>See correct answer</summary>
+
+2. FALSE
+</details>
+
+
+### What is the main purpose of an Application Programming Interface (API) in blockchain?
+1. To code the smart contracts on the blockchain
+1. To control the consensus algorithm of the blockchain
+1. To access the blockchain network through a node and perform actions
+1. To protect the blockchain from potential threats
+
+<details><summary>See correct answer</summary>
+
+3. To access the blockchain network through a node and perform actions
+</details>
+
+### Why does a DApp usually include a node as part of its application?
+- [ ] To serve as backup storage for the blockchain
+- [ ] To receive information directly from the network 
+- [ ] To monitor transactions related to its smart contracts 
+- [ ] To authenticate users for security purposes
+
+<details><summary>See correct answer</summary>
+
+- [x] To receive information directly from the network 
+- [x] To monitor transactions related to its smart contracts 
+</details>
+
+### In a permissionless distributed network, nodes have to register and authenticate to join the network.
+1. TRUE
+1. FALSE
+
+<details><summary>See correct answer</summary>
+
+2. FALSE
+</details>
+
+### The main distinguishing feature between Web2 applications and Web3 applications is…
+1. Web3 applications are usually faster because they leverage distributed peer-to-peer networks.
+1. Web3 applications rely on a blockchain to provide data and do arbitration
+1. Web3 applications are simpler to develop because they do not require any backend
+1. Web3 applications are always free to use and open source
+
+<details><summary>See correct answer</summary>
+
+2. Web3 applications rely on a blockchain to provide data and do arbitration
+</details>
+
+
+### In a distributed Web3 application, users' credentials are typically stored:
+1. On a server, in a user account protected by an email and a passphrase
+1. In the application itself, and they are never sent to the server
+1. In a secure hardware or software wallet, used by the application on demand
+1. On the blockchain, kept secure by the ledger and all network validators
+
+<details><summary>See correct answer</summary>
+
+3. In a secure hardware or software wallet, used by the application on demand
+</details>
+
+### What are the primary functions of Ogmios in the Nebula app?
+- [ ] Defining the rules for operating the marketplace
+- [ ] Synchronizing blocks from the node 
+- [ ] Simplifying communication protocols 
+- [ ] Assisting in transaction operations 
+- [ ] Creating transactions involved in the Nebula protocol
+
+<details><summary>See correct answer</summary>
+
+- [x] Synchronizing blocks from the node 
+- [x] Simplifying communication protocols
+- [x] Assisting in transaction operations
+</details>
+
+### Which software development kit (SDK) does Nebula utilize for creating transactions?
+1. Blockfrost
+1. Ogmios
+1. Lucid
+1. Mesh
+
+<details><summary>See correct answer</summary>
+
+3. Lucid
+</details>
