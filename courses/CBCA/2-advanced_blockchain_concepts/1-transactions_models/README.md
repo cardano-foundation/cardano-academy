@@ -218,15 +218,16 @@ https://ucarecdn.com/e14c6f03-152d-4361-abaf-f1fee5eb2e4e/EUTxOhandbook3.pdf , A
 
 ### Select two correct statements about tokens.
 
-1. Native tokens have nothing to do with the functional design of a blockchain
-1. Each public permissionless blockchain has its own unique token 
-1. The main method of exchanging value for transactions and motivating participants in the network is by using native tokens
-1. It is not yet possible to create different types of tokens in newer platforms
+- [ ] Native tokens have nothing to do with the functional design of a blockchain
+- [ ] Each public permissionless blockchain has its own unique token 
+- [ ] The main method of exchanging value for transactions and motivating participants in the network is by using native tokens
+- [ ] It is not yet possible to create different types of tokens in newer platforms
 
 <details><summary>See correct answer</summary>
-
-2. Each public permissionless blockchain has its own unique token.
-3. The main method of exchanging value for transactions and motivating participants in the network is by using native tokens.
+- [ ] Native tokens have nothing to do with the functional design of a blockchain
+- [x] Each public permissionless blockchain has its own unique token 
+- [x] The main method of exchanging value for transactions and motivating participants in the network is by using native tokens
+- [ ] It is not yet possible to create different types of tokens in newer platforms.
 </details>
 
 ### What are blockchain explorers used for?
@@ -264,15 +265,17 @@ https://ucarecdn.com/e14c6f03-152d-4361-abaf-f1fee5eb2e4e/EUTxOhandbook3.pdf , A
 </details>
 
 ### Select two correct statements about the transaction lifecycle in a blockchain network.
-1. A transaction is created by the owner of the inputs and it cannot be created by anyone else
-1. The creator of a transaction and the signer can be two different individuals
-1. A transaction is always only propagated by end users to other users in a peer-to-peer fashion
-1. A transaction, once validated, is added to a block and distributed across the network in a peer-to-peer fashion
+
+- [ ] A transaction is created by the owner of the inputs and it cannot be created by anyone else
+- [ ] The creator of a transaction and the signer can be two different individuals
+- [ ] A transaction is always only propagated by end users to other users in a peer-to-peer fashion
+- [ ] A transaction, once validated, is added to a block and distributed across the network in a peer-to-peer fashion
 
 <details><summary>See correct answer</summary>
-
-2. The creator of a transaction and the signer can be two different individuals.
-4. A transaction, once validated, is added to a block and distributed across the network in a peer-to-peer fashion.
+- [ ] A transaction is created by the owner of the inputs and it cannot be created by anyone else
+- [x] The creator of a transaction and the signer can be two different individuals
+- [ ] A transaction is always only propagated by end users to other users in a peer-to-peer fashion
+- [x] A transaction, once validated, is added to a block and distributed across the network in a peer-to-peer fashion
 </details>
 
 
@@ -301,15 +304,16 @@ https://ucarecdn.com/e14c6f03-152d-4361-abaf-f1fee5eb2e4e/EUTxOhandbook3.pdf , A
 </details>
 
 ### Select the correct statements about UTxO-based and account-based transaction models.
-1. UTxO stands for Unauthorized Transaction Output
-1. When an account-based transaction takes place, the balance in a user’s account will either increase or decrease
-1. Tokens are stored in UTxOs and are moved from one group to another when transactions happen
-1. Bitcoin uses account-based transaction models
+- [ ] UTxO stands for Unauthorized Transaction Output
+- [ ] When an account-based transaction takes place, the balance in a user’s account will either increase or decrease
+- [ ] Bitcoin uses account-based transaction models
+- [ ] Tokens are stored in UTxOs and are moved from one group to another when transactions happen
  
 <details><summary>See correct answer</summary>
-
-2. When an account-based transaction takes place, the balance in a user’s account will either increase or decrease.
-3. Tokens are stored in UTxOs and are moved from one group to another when transactions happen 
+- [ ] UTxO stands for Unauthorized Transaction Output
+- [x] When an account-based transaction takes place, the balance in a user’s account will either increase or decrease
+- [ ] Bitcoin uses account-based transaction models
+- [x] Tokens are stored in UTxOs and are moved from one group to another when transactions happen
 </details>
 
 
@@ -339,27 +343,28 @@ https://ucarecdn.com/e14c6f03-152d-4361-abaf-f1fee5eb2e4e/EUTxOhandbook3.pdf , A
 2. She can use multiple UTxOs to gather the needed amount
 </details>
 
-
 ### Select two correct statements about UTxO transaction fees.
-1. A ledger must confirm that the difference between the inputs and outputs equals the amount declared as fees or the UTxO transaction will be rejected 
-1. Transaction fees are 2% of the sum of all inputs
-1. Users will pay a lower transaction fee if they spend their inputs fully
-1. On Cardano, fees can be explicitly stated in the transaction
+- [ ] A ledger must confirm that the difference between the inputs and outputs equals the amount declared as fees or the UTxO transaction will be rejected 
+- [ ] Transaction fees are 2% of the sum of all inputs
+- [ ] Users will pay a lower transaction fee if they spend their inputs fully
+- [ ] On Cardano, fees can be explicitly stated in the transaction
 <details><summary>See correct answer</summary>
-
-1. A ledger must confirm that the difference between the inputs and outputs equals the amount declared as fees or the UTxO transaction will be rejected.
-4. On Cardano, fees can be explicitly stated in the transaction.
+- [x] A ledger must confirm that the difference between the inputs and outputs equals the amount declared as fees or the UTxO transaction will be rejected 
+- [ ] Transaction fees are 2% of the sum of all inputs
+- [ ] Users will pay a lower transaction fee if they spend their inputs fully
+- [x] On Cardano, fees can be explicitly stated in the transaction
 </details>
 
 ### Select two correct statements about spent and new UTxOs in a blockchain.
-1. Each UTxO can be used as an input to a new transaction
-1. Once a UTxO is used, it can’t be used again
-1. When a UTxO becomes “spent” after being used, it can still be used again
-1. Newly created UTxOs are known as ‘fees’
+- [ ] Each UTxO can be used as an input to a new transaction
+- [ ] When a UTxO becomes “spent” after being used, it can still be used again
+- [ ] Once a UTxO is used, it can’t be used again 
+- [ ] Newly created UTxOs are known as ‘fees’
 <details><summary>See correct answer</summary>
-
-1. Each UTxO can be used as an input to a new transaction.
-2. Once a UTxO is used, it can’t be used again.
+- [x] Each UTxO can be used as an input to a new transaction
+- [ ] When a UTxO becomes “spent” after being used, it can still be used again
+- [x] Once a UTxO is used, it can’t be used again 
+- [ ] Newly created UTxOs are known as ‘fees’
 </details>
 
 ### How do full-node wallets calculate a user’s token balance?
@@ -372,15 +377,17 @@ https://ucarecdn.com/e14c6f03-152d-4361-abaf-f1fee5eb2e4e/EUTxOhandbook3.pdf , A
 </details>
 
 ### Which two components uniquely identify an UTxO entry?
-1. Block header
-1. Address
-1. Transaction id
-1. Output index
-1. Private key
+- [ ] Block header
+- [ ] Address
+- [ ] Transaction id
+- [ ] Output index
+- [ ] Private key
 <details><summary>See correct answer</summary>
-
-3. Transaction id.
-4. Output index
+- [ ] Block header
+- [ ] Address
+- [x] Transaction id
+- [x] Output index
+- [ ] Private key
 </details>
 
 
