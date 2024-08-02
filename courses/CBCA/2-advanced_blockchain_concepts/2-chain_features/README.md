@@ -200,13 +200,13 @@ First, we reviewed the components of a blockchain and the basic structure of a b
 
 ### What are the important steps and resources a new block-producing node requires to successfully join a network? Select two answers.
 1. The new block producer should have the correct genesis configuration provided by a trusted source
-1. The new block producer must gain approval from all existing nodes in the network before they can join
 1. The new block producer must apply the longest chain rule when receiving subsequent blocks from other block producers
+1. The new block producer must gain approval from all existing nodes in the network before they can join
 1. The new block producer needs to generate the genesis block independently before starting to synchronize the blockchain
 <details><summary>See correct answer</summary>
 
 1. The new block producer should have the correct genesis configuration provided by a trusted source
-3. The new block producer must apply the longest chain rule when receiving subsequent blocks from other block producers
+2. The new block producer must apply the longest chain rule when receiving subsequent blocks from other block producers
 </details>
 
 
