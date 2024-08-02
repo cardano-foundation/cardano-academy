@@ -230,6 +230,7 @@ First, we reviewed the components of a blockchain and the basic structure of a b
 
 1. A new node must synchronize with existing nodes
 2. The node must identify similarities and differences between received copies of the blockchain
+
 4. The node must determine the correct chain by selecting the one that is closest to other branches
 </details>
 
