@@ -259,14 +259,14 @@ And with that. Thank you, and see you next time.
 
 ### Which of the following statements are true about forks?*
 1. A double-spending attack creates a fork as a result of the competition between honest and dishonest block producers
-1. Blockchains generate forks at regular intervals to maintain the technology
-1. There are two types of forks: soft and hard 
+1. There are two types of forks: soft and hard
+1. Blockchains generate forks at regular intervals to maintain the technology 
 1. Hard forks allow for backward compatibility
 1. A hard fork reduces the block generation power of the network
 <details><summary>See correct answer</summary>
 
 1. A double-spending attack creates a fork as a result of the competition between honest and dishonest block producers 
-3. There are two types of forks: soft and hard
+2. There are two types of forks: soft and hard
 </details>
 
 ### What happens during a hard fork in a blockchain protocol?*
