@@ -310,10 +310,12 @@ https://ucarecdn.com/e14c6f03-152d-4361-abaf-f1fee5eb2e4e/EUTxOhandbook3.pdf , A
 - [ ] Tokens are stored in UTxOs and are moved from one group to another when transactions happen
  
 <details><summary>See correct answer</summary>
-- [ ] UTxO stands for Unauthorized Transaction Output
-- [x] When an account-based transaction takes place, the balance in a user’s account will either increase or decrease
-- [ ] Bitcoin uses account-based transaction models
-- [x] Tokens are stored in UTxOs and are moved from one group to another when transactions happen
+
+- [ ] UTxO stands for Unauthorized Transaction Output.
+- [x] When an account-based transaction takes place, the balance in a user’s account will either increase or decrease.
+- [ ] Bitcoin uses account-based transaction models.
+- [x] Tokens are stored in UTxOs and are moved from one group to another when transactions happen.
+
 </details>
 
 
