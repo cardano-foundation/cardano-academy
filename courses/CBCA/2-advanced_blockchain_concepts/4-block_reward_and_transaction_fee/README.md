@@ -89,63 +89,105 @@ Congratulations, you’ve made it to the end! Let’s recap what we learned. In 
 
 ## Questions
 
-**Sub-Unit 1**
+### In a Sybil attack, a single malicious node operates multiple fake identities, or Sybil identities, in an attempt to gain a majority of influence in the network.
+1. TRUE
+1. FALSE
 
-*In a Sybil attack, a single malicious node operates multiple fake identities, or Sybil identities, in an attempt to gain a majority of influence in the network.*
-- **TRUE (CORRECT ANSWER)**
-- FALSE
+<details><summary>See correct answer</summary>
 
-*What in the image below tells us that a Sybil attack may be occurring? (Image Question)*
+1. TRUE
+</details>
+
+### What in the image below tells us that a Sybil attack may be occurring? (Image Question)
 
 ![illustration 2.4.5.png](./assets/2.4.5.png)
 
-- There is an uneven number of votes
-- **User 4 is casting multiple votes (CORRECT ANSWER)**
-- Users 1 - 3 are only casting one vote each
+1. There is an uneven number of votes
+1. User 4 is casting multiple votes
+1. Users 1 - 3 are only casting one vote each
 
-*Incentives help to increase blockchain security by:*
-- **Making attacks costly for attackers (CORRECT ANSWER)**
-- Preventing certain groups of people from working on blockchains
-- **Making rule-following more beneficial than rule-breaking (CORRECT ANSWER)**
-- Making it easier for block producers to use multiple identities
+<details><summary>See correct answer</summary>
 
-**Sub-Unit 2**
+2. User 4 is casting multiple votes
+</details>
 
-*The Nakamoto Coefficient measures decentralization. The higher the Nakamoto Coefficient, the more decentralized the network is.*
-- **TRUE (CORRECT ANSWER)**
-- FALSE
+### Incentives help to increase blockchain security by:
+- [ ] Making attacks costly for attackers
+- [ ] Preventing certain groups of people from working on blockchains
+- [ ] Making rule-following more beneficial than rule-breaking
+- [ ] Making it easier for block producers to use multiple identities
 
-**Sub-Unit 3**
+<details><summary>See correct answer</summary>
 
-*Select two correct statements about a coinbase transaction.*
-- It is the last transaction of each block
-- **It creates brand-new tokens (CORRECT ANSWER)**
-- **It rewards the block producer with new tokens for creating a block (CORRECT ANSWER)**
-- It removes new tokens during the block generation process
+- [x] Making attacks costly for attackers
+- [x] Making rule-following more beneficial than rule-breaking
 
-*In a typical proof-of-work blockchain, block producers receive mining rewards from a special transaction type. What’s the name of this special transaction type?*
-- Kucoin transaction
-- Binance transaction
-- **Coinbase transaction (CORRECT ANSWER)**
+2. User 4 is casting multiple votes
+</details>
 
-*What role does the coinbase transaction play in Bitcoin's network and why does it encourage miners to invest in infrastructure?*
-- The coinbase transaction acts as a penalty for miners, forcing them to invest in infrastructure to avoid it
-- **The coinbase transaction is a reward for miners, encouraging them to invest in infrastructure to increase their chances of receiving it (CORRECT ANSWER)**
-- The coinbase transaction reduces the cost of infrastructure, making investment more affordable
+### The Nakamoto Coefficient measures decentralization. The higher the Nakamoto Coefficient, the more decentralized the network is.
 
-**Sub-Unit 4**
+1. TRUE
+1. FALSE
 
-*Select the correct statements about block rewards.*
-- **Block rewards are consistent and known in advance (CORRECT ANSWER)**
-- Block reward amounts will never change
-- **The halving of a block reward can encourage energy efficiency among miners to remain profitable (CORRECT ANSWER)**
-- Block rewards are expected to increase by 50% in 2032
+<details><summary>See correct answer</summary>
 
-**Sub-Unit 5**
+1. TRUE
+</details>
 
-*Which of the following is NOT true of Transaction fees?*
-- An incentive for block producers to include a given transaction in a block
-- A way for users to increase the likelihood of their transactions being processed first
-- Given to the miner who mines the block containing the transaction and its fees
-- A way to minimize the amount of network spam
-- **Fixed and calculated in the same way for all blockchains (CORRECT ANSWER)**
+### Select two correct statements about a coinbase transaction.
+- [ ] It is the last transaction of each block
+- [ ] It creates brand-new tokens 
+- [ ] It rewards the block producer with new tokens for creating a block 
+- [ ] It removes new tokens during the block generation process
+
+<details><summary>See correct answer</summary>
+
+- [x] It creates brand-new tokens
+- [x] It rewards the block producer with new tokens for creating a block 
+</details>
+
+### In a typical proof-of-work blockchain, block producers receive mining rewards from a special transaction type. What’s the name of this special transaction type?
+1. Kucoin transaction
+1. Binance transaction
+1. Coinbase transaction
+
+<details><summary>See correct answer</summary>
+
+3. Coinbase transaction
+</details>
+
+### What role does the coinbase transaction play in Bitcoin's network and why does it encourage miners to invest in infrastructure?
+1. The coinbase transaction acts as a penalty for miners, forcing them to invest in infrastructure to avoid it
+1. The coinbase transaction is a reward for miners, encouraging them to invest in infrastructure to increase their chances of receiving it
+1. The coinbase transaction reduces the cost of infrastructure, making investment more affordable
+
+<details><summary>See correct answer</summary>
+
+2. The coinbase transaction is a reward for miners, encouraging them to invest in infrastructure to increase their chances of receiving it
+</details>
+
+
+### Select the correct statements about block rewards.
+- [ ] **Block rewards are consistent and known in advance 
+- [ ] Block reward amounts will never change
+- [ ] **The halving of a block reward can encourage energy efficiency among miners to remain profitable 
+- [ ] Block rewards are expected to increase by 50% in 2032
+
+<details><summary>See correct answer</summary>
+
+- [x] Block rewards are consistent and known in advance 
+- [x] The halving of a block reward can encourage energy efficiency among miners to remain profitable 
+</details>
+
+### Which of the following is NOT true of Transaction fees?
+1. An incentive for block producers to include a given transaction in a block
+1. A way for users to increase the likelihood of their transactions being processed first
+1. Given to the miner who mines the block containing the transaction and its fees
+1. A way to minimize the amount of network spam
+1. Fixed and calculated in the same way for all blockchains 
+
+<details><summary>See correct answer</summary>
+
+5. Fixed and calculated in the same way for all blockchains
+</details>
