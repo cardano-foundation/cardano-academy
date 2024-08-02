@@ -223,15 +223,14 @@ First, we reviewed the components of a blockchain and the basic structure of a b
 
 1. A new node must synchronize with existing nodes
 1. The node must identify similarities and differences between received copies of the blockchain
-1. The node must select the chain that is farthest from the other branches
 1. The node must determine the correct chain by selecting the one that is closest to other branches
+1. The node must select the chain that is farthest from the other branches
 1. The node must generate a new chain independently, which then gets adopted if it's longer than the current chain
 <details><summary>See correct answer</summary>
 
 1. A new node must synchronize with existing nodes
 2. The node must identify similarities and differences between received copies of the blockchain
-
-4. The node must determine the correct chain by selecting the one that is closest to other branches
+3. The node must determine the correct chain by selecting the one that is closest to other branches
 </details>
 
 
