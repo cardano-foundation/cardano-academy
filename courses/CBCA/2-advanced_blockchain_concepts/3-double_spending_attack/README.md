@@ -131,92 +131,164 @@ And with that. Thank you, and see you next time.
 ## Questions
 
 ### What does it mean if a blockchain provides eventual consensus?
-- Every transaction on the blockchain is agreed upon instantly, eliminating any chances of double-spending attacks
-- Transactions become final and unchangeable immediately after they are completed
-- **The final agreement on transactions solidifies over time - the longer the time, the more definite the agreement becomes (CORRECT ANSWER)**
+1. Every transaction on the blockchain is agreed upon instantly, eliminating any chances of double-spending attacks
+1. Transactions become final and unchangeable immediately after they are completed
+1. The final agreement on transactions solidifies over time - the longer the time, the more definite the agreement becomes 
+<details><summary>See correct answer</summary>
+3. The final agreement on transactions solidifies over time - the longer the time, the more definite the agreement becomes
+</details>
 
 ### A double-spending attack happens when a malicious actor engages in a transaction with an honest user in exchange for goods or services. The honest user provides the goods or services to the attacker and receives payment. The attacker transfers the same spent tokens to another user and spends those tokens for a second time.
-- **TRUE (CORRECT ANSWER)**
-- FALSE
+1. TRUE 
+1. FALSE
+
+<details><summary>See correct answer</summary>
+
+1. TRUE
+</details>
 
 ### What is Mallory, the attacker’s, first step in a double-spending attack against Alice?
-- To convince Alice that the transaction has failed and she has to transfer tokens again
-- To convince Alice to give her the product without having to pay yet
-- **To convince Alice that the transaction has been confirmed through the blockchain mechanism (CORRECT ANSWER)**
+1. To convince Alice that the transaction has failed and she has to transfer tokens again
+1. To convince Alice to give her the product without having to pay yet
+1. To convince Alice that the transaction has been confirmed through the blockchain mechanism
+<details><summary>See correct answer</summary>
+
+3. To convince Alice that the transaction has been confirmed through the blockchain mechanism
+</details>
 
 ### Based on the image below, what two steps need to happen in order for Mallory to successfully double-spend the same tokens? (Image Question)
 
 ![illustration 2.3.11.png](./assets/2.3.11.png)
 
-- **Mallory needs to create another transaction that conflicts with the first one (CORRECT ANSWER)**
-- Mallory needs to wait for the first transaction to clear before creating the second one
-- **The second transaction needs to be placed in a different branch (CORRECT ANSWER)**
-- The second transaction needs to be placed in the same branch
+1. Mallory needs to create another transaction that conflicts with the first one 
+1. Mallory needs to wait for the first transaction to clear before creating the second one
+1. The second transaction needs to be placed in a different branch
+1. The second transaction needs to be placed in the same branch
+<details><summary>See correct answer</summary>
+
+1. Mallory needs to create another transaction that conflicts with the first one
+3. The second transaction needs to be placed in a different branch
+</details>
 
 ### When it comes to double-spending attacks, how do the dishonest nodes get their alternative chain to be accepted by all nodes?
-- By enforcing the shortest chain rule and adding more blocks to the first branch while keeping the second branch short
-- By breaking down the first branch’s chain and adding it to the second branch’s chain
-- **By following the longest chain rule and racing to create a longer chain by forging more blocks faster (CORRECT ANSWER)**
+1. By enforcing the shortest chain rule and adding more blocks to the first branch while keeping the second branch short
+1. By breaking down the first branch’s chain and adding it to the second branch’s chain
+1. By following the longest chain rule and racing to create a longer chain by forging more blocks faster
+<details><summary>See correct answer</summary>
+
+3. By following the longest chain rule and racing to create a longer chain by forging more blocks faster
+</details>
 
 ### Select the statements that best describe the concept of block generation power in the context of proof-of-work and proof-of-stake mechanisms.
-- In proof of work, it refers to the number of blockchain tokens controlled by each block producer
-- In proof of stake, it refers to the computing power, typically measured in hash rate
-- **In proof of work, it refers to the computing power, typically measured in hash rate (CORRECT ANSWER)**
-- **In proof of stake, it refers to the number of blockchain tokens controlled by each block producer  (CORRECT ANSWER)**
+1. In proof of work, it refers to the number of blockchain tokens controlled by each block producer
+1. In proof of stake, it refers to the computing power, typically measured in hash rate
+1. In proof of work, it refers to the computing power, typically measured in hash rate 
+1. In proof of stake, it refers to the number of blockchain tokens controlled by each block producer 
+<details><summary>See correct answer</summary>
+
+3. In proof of work, it refers to the computing power, typically measured in hash rate
+4. In proof of stake, it refers to the number of blockchain tokens controlled by each block producer 
+</details>
 
 ### Which of the following is accurate for proof-of-stake blockchains?
-- They use energy consumption as an incentive
-- **The number of tokens assigned to each participant influences who produces blocks (CORRECT ANSWER)**
-- Nodes compete to produce blocks via physical hashing power
-- To vote on-chain participants have to prove how much stake they hold
+1. They use energy consumption as an incentive
+1. The number of tokens assigned to each participant influences who produces blocks
+1. Nodes compete to produce blocks via physical hashing power
+1. To vote on-chain participants have to prove how much stake they hold
+<details><summary>See correct answer</summary>
+
+2. The number of tokens assigned to each participant influences who produces blocks
+</details>
 
 ### Select two correct statements about how to avoid double-spending attacks.
-- **Waiting before confirming a transaction assures the user that a fork will not appear in the blockchain and that the tokens are indeed theirs (CORRECT ANSWER)**
-- The number of blocks the user needs to wait for will be the same for all transactions
-- **The number of blocks the user should wait for before accepting a transaction depends on the block generation power held by potential attackers (CORRECT ANSWER)**
-- If malicious actors control 5% of a network's power, the user should wait for five blocks new before confirming a transaction
+1. Waiting before confirming a transaction assures the user that a fork will not appear in the blockchain and that the tokens are indeed theirs
+1. The number of blocks the user needs to wait for will be the same for all transactions
+1. The number of blocks the user should wait for before accepting a transaction depends on the block generation power held by potential attackers 
+1. If malicious actors control 5% of a network's power, the user should wait for five blocks new before confirming a transaction
+<details><summary>See correct answer</summary>
+
+1. Waiting before confirming a transaction assures the user that a fork will not appear in the blockchain and that the tokens are indeed theirs
+3. The number of blocks the user should wait for before accepting a transaction depends on the block generation power held by potential attacker
+</details>
 
 ### To mitigate against a double spending attack, the honest user must wait for a certain amount of time, or a certain number of blocks, after receiving a transaction before accepting it as valid. This time depends on the transaction amount.
-- TRUE
-- **FALSE (CORRECT ANSWER)**
+1. TRUE
+1. FALSE 
+<details><summary>See correct answer</summary>
+
+2. FALSE
+</details>
 
 ### How can 51% of attacks be prevented?*
-- **A minimum of 51% of the total block generation power must be held by honest block producers (CORRECT ANSWER)**
-- A maximum of 51% of the total block generation power must be held by honest block producers
-- All block generation power must be held by honest block producers
+1. A minimum of 51% of the total block generation power must be held by honest block producers 
+1. A maximum of 51% of the total block generation power must be held by honest block producers
+1. All block generation power must be held by honest block producers
+<details><summary>See correct answer</summary>
 
-### True or False: to conduct a successful double-spending attack, attackers must own at least 51% of the block-producing resources, irrespective of any consensus algorithm
-- True
-- **False (correct answer)**
+1. A minimum of 51% of the total block generation power must be held by honest block producers
+</details>
+
+### To conduct a successful double-spending attack, attackers must own at least 51% of the block-producing resources, irrespective of any consensus algorithm
+1. TRUE
+1. FALSE
+<details><summary>See correct answer</summary>
+
+2. FALSE
+</details>
 
 ### Select the correct statements about soft forks in a blockchain protocol.
-- A soft fork requires all nodes to upgrade to the latest protocol version
-- A soft fork introduces changes in a way that doesn’t require every node to upgrade (CORRECT ANSWER)
-- **After a soft fork, block producers using the previous protocol will not recognize new blocks as valid
-Soft forks are backward compatible (CORRECT ANSWER)**
+1. A soft fork requires all nodes to upgrade to the latest protocol version
+1. A soft fork introduces changes in a way that doesn’t require every node to upgrade (CORRECT ANSWER)
+1. After a soft fork, block producers using the previous protocol will not recognize new blocks as valid
+Soft forks are backward compatible
+<details><summary>See correct answer</summary>
+
+3. After a soft fork, block producers using the previous protocol will not recognize new blocks as valid
+Soft forks are backward compatible
+</details>
 
 ### A blockchain updated its code. Nodes that have not updated their client software can still follow and validate the chain. They may nevertheless not be able to produce new blocks. What type of update does this describe?
-- Transitional fork
-- Muted fork
-- Hard fork
-- **Soft fork (CORRECT ANSWER)**
+1. Transitional fork
+1. Muted fork
+1. Hard fork
+1. Soft fork
+<details><summary>See correct answer</summary>
+4. Soft fork 
+</details>
 
 ### Which of the following statements are true about forks?*
-- **A double-spending attack creates a fork as a result of the competition between honest and dishonest block producers (CORRECT ANSWER)**
-- Blockchains generate forks at regular intervals to maintain the technology
-- **There are two types of forks: soft and hard (CORRECT ANSWER)**
-- Hard forks allow for backward compatibility
-- A hard fork reduces the block generation power of the network
+1. A double-spending attack creates a fork as a result of the competition between honest and dishonest block producers
+1. Blockchains generate forks at regular intervals to maintain the technology
+1. There are two types of forks: soft and hard 
+1. Hard forks allow for backward compatibility
+1. A hard fork reduces the block generation power of the network
+<details><summary>See correct answer</summary>
+
+1. A double-spending attack creates a fork as a result of the competition between honest and dishonest block producers 
+3. There are two types of forks: soft and hard
+</details>
 
 ### What happens during a hard fork in a blockchain protocol?*
-- A hard fork allows nodes that don't upgrade to continue following the chain without any issues
-- **A hard fork requires all nodes to upgrade to the latest protocol version otherwise the network could split between those using the new and old protocols (CORRECT ANSWER)**
-- During a hard fork update, block producers do not have to choose which version of the blockchain to continue verifying
+1. A hard fork allows nodes that don't upgrade to continue following the chain without any issues
+1. A hard fork requires all nodes to upgrade to the latest protocol version otherwise the network could split between those using the new and old protocols 
+1. During a hard fork update, block producers do not have to choose which version of the blockchain to continue verifying
+<details><summary>See correct answer</summary>
 
-### The Bitcoin blockchain forked on 1 August 2017, leading to the creation of two parallel blockchains: Bitcoin and Bitcoin Cash.*
-- **TRUE (CORRECT ANSWER)**
-- FALSE
+2. A hard fork requires all nodes to upgrade to the latest protocol version otherwise the network could split between those using the new and old protocols 
+</details>
+
+### The Bitcoin blockchain forked on 1 August 2017, leading to the creation of two parallel blockchains: Bitcoin and Bitcoin Cash.
+1. TRUE 
+1. FALSE
+<details><summary>See correct answer</summary>
+
+1. TRUE
+</details>
 
 ### Cardano’s Vasil upgrade in September 2022 was a soft fork that added innovative features to Cardano, including improved performance.*
-- TRUE
-- **FALSE (CORRECT ANSWER)**
+1. TRUE
+1. FALSE 
+<details><summary>See correct answer</summary>
+
+2. FALSE
+</details>
