@@ -169,9 +169,9 @@ Congratulations, you’ve made it to the end! Let’s recap what we learned. In 
 
 
 ### Select the correct statements about block rewards.
-- [ ] **Block rewards are consistent and known in advance 
+- [ ] Block rewards are consistent and known in advance 
 - [ ] Block reward amounts will never change
-- [ ] **The halving of a block reward can encourage energy efficiency among miners to remain profitable 
+- [ ] The halving of a block reward can encourage energy efficiency among miners to remain profitable 
 - [ ] Block rewards are expected to increase by 50% in 2032
 
 <details><summary>See correct answer</summary>
