@@ -172,191 +172,330 @@ With that, we’ve come to the end of this unit on layer 2 solutions. We saw tha
 
 ## Questions
 
-**Sub-Unit 1**
+### Select the statement that best describes a layer 2 solution.
+1. A solution that entirely replaces its base layer
+1. A system that overlays an existing protocol to provide additional functionality or performance improvements
+1. A solution where, at its core, is just a scaling solution
+1. A layer that operates independently without inheriting the security of its base layer
 
-*Select the statement that best describes a layer 2 solution.*
-- A solution that entirely replaces its base layer
-- **A system that overlays an existing protocol to provide additional functionality or performance improvements (CORRECT ANSWER)**
-- A solution where, at its core, is just a scaling solution
-- A layer that operates independently without inheriting the security of its base layer
+<details><summary>See correct answer</summary>
 
-*For a layer 2 solution, what is essential regarding the security of the protocol it builds on?*
-- It must completely change the security measures of layer 1
-- **It should inherit the security of the protocol of its layer 1 (CORRECT ANSWER)**
-- It should weaken the security of the base layer to increase functionality
+2. A system that overlays an existing protocol to provide additional functionality or performance improvements
+</details>
 
+### For a layer 2 solution, what is essential regarding the security of the protocol it builds on?
+1. It must completely change the security measures of layer 1
+1. It should inherit the security of the protocol of its layer 1
+1. It should weaken the security of the base layer to increase functionality
 
-*How do layer 2 solutions help in improving scalability for a blockchain?*
-- They move all data off-chain
-- **They move expensive computations off-chain and commit compressed results back on-chain (CORRECT ANSWER)**
-- They always replace layer 1 solutions
-- They operate without any linkage to layer 1
+<details><summary>See correct answer</summary>
 
+2. It should inherit the security of the protocol of its layer 1
+</details>
 
-*When data is stored on external servers off the blockchain, it is referred to as:*
-- On-chain data
-- **Off-chain constructs (CORRECT ANSWER)**
-- Base layer data
-- Layer 2 data
+### How do layer 2 solutions help in improving scalability for a blockchain?
+1. They move all data off-chain
+1. They move expensive computations off-chain and commit compressed results back on-chain 
+1. They always replace layer 1 solutions
+1. They operate without any linkage to layer 1
 
+<details><summary>See correct answer</summary>
 
-**Sub-Unit 2**
+2. They move expensive computations off-chain and commit compressed results back on-chain
+</details>
 
-*Select the correct statements about state channels. Select 2*
-- They only support the transfer of assets
-- **They offer a way of constructing small networks that operate parallel to a main network (CORRECT ANSWER)**
-- They restrict transactions to stay between no more than two parties
-- **They allow the execution of scripts and more elaborate transactions (CORRECT ANSWER)**
+### When data is stored on external servers off the blockchain, it is referred to as:
+1. On-chain data
+1. Off-chain constructs
+1. Base layer data
+1. Layer 2 data
 
-*How is a channel typically "opened" by participants?*
-- By executing a script on the main network
-- By broadcasting a transaction onto the main network
-- **By locking funds in an on-chain smart contract (CORRECT ANSWER)**
+<details><summary>See correct answer</summary>
 
-*Which of the following choices isn’t a state-channel solution?*
-- Hydra: head protocol
-- **Arbitrum (CORRECT ANSWER)**
-- Raiden
+2. Off-chain constructs
+</details>
 
-*True or False: A state channel can be established between more than two participants.*
-- **True (CORRECT ANSWER)**
+### Select the correct statements about state channels. Select 2
+- [ ] They only support the transfer of assets
+- [ ] They offer a way of constructing small networks that operate parallel to a main network 
+- [ ] They restrict transactions to stay between no more than two parties
+- [ ] They allow the execution of scripts and more elaborate transactions
+
+<details><summary>See correct answer</summary>
+
+- [x] They offer a way of constructing small networks that operate parallel to a main network 
+- [x] They allow the execution of scripts and more elaborate transactions
+</details>
+
+### How is a channel typically "opened" by participants?
+1. By executing a script on the main network
+1. By broadcasting a transaction onto the main network
+1. By locking funds in an on-chain smart contract
+
+<details><summary>See correct answer</summary>
+
+3. By locking funds in an on-chain smart contract
+</details>
+
+### Which of the following choices isn’t a state-channel solution?
+1. Hydra: head protocol
+1. Arbitrum 
+1. Raiden
+
+<details><summary>See correct answer</summary>
+
+2. Arbitrum
+</details>
+
+### True or False: A state channel can be established between more than two participants.
+- True
 - False
 
-**Sub-Unit 3**
+<details><summary>See correct answer</summary>
 
-*How can state channels be used? Select 3*
-- **To overcome the base layer’s limitations (CORRECT ANSWER)**
-- **To introduce privacy elements (CORRECT ANSWER)**
-- To increase transaction fees on the base layer
-- To make all off-chain communications publicly accessible
-- **For fast, low-cost interactions among a limited number of participants (CORRECT ANSWER)**
+1. True
+</details>
 
-*In the context of the state channels, why would participants communicate off the base network?*
-- To increase transaction fees
-- To enhance latency and communication delays
-- **To eliminate fees, reduce latency, and potentially use different consensus algorithms (CORRECT ANSWER)**
-- To always make use of the same consensus algorithm as the base network
+### How can state channels be used? Select 3
+- [ ] To overcome the base layer’s limitations
+- [ ] To introduce privacy elements 
+- [ ] To increase transaction fees on the base layer
+- [ ] To make all off-chain communications publicly accessible
+- [ ] For fast, low-cost interactions among a limited number of participants 
 
-*How do state channels address the issue of large transactions that don't fit within block limits?*
-- By guaranteeing that all parts of the transaction would be executed without any conditions
-- **By performing all or none of the transactions in the channel to maintain atomicity (CORRECT ANSWER)**
-- By requesting the base layer to expand its block size
+<details><summary>See correct answer</summary>
 
-**Sub-Unit 4**
+- [x] To overcome the base layer’s limitations
+- [x] To introduce privacy elements 
+- [x] For fast, low-cost interactions among a limited number of participants 
+</details>
 
-*Which statement best describes participants in a state channel?*
-- Participants can join or leave an open channel anytime they want
-- Participants are flexible and can be changed midway in the channel
-- **Participants must be set at the channel's start and can't be added later (CORRECT ANSWER)**
-- Participants are randomly selected when a channel is opened
+### In the context of the state channels, why would participants communicate off the base network?
+1. To increase transaction fees
+1. To enhance latency and communication delays
+1. To eliminate fees, reduce latency, and potentially use different consensus algorithms 
+1. To always make use of the same consensus algorithm as the base network
 
-*How does the Lightning Network in Bitcoin address the limitation of state channels?*
-- By making all channels private
-- By creating a singular, large channel for all transactions
-- **By composing channels together to form a network of interconnected channels (CORRECT ANSWER)**
+<details><summary>See correct answer</summary>
 
-*What is crucial for the maintenance of data in a channel?*
-- Storing all channel details on layer 1
-- **Channel participants keeping records of all activities (CORRECT ANSWER)**
-- Channels backing up data in a cloud storage
-- Channels being open to the public for scrutiny
+3. To eliminate fees, reduce latency, and potentially use different consensus algorithms
+</details>
 
-*What does "data availability" refer to? Select 1*
-- The storage capacity of a channel
-- The encryption level of data inside a channel
-- **A user's ability to access the latest state of the system (CORRECT ANSWER)**
-- The backup mechanism of a channel
+### How do state channels address the issue of large transactions that don't fit within block limits?
+1. By guaranteeing that all parts of the transaction would be executed without any conditions
+1. By performing all or none of the transactions in the channel to maintain atomicity 
+1. By requesting the base layer to expand its block size
 
-**Sub-Unit 5**
+<details><summary>See correct answer</summary>
 
-*Select 2 correct statements on rollups as a layer 2 scalability solution.*
-- **All rollups process computations off-chain and post a compressed version to layer 1 (CORRECT ANSWER)**
-- They ensure that funds move on the base layer while being used as liquidity on layer 2
-- Rollups can be described as an on-chain transaction with no off-chain components
-- **It's a bundle of off-chain transactions published on-chain as one transaction (CORRECT ANSWER)**
+2. By performing all or none of the transactions in the channel to maintain atomicity
+</details>
 
-*What are the three prominent roles of rollup contracts?*
-- **To manage deposits from users who want to participate in the rollup (CORRECT ANSWER)**
-- **To manage withdrawals from users who want to exit the rollup (CORRECT ANSWER)**
-- To process transactions within the rollup network
-- To verify the users who want to participate in the rollup
-- **To verify the validity of the data and results posted on-chain by the rollup (CORRECT ANSWER)**
+### Which statement best describes participants in a state channel?
+1. Participants can join or leave an open channel anytime they want
+1. Participants are flexible and can be changed midway in the channel
+1. Participants must be set at the channel's start and can't be added later
+1. Participants are randomly selected when a channel is opened
 
-*Why are funds locked when entering the rollup network?*
-- To compress the transactions of those who participate in the rollup
-- **To make funds available on layer 2 while ensuring they can't move on the base layer (CORRECT ANSWER)**
-- To verify the validity of the data used in the rollup network
+<details><summary>See correct answer</summary>
 
-*Why are optimistic rollups called 'optimistic'? Select 1*
-- **Because state changes are optimistically posted on-chain without proofs, but may be disputed (CORRECT ANSWER)**
-- Because they immediately provide proofs about the finality of transactions.
-- Because transactions can never fail on an optimistic rollup
-- Because they gave hope to people when everyone thought that scalability of blockchains was a dead-end
+3. Participants must be set at the channel's start and can't be added later
+</details>
 
-*Which of the following statements is true about the efficiency of optimistic rollups?*
-- They are always more efficient than standard transactions
-- **They become inefficient if all transactions are disputed (CORRECT ANSWER)**
-- They are mainly efficient due to on-chain proofs
+### How does the Lightning Network in Bitcoin address the limitation of state channels?
+1. By making all channels private
+1. By creating a singular, large channel for all transactions
+1. By composing channels together to form a network of interconnected channels 
 
-*Which of the following is NOT a node type associated with optimistic rollups?*
-- Validators
-- Aggregators
-- **Miners (CORRECT ANSWER)**
-- Disputants
+<details><summary>See correct answer</summary>
 
-*What is the main function of a zero-knowledge proof in rollups?*
-- To reveal all transaction details
-- **To prove a statement without revealing any extra information (CORRECT ANSWER)**
-- To initiate rollup aggregators
-- To dispute posted results on the chain
+3. By composing channels together to form a network of interconnected channels
+</details>
 
-*In the context of rollups, why are zero-knowledge proofs beneficial?*
-- They require re-execution of all transactions that take place
-- They are slower to verify than standard methods
-- **They confirm the transaction sequence without redoing all transactions (CORRECT ANSWER)**
-- They make on-chain disputes more complex
+### What is crucial for the maintenance of data in a channel?
+1. Storing all channel details on layer 1
+1. Channel participants keeping records of all activities 
+1. Channels backing up data in a cloud storage
+1. Channels being open to the public for scrutiny
 
-*How do zero-knowledge rollups differ from optimistic rollups in terms of verification?*
-- Zero-knowledge rollups require more external validators
-- **Zero-knowledge rollups can be entirely verified on-chain without external validators (CORRECT ANSWER)**
-- Zero-knowledge proofs are disputed more often
-- Both types always require external validators for verification
+<details><summary>See correct answer</summary>
 
-**Sub-Unit 6**
+2. Channel participants keeping records of all activities
+</details>
 
-*Why can operating a zero-knowledge rollup be costly?*
-- It requires a desktop machine
-- **It requires high-end hardware due to the resources needed to generate a proof (CORRECT ANSWER)**
-- It simplifies the process of writing smart contracts
+### What does "data availability" refer to? Select 1
+1. The storage capacity of a channel
+1. The encryption level of data inside a channel
+1. A user's ability to access the latest state of the system
+1. The backup mechanism of a channel
 
-*What’s the main drawback of zero-knowledge rollups?*
-- **They only work on the Ethereum Virtual Machine (EVM)**
+<details><summary>See correct answer</summary>
+
+3. A user's ability to access the latest state of the system
+</details>
+
+### Select 2 correct statements on rollups as a layer 2 scalability solution.
+- [ ] All rollups process computations off-chain and post a compressed version to layer 1 
+- [ ] They ensure that funds move on the base layer while being used as liquidity on layer 2
+- [ ] Rollups can be described as an on-chain transaction with no off-chain components
+- [ ] It's a bundle of off-chain transactions published on-chain as one transaction
+
+<details><summary>See correct answer</summary>
+
+- [x] All rollups process computations off-chain and post a compressed version to layer 1  
+- [x] It's a bundle of off-chain transactions published on-chain as one transaction
+</details>
+
+### What are the three prominent roles of rollup contracts?
+- [ ] To manage deposits from users who want to participate in the rollup 
+- [ ] To manage withdrawals from users who want to exit the rollup 
+- [ ] To process transactions within the rollup network
+- [ ] To verify the users who want to participate in the rollup
+- [ ] To verify the validity of the data and results posted on-chain by the rollup 
+
+<details><summary>See correct answer</summary>
+
+- [x] To manage deposits from users who want to participate in the rollup  
+- [x] To manage withdrawals from users who want to exit the rollup
+- [x] To verify the validity of the data and results posted on-chain by the rollup
+</details>
+
+### Why are funds locked when entering the rollup network?
+1. To compress the transactions of those who participate in the rollup
+1. To make funds available on layer 2 while ensuring they can't move on the base layer 
+1. To verify the validity of the data used in the rollup network
+
+<details><summary>See correct answer</summary>
+
+2. To make funds available on layer 2 while ensuring they can't move on the base layer
+</details>
+
+### Why are optimistic rollups called 'optimistic'? Select 1
+1. Because state changes are optimistically posted on-chain without proofs, but may be disputed
+1. Because they immediately provide proofs about the finality of transactions.
+1. Because transactions can never fail on an optimistic rollup
+1. Because they gave hope to people when everyone thought that scalability of blockchains was a dead-end
+
+<details><summary>See correct answer</summary>
+
+1. Because state changes are optimistically posted on-chain without proofs, but may be disputed
+</details>
+
+### Which of the following statements is true about the efficiency of optimistic rollups?
+1. They are always more efficient than standard transactions
+1. They become inefficient if all transactions are disputed
+1. They are mainly efficient due to on-chain proofs
+
+<details><summary>See correct answer</summary>
+
+2. They become inefficient if all transactions are disputed
+</details>
+
+### Which of the following is NOT a node type associated with optimistic rollups?
+1. Validators
+1. Aggregators
+1. Miners 
+1. Disputants
+
+<details><summary>See correct answer</summary>
+
+3. Miners
+</details>
+
+### What is the main function of a zero-knowledge proof in rollups?
+1. To reveal all transaction details
+1. To prove a statement without revealing any extra information
+1. To initiate rollup aggregators
+1. To dispute posted results on the chain
+
+<details><summary>See correct answer</summary>
+
+2. To prove a statement without revealing any extra information
+</details>
+
+### In the context of rollups, why are zero-knowledge proofs beneficial?
+1. They require re-execution of all transactions that take place
+1. They are slower to verify than standard methods
+1. They confirm the transaction sequence without redoing all transactions
+1. They make on-chain disputes more complex
+
+<details><summary>See correct answer</summary>
+
+3. They confirm the transaction sequence without redoing all transactions
+</details>
+
+### How do zero-knowledge rollups differ from optimistic rollups in terms of verification?
+1. Zero-knowledge rollups require more external validators
+1. Zero-knowledge rollups can be entirely verified on-chain without external validators
+1. Zero-knowledge proofs are disputed more often
+1. Both types always require external validators for verification
+
+<details><summary>See correct answer</summary>
+
+2. Zero-knowledge rollups can be entirely verified on-chain without external validators
+</details>
+
+### Why can operating a zero-knowledge rollup be costly?
+1. It requires a desktop machine
+1. It requires high-end hardware due to the resources needed to generate a proof
+1. It simplifies the process of writing smart contracts
+
+<details><summary>See correct answer</summary>
+
+2. It requires high-end hardware due to the resources needed to generate a proof
+</details>
+
+### What’s the main drawback of zero-knowledge rollups?
+- They only work on the Ethereum Virtual Machine (EVM)
 - They are too slow
 - They are permissioned
-- **They require smart contracts to be rewritten (CORRECT ANSWER)**
+- They require smart contracts to be rewritten
 
-*What is the main role of validator nodes in optimistic rollups?*
-- To push arbitrary states to the chain
-- To operate as layer 1 consensus nodes
-- **To oversee and challenge optimistic rollup aggregators when needed (CORRECT ANSWER)**
-- To provide financial incentives to aggregators
+<details><summary>See correct answer</summary>
 
-**Sub-Unit 7**
+4. They require smart contracts to be rewritten
+</details>
 
-*Why are side chains often perceived as less secure?*
-- Because they have too many consensus nodes
-- Because they rely on state channels for security
-- **Because they are less decentralized than layer 1 blockchains (CORRECT ANSWER)**
-- Because they lack a proper proof mechanism
+### What is the main role of validator nodes in optimistic rollups?
+1. To push arbitrary states to the chain
+1. To operate as layer 1 consensus nodes
+1. To oversee and challenge optimistic rollup aggregators when needed 
+1. To provide financial incentives to aggregators
 
-*What advantage can side chains have by leveraging rollups?*
-- They can create a new consensus algorithm
-- They can replace the main chain
-- **They can have a powerful proof mechanism and an efficient parallel network (CORRECT ANSWER)**
-- They can make their consensus nodes more decentralized
+<details><summary>See correct answer</summary>
 
-*Select the correct statements about validiums. Select 2*
-- If a user wants to withdraw funds from a validium, they must get approval from all participants
-- **A validium doesn’t publish any transaction data back on-chain (CORRECT ANSWER)**
-- For the full validation of a validium proof, a third-party validator has to approve it
-- Published proofs would become unverifiable and invalid if tampered with
+3. To oversee and challenge optimistic rollup aggregators when needed 
+</details>
+
+### Why are side chains often perceived as less secure?
+1. Because they have too many consensus nodes
+1. Because they rely on state channels for security
+1. Because they are less decentralized than layer 1 blockchains
+1. Because they lack a proper proof mechanism
+
+<details><summary>See correct answer</summary>
+
+3. Because they are less decentralized than layer 1 blockchains
+</details>
+
+### What advantage can side chains have by leveraging rollups?
+1. They can create a new consensus algorithm
+1. They can replace the main chain
+1. They can have a powerful proof mechanism and an efficient parallel network 
+1. They can make their consensus nodes more decentralized
+
+<details><summary>See correct answer</summary>
+
+3. They can have a powerful proof mechanism and an efficient parallel network 
+</details>
+
+### Select the correct statements about validiums. Select 2
+1. If a user wants to withdraw funds from a validium, they must get approval from all participants
+1. A validium doesn’t publish any transaction data back on-chain 
+1. For the full validation of a validium proof, a third-party validator has to approve it
+1. Published proofs would become unverifiable and invalid if tampered with
+
+<details><summary>See correct answer</summary>
+
+2. A validium doesn’t publish any transaction data back on-chain 
+</details>
