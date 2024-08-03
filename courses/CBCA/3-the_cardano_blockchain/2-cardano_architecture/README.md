@@ -494,7 +494,7 @@ Cardano networking and client protocols are designed to be flexible. A mini-prot
 </details>
 
 ### Select the correct statements about mini protocols.
-- [ ] **The block-fetch mini-protocol is used to negotiate block headers and securely fetch blocks from peers (CORRECT ANSWER)**
+- [ ] The block-fetch mini-protocol is used to negotiate block headers and securely fetch blocks from peers 
 - [ ] All mini-protocols have the same purpose
 - [ ] The local-tx-submission protocol offers a secure mechanism to submit transactions with a warning system for invalid transactions
 - [ ] The Ouroboros mini-protocols are designed to work with the multi-era consensus layer of Cardano
