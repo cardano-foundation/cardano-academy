@@ -140,101 +140,177 @@ With that, we have reached the end of the topic of this unit, and you should now
 
 ## Questions
 
-**Sub-Unit 1**
+### What better reflects Cardano’s development approach?
+1. “Move fast and break things”
+1. “Evidence-based science and rigorous software development” 
+1. “Do the best you can with what you have”
+1. “Bug-free software”
 
-*What better reflects Cardano’s development approach?*
-- “Move fast and break things”
-- **“Evidence-based science and rigorous software development” (CORRECT ANSWER)**
-- “Do the best you can with what you have”
-- “Bug-free software”
+<details><summary>See correct answer</summary>
 
-*Which of the following is NOT listed as one of the core design principles guiding Cardano's development?*
-- Scale
-- **Connectivity (CORRECT ANSWER)**
-- Interoperability
+2. “Evidence-based science and rigorous software development”
+</details>
 
-*Select the correct statements about peer reviews.*
-- When going through a peer review, the research is reviewed by amateurs only
-- **The process of peer review ensures credibility, reliability and well-designed research (CORRECT ANSWER)**
-- When wanting to publish in a prestigious research journal, peer reviews are optional
-- **Peer reviews are done anonymously to avoid bias (CORRECT ANSWER)**
+### Which of the following is NOT listed as one of the core design principles guiding Cardano's development?
+1. Scale
+1. Connectivity
+1. Interoperability
 
-*What is the best way to ensure the durability and sustainability of a project such as Cardano?*
-- By only relying on past blockchain generations for development
-- By publishing as many white papers as possible without peer review
-- **By defining a proper research framework (CORRECT ANSWER)**
+<details><summary>See correct answer</summary>
 
-*True or False: peer review science means that academic papers have multiple authors.*
-- True
-- **False (CORRECT ANSWER)**
+2. Connectivity
+</details>
 
-**Sub-Unit 2**
+### Select the correct statements about peer reviews.
+- [ ] When going through a peer review, the research is reviewed by amateurs only
+- [ ] The process of peer review ensures credibility, reliability and well-designed research 
+- [ ] When wanting to publish in a prestigious research journal, peer reviews are optional
+- [ ] Peer reviews are done anonymously to avoid bias 
 
-*Why are formal methods used in the software industry?*
-- They are common practices because they are easy and cheap to set up
-- **They are primarily used for critical systems due to their complexity and cost (CORRECT ANSWER)**
-- They ensure that programming languages avoid using an expressive type-system
+<details><summary>See correct answer</summary>
 
-*True or False: thanks to formal methods, it’s impossible to introduce bugs in software.*
-- True
-- **False (CORRECT ANSWER)**
+- [x] The process of peer review ensures credibility, reliability and well-designed research 
+- [x] Peer reviews are done anonymously to avoid bias 
+</details>
 
-**Sub-Unit 3**
+### What is the best way to ensure the durability and sustainability of a project such as Cardano?
+1. By only relying on past blockchain generations for development
+1. By publishing as many white papers as possible without peer review
+1. By defining a proper research framework 
 
-*What are the three focus areas of the Cardano Foundation’s strategy?*
-- Partnerships, Education, Governance
-- Operational resilience, Innovation, Adoption
-- Education, Marketing, Regulation
-- **Operational resilience, Education, Adoption (CORRECT ANSWER)**
+<details><summary>See correct answer</summary>
 
-**Sub-Unit 4**
+3. By defining a proper research framework
+</details>
 
-*How was ADA initially distributed to ensure transparency and accountability in its initial launch in Japan?*
-- Through a randomized selection of participants
-- **By implementing Know Your Customer (KYC) guidelines and undergoing a thorough audit (CORRECT ANSWER)**
-- By equally distributing it to all crypto exchanges
+### True or False: peer review science means that academic papers have multiple authors.
+1. True
+1. False
 
-*What portion of the total ADA supply remained unallocated after pre-sale and genesis allocation?*
-- 11%
-- **31% (CORRECT ANSWER)**
-- 51%
-- 71%
+<details><summary>See correct answer</summary>
 
-**Sub-Unit 5**
+2. False
+</details>
 
-*What was the main objective of the Byron phase in Cardano's development?*
-- To switch from a federated network to a fully decentralized network using stake pools
-- **To build a strong foundation for future phases of the Cardano roadmap (CORRECT ANSWER)**
-- To introduce smart contracts on Cardano
-- To finalize and perfect the Cardano blockchain without any need for further updates
+### Why are formal methods used in the software industry?
+1. They are common practices because they are easy and cheap to set up
+1. They are primarily used for critical systems due to their complexity and cost
+1. They ensure that programming languages avoid using an expressive type-system
 
-*What was a significant change introduced during the Shelley phase of Cardano's development?*
-- The introduction of the "hard fork combinator" to combine multiple blockchain protocols
-- **The transition from a federated PoS consensus protocol, to a delegated PoS consensus (CORRECT ANSWER)**
-- The first release, Version 1.0, of the Cardano
+<details><summary>See correct answer</summary>
 
-*True or False: Cardano started as a federated network, where block production was handed over to the three genesis entities.*
-- **True (CORRECT ANSWER)**
-- False
+2. They are primarily used for critical systems due to their complexity and cost
+</details>
 
-*True or False: The Cardano network stopped for several days during March 2020 due to an issue and had to be restarted. This is now referred to as “the Byron reboot”.*
-- True
-- **False (CORRECT ANSWER)**
+### True or False: thanks to formal methods, it’s impossible to introduce bugs in software.
+1. True
+1. False 
 
-*What is the main objective of the Basho phase in Cardano's development?*
-- To introduce the last components needed to make Cardano fully decentralized and community-owned
-- **To focus on scalability and design layer 2 solutions and side chains for higher throughput (CORRECT ANSWER)**
-- To fund future developments for the Cardano ecosystem through the community
+<details><summary>See correct answer</summary>
 
-*What are the primary goals of Cardano's Voltaire phase?*
-- To focus on layer 2 solutions and side chains for scalability
-- **To empower the community to decide on future developments (CORRECT ANSWER)**
-- To redesign the Ouroboros consensus mechanism
-- **To make Cardano fully decentralized (CORRECT ANSWER)**
+2. False
+</details>
 
-*What Cardano phase focuses on programmability?*
-- Plutus
-- **Goguen (CORRECT ANSWER)**
-- Basho
-- Voltaire
+### What are the three focus areas of the Cardano Foundation’s strategy?
+1. Partnerships, Education, Governance
+1. Operational resilience, Innovation, Adoption
+1. Education, Marketing, Regulation
+1. Operational resilience, Education, Adoption 
 
+<details><summary>See correct answer</summary>
+
+4. Operational resilience, Education, Adoption 
+</details>
+
+### How was ADA initially distributed to ensure transparency and accountability in its initial launch in Japan?
+1. Through a randomized selection of participants
+1. By implementing Know Your Customer (KYC) guidelines and undergoing a thorough audit 
+1. By equally distributing it to all crypto exchanges
+
+<details><summary>See correct answer</summary>
+
+2. By implementing Know Your Customer (KYC) guidelines and undergoing a thorough audit
+</details>
+
+### What portion of the total ADA supply remained unallocated after pre-sale and genesis allocation?
+1. 11%
+1. 31% 
+1. 51%
+1. 71%
+
+<details><summary>See correct answer</summary>
+
+2. 31% 
+</details>
+
+### What was the main objective of the Byron phase in Cardano's development?
+1. To switch from a federated network to a fully decentralized network using stake pools
+1. To build a strong foundation for future phases of the Cardano roadmap 
+1. To introduce smart contracts on Cardano
+1. To finalize and perfect the Cardano blockchain without any need for further updates
+
+<details><summary>See correct answer</summary>
+
+2. To build a strong foundation for future phases of the Cardano roadmap
+</details>
+
+### What was a significant change introduced during the Shelley phase of Cardano's development?
+1. The introduction of the "hard fork combinator" to combine multiple blockchain protocols
+1. The transition from a federated PoS consensus protocol, to a delegated PoS consensus
+1. The first release, Version 1.0, of the Cardano
+
+<details><summary>See correct answer</summary>
+
+2. The transition from a federated PoS consensus protocol, to a delegated PoS consensus
+</details>
+
+### True or False: Cardano started as a federated network, where block production was handed over to the three genesis entities.
+1. True 
+1. False
+
+<details><summary>See correct answer</summary>
+
+2. True
+</details>
+
+### The Cardano network stopped for several days during March 2020 due to an issue and had to be restarted. This is now referred to as “the Byron reboot”.
+1. True
+1. False
+   
+<details><summary>See correct answer</summary>
+
+2. False
+</details>
+
+### What is the main objective of the Basho phase in Cardano's development?
+1. To introduce the last components needed to make Cardano fully decentralized and community-owned
+1. To focus on scalability and design layer 2 solutions and side chains for higher throughput 
+1. To fund future developments for the Cardano ecosystem through the community
+
+<details><summary>See correct answer</summary>
+
+2. To focus on scalability and design layer 2 solutions and side chains for higher throughput 
+</details>
+
+### What are the primary goals of Cardano's Voltaire phase?
+- [ ] To focus on layer 2 solutions and side chains for scalability
+- [ ] To empower the community to decide on future developments
+- [ ] To redesign the Ouroboros consensus mechanism
+- [ ] To make Cardano fully decentralized 
+
+<details><summary>See correct answer</summary>
+
+- [x] To empower the community to decide on future developments
+- [x] To make Cardano fully decentralized
+</details>
+
+### What Cardano phase focuses on programmability?
+1. Plutus
+1. Goguen
+1. Basho
+1. Voltaire
+
+<details><summary>See correct answer</summary>
+
+2. Goguen
+</details>
