@@ -228,172 +228,300 @@ Cardano networking and client protocols are designed to be flexible. A mini-prot
 
 ## Questions
 
-**Sub-Unit 1**
+### The Cardano node is divided into multiple layers.  Which of the following is NOT one of these layers?
+1. The storage layer
+1. The settlement layer
+1. The consensus layer
+1. The networking layer
 
-*The Cardano node is divided into multiple layers.  Which of the following is NOT one of these layers?*
-**The storage layer (CORRECT ANSWER)**
-- The settlement layer
-- The consensus layer
-- The networking layer
+<details><summary>See correct answer</summary>
 
-*Select the correct statements about the Cardano Node.*
-- The scripting layer is a peer-to-peer networking stack geared towards PoS systems
-- The different layers of the node cannot develop without each other
-- **The node is made out of several inter-connected parts (CORRECT ANSWER)**
-- **The settlement layer is where the core Cardano objects and the rules for using them are defined (CORRECT ANSWER)**
+1. The storage layer
+</details>
 
-*Analyze the image below and select the correct answer. (Image Question)*
+### Select the correct statements about the Cardano Node.
+- [ ] The scripting layer is a peer-to-peer networking stack geared towards PoS systems
+- [ ] The different layers of the node cannot develop without each other
+- [ ] The node is made out of several inter-connected parts
+- [ ] The settlement layer is where the core Cardano objects and the rules for using them are defined
+
+<details><summary>See correct answer</summary>
+
+- [x] The node is made out of several inter-connected parts
+- [x] The settlement layer is where the core Cardano objects and the rules for using them are defined
+</details>
+
+### Analyze the image below and select the correct answer. (Image Question)
 
 ![illustration 3.2.17.png](./assets/3.2.17.png) <br>
 
-- (A) Scripting Layer; (B) Consensus Layer; (C) Settlement Layer; (D) Networking Layer
-- **(A) Networking Layer; (B) Consensus Layer; (C) Settlement Layer; (D) Scripting Layer (CORRECT ANSWER)**
-- (A) Settlement Layer; (B) Networking Layer; (C) Consensus Layer; (D) Scripting Layer
+1. (A) Scripting Layer; (B) Consensus Layer; (C) Settlement Layer; (D) Networking Layer
+1. (A) Networking Layer; (B) Consensus Layer; (C) Settlement Layer; (D) Scripting Layer
+1. (A) Settlement Layer; (B) Networking Layer; (C) Consensus Layer; (D) Scripting Layer
 
-**Sub-Unit 2**
+<details><summary>See correct answer</summary>
 
-*Select the correct statements about consensus, ledger and eras related to Cardano.*
-- **Intra-era hard forks are hard forks that happen between two eras (CORRECT ANSWER)**
-- The Cardano hard fork combinator splits the chain into two new blockchains
-- Cardano only makes use of one ledger
-- **The consensus layer dictates the protocol used by all nodes to find agreement (CORRECT ANSWER)**
+2. (A) Networking Layer; (B) Consensus Layer; (C) Settlement Layer; (D) Scripting Layer
+</details>
 
-*True or False: in Cardano, nodes exchange various types of consensus messages beside user transactions.*
-- True
-- **False (CORRECT ANSWER)**
+### Select the correct statements about consensus, ledger and eras related to Cardano.
+- [ ] Intra-era hard forks are hard forks that happen between two eras
+- [ ] The Cardano hard fork combinator splits the chain into two new blockchains
+- [ ] Cardano only makes use of one ledger
+- [ ] The consensus layer dictates the protocol used by all nodes to find agreement
 
-*True or False: The ledger only includes successful transactions in the blockchain.*
-- True
-- **False (CORRECT ANSWER)**
+<details><summary>See correct answer</summary>
 
-**Sub-Unit 3**
+- [x] Intra-era hard forks are hard forks that happen between two eras
+- [x] The consensus layer dictates the protocol used by all nodes to find agreement
+</details>
 
-*True or False: During the Byron era of Cardano, it was possible to attach metadata to transactions.*
-- True
-- **False (CORRECT ANSWER)**
+### In Cardano, nodes exchange various types of consensus messages beside user transactions.
+1. True
+1. False
 
-*What significant feature was introduced during the Shelley era in the Cardano blockchain that advanced blockchain programmability?*
-- Shelley enabled the creation of smart contracts
-- **Shelley introduced a new type of address allowing for complex funds locking patterns (CORRECT ANSWER)**
-- Shelley primarily focused on revoking relationships between user credentials
+<details><summary>See correct answer</summary>
 
-**Sub-Unit 4**
+2. False
+</details>
 
-*What significant feature did the Allegra era introduce to transactions' native scripts in the Cardano system?*
-- **Allegra added the ability for users to specify validity periods for funds spent from an address (CORRECT ANSWER)**
-- Allegra's main focus was to make transactions non-deterministic
-- Allegra removed the need for native scripts in transactions
-- Allegra introduced a new way for users to lock and unlock funds without using time-related execution logic
+### The ledger only includes successful transactions in the blockchain.
+1. True
+1. False
 
-*Select the correct statements based on the Mary era.*
-- It ended the possibilities of new attacks
-- It introduced an extra security mechanism to force any UTxO output to drop ADA
-- **It allowed outputs to carry both ADA and user-minted assets (CORRECT ANSWER)**
-- **It turned Cardano into a multi-asset ledger (CORRECT ANSWER)**
+<details><summary>See correct answer</summary>
 
-*Since which era is it possible to create NFTs on Cardano?*
-- The Shelley Era
-- The Allegra Era
-- **The Mary Era (CORRECT ANSWER)**
-- The Alonzo Era
+2. False
+</details>
 
-*Which of the following actions can be controlled by a Plutus script?*
-- Receiving tokens from another user
-- Creating a stake pool
-- **Delegating to a stake pool  (CORRECT ANSWER)**
-- Sending money to a reward account
+### During the Byron era of Cardano, it was possible to attach metadata to transactions.
+1. True
+1. False 
 
-**Sub-Unit 5**
+<details><summary>See correct answer</summary>
 
-*Which of the following is NOT a functionality made possible by Plutus scripts as introduced in the Alonzo upgrade?*
-- Locking funds in addresses based on specific logic
-- Specifying staking reward withdrawal conditions
-- **Defining complex validation rules for transaction fees (CORRECT ANSWER)**
-- Defining minting and burning policies for on-chain assets
+2. False
+</details>
 
-*In the Alonzo Era, what is referred to as the additional cost accounted for in every transaction spending from a script?*
-- UTxO adjustment
-- Transaction fee supplement
-- Plutus validation cost
-- **Execution budget (CORRECTION ANSWER)**
+### What significant feature was introduced during the Shelley era in the Cardano blockchain that advanced blockchain programmability?
+1. Shelley enabled the creation of smart contracts
+1. Shelley introduced a new type of address allowing for complex funds locking patterns 
+1. Shelley primarily focused on revoking relationships between user credentials
 
-*In the context of the Alonzo upgrade, why is the collateral left untouched if the transaction fails during phase 1?*
-- Phase-1 validations are computationally demanding
-- Native scripts are executed during phase 1
-- **Phase-1 validations are relatively cheap to perform (CORRECT ANSWER)**
-- Phase 1 does not execute any Plutus scripts
+<details><summary>See correct answer</summary>
 
-*If a Plutus script fails during the second phase of validation, what is used to compensate block producers for their work?*
-- The initial transaction fees
-- An execution budget
-- **The collateral value added to the transaction (CORRECT ANSWER)**
-- A separate compensation fund
+2. Shelley introduced a new type of address allowing for complex funds locking patterns
+</details>
 
-*Alonzo introduced transaction collaterals. What is their function?*
-- They provide a mechanism to donate money to the Cardano treasury
-- **They protect the network from being spammed with failing scripts (CORRECT ANSWER)**
-- They allow users to participate in DeFi protocols on behalf of another user
-- They prevent bloat of the ledger from millions of user-minted tokens
 
-**Sub-Unit 6**
+### What significant feature did the Allegra era introduce to transactions' native scripts in the Cardano system?
+1. Allegra added the ability for users to specify validity periods for funds spent from an address
+1. Allegra's main focus was to make transactions non-deterministic
+1. Allegra removed the need for native scripts in transactions
+1. Allegra introduced a new way for users to lock and unlock funds without using time-related execution logic
 
-*How did the Babbage era affect the size of transactions on the Cardano blockchain?*
-- It increased the size of transactions by including more data
-- **It reduced the size by enabling transactions to carry only references to previously published scripts (CORRECT ANSWER)**
-- It mandated the inclusion of all data in every transaction
-- It didn't affect the size of transactions
+<details><summary>See correct answer</summary>
 
-*What was one of the major networking upgrades the Babbage era brought to Cardano?*
-- It removed the need for network communication between nodes
-- It established a trusted central node for all communications
-- **It paved the way for peer-to-peer network communication between nodes (CORRECT ANSWER)**
-- It stopped the propagation of blocks
+1. Allegra added the ability for users to specify validity periods for funds spent from an address
+</details>
 
-*What is the primary function of network pipelining?*
-- It improves transaction settlement time
-- **It improves block propagation (CORRECT ANSWER)**
-- It improves transaction cost
-- It improves UTxO storage
+### Select the correct statements based on the Mary era.
+- [ ] It ended the possibilities of new attacks
+- [ ] It introduced an extra security mechanism to force any UTxO output to drop ADA
+- [ ] It allowed outputs to carry both ADA and user-minted assets 
+- [ ] It turned Cardano into a multi-asset ledger 
 
-*The new governance system introduced in the Conway era can best be described as:*
-- One person, one vote
-- One transaction, one vote
-- One stake pool, one vote
-- **One Lovelace, one vote (CORRECT ANSWER)**
+<details><summary>See correct answer</summary>
 
-*What is the main role of the delegate representatives (DReps) in the Conway era?*
-- To interpret the Cardano constitution
-- To tweak protocol parameters
-- **To fulfill governance duties on behalf of other ada holders (CORRECT ANSWER)**
-- To initiate hard forks
+- [x] It allowed outputs to carry both ADA and user-minted assets
+- [x] It turned Cardano into a multi-asset ledger
+</details>
 
-*How has the role of stake pool operators been altered in the Conway era?*
-- It has been eliminated
-- It has been merged with DReps
-- It focuses more on consensus duties
-- **It has been formalized to make it more explicit (CORRECT ANSWER)**
+### Since which era is it possible to create NFTs on Cardano?
+1. The Shelley Era
+1. The Allegra Era
+1. The Mary Era
+1. The Alonzo Era
 
-**Sub-Unit 7**
+<details><summary>See correct answer</summary>
 
-*Compared to Cardano's pull-based approach, which of the following statements are true regarding traditional networking protocols like HTTP or gRPC?*
-- They provide less flexibility
-- They address all challenges found in distributed ledger technologies
-- **They offer flexibility but might not address specific challenges in distributed ledger technologies (CORRECT ANSWER)**
-- They are always safer in the context of distributed ledger technologies
+3. The Mary Era
+</details>
 
-*Select the correct statements about mini protocols.*
-- **The block-fetch mini-protocol is used to negotiate block headers and securely fetch blocks from peers (CORRECT ANSWER)**
-- All mini-protocols have the same purpose
-- **The local-tx-submission protocol offers a secure mechanism to submit transactions with a warning system for invalid transactions (CORRECT ANSWER)**
-- The Ouroboros mini-protocols are designed to work with the multi-era consensus layer of Cardano
-- **New protocols can be added easily as use cases evolve (CORRECT ANSWER)**
+### Which of the following actions can be controlled by a Plutus script?
+1. Receiving tokens from another user
+1. Creating a stake pool
+1. Delegating to a stake pool
+1. Sending money to a reward account
 
-*Which of the following best describes the difference between node-to-node and node-to-client protocols?*
-- Node-to-node protocols are for submitting transactions, while node-to-client protocols are for fetching blocks
-- **Node-to-node protocols are for communication between nodes, while node-to-client protocols allow local client applications to connect to a node (CORRECT ANSWER)**
-- Node-to-node protocols and node-to-client protocols serve the same purpose and have the same security measures
+<details><summary>See correct answer</summary>
 
-*Why do many developers prefer to use high-level tools for Cardano app development?*
-- They offer the slower retrieval of data
-- They restrict expressiveness in programming languages
-- **They simplify the development process (CORRECT ANSWER)**
+3. Delegating to a stake pool
+</details>
+
+### Which of the following is NOT a functionality made possible by Plutus scripts as introduced in the Alonzo upgrade?
+1. Locking funds in addresses based on specific logic
+1. Specifying staking reward withdrawal conditions
+1. Defining complex validation rules for transaction fees 
+1. Defining minting and burning policies for on-chain assets
+
+<details><summary>See correct answer</summary>
+
+3. Defining complex validation rules for transaction fees
+</details>
+
+### In the Alonzo Era, what is referred to as the additional cost accounted for in every transaction spending from a script?
+1. UTxO adjustment
+1. Transaction fee supplement
+1. Plutus validation cost
+1. Execution budget
+
+<details><summary>See correct answer</summary>
+
+4. Execution budget
+</details>
+
+### In the context of the Alonzo upgrade, why is the collateral left untouched if the transaction fails during phase 1?
+1. Phase-1 validations are computationally demanding
+1. Native scripts are executed during phase 1
+1. Phase-1 validations are relatively cheap to perform 
+1. Phase 1 does not execute any Plutus scripts
+
+<details><summary>See correct answer</summary>
+
+3. Phase-1 validations are relatively cheap to perform
+</details>
+
+### If a Plutus script fails during the second phase of validation, what is used to compensate block producers for their work?
+1. The initial transaction fees
+1. An execution budget
+1. The collateral value added to the transaction 
+1. A separate compensation fund
+
+<details><summary>See correct answer</summary>
+
+3. The collateral value added to the transaction 
+</details>
+
+### Alonzo introduced transaction collaterals. What is their function?
+1. They provide a mechanism to donate money to the Cardano treasury
+1. They protect the network from being spammed with failing scripts
+1. They allow users to participate in DeFi protocols on behalf of another user
+1. They prevent bloat of the ledger from millions of user-minted tokens
+
+<details><summary>See correct answer</summary>
+
+2. They protect the network from being spammed with failing scripts
+</details>
+
+### How did the Babbage era affect the size of transactions on the Cardano blockchain?
+1. It increased the size of transactions by including more data
+1. It reduced the size by enabling transactions to carry only references to previously published scripts
+1. It mandated the inclusion of all data in every transaction
+1. It didn't affect the size of transactions
+
+<details><summary>See correct answer</summary>
+
+2. It reduced the size by enabling transactions to carry only references to previously published scripts
+</details>
+
+### What was one of the major networking upgrades the Babbage era brought to Cardano?
+1. It removed the need for network communication between nodes
+1. It established a trusted central node for all communications
+1. It paved the way for peer-to-peer network communication between nodes
+1. It stopped the propagation of blocks
+
+<details><summary>See correct answer</summary>
+
+3. It paved the way for peer-to-peer network communication between nodes
+</details>
+
+### What is the primary function of network pipelining?
+1. It improves transaction settlement time
+1. It improves block propagation 
+1. It improves transaction cost
+1. It improves UTxO storage
+
+<details><summary>See correct answer</summary>
+
+2. It improves block propagation
+</details>
+
+### The new governance system introduced in the Conway era can best be described as:
+1. One person, one vote
+1. One transaction, one vote
+1. One stake pool, one vote
+1. One Lovelace, one vote
+
+<details><summary>See correct answer</summary>
+
+4. One Lovelace, one vote
+</details>
+
+
+### What is the main role of the delegate representatives (DReps) in the Conway era?
+1. To interpret the Cardano constitution
+1. To tweak protocol parameters
+1. To fulfill governance duties on behalf of other ada holders 
+1. To initiate hard forks
+
+<details><summary>See correct answer</summary>
+
+3. To fulfill governance duties on behalf of other ada holders 
+</details>
+
+### How has the role of stake pool operators been altered in the Conway era?
+1. It has been eliminated
+1. It has been merged with DReps
+1. It focuses more on consensus duties
+1. It has been formalized to make it more explicit 
+
+
+<details><summary>See correct answer</summary>
+
+4. It has been formalized to make it more explicit
+</details>
+
+### Compared to Cardano's pull-based approach, which of the following statements are true regarding traditional networking protocols like HTTP or gRPC?
+1. They provide less flexibility
+1. They address all challenges found in distributed ledger technologies
+1. They offer flexibility but might not address specific challenges in distributed ledger technologies 
+1. They are always safer in the context of distributed ledger technologies
+
+<details><summary>See correct answer</summary>
+
+3. They offer flexibility but might not address specific challenges in distributed ledger technologies 
+</details>
+
+### Select the correct statements about mini protocols.
+- [ ] **The block-fetch mini-protocol is used to negotiate block headers and securely fetch blocks from peers (CORRECT ANSWER)**
+- [ ] All mini-protocols have the same purpose
+- [ ] The local-tx-submission protocol offers a secure mechanism to submit transactions with a warning system for invalid transactions
+- [ ] The Ouroboros mini-protocols are designed to work with the multi-era consensus layer of Cardano
+- [ ] New protocols can be added easily as use cases evolve
+
+<details><summary>See correct answer</summary>
+
+- [x] The local-tx-submission protocol offers a secure mechanism to submit transactions with a warning system for invalid transactions
+- [x] New protocols can be added easily as use cases evolve
+</details>
+
+### Which of the following best describes the difference between node-to-node and node-to-client protocols?
+1. Node-to-node protocols are for submitting transactions, while node-to-client protocols are for fetching blocks
+1. Node-to-node protocols are for communication between nodes, while node-to-client protocols allow local client applications to connect to a node
+1. Node-to-node protocols and node-to-client protocols serve the same purpose and have the same security measures
+
+<details><summary>See correct answer</summary>
+
+2. Node-to-node protocols are for communication between nodes, while node-to-client protocols allow local client applications to connect to a node
+</details>
+
+### Why do many developers prefer to use high-level tools for Cardano app development?
+1. They offer the slower retrieval of data
+1. They restrict expressiveness in programming languages
+1. They simplify the development process 
+
+<details><summary>See correct answer</summary>
+
+3. They simplify the development process 
+</details>
