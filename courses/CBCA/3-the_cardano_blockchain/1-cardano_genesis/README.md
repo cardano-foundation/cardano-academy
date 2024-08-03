@@ -183,7 +183,7 @@ With that, we have reached the end of the topic of this unit, and you should now
 3. By defining a proper research framework
 </details>
 
-### True or False: peer review science means that academic papers have multiple authors.
+### Peer review science means that academic papers have multiple authors.
 1. True
 1. False
 
@@ -202,7 +202,7 @@ With that, we have reached the end of the topic of this unit, and you should now
 2. They are primarily used for critical systems due to their complexity and cost
 </details>
 
-### True or False: thanks to formal methods, it’s impossible to introduce bugs in software.
+### Thanks to formal methods, it’s impossible to introduce bugs in software.
 1. True
 1. False 
 
@@ -264,13 +264,13 @@ With that, we have reached the end of the topic of this unit, and you should now
 2. The transition from a federated PoS consensus protocol, to a delegated PoS consensus
 </details>
 
-### True or False: Cardano started as a federated network, where block production was handed over to the three genesis entities.
+### Cardano started as a federated network, where block production was handed over to the three genesis entities.
 1. True 
 1. False
 
 <details><summary>See correct answer</summary>
 
-2. True
+1. True
 </details>
 
 ### The Cardano network stopped for several days during March 2020 due to an issue and had to be restarted. This is now referred to as “the Byron reboot”.
