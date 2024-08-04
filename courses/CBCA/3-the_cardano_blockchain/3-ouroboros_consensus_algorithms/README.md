@@ -185,147 +185,243 @@ In this lecture, we have explored the heart of Cardano, the Ouroboros consensus 
 
 ### Questions
 
-**Sub-Unit 1**
+### What are the two fundamental properties of public permissionless distributed ledgers?
+1. Persistence and Liveness
+1. Safety and Persistence
+1. Safety and Liveness 
 
-*What are the two fundamental properties of public permissionless distributed ledgers?*
-- Persistence and Liveness
-- Safety and Persistence
-- **Safety and Liveness (CORRECT ANSWER)**
+<details><summary>See correct answer</summary>
 
-*What consensus algorithm does Bitcoin use to achieve safety and liveness?*
-- Proof of Stake
-- Proof of Capacity
-- Proof of Burn
-- **Proof of Work (CORRECT ANSWER)**
+3. Safety and Liveness
+</details>
 
-*Proof of Work is an election mechanism where participants are selected based on:*
+
+### What consensus algorithm does Bitcoin use to achieve safety and liveness?
+1. Proof of Stake
+1. Proof of Capacity
+1. Proof of Burn
+1. Proof of Work
+
+<details><summary>See correct answer</summary>
+
+4. Proof of Work
+</details>
+
+### Proof of Work is an election mechanism where participants are selected based on:
 - The amount of stake they hold in the network
 - Their reputation within the network
-- **Their hashing power (CORRECT ANSWER)**
+- Their hashing power
 
-*True or False: consensus algorithms such as PoW or PoS can usually be thought of as a lottery.*
-- **True (CORRECT ANSWER)**
+<details><summary>See correct answer</summary>
+
+3. Their hashing power
+</details>
+
+### Consensus algorithms such as PoW or PoS can usually be thought of as a lottery.
+- True 
 - False
 
-**Sub-Unit 2**
+<details><summary>See correct answer</summary>
 
-*What does Common Prefix, one of the key properties used to prove the security arguments behind Ouroboros, imply?*
+1. True
+</details>
+
+### What does Common Prefix, one of the key properties used to prove the security arguments behind Ouroboros, imply?
 - The chains of two honest parties are always identical
-- **Any two honest parties share a common chain prefix after removing up to k blocks (CORRECT ANSWER)**
+- Any two honest parties share a common chain prefix after removing up to k blocks
 - Every honest party must have the same prefix as the main chain
 - The prefix of the chain is common knowledge among all parties
 
-*What are the three fundamental properties used to prove safety and liveness of distributed consensus protocols such as Bitcoin or Ouroboros?*
-- **Chain growth, chain quality, common prefix (CORRECT ANSWER)**
+<details><summary>See correct answer</summary>
+
+2. Any two honest parties share a common chain prefix after removing up to k blocks
+</details>
+
+### What are the three fundamental properties used to prove safety and liveness of distributed consensus protocols such as Bitcoin or Ouroboros?
+- Chain growth, chain quality, common prefix 
 - Common prefix, chain quality, chain resilience
 - Chain growth, chain resilience, common prefix
 - Chain resilience, chain growth, chain quality
 
-*Generally speaking, what is chain quality?*
+<details><summary>See correct answer</summary>
+
+1. Chain growth, chain quality, common prefix 
+</details>
+
+### Generally speaking, what is chain quality?
 - A measure of the number of transactions that benefit the network
 - A measure of how many blocks are produced within an agreed-upon short time frame
 - A measure of the proportion of non-empty blocks in the chain
-- **A measure of the proportion of blocks produced by honest nodes (CORRECT ANSWER)**
+- A measure of the proportion of blocks produced by honest nodes 
 
-**Sub-Unit 3**
+<details><summary>See correct answer</summary>
 
-*What are the main characteristics of all Ouroboros protocols?*
+4. A measure of the proportion of blocks produced by honest nodes
+</details>
+
+### What are the main characteristics of all Ouroboros protocols?
 - They are time-based and synchronous
-- **They consider network currency as the main consensus resource (CORRECT ANSWER)**
+- They consider network currency as the main consensus resource 
 - They focus on stake delegation for scalability
 
-*Why is it called “Ouroboros”?*
+<details><summary>See correct answer</summary>
+
+2. They consider network currency as the main consensus resource
+</details>
+
+### Why is it called “Ouroboros”?
 - Scientists simply loved snakes
 - It's a reference to how it's developed in an iterative process, improving upon itself
 - It's a reference to how hashing works, transforming inputs into outputs over and over
-- **It's a reference to how previous epochs’ data feed into the randomness of the next epochs (CORRECT ANSWER)**
+- It's a reference to how previous epochs’ data feed into the randomness of the next epochs 
 
-*In the Ouroboros protocols, how are block producers selected?*
+<details><summary>See correct answer</summary>
+
+4. It's a reference to how previous epochs’ data feed into the randomness of the next epochs
+</details>
+
+### In the Ouroboros protocols, how are block producers selected?
 - They are randomly chosen from all users
 - They are the most technical users of the system
-- **They are elected proportionally to their stake (CORRECT ANSWER)**
+- They are elected proportionally to their stake 
 - They are picked based on the longest-chain rule
 
-*What accomplishment did Ouroboros Classic achieve?*
+<details><summary>See correct answer</summary>
+
+3. They are elected proportionally to their stake
+</details>
+
+### What accomplishment did Ouroboros Classic achieve?
 - It was the first to introduce the concept of proof-of-storage
-- **It proved that a proof-of-stake protocol could have the same security as Bitcoin (CORRECT ANSWER)**
+- It proved that a proof-of-stake protocol could have the same security as Bitcoin 
 - It created a new method of hashing
 - It was the first to consider environmental concerns in blockchain
 
-**Sub-Unit 4**
+<details><summary>See correct answer</summary>
 
-- *How is Praos different from Ouroboros Classic in terms of the threat model?*
+2. It proved that a proof-of-stake protocol could have the same security as Bitcoin
+</details>
+
+### How is Praos different from Ouroboros Classic in terms of the threat model?
 - Praos reduces the adversaries' power
-- **Praos gives adversaries more power but remains provably secure (CORRECT ANSWER)**
+- Praos gives adversaries more power but remains provably secure 
 - Praos uses a similar threat model as Ouroboros Classic
 - Praos removes all threat models
 
-*What major addition was brought by Ouroboros Praos?*
-- **Private leader schedules (CORRECT ANSWER)**
+<details><summary>See correct answer</summary>
+
+2. Praos gives adversaries more power but remains provably secure
+</details>
+
+### What major addition was brought by Ouroboros Praos?
+- Private leader schedules 
 - Pipelining
 - Full privacy
 - Input endorsers
 
-*Why is the verifiable random function (VRF) crucial in Praos?*
+<details><summary>See correct answer</summary>
+
+1. Private leader schedules
+</details>
+
+### Why is the verifiable random function (VRF) crucial in Praos?
 - It allows all nodes to know in advance which node will produce the next block
 - It ensures that every slot has one leader
-- **The VRF allows Praos to have a fully private leader schedule(CORRECT ANSWER)**
+- The VRF allows Praos to have a fully private leader schedule
 - It removes the need for cryptographic proofs
 
-**Sub-Unit 5**
+<details><summary>See correct answer</summary>
 
-*What main feature does Genesis introduce for new nodes joining the network?*
+3. The VRF allows Praos to have a fully private leader schedule
+</details>
+
+### What main feature does Genesis introduce for new nodes joining the network?
 - The ability to trust any node they connect to
 - The need to always connect through trusted relays
-- **The ability to bootstrap only from the Genesis configuration with assurances of following the correct chain (CORRECT ANSWER)**
+- The ability to bootstrap only from the Genesis configuration with assurances of following the correct chain 
 - The requirement to download the entire blockchain history
 
-*Select the correct statements about Ouroboros Genesis.*
-- **It enhances decentralization by not depending too much on trusted setups to connect to the blockchain (CORRECT ANSWER)**
-- It enables nodes to download the entire blockchain history
-- Without it, nodes must connect to trusted relays to obtain a list of active validators
-- **When it comes to chain selection, it considers both the length of the chain and its growth (CORRECT ANSWER)**
+<details><summary>See correct answer</summary>
 
-*Which protocol solves the problem of bootstrapping from untrusted network peers?*
+3. The ability to bootstrap only from the Genesis configuration with assurances of following the correct chain
+</details>
+
+### Select the correct statements about Ouroboros Genesis.
+- [ ] It enhances decentralization by not depending too much on trusted setups to connect to the blockchain 
+- [ ] It enables nodes to download the entire blockchain history
+- [ ] Without it, nodes must connect to trusted relays to obtain a list of active validators
+- [ ] When it comes to chain selection, it considers both the length of the chain and its growth 
+
+<details><summary>See correct answer</summary>
+
+- [x] It enhances decentralization by not depending too much on trusted setups to connect to the blockchain
+- [x] When it comes to chain selection, it considers both the length of the chain and its growth 
+</details>
+
+### Which protocol solves the problem of bootstrapping from untrusted network peers?
 - Ouroboros Praos
 - Ouroboros Leios
-- **Ouroboros Genesis (CORRECT ANSWER)**
+- Ouroboros Genesis 
 - Ouroboros Omega
 
-**Sub-Unit 6**
+<details><summary>See correct answer</summary>
 
-*How is Ouroboros Crypsinous different from other privacy tools?*
+3. Ouroboros Genesis
+</details>
+
+### How is Ouroboros Crypsinous different from other privacy tools?
 - It reduces transaction processing time
 - It ensures privacy only at the ledger level
-- **It attempts to take privacy one step further and proposes a preservation of privacy at the protocol level (CORRECT ANSWER)**
+- It attempts to take privacy one step further and proposes a preservation of privacy at the protocol level 
 
-**Sub-Unit 7**
+<details><summary>See correct answer</summary>
 
-*What distinguishes Ouroboros Chronos from other time synchronization mechanisms like Network-Time-Protocol (NTP)?*
+3. It attempts to take privacy one step further and proposes a preservation of privacy at the protocol level
+</details>
+
+### What distinguishes Ouroboros Chronos from other time synchronization mechanisms like Network-Time-Protocol (NTP)?
 - It operates based on a unique algorithm
 - It requires the use of an external service
-- **It synchronizes clocks within the protocol itself (CORRECT ANSWER)**
+- It synchronizes clocks within the protocol itself
 - It is an Internet protocol that needs infrastructure
 
-**Sub-Unit 8**
+<details><summary>See correct answer</summary>
 
-*Select the correct statements about Ouroboros Leios.*
-- It's a fundamentally pessimistic algorithm
-- **Three block types are introduced to optimize UTxO by distinguishing roles and functions (CORRECT ANSWER)**
-- **It's a fundamentally optimistic consensus algorithm (CORRECT ANSWER)**
-- New blocks are introduced to ensure blocks are produced sequentially
-- **The main aim is to make the construction of the Cardano blockchain more parallel (CORRECT ANSWER)**
+3. It synchronizes clocks within the protocol itself
+</details>
 
-*In the context of input endorsers, what’s the role of Input blocks?*
+### Select the correct statements about Ouroboros Leios.
+- [ ] It's a fundamentally pessimistic algorithm
+- [ ] Three block types are introduced to optimize UTxO by distinguishing roles and functions 
+- [ ] It's a fundamentally optimistic consensus algorithm 
+- [ ] New blocks are introduced to ensure blocks are produced sequentially
+- [ ] The main aim is to make the construction of the Cardano blockchain more parallel 
+
+<details><summary>See correct answer</summary>
+
+- [x] Three block types are introduced to optimize UTxO by distinguishing roles and functions
+- [x] It's a fundamentally optimistic consensus algorithm 
+- [x] The main aim is to make the construction of the Cardano blockchain more parallel
+</details>
+
+### In the context of input endorsers, what’s the role of Input blocks?
 - They capture votes from block producers
-- **Input blocks are bundles of transactions. They are the actual data payload containing information (CORRECT ANSWER)**
+- Input blocks are bundles of transactions. They are the actual data payload containing information 
 - They contain consensus proofs
 - They pay out rewards to users
 
-**Sub-Unit 9**
+<details><summary>See correct answer</summary>
 
-*What is not common to all protocols of the Ouroboros family?*
+2. Input blocks are bundles of transactions. They are the actual data payload containing information
+</details>
+
+### What is not common to all protocols of the Ouroboros family?
 - They are all based on time
-- **They all focus on privacy (CORRECT ANSWER)**
+- They all focus on privacy 
 - They all use the network’s currency as a consensus resource
 - They all elect leaders to produce blocks
+
+<details><summary>See correct answer</summary>
+
+2. They all focus on privacy
+</details>
