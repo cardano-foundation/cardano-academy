@@ -148,136 +148,118 @@ And this marks the end of this unit. We’ve talked about the rewards and incent
 
 ### Questions
 
-**Sub-Unit 1**
+### Select the correct statement:
 
-*Select the correct statement:*
+1. In a proof-of-stake blockchain, the more tokens a node controls …
+1. The less influence they have on block production
+1. **The greater its chances of being selected as a block producer (CORRECT ANSWER)**
+1. The less secure the system becomes
+1. The slower the block production rate is
 
-- In a proof-of-stake blockchain, the more tokens a node controls …
-- The less influence they have on block production
-- **The greater its chances of being selected as a block producer (CORRECT ANSWER)**
-- The less secure the system becomes
-- The slower the block production rate is
-
-**Sub-Unit 2**
-
-*Select the correct statements on pledged and active stakes.*
+### Select the correct statements on pledged and active stakes.
 - The fewer tokens an SPO controls, the higher the chance of being selected
 - **A pledge is the number of tokens a block producer personally owns and contributes to block production(CORRECT ANSWER)**
 - **When delegated to a registered stake pool, the stake is called active stake (CORRECT ANSWER)**
 - Active stakes refers to stake locked up in transactions
 
-*Select the correct statements on delegation.*
+### Select the correct statements on delegation.
 - Delegated funds and their delegation rights can never be transferred freely
 - **With Cardano’s system, the stake remains liquid during the delegation process (CORRECT ANSWER)**
 - **Delegated stake is when users delegate their ada to a stake pool to boost its chance of being elected as the next block producer (CORRECT ANSWER)**
 - Delegation means users are participating in Project Catalyst
 
-**Sub-Unit 3**
+### What does "epoch boundaries" refer to in the context of Cardano?
+1. The exact middle of an epoch
+1. **The point where the system shifts from one epoch to the next (CORRECT ANSWER)**
+1. The time when the most significant updates are made to the system
 
-*What does "epoch boundaries" refer to in the context of Cardano?*
-- The exact middle of an epoch
-- **The point where the system shifts from one epoch to the next (CORRECT ANSWER)**
-- The time when the most significant updates are made to the system
+### Cardano takes a snapshot at the beginning of every epoch - what does this reflect?
+1. The total number of tokens in circulation
+1. The moment of highest transaction volume within an epoch
+1. **The stake distribution of the previous epoch (CORRECT ANSWER)**
 
-*Cardano takes a snapshot at the beginning of every epoch - what does this reflect?*
-- The total number of tokens in circulation
-- The moment of highest transaction volume within an epoch
-- **The stake distribution of the previous epoch (CORRECT ANSWER)**
+### How does Ouroboros divide time?
+1. Into blocks and chains
+1. Into seconds and minutes
+1. **Into slots and epochs (CORRECT ANSWER)**
+1. Into days and nights
 
-*How does Ouroboros divide time?*
-Into blocks and chains
-Into seconds and minutes
-**Into slots and epochs (CORRECT ANSWER)**
-Into days and nights
+### What is the purpose of the reward-sharing scheme (RSS)?
+1. To punish any adversaries that may be on the system
+1. To provide additional tokens for all stakeholders
+1. **To incentivize behaviors that are beneficial to the system’s operation (CORRECT ANSWER)**
 
-**Sub-Unit 4**
+### What is the main reason for the protocol to issue rewards to delegators?
+1. To give away money that delegators can spend in the ecosystem
+1. To reimburse transaction fees
+1. **To encourage delegators to participate in the consensus thus securing the network (CORRECT ANSWER)**
+1. To reward delegators for participating in governance
 
-*What is the purpose of the reward-sharing scheme (RSS)?*
-- To punish any adversaries that may be on the system
-- To provide additional tokens for all stakeholders
-- **To incentivize behaviors that are beneficial to the system’s operation (CORRECT ANSWER)**
+### What is the term used for the percentage of the treasury put into circulation through rewards in every epoch?
+1. Monetary consensus
+1. Treasury distribution
+1. **Monetary expansion (CORRECT ANSWER)**
+1. Epoch allocation
 
-What is the main reason for the protocol to issue rewards to delegators?
-- To give away money that delegators can spend in the ecosystem
-- To reimburse transaction fees
-- **To encourage delegators to participate in the consensus thus securing the network (CORRECT ANSWER)**
-- To reward delegators for participating in governance
+### Which two sources provide the rewards in Cardano?
+1. Staking and transaction fees
+1. **Transaction fees and the reserve (CORRECT ANSWER)**
+1. Coinbase transactions and consensus rewards
+1. Block production and staking
 
-**Sub-Unit 5**
+### What is not common to both Bitcoin and Cardano?
+1. **Block producers reward themselves through a special transaction in each block (CORRECT ANSWER)**
+1. Block production is incentivised through transaction fee and consensus rewards
+1. New tokens are issued through consensus rewards to block producers
+1. Block producers earn rewards proportional to the block they produce
 
-*What is the term used for the percentage of the treasury put into circulation through rewards in every epoch?*
-- Monetary consensus
-- Treasury distribution
-- **Monetary expansion (CORRECT ANSWER)**
-- Epoch allocation
-
-*Which two sources provide the rewards in Cardano?*
-- Staking and transaction fees
-- **Transaction fees and the reserve (CORRECT ANSWER)**
-- Coinbase transactions and consensus rewards
-- Block production and staking
-
-*What is not common to both Bitcoin and Cardano?*
-- **Block producers reward themselves through a special transaction in each block (CORRECT ANSWER)**
-- Block production is incentivised through transaction fee and consensus rewards
-- New tokens are issued through consensus rewards to block producers
-- Block producers earn rewards proportional to the block they produce
-
-**Sub-Unit 6**
-
-*When it comes to stake rewards and pool parameters, what are the best ways to attract delegators?*
+### When it comes to stake rewards and pool parameters, what are the best ways to attract delegators?
 - A higher variable fee
 - A lower pledge
 - **A higher pledge (CORRECT ANSWER)**
 - **A lower variable fee (CORRECT ANSWER)**
 
-*True or False: once earned, rewards can’t be taken back or slashed by the protocol.*
-- **True (CORRECT ANSWER)**
-- False
+### Once earned, rewards can’t be taken back or slashed by the protocol.
+1. **True (CORRECT ANSWER)**
+1. False
 
-*True or False: a high declared pledge always means more rewards for delegators.*
-- True
-- **False (CORRECT ANSWER)**
+### A high declared pledge always means more rewards for delegators.
+1. True
+1. **False (CORRECT ANSWER)**
 
-*True or false: rewards are paid to each stake pool and delegators as soon as a block is added to the chain.*
-- True
-- **False (CORRECT ANSWER)**
+### Rewards are paid to each stake pool and delegators as soon as a block is added to the chain.
+1. True
+1. **False (CORRECT ANSWER)**
 
-**Sub-Unit 7**
+### What is the role of the a0 parameter?
+1. It controls the maximum size of a stake pool
+1. It controls the maximum number of delegators that a pool can have
+1. It controls the influence of the pool performances on the rewards
+1. **It controls the influence of the pledge on the pool rewards (CORRECT ANSWER)**
 
-*What is the role of the a0 parameter?*
-- It controls the maximum size of a stake pool
-- It controls the maximum number of delegators that a pool can have
-- It controls the influence of the pool performances on the rewards
-- **It controls the influence of the pledge on the pool rewards (CORRECT ANSWER)**
+### A fraction of all rewards is allocated to the Cardano treasury?
+1. **True (CORRECT ANSWER)**
+1. False
 
-*True or False: a fraction of all rewards is allocated to the Cardano treasury?*
-- **True (CORRECT ANSWER)**
-- False
+### Which statement best describes the reward schedule in the Cardano protocol?
+1. Rewards are given immediately in the same epoch the stake is delegated.
+1. Stake becomes active instantly and starts generating rewards without any delay.
+1. **Stake becomes active after a delay and then starts generating rewards, with the cycle repeating every epoch (CORRECT ANSWER)**
+1. The reward calculation always starts at the beginning of the next epoch
 
-**Sub-Unit 8**
+### When does a delegated stake become active in relation to the epoch it was assigned?
+1. Immediately in the same epoch
+1. Two epochs later
+1. **In the following epoch (CORRECT ANSWER)**
+1. Three epochs later
 
-*Which statement best describes the reward schedule in the Cardano protocol?*
-- Rewards are given immediately in the same epoch the stake is delegated.
-- Stake becomes active instantly and starts generating rewards without any delay.
-- **Stake becomes active after a delay and then starts generating rewards, with the cycle repeating every epoch (CORRECT ANSWER)**
-- The reward calculation always starts at the beginning of the next epoch
-
-*When does a delegated stake become active in relation to the epoch it was assigned?*
-- Immediately in the same epoch
-- Two epochs later
-- **In the following epoch (CORRECT ANSWER)**
-- Three epochs later
-
-**Sub-Unit 9**
-
-*What is the main purpose of the treasury in Cardano?*
+### What is the main purpose of the treasury in Cardano?
 - To provide salaries for the developers
 - **To fund its development (CORRECT ANSWER)**
 - **To create a self-sustaining ecosystem (CORRECT ANSWER)**
 - To hold funds for external investors
 
-*Select the correct statements about treasury.*
+### Select the correct statements about treasury.
 - **The amount cut from the total rewards is a fixed percentage (CORRECT ANSWER)**
 - The protocol parameter, τ, is currently set at 30%
 - **Currently,  τ is set at 20% in relation to the total rewards (CORRECT ANSWER)**
