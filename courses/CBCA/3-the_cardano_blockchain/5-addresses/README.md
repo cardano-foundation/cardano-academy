@@ -268,8 +268,8 @@ CIP-1852: Hierarchical Deterministic Wallets for Cardano, Accessed: 14 Oct 2022<
 
 ### What are some features of wallet software?
 - [ ] Show account balances
-- Create graphics for new tokens
-- View other users’ private keys
+- [ ] Create graphics for new tokens
+- [ ] View other users’ private keys
 - [ ] Monitor addresses 
 - [ ] Store private keys 
 
