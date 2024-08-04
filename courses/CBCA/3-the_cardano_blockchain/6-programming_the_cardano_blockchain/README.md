@@ -156,133 +156,226 @@ This completes our unit about programming the Cardano blockchain. We've introduc
 
 ## Questions
 
-**Sub-Unit 1**
+### What do we call a programming language which is close to natural language and far from machine instructions?
+1. Smart
+1. High-level 
+1. Complex-level
+1. Turing-complete
 
-*What do we call a programming language which is close to natural language and far from machine instructions?*
-- Smart
-- **High-level (CORRECT ANSWER)**
-- Complex-level
-- Turing-complete
+<details><summary>See correct answer</summary>
 
-*True or False, a program is a specification for a machine?*
-- **True (CORRECT ANSWER)**
-- False
+2. High-level
+</details>
 
-*Select the correct statements about programming languages:*
-- **At a very high level, a programming language is nothing more than a set of instructions for a computer to execute (CORRECT ANSWER)**
-- **A programming language is something that sits between us humans and the machine as a means of communication (CORRECT ANSWER)**
-- What sets a programming language apart is how the specification has to be interpreted by human speech
-- There exists only one level of programming languages
-- Most programmers usually consider the C language a high-level programming language
+### True or False, a program is a specification for a machine?
+1. True 
+1. False
 
-**Sub-Unit 2**
+<details><summary>See correct answer</summary>
 
-*Which statement gives a high-level definition of a 'Virtual Machine'?*
-- A computer which only exists in the metaverse
-- A program that runs in the cloud
-- **It's a program that behaves as if it were a computer, with hardware components, peripherals, etc.. (CORRECT ANSWER)**
-- A blockchain execution engine
+1. True
+</details>
 
-*Which of the following statements is NOT true regarding virtual machines?*
-- They can be used to precisely measure execution steps of a program
-- They need real machine resources to run
-- They are often used in the blockchain industry
-- **They can only emulate hardware components that exist in the real world (CORRECT ANSWER)**
+### Select the correct statements about programming languages:
+- [ ] At a very high level, a programming language is nothing more than a set of instructions for a computer to execute
+- [ ] A programming language is something that sits between us humans and the machine as a means of communication 
+- [ ] What sets a programming language apart is how the specification has to be interpreted by human speech
+- [ ] There exists only one level of programming languages
+- [ ] Most programmers usually consider the C language a high-level programming language
 
-*Select the correct statements about virtual machines:*
-- **A virtual machine is an execution environment that mimics a specific hardware architecture  (CORRECT ANSWER)**
-- **It provides the same capabilities and interfaces that the real architecture would have  (CORRECT ANSWER)**
-- It is a program that behaves as if it were separate from a computer, only making use of software components, etc
-- One notable trait of virtual machines is how they cannot emulate an architecture that doesn't exist in the real world
+<details><summary>See correct answer</summary>
 
-**Sub-Unit 3**
+- [x] At a very high level, a programming language is nothing more than a set of instructions for a computer to execute
+- [x] A programming language is something that sits between us humans and the machine as a means of communication
+</details>
 
-*Which of the following statements are correct:*
-- **Virtual machines provide a safe execution environment for smart contracts (CORRECT ANSWER)**
-- Virtual machines create a very unsafe execution environment for smart contracts
-- **Blockchain virtual machines need to be able to quantify resource usage with a high degree of precision (CORRECT ANSWER)**
-- A virtual machine interface is not able to emulate another machine’s architecture
+### Which statement gives a high-level definition of a 'Virtual Machine'?
+1. A computer which only exists in the metaverse
+1. A program that runs in the cloud
+1. It's a program that behaves as if it were a computer, with hardware components, peripherals, etc.. 
+1. A blockchain execution engine
 
-*What is executed by the Cardano ledger when evaluating smart contracts?*
-- Haskell
-- **Plutus Core (CORRECT ANSWER)**
-- Assembly
-- Solidity
+<details><summary>See correct answer</summary>
 
-*Select the correct statements:*
-- The Cardano ledger directly executes Haskell programs
-- **The Cardano ledger only comprehends Plutus Core (CORRECT ANSWER)**
-- **Plutus refers to the programming platform which encompasses elements such as (Untyped) Plutus Core and Plutus Tx (CORRECT ANSWER)**
-- **Plutus Application Framework: a collection of tools for working with smart contracts in Haskell (CORRECT ANSWER)**
-- Cardano only provides one higher-level programming language that compile down to UPLC
+3. It's a program that behaves as if it were a computer, with hardware components, peripherals, etc..
+</details>
 
-**Sub-Unit 4**
+### Which of the following statements is NOT true regarding virtual machines?
+1. They can be used to precisely measure execution steps of a program
+1. They need real machine resources to run
+1. They are often used in the blockchain industry
+1. They can only emulate hardware components that exist in the real world 
 
-*The Plutus virtual machine measures resource usage along two dimensions. What are they?*
-- Steps and disk space
-- Disk space and energy
-- **Steps and memory (CORRECT ANSWER)**
-- Memory and energy
+<details><summary>See correct answer</summary>
 
-*How does the virtual machine handle programs that exceed their authorized budget?*
-- It terminates the program immediately
-- It allows the program to continue execution
-- **It interrupts the execution if a program exceeds its authorized budget (CORRECT ANSWER)**
-- It increases the authorized budget for the program
+4. They can only emulate hardware components that exist in the real world
+</details>
 
-*What can programmers do with the virtual machine in their own development environment?*
-- They can only simulate executions of smart contracts
-- They can't use the virtual machine for development
-- **They can utilize the virtual machine to simulate executions of smart contracts on their own development environment in the very conditions that the ledger would. (CORRECT ANSWER)**
-- They can only execute smart contracts on the main ledger
+### Select the correct statements about virtual machines:
+- [ ] A virtual machine is an execution environment that mimics a specific hardware architecture  
+- [ ] It provides the same capabilities and interfaces that the real architecture would have  
+- [ ] It is a program that behaves as if it were separate from a computer, only making use of software components, etc
+- [ ] One notable trait of virtual machines is how they cannot emulate an architecture that doesn't exist in the real world
 
-**Sub-Unit 5**
+<details><summary>See correct answer</summary>
 
-*Which of the following is NOT true regarding Haskell?*
-- Haskell is a natural first choice for programmers, since the rest of Cardano is also implemented in Haskell
-- Haskell is a functional programming language with strong static typing and high expressiveness
-- **The Cardano ledger only understands Haskell (CORRECT ANSWER)**
-- The Cardano ledger only understands Plutus core
+- [x] A virtual machine is an execution environment that mimics a specific hardware architecture
+- [x] It provides the same capabilities and interfaces that the real architecture would have
+</details>
 
-*Which statement is NOT true about Aiken?*
-- It is a pure functional programming language
-- It is Turing-complete
-- **It is complex to set up and configure (CORRECT ANSWER)**
-- It compiles to Plutus Core
+### Which of the following statements are correct:
+- [ ] Virtual machines provide a safe execution environment for smart contracts 
+- [ ] Virtual machines create a very unsafe execution environment for smart contracts
+- [ ] Blockchain virtual machines need to be able to quantify resource usage with a high degree of precision
+- [ ] A virtual machine interface is not able to emulate another machine’s architecture
 
-*What is one of the main characteristics of Helios, a Cardano-specific programming language?*
-- It is a multi-paradigm language
-- It is based on the Haskell programming language
-- **It is a purely functional language inspired by TypeScript (CORRECT ANSWER)**
-- It relies heavily on external code libraries
+<details><summary>See correct answer</summary>
 
-*What sets Helios apart in terms of its ecosystem?*
-- It is built on top of the Haskell ecosystem
-- **It is a wholly siloed ecosystem with no external dependencies to any library (CORRECT ANSWER)**
-- It relies on numerous external code libraries
+- [x] Virtual machines provide a safe execution environment for smart contracts
+- [x] Blockchain virtual machines need to be able to quantify resource usage with a high degree of precision
+</details>
 
-**Sub-Unit 6**
+### What is executed by the Cardano ledger when evaluating smart contracts?
+1. Haskell
+1. Plutus Core 
+1. Assembly
+1. Solidity
 
-*What does 'eDSL' mean?*
-- Extended Domain-Specific Language
-- **Embedded Domain-Specific Language (CORRECT ANSWER)**
-- Enabled Domain Specific Language
-- Efficient Domain Specific Language
+<details><summary>See correct answer</summary>
 
-*What kind of trustless smart contract logic could you implement using a Cardano native script?*
-- **A multi-signature between 3 participants, but only after a known date (CORRECT ANSWER)**
-- An asset swap
-- A token minting policy which ensures a maximum supply of tokens.
-- A multi-signature between 2 participants, with different permissions for each signatory
+2. Plutus Core
+</details>
 
-*What are the six primitives that come with Marlowe?*
-- Add, Subtract, Multiply, Divide, Equals, Not Equals
-- **Pay, Close, If, When, Let, Assert (CORRECT ANSWER)**
-- Create, Modify, Delete, Retrieve, Execute, Verify
-- Input, Output, Loop, Break, Continue, Function
+### Select the correct statements:
+- [ ] The Cardano ledger directly executes Haskell programs
+- [ ] The Cardano ledger only comprehends Plutus Core 
+- [ ] Plutus refers to the programming platform which encompasses elements such as (Untyped) Plutus Core and Plutus Tx 
+- [ ] Plutus Application Framework: a collection of tools for working with smart contracts in Haskell 
+- [ ] Cardano only provides one higher-level programming language that compile down to UPLC
 
-*How does Marlowe's level of Turing completeness compare to languages like Haskell, Aiken, and Helios?*
-- Marlowe is Turing-Complete, just like Haskell, Aiken, and Helios
-- Marlowe is more limited in its expressive power compared to Haskell, Aiken, and Helios
-- **Marlowe is not Turing-Complete, while Haskell, Aiken, and Helios are (CORRECT ANSWER)**
-- Marlowe is less secure but more versatile than Haskell, Aiken, and Helios
+<details><summary>See correct answer</summary>
+
+- [x] The Cardano ledger only comprehends Plutus Core
+- [x] Plutus refers to the programming platform which encompasses elements such as (Untyped) Plutus Core and Plutus Tx
+- [x] Plutus Application Framework: a collection of tools for working with smart contracts in Haskell
+</details>
+
+### The Plutus virtual machine measures resource usage along two dimensions. What are they?
+1. Steps and disk space
+1. Disk space and energy
+1. Steps and memory 
+1. Memory and energy
+
+<details><summary>See correct answer</summary>
+
+3. Steps and memory
+</details>
+
+### How does the virtual machine handle programs that exceed their authorized budget?
+1. It terminates the program immediately
+1. It allows the program to continue execution
+1. It interrupts the execution if a program exceeds its authorized budget
+1. It increases the authorized budget for the program
+
+<details><summary>See correct answer</summary>
+
+3. It interrupts the execution if a program exceeds its authorized budget 
+</details>
+
+### What can programmers do with the virtual machine in their own development environment?
+1. They can only simulate executions of smart contracts
+1. They can't use the virtual machine for development
+1. They can utilize the virtual machine to simulate executions of smart contracts on their own development environment in the very conditions that the ledger would. 
+1. They can only execute smart contracts on the main ledger
+
+<details><summary>See correct answer</summary>
+
+3. They can utilize the virtual machine to simulate executions of smart contracts on their own development environment in the very conditions that the ledger would.
+</details>
+
+### Which of the following is NOT true regarding Haskell?
+1. Haskell is a natural first choice for programmers, since the rest of Cardano is also implemented in Haskell
+1. Haskell is a functional programming language with strong static typing and high expressiveness
+1. The Cardano ledger only understands Haskell
+1. The Cardano ledger only understands Plutus core
+
+<details><summary>See correct answer</summary>
+
+3. The Cardano ledger only understands Haskell
+</details>
+
+### Which statement is NOT true about Aiken?
+1. It is a pure functional programming language
+1. It is Turing-complete
+1. It is complex to set up and configure
+1. It compiles to Plutus Core
+
+<details><summary>See correct answer</summary>
+
+3. It is complex to set up and configure 
+</details>
+
+### What is one of the main characteristics of Helios, a Cardano-specific programming language?
+1. It is a multi-paradigm language
+1. It is based on the Haskell programming language
+1. It is a purely functional language inspired by TypeScript 
+1. It relies heavily on external code libraries
+
+<details><summary>See correct answer</summary>
+
+3. It is a purely functional language inspired by TypeScript
+</details>
+
+### What sets Helios apart in terms of its ecosystem?
+1. It is built on top of the Haskell ecosystem
+1. It is a wholly siloed ecosystem with no external dependencies to any library 
+1. It relies on numerous external code libraries
+
+<details><summary>See correct answer</summary>
+
+2. It is a wholly siloed ecosystem with no external dependencies to any library
+</details>
+
+### What does 'eDSL' mean?
+1. Extended Domain-Specific Language
+1. Embedded Domain-Specific Language 
+1. Enabled Domain Specific Language
+1. Efficient Domain Specific Language
+
+<details><summary>See correct answer</summary>
+
+2. Embedded Domain-Specific Language
+</details>
+
+### What kind of trustless smart contract logic could you implement using a Cardano native script?
+1. A multi-signature between 3 participants, but only after a known date 
+1. An asset swap
+1. A token minting policy which ensures a maximum supply of tokens.
+1. A multi-signature between 2 participants, with different permissions for each signatory
+
+<details><summary>See correct answer</summary>
+
+1. A multi-signature between 3 participants, but only after a known date
+</details>
+
+### What are the six primitives that come with Marlowe?
+1. Add, Subtract, Multiply, Divide, Equals, Not Equals
+1. Pay, Close, If, When, Let, Assert
+1. Create, Modify, Delete, Retrieve, Execute, Verify
+1. Input, Output, Loop, Break, Continue, Function
+
+<details><summary>See correct answer</summary>
+
+2. Pay, Close, If, When, Let, Asser
+</details>
+
+### How does Marlowe's level of Turing completeness compare to languages like Haskell, Aiken, and Helios?
+1. Marlowe is Turing-Complete, just like Haskell, Aiken, and Helios
+1. Marlowe is more limited in its expressive power compared to Haskell, Aiken, and Helios
+1. Marlowe is not Turing-Complete, while Haskell, Aiken, and Helios are 
+1. Marlowe is less secure but more versatile than Haskell, Aiken, and Helios
+
+<details><summary>See correct answer</summary>
+
+3. Marlowe is not Turing-Complete, while Haskell, Aiken, and Helios are
+</details>
