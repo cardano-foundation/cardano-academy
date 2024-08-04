@@ -208,9 +208,9 @@ In this lecture, we have explored the heart of Cardano, the Ouroboros consensus 
 </details>
 
 ### Proof of Work is an election mechanism where participants are selected based on:
-- The amount of stake they hold in the network
-- Their reputation within the network
-- Their hashing power
+1. The amount of stake they hold in the network
+1. Their reputation within the network
+1. Their hashing power
 
 <details><summary>See correct answer</summary>
 
@@ -218,8 +218,8 @@ In this lecture, we have explored the heart of Cardano, the Ouroboros consensus 
 </details>
 
 ### Consensus algorithms such as PoW or PoS can usually be thought of as a lottery.
-- True 
-- False
+1. True 
+1. False
 
 <details><summary>See correct answer</summary>
 
@@ -227,10 +227,10 @@ In this lecture, we have explored the heart of Cardano, the Ouroboros consensus 
 </details>
 
 ### What does Common Prefix, one of the key properties used to prove the security arguments behind Ouroboros, imply?
-- The chains of two honest parties are always identical
-- Any two honest parties share a common chain prefix after removing up to k blocks
-- Every honest party must have the same prefix as the main chain
-- The prefix of the chain is common knowledge among all parties
+1. The chains of two honest parties are always identical
+1. Any two honest parties share a common chain prefix after removing up to k blocks
+1. Every honest party must have the same prefix as the main chain
+1. The prefix of the chain is common knowledge among all parties
 
 <details><summary>See correct answer</summary>
 
@@ -238,10 +238,10 @@ In this lecture, we have explored the heart of Cardano, the Ouroboros consensus 
 </details>
 
 ### What are the three fundamental properties used to prove safety and liveness of distributed consensus protocols such as Bitcoin or Ouroboros?
-- Chain growth, chain quality, common prefix 
-- Common prefix, chain quality, chain resilience
-- Chain growth, chain resilience, common prefix
-- Chain resilience, chain growth, chain quality
+1. Chain growth, chain quality, common prefix 
+1. Common prefix, chain quality, chain resilience
+1. Chain growth, chain resilience, common prefix
+1. Chain resilience, chain growth, chain quality
 
 <details><summary>See correct answer</summary>
 
@@ -249,10 +249,10 @@ In this lecture, we have explored the heart of Cardano, the Ouroboros consensus 
 </details>
 
 ### Generally speaking, what is chain quality?
-- A measure of the number of transactions that benefit the network
-- A measure of how many blocks are produced within an agreed-upon short time frame
-- A measure of the proportion of non-empty blocks in the chain
-- A measure of the proportion of blocks produced by honest nodes 
+1. A measure of the number of transactions that benefit the network
+1.  A measure of how many blocks are produced within an agreed-upon short time frame
+1. A measure of the proportion of non-empty blocks in the chain
+1. A measure of the proportion of blocks produced by honest nodes 
 
 <details><summary>See correct answer</summary>
 
@@ -260,9 +260,9 @@ In this lecture, we have explored the heart of Cardano, the Ouroboros consensus 
 </details>
 
 ### What are the main characteristics of all Ouroboros protocols?
-- They are time-based and synchronous
-- They consider network currency as the main consensus resource 
-- They focus on stake delegation for scalability
+1. They are time-based and synchronous
+1. They consider network currency as the main consensus resource 
+1. They focus on stake delegation for scalability
 
 <details><summary>See correct answer</summary>
 
@@ -270,10 +270,10 @@ In this lecture, we have explored the heart of Cardano, the Ouroboros consensus 
 </details>
 
 ### Why is it called “Ouroboros”?
-- Scientists simply loved snakes
-- It's a reference to how it's developed in an iterative process, improving upon itself
-- It's a reference to how hashing works, transforming inputs into outputs over and over
-- It's a reference to how previous epochs’ data feed into the randomness of the next epochs 
+1. Scientists simply loved snakes
+1. It's a reference to how it's developed in an iterative process, improving upon itself
+1. It's a reference to how hashing works, transforming inputs into outputs over and over
+1. It's a reference to how previous epochs’ data feed into the randomness of the next epochs 
 
 <details><summary>See correct answer</summary>
 
@@ -281,10 +281,10 @@ In this lecture, we have explored the heart of Cardano, the Ouroboros consensus 
 </details>
 
 ### In the Ouroboros protocols, how are block producers selected?
-- They are randomly chosen from all users
-- They are the most technical users of the system
-- They are elected proportionally to their stake 
-- They are picked based on the longest-chain rule
+1. They are randomly chosen from all users
+1. They are the most technical users of the system
+1. They are elected proportionally to their stake 
+1. They are picked based on the longest-chain rule
 
 <details><summary>See correct answer</summary>
 
@@ -292,10 +292,10 @@ In this lecture, we have explored the heart of Cardano, the Ouroboros consensus 
 </details>
 
 ### What accomplishment did Ouroboros Classic achieve?
-- It was the first to introduce the concept of proof-of-storage
-- It proved that a proof-of-stake protocol could have the same security as Bitcoin 
-- It created a new method of hashing
-- It was the first to consider environmental concerns in blockchain
+1. It was the first to introduce the concept of proof-of-storage
+1. It proved that a proof-of-stake protocol could have the same security as Bitcoin 
+1. It created a new method of hashing
+1. It was the first to consider environmental concerns in blockchain
 
 <details><summary>See correct answer</summary>
 
@@ -303,10 +303,10 @@ In this lecture, we have explored the heart of Cardano, the Ouroboros consensus 
 </details>
 
 ### How is Praos different from Ouroboros Classic in terms of the threat model?
-- Praos reduces the adversaries' power
-- Praos gives adversaries more power but remains provably secure 
-- Praos uses a similar threat model as Ouroboros Classic
-- Praos removes all threat models
+1. Praos reduces the adversaries' power
+1. Praos gives adversaries more power but remains provably secure 
+1. Praos uses a similar threat model as Ouroboros Classic
+1. Praos removes all threat models
 
 <details><summary>See correct answer</summary>
 
@@ -314,10 +314,10 @@ In this lecture, we have explored the heart of Cardano, the Ouroboros consensus 
 </details>
 
 ### What major addition was brought by Ouroboros Praos?
-- Private leader schedules 
-- Pipelining
-- Full privacy
-- Input endorsers
+1. Private leader schedules 
+1. Pipelining
+1. Full privacy
+1. Input endorsers
 
 <details><summary>See correct answer</summary>
 
@@ -325,10 +325,10 @@ In this lecture, we have explored the heart of Cardano, the Ouroboros consensus 
 </details>
 
 ### Why is the verifiable random function (VRF) crucial in Praos?
-- It allows all nodes to know in advance which node will produce the next block
-- It ensures that every slot has one leader
-- The VRF allows Praos to have a fully private leader schedule
-- It removes the need for cryptographic proofs
+1. It allows all nodes to know in advance which node will produce the next block
+1. It ensures that every slot has one leader
+1. The VRF allows Praos to have a fully private leader schedule
+1. It removes the need for cryptographic proofs
 
 <details><summary>See correct answer</summary>
 
@@ -336,10 +336,10 @@ In this lecture, we have explored the heart of Cardano, the Ouroboros consensus 
 </details>
 
 ### What main feature does Genesis introduce for new nodes joining the network?
-- The ability to trust any node they connect to
-- The need to always connect through trusted relays
-- The ability to bootstrap only from the Genesis configuration with assurances of following the correct chain 
-- The requirement to download the entire blockchain history
+1. The ability to trust any node they connect to
+1. The need to always connect through trusted relays
+1. The ability to bootstrap only from the Genesis configuration with assurances of following the correct chain 
+1. The requirement to download the entire blockchain history
 
 <details><summary>See correct answer</summary>
 
@@ -359,10 +359,10 @@ In this lecture, we have explored the heart of Cardano, the Ouroboros consensus 
 </details>
 
 ### Which protocol solves the problem of bootstrapping from untrusted network peers?
-- Ouroboros Praos
-- Ouroboros Leios
-- Ouroboros Genesis 
-- Ouroboros Omega
+1. Ouroboros Praos
+1. Ouroboros Leios
+1. Ouroboros Genesis 
+1. Ouroboros Omega
 
 <details><summary>See correct answer</summary>
 
@@ -370,9 +370,9 @@ In this lecture, we have explored the heart of Cardano, the Ouroboros consensus 
 </details>
 
 ### How is Ouroboros Crypsinous different from other privacy tools?
-- It reduces transaction processing time
-- It ensures privacy only at the ledger level
-- It attempts to take privacy one step further and proposes a preservation of privacy at the protocol level 
+1. It reduces transaction processing time
+1. It ensures privacy only at the ledger level
+1. It attempts to take privacy one step further and proposes a preservation of privacy at the protocol level 
 
 <details><summary>See correct answer</summary>
 
@@ -380,10 +380,10 @@ In this lecture, we have explored the heart of Cardano, the Ouroboros consensus 
 </details>
 
 ### What distinguishes Ouroboros Chronos from other time synchronization mechanisms like Network-Time-Protocol (NTP)?
-- It operates based on a unique algorithm
-- It requires the use of an external service
-- It synchronizes clocks within the protocol itself
-- It is an Internet protocol that needs infrastructure
+1. It operates based on a unique algorithm
+1. It requires the use of an external service
+1. It synchronizes clocks within the protocol itself
+1. It is an Internet protocol that needs infrastructure
 
 <details><summary>See correct answer</summary>
 
@@ -405,10 +405,10 @@ In this lecture, we have explored the heart of Cardano, the Ouroboros consensus 
 </details>
 
 ### In the context of input endorsers, what’s the role of Input blocks?
-- They capture votes from block producers
-- Input blocks are bundles of transactions. They are the actual data payload containing information 
-- They contain consensus proofs
-- They pay out rewards to users
+1. They capture votes from block producers
+1. Input blocks are bundles of transactions. They are the actual data payload containing information 
+1. They contain consensus proofs
+1. They pay out rewards to users
 
 <details><summary>See correct answer</summary>
 
@@ -416,10 +416,10 @@ In this lecture, we have explored the heart of Cardano, the Ouroboros consensus 
 </details>
 
 ### What is not common to all protocols of the Ouroboros family?
-- They are all based on time
-- They all focus on privacy 
-- They all use the network’s currency as a consensus resource
-- They all elect leaders to produce blocks
+1. They are all based on time
+1. They all focus on privacy 
+1. They all use the network’s currency as a consensus resource
+1. They all elect leaders to produce blocks
 
 <details><summary>See correct answer</summary>
 
