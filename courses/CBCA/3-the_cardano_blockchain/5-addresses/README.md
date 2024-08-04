@@ -209,173 +209,300 @@ CIP-1852: Hierarchical Deterministic Wallets for Cardano, Accessed: 14 Oct 2022<
 
 ## Questions
 
-**Sub-Unit 1**
+### What do wallets generally store?
+1. Tokens from the blockchain ledger
+1. Secret credentials needed to move tokens
+1. A physical representation of cryptocurrency
 
-*What do wallets generally store?*
-- Tokens from the blockchain ledger
-- **Secret credentials needed to move tokens (CORRECT ANSWER)**
-- A physical representation of cryptocurrency
+<details><summary>See correct answer</summary>
 
-*What statement best describes the main purpose of a wallet in blockchain?*
-- A mechanism to produce new tokens
-- **An interface for users to view/interact with the blockchain (CORRECT ANSWER)**
-- A backup system for the blockchain ledger
+2. Secret credentials needed to move tokens
+</details>
 
-*What is not actually stored in a wallet software?*
-- Addresses
-- **Tokens (CORRECT ANSWER)**
-- Private keys
-- Public keys
+### What statement best describes the main purpose of a wallet in blockchain?
+1. A mechanism to produce new tokens
+1. An interface for users to view/interact with the blockchain 
+1. A backup system for the blockchain ledger
 
-*Select the correct statements about wallet addresses.*
-- **They are needed for the user to send and receive tokens (CORRECT ANSWER)**
-- They are used for KYC (know your customer) requirements with regulators
-- They are created from the private key
-- **They are created from the public key (CORRECT ANSWER)**
+<details><summary>See correct answer</summary>
 
-**Sub-Unit 2**
+2. An interface for users to view/interact with the blockchain
+</details>
 
-*Select the correct statements on what happens when receiving tokens from other users.*
-- **The received tokens are locked to your address (CORRECT ANSWER)**
-- **Your private key is the only way that received tokens can be moved again (CORRECT ANSWER)**
-- Received tokens can be moved via your public key
-- Tokens are only locked if you choose to lock them
-- **The received tokens will stay locked until transferred to another address (CORRECT ANSWER)**
+### What is not actually stored in a wallet software?
+1. Addresses
+1. Tokens 
+1. Private keys
+1. Public keys
 
-*What are some features of wallet software?*
-- **Show account balances (CORRECT ANSWER)**
+<details><summary>See correct answer</summary>
+
+2. Tokens
+</details>
+
+### Select the correct statements about wallet addresses.
+- [ ] They are needed for the user to send and receive tokens 
+- [ ] They are used for KYC (know your customer) requirements with regulators
+- [ ] They are created from the private key
+- [ ] They are created from the public key 
+
+<details><summary>See correct answer</summary>
+
+- [x] They are needed for the user to send and receive tokens 
+- [x] They are created from the public key
+</details>
+
+### Select the correct statements on what happens when receiving tokens from other users.
+- [ ] The received tokens are locked to your address
+- [ ] Your private key is the only way that received tokens can be moved again 
+- [ ] Received tokens can be moved via your public key
+- [ ] Tokens are only locked if you choose to lock them
+- [ ] The received tokens will stay locked until transferred to another address 
+
+<details><summary>See correct answer</summary>
+
+- [x] The received tokens are locked to your address
+- [x] Your private key is the only way that received tokens can be moved again
+- [x] The received tokens will stay locked until transferred to another address
+</details>
+
+### What are some features of wallet software?
+- [ ] Show account balances
 - Create graphics for new tokens
 - View other users’ private keys
-- **Monitor addresses (CORRECT ANSWER)**
-- **Store private keys (CORRECT ANSWER)**
+- [ ] Monitor addresses 
+- [ ] Store private keys 
 
-**Sub-Unit 3**
+<details><summary>See correct answer</summary>
 
-*What are improvement proposals in blockchain communities?*
-- Ideas to advertise the blockchain to a wider audience
-- Suggestions on changing the name of the blockchain
-- **Community suggestions to improve the blockchain protocol (CORRECT ANSWER)**
-- Proposals to reduce the value of the cryptocurrency
+- [x] Show account balances
+- [x] Monitor addresses
+- [x] Store private keys
+</details>
 
-**Sub-Unit 4**
+### What are improvement proposals in blockchain communities?
+1. Ideas to advertise the blockchain to a wider audience
+1. Suggestions on changing the name of the blockchain
+1. Community suggestions to improve the blockchain protocol 
+1. Proposals to reduce the value of the cryptocurrency
 
-*How can "Hierarchical Deterministic" (HD) wallets be described?*
-- Wallets that use only one key
-- Wallets that randomly generate child keys
-- **Wallets that manage a hierarchy of keys derived from a single seed (CORRECT ANSWER)**
-- Wallets that require multiple seeds for backup
+<details><summary>See correct answer</summary>
 
-*Why is a seed important in the context of HD wallets?*
-- It allows for faster transaction speeds
-- **It acts as a backup and can regenerate any keys in the wallet (CORRECT ANSWER)**
-- It can only be read by machines.
-- It changes after every transaction for added security
+3. Community suggestions to improve the blockchain protocol
+</details>
 
-*In the context of BIP-32, what does ‘HD’ stand for?*
-- Hierarchical Decentralised
-- Hard Derivation
-- Highly Deterministic
-- **Hierarchical Deterministic (CORRECT ANSWER)**
+### How can "Hierarchical Deterministic" (HD) wallets be described?
+1. Wallets that use only one key
+1. Wallets that randomly generate child keys
+1. Wallets that manage a hierarchy of keys derived from a single seed 
+1. Wallets that require multiple seeds for backup
 
-*What did Bitcoin Improvement Proposal BIP-39 introduce?*
-- **A process for turning random seeds into sets of predefined words (CORRECT ANSWER)**
-- A process for turning pre-known seeds into sets of random words
-- A process for turning random seeds into sets of random words
+<details><summary>See correct answer</summary>
 
-*What does a wallet seed consist of?*
-- A sequence of letters
-- **A sequence of 1s and 0s (CORRECT ANSWER)**
-- A sequence of symbols
+3. Wallets that manage a hierarchy of keys derived from a single seed
+</details>
 
-*True or False: It is virtually impossible to guess someone else's recovery phrase?*
-- **True (CORRECT ANSWER)**
-- False
+### Why is a seed important in the context of HD wallets?
+1. It allows for faster transaction speeds
+1. It acts as a backup and can regenerate any keys in the wallet 
+1. It can only be read by machines.
+1. It changes after every transaction for added security
 
-**Sub-Unit 5**
+<details><summary>See correct answer</summary>
 
-*What is a "hardened derivation" in the context of BIP-32?*
-- A derivation that requires a public key and creates a new child public key
-- **A derivation that requires a private key and creates a new child private key (CORRECT ANSWER)**
-- A derivation that can be done from either a private key or a public key
-- A derivation that can only be done from a public key
+2. It acts as a backup and can regenerate any keys in the wallet 
+</details>
 
-*A derivation is described with which two pieces of information?*
-- **The derivation index (CORRECT ANSWER)**
-- The root master private key
-- **Whether it is hardened or not (CORRECT ANSWER)**
-- The number of successive derivations
+### In the context of BIP-32, what does ‘HD’ stand for?
+1. Hierarchical Decentralised
+1. Hard Derivation
+1. Highly Deterministic
+1. Hierarchical Deterministic 
 
-**Sub-Unit 6**
+<details><summary>See correct answer</summary>
 
-*What does “encoding” refer to with regard to BIP-173?*
-- When binary data is represented as coded text
-- Block producers having to approve the binary data
-- **The process of representing a piece of binary data as plain text (CORRECT ANSWER)**
+4. Hierarchical Deterministic
+</details>
 
-*What does the "human readable part" of BIP-173 serve as?*
-- A suffix for the character sequence
-- A mechanism to detect errors in the sequence
-- **The human-readable part, which comes as a prefix, is generally used to describe what kind of data is captured by the character sequence. (CORRECT ANSWER)**
-- An encoding sequence for data security
+### What did Bitcoin Improvement Proposal BIP-39 introduce?
+1. A process for turning random seeds into sets of predefined words 
+1. A process for turning pre-known seeds into sets of random words
+1. A process for turning random seeds into sets of random words
 
-**Sub-Unit 7**
+<details><summary>See correct answer</summary>
 
-*What type of addresses are on Cardano?*
-- **Stake addresses (CORRECT ANSWER)**
-- Public addresses
-- **Payment addresses (CORRECT ANSWER)**
-- Private addresses
+1. A process for turning random seeds into sets of predefined words 
+</details>
 
-*What are the three categories of payment addresses?*
-- Postal addresses
-- **Pointer addresses (CORRECT ANSWER)**
-- **Base addresses (CORRECT ANSWER)**
-- Compatibility addresses
-- **Enterprise addresses (CORRECT ANSWER)**
+### What does a wallet seed consist of?
+1. A sequence of letters
+1. A sequence of 1s and 0s 
+1. A sequence of symbols
 
-*What does the payment part of an address indicate?*
-- The stake rights of the address
-- **The spending conditions associated with the address (CORRECT ANSWER)**
-- The delegation conditions of the funds
+<details><summary>See correct answer</summary>
 
-*What is the main purpose of the delegation part of an address?*
-- To define the payment conditions
-- **To show who owns the rewards from staking (CORRECT ANSWER)**
-- To state the encoding version
+2. A sequence of 1s and 0s
+</details>
 
-**Sub-Unit 8**
+### It is virtually impossible to guess someone else's recovery phrase?
+1. True 
+1. False
 
-*Which of the following are true regarding base addresses?*
-- **It consists of both a payment and delegation part (CORRECT ANSWER)**
-- Scripts in base addresses combine private keys with public keys
-- Base address only consists of delegation parts
-- **Scripts allow combining multiple public keys and time conditions together (CORRECT ANSWER)**
+<details><summary>See correct answer</summary>
 
-*What does it mean if a user makes use of enterprise addresses?*
-- They increase the total active stake
-- They have direct influence on the slot leadership schedule
-- **They opt out of participation in the proof of stake protocol  (CORRECT ANSWER)**
+1. True
+</details>
 
-*What is a potential consequence of using addresses with no stake rights, like enterprise addresses, in the proof-of-stake protocol?*
-- It strengthens the defense against potential adversaries
-- It guarantees the user more rewards
-- It effectively increases the total amount of active stake
-- **It might give an advantage to potential adversaries by decreasing the active stake  (CORRECT ANSWER)**
+### What is a "hardened derivation" in the context of BIP-32?
+1. A derivation that requires a public key and creates a new child public key
+1. A derivation that requires a private key and creates a new child private key
+1. A derivation that can be done from either a private key or a public key
+1. A derivation that can only be done from a public key
 
-**Sub-Unit 9**
+<details><summary>See correct answer</summary>
 
-*What must happen to a stake address balance before it can be used as a payment input?*
-- It must be verified with KYC (Know your customer)
-- It must be approved by the network
-- **It must be turned into UTxO entries (CORRECT ANSWER)**
-- It must be confirmed by a stakeholder
+2. A derivation that requires a private key and creates a new child private key
+</details>
 
-*What is the main purpose of a stake address in Cardano?*
-- To send funds to other addresses
-- **To receive rewards for participating in the proof-of-stake protocol (CORRECT ANSWER)**
-- To serve as the main transaction address
-- To confirm transactions on the blockchain
+### A derivation is described with which two pieces of information?
+- [ ] The derivation index
+- [ ] The root master private key
+- [ ] Whether it is hardened or not
+- [ ] The number of successive derivations
 
-*True or False: It is not possible to send funds to a stake address.*
-- **True (CORRECT ANSWER)**
-- False
+<details><summary>See correct answer</summary>
+
+- [x] The derivation index
+- [x] Whether it is hardened or not
+</details>
+
+### What does “encoding” refer to with regard to BIP-173?
+1. When binary data is represented as coded text
+1. Block producers having to approve the binary data
+1. The process of representing a piece of binary data as plain text
+
+<details><summary>See correct answer</summary>
+
+3. The process of representing a piece of binary data as plain text 
+</details>
+
+### What does the "human readable part" of BIP-173 serve as?
+1. A suffix for the character sequence
+1. A mechanism to detect errors in the sequence
+1. The human-readable part, which comes as a prefix, is generally used to describe what kind of data is captured by the character sequence
+1. An encoding sequence for data security
+
+<details><summary>See correct answer</summary>
+
+3. The human-readable part, which comes as a prefix, is generally used to describe what kind of data is captured by the character sequence
+</details>
+
+### What type of addresses are on Cardano?
+- [ ] Stake addresses
+- [ ] Public addresses
+- [ ] Payment addresses
+- [ ] Private addresses
+
+<details><summary>See correct answer</summary>
+
+- [x] Stake addresses
+- [x] Payment addresses
+</details>
+
+### What are the three categories of payment addresses?
+- [ ] Postal addresses
+- [ ] Pointer addresses 
+- [ ] Base addresses 
+- [ ] Compatibility addresses
+- [ ] Enterprise addresses 
+
+<details><summary>See correct answer</summary>
+
+- [x] Pointer addresses 
+- [x] Base addresses
+- [x] Enterprise addresses
+</details>
+
+### What does the payment part of an address indicate?
+1. The stake rights of the address
+1. The spending conditions associated with the address 
+1. The delegation conditions of the funds
+
+<details><summary>See correct answer</summary>
+
+2. The spending conditions associated with the address
+</details>
+
+### What is the main purpose of the delegation part of an address?
+1. To define the payment conditions
+1. To show who owns the rewards from staking 
+1. To state the encoding version
+
+<details><summary>See correct answer</summary>
+
+2. To show who owns the rewards from staking 
+</details>
+
+### Which of the following are true regarding base addresses?
+- [ ] It consists of both a payment and delegation part 
+- [ ] Scripts in base addresses combine private keys with public keys
+- [ ] Base address only consists of delegation parts
+- [ ] Scripts allow combining multiple public keys and time conditions together 
+
+<details><summary>See correct answer</summary>
+
+- [x] It consists of both a payment and delegation part
+- [x] Scripts allow combining multiple public keys and time conditions together
+</details>
+
+### What does it mean if a user makes use of enterprise addresses?
+1. They increase the total active stake
+1. They have direct influence on the slot leadership schedule
+1. They opt out of participation in the proof of stake protocol 
+
+<details><summary>See correct answer</summary>
+
+3. They opt out of participation in the proof of stake protocol
+</details>
+
+### What is a potential consequence of using addresses with no stake rights, like enterprise addresses, in the proof-of-stake protocol?
+1. It strengthens the defense against potential adversaries
+1. It guarantees the user more rewards
+1. It effectively increases the total amount of active stake
+1. It might give an advantage to potential adversaries by decreasing the active stake 
+
+<details><summary>See correct answer</summary>
+
+4. It might give an advantage to potential adversaries by decreasing the active stake
+</details>
+
+### What must happen to a stake address balance before it can be used as a payment input?
+1. It must be verified with KYC (Know your customer)
+1. It must be approved by the network
+1. It must be turned into UTxO entries 
+1. It must be confirmed by a stakeholder
+
+<details><summary>See correct answer</summary>
+
+3. It must be turned into UTxO entries
+</details>
+
+### *What is the main purpose of a stake address in Cardano?
+1. To send funds to other addresses
+1. To receive rewards for participating in the proof-of-stake protocol 
+1. To serve as the main transaction address
+1. To confirm transactions on the blockchain
+
+<details><summary>See correct answer</summary>
+
+2. To receive rewards for participating in the proof-of-stake protocol
+</details>
+
+### It is not possible to send funds to a stake address.
+1. True
+1. False
+
+<details><summary>See correct answer</summary>
+
+1. True
+</details>
