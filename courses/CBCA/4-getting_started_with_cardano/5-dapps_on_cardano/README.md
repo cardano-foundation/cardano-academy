@@ -359,66 +359,113 @@ And with that, we have reached the end of the course! We hope we have whet your 
 - *Virtual Machine (VM)*: A computer resource that uses software in place of a physical computer to run programs. Typically, multiple virtual “guest” machines run on a physical “host” machine
 
 ## Questions
-**Sub-Unit 1**
 
-*Orders on a Cardano DEX can be run ____.*
-- on-chain only
-- **off-chain (correct answer)**
-- on a CEX
-- on the moon
+### Orders on a Cardano DEX can be run ____.
+1. on-chain only
+1. off-chain
+1. on a CEX
+1. on the moon
 
-*Which of these is NOT a Cardano Wallet? Select all that apply.*
-- Nami
-- Eternl
-- **Metamask (correct answer)**
-- Yoroi
-- Lace
+<details><summary>See correct answer</summary>
 
-*Which of the following is closer to the currency exchange model found in traditional markets? Select all that apply.**
-- AMM
-- DEX
-- Hardware wallet
-- **An order book model (correct answer)**
+2. off-chain
+</details>
 
-*A tokenized derivative that mimics the value of another asset is called a _____ .*
-- **Synthetic asset (correct answer)**
-- Stablecoin
-- NFT
-- Digital twin
-- None of the above
+### Which of these is NOT a Cardano Wallet? Select all that apply.
+1. Nami
+1. Eternl
+1. Metamask
+1. Yoroi
+1. Lace
 
-**Sub-Unit 2**
+<details><summary>See correct answer</summary>
 
-*Which of the following statements are true regarding Impermanent Loss (IL)?*
-- **It is a risk liquidity providers face when depositing their assets into a liquidity pool (CORRECT)**
-- If you fall victim to IL, you are required to provide KYC documents
-- **It means that you could lose money if the price of the asset changes after you deposit it (CORRECT)**
-- The loss is realized immediately and deducted from your balance
+3. Metamask
+</details>
 
-*Which of the following are the two main DEX (decentralized exchange) types?*
-- **Automated market maker (AMM) (CORRECT)**
-- **Order book model (CORRECT)**
-- Double-entry book
-- Coinbase
+### Which of the following is closer to the currency exchange model found in traditional markets? Select all that apply.
+1. AMM
+1. DEX
+1. Hardware wallet
+1. An order book model
 
-*True or False? An Automated market maker (AMM) model enables automatic, permissionless trading of digital assets.*
-- **True (CORRECT)**
-- False
+<details><summary>See correct answer</summary>
 
-*True or False: An Order Book model is completely different to the currency exchange model found in traditional markets.*
-- True
-- **False (CORRECT)**
+4. An order book model
+</details>
 
-*What enables Cardano DEXs to be based on the Order Book model?*
-- Satoshi’s Vision
-- **UTxO-based smart contracts on Cardano (CORRECT)**
-- Account-based smart contracts on Cardano
-- Marlowe
+### A tokenized derivative that mimics the value of another asset is called a _____ .
+1. Synthetic asset
+1. Stablecoin
+1. NFT
+1. Digital twin
+1. None of the above
 
-**Sub-Unit 3**
+<details><summary>See correct answer</summary>
 
-*Who introduced wrapped smart contracts (WSC) to Cardano?*
-- IOG
-- **dcSpark  (CORRECT)**
-- EMURGO
-- Cardano Foundation
+1. Synthetic asset
+</details>
+
+### Which of the following statements are true regarding Impermanent Loss (IL)?
+- [ ] It is a risk liquidity providers face when depositing their assets into a liquidity pool
+- [ ] If you fall victim to IL, you are required to provide KYC documents
+- [ ] It means that you could lose money if the price of the asset changes after you deposit it 
+- [ ] The loss is realized immediately and deducted from your balance
+
+<details><summary>See correct answer</summary>
+
+- [x] It is a risk liquidity providers face when depositing their assets into a liquidity pool
+- [x] It means that you could lose money if the price of the asset changes after you deposit it
+</details>
+
+### Which of the following are the two main DEX (decentralized exchange) types?
+- [ ] Automated market maker (AMM)
+- [ ] Order book model
+- [ ] Double-entry book
+- [ ] Coinbase
+
+<details><summary>See correct answer</summary>
+
+- [x] Automated market maker (AMM)
+- [x] Order book model
+</details>
+
+### An Automated market maker (AMM) model enables automatic, permissionless trading of digital assets.
+1. True 
+1. False
+
+<details><summary>See correct answer</summary>
+
+1. True
+</details>
+
+### An Order Book model is completely different to the currency exchange model found in traditional markets.
+1. True
+1. False
+
+<details><summary>See correct answer</summary>
+
+2. False
+</details>
+
+### What enables Cardano DEXs to be based on the Order Book model?
+1. Satoshi’s Vision
+1. UTxO-based smart contracts on Cardano 
+1. Account-based smart contracts on Cardano
+1. Marlowe
+
+<details><summary>See correct answer</summary>
+
+2. UTxO-based smart contracts on Cardano
+</details>
+
+### Who introduced wrapped smart contracts (WSC) to Cardano?
+1. IOG
+1. dcSpark
+1. EMURGO
+1. Cardano Foundation
+
+<details><summary>See correct answer</summary>
+
+2. dcSpark
+</details>
