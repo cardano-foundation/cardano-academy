@@ -429,74 +429,132 @@ The minimum attack vector refers to the smallest group of participants required 
 
 ## Questions
 
-**Sub-Unit 1**
+### Which of the following is NOT true of liquid staking? Select all that apply
+- [ ] Your funds are not locked up
+- [ ] You can still send or receive ada when staking on Cardano
+- [ ] There is a waiting period before you can access your ada
+- [ ] All proof of stake blockchains have liquid staking
 
-*Which of the following is NOT true of liquid staking? Select all that apply*
-- Your funds are not locked up
-- You can still send or receive ada when staking on Cardano
-- **There is a waiting period before you can access your ada (CORRECT ANSWER)**
-- **All proof of stake blockchains have liquid staking (CORRECT ANSWER)**
+<details><summary>See correct answer</summary>
 
-*True or False: Cardano uses slashing to punish stakers who break the rules.*
-- True
-- **False (CORRECT ANSWER)**
+- [x] There is a waiting period before you can access your ada
+- [x] All proof of stake blockchains have liquid staking
+</details>
 
-*Which protocol was the first provably secure Proof of Stake consensus protocol?*
-- Ethereum
-- **Cardano’s Ouroboros (CORRECT)**
-- Avalanche
-- Algorand
 
-**Sub-Unit 2**
+### Cardano uses slashing to punish stakers who break the rules.
+1. True
+1. False 
 
-*SPO is short for?*
-- Stake Pointer Offset
-- **Stake Pool Operator (CORRECT ANSWER)**
-- Stake Pool Officer
-- Swimming Pool Official
+<details><summary>See correct answer</summary>
 
-*Which of the following wallets allow you to stake?*
-- Daedalus
-- MetaMask
-- Yoroi
-- Typhon
-- **All of the above (correct answer)**
+2. False
+</details>
 
-**Sub-Unit 3**
 
-*Which of the following is NOT a consideration when selecting a stake pool?*
-- Pool Size
-- Saturation levels
-- **The stake pool must be in the same country as you (CORRECT ANSWER)**
-- Are they running a single stake pool or multiple stake pools
-- SPO background
+### Which protocol was the first provably secure Proof of Stake consensus protocol?
+1. Ethereum
+1. Cardano’s Ouroboros
+1. Avalanche
+1. Algorand
 
-*If you delegate your stake in Epoch N, when will you get your first ada rewards?*
-- **Epoch N+4 (CORRECT ANSWER)**
-- Epoch N
-- Epoch N+2
-- Epoch N+1
-- Epoch N+3
+<details><summary>See correct answer</summary>
 
-*True or False: If I change my stake pool, and delegate to a new stake pool, I will lose my rewards I earned with my old stake pool.*
-- True
-- **False (CORRECT ANSWER)**
+2. Cardano’s Ouroboros
+</details>
 
-*True or False: A stake pool can query their ‘leader schedule’ before the start of an epoch.*
-- **True (CORRECT ANSWER)**
-- False
 
-*Which of the following is NOT an explorer on Cardano?*
-- CExplorer
-- **Etherscan (CORRECT)**
-- PoolPeek
-- Pooltool
-- Adapools.org
+### SPO is short for?
+1. Stake Pointer Offset
+1. Stake Pool Operator 
+1. Stake Pool Officer
+1. Swimming Pool Official
 
-**Sub-Unit 4**
+<details><summary>See correct answer</summary>
 
-*Cardano Foundation Delegations rotate how often?*
-- Every month
-- Every epoch
-- Every hard fork
-- **Every 12 months (CORRECT ANSWER)**
+2. Stake Pool Operator
+</details>
+
+
+### Which of the following wallets allow you to stake?
+1. Daedalus
+1. MetaMask
+1. Yoroi
+1. Typhon
+1. All of the above
+
+<details><summary>See correct answer</summary>
+
+5.All of the above
+</details>
+
+
+### Which of the following is NOT a consideration when selecting a stake pool?
+1. Pool Size
+1. Saturation levels
+1. The stake pool must be in the same country as you
+1. Are they running a single stake pool or multiple stake pools
+1. SPO background
+
+<details><summary>See correct answer</summary>
+
+3. The stake pool must be in the same country as you
+</details>
+
+
+### If you delegate your stake in Epoch N, when will you get your first ada rewards?
+1. Epoch N+4
+1. Epoch N
+1. Epoch N+2
+1. Epoch N+1
+1. Epoch N+3
+
+<details><summary>See correct answer</summary>
+
+1. Epoch N+4
+</details>
+
+
+### If I change my stake pool, and delegate to a new stake pool, I will lose my rewards I earned with my old stake pool.
+1. True
+1. False
+
+<details><summary>See correct answer</summary>
+
+2. False
+</details>
+
+
+### A stake pool can query their ‘leader schedule’ before the start of an epoch.
+1. True 
+1. False
+
+<details><summary>See correct answer</summary>
+
+1. True
+</details>
+
+
+### Which of the following is NOT an explorer on Cardano?
+1. CExplorer
+1. Etherscan
+1. PoolPeek
+1. Pooltool
+1. Adapools.org
+
+<details><summary>See correct answer</summary>
+
+2. Etherscan
+</details>
+
+
+### Cardano Foundation Delegations rotate how often?
+1. Every month
+1. Every epoch
+1. Every hard fork
+1. Every 12 months
+
+<details><summary>See correct answer</summary>
+
+4. Every 12 months
+</details>
