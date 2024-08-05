@@ -136,129 +136,224 @@ A CIP is a formalized and structured document presenting a solution to a common 
 
 ## Questions
 
-**Sub-Unit 1**
+### In the context of actionable specification, what does a standard refer to?
+1. When a specification is used by only one tool
+1. When a specification is used by several tools 
+1. When a specification is used by no tools
 
-- *In the context of actionable specification, what does a standard refer to?*
-- When a specification is used by only one tool
-- **When a specification is used by several tools (CORRECT ANSWER)**
-- When a specification is used by no tools
+<details><summary>See correct answer</summary>
 
-*A CIP is, first and foremost:*
-- A statement of work
-- **A proposed solution to a common problem (CORRECT ANSWER)**
-- An implementation plan
-- A grant proposal
+2. When a specification is used by several tools
+</details>
 
-**Sub-Unit 2**
+### A CIP is, first and foremost:
+1. A statement of work
+1. A proposed solution to a common problem
+1. An implementation plan
+1. A grant proposal
 
-*What is the purpose of an abstract in a CIP?*
-- It provides different use cases as examples of the same problem
-- It recaps other recent CIPs.
-- **It summarizes the problem and how it will be solved (CORRECT ANSWER)**
+<details><summary>See correct answer</summary>
 
-*Which of the following statements is NOT true regarding the motivation section in a CIP?*
-- **It explains why a solution is necessary (CORRECT ANSWER)**
-- **It provides all hypotheses that can solve the problem (CORRECT ANSWER)**
-- It explains all the reasons why the possible solution won’t work
-- **It provides use cases (CORRECT ANSWER)**
+2. A proposed solution to a common problem
+</details>
 
-*Select the correct statements about specifications in a CIP.*
-- Once a specification is created, it is never refined
-- A specification can be seen as a rough draft and does not need to be precise
-- **It specifies interfaces, formats and steps required to adopt the solution (CORRECT ANSWER)**
 
-*How do formalisations such as diagrams and mathematical notations contribute to CIPs?*
-- They ensure that the specification can be stated in a single-line
-- **They help to reduce ambiguity and enhance clarity (CORRECT ANSWER)**
-- They are optional and rarely used in CIPs
+### What is the purpose of an abstract in a CIP?
+1. It provides different use cases as examples of the same problem
+1. It recaps other recent CIPs.
+1. It summarizes the problem and how it will be solved
 
-**Sub-Unit 3**
+<details><summary>See correct answer</summary>
 
-*What type of considerations can be expanded on in the Rationale section?*
-- Economic and marketing considerations
-- **Security and scaling considerations (CORRECT ANSWER)**
-- Graphical and user interface design
-- Background history and previous versions of the CIP
+3. It summarizes the problem and how it will be solved
+</details>
 
-*What does the Active state signify for a CIP?*
-- It has been discarded as irrelevant
-- **It has reached its final and operative state (CORRECT ANSWER)**
-- It is waiting for more feedback from the community
+### Which of the following statements is NOT true regarding the motivation section in a CIP?
+- [ ] It explains why a solution is necessary
+- [ ] It provides all hypotheses that can solve the problem
+- [ ] It explains all the reasons why the possible solution won’t work
+- [ ] It provides use cases
 
-**Sub-Unit 4**
+<details><summary>See correct answer</summary>
 
-*What is the primary role of CIP editors?*
-- They review CIPs and make sure that only good ideas are accepted
-- They write CIPs
-- **They ensure CIPs follow the CIP process and go under enough scrutiny from the community (CORRECT ANSWER)**
-- They translate CIPs into various languages
+- [x] It explains why a solution is necessary
+- [x] It provides all hypotheses that can solve the problem
+- [x] It provides use cases
+</details>
 
-*Analyze the CIP process below and select the correct missing labels (IMAGE QUESTION).*
+### Select the correct statements about specifications in a CIP.
+1. Once a specification is created, it is never refined
+1. A specification can be seen as a rough draft and does not need to be precise
+1. It specifies interfaces, formats and steps required to adopt the solution
+
+<details><summary>See correct answer</summary>
+
+3. It specifies interfaces, formats and steps required to adopt the solution
+</details>
+
+### How do formalisations such as diagrams and mathematical notations contribute to CIPs?
+1. They ensure that the specification can be stated in a single-line
+1. They help to reduce ambiguity and enhance clarity
+1. They are optional and rarely used in CIPs
+
+<details><summary>See correct answer</summary>
+
+2. They help to reduce ambiguity and enhance clarity
+</details>
+
+### What type of considerations can be expanded on in the Rationale section?
+1. Economic and marketing considerations
+1. Security and scaling considerations
+1. Graphical and user interface design
+1. Background history and previous versions of the CIP
+
+<details><summary>See correct answer</summary>
+
+2.Security and scaling considerations
+</details>
+
+### What does the Active state signify for a CIP?
+1. It has been discarded as irrelevant
+1. It has reached its final and operative state 
+1. It is waiting for more feedback from the community
+
+<details><summary>See correct answer</summary>
+
+2. It has reached its final and operative state
+</details>
+
+### What is the primary role of CIP editors?
+1. They review CIPs and make sure that only good ideas are accepted
+1. They write CIPs
+1. They ensure CIPs follow the CIP process and go under enough scrutiny from the community
+1. They translate CIPs into various languages
+
+<details><summary>See correct answer</summary>
+
+3. They ensure CIPs follow the CIP process and go under enough scrutiny from the community
+</details>
+
+### Analyze the CIP process below and select the correct missing labels (IMAGE QUESTION).
 
 ![illustration 3.8.5.png](./assets/3.8.5.png)
 
-- A: Reviewers; B: Implementers; C: Editors; D: Authors
-- A: Editors; B: Authors; C: Reviewers; D: Implementers
-- **A: Authors; B: Reviewers; C: Editors; D: Implementers (CORRECT ANSWER)**
+1. A: Reviewers; B: Implementers; C: Editors; D: Authors
+1. A: Editors; B: Authors; C: Reviewers; D: Implementers
+1. A: Authors; B: Reviewers; C: Editors; D: Implementers
 
-*True or False: CIP are technical documents mainly discussed by software engineers, mathematicians and researchers?*
-- **True (CORRECT ANSWER)**
-- False
+<details><summary>See correct answer</summary>
 
-**Sub-Unit 5**
+3. A: Authors; B: Reviewers; C: Editors; D: Implementers
+</details>
 
-*True or False: CIPs are necessarily implemented by their authors?*
-- True
-- **False (CORRECT ANSWER)**
+### CIP are technical documents mainly discussed by software engineers, mathematicians and researchers?
+1. True
+1. False
 
-*What is the role of reviewers in the CIP process?*
-- To write and submit new proposals
-- To finance and fund CIP projects
-**To read and assess proposals from authors (CORRECT ANSWER)**
+<details><summary>See correct answer</summary>
 
-*In a CIP, why is it beneficial to have reviewers from various backgrounds?*
-- It ensures that the CIPs are financially viable
-- It helps in the marketing of the CIPs to a broader audience
-- **It creates a forum where different perspectives influence CIPs (CORRECT ANSWER)**
-- It slows down the implementation of CIPs, making it a more exhaustive process
+1. True
+</details>
 
-**Sub-Unit 6**
+### CIPs are necessarily implemented by their authors?
+1. True
+1. False 
 
-*What does CPS stand for?*
-- Cardano Proposed Solution
-- Cardano Possible Solution
-- Cardano Problem Solved
-- **Cardano Problem Statement (CORRECT ANSWER)**
+<details><summary>See correct answer</summary>
 
-*When is a CPS typically used?*
-- Only when a problem cannot be defined clearly
-- **When a problem is well-defined with clear use cases but lacks solutions (CORRECT ANSWER)**
-- **When a CIP's motivation is sufficiently complex (CORRECT ANSWER)**
-- For documenting the financial aspects of a CIP
+1. False
+</details>
 
-*What is the purpose of CIP-0030 in the Cardano ecosystem?*
-- It sets the rules for mining Cardano cryptocurrency
-- **It serves as a bridge for communication between DApps and Cardano wallets (CORRECT ANSWER)**
-- It defines the standards for Cardano's physical wallet production
-- It is a guideline for the manual transaction process between users
+### What is the role of reviewers in the CIP process?
+1. To write and submit new proposals
+1. To finance and fund CIP projects
+1. To read and assess proposals from authors
 
-*What is the advantage for DApps to implement CIP-0030?*
-- They can bypass the Cardano network's transaction fees
-- **They can automatically work with any wallet that also uses CIP-0030 (CORRECT ANSWER)**
-- They receive special development funds from Cardano's treasury
+<details><summary>See correct answer</summary>
 
-**Sub-Unit 7**
+3. To read and assess proposals from authors
+</details>
 
-*True or False: more than one proposal exists to standardize NFT on Cardano?*
-- **True (CORRECT ANSWER)**
-- False
+### In a CIP, why is it beneficial to have reviewers from various backgrounds?
+1. It ensures that the CIPs are financially viable
+1. It helps in the marketing of the CIPs to a broader audience
+1. It creates a forum where different perspectives influence CIPs
+1. It slows down the implementation of CIPs, making it a more exhaustive process
 
-*Why was CIP-0057, or the Plutus blueprints, introduced for Cardano?*
-- **To align the development of alternative programming languages for smart contracts (CORRECT ANSWER)**
-- To document the financial transactions within Cardano's blockchain
-- To increase the transaction speed of smart contracts on Cardano
+<details><summary>See correct answer</summary>
 
-*Why are CIP-0031, CIP-0032, and CIP-0033 considered significant in the context of Cardano?*
-- They were the first CIPs ever proposed for Cardano
-- They represent the centralization of the Cardano development process
-- **These three CIPs marked the beginning of a major step towards decentralizing the development and open-sourcing of the core Cardano components (CORRECT ANSWER)**
+3. It creates a forum where different perspectives influence CIPs
+</details>
+
+### What does CPS stand for?
+1. Cardano Proposed Solution
+1. Cardano Possible Solution
+1. Cardano Problem Solved
+1. Cardano Problem Statement 
+
+<details><summary>See correct answer</summary>
+
+4. Cardano Problem Statement
+</details>
+
+### When is a CPS typically used?
+- [ ] Only when a problem cannot be defined clearly
+- [ ] When a problem is well-defined with clear use cases but lacks solutions
+- [ ] When a CIP's motivation is sufficiently complex
+- [ ] For documenting the financial aspects of a CIP
+
+<details><summary>See correct answer</summary>
+
+- [x] When a problem is well-defined with clear use cases but lacks solutions
+- [x] When a CIP's motivation is sufficiently complex
+</details>
+
+### What is the purpose of CIP-0030 in the Cardano ecosystem?
+1. It sets the rules for mining Cardano cryptocurrency
+1. It serves as a bridge for communication between DApps and Cardano wallets
+1. It defines the standards for Cardano's physical wallet production
+1. It is a guideline for the manual transaction process between users
+
+<details><summary>See correct answer</summary>
+
+2. It serves as a bridge for communication between DApps and Cardano wallets
+</details>
+
+### What is the advantage for DApps to implement CIP-0030?
+1. They can bypass the Cardano network's transaction fees
+1. They can automatically work with any wallet that also uses CIP-0030
+1. They receive special development funds from Cardano's treasury
+
+<details><summary>See correct answer</summary>
+
+2. They can automatically work with any wallet that also uses CIP-0030
+</details>
+
+### More than one proposal exists to standardize NFT on Cardano?
+1. True
+1. False
+
+<details><summary>See correct answer</summary>
+
+1. True
+</details>
+
+### Why was CIP-0057, or the Plutus blueprints, introduced for Cardano?
+1. To align the development of alternative programming languages for smart contracts
+1. To document the financial transactions within Cardano's blockchain
+1. To increase the transaction speed of smart contracts on Cardano
+
+<details><summary>See correct answer</summary>
+
+1. To align the development of alternative programming languages for smart contracts
+</details>
+
+### Why are CIP-0031, CIP-0032, and CIP-0033 considered significant in the context of Cardano?
+1. They were the first CIPs ever proposed for Cardano
+1. They represent the centralization of the Cardano development process
+1. These three CIPs marked the beginning of a major step towards decentralizing the development and open-sourcing of the core Cardano components
+
+<details><summary>See correct answer</summary>
+
+3. These three CIPs marked the beginning of a major step towards decentralizing the development and open-sourcing of the core Cardano components
+</details>
