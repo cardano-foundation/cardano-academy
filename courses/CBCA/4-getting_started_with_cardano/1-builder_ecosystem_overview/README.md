@@ -126,69 +126,114 @@ Check it out! See you next time.
 
 ## Questions
 
-**Sub-Unit 1**
+### What does C.I.P. stand for?
+1. Cardano Iteration Plan
+1. Cardano Intellectual Property
+1. Cardano Improvement Proposal
+1. Cardano Innovation Program
 
-*What does C.I.P. stand for?*
-- Cardano Iteration Plan
-- Cardano Intellectual Property
-- **Cardano Improvement Proposal (CORRECT ANSWER)**
-- Cardano Innovation Program
+<details><summary>See correct answer</summary>
 
-*What CIP number identifies the wallet / dApp bridge?*
-- **CIP-0030  (CORRECT ANSWER)**
-- CIP-0035
-- CIP-1694
-- CIP-9999
+3. Cardano Improvement Proposal
+</details>
 
-*Which CIP is one of the main reasons why Cardano has so many wallets available, which is great for decentralization?*
-- CIP-1694
-- CIP-0095
-- **CIP-0030 (CORRECT)**
-- CIP-0068
+### What CIP number identifies the wallet / dApp bridge?
+1. CIP-0030 
+1. CIP-0035
+1. CIP-1694
+1. CIP-9999
 
-**Sub-Unit 2**
+<details><summary>See correct answer</summary>
 
-*What language is executed by the Cardano ledger for evaluating smart contracts?*
-- Haskell
-- **Plutus Core  (CORRECT ANSWER)**
-- Web Assembly
-- Bytecode
+1. CIP-0030
+</details>
 
-*Most blockchains provide some form of programmability. For example, Bitcoin has a scripting language called?*
-- Bitcoin Core
-- Solidity
-- Plutus
-- **Script (Correct Answer)**
+### Which CIP is one of the main reasons why Cardano has so many wallets available, which is great for decentralization?
+1. CIP-1694
+1. CIP-0095
+1. CIP-0030
+1. CIP-0068
 
-*On Cardano, programming capabilities are provided by which two from the following list?*
-- **the eUTxO model (CORRECT)**
+<details><summary>See correct answer</summary>
+
+3. CIP-0030
+</details>
+
+### What language is executed by the Cardano ledger for evaluating smart contracts?
+1. Haskell
+1. Plutus Core
+1. Web Assembly
+1. Bytecode
+
+<details><summary>See correct answer</summary>
+
+2. Plutus Core
+</details>
+
+### Most blockchains provide some form of programmability. For example, Bitcoin has a scripting language called?
+1. Bitcoin Core
+1. Solidity
+1. Plutus
+1. Script
+
+<details><summary>See correct answer</summary>
+
+4. Script
+</details>
+
+### On Cardano, programming capabilities are provided by which two from the following list?
+- the eUTxO model 
 - The accounts model
-- **the Plutus framework (CORRECT)**
+- the Plutus framework
 - Solidity
 
-**Sub-Unit 3**
+<details><summary>See correct answer</summary>
 
-*True or False, an API query layer provides a high-level interface for querying the blockchain?*
-- **True  (CORRECT ANSWER)**
-- False
+- [x] the eUTxO model
+- [x] the Plutus framework
+</details>
 
-*API stands for Application Programming Interface and it is a term that encompasses many concepts. Which of the following statements are true regarding APIs?*
-- APIs are called ‘wallet addresses’ on Cardano
-- **Developers usually talk about API when referring to the interface of a backend service (CORRECT ANSWER)**
-- **APIs describe the methods and data objects available that a client application can compose with (CORRECT ANSWER)**
-- You must create an API developer key before creating a wallet on Cardano
-- **Cardano APIs are documented on the Cardano Developer Portal (CORRECT ANSWER)**
+### An API query layer provides a high-level interface for querying the blockchain?
+1. True 
+1. False
 
-**Sub-Unit 4**
+<details><summary>See correct answer</summary>
 
-*What feature is NOT offered by Demeter.run?*
-- Managed Cardano services
-- dApps hosting
-- Online workspace environments
-- **NFT minting platform (CORRECT ANSWER)**
+1. True
+</details>
 
-*Where can developers find tools and services in one place, hosted as a cloud service? This solution is similar to AWS or Google Cloud, but specialized to Cardano.*
-- **Demeter.run (CORRECT ANSWER)**
-- Cardano Explorer
-- Cardano Developer Portal
-- Daedalus
+### API stands for Application Programming Interface and it is a term that encompasses many concepts. Which of the following statements are true regarding APIs?
+- [ ] APIs are called ‘wallet addresses’ on Cardano
+- [ ] Developers usually talk about API when referring to the interface of a backend service 
+- [ ] APIs describe the methods and data objects available that a client application can compose with 
+- [ ] You must create an API developer key before creating a wallet on Cardano
+- [ ] Cardano APIs are documented on the Cardano Developer Portal 
+
+<details><summary>See correct answer</summary>
+
+- [x] Developers usually talk about API when referring to the interface of a backend service
+- [x] APIs describe the methods and data objects available that a client application can compose with 
+- [x] Cardano APIs are documented on the Cardano Developer Portal
+</details>
+
+### What feature is NOT offered by Demeter.run?
+1. Managed Cardano services
+1. dApps hosting
+1. Online workspace environments
+1. NFT minting platform
+
+<details><summary>See correct answer</summary>
+
+4. NFT minting platform
+</details>
+
+### Where can developers find tools and services in one place, hosted as a cloud service? This solution is similar to AWS or Google Cloud, but specialized to Cardano.
+1. Demeter.run
+1. Cardano Explorer
+1. Cardano Developer Portal
+1. Daedalus
+
+<details><summary>See correct answer</summary>
+
+1. Demeter.run
+</details>
