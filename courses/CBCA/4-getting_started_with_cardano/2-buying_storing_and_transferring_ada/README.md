@@ -522,103 +522,185 @@ And with that, we have made it to the end of another unit! To review, we looked 
 
 ## Questions
 
-**Sub-Unit 1**
+### Where are assets stored?
+1. In public key(s)
+1. On the blockchain ledger
+1. In private key(s)
+1. In wallets
 
-*Where are assets stored?*
-- In public key(s)
-- **On the blockchain ledger (CORRECT ANSWER)**
-- In private key(s)
-- In wallets
+<details><summary>See correct answer</summary>
 
-*True or False: You can restore all your accounts, private keys, public keys and receiving addresses using just one seed (recovery) phrase.*
-- **True (CORRECT ANSWER)**
-- False
+2. On the blockchain ledger
+</details>
 
-*Which of the following are ‘full node’ wallets? Select all that apply*
-- **Daedalus (CORRECT ANSWER)**
-- MetaMask
-- Yoroi
-- Typhon
-- Eternl
-- Flint
-- GeroWallet
 
-*Which of the following are advisable precautions you should take when using a mobile wallet? Select all that apply.*
-- **Use a ‘spending password’ (CORRECT ANSWER)**
-- **Activate MFA (CORRECT ANSWER)**
-- Only use your device in ‘dark mode’ in the evenings.
-- **Be conscious of shoulder surfing attacks (CORRECT ANSWER)**
-- **Backup your seed phrase elsewhere (CORRECT ANSWER)**
+### You can restore all your accounts, private keys, public keys and receiving addresses using just one seed (recovery) phrase.
+1. True
+1. False
 
-*True or False: A Light wallet contains a full copy of the blockchain.*
-- True
-- **False (CORRECT ANSWER)**
+<details><summary>See correct answer</summary>
 
-**Sub-Unit 2**
+1. True
+</details>
 
-*Where are private cryptographic credentials stored?*
-- AWS
-- Local bank
-- Public blockchain
-- **Wallet (CORRECT ANSWER)**
 
-*Select two options below that require multiple users to verify a transaction.*
-- **Mult-sig wallets (CORRECT ANSWER)**
-- Paper wallets
-- Light wallets
-- Hardware wallets
-- Non-custodial wallets
-- **Multi-part computation wallets (CORRECT ANSWER)**
-- Leather wallets
+### Which of the following are ‘full node’ wallets? Select all that apply
+1. Daedalus
+1. MetaMask
+1. Yoroi
+1. Typhon
+1. Eternl
+1. Flint
+1. GeroWallet
 
-**Sub-Unit 3**
+<details><summary>See correct answer</summary>
 
-*Select two options below which are the two widely used cli shells.*
-Windows explorer
-- **Bash (CORRECT ANSWER)**
+1. Daedalus
+</details>
+
+
+### Which of the following are advisable precautions you should take when using a mobile wallet? Select all that apply.
+- [ ] Use a ‘spending password’
+- [ ] Activate MFA
+- [ ] Only use your device in ‘dark mode’ in the evenings.
+- [ ] Be conscious of shoulder surfing attacks
+- [ ] Backup your seed phrase elsewhere
+
+<details><summary>See correct answer</summary>
+
+- [x] Use a ‘spending password’
+- [x] Activate MFA
+- [x] Be conscious of shoulder surfing attacks
+- [x] Backup your seed phrase elsewhere
+</details>
+
+
+### A Light wallet contains a full copy of the blockchain.
+1. True
+1. False 
+
+<details><summary>See correct answer</summary>
+
+2. False
+</details>
+
+
+### Where are private cryptographic credentials stored?
+1. AWS
+1. Local bank
+1. Public blockchain
+1. Wallet
+
+<details><summary>See correct answer</summary>
+
+4. Wallet
+</details>
+
+
+### Select two options below that require multiple users to verify a transaction.
+- [ ] Mult-sig wallets
+- [ ] Paper wallets
+- [ ] Light wallets
+- [ ] Hardware wallets
+- [ ] Non-custodial wallets
+- [ ] Multi-part computation wallets
+- [ ] Leather wallets
+
+<details><summary>See correct answer</summary>
+
+- [x] Mult-sig wallets
+- [x] Multi-part computation wallets
+</details>
+
+
+### Select two options below which are the two widely used cli shells.
+- Windows explorer
+- Bash
 - TextEdit
-- **PowerShell (CORRECT ANSWER)**
+- PowerShell
 
-*Which of the following statements are true regarding addresses on Cardano?*
-- Addresses are derived only from your private key
-- Your public key is derived from your private key (CORRECT ANSWER)
-- **You can't go back from the public key to the private key, but you can produce the public key from the private key (CORRECT ANSWER)**
-- You can calculate the public key from the address, but you can’t calculate the address from the public key
+<details><summary>See correct answer</summary>
 
-**Sub-Unit 4**
+- [x] Bash
+- [x] PowerShell
+</details>
 
-*Which of the following is not a Centralized Exchange (CEX)?*
-- Binance
-- Kraken
-- Coinbase
-- **Minswap (CORRECT ANSWER)**
 
-*What is the main risk of storing your crypto assets on a centralized exchange (CEX)?*
-- It is a Web 2 user experience
-- **You are trusting a third party (CORRECT ANSWER)**
-- You never own the digital asset
-- It is not trendy to be using centralized services
+### Which of the following statements are true regarding addresses on Cardano?
+1. Addresses are derived only from your private key
+1. Your public key is derived from your private key (CORRECT ANSWER)
+1. You can't go back from the public key to the private key, but you can produce the public key from the private key 
+1. You can calculate the public key from the address, but you can’t calculate the address from the public key
 
-**Sub-Unit 5**
+<details><summary>See correct answer</summary>
 
-*True or False: CEXs (Centralized exchanges) usually have more liquidity than DEXs (Decentralized exchanges)*
-- **True (CORRECT ANSWER)**
-- False
+3. You can't go back from the public key to the private key, but you can produce the public key from the private key
+</details>
 
-*True or False: Centralized exchanges (CEX) profit by charging transaction fees to users for both FIAT and crypto deposits and withdrawals.*
-- **True (CORRECT ANSWER)**
-- False
 
-**Sub-Unit 6**
+### Which of the following is not a Centralized Exchange (CEX)?
+1. Binance
+1. Kraken
+1. Coinbase
+1. Minswap
 
-*When choosing a Centralized Exchange, which of the following are metrics to consider that are often listed on market listing sites?*
-- Liquidity
-- Price of asset
-- KYC requirements
-- **All of the above (CORRECT ANSWER)**
+<details><summary>See correct answer</summary>
 
-*If Bob wants to receive ada from Alice, what crucial piece of info does he need to share?*
-- **Bobs ‘receiving address’ (CORRECT ANSWER)**
-- Alice’s ‘receiving address’
-- Bob’s private key
-- Bob’s favorite wallet provider
+4. Minswap
+</details>
+
+
+### What is the main risk of storing your crypto assets on a centralized exchange (CEX)?
+1. It is a Web 2 user experience
+1. You are trusting a third party
+1. You never own the digital asset
+1. It is not trendy to be using centralized services
+
+<details><summary>See correct answer</summary>
+
+2. You are trusting a third party
+</details>
+
+
+### CEXs (Centralized exchanges) usually have more liquidity than DEXs (Decentralized exchanges)
+1. True
+1. False
+
+<details><summary>See correct answer</summary>
+
+1. True
+</details>
+
+
+### Centralized exchanges (CEX) profit by charging transaction fees to users for both FIAT and crypto deposits and withdrawals.
+1. True
+1. False
+
+<details><summary>See correct answer</summary>
+
+1. True
+</details>
+
+
+### When choosing a Centralized Exchange, which of the following are metrics to consider that are often listed on market listing sites?
+1. Liquidity
+1. Price of asset
+1. KYC requirements
+1. All of the above
+
+<details><summary>See correct answer</summary>
+
+4. All of the above
+</details>
+
+
+### If Bob wants to receive ada from Alice, what crucial piece of info does he need to share?
+1. Bobs ‘receiving address’
+1. Alice’s ‘receiving address’
+1. Bob’s private key
+1. Bob’s favorite wallet provider
+
+<details><summary>See correct answer</summary>
+
+1. Bobs ‘receiving address’
+</details>
