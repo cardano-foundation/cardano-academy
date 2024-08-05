@@ -182,10 +182,10 @@ Check it out! See you next time.
 </details>
 
 ### On Cardano, programming capabilities are provided by which two from the following list?
-- the eUTxO model 
-- The accounts model
-- the Plutus framework
-- Solidity
+- [ ] the eUTxO model 
+- [ ] the accounts model
+- [ ] the Plutus framework
+- [ ] Solidity
 
 <details><summary>See correct answer</summary>
 
