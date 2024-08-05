@@ -174,89 +174,168 @@ And with that, we are at the end of this unit. We have only really scratched the
 
 ### Put simply, what does decentralization mean?
 1. Centralizing power and decision-making in one central authority
-1. **Spreading power, decision-making, and control among multiple individuals/groups (CORRECT ANSWER)**
+1. Spreading power, decision-making, and control among multiple individuals/groups
 1. Keeping all authority restricted to a single person
 1. Only focusing on enhancing transparency without distribution of power
+
+<details><summary>See correct answer</summary>
+
+2. Spreading power, decision-making, and control among multiple individuals/groups
+</details>
+
 
 ### Why does decentralization want to distribute authority and autonomy?
 1. To ensure that only one individual/group has the final say on decisions
 1. To threaten users so that they are more active in the decision-making process
-1. **To encourage users to take part in making decisions and governing (CORRECT ANSWER)**
+1. To encourage users to take part in making decisions and governing
+
+<details><summary>See correct answer</summary>
+
+3. To encourage users to take part in making decisions and governing
+</details>
 
 ### In decentralization, how does spreading power in different parts make a system stronger?
 1. By concentrating the power in one part of the system
 1. By making sure only one main group decides everything
-1. **By allowing the system to function even if one part fails (CORRECT ANSWER)**
+1. By allowing the system to function even if one part fails 
 1. By making it harder for the system to change
+
+<details><summary>See correct answer</summary>
+
+3. By allowing the system to function even if one part fails
+</details>
 
 ### What does "pushing power to the edges" mean?
 1. Keeping all control in one place
 1. Not sharing power but keeping it at the limits
-1. **Spreading power and decision-making to different parts (CORRECT ANSWER)**
+1. Spreading power and decision-making to different parts
 1. Making a system less powerful
+
+<details><summary>See correct answer</summary>
+
+3. Spreading power and decision-making to different parts
+</details>
 
 ### What does the distribution of power in decentralization imply?
 1. That power and control lie only with one central entity
 1. That a handful of entities make all decisions
-1. **That power, decision-making, and control are shared among many participants (CORRECT ANSWER)**
+1. That power, decision-making, and control are shared among many participants
+
+<details><summary>See correct answer</summary>
+
+3. That power, decision-making, and control are shared among many participants
+</details>
 
 ### Distribution of power is often referred to as ‘pushing power to the edges’.
-1. **True (CORRECT ANSWER)**
+1. True
 1. False
+
+<details><summary>See correct answer</summary>
+
+1. True
+</details>
 
 ### Which of the following are key aspects of Decentralization? Select all that apply
 1. Block production
 1. Development
 1. Governance
-1. **All of the above  (CORRECT ANSWER)**
+1. All of the above
+
+<details><summary>See correct answer</summary>
+
+4. All of the above
+</details>
 
 ### Analyze the images below and select the correct representation of a decentralized network. (Image Question)
 
 ![illustration 3.7.21.png](./assets/3.7.21.png)<br>
 
 1. A
-1. **B  (CORRECT ANSWER)**
+1. B
 1. C
+
+<details><summary>See correct answer</summary>
+
+2. B
+</details>
 
 ### How does the Community contribute to a project's development in a Web3 environment?
 1. By only promoting the project
-1. **By coming up with suggestions for system improvements (CORRECT ANSWER)**
+1. By coming up with suggestions for system improvements
 1. By just investing money into the project
 
+<details><summary>See correct answer</summary>
+
+2. By coming up with suggestions for system improvements
+</details>
+
 ### If solutions are missing on the base layer in a Web3 environment, what can community members do?
-1. **Develop solutions like tools, sidechains, or DApps for others to use  (CORRECT ANSWER)**
+1. Develop solutions like tools, sidechains, or DApps for others to use
 1. Only rely on the project's core team for solutions
 1. Discourage others from using the project
+
+<details><summary>See correct answer</summary>
+
+1. Develop solutions like tools, sidechains, or DApps for others to use
+</details>
 
 ### Which of the following best describes Governance?
 1. Getting people out to vote.
 1. Enforcing rules on people by force so they comply with the law.
 1. Reaching unanimous consensus.
-1. **The mechanism, processes and rules by which decisions are made (CORRECT ANSWER)**
+1. The mechanism, processes and rules by which decisions are made
+
+<details><summary>See correct answer</summary>
+
+4. The mechanism, processes and rules by which decisions are made
+</details>
 
 ### Select the correct statements about Cardano’s governance.
-- The governance is divided into three axes
-- Cardano’s governance is one of the oldest on blockchain
-- **Project Catalyst lets holders suggest, vote on, and fund top community projects through an experimental treasury system (CORRECT ANSWER)**
-- **Cardano Improvement Proposals provide a forum where engineers and designers discuss and create solutions for common technical issues (CORRECT ANSWER)**
+- [ ] The governance is divided into three axes
+- [ ] Cardano’s governance is one of the oldest on blockchain
+- [ ] Project Catalyst lets holders suggest, vote on, and fund top community projects through an experimental treasury system
+- [ ] Cardano Improvement Proposals provide a forum where engineers and designers discuss and create solutions for common technical issues
+
+<details><summary>See correct answer</summary>
+
+- [x] Project Catalyst lets holders suggest, vote on, and fund top community projects through an experimental treasury system
+- [x] Cardano Improvement Proposals provide a forum where engineers and designers discuss and create solutions for common technical issues
+</details>
 
 ### What are the axes that Cardano’s governance is divided into?
-- [ ] **The Cardano Improvement Process (CIPs) (CORRECT ANSWER)**
+- [ ] The Cardano Improvement Process (CIPs)
 - [ ] The Bitcoin Improvement Process (BIPs)
-- [ ] **Project Catalyst (CORRECT ANSWER)**
+- [ ] Project Catalyst
 - [ ] Project Analyst
+
+<details><summary>See correct answer</summary>
+
+- [x] The Cardano Improvement Process (CIPs)
+- [x] Project Catalyst
+
+</details>
 
 ### How are new decentralized technologies with community-driven roadmaps expected to influence structures and institutions?
 1. By solidifying the existing structures
-1. **By causing a ripple effect that reconfigures and improves the system (CORRECT ANSWER)**
+1. By causing a ripple effect that reconfigures and improves the system
 1. By reducing community involvement in voting
 1. By only focusing on individual benefits rather than everyone's
+
+<details><summary>See correct answer</summary>
+
+2. By causing a ripple effect that reconfigures and improves the system
+</details>
 
 ### Which aspect helped Cardano solidify its position as a significant blockchain project?
 1. Its phased development approach
 1. The launch of the Byron era
-1. **A strong social media presence through community engagements (CORRECT ANSWER)**
+1. A strong social media presence through community engagements
 1. Introduction of a centralized governance entity
+
+<details><summary>See correct answer</summary>
+
+3. A strong social media presence through community engagements
+</details>
 
 ### Match the Era with the correct feature/capability used to enhance the functionality and usability of the blockchain. (Image Questions)
 
@@ -270,46 +349,81 @@ The correct order of features are:
 1. 1 = E; 2 = C; 3 = A; 4 = B; 5 = D
 ![illustration 3.7.22.png](./assets/3.7.22.png)<br>
 
-1. **1 = D; 2 = A; 3 = E; 4 = B; 5 = C (CORRECT ANSWER)**
+1. 1 = D; 2 = A; 3 = E; 4 = B; 5 = C
 ![illustration 3.7.23.png](./assets/3.7.23.png)<br>
 
 1. 1 = B; 2 = C; 3 = E; 4 = A; 5 = E
 ![illustration 3.7.24.png](./assets/3.7.24.png)<br>
 
+<details><summary>See correct answer</summary>
+
+2. 1 = D; 2 = A; 3 = E; 4 = B; 5 = C
+</details>
 
 ### When did the Shelley era launch?
 1. 2015
 1. 2017
-1. **2020 (CORRECT ANSWER)**
+1. 2020
 1. 2021
 1. 2009
+
+<details><summary>See correct answer</summary>
+
+3. 2020
+</details>
 
 ### Which of the following reasons has attracted many people to Cardano? Select all that apply
 1. The evidence-based, peer-reviewed approach to software development
 1. The use of formal methods and property-based testing to deliver high-assurance software systems.
 1. An easy access to consensus participation
-1. **All of the above (CORRECT ANSWER)**
+1. All of the above
+
+<details><summary>See correct answer</summary>
+
+4. All of the above
+</details>
 
 ### Cardano is a ___  generation blockchain. Choose the correct option to fill in the blank.
 1. 2nd
-1. 3rd (CORRECT ANSWER)
+1. 3rd 
 1. 4th
 1. 1st
 
+<details><summary>See correct answer</summary>
+
+2. 3rd
+</details>
+
 ### What role do Stake Pool Operators play in the Cardano ecosystem?
-- [ ] **They provide infrastructure for the blockchain (CORRECT ANSWER)**
-- [ ] **They support fellow SPOs and newcomers (CORRECT ANSWER)**
+- [ ] They provide infrastructure for the blockchain
+- [ ] They support fellow SPOs and newcomers
 - [ ] They set the price for the ADA currency
 - [ ] They are responsible for maintaining the Cardano website
 
+<details><summary>See correct answer</summary>
+
+- [x] They provide infrastructure for the blockchain
+- [x] They support fellow SPOs and newcomers
+</details>
+
 ### What makes setting up a staking pool in Cardano enticing for newcomers?
-1. **Access to new resources, guides, and user-friendly tools (CORRECT ANSWER)**
+1. Access to new resources, guides, and user-friendly tools
 1. The guarantee of huge profits
 1. A chance to meet with Cardano's founders
 1. The offer of free ADA for new staking pools
 
+<details><summary>See correct answer</summary>
+
+1. Access to new resources, guides, and user-friendly tools
+</details>
+
 ### How do NFT-related projects in the Cardano Ecosystem strengthen their community engagement?
 1. By launching their cryptocurrency
-1. **By establishing communication channels on platforms like Telegram/Discord (CORRECT ANSWER)**
+1. By establishing communication channels on platforms like Telegram/Discord
 1. By conducting weekly offline meetups
 1. By promoting competitive dynamics among members
+
+<details><summary>See correct answer</summary>
+
+2. By establishing communication channels on platforms like Telegram/Discord
+</details>
