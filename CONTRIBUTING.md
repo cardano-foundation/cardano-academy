@@ -12,7 +12,7 @@
 
 ## Feedback
 
-Feddback is welcome, whether it be a suggestion, contributing an improved infographic, or maybe some questions that you have. It helps in improving the course(s) over time and these are the best kind of contributions to start with.
+Feedback is welcome, whether it be a suggestion, contributing an improved infographic, or maybe some questions that you have. It helps in improving the course(s) over time and these are the best kind of contributions to start with.
 
 Do not hesitate to add *thumbs up* 👍 on suggestions you support to show your interest.
 
