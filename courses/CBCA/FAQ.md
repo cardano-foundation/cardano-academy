@@ -45,7 +45,7 @@ You can also download the pdf of the course scripts and slides on the platform.
 The course will be updated whenever significant changes, upgrades, or new functionalities are introduced to the blockchain protocol that impact the course content. Updates will be made to ensure that the material remains accurate and relevant.
 
 ## What is the process for making changes to the course?
-See guidelines in Contributing 
+See guidelines in [Contributing](/CONTRIBUTING.md) 
 
 ## Some courses are certified, what does this mean?
 Certified courses provide industry recognition of the learner’s knowledge, skills, and proficiency in both blockchain and Cardano. The candidate will obtain certification issued by the Cardano Foundation after they successfully pass a CBCA exam in an authorized Pearson VUE Test Center.
