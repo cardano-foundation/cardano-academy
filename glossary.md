@@ -147,7 +147,11 @@ A **decentralized application (DApp, dApp, or Dapp)** is an open-source project 
 
 **Decentralized Exchanges (DEX)** are peer-to-peer (p2p) online services that allow direct cryptocurrency transactions between interested parties. ErgoDEX and WingRiders are just two of many on Cardano.
 
-**Delegation**: the process by which ada owners can participate in the network and earn rewards by delegating the stake associated with their ada holdings to a stake pool.
+#### Delegated Stake
+is when Cardano users who do not directly participate in block production delegate their stake to a block producer using their wallets to increase the block producer’s chance of being elected 
+
+#### Delegation
+the process by which ada owners can participate in the network and earn rewards by delegating the stake associated with their ada holdings to a stake pool.
 
 **DID document**: a set of data describing the DID subject, including mechanisms, such as cryptographic public keys, that the DID subject or a DID delegate can use to authenticate itself and prove its association with the DID. A DID document might have one or more different representations.
 
@@ -315,6 +319,9 @@ A **mesh network** is a local area network (LAN) where the nodes connect directl
 
 The **minimum attack vector (MAV)** is the minimum number of participants required to hijack control in order to attack, or manipulate, the network.
 
+#### Minimum Pool Cost
+A flat cost granted to the pool, taken from the total rewards with a minimum imposed by the protocol. This minimum is known as “min pool cost” to cover the cost of running a stake pool
+
 Broadly speaking, **modularity** is the degree to which a system’s components may be separated and recombined, often with the benefit of flexibility and variety in use. The concept of modularity is used primarily to reduce complexity by breaking a system into varying degrees of interdependence and independence across and ‘hide the complexity of each part behind an abstraction and interface.’
 
 **MPC (multi-party computation)** enables multiple parties – each holding their own private data – to evaluate a computation without ever revealing any of the private data held by each party.
@@ -378,9 +385,11 @@ The term **Parallelism** refers to techniques to make programs faster by perform
 
 **Phase** – A phase in Cardano is a high level collection of features described on the Cardano roadmap. See [CIP-59](https://cips.cardano.org/cips/cip59/)
 
-**Pledging**: when a stake pool operator assigns their own ada stake to support their stake pool. This provides protection against Sybil attacks by preventing pool owners from creating a large number of pools without themselves owning a lot of stake.
+#### Pledge 
+The number of tokens a block producer personally owns and contributes to block production is referred to as their pledge. Pledging is  when a stake pool operator assigns their own ada stake to support their stake pool. This provides protection against Sybil attacks by preventing pool owners from creating a large number of pools without themselves owning a lot of stake.
 
-**Plutus**: a Turing-complete programming platform for writing functional smart contracts on the Cardano blockchain. Plutus is based on the Haskell programming language.
+#### Plutus
+a Turing-complete programming platform for writing functional smart contracts on the Cardano blockchain. Plutus is based on the Haskell programming language.
 
 **Plutus Core** is the programming language in which scripts on the Cardano blockchain are written. Plutus Core is a small functional programming language — a formal specification is available. Plutus Core is not read or written by humans; it is a compilation target for other languages.
 
@@ -435,6 +444,9 @@ A **pure function** is a function that has the following properties: first, its 
 **Resident set size (RSS)** is the portion of memory occupied by a process that is held in main memory (RAM).
 
 **Reward**: an amount contained in each new block that is paid out to the stakeholder by the network.
+
+#### Reward Sharing Scheme (RSS)
+This is an integral part of Cardano’s consensus protocol. The reward-sharing scheme puts incentives in place so that the system encourages behaviours beneficial to the functioning of the system.
 
 **Rewards Wallet**: a wallet that stores ada which can be used in stake delegation. The stake from a single Rewards wallet can only be delegated to a single stake pool. To delegate to more than one stake pool, you will need to create multiple Rewards wallets and distribute ada among them.
 
@@ -540,6 +552,9 @@ With Transaction Chaining, instead of having to bundle and batch UTXOs off-chain
 **Transaction output**: Outputs produced by transactions. They are consumed when they are spent by another transaction. Typically, some kind of evidence is required to be able to spend a UTXO, such as a signature from a public key, or (in the Extended UTXO Model) satisfying a script.
 
 The **Transmission Control Protocol (TCP)** is one of the main protocols of the Internet Protocol (IP) suite. Therefore, the entire suite is commonly referred to as TCP/IP. TCP provides reliable, ordered, and error-checked delivery of a stream of octets (bytes) between applications running on hosts communicating via an IP network. Major internet applications such as the World-Wide Web, email, and file transfer rely on TCP.
+
+#### Treasury
+The treasury is a protocol-level tax meant to create a self-sustaining ecosystem and to fund its development. The amount cut from the total rewards for the treasury is a fixed percentage.
 
 A system is said to be **Turing complete** if it can be used to simulate any Turing machine. This means that this system is able to recognize or decide other data-manipulation rule sets. Turing completeness is used as a way to express the power of such a data-manipulation rule set. Virtually all programming languages today are Turing complete. The concept is named after English mathematician and computer scientist Alan Turing.
 
