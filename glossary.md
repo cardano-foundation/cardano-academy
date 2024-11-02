@@ -357,13 +357,20 @@ A **nonce** is an arbitrary number that can be used just once in a cryptographic
 
 ## O
 
-**OBFT**: Ouroboros Byzantine Fault Tolerant protocol. See BFT.
+#### OBFT 
+Ouroboros Byzantine Fault Tolerant protocol. See BFT.
 
-**Off-chain code**: The part of a contract application’s code which runs off the chain, usually as a contract application. On-chain code: The part of a contract application’s code which runs on the chain (i.e. as scripts).
+#### Off-chain code
+The part of a contract application’s code which runs off the chain, usually as a contract application. On-chain code: The part of a contract application’s code which runs on the chain (i.e. as scripts).
 
-**Open-source software (OSS)** is software in which source code is released under a license in which the copyright holder grants users the rights to study, change, and distribute the software to anyone and for any purpose.
+#### Open-source software (OSS)
+is software in which source code is released under a license in which the copyright holder grants users the rights to study, change, and distribute the software to anyone and for any purpose.
 
-**Ouroboros**: the consensus protocol underlying Cardano. There are several different implementations including Classic, Praos, Genesis, Omega, etc. 
+#### Ouroboros 
+the consensus protocol underlying Cardano. There are several different implementations including Classic, Praos, Genesis, Omega, etc. 
+
+#### Overflow and underflow errors
+Overflow and underflow errors occur when arithmetic operations go above or below the limit of the data type.
 
 ## P
 
@@ -436,6 +443,9 @@ A **pure function** is a function that has the following properties: first, its 
 **Recursion** occurs when something is defined in terms of itself or of its type. Recursion is used in a variety of disciplines ranging from linguistics to logic. The most common application of recursion is in mathematics and computer science, where a function being defined is applied within its own definition. While this apparently defines an infinite number of instances (function values), it is often done in such a way that no infinite loop can occur.
 
 **Redeemer**: The argument to the validator script which is provided by the transaction which spends a script output.
+
+#### reentrancy attack 
+A reentrancy attack happens when a malicious smart contract interrupts another contract's function before it's finished. Think of it like cutting the line repeatedly. This interruption allows the attacker to manipulate the contract's logic and potentially steal its funds.
 
 **Regression testing** is re-running tests to ensure that previously developed and tested software is performing as expected after a change.
 
@@ -525,6 +535,14 @@ an automated agreement, written in code, that tracks, verifies, and executes the
 **State channels** refer to the process in which users transact with one another directly outside of the blockchain, or ‘off-chain,’ and greatly minimize their use of ‘on-chain’ operations.
 
 **Stateful** services keep track of sessions or transactions and react differently to the same inputs based on that history. Stateless services rely on clients to maintain sessions and center around operations that manipulate resources, rather than the state.
+
+#### Static typing 
+is a feature of some programming languages where you must explicitly define a variable's data type (eg. number, text, or date) before you use it. This type is then fixed and cannot be changed during the program's execution. Benefits of static typing are:
+  - early error detection as the compiler can catch type mismatches before the runtime, preventing suprises later
+  - Improved code readability
+  - Enhanced performance as the compiler can optimize the code better as it knows the exact data types involved.   
+
+In contrast, dynamically typed languages such as Python and JavaScript don't require explicit type declarations. The variable type is determined at runtime based on the value it holds, enabling more flexibility but potentially leading to runtime errors if types are not handled carefully.   
 
 **Static analysis**, static projection, or static scoring is a simplified analysis wherein the effect of an immediate change to a system is calculated without regard to the longer-term response of the system to that change. Static analysis is a simplified analysis wherein the effect of an immediate change to a system is calculated without regard to the longer-term response of the system to that change. If the short-term effect is then extrapolated to the long term, such extrapolation is inappropriate.
 
