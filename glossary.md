@@ -534,6 +534,14 @@ an automated agreement, written in code, that tracks, verifies, and executes the
 
 **State channels** refer to the process in which users transact with one another directly outside of the blockchain, or ‘off-chain,’ and greatly minimize their use of ‘on-chain’ operations.
 
+#### State machine
+A state machine is like a system that can be in different 'states' at different times, and it changes between these states based on certain inputs or events. A state machine has:
+  - A set of states, ie. the possible conditions the system can be in
+  - A current state, ie. the state the system is in right now
+  - Inputs or events, ie. things that happen that can trigger a change in state
+  - Transitions, ie. rules that define how the system moves from one state to another based on the inputs
+A blockchain is a state machine model ensures that all participants agree on the current state of the system, allowing for secure and transparent record-keeping, as any change to the state (transaction) is recorded and validated by the network. The deterministic nature of the state machine ensures that the blockchain's history cannot be altered or tampered with.
+
 **Stateful** services keep track of sessions or transactions and react differently to the same inputs based on that history. Stateless services rely on clients to maintain sessions and center around operations that manipulate resources, rather than the state.
 
 #### Static typing 
