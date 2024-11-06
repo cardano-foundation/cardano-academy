@@ -157,19 +157,27 @@ the process by which ada owners can participate in the network and earn rewards 
 
 **Digital footprint** or digital shadow refers to one’s unique set of traceable digital activities, actions, contributions and communications manifested on the Internet or on digital devices. On the World Wide Web, the internet footprint; also known as cyber shadow, electronic footprint, or digital shadow, is the information left behind as a result of a user’s web-browsing and stored as cookies.
 
-A **directed acyclic graph** (DAG) is a directed graph with no directed cycles. That is, it consists of vertices and edges, with each edge directed from one vertex to another, such that following those directions will never form a closed loop.
+#### Directed acyclic graph (DAG)
+A directed acyclic graph** (DAG) is a directed graph with no directed cycles. That is, it consists of vertices and edges, with each edge directed from one vertex to another, such that following those directions will never form a closed loop. 
 
-**Distributed ledger technology (DLT)** is a protocol or database that is consensually shared and synchronized across many sites, institutions, or geographies, accessible by many people, and enables the secure functioning of a decentralized digital database.
+In simpler terms, think of a DAG as a way to visualize and organize information that has a specific flow. Imagine a bunch of points, called *vertices* or *nodes*, connected by arrows (called *edges*). It is *directed* in that the arrows only go one way, showing a relationship between the points. It is *acyclic* in that you can't follow the arrows in a loop and end up back where you started. It's a one-way flow chart with no circular paths. This is useful for representing things that have a clear order or dependency. 
 
-**Docker** is a software tool that makes it easier to deploy applications by using ‘containers’, each of which holds all the parts, such as libraries, that the application needs to run.
+#### Distributed ledger technology (DLT
+is a protocol or database that is consensually shared and synchronized across many sites, institutions, or geographies, accessible by many people, and enables the secure functioning of a decentralized digital database.
 
-A **domain-specific language** (DSL) is a computer language specialized to a particular application domain. This is in contrast to a general-purpose language (GPL), which is broadly applicable across domains.
+#### Docker
+is a software tool that makes it easier to deploy applications by using ‘containers’, each of which holds all the parts, such as libraries, that the application needs to run.
 
-**Double-spending** is a potential flaw in a digital cash scheme in which the same single digital token can be spent more than once. Unlike physical cash, a digital token consists of a digital file that can be duplicated or falsified. As with counterfeit money, such double-spending leads to inflation by creating a new amount of copied currency that did not previously exist. This devalues the currency relative to other monetary units or goods and diminishes user trust as well as the circulation and retention of the currency. Fundamental cryptographic techniques to prevent double-spending, while preserving anonymity in a transaction, are blind signatures and, particularly in offline systems, secret splitting.
+#### Domain-specific language (DSL) 
+is a computer language specialized to a particular application domain. This is in contrast to a general-purpose language (GPL), which is broadly applicable across domains.
+
+#### Double-spending
+is a potential flaw in a digital cash scheme in which the same single digital token can be spent more than once. Unlike physical cash, a digital token consists of a digital file that can be duplicated or falsified. As with counterfeit money, such double-spending leads to inflation by creating a new amount of copied currency that did not previously exist. This devalues the currency relative to other monetary units or goods and diminishes user trust as well as the circulation and retention of the currency. Fundamental cryptographic techniques to prevent double-spending, while preserving anonymity in a transaction, are blind signatures and, particularly in offline systems, secret splitting.
 
 ## E
 
-**EDI, The Edinburgh Decentralisation Index** collectS stratified metrics describing the decentralisation of blockchain systems. The EDI takeS numerous metrics from different disciplines – such as economics, information theory and network science – and measures them across different dimensions of blockchain systems, assigning weights to them. These will then be merged into a single index that will represent the overall decentralisation of a system. More details: https://www.ed.ac.uk/informatics/blockchain/edi
+#### EDI, The Edinburgh Decentralisation Index
+collects stratified metrics describing the decentralisation of blockchain systems. The EDI takeS numerous metrics from different disciplines – such as economics, information theory and network science – and measures them across different dimensions of blockchain systems, assigning weights to them. These will then be merged into a single index that will represent the overall decentralisation of a system. More details: https://www.ed.ac.uk/informatics/blockchain/edi
 
 In public-key cryptography, **Edwards-curve Digital Signature Algorithm (EdDSA)** is a digital signature scheme using a variant of Schnorr signature based on Twisted Edwards curves. It is designed to be faster than existing digital signature schemes without sacrificing security.
 
