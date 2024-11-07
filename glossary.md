@@ -153,6 +153,9 @@ is when Cardano users who do not directly participate in block production delega
 #### Delegation
 the process by which ada owners can participate in the network and earn rewards by delegating the stake associated with their ada holdings to a stake pool.
 
+#### Deterministic 
+If a deterministic algorithm is given a particular input, it will always produce the same output, with the underlying machine always passing through the same sequence of states. A nondeterministic algorithm can have different outcomes on at different times.
+
 **DID document**: a set of data describing the DID subject, including mechanisms, such as cryptographic public keys, that the DID subject or a DID delegate can use to authenticate itself and prove its association with the DID. A DID document might have one or more different representations.
 
 **Digital footprint** or digital shadow refers to one’s unique set of traceable digital activities, actions, contributions and communications manifested on the Internet or on digital devices. On the World Wide Web, the internet footprint; also known as cyber shadow, electronic footprint, or digital shadow, is the information left behind as a result of a user’s web-browsing and stored as cookies.
