@@ -161,7 +161,7 @@ Something is deterministic if it is predictable. If a deterministic algorithm is
 **Digital footprint** or digital shadow refers to one’s unique set of traceable digital activities, actions, contributions and communications manifested on the Internet or on digital devices. On the World Wide Web, the internet footprint; also known as cyber shadow, electronic footprint, or digital shadow, is the information left behind as a result of a user’s web-browsing and stored as cookies.
 
 #### Directed acyclic graph (DAG)
-A directed acyclic graph** (DAG) is a directed graph with no directed cycles. That is, it consists of vertices and edges, with each edge directed from one vertex to another, such that following those directions will never form a closed loop. 
+A directed acyclic graph (DAG) is a directed graph with no directed cycles. That is, it consists of vertices and edges, with each edge directed from one vertex to another, such that following those directions will never form a closed loop. 
 
 In simpler terms, think of a DAG as a way to visualize and organize information that has a specific flow. Imagine a bunch of points, called *vertices* or *nodes*, connected by arrows (called *edges*). It is *directed* in that the arrows only go one way, showing a relationship between the points. It is *acyclic* in that you can't follow the arrows in a loop and end up back where you started. It's a one-way flow chart with no circular paths. This is useful for representing things that have a clear order or dependency. 
 
