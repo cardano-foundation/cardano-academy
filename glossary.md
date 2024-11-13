@@ -233,6 +233,9 @@ In economics, **fungibility** is the property of a good or a commodity whose ind
 
 **Fungible token/asset**: an asset that is interchangeable and indistinguishable with some other asset(s). Same denomination bills and coins are fungible assets, for example, like equal quantities of ada to lovelaces.
 
+#### Fungibility 
+is a property of digital assets whose units are interchangeable. Fungibility is important in terms of preserving censorship resistance and privacy. 
+
 ## G
 **Game theory** is the study of mathematical models of strategic interaction in between rational decision-makers. It has applications in all fields of social science, as well as in logic and computer science. Originally, it addressed zero-sum games, in which each participant’s gains or losses are exactly balanced by those of the other participants. Today, game theory applies to a wide range of behavioral relations and is now an umbrella term for the science of logical decision making in humans, animals, and computers.
 
