@@ -327,6 +327,9 @@ A **market maker** or liquidity provider quotes both a buy and a sell price in a
 
 The **mempool** (memory pool) is a smaller database of unconfirmed or pending transactions which every node keeps. When a transaction is confirmed by being included in a block, it is removed from the mempool. You can think of a mempool as being like a ‘waiting room’ where a transaction sits before it is added to a block.
 
+#### Merkle-Patricia trie
+is a data structure used to efficiently store and retrieve data. It combines aspects of a trie and a Merkle tree. A trie organizes data like a tree, with each branch representing part of a key used to locate a specific value. This allows for quick searching and retrieval of information. The 'Patricia' part optimizes the trie by compressing paths with shared prefixes, boosting efficiency in terms of storage and retrieval times. The 'Merkle' part adds a layer of security with each node in the tree having a unique cryptographic hash, derived from its contents. The Merkle-Patricia trie data structure is particularly useful in blockchains as it can store and manage large amounts of data securely and efficiently.
+
 A hash tree or **Merkle tree** is a tree in which every leaf node is labeled with the hash of a data block, and every non-leaf node is labeled with the cryptographic hash of the labels of its child nodes. Hash trees allow efficient and secure verification of the contents of large data structures. Hash trees are a generalization of hash lists and hash chains.
 
 A **mesh network** is a local area network (LAN) where the nodes connect directly, dynamically and non-hierarchically to as many other nodes as possible. The nodes cooperate with one another to efficiently route data to and from clients.
