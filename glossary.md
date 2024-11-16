@@ -102,7 +102,8 @@ A **Chain index** is a database of information obtained from Cardano transaction
 
 A **combinator** is a technical term used to indicate the combination of certain processes or things. In the case of Cardano, a hard fork combinator combines protocols, thereby enabling the Byron-to-Shelley transition without system interruption or restart. It ensures that Byron and Shelley ledgers appear as one ledger.
 
-In mathematics, semantics, and philosophy of language, the principle of **compositionality** is the principle that the meaning of a complex expression is determined by the meanings of its constituent expressions and the rules used to combine them.
+#### Compositionality
+In mathematics, semantics, and philosophy of language, the principle of **compositionality** is the principle that the meaning of a complex expression is determined by the meanings of its constituent expressions and the rules used to combine them. In simpler terms, **composability** is where developers reuse existing assets and reassemble them in unique ways to satisfy specific user requirements.
 
 **Consensus**: the process by which a majority opinion is reached by everyone who is involved in running the blockchain. Agreement must be made on which blocks to produce, which chain to adopt, and to determine the single state of the network.
 
