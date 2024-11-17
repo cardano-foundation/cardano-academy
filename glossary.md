@@ -312,7 +312,11 @@ A **light client**, or thin client is a lightweight computer that has been optim
 
 The **Lightning Network** is a Layer 2 payment protocol that operates on top of a blockchain. It theoretically enables fast transactions between participating nodes and has been touted as a solution to the bitcoin scalability problem.
 
-**Liquid democracy** is a form of delegative democracy where an electorate engages in collective decision-making through direct participation and dynamic representation. This democratic system leverages parts of both direct and representative democracy.
+#### Liquid democracy
+is a form of delegative democracy where an electorate engages in collective decision-making through direct participation and dynamic representation. This democratic system leverages parts of both direct and representative democracy.
+
+#### Liveness 
+is a guarantee that all validators will reach consensus on a value, so new transactions are regularly added to the blockchain.
 
 **Live stake**: the total amount of stake that a stake pool controls. It combines the stake that is owned by the pool operator with any stake that has been delegated to the pool by other ada holders. It can be measured as a total ada amount (e.g. 3M ada), or as a percentage of the total supply of ada within the network (e.g. 5%).
 
