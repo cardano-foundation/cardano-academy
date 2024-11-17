@@ -33,6 +33,9 @@ An **atomic swap** is an exchange of cryptocurrencies from separate blockchains.
 
 A 51% **attack** is a hostile takeover of a Cryptocurrency validated via proof-of-work Algorithms through the acquisition of the majority of the network’s hashing power.
 
+#### Atomicity 
+is the property where a single transaction may contain mulitple actions. All of those actions must be correct and possible for the transaction to be accepted.
+
 ## B
 
 **Backpressure**: Cardano is designed to automatically deal with heavy traffic. Ouroboros and the network stack function even when saturated. If the network is saturated, Cardano can use the admission control method to regulate and restore normalcy. This is the term ‘backpressure’ mentioned in blogs and documentation, it is basically a strategy for network load management.
