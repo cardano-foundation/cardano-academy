@@ -136,6 +136,9 @@ decentralized application.
 
 **Dash** is an open source cryptocurrency and is a form of decentralized autonomous organization (DAO) run by a subset of users, called ‘masternodes’. It is an altcoin that was forked from the Bitcoin protocol. The currency permits fast transactions that can be untraceable.
 
+#### Data Availability Layer
+is a foundational layer in blockchain which ensures data is reliably stored and accessible for users and DApps
+
 A **dead man’s switch** is a switch that is designed to be activated or deactivated if the human operator becomes incapacitated, or dies. Typically, funds may be sent to a preset address after a set time has expired.
 
 **Decentralization** is the process by which the activities of an organization, particularly those regarding planning and decision making, are distributed or delegated away from a central, authoritative location or group.
