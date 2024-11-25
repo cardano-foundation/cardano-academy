@@ -301,13 +301,17 @@ Input Output Global, also reffered to as Input Output Hong Kong (IOHK), or Input
 
 ## L
 
-**Lambda calculus** (λ-calculus) is a formal system in math logic for expressing computation based on function abstraction and application using variable binding and substitution. It is a universal model of computation that can be used to simulate any Turing machine. It was introduced by the mathematician Alonzo Church in the 1930s as part of his research into the foundations of mathematics.
+#### Lambda calculus (λ-calculus) 
+is a formal system in math logic for expressing computation based on function abstraction and application using variable binding and substitution. It is a universal model of computation that can be used to simulate any Turing machine. It was introduced by the mathematician Alonzo Church in the 1930s as part of his research into the foundations of mathematics. It covers some of the key, universal characteristics of a wide range of programming languages.
 
-**Layer 1 vs Layer 2**: In the decentralized ecosystem, a Layer 1 refers to the blockchain protocol itself. Layer 2 refers to a technology that operates on top of a blockchain to improve its scalability and efficiency. For example, Bitcoin is a Layer 1 network, and the Lightning Network is a Layer 2 to improve transaction speeds. Hydra is a layer 2 protocol built on top of Cardano, layer 1.
+#### Layer 1 vs Layer 2: 
+In the decentralized ecosystem, a Layer 1 refers to the blockchain protocol itself. Layer 2 refers to a technology that operates on top of a blockchain to improve its scalability and efficiency. For example, Bitcoin is a Layer 1 network, and the Lightning Network is a Layer 2 to improve transaction speeds. Hydra is a layer 2 protocol built on top of Cardano, layer 1.
 
-**Ledger**: a distributed ledger (also called a shared ledger or referred to as distributed ledger technology, DLT) is a consensus of replicated, shared, and synchronized digital data geographically spread across sites, countries, or institutions. There is no central administrator or centralized data storage.
+#### Ledger
+a distributed ledger (also called a shared ledger or referred to as distributed ledger technology, DLT) is a consensus of replicated, shared, and synchronized digital data geographically spread across sites, countries, or institutions. There is no central administrator or centralized data storage.
 
-A **ledger era** (or era for short if there is no confusion) in Cardano is a collection of ledger features introduced at a hard fork. Since the *Alonzo* era, they have been named after mathematicians and computer scientists in alphabetical order. See [CIP-59]( https://cips.cardano.org/cips/cip59/)
+#### ledger era
+(or era for short if there is no confusion) in Cardano is a collection of ledger features introduced at a hard fork. Since the *Alonzo* era, they have been named after mathematicians and computer scientists in alphabetical order. See [CIP-59]( https://cips.cardano.org/cips/cip59/)
 
 A **Ledger** Protocol in Cardano is a collection of ledger features sitting between the consensus layer and the ledger layer, roughly characterized by block header validation.
 
@@ -330,6 +334,9 @@ The **longest chain** is what individual nodes accept as the valid version of th
 ## M
 
 **Mainnet:** the live blockchain that has been deployed and is in operation. Assets held on the mainnet hold value as opposed to assets on a testnet that do not hold value.
+
+#### machine language
+Low-level programming languages used to create programs include **machine language** and assembly language. While assembly language is a representation of machine language that is comprehensible by humans, machine language is the binary code that computers comprehend and execute.
 
 A **market maker** or liquidity provider quotes both a buy and a sell price in a financial instrument or commodity held in inventory, hoping to make a profit on the bid-offer spread, or turn. The U.S. Securities and Exchange Commission defines a ‘market maker’ as a firm that stands ready to buy and sell stock on a regular and continuous basis at a publicly quoted price.
 
@@ -431,9 +438,9 @@ a Turing-complete programming platform for writing functional smart contracts on
 
 **Plutus Tx** (now called **Plinth**), refers to the libraries and compiler for compiling Haskell into Plutus Core to form the on-chain part of a contract application.
 
-**Polymorphic**: occurring in several different forms. In computing (feature of a programming language) allowing routines to use variables of different types at different times.
+**Polymorphic**: occurring in several different forms. In computing (feature of a programming language) allowing routines to use variables of different types at different times. 
 
-**Polymorphism** is the provision of a single interface to entities of different types.
+**Polymorphism** is the provision of a single interface to entities of different types. In other words, polymorphism is the notion that you can access objects of different types through the same interface. ie. you can have multiple implementations of the same abstract concept.
 
 The **Portable Operating System Interface (POSIX)** is a family of standards specified by the IEEE Computer Society for maintaining compatibility between operating systems. POSIX defines the application programming interface (API), along with command line shells and utility interfaces, for software compatibility with variants of Unix and other operating systems.
 
@@ -563,6 +570,9 @@ an automated agreement, written in code, that tracks, verifies, and executes the
 
 **State channels** refer to the process in which users transact with one another directly outside of the blockchain, or ‘off-chain,’ and greatly minimize their use of ‘on-chain’ operations.
 
+#### Static typed languages
+A language is said to be statically-typed if the variable types are known at compile-time instead of at run-time. Compile time is when the programming code is converted to machine code. Runtime is the time when a program is running and usually occurs after compile time.
+
 #### State machine
 A state machine is like a system that can be in different 'states' at different times, and it changes between these states based on certain inputs or events. A state machine has:
   - A set of states, ie. the possible conditions the system can be in
@@ -631,6 +641,12 @@ The **Travel Rule** requires parties to obtain and exchange beneficiary and orig
 - security: the ability of a blockchain to operate as expected, and defend itself from attacks, bugs, and other unforeseen issues.
 
 The **(TVL) Total Value Locked** into a smart contract or set of smart contracts that may be deployed or stored at one or more exchanges or markets. This is used as a measurement of investor deposits. It is the dollar value of all the coins or tokens locked into a platform, protocol, lending program, yield farming program, or insurance liquidity pool.
+
+#### type system 
+A type system is a logical framework made up of a set of rules that give each term—a word, phrase, or other group of symbols—an attribute termed a type (for instance, integer, floating point, or string).
+
+#### Type theory 
+is the academic study of type systems, and a type theory is the formal presentation of a particular type system. One influential type theory is Alonzo Church's typed λ-calculus.
 
 ## U
 
