@@ -472,46 +472,63 @@ A **pure function** is a function that has the following properties: first, its 
 
 ## R
 
-**RAM (random-access memory)** is a form of computer memory that can be read and changed in any order, typically used to store working data and machine code. A random-access memory device allows data items to be read or written in almost the same amount of time irrespective of the physical location of data inside the memory.
+#### Race conditions 
+in programming happen when multiple processes, or threads, attempt to access the same resource at the same time resulting in inconsistencies, failed transactions and other system issues. 
 
-**Raspberry Pi:** computer on a credit-card-sized board. Idea developed by Eben Upton and others from Cambridge University’s Computer Lab and launched by their Raspberry Pi Foundation. Taking inspiration from the 1980s BBC Computer Literacy Project, the single-board computer running Linux with open-source software was launched in 2012 costing £22 to encourage computing in schools and the developing world.
+#### RAM (random-access memory)
+is a form of computer memory that can be read and changed in any order, typically used to store working data and machine code. A random-access memory device allows data items to be read or written in almost the same amount of time irrespective of the physical location of data inside the memory.
 
-**Recursion** occurs when something is defined in terms of itself or of its type. Recursion is used in a variety of disciplines ranging from linguistics to logic. The most common application of recursion is in mathematics and computer science, where a function being defined is applied within its own definition. While this apparently defines an infinite number of instances (function values), it is often done in such a way that no infinite loop can occur.
+#### Raspberry Pi
+computer on a credit-card-sized board. Idea developed by Eben Upton and others from Cambridge University’s Computer Lab and launched by their Raspberry Pi Foundation. Taking inspiration from the 1980s BBC Computer Literacy Project, the single-board computer running Linux with open-source software was launched in 2012 costing £22 to encourage computing in schools and the developing world.
 
-**Redeemer**: The argument to the validator script which is provided by the transaction which spends a script output.
+#### Recursion
+occurs when something is defined in terms of itself or of its type. Recursion is used in a variety of disciplines ranging from linguistics to logic. The most common application of recursion is in mathematics and computer science, where a function being defined is applied within its own definition. While this apparently defines an infinite number of instances (function values), it is often done in such a way that no infinite loop can occur.
+
+#### Redeemer
+The argument to the validator script which is provided by the transaction which spends a script output.
 
 #### reentrancy attack 
 A reentrancy attack happens when a malicious smart contract interrupts another contract's function before it's finished. Think of it like cutting the line repeatedly. This interruption allows the attacker to manipulate the contract's logic and potentially steal its funds.
 
-**Regression testing** is re-running tests to ensure that previously developed and tested software is performing as expected after a change.
+#### Regression testing
+is re-running tests to ensure that previously developed and tested software is performing as expected after a change.
 
-**Release Dates** – When we are confident about the release of a new feature, we can choose to honor Cardano community members by naming a date after them. See [CIP-59](https://cips.cardano.org/cips/cip59/)
+#### Release Dates
+When we are confident about the release of a new feature, we can choose to honor Cardano community members by naming a date after them. See [CIP-59](https://cips.cardano.org/cips/cip59/)
 
-**Resident set size (RSS)** is the portion of memory occupied by a process that is held in main memory (RAM).
+#### Resident set size (RSS)
+is the portion of memory occupied by a process that is held in main memory (RAM).
 
-**Reward**: an amount contained in each new block that is paid out to the stakeholder by the network.
+#### Reward
+an amount contained in each new block that is paid out to the stakeholder by the network.
 
 #### Reward Sharing Scheme (RSS)
 This is an integral part of Cardano’s consensus protocol. The reward-sharing scheme puts incentives in place so that the system encourages behaviours beneficial to the functioning of the system.
 
-**Rewards Wallet**: a wallet that stores ada which can be used in stake delegation. The stake from a single Rewards wallet can only be delegated to a single stake pool. To delegate to more than one stake pool, you will need to create multiple Rewards wallets and distribute ada among them.
+#### Rewards Wallet
+a wallet that stores ada which can be used in stake delegation. The stake from a single Rewards wallet can only be delegated to a single stake pool. To delegate to more than one stake pool, you will need to create multiple Rewards wallets and distribute ada among them.
 
-**Rust** is a lightweight, portable programming language from Mozilla that compiles to the web, iOS and Android. Rust is a multi-paradigm, general-purpose language designed for performance and safety, especially safe concurrency.
+#### Rust
+is a lightweight, portable programming language from Mozilla that compiles to the web, iOS and Android. Rust is a multi-paradigm, general-purpose language designed for performance and safety, especially safe concurrency.
 
 ## S
 
-**SanchoNet**:
+#### SanchoNet
 a testnet for governance features relarted to [CIP 1694](https://cips.cardano.org/cip/CIP-1694).  See [sancho.network](https://sancho.network/)
 
-**Saturation** : a term used to indicate that a particular stake pool has more stake delegated to it than is ideal for the network. Saturation is displayed as a percentage. Once a stake pool reaches 100% saturation, it will offer diminishing rewards.The saturation mechanism was designed to prevent centralization by encouraging delegators to delegate to different stake pools, and operators to set up alternative pools so that they can continue earning maximum rewards. Saturation, therefore, exists to preserve the interests of both ada holders delegating their stake and stake pool operators.
+#### Saturation
+a term used to indicate that a particular stake pool has more stake delegated to it than is ideal for the network. Saturation is displayed as a percentage. Once a stake pool reaches 100% saturation, it will offer diminishing rewards.The saturation mechanism was designed to prevent centralization by encouraging delegators to delegate to different stake pools, and operators to set up alternative pools so that they can continue earning maximum rewards. Saturation, therefore, exists to preserve the interests of both ada holders delegating their stake and stake pool operators.
 
 The Boolean **satisfiability** problem (abbreviated **SATISFIABILITY** or **SAT**) is the problem of determining if there exists an interpretation that satisfies a given Boolean formula. It asks whether the variables of a given Boolean formula can be consistently replaced by the values TRUE or FALSE in such a way that the formula evaluates to TRUE. If this is the case, the formula is called satisfiable. On the other hand, if no such assignment exists, the function expressed by the formula is FALSE for all possible variable assignments and the formula is unsatisfiable.
 
-**Satisfiability modulo theories (SMT)** is the problem of determining whether a mathematical formula is satisfiable. It generalizes the Boolean satisfiability problem (SAT) to more complex formulas involving real numbers, integers, and/or various data structures such as lists, arrays, bit vectors, and strings. The name is derived from the fact that these expressions are interpreted within (‘modulo’) a certain formal theory in first-order logic with equality (often disallowing quantifiers). SMT solvers are tools which aim to solve the SMT problem for a practical subset of inputs.
+#### Satisfiability modulo theories (SMT) 
+is the problem of determining whether a mathematical formula is satisfiable. It generalizes the Boolean satisfiability problem (SAT) to more complex formulas involving real numbers, integers, and/or various data structures such as lists, arrays, bit vectors, and strings. The name is derived from the fact that these expressions are interpreted within (‘modulo’) a certain formal theory in first-order logic with equality (often disallowing quantifiers). SMT solvers are tools which aim to solve the SMT problem for a practical subset of inputs.
 
-A **script** is a generic term for an executable program used in the ledger. In the Cardano blockchain, these are written in Plutus Core.
+#### Script 
+is a generic term for an executable program used in the ledger. In the Cardano blockchain, these are written in Plutus Core.
 
-A **script output**: A UTXO locked by a script.
+#### Script output
+A UTXO locked by a script.
 
 **Securitization**: the process of creating liquid, asset-backed securities from pools of illiquid assets.
 
