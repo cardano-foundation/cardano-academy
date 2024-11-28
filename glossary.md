@@ -368,6 +368,10 @@ A **multi-asset (MA)** ledger can do the accounting for or interact with more th
 
 In telecoms and computer networks, **multiplexing (aka muxing)** is a method by which multiple analog or digital signals are combined into one signal over a shared medium. The aim is to share an expensive resource. For example, in telecoms, several telephone calls may be carried using one wire. Multiplexing originated in the 1870s and is now widely applied in communications.
 
+#### Multiple inheritance 
+is a powerful feature of Solidity programming language. It enables code reuse and better organization for complex projects. With multiple inheritance, developers create classes that can inherit from more than one parent class.
+
+
 **Multisignature (multi-signature)** is a digital signature scheme which allows a group of users to sign a single document. Usually, a multisignature algorithm produces a joint signature that is more compact than a collection of distinct signatures from all users. Multisignature can be considered as generalization of both group and ring signatures providing additional security for cryptocurrency transactions.
 
 ## N
