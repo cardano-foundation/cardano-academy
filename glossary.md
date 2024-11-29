@@ -401,7 +401,10 @@ A **nonce** is an arbitrary number that can be used just once in a cryptographic
 Ouroboros Byzantine Fault Tolerant protocol. See BFT.
 
 #### Off-chain code
-The part of a contract application’s code which runs off the chain, usually as a contract application. On-chain code: The part of a contract application’s code which runs on the chain (i.e. as scripts).
+the part of a contract application’s code which runs off the chain, usually by individual applications rather than Cardano nodes.
+
+#### On-chain code
+the part of a contract application’s code which runs on the chain (i.e. as scripts) by each participating node. The main function for on-chain code is to validate transactions, for example, checking if a transaction meets the conditions to spend a UTxO or mint a token. On-chain code is usually written in a high level language like Aiken and compiled to Untyped Plutus Core (UPLC). Each Cardano node includes an evaluator that runs UPLC programs. 
 
 #### Open-source software (OSS)
 is software in which source code is released under a license in which the copyright holder grants users the rights to study, change, and distribute the software to anyone and for any purpose.
