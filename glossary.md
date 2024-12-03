@@ -91,9 +91,13 @@ A **Byzantine fault** is any fault presenting different symptoms to different ob
 
 **Cardano** is a blockchain platform for changemakers, innovators, and visionaries, with the tools and technologies required to create possibility for the many, as well as the few, and bring about positive global change. Cardano is a proof-of-stake blockchain platform: the first to be founded on peer-reviewed research and developed through evidence-based methods. It combines pioneering technologies to provide unparalleled security and sustainability to decentralized applications, systems, and societies. With a leading team of engineers, Cardano exists to redistribute power from unaccountable structures to the margins – to individuals – and be an enabling force for positive change and progress. 
 
-**CBOR** (Concise Binary Object Representation) is a binary data serialization format loosely based on JSON. Like JSON it allows the transmission of data objects that contain name–value pairs, but in a more concise manner. This increases processing and transfer speeds at the cost of human-readability.
+#### CBOR (Concise Binary Object Representation) 
+is a binary data serialization format loosely based on JSON. Like JSON it allows the transmission of data objects that contain name–value pairs, but in a more concise manner. This increases processing and transfer speeds at the cost of human-readability.
 
-**CFD**
+#### CEK Machine
+A CEK Machine is an abstract machine that is usually implemented as an interpreter for functional programming languages. 
+
+#### CFD
 contract for difference. Part of a wider group of trading products known as derivatives, they are a popular method of trading stocks, bonds, and commodities that allow you to speculate on the price.
 
 **Chain**
