@@ -105,20 +105,27 @@ a set of blocks that have been produced and are connected to another in consecut
 
 A **Chain index** is a database of information obtained from Cardano transactions.
 
-**Colored coins** are a class of methods for associating real-world assets with addresses on the Bitcoin network. Examples could be a deed for a house, stocks, bonds or futures.
+#### Colored coins 
+are a class of methods for associating real-world assets with addresses on the Bitcoin network. Examples could be a deed for a house, stocks, bonds or futures.
 
-A **combinator** is a technical term used to indicate the combination of certain processes or things. In the case of Cardano, a hard fork combinator combines protocols, thereby enabling the Byron-to-Shelley transition without system interruption or restart. It ensures that Byron and Shelley ledgers appear as one ledger.
+#### Combinator
+A combinator is a technical term used to indicate the combination of certain processes or things. In the case of Cardano, a hard fork combinator combines protocols, thereby enabling the Byron-to-Shelley transition without system interruption or restart. It ensures that Byron and Shelley ledgers appear as one ledger.
+
+#### Compiler
+A compiler is a program which converts (compiles) code written in one language into code that can be executed by a computer. 
 
 #### Compositionality
 In mathematics, semantics, and philosophy of language, the principle of **compositionality** is the principle that the meaning of a complex expression is determined by the meanings of its constituent expressions and the rules used to combine them. In simpler terms, **composability** is where developers reuse existing assets and reassemble them in unique ways to satisfy specific user requirements.
 
-**Consensus**: the process by which a majority opinion is reached by everyone who is involved in running the blockchain. Agreement must be made on which blocks to produce, which chain to adopt, and to determine the single state of the network.
+#### Consensus
+the process by which a majority opinion is reached by everyone who is involved in running the blockchain. Agreement must be made on which blocks to produce, which chain to adopt, and to determine the single state of the network.
 
 A **consensus mechanism** in Cardano is a collection of consensus features introduced at a hard fork. Historically, these have had the name “Ouroboros” in them. See CIP-59
 
 **Concise data definition language (CDDL)** expresses Concise Binary Object Representation (CBOR) data structures. Its main goal is to provide an easy and unambiguous way to express structures for protocol messages and data formats that use CBOR or JSON (JavaScript Object Notation).
 
-**Concurrency**, the property of program, algorithm, or problem decomposition into order-independent or partially ordered units.
+#### Concurrency
+the property of program, algorithm, or problem decomposition into order-independent or partially ordered units.
 
 A **consensus protocol** is a fault-tolerant mechanism that is used in blockchain systems to achieve the necessary agreement on a single data value or a single state of the network among distributed processes or multi-agent systems, such as with cryptocurrencies.
 
