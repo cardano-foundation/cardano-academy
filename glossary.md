@@ -14,15 +14,20 @@ vs. Relative **Price**: Absolute price is the number of dollars that can be exch
 #### Ada
 digital currency of the Cardano blockchain, Named after Ada Lovelace. One ada = 1,000,000 lovelaces.
 
-**Address**
+#### Address
 a data structure used in transaction outputs to convey various pieces of information. All addresses carry a network discriminant tag to distinguish between different networks, for instance mainnet or testnet, and a proof of ownership of who owns the transaction output. Some addresses also carry delegation choices or script references.
 
-**Adrestia**
+#### Adrestia
 Adrestia is a collection of products which makes it easier to integrate with Cardano. It is made of several application programming interfaces (APIs), command-line interfaces (CLIs), and software development kits (SDKs). Alternatively, Adrestia may also refer to the team working on the project itself.
 
-The **address** of a UTXO says where the output is ‘going’. The address stipulates the conditions for unlocking the output. This can be a public key hash, or (in the Extended UTXO model) a script hash.
+#### Address
+The address of a UTXO says where the output is ‘going’. The address stipulates the conditions for unlocking the output. This can be a public key hash, or (in the Extended UTXO model) a script hash.
 
-**Agda** is a dependently typed functional programming language. Charles Hoskinson referred to it as ‘Super Haskell’
+#### Agda
+is a dependently typed functional programming language. Charles Hoskinson referred to it as ‘Super Haskell’
+
+#### Anti-pattern
+is a commonly-used process, structure or pattern which, despite initially appearing like an effective solution, results in more harm than good in the longer term.
 
 **Asset**
 a digital item of property that holds value stored in the distributed ledger. An asset can represent security, or utility tokens of a fungible or non-fungible nature.
