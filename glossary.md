@@ -320,6 +320,9 @@ Input Output Global, also reffered to as Input Output Hong Kong (IOHK), or Input
 #### Lambda calculus (λ-calculus) 
 is a formal system in math logic for expressing computation based on function abstraction and application using variable binding and substitution. It is a universal model of computation that can be used to simulate any Turing machine. It was introduced by the mathematician Alonzo Church in the 1930s as part of his research into the foundations of mathematics. It covers some of the key, universal characteristics of a wide range of programming languages.
 
+#### Language Server
+Lanaguage Server Protocol (LSP) enables convenience features like auto complete, go to definition, or pop-up documentation on hover over. The Language Server Protocol (LSP) standardizes how such servers and development tools communicate, so a single Language Server can be re-used for different tools and languages.
+
 #### Layer 1 vs Layer 2: 
 In the decentralized ecosystem, a Layer 1 refers to the blockchain protocol itself. Layer 2 refers to a technology that operates on top of a blockchain to improve its scalability and efficiency. For example, Bitcoin is a Layer 1 network, and the Lightning Network is a Layer 2 to improve transaction speeds. Hydra is a layer 2 protocol built on top of Cardano, layer 1.
 
