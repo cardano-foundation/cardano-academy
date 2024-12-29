@@ -127,6 +127,10 @@ the process by which a majority opinion is reached by everyone who is involved i
 
 A **consensus mechanism** in Cardano is a collection of consensus features introduced at a hard fork. Historically, these have had the name “Ouroboros” in them. See CIP-59
 
+#### Constructor
+In class-based, object-oriented programming, a constructor is a special function used to create an object. It 'constructs' the new object so it's ready for use, usually by accepting arguments that the constructor needs to set required member variables.
+
+
 **Concise data definition language (CDDL)** expresses Concise Binary Object Representation (CBOR) data structures. Its main goal is to provide an easy and unambiguous way to express structures for protocol messages and data formats that use CBOR or JSON (JavaScript Object Notation).
 
 #### Concurrency
