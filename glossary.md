@@ -348,7 +348,10 @@ is a form of delegative democracy where an electorate engages in collective deci
 #### Liveness 
 is a guarantee that all validators will reach consensus on a value, so new transactions are regularly added to the blockchain.
 
-**Live stake**: the total amount of stake that a stake pool controls. It combines the stake that is owned by the pool operator with any stake that has been delegated to the pool by other ada holders. It can be measured as a total ada amount (e.g. 3M ada), or as a percentage of the total supply of ada within the network (e.g. 5%).
+#### Live stake vs Active stake 
+**Live stake** is the total amount of stake that a stake pool controls. It combines the stake that is owned by the pool operator with any stake that has been delegated to the pool by other ada holders. It can be measured as a total ada amount (e.g. 3M ada), or as a percentage of the total supply of ada within the network (e.g. 5%).
+
+Note that if this *live stake* is part of a snapshot, it is called the **active stake**. My *live stake* and *active stake* could be different if some of my delegators, for example, changes the delegation after the snapshot has been taken. *Live stake* refers to the current stake at this point in time, while the *active stake* is used in the rewards calculation.
 
 The **longest chain** is what individual nodes accept as the valid version of the blockchain. The rule that nodes adopt the longest chain of blocks allows every node on the network to agree on what the blockchain looks like, and therefore agree on the same transaction history. The Longest Chain Rule ensures that the network will recognise the ‘chain with most work’ as the main chain. The chain with the most work is typically (not always) the longest of the forks.
 
