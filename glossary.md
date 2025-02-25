@@ -471,6 +471,8 @@ a Turing-complete programming platform for writing functional smart contracts on
 
 **Plutus Tx** (now called **Plinth**), refers to the libraries and compiler for compiling Haskell into Plutus Core to form the on-chain part of a contract application.
 
+**Plutocracy**: governance bybthe wealthy.Typically a state or society governed by the wealthy.
+
 **Polymorphic**: occurring in several different forms. In computing (feature of a programming language) allowing routines to use variables of different types at different times. 
 
 **Polymorphism** is the provision of a single interface to entities of different types. In other words, polymorphism is the notion that you can access objects of different types through the same interface. ie. you can have multiple implementations of the same abstract concept.
