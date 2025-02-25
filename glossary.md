@@ -467,7 +467,7 @@ The number of tokens a block producer personally owns and contributes to block p
 #### Plutus
 a Turing-complete programming platform for writing functional smart contracts on the Cardano blockchain. Plutus is based on the Haskell programming language.
 
-**Plutocracy**: governance bybthe wealthy.Typically a state or society governed by the wealthy.
+**Plutocracy**: governance by the wealthy. Typically a state or society governed by the wealthy.
 
 **Plutus Core** is the programming language in which scripts on the Cardano blockchain are written. Plutus Core is a small functional programming language — a formal specification is available. Plutus Core is not read or written by humans; it is a compilation target for other languages.
 
