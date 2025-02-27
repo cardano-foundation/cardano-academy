@@ -601,6 +601,9 @@ Slot: Within an epoch, a set duration of time. Time is separated into numbered s
 **Slot leader**
 elected node that has been selected to create a block within the current slot. A random election process occurs based on the proportional stake.
 
+#### Snapshot (aka stake distribution snapshot)
+Ouroboros divides time into slots of 20 seconds, which are grouped into epochs lasting 5 days on mainnet currently. Many protocol mechanisms actually rely on these epochs and you’ll often hear mentions of “epoch boundaries” in the context of Cardano. This refers to the moment where the system transitions from one epoch to the next. From a consensus perspective, we almost always look at a snapshot of the stake distribution across an epoch and a fair question is, “a snapshot of what?”. The system takes a snapshot of the stake distribution at the beginning of every epoch, reflecting the distribution from the previous epoch. However, it doesn't use this snapshot immediately because the system doesn't consider it stable yet. This delay occurs due to the probabilistic settlement of transactions in the system, which means that the system only settles information after a certain period. 
+
 **Smart contract**
 an automated agreement, written in code, that tracks, verifies, and executes the binding transactions of a contract between various parties. Smart contracts were first proposed by Nick Szabo in 1996. The transactions of the contract are automatically executed by the smart contract code when predetermined conditions are met. Smart contracts are self-executing and reliable and do not require the actions or presence of third parties. The smart contract code is stored on, and distributed across, a decentralized blockchain network, making it transparent and irreversible.
 
