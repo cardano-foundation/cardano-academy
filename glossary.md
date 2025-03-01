@@ -286,6 +286,9 @@ In computability theory, the **halting problem** is the problem of determining, 
 
 **Haskell** is a general-purpose, statically typed, purely functional programming language with type inference and lazy evaluation. Designed for teaching, research and industrial applications, Haskell has pioneered a number of programming language features.
 
+#### Height battle
+If a node receives two valid blocks for a single slot, it will select the block with the higher slot number and 'orphan' the other. To prevent blocks from getting orphaned in height battles, the block needs to be disseminated across the entire network within one second (1s).
+
 **Howey Test**: Securities and Exchange Commission (SEC) v. W. J. Howey Co. (1946). The case resulted in a test, known as the Howey test, to determine whether an instrument qualifies as an ‘investment contract’ for the purposes of the Securities Act: ‘a contract, transaction or scheme whereby a person invests his money in a common enterprise and is led to expect profits solely from the efforts of the promoter or a third party. The Howey Test has remained a notable determiner of regulatory oversight for many decades. In the past few years, it has been called into question, most frequently in conjunction with discussions about Cryptocurrencies and Blockchain technology’.
 
 In economics, **hyperinflation** quickly erodes the real value of a local currency as the prices of all goods rise. This causes people to minimize their holdings in that currency as they switch to more stable foreign currencies (hard currency).
