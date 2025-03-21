@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository is the home of the Cardano Academy source material. It is a mono-repository hosting the content of the various courses, the associated diagrams, and quizzes. Periodically, the content will be produced as educational videos.
+This repository is the home of the Cardano Academy source material. It is a mono-repository hosting the content of the various courses, the associated diagrams, and quizzes. Periodically, the content will be produced as educational videos in a corresponding video course available on academy.cardanofoundation.org. While the written materials in this repository are licensed under CC-BY-4.0, the videos are separately hosted and are not covered under this license
 
 ## Courses
 
