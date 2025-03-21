@@ -24,13 +24,13 @@ The content is in 'markdown' format, a cheatsheet is available [here](https://ww
 
 ## License and attribution
 
-All contributions must be properly licensed and attributed. If you are contributing your own original work, then you are offering it under a [Mozilla Public License 2.0](./LICENSE) . You are responsible for adding your own name or pseudonym in the Github Contributors section, as attribution for your contribution.
+All contributions must be properly licensed and attributed. If you are contributing your own original work, then you are offering it under a [CC-BY 4.0](./LICENSE).
 
 If you are sourcing a contribution from somewhere else, it must carry a compatible license. You need to indicate the original source and original license, by including an comment above your contribution in this suggested format:
 
 ```
 Source: https://example.com/originaltext
-License: MPL-2.0 license
+License: CC-BY 4.0
 Added by: @joebloggs
 ```
 

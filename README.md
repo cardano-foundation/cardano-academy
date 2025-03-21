@@ -6,10 +6,19 @@ This repository is the home of the Cardano Academy source material. It is a mono
 
 ## Courses
 
-| Title                        | Description                                                                     |
-| ---                          | ---                                                                             |
-| [CBCA](./courses/CBCA)       | A blockchain course for associate with a deep focus on Proof-of-Stake & Cardano |
-| [Open Source](./courses/open-source) | An introductory course and guide on Open Source.                                |
+| Tag   | Title                                | Description                                                                     |
+| ---   | ---                                  | ---                                                                             |
+| 📖 🖥️ | [CBCA](./courses/CBCA)               | A blockchain course for associate with a deep focus on Proof-of-Stake & Cardano |
+| 📖    | [Open Source](./courses/open-source) | An introductory course and guide on Open Source.                                |
+| 📝    | [Aiken](./courses/Aiken)             | A deep-dive into the Aiken smart contract programming framework                 |
+
+> [!TIP]
+>
+> #### Tags
+>
+> - 🖥️ Online video courses available
+> - 📖 Written courses available
+> - 📝 Course under writing, coming soon
 
 ## How to contribute
 
@@ -17,4 +26,4 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 ## License
 
-[MPL-2.0](./LICENSE)
+[<img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by.png" width=88 height=31 />](./LICENSE)

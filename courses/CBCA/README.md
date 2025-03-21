@@ -19,4 +19,4 @@ See [CONTRIBUTING.md](../../CONTRIBUTING.md)
 
 ## License
 
-[MPL-2.0](../../LICENSE)
+[![CC-BY 4.0](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by.png)](../../LICENSE)
