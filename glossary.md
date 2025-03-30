@@ -679,7 +679,8 @@ The **Transmission Control Protocol (TCP)** is one of the main protocols of the 
 #### Treasury
 The treasury is a protocol-level tax meant to create a self-sustaining ecosystem and to fund its development. The amount cut from the total rewards for the treasury is a fixed percentage.
 
-A system is said to be **Turing complete** if it can be used to simulate any Turing machine. This means that this system is able to recognize or decide other data-manipulation rule sets. Turing completeness is used as a way to express the power of such a data-manipulation rule set. Virtually all programming languages today are Turing complete. The concept is named after English mathematician and computer scientist Alan Turing.
+A system is said to be **Turing complete** if it can be used to simulate any Turing machine. This means that this system is able to recognize or decide other data-manipulation rule sets. Turing completeness is used as a way to express the power of such a data-manipulation rule set. Virtually all programming languages today are Turing complete. The concept is named after English mathematician and computer scientist Alan Turing. In layman's terms, a Turing-complete system can execute any algorithm, or program, that any other computer or programming language can. 
+
 
 A **Turing machine** is a mathematical model of computation that defines an abstract machine, which manipulates symbols on a strip of tape according to a table of rules. Despite the model’s simplicity, given any computer algorithm, a Turing machine capable of simulating that algorithm’s logic can be constructed.
 
