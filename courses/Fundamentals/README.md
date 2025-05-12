@@ -4,7 +4,7 @@
 
 This folder contains the content for the *Cardano Fundamentals* course.
 
-1. [What is Blockchain?](./1-introduction_to_blockchain)
+1. [What is Blockchain?](./1-what-is-blockchain?)
 2. [Bitcoin & Ethereum](./2-advanced_blockchain_concepts)
 3. [Cardano (Part 1)](./3-the_cardano_blockchain)
 4. [Cardano (Part 2)](./4-getting_started_with_cardano)
