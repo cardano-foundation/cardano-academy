@@ -1,0 +1,7 @@
+Implementing sharding is more complicated on Ethereum because transaction validation is non-deterministic. The system first processes transactions by checking the sender has enough funds in their balance. The Ethereum Virtual Machine (EVM) computes a new state based on the current state and transaction, which forms the basis of the next transaction. This constant changing of the blockchain state means transaction order has to be considered during validation. 
+
+Each transaction can alter any account’s state. Its outcome relies on its position in the queue, or sequence, and the global state is locked to ensure the system is consistent and there is no double-spending. The result is only one transaction can process at a time. 
+
+Account balances are the transaction inputs, but these are a shared resource and two transactions can’t simultaneously update the same balance. The predicted impact on your balance at transaction submission can be completely different from the balance at validation. Every node on the network must update the sender's and receiver's account across different shards. The UTxO model allows for more seamless data structure partitioning.
+
+In conclusion, there are **significant obstacles** implementing sharding in Ethereum. This is the primary reason why most projects have moved to a layer 2 solution and why VC funding has skyrocketed in the Ethereum Zero Knowledge (ZK) space in recent years, which we’ll discuss shortly.
