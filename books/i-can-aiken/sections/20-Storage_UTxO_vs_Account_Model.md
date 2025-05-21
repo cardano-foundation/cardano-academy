@@ -4,7 +4,7 @@ If you look at the bare stats, however, there appears to be more nuance. Ethereu
 
 We will see later how Cardano’s Extended UTxO model allows for most of the computation to take place off-chain, and a single transaction can include many transactions, scripts and assets. With UTxO, a single transaction can consume and produce a huge amount of inputs and outputs respectively. You can inspect record transactions and block stats at eutxo.org. 
 
-Meanwhile Ergo, another EUTxO-based blockchain, has already produced 5,000 outputs in a single transaction.[^1] So it is fair to say comparing account-based transactions with eUTxO transactions is not an apples to apples comparison.
+Meanwhile Ergo, another EUTxO-based blockchain, has already produced 5,000 outputs in a single transaction.[^4] So it is fair to say comparing account-based transactions with eUTxO transactions is not an apples to apples comparison.
 
 [^1]: Ethereum blockchain size, ycharts.com/indicators/ethereum_chain_full_sync_data_size
 [^2]: Solana blockchain size, chainstats.org/
