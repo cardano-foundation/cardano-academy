@@ -1,6 +1,6 @@
 
-├── 1983 - Blind signatures (David Chaum)
-├── 1990 - eCash (digicash)
+├── 1983 - Blind signatures (David Chaum)  <br>
+├── 1990 - eCash (digicash) <br>
 ├── 1991 - Haber & Stornetta describe a crypto-secured chain of blocks
 ├── 1996 - Nick Szabo coins the idea of smart contracts.
 ├── 1999 - B-Money (Wei Dai)
