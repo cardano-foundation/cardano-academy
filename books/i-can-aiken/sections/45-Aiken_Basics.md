@@ -1,4 +1,3 @@
-import { Callout } from "nextra-theme-docs";
 # Aiken basics
 
 **Syntax**
@@ -25,7 +24,7 @@ Read more about the nuances of these primitives and how they work together in th
 
 Aiken uses let-bindings to declare variables. Remember that, like all data structures in Aiken, these variables are immutable too.
 
-```aiken
+```rust
 let table_size = 8
 let x = “Opening Hours:”
 ```
