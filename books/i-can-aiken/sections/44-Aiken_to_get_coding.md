@@ -24,11 +24,11 @@ aiken --version
 
 **Language Server**
 
-The ```sh aiken``` command-line comes with a built-in language server.[^1] There are also plugins for most popular code editors that provide syntax highlighting and indentation rules for Aiken. I used *VSCode*[^2] for the code in this book. 
+The ```sh aikup``` command-line comes with a built-in language server.[^1] There are also plugins for most popular code editors that provide syntax highlighting and indentation rules for Aiken. I used *VSCode*[^2] for the code in this book. 
 
 **Creating a project**
 
-Let’s create our first project. Use aiken new cfacademy/cfaiken to create the scaffolding for a new project. We can follow instructions in the newly generated README.md at the root of the project. The folder structure should look like this:
+Let’s create our first project. Use ```sh aiken new cfacademy/cfaiken``` to create the scaffolding for a new project. We can follow instructions in the newly generated ```sh README.md``` at the root of the project. The folder structure should look like this:
 
 ```sh
 .
