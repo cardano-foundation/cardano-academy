@@ -1,11 +1,14 @@
-46. Helper functions
+# Helper functions
+
 Let's write some more code. To keep it simple, we’ll continue with our restaurant analogy for the validators we’re about to code. Understand, however, that many of the checks and conditions are similar to those found in any context. For example, we’ll be checking UTxO inputs are indeed unspent, time intervals are valid, required signatures are present. 
 
-Following best practice, we will write our validators in the validators folder. But first let's create some supporting functions in the lib folder. We’ll use .ak as the file extension throughout. We’ll explain different features as we go. It may seem overwhelming at first, but, as we write more validators, you will see a lot of the similar functionality. For brevity, we’ll explain things once, so feel free to skip back and forth, or, of course, refer to the docs on the Aiken-lang.org website.
+Following best practice, we will write our validators in the ```validators``` folder. But first let's create some supporting functions in the ```lib``` folder. We’ll use .ak as the file extension throughout. We’ll explain different features as we go. It may seem overwhelming at first, but, as we write more validators, you will see a lot of the similar functionality. For brevity, we’ll explain things once, so feel free to skip back and forth, or, of course, refer to the docs on the Aiken-lang.org website.
 
 Aiken code comprises functions and types bundled together in modules. Each module can export types and values for use by other modules in the project. We’ll follow the standard practice of having all the modules for our project reside within a directory with the same name as the project.
 
 This code defines helper functions and test cases for managing restaurant reservations. The helper functions ensure that the reservation is used by the correct person and within the valid time frame. The subsequent test cases help verify the logic of the must_dine_before_expiry function.
+
+```rust
 use aiken/collection/list
 use aiken/interval.{Finite, Interval}
 use cardano/transaction.{ValidityRange}
@@ -45,7 +48,9 @@ test late_dining_is_invalid() {
   !must_dine_before_expiry(interval.after(3), 2)
   // dining starts at time 3, expiry is at time 2
 }
-Explaining the code:
+```
+
+## Explaining the code:
 
 Import the necessary modules with the ‘use’ keyword:
 use aiken/collection/list: Provides functions for working with lists, used for checking if an element is in a list.
