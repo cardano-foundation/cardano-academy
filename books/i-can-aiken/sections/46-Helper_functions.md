@@ -81,10 +81,13 @@ pub fn must_be_dined_by(diners, reserved_for) -> Bool {
 ```
 
 This defines a helper function must_be_dined_by that checks if a reservation is being used by the person it was reserved for.
-diners: Represents a list of people who are dining.
-reserved_for: Represents the person for whom the reservation was made.
-list.has(diners, reserved_for) This uses the list.has function to check if the reserved_for person is present in the diners list. It returns True if found, False otherwise.
-Lists are used a lot in Aiken. Think of them as ordered collections of elements, all of which must be of the same type. Remember that all data structures in Aiken are immutable, so adding an element to a list creates a new list. The old list remains unchanged. 
+- ```diners```: Represents a list of people who are dining.-
+- ```reserved_for```: Represents the person for whom the reservation was made.
+- ```list.has(diners, reserved_for)``` This uses the ```list.has``` function to check if the ```reserved_for``` person is present in the ```diners``` list. It returns ```True``` if found, ```False``` otherwise.
+
+Lists are used a lot in Aiken. Think of them as ordered collections of elements, all of which must be of the same type. Remember that **all data structures in Aiken are immutable**, so adding an element to a list creates a new list. The old list remains unchanged. 
+
+```aiken
 // helper function to check if the dining time is within valid reservation
 pub fn must_dine_before_expiry(
  range: ValidityRange,
@@ -100,6 +103,8 @@ pub fn must_dine_before_expiry(
  }
  //if the dining time is not specified, it's invalid
 }
+```
+
 This defines another helper function must_dine_before_expiry that checks if a reservation is being used before its expiry time.
 range: A ValidityRange representing the time range during which the reservation is valid.
 reservation_expiry: An Int represents the expiry time of the reservation.
