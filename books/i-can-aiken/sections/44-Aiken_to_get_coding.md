@@ -10,7 +10,7 @@ if you are using Linux, you can also use `npm`:
 ```sh
 npm install -g @aiken-lang/aikup
 ```
-This command installs ```sh aikup```, a basic cross-platform utility tool to download and manage Aiken across multiple versions and enable seamless one-click upgrades. Once installed, we can just run:
+This command installs ```aikup```, a basic cross-platform utility tool to download and manage Aiken across multiple versions and enable seamless one-click upgrades. Once installed, we can just run:
 
 ```sh
 aikup
