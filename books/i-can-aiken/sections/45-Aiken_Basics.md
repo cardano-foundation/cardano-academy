@@ -1,3 +1,24 @@
+import { Callout } from "nextra-theme-docs";
+
+# Control flow
+
+## Blocks
+
+Every block in Aiken is an expression. All expressions in the block are
+executed, and the result of the last expression is returned.
+
+```aiken
+let value: Bool = {
+    "Hello"
+    42 + 12
+    False
+}
+
+value == False
+```
+
+
+
 # Aiken basics
 
 **Syntax**
