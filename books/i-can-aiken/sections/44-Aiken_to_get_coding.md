@@ -7,18 +7,24 @@ brew install aiken-lang/tap/aikup
 ```
 if you are using Linux, you can also use `npm`:
 
+```sh
 npm install -g @aiken-lang/aikup
+```
+This command installs ```sh aikup```, a basic cross-platform utility tool to download and manage Aiken across multiple versions and enable seamless one-click upgrades. Once installed, we can just run:
 
-This command installs aikup, a basic cross-platform utility tool to download and manage Aiken across multiple versions and enable seamless one-click upgrades. Once installed, we can just run:
-
+```sh
 aikup
+```
 
 aikup runs on its own, installing the latest version available. If we want, we can also install specific versions by specifying a version number. To review different commands available, run aikup --help. Check you have the latest version by running:
+
+```sh
 aiken --version
+```
 
 **Language Server**
 
-The aiken command-line comes with a built-in language server.[^1] There are also plugins for most popular code editors that provide syntax highlighting and indentation rules for Aiken. I used *VSCode*[^2] for the code in this book. 
+The ```sh aiken``` command-line comes with a built-in language server.[^1] There are also plugins for most popular code editors that provide syntax highlighting and indentation rules for Aiken. I used *VSCode*[^2] for the code in this book. 
 
 **Creating a project**
 
@@ -32,7 +38,7 @@ Let’s create our first project. Use aiken new cfacademy/cfaiken to create the 
 ├── lib
 └── validators
 	└── placeholder.ak
-```sh
+```
 
 **Common commands**
 
