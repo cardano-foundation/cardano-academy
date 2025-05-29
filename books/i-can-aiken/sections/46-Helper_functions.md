@@ -87,7 +87,7 @@ This defines a helper function must_be_dined_by that checks if a reservation is 
 
 Lists are used a lot in Aiken. Think of them as ordered collections of elements, all of which must be of the same type. Remember that **all data structures in Aiken are immutable**, so adding an element to a list creates a new list. The old list remains unchanged. 
 
-```aiken
+```rust
 // helper function to check if the dining time is within valid reservation
 pub fn must_dine_before_expiry(
  range: ValidityRange,
@@ -105,45 +105,60 @@ pub fn must_dine_before_expiry(
 }
 ```
 
-This defines another helper function must_dine_before_expiry that checks if a reservation is being used before its expiry time.
-range: A ValidityRange representing the time range during which the reservation is valid.
-reservation_expiry: An Int represents the expiry time of the reservation.
-when range.lower_bound.bound_type is { ... }: 
+This defines another helper function ```must_dine_before_expiry``` that checks if a reservation is being used before its expiry time.
+
+- ```range```: A ```ValidityRange``` representing the time range during which the reservation is valid.
+- ```reservation_expiry```: An ```Int``` represents the expiry time of the reservation.
+- ```when range.lower_bound.bound_type is { ... }```: 
  
-For nameless fields in Aiken, we use the when *expr* is keywords for pattern-matching. As the documentation advises, it is like asking the compiler 'If the data has this shape then do that' for all possible shapes.  
+For nameless fields in Aiken, we use the ```when *expr* is``` keywords for pattern-matching. As the documentation advises, it is like asking the compiler 'If the data has this shape then do that' for all possible shapes.  
 
 In this case, we use pattern-matching to check the type of the lower bound of the validity range. 
-Finite(dining_start_time) -> dining_start_time <= reservation_expiry: If the lower bound is Finite, it extracts the earliest valid time (dining_start_time) and checks if it's less than or equal to the reservation_expiry.
-_ -> False: In any other case (for example, if the lower bound is infinite), the function returns False, indicating the reservation is not valid.
 
-Unit-test and property-based testing is easy with Aiken.
+- ```Finite(dining_start_time) -> dining_start_time <= reservation_expiry```: If the lower bound is ```Finite```, it extracts the earliest valid time ```(dining_start_time)``` and checks if it's less than or equal to the ```reservation_expiry```.
+- ```_ -> False```: In any other case (for example, if the lower bound is infinite), the function returns ```False```, indicating the reservation is not valid.
 
-Before we compile our code, we can check for bugs. Aiken has built in support for tests. What does that mean? It means we can write tests in our code, and easily check them with aiken check, which returns some useful stats in a short report. They work similarly to functions that take no arguments and have to return a Bool. A valid test returns True, and, if it fails, False. It can also return Void. This is a more recent addition but tests may also simply return Void, in which case they are considered successful if they don't fail.
+## Unit-test and property-based testing is easy with Aiken.
+
+Before we compile our code, we can check for bugs. Aiken has built in support for tests. What does that mean? It means we can write tests in our code, and easily check them with ```aiken check```, which returns some useful stats in a short report. They work similarly to functions that take no arguments and have to return a ```Bool```. A valid test returns ```True```, and, if it fails, ```False```. It can also return ```Void```. This is a more recent addition but tests may also simply return ```Void```, in which case they are considered successful if they don't fail.
 
 Tests can use any function, constant or types defined in a module, but note that tests cannot reference other tests. One key feature we alluded to earlier in the course is that tests run on the same virtual machine which runs validators on-chain. In other words, we can assume the tests are accurately mirroring how the code will run in production.
+
+```rust
 // These tests are for ensuring the logic of the helper functions are ok
 test early_dining_is_valid() {
  must_dine_before_expiry(interval.after(2), 3)
  // dining starts at time 2, expiry is at time 3
 }
-This is a test case that checks if the must_dine_before_expiry functions correctly, handling a valid scenario where the dining time is before the reservation expiry. interval.after(2) creates a ValidityRange that starts at time 2, and the expiry time is set to 3. The test expects this to return True.
+```
+
+This is a test case that checks if the ```must_dine_before_expiry``` functions correctly, handling a valid scenario where the dining time is before the reservation expiry. ```interval.after(2)``` creates a ```ValidityRange``` that starts at time ```2```, and the expiry time is set to ```3```. The test expects this to return ```True```.
+
+```rust
 test dining_on_time_is_valid() {
   must_dine_before_expiry(interval.after(2), 2)
   // dining starts at time 2, expiry is also at time 2
 }
-This test case checks if the function correctly handles a scenario in which the dining time is exactly at the reservation expiry time. It also expects this to return True.
+```
+
+This test case checks if the function correctly handles a scenario in which the dining time is exactly at the reservation expiry time. It also expects this to return ```True```.
+
+```rust
 test late_dining_is_invalid() {
  !must_dine_before_expiry(interval.after(3), 2)
  // dining starts at time 3, expiry is at time 2
 }
-This test case checks if the function correctly handles an invalid scenario in which the dining time is after the reservation expiry. It uses the ! operator to negate the result, expecting it to return False.
+```
+This test case checks if the function correctly handles an invalid scenario in which the dining time is after the reservation expiry. It uses the ! operator to negate the result, expecting it to return ```False```.
 
-Running aiken check returns a report that requires the memory and CPU execution units for each test. This allows us to use tests to benchmark different versions of our code. It grants us some flexibility also, as there’s no real execution limit as seen on-chain. 
+Running ```aiken check``` returns a report that requires the memory and CPU execution units for each test. This allows us to use tests to benchmark different versions of our code. It grants us some flexibility also, as there’s no real execution limit as seen on-chain. 
 
 This code defines helper functions for our tipping and customer review system. The functions do the following: 
-Ensure that the tip amount is above a minimum threshold
-count script inputs in a transaction
-verifies the integrity of the data by checking if the owner remains the same and if new reviews are correctly appended to the existing ones.
+- Ensure that the tip amount is above a minimum threshold
+- count script inputs in a transaction
+- verifies the integrity of the data by checking if the owner remains the same and if new reviews are correctly appended to the existing ones.
+
+```rust
 use aiken/collection/list
 use cardano/address.{Script}
 use cardano/transaction.{Input}
@@ -188,16 +203,24 @@ pub fn datum_contains_one_more_reviews(
    None -> False
  }
 }
-Explaining the code:
+```
+
+## Explaining the code:
 
 Import necessary modules with the ‘use’ keyword:
-use cardano/address.{Script}: Imports the Script type, representing a Plutus script, used to identify script inputs.
-use cardano/transaction.{Input}: Imports the Input type, representing a transaction input, used to analyze inputs to a script.
-use types/tipping.{Datum}: We can import types from another module with the ‘use’ keyword. This line imports the Datum type from a custom module types/tipping. This type holds data related to tipping, such as the recipient and the tip amount.
+- ```use cardano/address.{Script}```: Imports the ```Script``` type, representing a Plutus script, used to identify script inputs.
+- ```use cardano/transaction.{Input}```: Imports the ```Input``` type, representing a transaction input, used to analyze inputs to a script.
+- ```use types/tipping.{Datum}```: We can import types from another module with the ‘use’ keyword. This line imports the ```Datum``` type from a custom module ```types/tipping```. This type holds data related to tipping, such as the recipient and the tip amount.
+
+```rust 
 // Helper Functions
 // Minimum tip amount (like a suggested gratuity)
 pub const minimum_tip: Int = 5000000
-This line defines a public constant minimum_tip and sets its value to 5000000. This constant represents the minimum amount of Lovelace (ADA) required for a tip. In the last piece of code, we mentioned how the pub keyword can make modules reusable by other modules in the project. This pub keyword works similarly for Functions, type-aliases and constants. It exports them from a module, making them available for other functions. Otherwise they are considered private.
+```
+
+This line defines a public constant ```minimum_tip``` and sets its value to 5000000. This constant represents the minimum amount of Lovelace (ADA) required for a tip. In the last piece of code, we mentioned how the ```pub``` keyword can make modules reusable by other modules in the project. This ```pub``` keyword works similarly for Functions, type-aliases and constants. It exports them from a module, making them available for other functions. Otherwise they are considered private.
+
+```rust
 // Count script inputs
 
 pub fn count_input_scripts(inputs: List<Input>) -> Int {
@@ -211,15 +234,20 @@ pub fn count_input_scripts(inputs: List<Input>) -> Int {
    },
  )
 }
-This defines a function count_input_scripts that counts the number of script inputs in a transaction.
-inputs: A list of transaction inputs (List<Input>).
-list.count(inputs, fn(input) { ... }): This uses the list.count function to count the elements in the inputs list that satisfy a certain condition.
-The condition is defined by an anonymous function (fn(input) { ... }) that checks if the payment_credential of the input's address is a Script. If it is, the function returns True, indicating that this input is a script input.
-Anonymous functions are defined with the same familiar syntax but assigned to an identifier using a let-binding. This identifier, ‘input’ in this case, is the name called elsewhere. We will define this ‘input’ anonymous function shortly. 
+```
+This defines a function ```count_input_scripts``` that counts the number of script inputs in a transaction.
 
-Note the use of the _ wildcard here. We need to always complete patterns, but accounting for every single field or constructor can be tedious or just not possible. Aiken has you covered here. You can just use a _ wildcard which you can think of as a fallback pattern. Stick it in there as a kind of placeholder to match any remaining patterns. 
+- ```inputs```: A list of transaction inputs ```(List<Input>)```.
+- ```list.count(inputs, fn(input) { ... })```: This uses the ```list.count``` function to count the elements in the ```inputs``` list that satisfy a certain condition.
+- The condition is defined by an anonymous function ```(fn(input) { ... })``` that checks if the ```payment_credential``` of the input's address is a ```Script```. If it is, the function returns ```True```, indicating that this input is a script input.
 
-We just use the wildcard _ on its own here, but we could give it a name. We’ll also see later that any identifier starting with _ is treated as a wildcard. It’s best practice to use wildcards only as a last resort, because they can make your code age poorly! It is usually better to list all patterns explicitly with a when *expr* is clause, for example. 
+**Anonymous functions** are defined with the same familiar syntax but assigned to an identifier using a let-binding. This identifier, ‘input’ in this case, is the name called elsewhere. We will define this ‘input’ anonymous function shortly. 
+
+Note the use of the ```_``` wildcard here. We need to always complete patterns, but accounting for every single field or constructor can be tedious or just not possible. Aiken has you covered here. You can just use a ```_``` wildcard which you can think of as a fallback pattern. Stick it in there as a kind of placeholder to match any remaining patterns. 
+
+We just use the wildcard ```_``` on its own here, but we could give it a name. We’ll also see later that any identifier starting with ```_``` is treated as a wildcard. It’s best practice to use wildcards only as a last resort, because they can make your code age poorly! It is usually better to list all patterns explicitly with a ```when *expr* is``` clause, for example. 
+
+```rust
 // Verify data integrity
 pub fn datum_is_correct(input_datum: Datum, output_datum: Datum) -> Bool {
  and {
@@ -227,24 +255,39 @@ pub fn datum_is_correct(input_datum: Datum, output_datum: Datum) -> Bool {
    datum_contains_one_more_reviews(input_datum.reviews, output_datum.reviews)?,
  }
 }
-This defines a function datum_is_correct that checks if the data in the output datum is a valid update from the input datum.
-input_datum: The datum from the input UTxO.
-output_datum: The datum from the output UTxO.
-and { ... }: This combines two conditions using the and operator. Both conditions must be True for the function to return True.
-input_datum.owner == output_datum.owner: Checks if the owner field in both datums is the same.
-datum_contains_one_more_reviews(input_datum.reviews, output_datum.reviews)?: Calls the datum_contains_one_more_reviews function to check if the reviews list in the output datum has exactly one more review than the input datum. 
-Note our first encounter with the ? operator here, which means 'trace-if-false operator'. What does it do exactly? Good question.
+```
 
-Most of what we’re looking at in these validators are just predicates. Or, in simple terms, functions that return either True or False. We’ll see as we write more validators that there can be a lot of booleans expressions AND’d or OR’d together. In amongst hundreds or thousands of lines of code, it’s easy to quickly lose sight of the original context or intent. For example, take the following: 
+This defines a function ```datum_is_correct``` that checks if the data in the output datum is a valid update from the input datum.
+
+- ```input_datum```: The datum from the input UTxO.
+- ```output_datum```: The datum from the output UTxO.
+- ```and { ... }```: This combines two conditions using the and operator. Both conditions must be ```True``` for the function to return ```True```.
+    - ```input_datum.owner == output_datum.owner```: Checks if the ```owner``` field in both datums is the same.
+    - ```datum_contains_one_more_reviews(input_datum.reviews, output_datum.reviews)?```: Calls the ```datum_contains_one_more_reviews``` function to check if the ```reviews``` list in the output datum has exactly one more review than the input datum. 
+
+Note our first encounter with the ```?``` operator here, which means 'trace-if-false operator'. What does it do exactly? Good question.
+
+Most of what we’re looking at in these validators are just predicates. Or, in simple terms, functions that return either ```True``` or ```False```. We’ll see as we write more validators that there can be a lot of booleans expressions AND’d or OR’d together. In amongst hundreds or thousands of lines of code, it’s easy to quickly lose sight of the original context or intent. For example, take the following: 
+
+```rust
 let pizza_must_be_edible = True
 let !pineapple_on_pizza = False
 pizza_must_be_edible && !pineapple_on_pizza
-This returns False, but just False, so it’s easy to lose track of which branch was False in the original code. What if we need to troubleshoot much larger expressions?
+```
 
-The ? in the code is a postfix operator we can add to any boolean expression. It instructs the compiler to trace the expression only if it evaluates to False. This is really helpful to inspect an entire evaluation path that returned the False. So we could have coded above:
+This returns ```False```, but just ```False```, so it’s easy to lose track of which branch was ```False``` in the original code. What if we need to troubleshoot much larger expressions?
+
+The ```?``` in the code is a postfix operator we can add to any boolean expression. It instructs the compiler to trace the expression only if it evaluates to ```False```. This is really helpful to inspect an entire evaluation path that returned the ```False```. So we could have coded above:
+
+```rust
 pizza_must_be_edible? && !pineapple_on_pizza?
-Which would have created the trace !pineapple_on_pizza ? False.
-The ? operator behaves like trace, in that it’s affected by the Also at compile time, it has no impact on the code and the compiler ignores it.
+```
+
+Which would have created the trace ```!pineapple_on_pizza ? False```.
+
+The ```?``` operator behaves like ```trace```, in that it’s affected by the Also at compile time, it has no impact on the code and the compiler ignores it.
+
+```rust
 // Ensure reviews are appended
 pub fn datum_contains_one_more_reviews(
  input_reviews: List<ByteArray>,
@@ -256,14 +299,20 @@ pub fn datum_contains_one_more_reviews(
    None -> False
  }
 }
-This defines a function datum_contains_one_more_reviews that checks if the output_reviews list contains all the elements from the input_reviews list plus one new element at the beginning.
-input_reviews: The list of reviews from the input datum. 
-output_reviews: The list of reviews from the output datum.
-let new_message = list.head(output_reviews): This gets the first element (head) of the output_reviews list.
-when new_message is { ... }: This uses pattern matching to handle the case where the output_reviews list is not empty.
-Some(msg) -> list.push(input_reviews, msg) == output_reviews: If there is a new message (msg), it appends this message to the input_reviews list and checks if the result is equal to the output_reviews list.
-None -> False: If the output_reviews list is empty, the function returns False.
-This code defines two helper functions for a rewards points system. The points_earned function checks if a member is eligible for rewards by verifying their ID against a list of valid members. The points_sufficient function checks if a member has accumulated enough reward points to claim a reward.
+```
+
+This defines a function ```datum_contains_one_more_reviews``` that checks if the ```output_reviews``` list contains all the elements from the ```input_reviews``` list plus one new element at the beginning.
+
+- ```input_reviews```: The list of reviews from the input datum. 
+- ```output_reviews```: The list of reviews from the output datum.
+- ```let new_message = list.head(output_reviews)```: This gets the first element (head) of the ```output_reviews``` list.
+- ```when new_message is { ... }```: This uses pattern matching to handle the case where the ```output_reviews``` list is not empty.
+      - ```Some(msg) -> list.push(input_reviews, msg) == output_reviews```: If there is a new message ```(msg)```, it appends this message to the ```input_reviews``` list and checks if the result is equal to the ```output_reviews``` list.
+      - ```None -> False: If the output_reviews``` list is empty, the function returns ```False```.
+
+This code defines two helper functions for a rewards points system. The ```points_earned``` function checks if a member is eligible for rewards by verifying their ID against a list of valid members. The ```points_sufficient``` function checks if a member has accumulated enough reward points to claim a reward.
+
+```rust
 use aiken/collection/list
 use aiken/interval.{Finite}
 use cardano/transaction.{ValidityRange}
@@ -285,25 +334,32 @@ pub fn points_sufficient(range: ValidityRange, required_points: RewardPoints) {
 
  // Not enough
 }
-Explaining the code:
+```
+
+## Explaining the code:
 
 Import necessary modules with ‘use’ keyword:
-use aiken/collection/list: Provides functions for working with lists, specifically used here for checking membership in a list.
-use cardano/transaction.{ValidityRange}: Imports the ValidityRange type, used here to represent a range of reward points.
-use types/vesting.{MemberIDHash, RewardPoints}: Imports two custom types from a module named types/vesting:
-MemberIDHash:  represents a hash of a member's ID.
-RewardPoints:  represents a quantity of reward points.
+- ```use aiken/collection/list```: Provides functions for working with lists, specifically used here for checking membership in a list.
+- ```use cardano/transaction.{ValidityRange}```: Imports the ```ValidityRange``` type, used here to represent a range of reward points.
+- ```use types/vesting.{MemberIDHash, RewardPoints}```: Imports two custom types from a module named ```types/vesting```:
+    - ```MemberIDHash```:  represents a hash of a member's ID.
+    - ```RewardPoints```:  represents a quantity of reward points.
+
+```rust
 // Check if the member's ID matches the one on file
 pub fn points_earned(tx_signatures: List<MemberIDHash>, member_id: MemberIDHash) {
  list.has(tx_signatures, member_id)?
  // Is their ID on the list of valid members?
 }
+```
 
+This defines a function ```points_earned``` that checks if a given member ID is present in a list of valid member IDs.
 
-This defines a function points_earned that checks if a given member ID is present in a list of valid member IDs.
-tx_signatures: A list of MemberIDHash values represent the IDs of members who have signed a transaction.
-member_id: A MemberIDHash value representing the ID of the member whose points are being checked.
-list.has(tx_signatures, member_id): This uses the list.has function to check if the member_id is present in the tx_signatures list. It returns True if the ID is found, and False otherwise.
+- ```tx_signatures```: A list of ```MemberIDHash``` values represent the IDs of members who have signed a transaction.
+- ```member_id```: A ```MemberIDHash``` value representing the ID of the member whose points are being checked.
+- ```list.has(tx_signatures, member_id)```: This uses the list.has function to check if the ```member_id``` is present in the ```tx_signatures``` list. It returns ```True``` if the ID is found, and ```False``` otherwise.
+
+```rust
 // Check if enough points have been accumulated
 pub fn points_sufficient(range: ValidityRange, required_points: RewardPoints) {
  when range.upper_bound.bound_type is {
@@ -313,9 +369,12 @@ pub fn points_sufficient(range: ValidityRange, required_points: RewardPoints) {
  }
  // Not enough
 }
-This defines a function points_sufficient that checks if the total points earned are greater than or equal to the required points for a reward.
-range: A ValidityRange value represents the range of earned reward points.
-required_points: A RewardPoints value represents the number of points required to claim a reward.
-when range.upper_bound.bound_type is { ... }: This uses pattern-matching to check the type of the upper bound of the ValidityRange.
-Finite(total_points_earned) -> (required_points <= total_points_earned)?: If the upper bound is Finite, it extracts the value of the upper bound (total_points_earned) and checks if it's greater than or equal to required_points. 
-_ -> False: If the upper bound is not Finite (if it's infinite), the function returns False, indicating there are not enough points.
+```
+
+This defines a function ```points_sufficient``` that checks if the total points earned are greater than or equal to the required points for a reward.
+
+- ```range```: A ```ValidityRange``` value represents the range of earned reward points.
+- ```required_points```: A ```RewardPoints``` value represents the number of points required to claim a reward.
+- ```when range.upper_bound.bound_type is { ... }```: This uses pattern-matching to check the type of the upper bound of the ```ValidityRange```.
+        - ```Finite(total_points_earned) -> (required_points <= total_points_earned)?```: If the upper bound is ```Finite```, it extracts the value of the upper bound ```(total_points_earned)``` and checks if it's greater than or equal to ```required_points```. 
+        - ```_ -> False```: If the upper bound is not ```Finite``` (if it's infinite), the function returns ```False```, indicating there are not enough points.
