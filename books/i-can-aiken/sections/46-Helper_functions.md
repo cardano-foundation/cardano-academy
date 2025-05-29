@@ -49,16 +49,19 @@ test late_dining_is_invalid() {
   // dining starts at time 3, expiry is at time 2
 }
 ```
-
 ## Explaining the code:
 
 Import the necessary modules with the ‘use’ keyword:
-use aiken/collection/list: Provides functions for working with lists, used for checking if an element is in a list.
-use aiken/interval.{Finite, Interval}: Imports types for working with time intervals:
-Finite: Represents a finite bound in a time interval.
-Interval: Represents a time interval with a lower and upper bound.
-use cardano/transaction.{ValidityRange}: Imports the ValidityRange type, which defines the time range during which a transaction is valid. This is used to represent the time of a dinner reservation.
-We use the fn keyword to define functions in Aiken. Functions can take arguments, or typed arguments, and always have a return type. Everything in Aiken is an expression, so you won't see a return keyword in any function, they just return whatever they evaluate to.
+
+- ```use aiken/collection/list```: Provides functions for working with lists, used for checking if an element is in a list.
+- ```use aiken/interval.{Finite, Interval}```: Imports types for working with time intervals:
+    - ```Finite```: Represents a finite bound in a time interval.
+    - ```Interval```: Represents a time interval with a lower and upper bound.
+- ```use cardano/transaction.{ValidityRange}```: Imports the ```ValidityRange``` type, which defines the time range during which a transaction is valid. This is used to represent the time of a dinner reservation.
+
+We use the ```fn``` keyword to define functions in Aiken. Functions can take arguments, or typed arguments, and always have a return type. Everything in Aiken is an expression, so you won't see a *return* keyword in any function, they just return whatever they evaluate to.
+
+```rust
 fn add(bill: Int, tip: Int, change: Int) -> Int {
   bill + tip + change
 }
@@ -66,11 +69,17 @@ fn add(bill: Int, tip: Int, change: Int) -> Int {
 fn multiply(rating: Int, stars: Int) -> Int {
   rating * stars
 }
-These functions are private, so they can only be called by other functions within the same module. If we use pub keyword, it makes them usable in other modules.
+```
+
+These functions are private, so they can only be called by other functions within the same module. If we use the ```pub``` keyword, it makes them usable in other modules.
+
+```rust
 pub fn must_be_dined_by(diners, reserved_for) -> Bool {
    // Check if the reserved customer is in the list of diners
    list.has(diners, reserved_for)
 }
+```
+
 This defines a helper function must_be_dined_by that checks if a reservation is being used by the person it was reserved for.
 diners: Represents a list of people who are dining.
 reserved_for: Represents the person for whom the reservation was made.
