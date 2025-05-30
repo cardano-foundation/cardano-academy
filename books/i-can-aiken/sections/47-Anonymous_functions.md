@@ -120,9 +120,9 @@ pub fn walletAddress(hash: ByteArray) -> Address {
 }
 ```
 
-This function creates an Address object that represents a wallet address (an address associated with a public key).
-It takes one argument:
-hash: A ByteArray that represents the hash of the verification key (public key).
-let address =
-   Address { payment_credential: Script(hash), stake_credential: None }: This line creates the Address object. The payment_credential is set to VerificationKey(hash), indicating that this address is associated with a public key. The stake_credential is set to None, similar to the scriptAddress function previously.
-address: The function returns the created Address object.
+- This function creates an ```Address``` object that represents a wallet address (an address associated with a public key).
+- It takes one argument:
+```hash```: A ```ByteArray``` that represents the hash of the verification key (public key).
+- let address =
+   ```Address { payment_credential: Script(hash), stake_credential: None }```: This line creates the ```Address``` object. The ```payment_credential``` is set to ```VerificationKey(hash)```, indicating that this address is associated with a public key. The ```stake_credential``` is set to ```None```, similar to the ```scriptAddress``` function previously.
+- ```address```: The function returns the created ```Address``` object.
