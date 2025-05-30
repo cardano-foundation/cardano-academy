@@ -83,26 +83,33 @@ pub fn oref(hash: ByteArray, index: Int) -> OutputReference {
 }
 ```
 
-This function creates an OutputReference object, which is used to uniquely identify a UTxO.
-It takes two arguments:
-hash: A ByteArray that represents the transaction hash of the transaction that created the UTxO.
-index: An Int that represents the output index of the UTxO within the transaction.
-let oref = OutputReference { transaction_id: hash, output_index: index }: This line creates the OutputReference object.
-oref: The function returns the created OutputReference object.
+- This function creates an ```OutputReference``` object, which is used to uniquely identify a UTxO.
+- It takes two arguments:
+     - ```hash```: A ```ByteArray``` that represents the transaction hash of the transaction that created the UTxO.
+     - ```index```: An ```Int``` that represents the output index of the UTxO within the transaction.
+- ```let oref = OutputReference { transaction_id: hash, output_index: index }```: This line creates the OutputReference object.
+oref: The function returns the created ```OutputReference``` object.
 
-scriptAddress function:
+```scriptAddress``` function:
+
+```rust
 pub fn scriptAddress(hash: ByteArray) -> Address {
  let address =
    Address { payment_credential: Script(hash), stake_credential: None }
  address
 }
-This function creates an Address object that represents a script address.
-It takes one argument:
-hash: A ByteArray that represents the hash of the script.
-let address = Address { payment_credential: Script(hash), stake_credential: None }: This line creates the Address object. The payment_credential is set to Script(hash), indicating that this address is associated with a script. The stake_credential is set to None, as this function is creating a simple address for payment.
-address: The function returns the created Address object.
+```
 
-walletAddress function:
+This function creates an ```Address``` object that represents a script address.
+
+- It takes one argument:
+    - ```hash```: A ByteArray that represents the hash of the script.
+- ```let address = Address { payment_credential: Script(hash), stake_credential: None }```: This line creates the ```Address``` object. The ```payment_credential``` is set to ```Script(hash)```, indicating that this address is associated with a script. The ```stake_credential``` is set to ```None```, as this function is creating a simple address for payment.
+- ```address```: The function returns the created Address object.
+
+```walletAddress``` function:
+
+```rust
 pub fn walletAddress(hash: ByteArray) -> Address {
  let address =
    Address {
@@ -111,6 +118,8 @@ pub fn walletAddress(hash: ByteArray) -> Address {
    }
  address
 }
+```
+
 This function creates an Address object that represents a wallet address (an address associated with a public key).
 It takes one argument:
 hash: A ByteArray that represents the hash of the verification key (public key).
