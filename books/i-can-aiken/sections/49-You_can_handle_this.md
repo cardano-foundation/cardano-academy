@@ -1,4 +1,5 @@
-You can handle this
+# You can handle this
+
 Validator handlers
 You can promote functions to validator handlers with the validator keyword. A validator is a named block that contains one or more of the following 6 handlers: mint, spend, withdraw, publish, vote or propose.
 
@@ -7,10 +8,13 @@ A redeemer, which is a user-defined type and value usually provided when the UTx
 A target, whose type matches the corresponding purpose.
 A transaction representing the script execution context.
 The spend handler also takes an optional first argument, a user-defined datum. The Aiken documentation summarises this neatly with the following table. 
-Figure 53: Aiken Purposes
+
+**Figure 53**: Aiken Purposes
 Our first Aiken validator script ensures that a restaurant reservation is valid only if:
 The person using the reservation is the same person it was reserved for.
 The reservation is used before its expiry time.
+
+```rust
 use cardano/transaction.{OutputReference, Transaction}
 use helpers/arrive.{must_be_dined_by, must_dine_before_expiry}
 use types/arrive_on_time.{ReservationDetails}
@@ -38,7 +42,9 @@ validator validate_reservation {
    fail
  }
 }
-Explaining the code:
+```
+
+## Explaining the code:
 
 This code defines a validator for a restaurant reservation. 
 
@@ -67,7 +73,8 @@ There is some more nuance as to when you should use expect with when/is and if/i
 let enables you to do what is called "destructuring". This means pull apart the different constituents of a given element. If that element does not have exactly the structure you are describing, the compiler will let you know there is an error, because it cannot guarantee that your destructuring is correct. In contrast, expect enables you to "attempt" destructuring something into the shape you are describing. This is useful when the compiler cannot know at compile time what shape your structure may have. For example when it is an enum, and can have any shape of the different variant types. Instead of the compiler checking at compile time, the code will check at run time that it has the correct shape, and crash otherwise.
 
 So when there is a single possible shape, use let. When the shape is unknown at compile time, use expect.
-And && or
+
+## And && or
 
 As everything is an expression, or predicate returning a Bool, you'll soon encounter long chains of logical operators when coding more complex validators, eg. 
 True && False && True || False
