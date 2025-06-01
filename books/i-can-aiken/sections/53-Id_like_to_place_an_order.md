@@ -1,8 +1,10 @@
-I’d like to place an order
+# 53. I’d like to place an order
+
 This validator script ensures that when a customer places an order:
 The transaction includes an output sent to the correct restaurant's address.
 The amount of ada in that output is greater than or equal to the bill amount for the order.
 
+```rust
 use aiken/collection/list
 use cardano/assets.{lovelace_of}
 use cardano/transaction.{OutputReference, Transaction}
@@ -30,11 +32,15 @@ validator place_order {
    fail
  }
 }
-Explaining the code:
+```
+
+## Explaining the code:
+
 Lines 1-4: Importing Modules with ‘use’ keyword:
 use aiken/collection/list: This line imports functions for working with lists, which will be used to search through transaction outputs.
 use cardano/assets.{lovelace_of}: This line imports the lovelace_of function, used to extract the amount of ada (Lovelace) from a value.
 use types/place_order.{Datum}: This line imports a custom data type called Datum from the module types/place_order. This type holds information relevant to the order, such as the restaurant's address and the bill amount.
+
 Lines 5-25: Validator Definition
 validator place_order { ... }: This defines a validator named place_order.
 Lines 6-23: spend Handler
@@ -43,6 +49,7 @@ datum: Option<Datum>: This expects an optional datum of type Datum. This datum h
 _redeemer: Void This indicates that the redeemer (data provided by the user when spending the output) is not used in this validator.
 _output_reference: OutputReference: This represents the output reference being spent, but it's not used in this validator.
 tx: Transaction: This provides access to the current transaction being validated.
+
 Lines 7-19: Validation Logic
 expect Some(d) = datum: This line checks if the datum is present. If it is, it extracts the Datum and assigns it to the variable d. If the datum is not present, the script execution halts.
 
