@@ -1,6 +1,7 @@
 # 51. Multiple Validators
 
-/validators/banned-customers/bc.ak
+**/validators/banned-customers/bc.ak**
+
 Next, we’ll code three simple validators, each with a different purpose related to managing restaurant reservations.
 
 ```rust
