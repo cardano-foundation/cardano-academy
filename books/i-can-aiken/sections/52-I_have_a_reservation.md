@@ -1,7 +1,10 @@
-52. I have a reservation
+# 52. I have a reservation
+
 This validator script manages restaurant reservations by allowing two actions:
 Cancellation: Only the customer who made the reservation can cancel it.
 Confirmation: Confirming a reservation, potentially with a special request that requires a secret phrase to match.
+
+```rust
 use aiken/collection/list
 use cardano/transaction.{OutputReference, Transaction}
 use types/reservation.{Action, Cancel, Confirm, Reservation, secret_phrase}
@@ -26,8 +29,12 @@ validator reservation_handler {
    fail
  }
 }
-Explaining the code:
+```
+
+## Explaining the code:
+
 Lines 1-4: Importing Modules with ‘use’ keyword:
+
 use aiken/collection/list: This line imports functions for working with lists, specifically the has function used to check if a list contains a specific element.
 use cardano/transaction.{OutputReference, Transaction}: This line imports the necessary types for working with Cardano transactions, including OutputReference and Transaction.
 use types/reservation.{Action, Cancel, Confirm, Reservation, secret_phrase}: This line imports custom data types and a constant from the custom module types/reservation we coded earlier. These include:
@@ -36,15 +43,23 @@ Cancel: A constructor for the Action type representing the cancellation action.
 Confirm: A constructor for the Action type representing the confirmation action, potentially with a special request.
 Reservation: A data type holding information about a reservation, such as the customer's ID.
 secret_phrase: A constant representing a secret phrase used for confirming reservations with special requests.
+
 Lines 5-21: Validator Definition
+
 validator reservation_handler { ... }: This defines a validator named reservation_handler. 
 Lines 6-18: spend Handler
+
+```rust
 spend(
    datum: Option<Reservation>,
    action: Action,
    _output_reference: OutputReference,
    tx: Transaction,
- ) { ... }: This is the spend handler within the validator. It defines the logic that must be satisfied when funds are spent from an output locked by this validator script.
+ ) { ... }:
+```
+
+This is the spend handler within the validator. It defines the logic that must be satisfied when funds are spent from an output locked by this validator script.
+
 datum: Option<Reservation>: This expects an optional datum of type Reservation. This datum holds the reservation information.
 action: Action: This expects an Action value representing the action to be performed (cancel or confirm).
 _output_reference: OutputReference: This represents the output reference being spent, but it's not used in this validator.
