@@ -1,6 +1,9 @@
-. Multiple Validators
+# 51. Multiple Validators
+
 /validators/banned-customers/bc.ak
 Next, we’ll code three simple validators, each with a different purpose related to managing restaurant reservations.
+
+```rust
 // Reservation Validator (always valid)
 validator always_valid_reservation {
  spend(_customer: Option<Data>, _table: Data, _output_reference: Data, _tx: Data) {
@@ -32,7 +35,8 @@ validator group_size {
    fail
  }
 }
-Explaining the code:
+```
+## Explaining the code:
 1. always_valid_reservation
  always_valid_reservation is a simple validator that approves any spending transaction.
 validator always_valid_reservation { ... }: This defines a validator named always_valid_reservation.
@@ -55,10 +59,14 @@ else(_) { fail }: This catch-all condition handles non-spending transactions.
 These examples demonstrate how Aiken can be used to define simple yet effective validators with different logic for controlling spending conditions in a smart contract. We started with these simple validators, however, in practice, you’ll likely need to implement more complex logic. 
 Remember, we said validators ‘guard’ the UTxOs residing at an address. Leaving something 'unguarded', that 'always succeeds' can have dire consequences. This issue was highlighted in a high profile DDOS attack on Cardano in 2024.
 
-DDOS Attacker sabotages himself
+## DDOS Attacker sabotages himself
+
 Between June 24-25th 2024, Cardano was the target of a DDoS attack. The adversary executed the attack from three wallets, flooding the network with transactions containing scripts in an attempt to exhaust the network’s resources. The DDoS attack resulted in a high load on the network. Stake Pool Operators (SPOs) were negatively affected by the higher number of height battles. 
+
 Despite these issues, the Cardano blockchain continued to operate effectively, with only minor delays in transaction processing times. The eUTxO.org explorer captured the attack visually.
 
-Figure 55: eutxo.org transaction output 
+**Figure 55**: eutxo.org transaction output 
+
 The attack was halted after developers from Anastasia Labs published instructions on how to take ada from the attacker. In short, when registering a staking script, a 2 ada deposit is required by the protocol and to reclaim this deposit back, you must deregister the script. 
+
 The attacker was complacent as no validations were guarding the 194 scripts used in the attack, so there were no restrictions on who could reclaim deposits. As each validator was written to 'always succeed', and as the transaction fee was lower than the deposit obtained, the community confiscated the adversary's ada and the attack ended. Moral of the story…keep your guard up!
