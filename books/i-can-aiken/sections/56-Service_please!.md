@@ -1,9 +1,12 @@
-56. Service please!
+# 56. Service please!
+
 This validator script manages orders in a restaurant setting with these key features:
 Multiple Chef Signatures: Requires signatures from all chefs involved in an order.
 Customer Verification: Verifies the customer's identity using their stake credential.
 Two Handlers: Provides separate logic for marking an order as served (withdraw) and for spending the fulfilled order (spend).
 This example shows how Aiken can be used to create a complex, multivalidator for managing workflows.
+
+```rust
 use aiken/collection/list
 use cardano/address.{Address, Inline, Script, StakeCredential}
 use cardano/transaction.{ InlineDatum, Input, Output, OutputReference, Transaction,}
@@ -58,14 +61,19 @@ validator service_please {
    fail
  }
 }
-Explaining the code:
+```
+
+## Explaining the code:
+
 Lines 1-6: Importing Modules with ‘use’ keyword:
 use aiken/collection/list: This imports functions for working with lists, like all, has, and find.
 use cardano/address.{Address, Inline, Script, StakeCredential}: This imports types for working with Cardano addresses and stake credentials.
 use cardano/transaction.{ InlineDatum, Input, Output, OutputReference, Transaction,}: This imports types for working with Cardano transactions.
 use types/service_please.{OrderDatum}: This imports a custom data type OrderDatum, containing details about the order, including the chefs involved.
+
 Lines 7-58: Validator Definition
 validator service_please { ... }: This defines the validator named service_please.
+
 Lines 8-39: withdraw Handler
 withdraw(_redeemer: Data, order_credential: StakeCredential, tx: Transaction) { ... }: This defines the withdraw handler which handles the logic for marking an order as served.
 _redeemer: Data: The redeemer (unused in this handler).
@@ -80,6 +88,8 @@ Inside the anonymous function:
 let Input { output: Output { address: Address {
  { payment_credential: payment_cred, .. }, …}, …} = input: Destructures the input to access the payment credential of the output's address. 
 While we encountered constructors earlier, we can also leverage destructuring which is the opposite of constructing a value and uses a similar syntax but backwards to before. So what we saw earlier was constructors and fields appearing on the right-hand side of an assignment, but with destructuring, they are on the left-hand side. Using a restaurant meal as an example:
+
+```rust
 // Constructing
 let meal = Meal { menuName: "Waldorf Salad", calories: 500, rating: 5 }
 // Destructuring
@@ -91,6 +101,8 @@ rating == 5 // True
 let menuName = meal.name
 let calories = meal.calories
 let rating = meal.age
+```
+
 Destructuring is convenient here because the associated type has a single constructor and the identifiers introduced also have the same names as the fields. More advanced examples are in the aiken-lang.org docs.
 when payment_cred is { … }: Checks if the payment credential is a script credential and if its hash matches the customer_hash.
  expect Input { output: Output { datum: InlineDatum(raw_datum), .. }, .. } =
@@ -98,6 +110,8 @@ order_input: Ensures the found input has an inline datum.
 expect order_datum: OrderDatum = raw_datum: Extracts the OrderDatum from the raw datum.
 list.all(orderDatum.chef_hashes, fn(h) { list.has(extra_signatories, h) }): Checks if all the chef hashes in orderDatum.chef_hashes are present in the transaction's extra_signatories.
 Lines 41-56: spend Handler
+
+```rust
 spend( datum: Option<OrderDatum>,
    _redeemer: Data,
    _output_reference: OutputReference,
@@ -112,7 +126,7 @@ spend( datum: Option<OrderDatum>,
  }
  else(_) {
    fail
-
+```
 
 spend( datum: Option<OrderDatum>,_redeemer: Data, _output_reference: OutputReference, tx: Transaction) { ... }: Defines the spend handler,  for spending the output that represents the fulfilled order.
 datum: Option<OrderDatum>: The datum associated with the output.
