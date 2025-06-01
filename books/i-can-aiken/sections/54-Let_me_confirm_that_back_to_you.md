@@ -1,9 +1,12 @@
-Let me confirm that back to you
+# 54. Let me confirm that back to you
+
 This validator script ensures that:
 The correct UTxO is being spent.
 The served dish matches the customer's order.
 The dish is actually sent to the customer.
 The customer is not exploiting the script to claim multiple dishes unfairly.
+
+```rust
 use aiken/collection/list
 use aiken/option
 use cardano/assets.{quantity_of}
@@ -57,30 +60,32 @@ validator validate_order {
    fail
  }
 }
-Explaining the code:
+```
+
+## Explaining the code:
 
 Lines 1-5: Importing Modules
 use aiken/option: Imports functions for working with optional values.
 use cardano/assets.{quantity_of}: Imports a function to check the quantity of a specific asset in a value.
 use cardano/transaction.{OutputReference, Transaction, find_input}: Imports types and functions for working with transactions, including finding a specific input in a transaction.
 use types/dish_served.{MenuItem, OrderDatum, ServeRedeemer}: Imports custom data types related to orders and dishes.
+
 Lines 7-51: Validator Definition
 validator validate_order { … }: Defines a validator named validate_order.
+
 Lines 8-49: spend Handler
 spend( ... ) { ... }: This is the spend handler, defining the logic executed when an output locked by this script is spent.
 datum: Option<OrderDatum>: Expects an optional datum of type OrderDatum, which holds the customer's order information.
 redeemer: ServeRedeemer: Expects a redeemer of type ServeRedeemer, which contains information about the dish being served.
 oref: OutputReference: The output reference being spent.
 tx: Transaction: The current transaction.
+
 Lines 13-47: Validation Logic
 expect Some(order) = datum: Checks if the datum exists and extracts the OrderDatum into the order variable.
 
-
 expect Some(order_input) = find_input(tx.inputs, oref): Ensures the transaction is spending the correct UTxO (unspent transaction output) by finding the input with the given oref.
 
-
 let MenuItem(served_restaurant, served_dish_name) = redeemer.served_dish: Extracts the restaurant and dish name from the ServeRedeemer.
-
 
 let dish_is_compatible = and { … }: Checks if the served dish is compatible with the order:
 
