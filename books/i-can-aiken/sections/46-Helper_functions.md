@@ -8,7 +8,7 @@ Aiken code comprises functions and types bundled together in modules. Each modul
 
 This code defines helper functions and test cases for managing restaurant reservations. The helper functions ensure that the reservation is used by the correct person and within the valid time frame. The subsequent test cases help verify the logic of the must_dine_before_expiry function.
 
-```rust
+```aiken
 use aiken/collection/list
 use aiken/interval.{Finite, Interval}
 use cardano/transaction.{ValidityRange}
@@ -61,7 +61,7 @@ Import the necessary modules with the ‘use’ keyword:
 
 We use the ```fn``` keyword to define functions in Aiken. Functions can take arguments, or typed arguments, and always have a return type. Everything in Aiken is an expression, so you won't see a *return* keyword in any function, they just return whatever they evaluate to.
 
-```rust
+```aiken
 fn add(bill: Int, tip: Int, change: Int) -> Int {
   bill + tip + change
 }
@@ -73,7 +73,7 @@ fn multiply(rating: Int, stars: Int) -> Int {
 
 These functions are private, so they can only be called by other functions within the same module. If we use the ```pub``` keyword, it makes them usable in other modules.
 
-```rust
+```aiken
 pub fn must_be_dined_by(diners, reserved_for) -> Bool {
    // Check if the reserved customer is in the list of diners
    list.has(diners, reserved_for)
@@ -87,7 +87,7 @@ This defines a helper function must_be_dined_by that checks if a reservation is 
 
 Lists are used a lot in Aiken. Think of them as ordered collections of elements, all of which must be of the same type. Remember that **all data structures in Aiken are immutable**, so adding an element to a list creates a new list. The old list remains unchanged. 
 
-```rust
+```aiken
 // helper function to check if the dining time is within valid reservation
 pub fn must_dine_before_expiry(
  range: ValidityRange,
@@ -124,7 +124,7 @@ Before we compile our code, we can check for bugs. Aiken has built in support fo
 
 Tests can use any function, constant or types defined in a module, but note that tests cannot reference other tests. One key feature we alluded to earlier in the course is that tests run on the same virtual machine which runs validators on-chain. In other words, we can assume the tests are accurately mirroring how the code will run in production.
 
-```rust
+```aiken
 // These tests are for ensuring the logic of the helper functions are ok
 test early_dining_is_valid() {
  must_dine_before_expiry(interval.after(2), 3)
@@ -134,7 +134,7 @@ test early_dining_is_valid() {
 
 This is a test case that checks if the ```must_dine_before_expiry``` functions correctly, handling a valid scenario where the dining time is before the reservation expiry. ```interval.after(2)``` creates a ```ValidityRange``` that starts at time ```2```, and the expiry time is set to ```3```. The test expects this to return ```True```.
 
-```rust
+```aiken
 test dining_on_time_is_valid() {
   must_dine_before_expiry(interval.after(2), 2)
   // dining starts at time 2, expiry is also at time 2
@@ -143,7 +143,7 @@ test dining_on_time_is_valid() {
 
 This test case checks if the function correctly handles a scenario in which the dining time is exactly at the reservation expiry time. It also expects this to return ```True```.
 
-```rust
+```aiken
 test late_dining_is_invalid() {
  !must_dine_before_expiry(interval.after(3), 2)
  // dining starts at time 3, expiry is at time 2
@@ -158,7 +158,7 @@ This code defines helper functions for our tipping and customer review system. T
 - count script inputs in a transaction
 - verifies the integrity of the data by checking if the owner remains the same and if new reviews are correctly appended to the existing ones.
 
-```rust
+```aiken
 use aiken/collection/list
 use cardano/address.{Script}
 use cardano/transaction.{Input}
@@ -212,7 +212,7 @@ Import necessary modules with the ‘use’ keyword:
 - ```use cardano/transaction.{Input}```: Imports the ```Input``` type, representing a transaction input, used to analyze inputs to a script.
 - ```use types/tipping.{Datum}```: We can import types from another module with the ‘use’ keyword. This line imports the ```Datum``` type from a custom module ```types/tipping```. This type holds data related to tipping, such as the recipient and the tip amount.
 
-```rust 
+```aiken 
 // Helper Functions
 // Minimum tip amount (like a suggested gratuity)
 pub const minimum_tip: Int = 5000000
@@ -220,7 +220,7 @@ pub const minimum_tip: Int = 5000000
 
 This line defines a public constant ```minimum_tip``` and sets its value to 5000000. This constant represents the minimum amount of Lovelace (ADA) required for a tip. In the last piece of code, we mentioned how the ```pub``` keyword can make modules reusable by other modules in the project. This ```pub``` keyword works similarly for Functions, type-aliases and constants. It exports them from a module, making them available for other functions. Otherwise they are considered private.
 
-```rust
+```aiken
 // Count script inputs
 
 pub fn count_input_scripts(inputs: List<Input>) -> Int {
@@ -247,7 +247,7 @@ Note the use of the ```_``` wildcard here. We need to always complete patterns, 
 
 We just use the wildcard ```_``` on its own here, but we could give it a name. We’ll also see later that any identifier starting with ```_``` is treated as a wildcard. It’s best practice to use wildcards only as a last resort, because they can make your code age poorly! It is usually better to list all patterns explicitly with a ```when *expr* is``` clause, for example. 
 
-```rust
+```aiken
 // Verify data integrity
 pub fn datum_is_correct(input_datum: Datum, output_datum: Datum) -> Bool {
  and {
@@ -269,7 +269,7 @@ Note our first encounter with the ```?``` operator here, which means 'trace-if-f
 
 Most of what we’re looking at in these validators are just predicates. Or, in simple terms, functions that return either ```True``` or ```False```. We’ll see as we write more validators that there can be a lot of booleans expressions AND’d or OR’d together. In amongst hundreds or thousands of lines of code, it’s easy to quickly lose sight of the original context or intent. For example, take the following: 
 
-```rust
+```aiken
 let pizza_must_be_edible = True
 let !pineapple_on_pizza = False
 pizza_must_be_edible && !pineapple_on_pizza
@@ -279,7 +279,7 @@ This returns ```False```, but just ```False```, so it’s easy to lose track of 
 
 The ```?``` in the code is a postfix operator we can add to any boolean expression. It instructs the compiler to trace the expression only if it evaluates to ```False```. This is really helpful to inspect an entire evaluation path that returned the ```False```. So we could have coded above:
 
-```rust
+```aiken
 pizza_must_be_edible? && !pineapple_on_pizza?
 ```
 
@@ -287,7 +287,7 @@ Which would have created the trace ```!pineapple_on_pizza ? False```.
 
 The ```?``` operator behaves like ```trace```, in that it’s affected by the Also at compile time, it has no impact on the code and the compiler ignores it.
 
-```rust
+```aiken
 // Ensure reviews are appended
 pub fn datum_contains_one_more_reviews(
  input_reviews: List<ByteArray>,
@@ -312,7 +312,7 @@ This defines a function ```datum_contains_one_more_reviews``` that checks if the
 
 This code defines two helper functions for a rewards points system. The ```points_earned``` function checks if a member is eligible for rewards by verifying their ID against a list of valid members. The ```points_sufficient``` function checks if a member has accumulated enough reward points to claim a reward.
 
-```rust
+```aiken
 use aiken/collection/list
 use aiken/interval.{Finite}
 use cardano/transaction.{ValidityRange}
@@ -345,7 +345,7 @@ Import necessary modules with ‘use’ keyword:
     - ```MemberIDHash```:  represents a hash of a member's ID.
     - ```RewardPoints```:  represents a quantity of reward points.
 
-```rust
+```aiken
 // Check if the member's ID matches the one on file
 pub fn points_earned(tx_signatures: List<MemberIDHash>, member_id: MemberIDHash) {
  list.has(tx_signatures, member_id)?
@@ -359,7 +359,7 @@ This defines a function ```points_earned``` that checks if a given member ID is 
 - ```member_id```: A ```MemberIDHash``` value representing the ID of the member whose points are being checked.
 - ```list.has(tx_signatures, member_id)```: This uses the list.has function to check if the ```member_id``` is present in the ```tx_signatures``` list. It returns ```True``` if the ID is found, and ```False``` otherwise.
 
-```rust
+```aiken
 // Check if enough points have been accumulated
 pub fn points_sufficient(range: ValidityRange, required_points: RewardPoints) {
  when range.upper_bound.bound_type is {
