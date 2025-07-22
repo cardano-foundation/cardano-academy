@@ -6,6 +6,7 @@ In this course we’ll explore the origins of blockchain and review well known p
 
 Before we jump in, we should say there is a glossary to help you better understand some of the terminology in the course.
 
-*Disclaimer*
+**Disclaimer**
+
 The content within this course is for educational purposes only. It should not be taken as financial advice. 
 
