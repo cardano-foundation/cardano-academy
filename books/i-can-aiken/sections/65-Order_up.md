@@ -10,7 +10,7 @@ It calculates the total amount paid.
 It ensures that the total paid is enough to cover the bill (menu.price).
 use aiken/collection/list
 
-```rust
+```aiken
 use aiken/crypto.{Blake2b_224, Hash, VerificationKey}
 use cardano/address
 use cardano/assets.{lovelace_of, merge}
