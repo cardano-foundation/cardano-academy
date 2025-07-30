@@ -3,7 +3,7 @@ This code defines a validator script named tips that manages a tipping system. T
 Adding a Tip: Ensures that the tip amount meets the minimum requirement and that the datum is correctly updated.
 Claiming Tips: Allows only the owner of the tip jar to claim the accumulated tips.
 
-```rust
+```aiken
 use aiken/collection/list
 use cardano/address.{Script}
 use cardano/assets.{lovelace_of}
