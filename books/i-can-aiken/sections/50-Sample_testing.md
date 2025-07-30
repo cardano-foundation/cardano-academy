@@ -2,7 +2,7 @@
 
 For each validator we code, we should write some tests. The following code defines a test case for the ```validate_reservation``` validator we discussed earlier. Taking a closer look...
 
-```rust
+```aiken
 use aiken/interval.{Finite, Interval, IntervalBound}
 use arrive_on_time/arrive-on-time
 use cardano/transaction.{Transaction, placeholder}
@@ -80,7 +80,7 @@ Aiken has its own built-in **property-based testing** framework with **integrate
 
 For our simple example, we’ll use a property-based test with a single argument that specifies a ```Fuzzer```. A fuzzer generates random values for our stress test. This ```aiken/fuzz``` library takes care of generating the pseudo-randomness for you, allowing you to write fuzzers using a simple via keyword. Just make sure you have the right syntax. It must be of type ```Fuzzer<a>```, so in our example we are using type ```Fuzzer<Int>```. 
 
-```rust
+```aiken
 use aiken/fuzz
 test restaurant_under_capacity(n: Int via fuzz.int()) {
  n <= 300
