@@ -19,7 +19,7 @@ Our first Aiken validator script ensures that a restaurant reservation is valid 
 1. The person using the reservation is the same person it was reserved for.
 2. The reservation is used before its expiry time.
 
-```rust
+```aiken
 use cardano/transaction.{OutputReference, Transaction}
 use helpers/arrive.{must_be_dined_by, must_dine_before_expiry}
 use types/arrive_on_time.{ReservationDetails}
@@ -95,13 +95,13 @@ So when there is a single possible shape, use let. When the shape is unknown at 
 
 As everything is an expression, or predicate returning a Bool, you'll soon encounter long chains of logical operators when coding more complex validators, eg. 
 
-```rust
+```aiken
 True && False && True || False
 ```
 
 As these boolean checks are so ubiquitous in Aiken validators, you can use more user-friendly keywords in place of logical operators.
 
-```rust
+```aiken
 and {
  True,
  False,
