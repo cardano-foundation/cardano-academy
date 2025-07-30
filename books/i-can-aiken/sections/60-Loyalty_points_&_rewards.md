@@ -5,7 +5,7 @@ Member Identification: The member trying to redeem the reward is identified thro
 Points Earned: The member has earned enough loyalty points to be eligible for redeeming a reward.
 Sufficient Points: The member has enough points to redeem the specific reward, considering the transaction's validity range.
 
-```rust
+```aiken
 use cardano/transaction.{OutputReference, Transaction}
 use helpers/vest.{points_earned, points_sufficient}
 use types/vesting.{Datum}
