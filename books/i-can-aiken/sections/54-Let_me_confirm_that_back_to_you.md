@@ -6,7 +6,7 @@ The served dish matches the customer's order.
 The dish is actually sent to the customer.
 The customer is not exploiting the script to claim multiple dishes unfairly.
 
-```rust
+```aiken
 use aiken/collection/list
 use aiken/option
 use cardano/assets.{quantity_of}
