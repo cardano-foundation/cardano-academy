@@ -5,7 +5,7 @@ Anyone can delegate ada to a stake pool.
 Waiters can withdraw rewards (tips), but they must leave at least half of the ada in the stake pool for the restaurant.
 This ensures a fair distribution of ada between the waiters and the restaurant.
 
-```rust
+```aiken
 use aiken/collection/list
 use aiken/collection/pairs
 use cardano/address.{Address, Credential}
@@ -47,7 +47,7 @@ withdraw: This represents a waiter taking their share of the ada. The waiter is 
 
 1. Importing Modules:
 
-```rust
+```aiken
 use aiken/collection/pairs
 use cardano/address.{Address, Credential}
 use cardano/assets.{lovelace_of, merge, zero}
@@ -70,7 +70,7 @@ restaurant_addr: Addres is a parameter to the validator, representing the addres
 
 3. publish handler:
 
-```rust
+```aiken
  /// Allow anyone to add adato the tip jar. This is like a customer leaving a tip.
  publish(_redeemer, _certificate, _tx) {
    True
@@ -81,7 +81,7 @@ The publish handler always returns True, meaning anyone can publish a certificat
 The _redeemer, _certificate, and _tx are parameters that are discarded (hence the underscore).
 
 4. withdraw handler:
-```rust
+```aiken
  /// When a waiter (identified by their Credential) wants to take their share of the ada,
  /// this function ensures they leave half the ada in the jar for the restaurant.
  withdraw(_redeemer, waiter: Credential, tx: Transaction) {
@@ -111,7 +111,7 @@ member.2nd == "Bloggs"
 The reason there is this extra type Pair, where tuple might suffice, is to do with the underlying Plutus virtual machine, and explained in detail in the docs.
 
 6. Finding Outputs Sent to the Restaurant:
-```rust
+```aiken
  // Get all the UTxOs sent to the restaurant's address
    let restaurant_outputs =
      list.filter(tx.outputs, fn(o) { o.address == restaurant_addr })
@@ -122,7 +122,7 @@ tx.outputs is a list of all outputs in the transaction.
  list.filter creates a new list containing only the outputs that satisfy the given condition (i.e., the output's address matches the restaurant_addr).
 
 7. Calculating the Total ada for the Restaurant:
-```rust
+```aiken
    let total_for_restaurant =
      list.foldl(restaurant_outputs, zero, fn(n, acc) { merge(n.value, acc) })
        |> lovelace_of()
@@ -134,7 +134,7 @@ For each output n, it merges its value (n.value) with the accumulated value (acc
 lovelace_of() extracts the amount of ada from the merged value.
 
 8. Ensuring Fair Distribution:
-```rust
+```aiken
    (2 * total_for_restaurant >= waiter_tip_amount)?
  }
 ```
@@ -142,7 +142,7 @@ This line checks if the waiter is leaving at least half of the ada for the resta
 It multiplies total_for_restaurant by 2 and checks if it's greater than or equal to waiter_tip_amount.
 
 9. Catch-All Condition:
-```rust
+```aiken
  else(_) {
    fail
  }
