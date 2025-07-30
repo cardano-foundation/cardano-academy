@@ -4,7 +4,7 @@ This validator script controls access to VIP members’ bar by checking two cond
 Secret Code Word: The user must provide the correct secret code word ('VIP007' in this case).
 VIP Identification: The transaction must be signed by the VIP member.
 
-```rust
+```aiken
 use aiken/collection/list
 use aiken/primitive/string
 use cardano/transaction.{OutputReference, Transaction}
