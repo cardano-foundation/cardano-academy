@@ -4,7 +4,7 @@
 
 Still in our **Library** folder, let’s create a new subfolder for some **types** we’ll create next.
 
-```rust
+```aiken
 use aiken/crypto.{VerificationKeyHash}
 
 pub type CustomerID = VerificationKeyHash
@@ -19,19 +19,19 @@ pub type ReservationDetails {
 
 ## Explaining the code:
 
-```rust
+```aiken
 use aiken/crypto.{VerificationKeyHash} 
 ```
 
 This line imports the ```VerificationKeyHash``` type from the ```aiken/crypto``` module. This type represents the hash of a verification key (public key).
 
-```rust
+```aiken
 pub type CustomerID = VerificationKeyHash
 ```
 
 This line defines a type alias called ```CustomerID```. 
 
-```rust
+```aiken
 pub type ReservationDetails {
  //unique id for the customer who made the reservation
  reserved_for: CustomerID,
@@ -47,7 +47,7 @@ This defines a custom type called ```ReservationDetails```. This type represents
 
 Defined with the ```type``` keyword, a custom type in Aiken is a named collection of keys and/or values. If you are familiar with object-oriented programming, custom types are like objects but with no methods. They can have named fields, or not, but you must decide one way or the other. You are not allowed a mix of named and unnamed fields. 
 
-```rust
+```aiken
 // With named fields
 type Datum {
 	Datum { customer: ByteArray, party_size: Int }
@@ -60,7 +60,7 @@ type DatumWithNoName {
 
 Now our custom types are defined, we can use them in functions to create values by calling their constructors.
 
-```rust
+```aiken
 fn bookings() {
  	let booking_1 = Datum { customer: #[0xAA, 0xBB], party_size: 8 }
  	let booking_2 = DatumWithNoName (#[0xAA, 0xBB], 2)
@@ -71,13 +71,13 @@ fn bookings() {
 
 A custom type with only one constructor and named fields can be accessed using the dot symbol (.), followed by the name of the field. For example, considering a type ```Meal```:
 
-```rust
+```aiken
 type Meal {  menuName: ByteArray,  calories: Int,  rating: Int}
 ```
 
 We can access any of its fields using .name, .calories and .rating respectively.
 
-```rust
+```aiken
 let meal = Meal { menuName: "Waldorf Salad", calories: 500, rating: 5 }
 meal.menuName // returns "Waldorf Salad"
 meal.calories // returns 500
@@ -95,7 +95,7 @@ This code defines a custom data type called ```Reservation```. Let’s take a cl
 
 This code creates a simple data structure to represent a reservation. We’ll use this later to track reservations and check if they are still valid based on their expiration time.
 
-```rust
+```aiken
 use aiken/crypto.{VerificationKeyHash}
 use cardano/address.{Address}
 
@@ -124,7 +124,7 @@ Import necessary types with ‘use’ keyword.
 
 This line defines a type alias called ```CustomerID```. It essentially creates a new variable, ```CustomerID```, for the ```VerificationKeyHash``` type.
 
-```rust
+```aiken
 pub type OrderDetails {
  customer: CustomerID,
  total_cost: Int,
@@ -137,7 +137,7 @@ This defines a custom type called OrderDetails. This type represents information
 	- ```total_cost```: An ```Int``` (integer) representing the total cost of the order in Lovelace.
 
 
-```rust
+```aiken
 pub type RestaurantPolicy {
  restaurant_address: Address,
 }
@@ -147,7 +147,7 @@ This defines another custom type called ```RestaurantPolicy```. This type  repre
 
 	- ```restaurant_address```: An ```Address``` representing the Cardano address of the restaurant. 
 
-```rust
+```aiken
 use cardano/address.{Address}
 use cardano/assets.{AssetName, PolicyId}
 
@@ -197,7 +197,7 @@ pub fn pineapple_on_pizza(opt: Option<a>) -> a {
 	- ```PolicyId```: A unique identifier for a token policy (the rules governing a token's minting).
 	- ```AssetName```: The name of a specific token within a policy.
 
-```rust
+```aiken
 // Represents a specific item on the restaurant's menu
 pub type MenuItem {
  policy_id: PolicyId,
@@ -210,7 +210,7 @@ This defines a custom type called MenuItem. You can use this type to represent a
 	- ```dish_name```: An ```AssetName``` that represents the name of the dish.
 
 
-```rust
+```aiken
 // Represents the details of a customer's order
 pub type OrderDatum {
  customer: Address,
@@ -226,7 +226,7 @@ This defines a custom type called ```OrderDatum```. You can use this type to rep
 	- ```desired_restaurant```: A ```PolicyId``` that represents the policy ID of the restaurant where the customer wants to eat.
 	- ```desired_dish```: An optional ```AssetName``` that represents the specific dish the customer wants to order. If this field is ```None```, it means the customer is okay with any dish from the restaurant.
 
-```rust
+```aiken
 // Indicates which dish has been served to the customer
 
 pub type ServeRedeemer {
@@ -243,7 +243,7 @@ This code  defines types for managing orders and menu items in a restaurant cont
 **Option** is defined as a generic type where Option may be inhabited by any other type, so functions can use it without making assumptions on what type it is. 
 
 
-```rust
+```aiken
 type Option<a> {  
    Some(a)  
    None
@@ -260,7 +260,7 @@ Aiken provides two convenient keywords, ```fail``` and ```todo```,to enable us t
 
 We rarely use ```String``` messages, but they can be useful for documentation, so we can add with @ “ “ notation. The string message will be traced when the ```todo``` or ```fail``` code is evaluated.
 
-```rust
+```aiken
 use aiken/crypto.{VerificationKeyHash}
 /// Represents a gift card with information about the owner and a secret code
 pub type GiftCard {
@@ -269,7 +269,7 @@ pub type GiftCard {
 }
 ```
 
-```rust
+```aiken
 /// Actions that can be taken on the gift card
 pub type Action {
  Cancel
@@ -284,7 +284,7 @@ This defines a custom type called ```GiftCard```. This type holds the informatio
 	- ```owner```: This field is of type ```VerificationKeyHash```. This field stores the public key hash of the user who owns the gift card.
 	- ```secretCode```: This field is of type ```ByteArray```. This field stores the secret code associated with the gift card, which might be required to redeem or use the gift card.
 
-```rust
+```aiken
 /// Actions that can be taken on the gift card
 
 pub type Action {
@@ -300,7 +300,7 @@ This defines a custom type called ```Action```. You use this type to represent t
 
 This code sets up the necessary data types for representing a gift card and the actions that can be performed on it. It uses a public key hash to identify the owner and stores a secret code. The ```Action``` type ensures that only valid actions (canceling or redeeming) can be performed on the gift card.
 
-```rust
+```aiken
 use cardano/address.{Address}
 
 // Datum stores the essential details of an order
@@ -316,7 +316,7 @@ pub type Datum {
 
 This line imports the ```Address``` type from the ```cardano/address``` module. ```Address``` is used here to identify the restaurant associated with an order.
 
-```rust
+```aiken
 // Datum stores the essential details of an order
 
 pub type Datum {
@@ -332,7 +332,7 @@ This defines a custom type called ```Datum```. This type holds the essential inf
 
 This ```Datum``` type will be used in a validator later to track orders, manage payments, and ensure that funds are correctly transferred to the corresponding restaurant.
 
-```rust
+```aiken
 use cardano/address.{Address}
 
 pub type Datum {
@@ -344,7 +344,7 @@ pub type Datum {
 
 ## Explaining the code:
 
-```rust
+```aiken
 pub type Datum {
  restaurant: Address,
  // Restaurant's address
@@ -360,7 +360,7 @@ This code block defines a custom data type called ```Datum```. You can use this 
 We’ll use this data structure later in validators to manage payments, track bills, and ensure that funds are transferred correctly.
 
 
-```rust
+```aiken
 use aiken/crypto.{VerificationKeyHash}
 /// Represents a reservation at the restaurant
 pub type Reservation {
@@ -389,7 +389,7 @@ This code defines a custom type called ```Action``` to represent the different a
 	- ```Cancel```: This value represents the action of canceling the reservation.
 	- ```Confirm { special_request: ByteArray }```: This value represents the action of confirming the reservation. It includes a field ```special_request``` of type ```ByteArray```, which can store an optional special request made by the customer.
 
-```rust
+```aiken
 /// Hardcoded secret phrase for special requests (now a ByteArray)
 pub const secret_phrase: ByteArray = "Surprise me!"
 ```
@@ -398,7 +398,7 @@ This line defines a constant called ```secret_phrase``` of type ```ByteArray```.
 
 This code defines data types for managing restaurant reservations. It uses a public key hash to identify customers, stores reservation details such as party size and time, and allows for actions like canceling or confirming a reservation with an optional special request. 
 
-```rust
+```aiken
 use aiken/crypto.{VerificationKeyHash}
 pub type OrderDatum {
  chef_hashes: List<VerificationKeyHash>,
@@ -411,7 +411,7 @@ This defines a custom type called ```OrderDatum```. This type holds information 
 
 This code defines a simple data structure to represent an order in terms of the chefs who worked on it. This ```OrderDatum``` type will be used in validators later. 
 
-```rust
+```aiken
 use aiken/crypto.{VerificationKeyHash}
 // Data Structure for the Tipping services
 pub type Datum {
@@ -433,7 +433,7 @@ This defines a custom type called ```Datum```. This type holds information relat
 	- ```reviews```: This field is of type ```List<ByteArray>```, which means it's a list of byte arrays. The ```Datum``` can store multiple reviews, where each review is represented as a ```ByteArray```. 
 
 
-```rust
+```aiken
 // Actions (Redeemers)
 
 pub type Redeemer {
@@ -448,7 +448,7 @@ This defines a custom type called ```Redeemer```. This type is used to represent
 
 This code defines data types for a tipping service. It uses a public key hash to identify the service owner, stores a list of reviews as byte arrays, and defines actions for adding tips and claiming the accumulated tips.
 
-```rust
+```aiken
 use aiken/crypto.{VerificationKeyHash}
 
 // Verify membership card
@@ -473,14 +473,14 @@ This defines a custom type called ```Datum```. This type holds information relat
 	- ```member_id_hash```: This field is of type ```MemberIDHash```, an alias for ```VerificationKeyHash```.
 	- ```required_points```: This field is of type ```Int``` (integer). It stores the number of points required to redeem a reward. 
 
-```rust
+```aiken
 // Hashed membership card ID for security
 pub type MemberIDHash = VerificationKeyHash
 ```
 
 This line defines a type alias called MemberIDHash. It essentially creates a new name, MemberIDHash, for the VerificationKeyHash type.
 
-```rust
+```aiken
 // Represents the member's total accumulated points
 pub type RewardPoints = Int
 ```
@@ -490,7 +490,7 @@ This line defines another type alias called ```RewardPoints```. It creates a new
 This code defines data types for managing a membership / loyalty program. It uses a public key hash to create unique member IDs, stores the required points for rewards, and defines a type for tracking accumulated reward points.
 
 
-```rust
+```aiken
 use aiken/crypto.{VerificationKeyHash}
 pub type Datum {
  vip_id: VerificationKeyHash,
