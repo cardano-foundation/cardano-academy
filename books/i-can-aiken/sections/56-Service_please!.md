@@ -6,7 +6,7 @@ Customer Verification: Verifies the customer's identity using their stake creden
 Two Handlers: Provides separate logic for marking an order as served (withdraw) and for spending the fulfilled order (spend).
 This example shows how Aiken can be used to create a complex, multivalidator for managing workflows.
 
-```rust
+```aiken
 use aiken/collection/list
 use cardano/address.{Address, Inline, Script, StakeCredential}
 use cardano/transaction.{ InlineDatum, Input, Output, OutputReference, Transaction,}
@@ -89,7 +89,7 @@ let Input { output: Output { address: Address {
  { payment_credential: payment_cred, .. }, …}, …} = input: Destructures the input to access the payment credential of the output's address. 
 While we encountered constructors earlier, we can also leverage destructuring which is the opposite of constructing a value and uses a similar syntax but backwards to before. So what we saw earlier was constructors and fields appearing on the right-hand side of an assignment, but with destructuring, they are on the left-hand side. Using a restaurant meal as an example:
 
-```rust
+```aiken
 // Constructing
 let meal = Meal { menuName: "Waldorf Salad", calories: 500, rating: 5 }
 // Destructuring
@@ -111,7 +111,7 @@ expect order_datum: OrderDatum = raw_datum: Extracts the OrderDatum from the raw
 list.all(orderDatum.chef_hashes, fn(h) { list.has(extra_signatories, h) }): Checks if all the chef hashes in orderDatum.chef_hashes are present in the transaction's extra_signatories.
 Lines 41-56: spend Handler
 
-```rust
+```aiken
 spend( datum: Option<OrderDatum>,
    _redeemer: Data,
    _output_reference: OutputReference,
