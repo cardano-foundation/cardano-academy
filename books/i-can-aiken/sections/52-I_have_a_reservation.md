@@ -4,7 +4,7 @@ This validator script manages restaurant reservations by allowing two actions:
 Cancellation: Only the customer who made the reservation can cancel it.
 Confirmation: Confirming a reservation, potentially with a special request that requires a secret phrase to match.
 
-```rust
+```aiken
 use aiken/collection/list
 use cardano/transaction.{OutputReference, Transaction}
 use types/reservation.{Action, Cancel, Confirm, Reservation, secret_phrase}
@@ -49,7 +49,7 @@ Lines 5-21: Validator Definition
 validator reservation_handler { ... }: This defines a validator named reservation_handler. 
 Lines 6-18: spend Handler
 
-```rust
+```aiken
 spend(
    datum: Option<Reservation>,
    action: Action,
