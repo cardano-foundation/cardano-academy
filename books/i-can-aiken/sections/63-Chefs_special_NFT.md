@@ -2,7 +2,7 @@
 
 This validator ensures that the 'Chef's Special' NFT is minted only once and only to the person who placed the original order for the specific dish. This creates a verifiable and secure way to manage the distribution of these unique NFTs.
 
-```rust
+```aiken
 use aiken/collection/dict.{to_pairs}
 use aiken/collection/list
 use cardano/assets.{PolicyId, tokens}
@@ -38,7 +38,7 @@ order_ref: This represents a specific customer's order, like their order number 
 dish_name: This is the name of the special dish that triggers the NFT minting.
 
 1. Importing Modules:
-```rust
+```aiken
 use aiken/collection/dict.{to_pairs}
 use cardano/assets.{PolicyId, tokens}
 Import necessary modules for working with lists, dictionaries, Cardano assets, and transactions.
@@ -47,7 +47,7 @@ cardano/assets: Provides functions for working with Cardano assets, including NF
 ```
 
 2. Validator Definition:
-```rust
+```aiken
 // The restaurant gives out a unique "Chef's Special" dish NFT to
 // the first person who orders a specific meal of the day.
 validator chefs_special_nft(order_ref: OutputReference, dish_name: ByteArray) {
@@ -60,7 +60,7 @@ order_ref: OutputReference: This is a parameter to the validator, representing a
 dish_name: ByteArray: This is another parameter representing the name of the 'Chef's Special' dish as a byte array.
 
 3. mint handler:
-```rust
+```aiken
  mint(_redeemer, policy_id: PolicyId, tx: Transaction) {
 …
  }
@@ -74,7 +74,7 @@ policy_id: PolicyId: This represents the ID of the NFT policy that governs the m
 tx: Transaction: This represents the transaction that is attempting to mint the NFT.
 
 4. Extracting Transaction Data:
-```rust
+```aiken
    // Get the transaction inputs and minted values (like checking the order and the NFT)
    let Transaction { inputs, mint, .. } = tx 
 ```
