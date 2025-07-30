@@ -2,7 +2,7 @@
 
 This code provides a set of convenient helper functions for constructing the building blocks of Cardano transactions. It makes it easier to create inputs, outputs, and addresses in Aiken. Note that these functions are **Anonymous**. They are defined with the same familiar syntax, but the difference here is they are assigned to an identifier using a let-binding. This identifier is what we use to then call them later in other modules and validators.
 
-```rust
+```aiken
 use cardano/address.{Address, Script, VerificationKey}
 use cardano/assets.{Value}
 use cardano/transaction.{Datum, Input, Output, OutputReference}
@@ -39,7 +39,7 @@ Let's break down each function line by line:
 
 ```input``` function:
 
-```rust
+```aiken
 pub fn input(oref: OutputReference, output: Output) -> Input {
  let input = Input { output_reference: oref, output }
  input
@@ -58,7 +58,7 @@ It takes two arguments:
 
 ```output``` function:
 
-```rust
+```aiken
 pub fn output(address: Address, value: Value, datum: Datum) -> Output {
  let output = Output { address, value, datum, reference_script: None }
  output
@@ -76,7 +76,7 @@ pub fn output(address: Address, value: Value, datum: Datum) -> Output {
 
 ```oref``` function:
 
-```rust
+```aiken
 pub fn oref(hash: ByteArray, index: Int) -> OutputReference {
  let oref = OutputReference { transaction_id: hash, output_index: index }
  oref
@@ -92,7 +92,7 @@ oref: The function returns the created ```OutputReference``` object.
 
 ```scriptAddress``` function:
 
-```rust
+```aiken
 pub fn scriptAddress(hash: ByteArray) -> Address {
  let address =
    Address { payment_credential: Script(hash), stake_credential: None }
@@ -109,7 +109,7 @@ This function creates an ```Address``` object that represents a script address.
 
 ```walletAddress``` function:
 
-```rust
+```aiken
 pub fn walletAddress(hash: ByteArray) -> Address {
  let address =
    Address {
