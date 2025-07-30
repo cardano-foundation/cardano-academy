@@ -4,7 +4,7 @@ This code defines a validator that ensures a customer pays the correct amount fo
 The transaction includes outputs sent to the restaurant's address.
 The total amount of ada paid to the restaurant is greater than or equal to the total cost of the order.
 
-```rust
+```aiken
 use aiken/collection/list
 use cardano/assets
 use cardano/transaction.{OutputReference, Transaction}
