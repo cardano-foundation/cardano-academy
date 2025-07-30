@@ -4,7 +4,7 @@ This validator script ensures that a restaurant reservation cancellation is vali
 The cancellation occurs before the reservation expires.
 A valid cancellation code (less than or equal to 0) is provided.
 
-```rust
+```aiken
 use aiken/interval.{Finite}
 use cardano/transaction.{OutputReference, Transaction}
 use types/cancellation.{Reservation}
