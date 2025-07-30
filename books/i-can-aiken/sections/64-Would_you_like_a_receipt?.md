@@ -8,7 +8,7 @@ Only one type of token is minted per transaction.
 The name of the minted token is derived from the first input's output_reference in a deterministic way.
 Exactly one token with the calculated name is minted.
 
-```rust
+```aiken
 use aiken/builtin.{blake2b_256}
 use aiken/cbor
 use aiken/collection/dict
