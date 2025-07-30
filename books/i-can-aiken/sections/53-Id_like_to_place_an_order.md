@@ -4,7 +4,7 @@ This validator script ensures that when a customer places an order:
 The transaction includes an output sent to the correct restaurant's address.
 The amount of ada in that output is greater than or equal to the bill amount for the order.
 
-```rust
+```aiken
 use aiken/collection/list
 use cardano/assets.{lovelace_of}
 use cardano/transaction.{OutputReference, Transaction}
