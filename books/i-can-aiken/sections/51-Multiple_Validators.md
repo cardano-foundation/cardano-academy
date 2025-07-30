@@ -4,7 +4,7 @@
 
 Next, we’ll code three simple validators, each with a different purpose related to managing restaurant reservations.
 
-```rust
+```aiken
 // Reservation Validator (always valid)
 validator always_valid_reservation {
  spend(_customer: Option<Data>, _table: Data, _output_reference: Data, _tx: Data) {
