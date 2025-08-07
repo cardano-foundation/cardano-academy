@@ -1,3 +1,5 @@
+*** uodate to "layer 2" roll ups  rather than ZK rollups when tlaking generally then be specific when talking about projects, ie. zk vs optimistic, etc
+
 **ZK Roll Ups on Cardan**
 
 Cardano's deterministic transaction model offers a significant advantage for ZK Rollups. Unlike Ethereum, where transaction outcomes depend on the global state at the time of execution, Cardano's UTxO model allows for predictable outputs during transaction construction off-chain. In other words, the strengths of the UTxO model in Layer 1 can be transferred to Layer 2. This eliminates the need for sequencers in ZK Rollups, which in turn promotes decentralization and potentially removes reliance on external data availability layers.[^1] 
