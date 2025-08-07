@@ -1,5 +1,5 @@
 **TO DO**
-> update to "layer 2" roll ups  rather than ZK rollups when talking generally then be specific when talking about projects, ie. zk vs optimistic, etc
+> rename to Layer 2 rollups....update to "layer 2" roll ups  rather than ZK rollups when talking generally then be specific when talking about projects, ie. zk vs optimistic, etc. list example projects. midgard, zkfold, etc
 
 **ZK Roll Ups on Cardan**
 
