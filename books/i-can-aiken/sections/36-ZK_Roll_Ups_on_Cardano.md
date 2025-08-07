@@ -1,5 +1,5 @@
-*TO DO* 
-*** update to "layer 2" roll ups  rather than ZK rollups when talking generally then be specific when talking about projects, ie. zk vs optimistic, etc
+**TO DO**
+> update to "layer 2" roll ups  rather than ZK rollups when talking generally then be specific when talking about projects, ie. zk vs optimistic, etc
 
 **ZK Roll Ups on Cardan**
 
