@@ -2,7 +2,7 @@
 
 ## Overview
 
-This folder contains the content for the Academy course [here](https://cardanofoundation.org/academy/course/staking-rewards-calculation)
+This folder contains the content for the Academy course you can find [here](https://cardanofoundation.org/academy/course/staking-rewards-calculation)
 
 ## How to contribute
 
