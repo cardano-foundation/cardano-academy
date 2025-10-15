@@ -1,4 +1,4 @@
-**Introduction**
+# Introduction
 
 This course will reference many of the concepts and terms already covered in Cardano Blockchain Certified Associate (CBCA) so you should have completed, or at least understood that content. 
 
