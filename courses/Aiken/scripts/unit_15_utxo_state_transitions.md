@@ -25,21 +25,21 @@ Each network node keeps its own UTxO set. A majority of nodes agreeing on the sa
 
 In the UTxO model, what happens to a UTxO once it is spent?
 
-A. It can be reused in future transactions
-B. It is partially consumed
-**C. It is completely consumed and removed from the UTxO set**
-D. It is transferred to a new owner
+A. It can be reused in future transactions.
+B. It is partially consumed.
+**C. It is completely consumed and removed from the UTxO set**.
+D. It is transferred to a new owner.
 
 How does the account model handle state transitions?
 
-A. Each transaction triggers a state transition
-**B. Transactions are bundled into blocks, and each block triggers a state transition**
-C. State transitions occur only when a new user joins the network
-D. State transitions are managed by a central authority
+A. Each transaction triggers a state transition.
+**B. Transactions are bundled into blocks, and each block triggers a state transition**.
+C. State transitions occur only when a new user joins the network.
+D. State transitions are managed by a central authority.
 
 What is the primary role of a smart contract on Cardano?
 
-A. To execute complex computations
-B. To facilitate cross-shard communication
-C. To manage user accounts
-**D. To validate transactions**
+A. To execute complex computations.
+B. To facilitate cross-shard communication.
+C. To manage user accounts.
+**D. To validate transactions**.
