@@ -20,7 +20,7 @@ Returning to our analogy, think of Babel fees as allowing you to pay for your me
 
 A. To ensure the privacy of transactions
 B. To increase the speed of transaction processing
-C. To ensure the atomicity of transactions
+**C. To ensure the atomicity of transactions**
 D. To reduce the cost of transaction fees
 
 
