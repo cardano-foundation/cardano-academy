@@ -66,8 +66,6 @@ Between June 24-25th 2024, Cardano was the target of a DDoS attack. The adversar
 
 Despite these issues, the Cardano blockchain continued to operate effectively, with only minor delays in transaction processing times. The eUTxO.org explorer captured the attack visually.
 
-**Figure 55**: eutxo.org transaction output 
-
 The attack was halted after developers from Anastasia Labs published instructions on how to take ada from the attacker. In short, when registering a staking script, a 2 ada deposit is required by the protocol and to reclaim this deposit back, you must deregister the script. 
 
 The attacker was complacent as no validations were guarding the 194 scripts used in the attack, so there were no restrictions on who could reclaim deposits. As each validator was written to 'always succeed', and as the transaction fee was lower than the deposit obtained, the community confiscated the adversary's ada and the attack ended. Moral of the story…keep your guard up!
