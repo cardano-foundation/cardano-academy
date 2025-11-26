@@ -1,4 +1,4 @@
-# 50. Sample testing 
+# Sample testing 
 
 For each validator we code, we should write some tests. The following code defines a test case for the ```validate_reservation``` validator we discussed earlier. Taking a closer look...
 
