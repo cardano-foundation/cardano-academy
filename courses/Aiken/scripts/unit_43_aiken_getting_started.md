@@ -115,6 +115,44 @@ source = "github"
 
 The standard library, ```stdlib```, contains common functions and data-structures needed for most validators. If we go back to our ```aiken.toml``` file, we’ll see that standard library was added by default when we ran ```aiken new``` earlier. When we ran ```aiken check```, it would have downloaded any dependencies needed. 
 
+## Questions
+
+1. Which of the following commands installs the latest version available of Aiken?
+
+A. aiken install -I
+B. hello aiken world
+C. aiken-lang install
+**D. aikup**
+
+2. The tool used to generate HTML documentation for Aiken projects is?
+
+A. aiken check
+B. aiken build
+**C. aiken docs**
+D. aiken test
+
+
+3. The folder where application code is stored in an Aiken project is?
+
+A. lib
+**B. validators**
+C. config
+D. src
+
+4. Which file contains metadata about the project, including dependencies?
+
+A. README.md
+**B. aiken.toml**
+C. plutus.json
+D. validators.txt
+
+5. What is the standard library in Aiken called?
+
+**A. stdlib**
+B. prelude
+C. builtins
+D. core
+
 
 [^1]: Language Server Protocol (LSP) enables convenience features like auto complete, go to definition, or pop-up documentation on hover over. The Language Server Protocol (LSP) standardizes how such servers and development tools communicate, so a single Language Server can be re-used for different tools and languages.
 [^2]: VSCode plugin for Aiken, marketplace.visualstudio.com/items?itemName=TxPipe.aiken
