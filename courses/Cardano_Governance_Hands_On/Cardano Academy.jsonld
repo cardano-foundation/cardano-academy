@@ -71,6 +71,18 @@
     "motivations": "Governance for all, participation for all",
     "objectives": "I believe Cardano should pursue long-term sustainability through transparent treasury management and evidence-based decision-making. I support proposals that strengthen the ecosystem's financial resilience while maintaining fiscal discipline.",
     "paymentAddress": "addr_test1qrk536hsmgafj0x7w6t6mrgk679avhuzzefd366uwgxv54zefa44emkdffylzxj5un59rglwwwen56zx5prrlkr40f2spt7g0y",
-    "qualifications": "n/a"
+    "qualifications": "n/a",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "",
+        "uri": "https://github.com/cardano-foundation/cardano-academy/blob/main/courses/Cardano_Governance_Hands_On/Cardano%20Academy.jsonld"
+      },
+      {
+        "@type": "Identity",
+        "label": "",
+        "uri": "https://github.com/cardano-foundation/cardano-academy/blob/main/courses/Cardano_Governance_Hands_On/Cardano%20Academy.jsonld"
+      }
+    ]
   }
 }
