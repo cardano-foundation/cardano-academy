@@ -75,13 +75,13 @@
     "references": [
       {
         "@type": "Link",
-        "label": "",
-        "uri": "https://github.com/cardano-foundation/cardano-academy/blob/main/courses/Cardano_Governance_Hands_On/Cardano%20Academy.jsonld"
+        "label": "linkedin",
+        "uri": "https://www.linkedin.com/in/john-g-60b9022b/"
       },
       {
         "@type": "Identity",
-        "label": "",
-        "uri": "https://github.com/cardano-foundation/cardano-academy/blob/main/courses/Cardano_Governance_Hands_On/Cardano%20Academy.jsonld"
+        "label": "linkedin",
+        "uri": "https://www.linkedin.com/in/john-g-60b9022b/"
       }
     ]
   }
