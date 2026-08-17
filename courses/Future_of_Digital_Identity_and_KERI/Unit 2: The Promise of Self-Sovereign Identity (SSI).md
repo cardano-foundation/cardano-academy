@@ -39,32 +39,32 @@ SSI is about taking control. It is the evolution from "Account-based" identity w
 
 ## Questions
 
-1. What does Self-Sovereign Identity (SSI) represent?
-A. A shift from owning to renting your digital identity
-B. A government-controlled identity system
-C. An upgrade to traditional password-based logins
-D. **A shift from renting to owning your digital identity**
+1. What does Self-Sovereign Identity (SSI) represent?<br>
+A. A shift from owning to renting your digital identity<br>
+B. A government-controlled identity system<br>
+C. An upgrade to traditional password-based logins<br>
+D. **A shift from renting to owning your digital identity**<br>
 
-2. What is KERI’s Pre-Rotation feature designed to protect against?
-A. Slow internet connections
-B. **Key theft, allowing recovery without a central help desk**
-C. Excessive data storage costs
-D. Incompatible file formats
+2. What is KERI’s Pre-Rotation feature designed to protect against?<br>
+A. Slow internet connections<br>
+B. **Key theft, allowing recovery without a central help desk**<br>
+C. Excessive data storage costs<br>
+D. Incompatible file formats<br>
 
-3. Which of the following is one of the Three Pillars of SSI?
-A. Centralised database storage
-B. Corporate sponsorship
-C. **Cryptographic verifiability**
-D. Annual subscription renewal
+3. Which of the following is one of the Three Pillars of SSI?<br>
+A. Centralised database storage<br>
+B. Corporate sponsorship<br>
+C. **Cryptographic verifiability**<br>
+D. Annual subscription renewal<br>
 
-4. In the SSI model, what replaces logging in to a server?
-A. Biometric scanning at a government office
-B. **Bringing your own credentials in a digital wallet**
-C. Using a universal password shared by all users
-D. Calling a helpdesk to confirm your identity
+4. In the SSI model, what replaces logging in to a server?<br>
+A. Biometric scanning at a government office<br>
+B. **Bringing your own credentials in a digital wallet**<br>
+C. Using a universal password shared by all users<br>
+D. Calling a helpdesk to confirm your identity<br>
 
-5. What does a Key Event Log (KEL) allow you to do?
-B. A. Store your passwords in the cloud
-**Take your identity anywhere without being tied to a specific network**
-C. Access another person’s identity records
-D. Bypass all cryptographic verification
+5. What does a Key Event Log (KEL) allow you to do?<br>
+A. A. Store your passwords in the cloud<br>
+B.**Take your identity anywhere without being tied to a specific network**<br>
+C. Access another person’s identity records<br>
+D. Bypass all cryptographic verification<br>
