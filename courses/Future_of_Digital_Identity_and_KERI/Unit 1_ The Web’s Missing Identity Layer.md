@@ -42,32 +42,32 @@ Autonomic Trust enabled by the KERI protocol, offers a portable, secure, and sca
 
 ## Questions
 
-1. What fundamental flaw does the internet have?
-It was built without native encryption
-It cannot handle large volumes of data
-**It was built without a native way to prove who is who**
-It was designed only for military use
+1. What fundamental flaw does the internet have?<br>
+A. It was built without native encryption<br>
+B. It cannot handle large volumes of data<br>
+C. **It was built without a native way to prove who is who**<br>
+D. It was designed only for military use<br>
 
-2. In the “Doorman” model, what role does the Certificate Authority play?
-It processes payments for identity verification
-It stores all user passwords securely
-It runs the blockchain network
-**It acts as a trusted third party that checks IDs**
+2. In the “Doorman” model, what role does the Certificate Authority play?<br>
+A. It processes payments for identity verification<br>
+B. It stores all user passwords securely<br>
+C. It runs the blockchain network<br>
+D. **It acts as a trusted third party that checks IDs**<br>
 
-3. What is the main limitation of anchoring identity to a blockchain (Algorithmic Trust)?
-Blockchains are too slow to process any transactions
-**Your identity becomes tied to that chain’s fee structure and availability**
-Blockchains do not support cryptographic keys
-Only governments can operate blockchains
+3. What is the main limitation of anchoring identity to a blockchain (Algorithmic Trust)?<br>
+A. Blockchains are too slow to process any transactions<br>
+B. **Your identity becomes tied to that chain’s fee structure and availability**<br>
+C. Blockchains do not support cryptographic keys<br>
+D. Only governments can operate blockchains<br>
 
-4. KERI introduces which type of trust?
-**Autonomic Trust**
-Federated Trust
-Administrative Trust
-Algorithmic Trust
+4. KERI introduces which type of trust?<br>
+A. **Autonomic Trust**<br>
+B. Federated Trust<br>
+C. Administrative Trust<br>
+D. Algorithmic Trust<br>
 
-5. Which of the following is NOT listed as a benefit of Autonomic Trust?
-It is self-certifying
-It is portable
-It is low cost
-**It requires gas fees to operate**
+5. Which of the following is NOT listed as a benefit of Autonomic Trust?<br>
+A. It is self-certifying<br>
+B. It is portable<br>
+C. It is low cost<br>
+D. **It requires gas fees to operate**<br>
