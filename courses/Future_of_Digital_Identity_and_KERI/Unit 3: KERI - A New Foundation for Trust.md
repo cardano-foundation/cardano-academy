@@ -64,12 +64,12 @@ KERI isn't just another DID method. It is a fundamental rethink of digital trust
 
 1. In KERI, what does “Self-Certifying” mean?<br>
 A. The identifier is verified by a central registry<br>
-B. The identifier is generated from your public key and proves ownership through maths<br>
+**B. The identifier is generated from your public key and proves ownership through maths**<br>
 C. The identifier is issued by a government agency<br>
 D. The identifier must be renewed every year<br>
 
 2. What is the Key Event Log (KEL)?<br>
-A. A personal, tamper-proof, append-only chain of identity events<br>
+**A. A personal, tamper-proof, append-only chain of identity events**<br>
 B. A blockchain that records all global transactions<br>
 C. A cloud database controlled by a Certificate Authority<br>
 D. A backup copy of your email inbox<br>
@@ -77,17 +77,17 @@ D. A backup copy of your email inbox<br>
 3. What happens when Witnesses and Watchers detect duplicity?<br>
 A. The user’s identity is automatically renewed<br>
 B. The fraud is ignored until a manual review<br>
-C. The fraud becomes mathematically provable, destroying trust in that ID<br>
+**C. The fraud becomes mathematically provable, destroying trust in that ID**<br>
 D. The user is given a warning and a second chance<br>
 
 4. How does Pre-Rotation protect against key theft?<br>
 A. It encrypts the active key with a stronger algorithm<br>
 B. It stores a backup key with a trusted third party<br>
 C. It prevents anyone from ever changing their keys<br>
-D. It separates active signing keys from hidden rotation keys kept offline<br>
+**D. It separates active signing keys from hidden rotation keys kept offline**<br>
 
 5. KERI is described as a “Trust Spanning Layer.” What does this mean?<br>
-A. It connects any application to any infrastructure for identity verification<br>
+**A. It connects any application to any infrastructure for identity verification**<br>
 B. It only works on a single blockchain<br>
 C. It replaces all existing internet protocols<br>
 D. It requires a VPN connection to function<br>
