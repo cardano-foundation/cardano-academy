@@ -43,32 +43,32 @@ ACDC chaining turns a credential from a "digital sticky note" into a "digital ch
 
 ## Questions
 
-1. What limitation of the basic Trust Triangle does ACDC chaining solve?
-**It doesn’t verify the Issuer’s own legitimacy**
-It doesn’t encrypt the credential data
-It cannot handle more than two users
-It only works with physical documents
+1. What limitation of the basic Trust Triangle does ACDC chaining solve? <br>
+A. **It doesn’t verify the Issuer’s own legitimacy**<br>
+B. It doesn’t encrypt the credential data<br>
+C. It cannot handle more than two users<br>
+D. It only works with physical documents<br>
 
-2. What is an “edge” in the context of ACDC chaining?
-A web link to the issuer’s homepage
-**A cryptographic hook that connects one credential to another using a SAID**
-A physical USB cable connecting two devices
-A type of blockchain transaction
+2. What is an “edge” in the context of ACDC chaining?<br>
+A. A web link to the issuer’s homepage<br>
+B. **A cryptographic hook that connects one credential to another using a SAID**<br>
+C. A physical USB cable connecting two devices<br>
+D. A type of blockchain transaction<br>
 
-3. Why is the SAID-based link described as “unbreakable”?
-It is protected by government regulation
-It is stored on multiple blockchains simultaneously
-**It references a unique fingerprint, so any change to the target invalidates the link**
-It is encrypted with a password only the issuer knows
+3. Why is the SAID-based link described as “unbreakable”?<br>
+A. It is protected by government regulation<br>
+B. It is stored on multiple blockchains simultaneously<br>
+C. **It references a unique fingerprint, so any change to the target invalidates the link**<br>
+D. It is encrypted with a password only the issuer knows<br>
 
-4. In the vLEI chain, what is the correct order from root to role?
-Legal Entity → QVI → GLEIF → OOR
-OOR → Legal Entity → GLEIF → QVI
-QVI → GLEIF → OOR → Legal Entity
-**GLEIF → QVI → Legal Entity → OOR**
+4. In the vLEI chain, what is the correct order from root to role?<br>
+A. Legal Entity → QVI → GLEIF → OOR<br>
+B. OOR → Legal Entity → GLEIF → QVI<br>
+C. QVI → GLEIF → OOR → Legal Entity<br>
+D. **GLEIF → QVI → Legal Entity → OOR**<br>
 
-5. The linked structure of ACDC credentials forms which type of data structure?
-A circular linked list
-**A Directed Acyclic Graph (DAG)**
-A relational database table
-A binary search tree
+5. The linked structure of ACDC credentials forms which type of data structure?<br>
+A. A circular linked list<br>
+B. **A Directed Acyclic Graph (DAG)**<br>
+C. A relational database table<br>
+D. A binary search tree<br>
