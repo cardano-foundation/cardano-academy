@@ -41,7 +41,7 @@ Both forms usually include perks and contracts agreed between maintainers and sp
 
 ## Royalties 
 
-Finally, we consider royalties the last prototypical form of open-source business model. Software used to produce other artefacts (other software or media) is a good candidate for this category. Video game engines such as Unreal or Unity use such a model where the game engine is provided for free and source code made available upon the condition that games produced with the engine pay some royalties back once they meet a certain level of success.
+Finally, we consider royalties the last prototypical form of open-source business model. Software used to produce other artefacts (other software or media) is a good candidate for this category. Video game engines such as Unreal Engine use such a model, where the game engine is provided for free and its source code made available on the condition that games produced with the engine pay a royalty once they pass a revenue threshold. Unity, by contrast, uses the subscription model described in Unit 3 rather than royalties.
 
 This model works exceptionally well for these scenarios as it encourages the maintainers of the original software to build better software to produce better results and maximise their revenues. 
 
