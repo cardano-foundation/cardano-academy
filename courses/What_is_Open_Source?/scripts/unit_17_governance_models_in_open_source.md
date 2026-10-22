@@ -14,7 +14,7 @@ This is a simple model and the most intuitive approach for many projects where t
 
 This works well for projects with few contributors, where founders have enough capacity to deal with all requests and decisions. 
 
-This model shows its limits as soon as projects grow beyond what the founders can manage. Yet it's common to see successful and large projects, like the Python programming language, still rely on this approach as an ultimate authority. 
+This model shows its limits as soon as projects grow beyond what the founders can manage. Some successful and large projects relied on this approach for a long time. Python, for example, was led by its creator Guido van Rossum as 'Benevolent Dictator for Life' until he stepped down in 2018; since 2019 it has been governed by an elected five-member Steering Council. The Linux kernel, where Linus Torvalds retains final say, remains a well-known founder-leader example. 
 
 Projects are split into smaller areas where decisions are made relatively independently as they grow. The vision and final decisions on strategic decisions often remain under the founders' responsibility.
 
