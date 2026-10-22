@@ -8,7 +8,7 @@ For example, the latter case is seen in game-engines – software platforms used
 
 Unreal Engine will charge their most successful users a royalty from the game they have published and built using their platform.
 
-Unity, in a similar fashion, offers a subscription model with different price tiers based on the games' success. In exchange, they grant full access to the entire engine's source code. This gives game engines an immense innovation advantage as they benefit from the work of video game companies, sometimes improving the engine for them in response to specific needs.
+Unity, in a similar fashion, offers a subscription model with different price tiers based on a studio's revenue. Engine source code access is sold separately to its enterprise-tier customers rather than being granted to all subscribers. This gives game engines an immense innovation advantage as they benefit from the work of video game companies, sometimes improving the engine for them in response to specific needs.
 
 Nevertheless, when it was being theorised, the exact sense of open source was not universally agreed upon. Movements such as the free software movement, initiated by Richard Stallman, who founded the Free Software Foundation (FSF) in 1985, remained attached to the word 'free' in the sense of liberty. The free software movement believes that once acquired – free of charge or not – users should be free to run, copy, distribute, study, change and improve software. The FSF articulates its definition of "free software" around four essential freedoms:
 
